@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulačka složeného úroku – Tabulka budoucí hodnoty a růstu | OmniTools</title>
+  <meta name="description" content="Vypočítejte růst složeného úroku: konečnou částku, získaný úrok a tabulku meziročního růstu pro roční, čtvrtletní, měsíční nebo denní skládání. Zdarma a soukromé.">
+  <meta name="keywords" content="kalkulačka složeného úroku, kalkulačka budoucí hodnoty, kalkulačka složeného růstu, kalkulačka úroku, kalkulačka růstu investic">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://janhazirr7.github.io/allinone/cs/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-compuesto.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/compound-interest-calculator.html">
+
+  
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/cs/compound-interest-calculator.html">
+  <meta property="og:title" content="Kalkulačka složeného úroku | OmniTools">
+  <meta property="og:description" content="Vypočítejte růst složeného úroku: konečnou částku, získaný úrok a tabulku meziročního růstu pro roční, čtvrtletní, měsíční nebo denní skládání. Zdarma a soukromé.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-compound-interest-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kalkulačka složeného úroku | OmniTools">
+  <meta name="twitter:description" content="Vypočítejte růst složeného úroku: konečnou částku, získaný úrok a tabulku meziročního růstu pro roční, čtvrtletní, měsíční nebo denní skládání. Zdarma a soukromé.">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Kalkulačka složeného úroku OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/cs/compound-interest-calculator.html",
+  "applicationCategory": "Finanční aplikace",
+  "operatingSystem": "All",
+  "browserRequirements": "Vyžaduje JavaScript. Vyžaduje HTML5.",
+  "description": "Vypočítejte růst složeného úroku: konečnou částku, získaný úrok a tabulku meziročního růstu pro roční, čtvrtletní, měsíční nebo denní skládání. Zdarma a soukromé.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "cs"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Domov",
+      "item": "https://janhazirr7.github.io/allinone/cs/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finance",
+      "item": "https://janhazirr7.github.io/allinone/cs/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kalkulačka složeného úroku",
+      "item": "https://janhazirr7.github.io/allinone/cs/compound-interest-calculator.html"
+    }
+  ],
+  "inLanguage": "cs"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co je složený úrok?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Složený úrok je úrok získaný jak z původní jistiny, tak z úroků získaných v předchozích obdobích. Pokaždé, když se k zůstatku přidá úrok, v dalším období se tento větší zůstatek úročí, takže růst se postupem času zrychluje, místo aby zůstal na stejné úrovni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak se liší složený úrok od jednoduchého?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prostý úrok se počítá pouze z původní jistiny, takže každým rokem roste o stejnou částku. Složené úročení se počítá z rostoucího zůstatku, takže výše získaného úroku se každé období zvyšuje. V průběhu dlouhých časových úseků se při míchání vytváří mnohem větší konečné množství."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Opravdu záleží na frekvenci skládání?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ano, ale méně než čas a rychlost. Přechod z ročního na měsíční skládání na 10 000 USD při 5 % po dobu 10 let zvyšuje konečnou částku z 16 288,95 USD na 16 470,09 USD. Denní skládání přidává jen trochu víc. Na frekvenci záleží, ale mnohem důležitější je začít brzy a vybrat si dobrou sazbu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co se stane, když je úroková sazba 0 %?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pokud je sazba 0 %, nevydělává se žádný úrok a konečná částka se rovná jistině bez ohledu na frekvenci skládání. Kalkulačka to zvládá správně: získaný úrok ukazuje 0,00 USD a tabulka rok od roku zůstane stejná."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jsou moje finanční údaje někde uloženy nebo odeslány?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne. OmniTools běží výhradně ve vašem prohlížeči. Vaše jistina, sazba a roky nejsou nikdy odeslány na server, uloženy v databázi ani sdíleny s nikým."
+      }
+    }
+  ],
+  "inLanguage": "cs"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Kalkulačka složeného úroku",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Zadejte ředitele",
+      "text": "Zadejte počáteční částku, kterou plánujete investovat nebo vložit."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Zadejte roční sazbu a roky",
+      "text": "Zadejte roční úrokovou sazbu jako procento a kolik let zůstanou peníze investovány."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Vyberte frekvenci skládání",
+      "text": "Vyberte roční, čtvrtletní, měsíční nebo denní skládání."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Vypočítat",
+      "text": "Stisknutím Vypočítat růst zobrazíte konečnou částku, získaný úrok a tabulku růstu."
+    }
+  ],
+  "inLanguage": "cs"
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Domovská stránka OmniTools">
+        <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Hlavní navigace">
+        <ul class="nav-links">
+          <li><a href="index.html">Všechny nástroje</a></li>
+          <li><a href="age-calculator.html">Kalkulačka věku</a></li>
+          <li><a href="bmi-calculator.html">Sledování BMI</a></li>
+          <li><a href="loan-calculator.html">Půjčka EMI</a></li>
+          <li><a href="../about.html">O</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="Vybrat jazyk" onchange="window.location.href=this.value">
+          <option value="../compound-interest-calculator.html">English</option>
+          <option value="../es/calculadora-de-interes-compuesto.html">Español</option>
+          <option value="../de/compound-interest-calculator.html">Deutsch</option>
+          <option value="../fr/compound-interest-calculator.html">Français</option>
+          <option value="../pt/compound-interest-calculator.html">Português</option>
+          <option value="../it/compound-interest-calculator.html">Italiano</option>
+          <option value="../ru/compound-interest-calculator.html">Русский</option>
+          <option value="../nl/compound-interest-calculator.html">Nederlands</option>
+          <option value="../pl/compound-interest-calculator.html">Polski</option>
+          <option value="../sv/compound-interest-calculator.html">Svenska</option>
+          <option value="../no/compound-interest-calculator.html">Norsk</option>
+          <option value="../da/compound-interest-calculator.html">Dansk</option>
+          <option value="../fi/compound-interest-calculator.html">Suomi</option>
+          <option value="../id/compound-interest-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/compound-interest-calculator.html">Türkçe</option>
+          <option value="../vi/compound-interest-calculator.html">Tiếng Việt</option>
+          <option value="../th/compound-interest-calculator.html">ไทย</option>
+          <option value="../ms/compound-interest-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/compound-interest-calculator.html">Filipino</option>
+          <option value="../hi/compound-interest-calculator.html">हिन्दी</option>
+          <option value="../ur/compound-interest-calculator.html">اردو</option>
+          <option value="../ar/compound-interest-calculator.html">العربية</option>
+          <option value="../fa/compound-interest-calculator.html">فارسی</option>
+          <option value="../he/compound-interest-calculator.html">עברית</option>
+          <option value="../ja/compound-interest-calculator.html">日本語</option>
+          <option value="../ko/compound-interest-calculator.html">한국어</option>
+          <option value="../zh/compound-interest-calculator.html">简体中文</option>
+          <option value="../zh-TW/compound-interest-calculator.html">繁體中文</option>
+          <option value="../el/compound-interest-calculator.html">Ελληνικά</option>
+          <option value="compound-interest-calculator.html" selected>Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="Přepnout navigační nabídku" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Domov</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">Kalkulačka složeného úroku</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Kalkulačka složeného úroku</h1>
+        <p class="tool-header-desc">Podívejte se, jak vaše úspory rostou, když se úročí. Zadejte jistinu, sazbu a časové období, abyste získali konečnou částku, celkový úrok a tabulku meziročního růstu.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Reklama v žebříčku">
+        <span class="ad-slot-placeholder-text">responzivní široký banner (728×90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="ciPrincipal" class="form-label"><span>Částka jistiny ($)</span><span class="label-hint">Požadovaný</span></label>
+              <input type="number" id="ciPrincipal" class="form-input" placeholder="např. 10 000" min="1" max="100000000" step="100">
+              <span class="form-help">Počáteční částka, kterou investujete nebo vložíte</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="ciRate" class="form-label"><span>Roční úroková sazba (%)</span><span class="label-hint">Roční %</span></label>
+                <input type="number" id="ciRate" class="form-input" placeholder="např. 5" min="0" max="50" step="0.1">
+                <span class="form-help">Nominální roční sazba před složením</span>
+              </div>
+              <div class="form-group">
+                <label for="ciYears" class="form-label"><span>Časové období (roky)</span><span class="label-hint">Trvání</span></label>
+                <input type="number" id="ciYears" class="form-input" placeholder="např. 10" min="1" max="50" step="1">
+                <span class="form-help">Jak dlouho zůstanou peníze investované</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ciFreq" class="form-label"><span>Frekvence skládání</span><span class="label-hint">Jak často se úrok přidává</span></label>
+              <select id="ciFreq" class="form-select">
+                <option value="1" selected="None">Ročně (jednou ročně)</option>
+                <option value="4">Čtvrtletně (4x ročně)</option>
+                <option value="12">Měsíčně (12x ročně)</option>
+                <option value="365">Denně (365krát ročně)</option>
+              </select>
+              <span class="form-help">Častější skládání dává o něco větší růst</span>
+            </div>
+          </div>
+          <div id="ciErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateCompound()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path></svg> Vypočítat růst</button>
+            <button type="button" class="btn btn-outline" onclick="resetCompound()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg> Resetovat</button>
+          </div>
+          <div id="ciResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Složené členění růstu</span>
+              <button type="button" id="ciCopyBtn" class="btn btn-outline btn-sm" title="Zkopírujte souhrn výsledků"><svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> Kopírovat souhrn</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Konečná částka</div>
+              <div class="hero-result-value" id="ciFinalValue">$0.00</div>
+              <div class="hero-result-sub">Jistina plus všechny složené úroky</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="ciInterestValue" style="color: #d97706;">$0.00</div><div class="metric-label">Získaný úrok</div></div>
+              <div class="metric-card"><div class="metric-value" id="ciPrincipalValue">$0.00</div><div class="metric-label">Investovaná jistina</div></div>
+            </div>
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">Tabulka meziročního růstu</div>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead><tr><th>Rok</th><th>Počáteční zůstatek</th><th>Zájem v tomto roce</th><th>Závěrečný zůstatek</th></tr></thead>
+                  <tbody id="ciTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Reklama na postranním panelu">
+          <span class="ad-slot-placeholder-text">Obdélník postranního panelu (300 x 250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Související kalkulačky</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="simple-interest-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Jednoduchá úroková kalkulačka <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulačka půjčky EMI <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulačka procent <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulačka slev <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Reklama v článku">
+        <span class="ad-slot-placeholder-text">Responzivní obsahový banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">Jak používat kalkulačku složeného úroku</h2>
+        <p class="content-paragraph">Složené úročení je důvodem, proč se malé, pravidelné spoření může časem rozrůst do velkých částek: úročíte nejen své původní peníze, ale i úroky, které jste již vydělali. Tato kalkulačka přesně ukazuje, jak tento efekt sněhové koule funguje pro vaše vlastní čísla, rok za rokem, bez nutnosti registrace a bez dat z vašeho prohlížeče.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Zadejte částku jistiny</strong>Zadejte počáteční částku, například 10 000, pokud investujete deset tisíc dolarů.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Zadejte roční úrokovou sazbu</strong>Zadejte roční sazbu v procentech, například 5 pro pět procent. Nechte ji na 0, abyste viděli základní linii bez růstu.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Zadejte počet let</strong>Vyberte, jak dlouho zůstanou peníze investovány, od 1 do 50 let. Delší období ukazují složený účinek mnohem zřetelněji.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Vyberte četnost skládání a vypočítejte</strong>Vyberte roční, čtvrtletní, měsíční nebo denní skládání a poté stiskněte Vypočítat růst, abyste viděli konečnou částku, získaný úrok a úplnou tabulku mezi jednotlivými roky.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Vysvětlení složeného úrokového vzorce</h2>
+        <p class="content-paragraph">Banky a investiční účty nepřidávají každý rok stejný úrok. Po každém složeném období se úrok přičte k zůstatku, takže další období se úročí o něco větší částkou. Tento opakovaný proces způsobuje, že se křivka růstu v průběhu času ohýbá nahoru, místo aby stoupala po přímce.</p>
+        <div class="formula-box">
+          <div class="formula-expression">A = P × (1 + r/n)^(n × t)</div>
+          <div class="formula-explanation">Kde:<br>• <strong>P</strong> = jistina, výchozí částka<br>• <strong>r</strong> = roční úroková sazba jako desetinné místo (5 % = 0,05)<br>• <strong>n</strong> = počet složených období za rok (1, 4, 12 nebo 365)<br>• <strong>t</strong> = čas v letech<br>• <strong>A</strong> = konečná částka<br>• <strong>Vydělaný úrok</strong> = A - P</div>
+        </div>
+        <p class="content-paragraph">Všimněte si, co vzorec odměňuje nejvíce: čas. Zdvojnásobení úrokové sazby zhruba zdvojnásobí roční zisk, ale přidáním deseti let navíc může konečná částka znásobit, protože každý nový rok se skládá ze všeho, co mu předcházelo. Proto finanční poradci tak často opakují stejnou radu: začněte brzy, byť s malým obnosem, a nechejte čas, aby to těžké udělal.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Odpracovaný příklad: 10 000 $ při 5 % po dobu 10 let</h2>
+        <p class="content-paragraph">Vezměte si jistinu 10 000 USD, roční sazbu 5 % a desetiletý horizont. Při ročním skládání je výpočet 10 000 $ × (1,05)^10, což se rovná 16 288,95 $. Získaný úrok tedy činí 6 288,95 USD, což je více než šedesát procent k původnímu vkladu, i když roční sazba byla pouhých pět procent. Přepněte frekvenci na měsíční skládání a stejné vstupy poskytnou 16 470,09 $, protože úrok se připočítává dvanáctkrát ročně místo jednou. Denní skládání tlačí výsledek na přibližně 16 487 $. Rozdíly mezi frekvencemi jsou skutečné, ale skromné; daleko větší pákou je sazba a především počet let.</p>
+        <p class="content-paragraph">Porovnejte to s jednoduchým úrokem, kde by stejných 10 000 USD při 5 % po dobu 10 let vydělalo přesně 5 000 USD, celkem tedy 15 000 USD. Skládání přidává v tomto příkladu téměř 1 289 USD navíc a rozdíl se každým rokem rozšiřuje, protože složený zůstatek roste rychleji než přímka. Po třiceti letech se rozdíl dramaticky prohloubí, a proto spoření na důchod a dlouhodobé vklady spoléhají na skládání.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Začněte brzy, i v malém</h4><p class="example-card-body">Peníze investované ve 25 letech mají o deset let více než peníze investované ve 35 letech. Tyto roky navíc jsou často důležitější než investování větší částky později, takže skromný brzký začátek obvykle překoná větší pozdní začátek.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Nechte zájem na pokoji</h4><p class="example-card-body">Každoroční výběr úroků změní složený účet na účet s jednoduchým úročením. Reinvestování každého dolaru úroku udržuje sněhovou kouli v pohybu a je to jediný nejjednodušší způsob, jak zvýšit konečnou částku.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Sledujte inflaci a poplatky</h4><p class="example-card-body">5% výnos má menší hodnotu, pokud ceny rostou o 3% ročně a poplatky za účet tiše snižují zůstatek, který se skládá. Vždy porovnejte sazbu po poplatcích a proti inflaci, nikoli pouze v procentech.</p></div>
+        </div>
+        <p class="content-paragraph">Poslední upozornění: tato kalkulačka předpokládá pevnou sazbu, žádné vklady ani výběry během období a žádné daně. Reálné účty se liší, takže výsledek považujte spíše za jasný plánovací odhad než za zaručený příslib a před připsáním peněz si ověřte přesné podmínky jakékoli banky nebo investičního produktu.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          Často kladené otázky (FAQ)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open="None">
+            <summary class="faq-question">Co je složený úrok?</summary>
+            <div class="faq-answer">Složený úrok je úrok získaný jak z původní jistiny, tak z úroků získaných v předchozích obdobích. Pokaždé, když se k zůstatku přidá úrok, v dalším období se tento větší zůstatek úročí, takže růst se postupem času zrychluje, místo aby zůstal na stejné úrovni.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Jak se liší složený úrok od jednoduchého?</summary>
+            <div class="faq-answer">Prostý úrok se počítá pouze z původní jistiny, takže každým rokem roste o stejnou částku. Složené úročení se počítá z rostoucího zůstatku, takže výše získaného úroku se každé období zvyšuje. V průběhu dlouhých časových úseků se při míchání vytváří mnohem větší konečné množství.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Opravdu záleží na frekvenci skládání?</summary>
+            <div class="faq-answer">Ano, ale méně než čas a rychlost. Přechod z ročního na měsíční skládání na 10 000 USD při 5 % po dobu 10 let zvyšuje konečnou částku z 16 288,95 USD na 16 470,09 USD. Denní skládání přidává jen trochu víc. Na frekvenci záleží, ale mnohem důležitější je začít brzy a vybrat si dobrou sazbu.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Co se stane, když je úroková sazba 0 %?</summary>
+            <div class="faq-answer">Pokud je sazba 0 %, nevydělává se žádný úrok a konečná částka se rovná jistině bez ohledu na frekvenci skládání. Kalkulačka to zvládá správně: získaný úrok ukazuje 0,00 USD a tabulka rok od roku zůstane stejná.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Jsou moje finanční údaje někde uloženy nebo odeslány?</summary>
+            <div class="faq-answer">Ne. OmniTools běží výhradně ve vašem prohlížeči. Vaše jistina, sazba a roky nejsou nikdy odeslány na server, uloženy v databázi ani sdíleny s nikým.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools poskytuje bezplatné, jednoduché online kalkulačky a nástroje zaměřené na soukromí pro finance, produktivitu a vzdělávání.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Trendové nástroje</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Kalkulačka věku</a></li>
+            <li><a href="bmi-calculator.html">Sledování BMI</a></li>
+            <li><a href="loan-calculator.html">Kalkulačka půjčky EMI</a></li>
+            <li><a href="password-generator.html">Generátor hesel</a></li>
+            <li><a href="word-counter.html">Počítadlo slov</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utility</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Kalkulačka procent</a></li>
+            <li><a href="discount-calculator.html">Kalkulačka slev</a></li>
+            <li><a href="unit-converter.html">Převodník jednotek</a></li>
+            <li><a href="date-calculator.html">Datum rozdíl</a></li>
+            <li><a href="case-converter.html">Převaděč textových písmen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Právní informace a informace</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">O nás</a></li>
+            <li><a href="../contact.html">Kontaktujte nás</a></li>
+            <li><a href="../privacy-policy.html">Zásady ochrany osobních údajů</a></li>
+            <li><a href="../terms.html">Podmínky služby</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools. Všechna práva vyhrazena. Bezplatné online nástroje pro každého.</p>
+        <div class="footer-lang-select">
+          <span>Jazyky:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var pInput = document.getElementById('ciPrincipal');
+  var rInput = document.getElementById('ciRate');
+  var yInput = document.getElementById('ciYears');
+  var fSelect = document.getElementById('ciFreq');
+  var resultsBox = document.getElementById('ciResultsBox');
+  var errorBox = document.getElementById('ciErrorBox');
+  var copyBtn = document.getElementById('ciCopyBtn');
+  [pInput, rInput, yInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateCompound(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('cs-CZ', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeCompound = function(P, r, years, n) {
+    var finalAmt = P * Math.pow(1 + (r / 100) / n, n * years);
+    var rows = [];
+    var prevT = 0; var prevBal = P;
+    var times = [];
+    var full = Math.floor(years);
+    for (var y = 1; y <= full; y++) { times.push(y); }
+    if (years > full) { times.push(years); }
+    for (var i = 0; i < times.length; i++) {
+      var t = times[i];
+      var bal = P * Math.pow(1 + (r / 100) / n, n * t);
+      rows.push({ year: t, start: prevBal, interest: bal - prevBal, end: bal });
+      prevBal = bal; prevT = t;
+    }
+    return { final: finalAmt, interest: finalAmt - P, yearly: rows };
+  };
+  window.calculateCompound = function() {
+    var P = parseFloat(pInput.value);
+    var r = parseFloat(rInput.value);
+    var years = parseFloat(yInput.value);
+    var n = parseInt(fSelect.value, 10);
+    if (isNaN(P) || isNaN(r) || isNaN(years) || P <= 0 || r < 0 || years <= 0) {
+      showError('Zadejte prosím platné kladné hodnoty pro jistinu, sazbu a roky. Sazba může být 0.');
+      return;
+    }
+    if (P > 100000000) { showError('Jistina nesmí přesáhnout 100 000 000.'); return; }
+    if (r > 50) { showError('Roční úroková sazba nesmí přesáhnout 50 %.'); return; }
+    if (years > 50) { showError('Roky nesmí přesáhnout 50.'); return; }
+    hideError();
+    var res = computeCompound(P, r, years, n);
+    document.getElementById('ciFinalValue').textContent = fmt(res.final);
+    document.getElementById('ciInterestValue').textContent = fmt(res.interest);
+    document.getElementById('ciPrincipalValue').textContent = fmt(P);
+    var tbody = document.getElementById('ciTableBody');
+    if (tbody) {
+      tbody.innerHTML = '';
+      res.yearly.forEach(function(row) {
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td><strong>Year ' + row.year + '</strong></td><td>' + fmt(row.start) + '</td><td>' + fmt(row.interest) + '</td><td>' + fmt(row.end) + '</td>';
+        tbody.appendChild(tr);
+      });
+    }
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'Složené úročení: ředitel ' + fmt(P) + ' na ' + r + '% pro ' + years + ' let. Konečná částka: ' + fmt(res.final) + ', Získaný úrok: ' + fmt(res.interest) + '. Vypočítáno pomocí OmniTools.'); }
+  };
+  window.resetCompound = function() {
+    pInput.value = ''; rInput.value = ''; yInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('Složený přehled úroků zkopírován do schránky!'); }).catch(function() { prompt('Kopírovat shrnutí:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>
