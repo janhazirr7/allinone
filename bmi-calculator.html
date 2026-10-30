@@ -13,6 +13,34 @@
   <link rel="canonical" href="https://janhazirr7.github.io/allinone/bmi-calculator.html">
   <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/bmi-calculator.html">
   <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-imc.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/bmi-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/bmi-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/bmi-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/bmi-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/bmi-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/bmi-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/bmi-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/bmi-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/bmi-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/bmi-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/bmi-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/bmi-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/bmi-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/bmi-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/bmi-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/bmi-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/bmi-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/bmi-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/bmi-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/bmi-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/bmi-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/bmi-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/bmi-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/bmi-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/bmi-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/bmi-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/bmi-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/bmi-calculator.html">
   <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/bmi-calculator.html">
 
   <!-- Open Graph / Facebook -->
@@ -110,10 +138,18 @@
           "@type": "Answer",
           "text": "BMI Prime is a dimensionless ratio of your actual BMI relative to the upper limit of normal BMI (25.0). A BMI Prime of 1.0 represents the exact upper boundary of healthy weight. Values below 0.74 suggest underweight, while values above 1.0 indicate overweight status."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my weight or personal height data saved on any server?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. OmniTools operates on a zero-server privacy architecture. All height, weight, and BMI calculations take place entirely within your local browser's JavaScript engine without transmitting or storing data."
+        }
       }
     ]
   }
-  </script>
+</script>
 </head>
 <body>
 
@@ -143,10 +179,38 @@
 
       <!-- Language Switcher & Mobile Toggle -->
       <div class="nav-actions">
-        <div class="lang-switcher" aria-label="Language Selector">
-          <a href="bmi-calculator.html" class="lang-btn active" title="English">EN</a>
-          <a href="es/calculadora-de-imc.html" class="lang-btn" title="Español">ES</a>
-        </div>
+        <select id="langSelect" aria-label="Select language" onchange="window.location.href=this.value">
+          <option value="bmi-calculator.html" selected>English</option>
+          <option value="es/calculadora-de-imc.html">Español</option>
+          <option value="de/bmi-calculator.html">Deutsch</option>
+          <option value="fr/bmi-calculator.html">Français</option>
+          <option value="pt/bmi-calculator.html">Português</option>
+          <option value="it/bmi-calculator.html">Italiano</option>
+          <option value="ru/bmi-calculator.html">Русский</option>
+          <option value="nl/bmi-calculator.html">Nederlands</option>
+          <option value="pl/bmi-calculator.html">Polski</option>
+          <option value="sv/bmi-calculator.html">Svenska</option>
+          <option value="no/bmi-calculator.html">Norsk</option>
+          <option value="da/bmi-calculator.html">Dansk</option>
+          <option value="fi/bmi-calculator.html">Suomi</option>
+          <option value="id/bmi-calculator.html">Bahasa Indonesia</option>
+          <option value="tr/bmi-calculator.html">Türkçe</option>
+          <option value="vi/bmi-calculator.html">Tiếng Việt</option>
+          <option value="th/bmi-calculator.html">ไทย</option>
+          <option value="ms/bmi-calculator.html">Bahasa Melayu</option>
+          <option value="tl/bmi-calculator.html">Filipino</option>
+          <option value="hi/bmi-calculator.html">हिन्दी</option>
+          <option value="ur/bmi-calculator.html">اردو</option>
+          <option value="ar/bmi-calculator.html">العربية</option>
+          <option value="fa/bmi-calculator.html">فارسی</option>
+          <option value="he/bmi-calculator.html">עברית</option>
+          <option value="ja/bmi-calculator.html">日本語</option>
+          <option value="ko/bmi-calculator.html">한국어</option>
+          <option value="zh/bmi-calculator.html">简体中文</option>
+          <option value="zh-TW/bmi-calculator.html">繁體中文</option>
+          <option value="el/bmi-calculator.html">Ελληνικά</option>
+          <option value="cs/bmi-calculator.html">Čeština</option>
+        </select>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           ☰
         </button>
@@ -686,8 +750,36 @@
         <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
         <div class="footer-lang-select">
           <span>Language:</span>
-          <a href="bmi-calculator.html" style="color: #60a5fa;">English</a> |
-          <a href="es/calculadora-de-imc.html">Español</a>
+          <a href="index.html" style="color: #60a5fa;">English</a> |
+          <a href="es/index.html">Español</a> |
+          <a href="de/index.html">Deutsch</a> |
+          <a href="fr/index.html">Français</a> |
+          <a href="pt/index.html">Português</a> |
+          <a href="it/index.html">Italiano</a> |
+          <a href="ru/index.html">Русский</a> |
+          <a href="nl/index.html">Nederlands</a> |
+          <a href="pl/index.html">Polski</a> |
+          <a href="sv/index.html">Svenska</a> |
+          <a href="no/index.html">Norsk</a> |
+          <a href="da/index.html">Dansk</a> |
+          <a href="fi/index.html">Suomi</a> |
+          <a href="id/index.html">Bahasa Indonesia</a> |
+          <a href="tr/index.html">Türkçe</a> |
+          <a href="vi/index.html">Tiếng Việt</a> |
+          <a href="th/index.html">ไทย</a> |
+          <a href="ms/index.html">Bahasa Melayu</a> |
+          <a href="tl/index.html">Filipino</a> |
+          <a href="hi/index.html">हिन्दी</a> |
+          <a href="ur/index.html">اردو</a> |
+          <a href="ar/index.html">العربية</a> |
+          <a href="fa/index.html">فارسی</a> |
+          <a href="he/index.html">עברית</a> |
+          <a href="ja/index.html">日本語</a> |
+          <a href="ko/index.html">한국어</a> |
+          <a href="zh/index.html">简体中文</a> |
+          <a href="zh-TW/index.html">繁體中文</a> |
+          <a href="el/index.html">Ελληνικά</a> |
+          <a href="cs/index.html">Čeština</a>
         </div>
       </div>
     </div>
