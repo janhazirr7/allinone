@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ตัวแปลงฐานตัวเลข - ไบนารี่ ฐานแปด ทศนิยม และเลขฐานสิบหก | OmniTools</title>
+  <meta name="description" content="แปลงตัวเลขระหว่างไบนารี ฐานแปด ทศนิยม และเลขฐานสิบหกได้ทันที ป้อนค่าในฐานใดๆ และดูทั้ง 4 รูปแบบพร้อมกัน พร้อมการตรวจสอบความถูกต้องของตัวเลข">
+  <meta name="keywords" content="ตัวแปลงฐานตัวเลข, ไบนารีเป็นทศนิยม, ทศนิยมเป็นฐานสิบหก, ไบนารีเป็นเลขฐานสิบหก, ตัวแปลงฐานแปด">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://janhazirr7.github.io/allinone/th/number-base-converter.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/number-base-converter.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-bases-numericas.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/number-base-converter.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/number-base-converter.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/number-base-converter.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/number-base-converter.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/number-base-converter.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/number-base-converter.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/number-base-converter.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/number-base-converter.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/number-base-converter.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/number-base-converter.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/number-base-converter.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/number-base-converter.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/number-base-converter.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/number-base-converter.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/number-base-converter.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/number-base-converter.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/number-base-converter.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/number-base-converter.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/number-base-converter.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/number-base-converter.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/number-base-converter.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/number-base-converter.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/number-base-converter.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/number-base-converter.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/number-base-converter.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/number-base-converter.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/number-base-converter.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/number-base-converter.html">
+
+  
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/th/number-base-converter.html">
+  <meta property="og:title" content="ตัวแปลงฐานตัวเลข - ไบนารี่ ฐานแปด ทศนิยม และเลขฐานสิบหก | OmniTools">
+  <meta property="og:description" content="แปลงตัวเลขระหว่างไบนารี ฐานแปด ทศนิยม และเลขฐานสิบหกได้ทันที ป้อนค่าในฐานใดๆ และดูทั้ง 4 รูปแบบพร้อมกัน พร้อมการตรวจสอบความถูกต้องของตัวเลข">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-number-base-converter.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ตัวแปลงฐานตัวเลข - ไบนารี่ ฐานแปด ทศนิยม และเลขฐานสิบหก | OmniTools">
+  <meta name="twitter:description" content="แปลงตัวเลขระหว่างไบนารี ฐานแปด ทศนิยม และเลขฐานสิบหกได้ทันที ป้อนค่าในฐานใดๆ และดูทั้ง 4 รูปแบบพร้อมกัน พร้อมการตรวจสอบความถูกต้องของตัวเลข">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "ตัวแปลงฐานหมายเลข OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/th/number-base-converter.html",
+  "applicationCategory": "ยูทิลิตี้ แอพพลิเคชั่น",
+  "operatingSystem": "All",
+  "browserRequirements": "ต้องใช้จาวาสคริปต์ ต้องใช้ HTML5",
+  "description": "แปลงตัวเลขระหว่างไบนารี ฐานแปด ทศนิยม และเลขฐานสิบหกได้ทันที ป้อนค่าในฐานใดๆ และดูทั้ง 4 รูปแบบพร้อมกัน พร้อมการตรวจสอบความถูกต้องของตัวเลข",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "th"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "บ้าน",
+      "item": "https://janhazirr7.github.io/allinone/th/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "เครื่องมือทางคณิตศาสตร์",
+      "item": "https://janhazirr7.github.io/allinone/th/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ตัวแปลงฐานตัวเลข",
+      "item": "https://janhazirr7.github.io/allinone/th/number-base-converter.html"
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "255 ในระบบเลขฐานสอง ฐานแปด และเลขฐานสิบหกคืออะไร",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "255 ในไบนารี่คือ 11111111 ในฐานแปดคือ 377 และในเลขฐานสิบหกคือ FF ทั้งสี่รูปแบบแสดงถึงค่าเดียวกัน มีเพียงระบบการนับเท่านั้นที่เปลี่ยนแปลง"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "เหตุใดไบนารี 102 จึงเกิดข้อผิดพลาด",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ไบนารี่ใช้เฉพาะตัวเลข 0 และ 1 ดังนั้นตัวเลข 2 จึงไม่ถูกต้องในฐาน 2 หากคุณหมายถึงเลขฐานสิบหนึ่งร้อยและสอง ให้เลือกทศนิยมเป็นฐานอินพุตก่อน"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ตัวอักษรฐานสิบหก A ถึง F คืออะไร?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "เลขฐานสิบหกต้องมีสิบหกหลัก แต่เรามีตัวเลขเพียงสิบหลัก ดังนั้นตัวอักษร A ถึง F จึงแทนค่า 10, 11, 12, 13, 14 และ 15 นั่นคือเหตุผลที่ FF หมายถึง 15 คูณ 16 บวก 15 ซึ่งก็คือ 255"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ฉันจะแปลงไบนารีเป็นเลขฐานสิบหกอย่างรวดเร็วได้อย่างไร",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "จัดกลุ่มเลขฐานสองเป็นสี่หลักจากทางขวา เติมกลุ่มซ้ายสุดด้วยศูนย์ จากนั้นแปลงแต่ละกลุ่มที่มีสี่หลักเป็นเลขฐานสิบหกหนึ่งหลัก ตัวอย่างเช่น 11111111 จัดกลุ่มเป็น 1111 1111 ซึ่งก็คือ F F"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ตัวแปลงนี้รองรับจำนวนลบหรือเศษส่วนหรือไม่",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ไม่ มันจะแปลงจำนวนเต็มที่ไม่เป็นลบได้สูงสุดถึง 64 หลัก จำนวนลบและเศษส่วนในฐานอื่นจำเป็นต้องมีการแสดงที่แตกต่างกัน เช่น ส่วนเติมเต็มของสองหรือจุดเศษส่วน ซึ่งเครื่องมือนี้ไม่ครอบคลุมถึง"
+      }
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "ตัวแปลงฐานตัวเลข - ไบนารี่ ฐานแปด ทศนิยม และเลขฐานสิบหก | OmniTools",
+  "description": "แปลงตัวเลขระหว่างไบนารี ฐานแปด ทศนิยม และเลขฐานสิบหกได้ทันที ป้อนค่าในฐานใดๆ และดูทั้ง 4 รูปแบบพร้อมกัน พร้อมการตรวจสอบความถูกต้องของตัวเลข",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "กรอกหมายเลขของคุณ",
+      "text": "พิมพ์จำนวนเต็มที่ไม่ใช่จำนวนลบ เช่น 255 หรือ FF"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "เลือกฐานของมัน",
+      "text": "เลือกไบนารี ฐานแปด ทศนิยม หรือฐานสิบหกเป็นฐานอินพุต"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "แปลงและเปรียบเทียบ",
+      "text": "กด Convert เพื่อดูค่าในฐานทั้งสี่พร้อมกัน"
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="หน้าแรกของ OmniTools">
+        <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="การนำทางหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">เครื่องมือทั้งหมด</a></li>
+          <li><a href="age-calculator.html">คำนวณอายุ</a></li>
+          <li><a href="bmi-calculator.html">ตัวติดตามค่าดัชนีมวลกาย</a></li>
+          <li><a href="loan-calculator.html">สินเชื่ออีเอ็มไอ</a></li>
+          <li><a href="../about.html">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="ตัวเลือกภาษา" onchange="window.location.href=this.value">
+          <option value="../number-base-converter.html">English</option>
+          <option value="../es/conversor-de-bases-numericas.html">Español</option>
+          <option value="../de/number-base-converter.html">Deutsch</option>
+          <option value="../fr/number-base-converter.html">Français</option>
+          <option value="../pt/number-base-converter.html">Português</option>
+          <option value="../it/number-base-converter.html">Italiano</option>
+          <option value="../ru/number-base-converter.html">Русский</option>
+          <option value="../nl/number-base-converter.html">Nederlands</option>
+          <option value="../pl/number-base-converter.html">Polski</option>
+          <option value="../sv/number-base-converter.html">Svenska</option>
+          <option value="../no/number-base-converter.html">Norsk</option>
+          <option value="../da/number-base-converter.html">Dansk</option>
+          <option value="../fi/number-base-converter.html">Suomi</option>
+          <option value="../id/number-base-converter.html">Bahasa Indonesia</option>
+          <option value="../tr/number-base-converter.html">Türkçe</option>
+          <option value="../vi/number-base-converter.html">Tiếng Việt</option>
+          <option value="number-base-converter.html" selected>ไทย</option>
+          <option value="../ms/number-base-converter.html">Bahasa Melayu</option>
+          <option value="../tl/number-base-converter.html">Filipino</option>
+          <option value="../hi/number-base-converter.html">हिन्दी</option>
+          <option value="../ur/number-base-converter.html">اردو</option>
+          <option value="../ar/number-base-converter.html">العربية</option>
+          <option value="../fa/number-base-converter.html">فارسی</option>
+          <option value="../he/number-base-converter.html">עברית</option>
+          <option value="../ja/number-base-converter.html">日本語</option>
+          <option value="../ko/number-base-converter.html">한국어</option>
+          <option value="../zh/number-base-converter.html">简体中文</option>
+          <option value="../zh-TW/number-base-converter.html">繁體中文</option>
+          <option value="../el/number-base-converter.html">Ελληνικά</option>
+          <option value="../cs/number-base-converter.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="สลับเมนูการนำทาง" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="https://janhazirr7.github.io/allinone/">บ้าน</a></li>
+          <li><a href="index.html">เครื่องมือทั้งหมด</a></li>
+          <li aria-current="page">ตัวแปลงฐานตัวเลข</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">ตัวแปลงฐานตัวเลข</h1>
+        <p class="tool-header-desc">แปลงตัวเลขระหว่างไบนารี ฐานแปด ทศนิยม และเลขฐานสิบหกได้ทันที ป้อนค่าในฐานใดๆ และดูทั้ง 4 รูปแบบพร้อมกัน พร้อมการตรวจสอบความถูกต้องของตัวเลข</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="โฆษณาลีดเดอร์บอร์ด">
+        <span class="ad-slot-placeholder-text">โฆษณาลีดเดอร์บอร์ดที่ปรับเปลี่ยนตามอุปกรณ์ (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+          <div class="widget-form-grid">
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="baseValue" class="form-label"><span>ค่าที่จะแปลง</span><span class="label-hint">ที่จำเป็น</span></label>
+                <input type="text" id="baseValue" class="form-input" placeholder="เช่น 255" maxlength="64">
+                <span class="form-help">เฉพาะตัวเลขที่ถูกต้องสำหรับฐานที่เลือกเท่านั้น</span>
+              </div>
+              <div class="form-group">
+                <label for="baseFrom" class="form-label"><span>ฐานอินพุต</span></label>
+                <select id="baseFrom" class="form-select">
+                  <option value="2">ไบนารี่ (ฐาน 2)</option>
+                  <option value="8">ฐานแปด (ฐาน 8)</option>
+                  <option value="10" selected="None">ทศนิยม (ฐาน 10)</option>
+                  <option value="16">เลขฐานสิบหก (ฐาน 16)</option>
+                </select>
+                <span class="form-help">&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div id="baseErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="convertBases()">แปลง</button>
+            <button type="button" class="btn btn-outline" onclick="resetBases()">รีเซ็ต</button>
+          </div>
+          <div id="baseResultsBox" class="results-box">
+            <div class="results-header"><span class="results-title">ฐานทั้งสี่พร้อมกัน</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">ค่าทศนิยม</div>
+              <div class="hero-result-value" id="baseHeroValue">-</div>
+            </div>
+            <div class="metrics-grid" style="margin-bottom: 0;">
+              <div class="metric-card"><div class="metric-value" id="baseBin" style="word-break: break-all;">-</div><div class="metric-label">ไบนารี่</div></div>
+              <div class="metric-card"><div class="metric-value" id="baseOct" style="word-break: break-all;">-</div><div class="metric-label">เลขฐานแปด</div></div>
+              <div class="metric-card"><div class="metric-value" id="baseDec" style="word-break: break-all;">-</div><div class="metric-label">ทศนิยม</div></div>
+              <div class="metric-card"><div class="metric-value" id="baseHex" style="word-break: break-all;">-</div><div class="metric-label">เลขฐานสิบหก</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="โฆษณาแถบด้านข้าง">
+          <span class="ad-slot-placeholder-text">สี่เหลี่ยมผืนผ้าแถบด้านข้าง (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">เครื่องคิดเลขที่เกี่ยวข้อง</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณเปอร์เซ็นต์ <span>→</span></a></li><li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณส่วนลดและภาษีการขาย <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณอายุและเหตุการณ์สำคัญ <span>→</span></a></li><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">ตัวติดตามดัชนีมวลกาย <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="โฆษณาในบทความ">
+        <span class="ad-slot-placeholder-text">แบนเนอร์เนื้อหาแบบตอบสนอง (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">วิธีใช้ตัวแปลงฐานตัวเลข</h2>
+        <p class="content-paragraph">คอมพิวเตอร์ โปรแกรมเมอร์ และวิศวกรอิเล็กทรอนิกส์สลับระหว่างฐานตัวเลขอยู่ตลอดเวลา ได้แก่ ฐานสองสำหรับฮาร์ดแวร์ ฐานแปดสำหรับระบบเก่าและการอนุญาตไฟล์ ทศนิยมสำหรับเลขคณิตในชีวิตประจำวัน และเลขฐานสิบหกเป็นชวเลขแบบย่อสำหรับไบนารี ตัวแปลงนี้ใช้ตัวเลขในฐานใดฐานหนึ่งจากสี่ฐานนั้น และแสดงค่าทั้งสี่ฐานทันที ดังนั้นคุณจึงไม่ต้องแปลงสองครั้งหรือสงสัยว่าตัวเลขในฐานที่คุณเลือกนั้นถูกกฎหมายหรือไม่</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>พิมพ์หมายเลขของคุณ</strong>ป้อนค่าในช่องแรก เช่น 255, 1010 หรือ FF จำนวนเต็มที่ไม่ใช่ลบเท่านั้น เครื่องหมายและจุดทศนิยมไม่ได้เป็นส่วนหนึ่งของฐานจำนวนเต็มเหล่านี้</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>บอกตัวแปลงว่ามันอยู่ในฐานไหน</strong>เลือกไบนารี ฐานแปด ทศนิยม หรือเลขฐานสิบหกจากเมนูแบบเลื่อนลง เรื่องนี้สำคัญ: 1,010 หมายถึงสิบในรูปแบบไบนารี แต่หนึ่งพันสิบเป็นทศนิยม</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>กด Convert และอ่านผลลัพธ์ทั้งสี่รายการ</strong>ค่าไบนารี ฐานแปด ทศนิยม และเลขฐานสิบหกจะปรากฏขึ้นพร้อมกัน โดยไฮไลต์ค่าทศนิยม เพื่อให้คุณสามารถคัดลอกโค้ดหรือการบ้านในรูปแบบใดก็ได้</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>หากมีข้อผิดพลาดปรากฏขึ้น ให้ตรวจสอบตัวเลขของคุณ</strong>แต่ละฐานอนุญาตให้ใช้เฉพาะตัวเลขบางตัวเท่านั้น ไบนารี่อนุญาตเพียง 0 และ 1 ดังนั้น 102 จึงถูกปฏิเสธ ฐานแปดอนุญาตให้ 0 ถึง 7 ดังนั้น 89 จึงถูกปฏิเสธ เลขฐานสิบหกอนุญาตให้ 0 ถึง 9 และ A ถึง F ดังนั้น G จึงถูกปฏิเสธ</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">ฐานตัวเลขคืออะไร และเหตุใดเราจึงมีมากกว่าหนึ่งฐาน?</h2>
+        <p class="content-paragraph">ฐานจำนวนหรือที่เรียกว่า Radix คือจำนวนหลักที่แตกต่างกันซึ่งระบบการนับใช้ก่อนที่จะย้ายไปยังตำแหน่งใหม่ ทศนิยม ซึ่งเป็นระบบที่เราเรียนรู้ตั้งแต่เด็กๆ ใช้ตัวเลขสิบหลัก (0 ถึง 9) เพราะมนุษย์มีสิบนิ้ว แต่ละตำแหน่งมีค่าเป็นสิบเท่าของตำแหน่งทางด้านขวา: ใน 255 ตัวเลขหมายถึง 2 ร้อย + 5 สิบ + 5 หลัก ไบนารี่ใช้ตัวเลขเพียงสองหลักคือ 0 และ 1 เนื่องจากฮาร์ดแวร์คอมพิวเตอร์ถูกสร้างขึ้นจากสวิตช์ที่เปิดหรือปิดอยู่ ตำแหน่งไบนารีแต่ละตำแหน่งมีค่าเป็นสองเท่าของตำแหน่งทางด้านขวา ดังนั้น 1010 จึงหมายถึง 8 + 0 + 2 + 0 = 10 ตำแหน่งฐานแปดใช้ตัวเลขแปดหลัก 0 ถึง 7 และเลขฐานสิบหกใช้สิบหก: 0 ถึง 9 บวกตัวอักษร A ถึง F สำหรับค่าสิบถึงสิบห้า</p>
+        <p class="content-paragraph">เลขฐานสิบหกมีอยู่เพื่อความสะดวกของมนุษย์ในการอ่านไบนารีเป็นหลัก เลขฐานสิบหกหนึ่งหลักตรงกับเลขฐานสองสี่หลักพอดี ดังนั้นสตริงไบนารี่แบบยาวเช่น 11111111 จะยุบลงใน FF อย่างเรียบร้อย นั่นคือสาเหตุที่คุณเห็นเลขฐานสิบหกทุกที่ในการคำนวณ รหัสสีบนเว็บ เช่น #FF5733 จริงๆ แล้วเป็นเลขฐานสิบหกสามไบต์สำหรับสีแดง เขียว และน้ำเงิน ที่อยู่หน่วยความจำจะแสดงเป็นเลขฐานสิบหก และวิศวกรเครือข่ายจะอ่านที่อยู่อุปกรณ์ในรูปแบบเลขฐานสิบหก Octal มีบทบาทคล้ายกันในการประมวลผลในยุคแรกๆ เมื่อเครื่องจักรใช้ขนาดคำที่หารด้วยสามบิต และยังคงปรากฏในสิทธิ์อนุญาตไฟล์ Unix โดยที่ค่าเช่น 755 จะเข้ารหัสสิทธิ์ในการอ่าน เขียน และดำเนินการสำหรับเจ้าของ กลุ่ม และผู้อื่น</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>ฐาน</th><th>อนุญาตให้ใช้ตัวเลข</th><th>ตัวอย่าง</th><th>ค่าทศนิยม</th></tr></thead><tbody>
+        <tr><td><strong>ไบนารี (2)</strong></td><td>0, 1</td><td>11111111</td><td>255</td></tr>
+        <tr><td><strong>ออกตัล (8)</strong></td><td>0 ถึง 7</td><td>377</td><td>255</td></tr>
+        <tr><td><strong>ทศนิยม (10)</strong></td><td>0 ถึง 9</td><td>255</td><td>255</td></tr>
+        <tr><td><strong>เลขฐานสิบหก (16)</strong></td><td>0 ถึง 9, A ถึง F</td><td>เอฟเอฟ</td><td>255</td></tr>
+        </tbody></table></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">การแปลงด้วยมือ: สองตัวอย่างที่ใช้งานได้</h2>
+        <p class="content-paragraph">การแปลงเลขฐานสองเป็นทศนิยมด้วยมือจะสอนแนวคิดเกี่ยวกับค่าสถานที่ได้ดีกว่าคำจำกัดความใดๆ เอา 101101 เมื่ออ่านจากทางขวา ตำแหน่งจะมีค่า 1, 2, 4, 8, 16 และ 32 ตัวเลขคือ 1, 0, 1, 1, 0, 1 จากทางขวา ดังนั้นค่าคือ 1 + 4 + 8 + 32 = 45 การแปลงทศนิยมเป็นไบนารี่ไปทางอื่น: หารด้วย 2 ซ้ำแล้วบันทึกเศษที่เหลือ สำหรับ 45 เศษที่เหลือคือ 1, 0, 1, 1, 0, 1 และการอ่านย้อนหลังจะได้ 101101 เพื่อยืนยันการแปลงครั้งแรก เลขฐานสิบหกทำงานในลักษณะเดียวกันกับกำลังสิบหก: 1A3 หมายถึง 1 คูณ 256 บวก A (10) คูณ 16 บวก 3 ซึ่งก็คือ 256 + 160 + 3 = 419</p>
+        <p class="content-paragraph">ทางลัดด่วนเชื่อมต่อไบนารี ฐานแปด และเลขฐานสิบหกโดยไม่ผ่านจุดทศนิยม จัดกลุ่มเลขฐานสองเป็นสามจากทางขวาเป็นฐานแปด หรือสี่เป็นเลขฐานสิบหก แล้วแปลงแต่ละกลุ่ม ตัวอย่างเช่น 101011110 จะกลายเป็น 101 011 110 ในกลุ่มฐานแปด ซึ่งก็คือ 5 3 6 และ 1 0101 1110 ในกลุ่มเลขฐานสิบหก ซึ่งก็คือ 1 5 E ดังนั้นค่าจะเป็น 536 ในฐานแปด และ 15E ในฐานสิบหก นักเรียนมักจะทำผิดสองข้อที่นี่: ลืมวางกลุ่มซ้ายสุดด้วยเลขศูนย์นำหน้า และกลุ่มการอ่านจากด้านซ้ายแทนที่จะเป็นด้านขวา ทั้งสองเปลี่ยนคำตอบ ดังนั้นให้เริ่มจัดกลุ่มที่หลักขวาสุดเสมอ</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">เคล็ดลับการปฏิบัติและข้อผิดพลาดทั่วไป</h2>
+        <p class="content-paragraph">อันดับแรก ให้ระบุฐานเสมอเมื่อแบ่งปันตัวเลขที่อาจคลุมเครือ: การเขียน 1010 เพียงอย่างเดียวไม่ได้บอกใครว่าคุณหมายถึงสิบหรือหนึ่งพันสิบ ซึ่งเป็นสาเหตุที่โปรแกรมเมอร์เขียนคำนำหน้า เช่น 0b1010 สำหรับไบนารี่และ 0xFF สำหรับเลขฐานสิบหก ประการที่สอง จำไว้ว่าศูนย์นำหน้าจะไม่เปลี่ยนค่า ดังนั้น 0001010 ในไบนารี่จึงยังคงเป็นสิบ พวกมันมักจะถูกเติมลงไปเพื่อเติมตัวเลขให้มีความกว้างเรียบร้อย เช่น แปดบิต ประการที่สาม ตัวแปลงนี้รองรับเฉพาะจำนวนเต็มเท่านั้น เศษส่วนในฐานอื่นๆ ตัวเลขลบ และอินพุตที่ยาวมากเกิน 64 หลักนั้นอยู่นอกขอบเขต และผู้แปลงจะบอกคุณแทนที่จะคาดเดา สุดท้ายนี้ ทุกอย่างทำงานในเบราว์เซอร์ของคุณโดยไม่มีการส่งข้อมูล ดังนั้นคุณจึงสามารถแปลงคำตอบการบ้าน ค่าคงที่ของโค้ด และค่าสิทธิ์อนุญาตแบบส่วนตัวและบ่อยเท่าที่คุณต้องการ</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">คำถามที่พบบ่อย (FAQ)</h2>
+        <div class="faq-list">
+          <details class="faq-item" open="None">
+            <summary class="faq-question">255 ในระบบเลขฐานสอง ฐานแปด และเลขฐานสิบหกคืออะไร</summary>
+            <div class="faq-answer">255 ในไบนารี่คือ 11111111 ในฐานแปดคือ 377 และในเลขฐานสิบหกคือ FF ทั้งสี่รูปแบบแสดงถึงค่าเดียวกัน มีเพียงระบบการนับเท่านั้นที่เปลี่ยนแปลง</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">เหตุใดไบนารี 102 จึงเกิดข้อผิดพลาด</summary>
+            <div class="faq-answer">ไบนารี่ใช้เฉพาะตัวเลข 0 และ 1 ดังนั้นตัวเลข 2 จึงไม่ถูกต้องในฐาน 2 หากคุณหมายถึงเลขฐานสิบหนึ่งร้อยและสอง ให้เลือกทศนิยมเป็นฐานอินพุตก่อน</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">ตัวอักษรฐานสิบหก A ถึง F คืออะไร?</summary>
+            <div class="faq-answer">เลขฐานสิบหกต้องมีสิบหกหลัก แต่เรามีตัวเลขเพียงสิบหลัก ดังนั้นตัวอักษร A ถึง F จึงแทนค่า 10, 11, 12, 13, 14 และ 15 นั่นคือเหตุผลที่ FF หมายถึง 15 คูณ 16 บวก 15 ซึ่งก็คือ 255</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">ฉันจะแปลงไบนารีเป็นเลขฐานสิบหกอย่างรวดเร็วได้อย่างไร</summary>
+            <div class="faq-answer">จัดกลุ่มเลขฐานสองเป็นสี่หลักจากทางขวา เติมกลุ่มซ้ายสุดด้วยศูนย์ จากนั้นแปลงแต่ละกลุ่มที่มีสี่หลักเป็นเลขฐานสิบหกหนึ่งหลัก ตัวอย่างเช่น 11111111 จัดกลุ่มเป็น 1111 1111 ซึ่งก็คือ F F</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">ตัวแปลงนี้รองรับจำนวนลบหรือเศษส่วนหรือไม่</summary>
+            <div class="faq-answer">ไม่ มันจะแปลงจำนวนเต็มที่ไม่เป็นลบได้สูงสุดถึง 64 หลัก จำนวนลบและเศษส่วนในฐานอื่นจำเป็นต้องมีการแสดงที่แตกต่างกัน เช่น ส่วนเติมเต็มของสองหรือจุดเศษส่วน ซึ่งเครื่องมือนี้ไม่ครอบคลุมถึง</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools มอบเครื่องคิดเลขออนไลน์และยูทิลิตี้ฟรี น้ำหนักเบา เน้นความเป็นส่วนตัวสำหรับการเงิน ประสิทธิภาพการทำงาน และการศึกษา</p>
+        </div>
+        <div><h4 class="footer-heading">เครื่องมือที่กำลังมาแรง</h4><ul class="footer-links"><li><a href="age-calculator.html">เครื่องคำนวณอายุ</a></li><li><a href="bmi-calculator.html">ตัวติดตามค่าดัชนีมวลกาย</a></li><li><a href="loan-calculator.html">เครื่องคำนวณสินเชื่อ EMI</a></li><li><a href="password-generator.html">ตัวสร้างรหัสผ่าน</a></li><li><a href="word-counter.html">เครื่องนับคำ</a></li></ul></div>
+        <div><h4 class="footer-heading">สาธารณูปโภค</h4><ul class="footer-links"><li><a href="percentage-calculator.html">เครื่องคำนวณเปอร์เซ็นต์</a></li><li><a href="discount-calculator.html">เครื่องคำนวณส่วนลด</a></li><li><a href="unit-converter.html">ตัวแปลงหน่วย</a></li><li><a href="date-calculator.html">ความแตกต่างวันที่</a></li><li><a href="case-converter.html">ตัวแปลงกรณีข้อความ</a></li></ul></div>
+        <div><h4 class="footer-heading">กฎหมายและข้อมูล</h4><ul class="footer-links"><li><a href="../about.html">เกี่ยวกับเรา</a></li><li><a href="../contact.html">ติดต่อเรา</a></li><li><a href="../privacy-policy.html">นโยบายความเป็นส่วนตัว</a></li><li><a href="../terms.html">ข้อกำหนดในการให้บริการ</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools. สงวนลิขสิทธิ์. ยูทิลิตี้ออนไลน์ฟรีสำหรับทุกคน</p>
+        <div class="footer-lang-select">
+          <span>ภาษา:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+(function() {
+  var MSG = {"invalid": "ค่านั้นไม่ถูกต้องสำหรับฐานที่เลือก ตัวอย่างเช่น ไบนารีอนุญาตเพียง 0 และ 1 ฐานแปดอนุญาตเพียง 0 ถึง 7 และเลขฐานสิบหกอนุญาต 0 ถึง 9 และ A ถึง F"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); });
+  }
+  var PATTERNS = { 2: /^[01]+$/, 8: /^[0-7]+$/, 10: /^[0-9]+$/, 16: /^[0-9a-fA-F]+$/ };
+  function convertBase(valueStr, fromBase) {
+    if (typeof valueStr !== 'string') return null;
+    var s = valueStr.trim();
+    if (!s || s.length > 64) return null;
+    if (!PATTERNS[fromBase].test(s)) return null;
+    var big;
+    try {
+      if (fromBase === 2) big = BigInt('0b' + s);
+      else if (fromBase === 8) big = BigInt('0o' + s);
+      else if (fromBase === 16) big = BigInt('0x' + s);
+      else big = BigInt(s);
+    } catch (e) { return null; }
+    return { binary: big.toString(2), octal: big.toString(8), decimal: big.toString(10), hex: big.toString(16).toUpperCase() };
+  }
+  window.OmniTest = { convertBase: convertBase };
+  function showError(msg) { var b = document.getElementById('baseErrorBox'); if (b) { b.textContent = msg; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('baseErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  window.convertBases = function() {
+    var val = document.getElementById('baseValue').value;
+    var from = parseInt(document.getElementById('baseFrom').value, 10);
+    var r = convertBase(val, from);
+    if (r === null) { showError(MSG.invalid); return; }
+    hideError();
+    document.getElementById('baseBin').textContent = r.binary;
+    document.getElementById('baseOct').textContent = r.octal;
+    document.getElementById('baseDec').textContent = r.decimal;
+    document.getElementById('baseHex').textContent = r.hex;
+    document.getElementById('baseHeroValue').textContent = r.decimal;
+    var box = document.getElementById('baseResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetBases = function() {
+    document.getElementById('baseValue').value = '';
+    document.getElementById('baseFrom').value = '10';
+    hideError();
+    var box = document.getElementById('baseResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var vEl = document.getElementById('baseValue');
+  if (vEl) vEl.addEventListener('keydown', function(e) { if (e.key === 'Enter') convertBases(); });
+})();
+
+  </script>
+</body>
+</html>

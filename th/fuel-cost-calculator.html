@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เครื่องคำนวณต้นทุนเชื้อเพลิง - ต้นทุนเชื้อเพลิงการเดินทาง ลิตร และ MPG | OmniTools</title>
+<meta name="description" content="คำนวณค่าน้ำมันการเดินทางและเชื้อเพลิงที่ต้องการได้ทันที รองรับ L/100 กม. และ MPG โดยมีค่าใช้จ่ายต่อกิโลเมตรหรือไมล์ ฟรี เป็นส่วนตัว และใช้งานได้ในเบราว์เซอร์ของคุณ">
+<meta name="keywords" content="เครื่องคำนวณต้นทุนเชื้อเพลิง, ราคาเชื้อเพลิงการเดินทาง, เครื่องคำนวณต้นทุนก๊าซ, ลิตรต่อ 100 กม., mpg ถึงลิตร, เครื่องคำนวณปริมาณการใช้เชื้อเพลิง">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/th/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-combustible.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/fuel-cost-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/fuel-cost-calculator.html">
+
+
+
+
+<meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/th/fuel-cost-calculator.html">
+<meta property="og:title" content="เครื่องคำนวณต้นทุนเชื้อเพลิง - ต้นทุนเชื้อเพลิงการเดินทาง ลิตร และ MPG | OmniTools">
+<meta property="og:description" content="คำนวณค่าน้ำมันการเดินทางและเชื้อเพลิงที่ต้องการได้ทันที รองรับ L/100 กม. และ MPG โดยมีค่าใช้จ่ายต่อกิโลเมตรหรือไมล์ ฟรี เป็นส่วนตัว และใช้งานได้ในเบราว์เซอร์ของคุณ">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-fuel-cost-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="เครื่องคำนวณต้นทุนเชื้อเพลิง - ต้นทุนเชื้อเพลิงการเดินทาง ลิตร และ MPG | OmniTools">
+<meta name="twitter:description" content="คำนวณค่าน้ำมันการเดินทางและเชื้อเพลิงที่ต้องการได้ทันที รองรับ L/100 กม. และ MPG โดยมีค่าใช้จ่ายต่อกิโลเมตรหรือไมล์ ฟรี เป็นส่วนตัว และใช้งานได้ในเบราว์เซอร์ของคุณ">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "เครื่องคำนวณต้นทุนเชื้อเพลิง OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/th/fuel-cost-calculator.html",
+  "applicationCategory": "ใบสมัครการเงิน",
+  "operatingSystem": "All",
+  "browserRequirements": "ต้องใช้จาวาสคริปต์ ต้องใช้ HTML5",
+  "description": "คำนวณค่าน้ำมันการเดินทางและเชื้อเพลิงที่ต้องการได้ทันที รองรับ L/100 กม. และ MPG โดยมีค่าใช้จ่ายต่อกิโลเมตรหรือไมล์ ฟรี เป็นส่วนตัว และใช้งานได้ในเบราว์เซอร์ของคุณ",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "th"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "บ้าน",
+      "item": "https://janhazirr7.github.io/allinone/th/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "การเงิน",
+      "item": "https://janhazirr7.github.io/allinone/th/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "เครื่องคำนวณต้นทุนน้ำมันเชื้อเพลิง",
+      "item": "https://janhazirr7.github.io/allinone/th/fuel-cost-calculator.html"
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ฉันจะคำนวณค่าน้ำมันสำหรับการเดินทางได้อย่างไร?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "คูณระยะทางการเดินทางด้วยปริมาณการใช้รถเพื่อหาน้ำมันเชื้อเพลิงที่ต้องการ จากนั้นคูณด้วยราคาน้ำมัน ในหน่วยเมตริก: เชื้อเพลิงที่ต้องการเป็นลิตรเท่ากับระยะทางเป็นกิโลเมตรคูณลิตร/100 กม. หารด้วย 100 ในหน่วยอิมพีเรียล: เชื้อเพลิงที่ต้องการเป็นแกลลอนเท่ากับระยะทางเป็นไมล์หารด้วย MPG เครื่องคิดเลขนี้ทำทั้งสองขั้นตอนให้คุณ"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ฉันจะแปลง MPG เป็น L/100 กม. ได้อย่างไร",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "หาร 235.2145833 ด้วยตัวเลข MPG ตัวอย่างเช่น 30 MPG เท่ากับประมาณ 7.84 ลิตร/100 กม. หากต้องการแปลงวิธีอื่น ให้หาร 235.2145833 ด้วยค่า L/100 กม. ดังนั้น 7.5 ลิตร/100 กม. เท่ากับประมาณ 31.4 MPG โปรดจำไว้ว่าความสัมพันธ์นั้นตรงกันข้าม: MPG ที่สูงขึ้นและ L/100 กม. ที่ต่ำกว่าหมายถึงประสิทธิภาพที่ดีขึ้น"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ฉันจะดูอัตราการสิ้นเปลืองน้ำมันเชื้อเพลิงของรถยนต์ของฉันได้ที่ไหน?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ตรวจสอบคอมพิวเตอร์การเดินทางบนแดชบอร์ด ซึ่งโดยปกติจะแสดงตัวเลขโดยเฉลี่ยหรือคู่มือสำหรับเจ้าของรถ เพื่อให้ได้ตัวเลขที่แม่นยำที่สุด ให้วัดด้วยตัวเอง: เติมน้ำมัน รีเซ็ตมาตรวัดระยะทาง ขับตามปกติ เติมน้ำมัน และหารลิตรที่ใช้เป็นกิโลเมตรที่ขับ แล้วคูณด้วย 100"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ทำไมราคาน้ำมันจริงของฉันจึงสูงกว่าที่ประมาณการไว้?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ตัวเลขการบริโภคอย่างเป็นทางการวัดภายใต้เงื่อนไขการทดสอบ การจราจรในเมือง การสตาร์ทเครื่องขณะเครื่องเย็น ระบบปรับอากาศ การบรรทุกหนัก กล่องหลังคา แรงดันลมยางต่ำ และการเร่งความเร็วที่รวดเร็ว ทั้งหมดนี้สามารถเพิ่มการบริโภคที่แท้จริงได้ 10 ถึง 30 เปอร์เซ็นต์ การเพิ่มบัฟเฟอร์เล็กน้อยในการประมาณค่าของคุณถือเป็นการดีสำหรับการเดินทางระยะไกล"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "เครื่องคิดเลขเก็บข้อมูลการเดินทางของฉันหรือไม่?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ไม่ การคำนวณทุกครั้งจะทำงานในเบราว์เซอร์ของคุณทั้งหมด ไม่มีการส่งระยะทาง ปริมาณการใช้ หรือราคาที่คุณป้อนไปยังเซิร์ฟเวอร์หรือเก็บไว้ที่ใดก็ได้"
+      }
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "วิธีใช้เครื่องคำนวณต้นทุนเชื้อเพลิง",
+  "description": "คำนวณค่าน้ำมันการเดินทางและเชื้อเพลิงที่ต้องการได้ทันที รองรับ L/100 กม. และ MPG โดยมีค่าใช้จ่ายต่อกิโลเมตรหรือไมล์ ฟรี เป็นส่วนตัว และใช้งานได้ในเบราว์เซอร์ของคุณ",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "เลือกระบบหน่วย",
+      "text": "เลือกเมตริก (กม., ลิตร/100 กม.) หรืออิมพีเรียล (ไมล์, MPG)"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "ป้อนระยะทาง ปริมาณการใช้ และราคา",
+      "text": "พิมพ์ระยะทางการเดินทาง ปริมาณการใช้รถ และราคาน้ำมันปัจจุบัน"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "คำนวณ",
+      "text": "กดคำนวณต้นทุนเพื่อดูต้นทุนทั้งหมด เชื้อเพลิงที่ต้องการ และราคาต่อกิโลเมตรหรือไมล์"
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="หน้าแรกของ OmniTools">
+        <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="การนำทางหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">เครื่องมือทั้งหมด</a></li>
+          <li><a href="age-calculator.html">คำนวณอายุ</a></li>
+          <li><a href="bmi-calculator.html">ตัวติดตามค่าดัชนีมวลกาย</a></li>
+          <li><a href="loan-calculator.html">สินเชื่ออีเอ็มไอ</a></li>
+          <li><a href="../about.html">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="ตัวเลือกภาษา" onchange="window.location.href=this.value">
+          <option value="../fuel-cost-calculator.html">English</option>
+          <option value="../es/calculadora-de-combustible.html">Español</option>
+          <option value="../de/fuel-cost-calculator.html">Deutsch</option>
+          <option value="../fr/fuel-cost-calculator.html">Français</option>
+          <option value="../pt/fuel-cost-calculator.html">Português</option>
+          <option value="../it/fuel-cost-calculator.html">Italiano</option>
+          <option value="../ru/fuel-cost-calculator.html">Русский</option>
+          <option value="../nl/fuel-cost-calculator.html">Nederlands</option>
+          <option value="../pl/fuel-cost-calculator.html">Polski</option>
+          <option value="../sv/fuel-cost-calculator.html">Svenska</option>
+          <option value="../no/fuel-cost-calculator.html">Norsk</option>
+          <option value="../da/fuel-cost-calculator.html">Dansk</option>
+          <option value="../fi/fuel-cost-calculator.html">Suomi</option>
+          <option value="../id/fuel-cost-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/fuel-cost-calculator.html">Türkçe</option>
+          <option value="../vi/fuel-cost-calculator.html">Tiếng Việt</option>
+          <option value="fuel-cost-calculator.html" selected>ไทย</option>
+          <option value="../ms/fuel-cost-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/fuel-cost-calculator.html">Filipino</option>
+          <option value="../hi/fuel-cost-calculator.html">हिन्दी</option>
+          <option value="../ur/fuel-cost-calculator.html">اردو</option>
+          <option value="../ar/fuel-cost-calculator.html">العربية</option>
+          <option value="../fa/fuel-cost-calculator.html">فارسی</option>
+          <option value="../he/fuel-cost-calculator.html">עברית</option>
+          <option value="../ja/fuel-cost-calculator.html">日本語</option>
+          <option value="../ko/fuel-cost-calculator.html">한국어</option>
+          <option value="../zh/fuel-cost-calculator.html">简体中文</option>
+          <option value="../zh-TW/fuel-cost-calculator.html">繁體中文</option>
+          <option value="../el/fuel-cost-calculator.html">Ελληνικά</option>
+          <option value="../cs/fuel-cost-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="สลับเมนูการนำทาง" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+<li><a href="index.html">บ้าน</a></li>
+<li><a href="index.html#finance">การเงิน</a></li>
+<li aria-current="page">เครื่องคำนวณต้นทุนน้ำมันเชื้อเพลิง</li>
+</ul></div></div>
+<section class="tool-header-section"><div class="container">
+<h1 class="tool-header-title">เครื่องคำนวณต้นทุนน้ำมันเชื้อเพลิง</h1>
+<p class="tool-header-desc">คำนวณให้แน่ชัดว่าการเดินทางจะต้องใช้เชื้อเพลิงเท่าใด และคุณต้องการน้ำมันเชื้อเพลิงเท่าใดในหน่วยเมตริก (ลิตร/100 กม.) หรือหน่วยอิมพีเรียล (MPG)</p>
+</div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="โฆษณาลีดเดอร์บอร์ด"><span class="ad-slot-placeholder-text">โฆษณาลีดเดอร์บอร์ดที่ปรับเปลี่ยนตามอุปกรณ์ (728x90)</span></div></div>
+<section class="container tool-layout-container"><div><div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="fuelMode" class="form-label"><span>ระบบหน่วย</span></label>
+              <select id="fuelMode" class="form-select">
+                <option value="metric" selected="None">หน่วยเมตริก: กม. และ ลิตร/100 กม</option>
+                <option value="imperial">อิมพีเรียล: ไมล์และ MPG</option>
+              </select>
+              <span class="form-help">&nbsp;</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="fuelDistance" class="form-label"><span id="fuelDistanceLabel">ระยะทางการเดินทาง</span><span class="label-hint">ที่จำเป็น</span></label>
+                <input type="number" id="fuelDistance" class="form-input" placeholder="เช่น 500" min="0" step="any">
+                <span class="form-help">ระยะทางรวม เที่ยวเดียว หรือทั้งสองวิธีรวมกันสำหรับการเดินทางไปกลับ</span>
+              </div>
+              <div class="form-group">
+                <label for="fuelConsumption" class="form-label"><span id="fuelConsumptionLabel">ปริมาณการใช้เชื้อเพลิง</span><span class="label-hint">ที่จำเป็น</span></label>
+                <input type="number" id="fuelConsumption" class="form-input" placeholder="เช่น 7.5" min="0" step="any">
+                <span class="form-help" id="fuelConsumptionHelp">อัตราสิ้นเปลืองเฉลี่ยของยานพาหนะของคุณ เช่น 7.5 ลิตร/100 กม.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fuelPrice" class="form-label"><span id="fuelPriceLabel">ราคาน้ำมัน</span><span class="label-hint">ที่จำเป็น</span></label>
+              <input type="number" id="fuelPrice" class="form-input" placeholder="เช่น 1.80" min="0" step="any">
+              <span class="form-help" id="fuelPriceHelp">ราคาต่อลิตรที่สถานีของคุณ</span>
+            </div>
+          </div>
+          <div id="fuelErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" id="calcFuelBtn" class="btn btn-primary">คำนวณต้นทุน</button>
+            <button type="button" id="resetFuelBtn" class="btn btn-outline">รีเซ็ต</button>
+          </div>
+          <div id="fuelResultsBox" class="results-box"><div class="results-header"><span class="results-title"><svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>สรุปค่าใช้จ่ายการเดินทาง</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">ต้นทุนเชื้อเพลิงทั้งหมด</div>
+              <div class="hero-result-value" id="fuelCostValue">$0.00</div>
+              <div class="hero-result-sub">สิ่งที่คุณจะต้องจ่ายค่าน้ำมันในทริปนี้</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="fuelNeededValue">0</div><div class="metric-label">จำเป็นต้องใช้เชื้อเพลิง</div></div>
+              <div class="metric-card"><div class="metric-value" id="fuelPerUnitValue">$0.00</div><div class="metric-label" id="fuelPerUnitLabel">ต้นทุนต่อกม</div></div>
+              <div class="metric-card"><div class="metric-value" id="fuelDistanceOut">0</div><div class="metric-label">ระยะทางการเดินทาง</div></div>
+            </div>
+          </div>
+</div></div>
+<aside>
+        <div class="ad-slot ad-rectangle" aria-label="โฆษณาแถบด้านข้าง">
+          <span class="ad-slot-placeholder-text">สี่เหลี่ยมผืนผ้าแถบด้านข้าง (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">เครื่องคิดเลขที่เกี่ยวข้อง</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณเปอร์เซ็นต์ <span>→</span></a></li>
+<li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณส่วนลดและภาษีการขาย <span>→</span></a></li>
+<li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณอายุและเหตุการณ์สำคัญ <span>→</span></a></li>
+<li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">ตัวติดตามดัชนีมวลกาย <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="โฆษณาในบทความ"><span class="ad-slot-placeholder-text">แบนเนอร์เนื้อหาแบบตอบสนอง (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">วิธีใช้เครื่องคำนวณต้นทุนเชื้อเพลิง</h2>
+        <p class="content-paragraph">การเดินทางโดยรถยนต์ การเดินทางในแต่ละวัน หรือเส้นทางการจัดส่งล้วนแต่มีคำถามเดียวกันว่า จริงๆ แล้วน้ำมันเชื้อเพลิงมีราคาเท่าไร การคาดเดามักจะหมายถึงการแปลกใจอันไม่พึงประสงค์ที่ปั๊ม เครื่องคิดเลขนี้ให้คำตอบที่แน่นอนในไม่กี่วินาที จากตัวเลข 3 ตัวที่คุณรู้อยู่แล้วหรือหาได้ง่าย: คุณจะไปไกลแค่ไหน รถของคุณใช้น้ำมันไปเท่าไร และค่าน้ำมันตอนนี้เป็นเท่าใด</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>เลือกระบบหน่วยของคุณ</strong>เลือกเมตริกหากคุณวัดระยะทางเป็นกิโลเมตรและการบริโภคเป็นลิตรต่อ 100 กม. หรืออิมพีเรียลหากคุณใช้ไมล์และไมล์ต่อแกลลอน (MPG) ป้ายกำกับและหน่วยจะเปลี่ยนโดยอัตโนมัติ</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>ป้อนระยะทางการเดินทาง</strong>พิมพ์ระยะทางทั้งหมด สำหรับการเดินทางไปกลับให้เพิ่มขาทั้งสองข้างเข้าด้วยกัน ตัวอย่างเช่น การขับรถระยะทาง 250 กม. ในแต่ละเที่ยวจะเท่ากับ 500 กม.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>ป้อนปริมาณการใช้เชื้อเพลิงของคุณ</strong>ใช้ตัวเลขเฉลี่ยของรถของคุณ ซึ่งโดยปกติจะแสดงบนแผงหน้าปัดหรือในคู่มือสำหรับเจ้าของรถ รถยนต์เบนซินขนาดเล็กทั่วไปจะใช้ประมาณ 6 ถึง 8 ลิตรต่อ 100 กม. หรือประมาณ 30 ถึง 40 MPG</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>ป้อนราคาน้ำมันและคำนวณ</strong>พิมพ์ราคาปัจจุบันต่อลิตรหรือต่อแกลลอน จากนั้นกดคำนวณต้นทุน คุณจะเห็นค่าเดินทางทั้งหมด จำนวนเชื้อเพลิงที่ต้องการ และราคาต่อกิโลเมตรหรือไมล์</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">สูตรต้นทุนเชื้อเพลิง อธิบายง่ายๆ</h2>
+        <p class="content-paragraph">คณิตศาสตร์เบื้องหลังเครื่องคิดเลขนั้นตรงไปตรงมา และการทำความเข้าใจมันจะช่วยให้คุณเชื่อถือผลลัพธ์และมองเห็นข้อผิดพลาดในการป้อนข้อมูลของคุณ ในระบบเมตริก เชื้อเพลิงที่ต้องการคือระยะทางหารด้วย 100 คูณด้วยตัวเลขการบริโภค การเดินทาง 500 กม. ด้วยรถยนต์ที่ใช้ 7 ลิตรต่อ 100 กม. ต้องการ 500 หารด้วย 100 ซึ่งก็คือ 5 คูณ 7 ซึ่งก็คือ 35 ลิตร คูณ 35 ลิตรเหล่านั้นด้วยราคาปั๊ม เช่น 1.80 เหรียญสหรัฐฯ ต่อลิตร และค่าเดินทาง 63.00 เหรียญสหรัฐฯ</p>
+        <div class="formula-box"><div class="formula-expression">เชื้อเพลิงที่ต้องการ (ลิตร) = ระยะทาง (กม.) x ปริมาณการใช้ (ลิตร/100 กม.) / 100<br>ต้นทุนรวม = น้ำมันที่ต้องการ x ราคาต่อลิตร</div><div class="formula-explanation">รุ่นอิมพีเรียล: เชื้อเพลิงที่ต้องการ (แกลลอน) = ระยะทาง (ไมล์) / MPG จากนั้นต้นทุนทั้งหมด = แกลลอน x ราคาต่อแกลลอน ตัวอย่าง: 300 ไมล์ที่ 30 MPG ต้องการ 10 แกลลอน ที่ $3.50 ต่อแกลลอน นั่นคือ $35.00</div></div>
+        <p class="content-paragraph">การแปลงระหว่างทั้งสองระบบถือเป็นอุปสรรค์ทั่วไป ลิตรต่อ 100 กม. และ MPG มีความสัมพันธ์แบบผกผัน: หมายเลข MPG ที่สูงกว่าหมายถึงรถยนต์ที่มีประสิทธิภาพมากขึ้น ในขณะที่หมายเลข L/100 กม. ที่ต่ำกว่าหมายถึงสิ่งเดียวกัน ค่าคงที่การแปลงคือ 235.2145833 หากต้องการเปลี่ยน MPG เป็น L/100 กม. ให้หาร 235.2145833 ด้วยตัวเลข MPG ดังนั้น 30 MPG จะอยู่ที่ประมาณ 7.84 ลิตร/100 กม. ในทางกลับกัน ให้หาร 235.2145833 ด้วยค่า L/100 กม. ดังนั้น 7.5 ลิตร/100 กม. มีค่าประมาณ 31.4 MPG หากรถของคุณแสดงหน่วยหนึ่งและปั๊มน้ำมันหรือใบเสนอราคาเช่าใช้อีกหน่วย การแปลงนี้จะทำให้ค่าประมาณของคุณเที่ยงตรง</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">เหตุใดการใช้เชื้อเพลิงจริงของคุณจึงอาจแตกต่างกัน</h2>
+        <p class="content-paragraph">ตัวเลขการบริโภคแผงหน้าปัดเป็นค่าเฉลี่ยที่วัดภายใต้เงื่อนไขการทดสอบ และการขับขี่จริงแทบจะไม่ตรงกันทุกประการ การขับขี่ในเมืองโดยมีการหยุดและออกรถอย่างต่อเนื่องจะใช้เชื้อเพลิงมากกว่าการล่องเรือบนมอเตอร์เวย์อย่างสม่ำเสมอ การสตาร์ทด้วยความเย็น การปรับอากาศ กล่องหลังคา การบรรทุกของหนัก ยางที่เติมลมน้อย และการเร่งความเร็วอย่างดุดัน ทั้งหมดนี้ส่งผลให้อัตราการสิ้นเปลืองน้ำมันเพิ่มขึ้น บางครั้งอาจถึง 10 ถึง 30 เปอร์เซ็นต์ ด้วยเหตุนี้ จึงควรเพิ่มบัฟเฟอร์เล็กน้อยให้กับผลลัพธ์ของเครื่องคิดเลขเมื่อจัดงบประมาณการเดินทางไกล โดยเฉพาะอย่างยิ่งในฤดูหนาวหรือบนถนนบนภูเขา</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. เมืองกับมอเตอร์เวย์</h4><p class="example-card-body">รถยนต์พิกัด 6 ลิตร/100 กม. บนมอเตอร์เวย์อาจใช้ 9 ลิตร/100 กม. ในการจราจรในเมือง หากการเดินทางของคุณผสมทั้งสองอย่าง ให้ใช้ค่าเฉลี่ยผสมที่ใกล้เคียงกับการขับขี่จริงของคุณมากขึ้น หรือคำนวณแต่ละขาแยกกันและเพิ่มผลลัพธ์</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. ตรวจสอบค่าเฉลี่ยที่แท้จริงของคุณ</h4><p class="example-card-body">เติมน้ำมันรีเซ็ตมาตรวัดระยะทาง ขับตามปกติ จากนั้นเติมและแบ่งลิตรที่ใช้ไปเป็นกิโลเมตรที่ขับไป ตัวเลขที่วัดได้นั้นเหนือกว่าหมายเลขโบรชัวร์ใดๆ และทำให้การประมาณการในอนาคตแม่นยำยิ่งขึ้นมาก</p></div>
+          <div class="example-card"><h4 class="example-card-title">3.ประหยัดน้ำมัน ประหยัดเงิน</h4><p class="example-card-body">การเร่งความเร็วอย่างนุ่มนวล ความเร็วคงที่ แรงดันลมยางที่ถูกต้อง และการถอดกล่องหลังคาออกเมื่อไม่ต้องการ ก็สามารถลดอัตราการสิ้นเปลืองเชื้อเพลิงได้อย่างเห็นได้ชัด ในการเดินทางระยะทาง 500 กม. ลดลงจาก 8 เป็น 7 ลิตร/100 กม. ช่วยประหยัดได้ 5 ลิตร ซึ่งเป็นเงินจริงในทุกการเดินทาง</p></div>
+        </div>
+        <p class="content-paragraph">เครื่องคิดเลขยังมีประโยชน์มากกว่าการเดินทางส่วนตัว พนักงานขับรถส่งของสามารถกำหนดราคางานได้อย่างแม่นยำ ครอบครัวสามารถแบ่งค่าใช้จ่ายในการเดินทางระหว่างผู้โดยสารได้อย่างยุติธรรม และใครก็ตามที่เปรียบเทียบรถสองคันจะเห็นว่าความแตกต่างด้านประสิทธิภาพนั้นคุ้มค่าเป็นเงินสดในหนึ่งปีอย่างไร คูณระยะทางรายสัปดาห์ของคุณด้วย 52 แล้วคำนวณโดยใช้เครื่องคิดเลข แล้วผลต่างค่าน้ำมันประจำปีระหว่างรถที่กระหายน้ำกับรถที่มีประสิทธิภาพจะกลายเป็นรูปธรรมแทนที่จะเป็นนามธรรม การคำนวณทั้งหมดเกิดขึ้นแบบส่วนตัวในเบราว์เซอร์ของคุณ โดยไม่มีการส่งข้อมูลไปที่ใด คุณจึงสามารถวางแผนการเดินทางได้อย่างมั่นใจ</p>
+      </section>
+<section class="content-section"><h2 class="content-heading"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> คำถามที่พบบ่อย (FAQ)</h2>
+<div class="faq-list">
+<details class="faq-item" open="None">
+<summary class="faq-question">ฉันจะคำนวณค่าน้ำมันสำหรับการเดินทางได้อย่างไร?</summary>
+<div class="faq-answer">คูณระยะทางการเดินทางด้วยปริมาณการใช้รถเพื่อหาน้ำมันเชื้อเพลิงที่ต้องการ จากนั้นคูณด้วยราคาน้ำมัน ในหน่วยเมตริก: เชื้อเพลิงที่ต้องการเป็นลิตรเท่ากับระยะทางเป็นกิโลเมตรคูณลิตร/100 กม. หารด้วย 100 ในหน่วยอิมพีเรียล: เชื้อเพลิงที่ต้องการเป็นแกลลอนเท่ากับระยะทางเป็นไมล์หารด้วย MPG เครื่องคิดเลขนี้ทำทั้งสองขั้นตอนให้คุณ</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">ฉันจะแปลง MPG เป็น L/100 กม. ได้อย่างไร</summary>
+<div class="faq-answer">หาร 235.2145833 ด้วยตัวเลข MPG ตัวอย่างเช่น 30 MPG เท่ากับประมาณ 7.84 ลิตร/100 กม. หากต้องการแปลงวิธีอื่น ให้หาร 235.2145833 ด้วยค่า L/100 กม. ดังนั้น 7.5 ลิตร/100 กม. เท่ากับประมาณ 31.4 MPG โปรดจำไว้ว่าความสัมพันธ์นั้นตรงกันข้าม: MPG ที่สูงขึ้นและ L/100 กม. ที่ต่ำกว่าหมายถึงประสิทธิภาพที่ดีขึ้น</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">ฉันจะดูอัตราการสิ้นเปลืองน้ำมันเชื้อเพลิงของรถยนต์ของฉันได้ที่ไหน?</summary>
+<div class="faq-answer">ตรวจสอบคอมพิวเตอร์การเดินทางบนแดชบอร์ด ซึ่งโดยปกติจะแสดงตัวเลขโดยเฉลี่ยหรือคู่มือสำหรับเจ้าของรถ เพื่อให้ได้ตัวเลขที่แม่นยำที่สุด ให้วัดด้วยตัวเอง: เติมน้ำมัน รีเซ็ตมาตรวัดระยะทาง ขับตามปกติ เติมน้ำมัน และหารลิตรที่ใช้เป็นกิโลเมตรที่ขับ แล้วคูณด้วย 100</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">ทำไมราคาน้ำมันจริงของฉันจึงสูงกว่าที่ประมาณการไว้?</summary>
+<div class="faq-answer">ตัวเลขการบริโภคอย่างเป็นทางการวัดภายใต้เงื่อนไขการทดสอบ การจราจรในเมือง การสตาร์ทเครื่องขณะเครื่องเย็น ระบบปรับอากาศ การบรรทุกหนัก กล่องหลังคา แรงดันลมยางต่ำ และการเร่งความเร็วที่รวดเร็ว ทั้งหมดนี้สามารถเพิ่มการบริโภคที่แท้จริงได้ 10 ถึง 30 เปอร์เซ็นต์ การเพิ่มบัฟเฟอร์เล็กน้อยในการประมาณค่าของคุณถือเป็นการดีสำหรับการเดินทางระยะไกล</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">เครื่องคิดเลขเก็บข้อมูลการเดินทางของฉันหรือไม่?</summary>
+<div class="faq-answer">ไม่ การคำนวณทุกครั้งจะทำงานในเบราว์เซอร์ของคุณทั้งหมด ไม่มีการส่งระยะทาง ปริมาณการใช้ หรือราคาที่คุณป้อนไปยังเซิร์ฟเวอร์หรือเก็บไว้ที่ใดก็ได้</div>
+</details>
+</div>
+</section></article></main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools มอบเครื่องคิดเลขออนไลน์และยูทิลิตี้ฟรี น้ำหนักเบา เน้นความเป็นส่วนตัวสำหรับการเงิน ประสิทธิภาพการทำงาน และการศึกษา</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">เครื่องมือที่กำลังมาแรง</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">เครื่องคำนวณอายุ</a></li>
+<li><a href="bmi-calculator.html">ตัวติดตามค่าดัชนีมวลกาย</a></li>
+<li><a href="loan-calculator.html">เครื่องคำนวณสินเชื่อ EMI</a></li>
+<li><a href="password-generator.html">ตัวสร้างรหัสผ่าน</a></li>
+<li><a href="word-counter.html">เครื่องนับคำ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">สาธารณูปโภค</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">เครื่องคำนวณเปอร์เซ็นต์</a></li>
+<li><a href="discount-calculator.html">เครื่องคำนวณส่วนลด</a></li>
+<li><a href="unit-converter.html">ตัวแปลงหน่วย</a></li>
+<li><a href="date-calculator.html">ความแตกต่างวันที่</a></li>
+<li><a href="case-converter.html">ตัวแปลงกรณีข้อความ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">กฎหมายและข้อมูล</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">เกี่ยวกับเรา</a></li>
+<li><a href="../contact.html">ติดต่อเรา</a></li>
+<li><a href="../privacy-policy.html">นโยบายความเป็นส่วนตัว</a></li>
+<li><a href="../terms.html">ข้อกำหนดในการให้บริการ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools. สงวนลิขสิทธิ์. ยูทิลิตี้ออนไลน์ฟรีสำหรับทุกคน</p>
+        <div class="footer-lang-select">
+          <span>ภาษา:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+
+(function() {
+  var MSG = {"invalid": "โปรดป้อนค่าบวกที่ถูกต้องสำหรับระยะทาง ปริมาณการใช้ และราคา", "tooFar": "ระยะทางต้องไม่เกิน 100,000 กม. หรือไมล์", "badCons": "อัตราสิ้นเปลืองต้องอยู่ระหว่าง 0.1 ถึง 100 ลิตร/100 กม. หรือระหว่าง 1 ถึง 200 MPG", "badPrice": "ราคาน้ำมันต้องไม่เกิน 100 ต่อลิตรหรือแกลลอน", "distKm": "ระยะทาง (กม.)", "distMi": "ระยะทาง (ไมล์)", "consL": "อัตราสิ้นเปลือง (ลิตร/100 กม.)", "consMpg": "การบริโภค (MPG)", "priceL": "ราคาต่อลิตร ($)", "priceG": "ราคาต่อแกลลอน ($)", "perKm": "ต้นทุนต่อกม", "perMi": "ราคาต่อไมล์", "unitL": "litres", "unitG": "gallons", "consHelpM": "อัตราสิ้นเปลืองเฉลี่ยของยานพาหนะของคุณ เช่น 7.5 ลิตร/100 กม.", "consHelpI": "ไมล์รถยนต์ของคุณต่อแกลลอน เช่น 30 MPG", "priceHelpM": "ราคาต่อลิตรที่สถานีของคุณ", "priceHelpI": "ราคาต่อแกลลอนที่สถานีของคุณ"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  function fuelCostCalc(distance, mode, consumption, price) {
+    if (!(distance > 0) || !(consumption > 0) || !(price > 0)) { throw new Error(MSG.invalid); }
+    if (distance > 100000) { throw new Error(MSG.tooFar); }
+    if (mode === 'metric' && (consumption < 0.1 || consumption > 100)) { throw new Error(MSG.badCons); }
+    if (mode === 'imperial' && (consumption < 1 || consumption > 200)) { throw new Error(MSG.badCons); }
+    if (price > 100) { throw new Error(MSG.badPrice); }
+    var needed, fuelUnit;
+    if (mode === 'metric') { needed = distance * consumption / 100; fuelUnit = MSG.unitL; }
+    else { needed = distance / consumption; fuelUnit = MSG.unitG; }
+    var cost = needed * price;
+    return { needed: needed, cost: cost, perUnit: cost / distance, fuelUnit: fuelUnit };
+  }
+  function mpgToL100km(mpg) { return 235.2145833 / mpg; }
+  function l100kmToMpg(l) { return 235.2145833 / l; }
+  window.OmniTest = { fuelCostCalc: fuelCostCalc, mpgToL100km: mpgToL100km, l100kmToMpg: l100kmToMpg };
+  function showError(m) { var b = document.getElementById('fuelErrorBox'); if (b) { b.textContent = m; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('fuelErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function fmtMoney(v) { return '$' + v.toLocaleString('th-TH', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function updateFuelLabels() {
+    var mode = document.getElementById('fuelMode').value;
+    var metric = mode === 'metric';
+    document.getElementById('fuelDistanceLabel').textContent = metric ? MSG.distKm : MSG.distMi;
+    document.getElementById('fuelConsumptionLabel').textContent = metric ? MSG.consL : MSG.consMpg;
+    document.getElementById('fuelConsumptionHelp').textContent = metric ? MSG.consHelpM : MSG.consHelpI;
+    document.getElementById('fuelPriceLabel').textContent = metric ? MSG.priceL : MSG.priceG;
+    document.getElementById('fuelPriceHelp').textContent = metric ? MSG.priceHelpM : MSG.priceHelpI;
+    document.getElementById('fuelPerUnitLabel').textContent = metric ? MSG.perKm : MSG.perMi;
+    document.getElementById('fuelDistance').placeholder = metric ? 'e.g. 500' : 'เช่น 300';
+    document.getElementById('fuelConsumption').placeholder = metric ? 'e.g. 7.5' : 'e.g. 30';
+  }
+  window.calculateFuel = function() {
+    var mode = document.getElementById('fuelMode').value;
+    var d = parseFloat(document.getElementById('fuelDistance').value);
+    var c = parseFloat(document.getElementById('fuelConsumption').value);
+    var p = parseFloat(document.getElementById('fuelPrice').value);
+    var r;
+    try { r = fuelCostCalc(d, mode, c, p); } catch (e) { showError(e.message); return; }
+    hideError();
+    document.getElementById('fuelCostValue').textContent = fmtMoney(r.cost);
+    document.getElementById('fuelNeededValue').textContent = r.needed.toLocaleString('th-TH', { maximumFractionDigits: 2 }) + ' ' + r.fuelUnit;
+    document.getElementById('fuelPerUnitValue').textContent = fmtMoney(r.perUnit);
+    document.getElementById('fuelDistanceOut').textContent = d.toLocaleString() + (mode === 'metric' ? ' km' : ' mi');
+    var box = document.getElementById('fuelResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetFuel = function() {
+    document.getElementById('fuelDistance').value = '';
+    document.getElementById('fuelConsumption').value = '';
+    document.getElementById('fuelPrice').value = '';
+    hideError();
+    var box = document.getElementById('fuelResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var calcBtn = document.getElementById('calcFuelBtn');
+  if (calcBtn) calcBtn.addEventListener('click', window.calculateFuel);
+  var resetBtn = document.getElementById('resetFuelBtn');
+  if (resetBtn) resetBtn.addEventListener('click', window.resetFuel);
+  var modeEl = document.getElementById('fuelMode');
+  if (modeEl) modeEl.addEventListener('change', updateFuelLabels);
+  ['fuelDistance', 'fuelConsumption', 'fuelPrice'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('keydown', function(e) { if (e.key === 'Enter') window.calculateFuel(); });
+  });
+})();
+
+</script>
+</body>
+</html>

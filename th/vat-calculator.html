@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เครื่องคำนวณภาษีมูลค่าเพิ่ม - เพิ่มหรือลบภาษีมูลค่าเพิ่ม ราคาสุทธิ และราคารวม | OmniTools</title>
+  <meta name="description" content="คำนวณ VAT ได้ทั้งสองวิธี: เพิ่ม VAT ในราคาสุทธิเพื่อดูราคารวม หรือลบ VAT ออกจากราคารวมเพื่อค้นหาราคาสุทธิและจำนวนภาษี ฟรีและเป็นส่วนตัว">
+  <meta name="keywords" content="เครื่องคิดเลขภาษีมูลค่าเพิ่ม, เพิ่มเครื่องคิดเลขภาษีมูลค่าเพิ่ม, ลบเครื่องคิดเลขภาษีมูลค่าเพิ่ม, เครื่องคิดเลขสุทธิเป็นสุทธิ, สุทธิเป็นภาษีมูลค่าเพิ่มสุทธิ, เครื่องคำนวณภาษี">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://janhazirr7.github.io/allinone/th/vat-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/vat-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-iva.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/vat-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/vat-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/vat-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/vat-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/vat-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/vat-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/vat-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/vat-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/vat-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/vat-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/vat-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/vat-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/vat-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/vat-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/vat-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/vat-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/vat-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/vat-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/vat-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/vat-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/vat-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/vat-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/vat-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/vat-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/vat-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/vat-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/vat-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/vat-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/vat-calculator.html">
+
+  
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/th/vat-calculator.html">
+  <meta property="og:title" content="เครื่องคำนวณภาษีมูลค่าเพิ่ม | OmniTools">
+  <meta property="og:description" content="คำนวณ VAT ได้ทั้งสองวิธี: เพิ่ม VAT ในราคาสุทธิเพื่อดูราคารวม หรือลบ VAT ออกจากราคารวมเพื่อค้นหาราคาสุทธิและจำนวนภาษี ฟรีและเป็นส่วนตัว">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-vat-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="เครื่องคำนวณภาษีมูลค่าเพิ่ม | OmniTools">
+  <meta name="twitter:description" content="คำนวณ VAT ได้ทั้งสองวิธี: เพิ่ม VAT ในราคาสุทธิเพื่อดูราคารวม หรือลบ VAT ออกจากราคารวมเพื่อค้นหาราคาสุทธิและจำนวนภาษี ฟรีและเป็นส่วนตัว">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "เครื่องคำนวณภาษีมูลค่าเพิ่ม OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/th/vat-calculator.html",
+  "applicationCategory": "ใบสมัครทางการเงิน",
+  "operatingSystem": "All",
+  "browserRequirements": "ต้องใช้จาวาสคริปต์ ต้องใช้ HTML5",
+  "description": "คำนวณ VAT ได้ทั้งสองวิธี: เพิ่ม VAT ในราคาสุทธิเพื่อดูราคารวม หรือลบ VAT ออกจากราคารวมเพื่อค้นหาราคาสุทธิและจำนวนภาษี ฟรีและเป็นส่วนตัว",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "th"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "บ้าน",
+      "item": "https://janhazirr7.github.io/allinone/th/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "การเงิน",
+      "item": "https://janhazirr7.github.io/allinone/th/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "เครื่องคำนวณภาษีมูลค่าเพิ่ม",
+      "item": "https://janhazirr7.github.io/allinone/th/vat-calculator.html"
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ราคาสุทธิและราคารวมต่างกันอย่างไร?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ราคาสุทธิไม่รวมภาษีมูลค่าเพิ่ม ในขณะที่ราคารวมรวมอยู่ด้วย ราคาสุทธิ 100 ดอลลาร์พร้อมภาษีมูลค่าเพิ่ม 20% จะกลายเป็นราคารวม 120 ดอลลาร์ ราคาธุรกิจมักจะเป็นราคาสุทธิ ในขณะที่ราคาร้านค้าที่แสดงต่อผู้บริโภคมักจะเป็นราคารวม"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "เหตุใดฉันจึงไม่สามารถหัก 20% จากราคารวมเพื่อลบ VAT ได้",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "เนื่องจากภาษีมูลค่าเพิ่มเป็นเปอร์เซ็นต์ของราคาสุทธิ ไม่ใช่ราคารวม ราคารวมภาษีมูลค่าเพิ่ม 20% อยู่ที่ 120 ดอลลาร์ ภาษีจะอยู่ที่ 20 ดอลลาร์ ไม่ใช่ 24 ดอลลาร์ สูตรย้อนกลับที่ถูกต้องคือ net = รวม / 1.20 ซึ่งให้ 100 ดอลลาร์ ไม่ใช่ 96 ดอลลาร์"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ฉันควรใช้อัตราภาษีมูลค่าเพิ่มเท่าไร?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ใช้อัตรามาตรฐานของประเทศที่มีการลดราคา เว้นแต่ว่าผลิตภัณฑ์จะเข้าเกณฑ์สำหรับอัตราที่ลดลงหรือเป็นศูนย์ อัตรามาตรฐานทั่วไปได้แก่ 20% ในสหราชอาณาจักร, 21% ในสเปน และ 19% ในเยอรมนี แต่อัตราจะเปลี่ยนแปลง ดังนั้นโปรดตรวจสอบอัตราปัจจุบันของผลิตภัณฑ์และประเทศของคุณ"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "เครื่องคิดเลขนี้รองรับอัตรา VAT ที่ลดลงหรือไม่",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ใช่. ป้อนอัตราใดก็ได้ตั้งแต่ 0% ถึง 100% รวมถึงอัตราที่ลดลง เช่น 5% หรือ 10% และอัตรา 0% ใช้สูตรเพิ่มและลบแบบเดียวกันในทุกอัตรา"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ข้อมูลราคาของฉันถูกบันทึกไว้หรือถูกส่งไปที่ใดก็ได้หรือไม่?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ไม่ OmniTools ทำงานทั้งหมดในเบราว์เซอร์ของคุณ ราคาและอัตรา VAT ของคุณจะไม่ถูกส่งไปยังเซิร์ฟเวอร์ จัดเก็บไว้ในฐานข้อมูล หรือแชร์กับใครก็ตาม"
+      }
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "เครื่องคำนวณภาษีมูลค่าเพิ่ม",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "เลือกโหมด",
+      "text": "เลือกเพิ่มภาษีมูลค่าเพิ่มสำหรับราคาสุทธิหรือลบภาษีมูลค่าเพิ่มสำหรับราคารวม"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "ใส่ราคา",
+      "text": "พิมพ์ราคาสุทธิในโหมดเพิ่มหรือราคารวมในโหมดลบ"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "ป้อนอัตราภาษีมูลค่าเพิ่ม",
+      "text": "พิมพ์อัตรา VAT เป็นเปอร์เซ็นต์ เช่น 20"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "คำนวณ",
+      "text": "กดคำนวณภาษีมูลค่าเพิ่มเพื่อดูราคาสุทธิ จำนวนภาษีมูลค่าเพิ่ม และราคารวม"
+    }
+  ],
+  "inLanguage": "th"
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="หน้าแรกของ OmniTools">
+        <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="การนำทางหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">เครื่องมือทั้งหมด</a></li>
+          <li><a href="age-calculator.html">คำนวณอายุ</a></li>
+          <li><a href="bmi-calculator.html">ตัวติดตามค่าดัชนีมวลกาย</a></li>
+          <li><a href="loan-calculator.html">สินเชื่ออีเอ็มไอ</a></li>
+          <li><a href="../about.html">เกี่ยวกับ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="ตัวเลือกภาษา" onchange="window.location.href=this.value">
+          <option value="../vat-calculator.html">English</option>
+          <option value="../es/calculadora-de-iva.html">Español</option>
+          <option value="../de/vat-calculator.html">Deutsch</option>
+          <option value="../fr/vat-calculator.html">Français</option>
+          <option value="../pt/vat-calculator.html">Português</option>
+          <option value="../it/vat-calculator.html">Italiano</option>
+          <option value="../ru/vat-calculator.html">Русский</option>
+          <option value="../nl/vat-calculator.html">Nederlands</option>
+          <option value="../pl/vat-calculator.html">Polski</option>
+          <option value="../sv/vat-calculator.html">Svenska</option>
+          <option value="../no/vat-calculator.html">Norsk</option>
+          <option value="../da/vat-calculator.html">Dansk</option>
+          <option value="../fi/vat-calculator.html">Suomi</option>
+          <option value="../id/vat-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/vat-calculator.html">Türkçe</option>
+          <option value="../vi/vat-calculator.html">Tiếng Việt</option>
+          <option value="vat-calculator.html" selected>ไทย</option>
+          <option value="../ms/vat-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/vat-calculator.html">Filipino</option>
+          <option value="../hi/vat-calculator.html">हिन्दी</option>
+          <option value="../ur/vat-calculator.html">اردو</option>
+          <option value="../ar/vat-calculator.html">العربية</option>
+          <option value="../fa/vat-calculator.html">فارسی</option>
+          <option value="../he/vat-calculator.html">עברית</option>
+          <option value="../ja/vat-calculator.html">日本語</option>
+          <option value="../ko/vat-calculator.html">한국어</option>
+          <option value="../zh/vat-calculator.html">简体中文</option>
+          <option value="../zh-TW/vat-calculator.html">繁體中文</option>
+          <option value="../el/vat-calculator.html">Ελληνικά</option>
+          <option value="../cs/vat-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="สลับเมนูการนำทาง" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">บ้าน</a></li>
+          <li><a href="index.html#finance">การเงิน</a></li>
+          <li aria-current="page">เครื่องคำนวณภาษีมูลค่าเพิ่ม</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">เครื่องคำนวณภาษีมูลค่าเพิ่ม</h1>
+        <p class="tool-header-desc">เพิ่มภาษีมูลค่าเพิ่มในราคาสุทธิหรือตัดออกจากราคารวม ป้อนราคาและอัตราภาษีมูลค่าเพิ่มเพื่อดูราคาสุทธิ จำนวนภาษี และราคารวมทันที</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="โฆษณาลีดเดอร์บอร์ด">
+        <span class="ad-slot-placeholder-text">โฆษณาลีดเดอร์บอร์ดที่ปรับเปลี่ยนตามอุปกรณ์ (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="vatMode" class="form-label"><span>โหมดการคำนวณ</span><span class="label-hint">เพิ่มหรือลบภาษีมูลค่าเพิ่ม</span></label>
+              <select id="vatMode" class="form-select">
+                <option value="add" selected="None">เพิ่มภาษีมูลค่าเพิ่ม (สุทธิ → รวม)</option>
+                <option value="remove">ลบภาษีมูลค่าเพิ่ม (ยอดรวม → สุทธิ)</option>
+              </select>
+              <span class="form-help">เลือกราคาที่คุณมีอยู่แล้ว</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="vatAmount" class="form-label"><span>ราคา ($)</span><span class="label-hint">ที่จำเป็น</span></label>
+                <input type="number" id="vatAmount" class="form-input" placeholder="เช่น 100" min="0.01" max="100000000" step="0.01">
+                <span class="form-help">ราคาสุทธิในโหมดเพิ่ม ราคารวมในโหมดลบ</span>
+              </div>
+              <div class="form-group">
+                <label for="vatRate" class="form-label"><span>อัตราภาษีมูลค่าเพิ่ม (%)</span><span class="label-hint">%</span></label>
+                <input type="number" id="vatRate" class="form-input" placeholder="เช่น 20" min="0" max="100" step="0.5">
+                <span class="form-help">อัตราทั่วไป: 20% สหราชอาณาจักร, 21% สเปน, 19% เยอรมนี</span>
+              </div>
+            </div>
+          </div>
+          <div id="vatErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateVAT()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path></svg> คำนวณภาษีมูลค่าเพิ่ม</button>
+            <button type="button" class="btn btn-outline" onclick="resetVAT()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg> รีเซ็ต</button>
+          </div>
+          <div id="vatResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> รายละเอียดภาษีมูลค่าเพิ่ม</span>
+              <button type="button" id="vatCopyBtn" class="btn btn-outline btn-sm" title="คัดลอกสรุปผลลัพธ์"><svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> คัดลอกสรุป</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">ราคารวม (รวมภาษีมูลค่าเพิ่ม)</div>
+              <div class="hero-result-value" id="vatGrossValue">$0.00</div>
+              <div class="hero-result-sub" id="vatModeLabel">สิ่งที่ลูกค้าจ่าย</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="vatNetValue">$0.00</div><div class="metric-label">ราคาสุทธิ (ไม่รวมภาษีมูลค่าเพิ่ม)</div></div>
+              <div class="metric-card"><div class="metric-value" id="vatTaxValue" style="color: #d97706;">$0.00</div><div class="metric-label">จำนวนภาษีมูลค่าเพิ่ม</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="โฆษณาแถบด้านข้าง">
+          <span class="ad-slot-placeholder-text">สี่เหลี่ยมผืนผ้าแถบด้านข้าง (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">เครื่องคิดเลขที่เกี่ยวข้อง</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณส่วนลด <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เครื่องคำนวณเปอร์เซ็นต์ <span>→</span></a></li>
+            <li><a href="tip-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เคล็ดลับเครื่องคิดเลข <span>→</span></a></li>
+            <li><a href="salary-hourly-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">เงินเดือนเป็นเครื่องคำนวณรายชั่วโมง <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="โฆษณาในบทความ">
+        <span class="ad-slot-placeholder-text">แบนเนอร์เนื้อหาแบบตอบสนอง (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">วิธีใช้เครื่องคำนวณภาษีมูลค่าเพิ่ม</h2>
+        <p class="content-paragraph">ภาษีมูลค่าเพิ่ม ซึ่งมักเรียกสั้น ๆ ว่า VAT คือภาษีการบริโภคที่บวกกับสินค้าและบริการส่วนใหญ่ในยุโรปและประเทศอื่นๆ ราคาบนชั้นวางสินค้ามักจะรวมภาษีมูลค่าเพิ่มแล้ว ในขณะที่ราคาระหว่างธุรกิจกับธุรกิจมักจะไม่รวมไว้ และความไม่ตรงกันทำให้เกิดความสับสนตลอดเวลา เครื่องคิดเลขนี้รองรับทั้งสองทิศทาง: เพิ่ม VAT ในราคาสุทธิเพื่อรับราคารวมที่ลูกค้าจ่าย หรือตัด VAT ออกจากราคารวมเพื่อค้นหาราคาสุทธิและภาษีที่ซ่อนอยู่ข้างใน</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>เลือกโหมดการคำนวณ</strong>เลือก เพิ่ม VAT หากคุณมีราคาสุทธิและต้องการราคารวม หรือ ลบ VAT ออก หากคุณมีราคารวมและต้องการแยกราคาสุทธิและภาษี</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>ใส่ราคา</strong>พิมพ์ราคาที่คุณมีอยู่แล้ว: ราคาสุทธิในโหมดเพิ่ม หรือราคารวมในโหมดลบ</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>ป้อนอัตราภาษีมูลค่าเพิ่ม</strong>พิมพ์อัตราเป็นเปอร์เซ็นต์ เช่น 20 สำหรับอัตรามาตรฐานของสหราชอาณาจักร 21 สำหรับสเปน หรือ 19 สำหรับเยอรมนี อัตราที่ลดลงใช้กับสินค้าบางรายการ ดังนั้นโปรดตรวจสอบอัตราที่ถูกต้องสำหรับผลิตภัณฑ์ของคุณ</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>คำนวณ</strong>กดคำนวณ VAT เพื่อดูราคาสุทธิ จำนวน VAT และราคารวมเคียงข้างกัน</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">อธิบายสูตร VAT ทั้งสองทิศทาง</h2>
+        <p class="content-paragraph">การบวกภาษีมูลค่าเพิ่มเป็นการคูณง่ายๆ แต่การนำภาษีมูลค่าเพิ่มออกจะทำให้คนจำนวนมากลำบากขึ้น เนื่องจากภาษีเป็นเปอร์เซ็นต์ของราคาสุทธิ ไม่ใช่ของราคารวม การลบ 20% ออกจากราคารวมจะไม่ลบ VAT: จะเป็นการลบมากเกินไป เนื่องจาก 20% ของราคารวมนั้นมากกว่า 20% ของราคาสุทธิที่น้อยกว่า การคำนวณย้อนกลับที่ถูกต้องหารด้วยหนึ่งบวกอัตรา</p>
+        <div class="formula-box">
+          <div class="formula-expression">การบวก VAT: ยอดรวม = สุทธิ × (1 + อัตรา/100)</div>
+          <div class="formula-explanation">การนำ VAT ออก: สุทธิ = รวม / (1 + อัตรา/100)<br>• <strong>จำนวนภาษีมูลค่าเพิ่ม</strong> = รวม - สุทธิ (ในโหมดลบ) หรือสุทธิ × อัตรา/100 (ในโหมดเพิ่ม)<br>• ตัวอย่างที่ 20%: ราคาสุทธิ $100 จะกลายเป็นราคารวม $120 และราคารวม $120 จะหารกลับเป็นราคาสุทธิ $100 โดยมีภาษีมูลค่าเพิ่ม $20</div>
+        </div>
+        <p class="content-paragraph">ความแตกต่างนี้สำคัญสำหรับฟรีแลนซ์และธุรกิจขนาดเล็กที่ขอคืน VAT สำหรับนักช้อปที่ตรวจสอบว่ามีการใช้ส่วนลดก่อนหรือหลังหักภาษี และสำหรับใครก็ตามที่เปรียบเทียบราคาข้ามประเทศด้วยอัตราที่แตกต่างกัน ตรวจสอบเสมอว่าราคาที่เสนอเป็นราคาสุทธิหรือรวมก่อนที่จะลงนามในสัญญาหรือออกใบแจ้งหนี้ เนื่องจากความเข้าใจผิด 20% จะทำให้ยอดรวมเปลี่ยนแปลงไปหนึ่งในห้าของราคาสุทธิ</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">ตัวอย่างการทำงาน: การบวกและการลบ VAT 20%</h2>
+        <p class="content-paragraph">การบวกภาษีมูลค่าเพิ่ม: สินค้าที่มีราคาสุทธิ 100 เหรียญสหรัฐฯ และมีอัตราภาษีมูลค่าเพิ่ม 20% จะต้องเสียภาษี 20 เหรียญสหรัฐฯ เนื่องจาก 100 เหรียญสหรัฐฯ × 20/100 เท่ากับ 20 เหรียญสหรัฐฯ ดังนั้น ราคารวมที่ลูกค้าจ่ายคือ 120 เหรียญสหรัฐฯ การนำ VAT ออก: สินค้าที่มีราคารวม 120 ดอลลาร์สหรัฐฯ โดยมีอัตรา 20% เท่าเดิม มีราคาสุทธิ 120 ดอลลาร์ / 1.20 ซึ่งเท่ากับ 100 ดอลลาร์ และภาษีมูลค่าเพิ่มภายในสินค้าคือ 120 - 100 ดอลลาร์ ซึ่งเท่ากับ 20 ดอลลาร์ ทั้งสองทิศทางเห็นพ้องต้องกัน เนื่องจากอธิบายธุรกรรมเดียวกันจากฝั่งตรงข้าม</p>
+        <p class="content-paragraph">ข้อผิดพลาดทั่วไปคือการคำนวณ 20% ของ $120 ซึ่งเท่ากับ $24 แล้วลบออกเพื่อให้ได้ $96 คำตอบนั้นผิด 4 ดอลลาร์ เนื่องจากภาษีมูลค่าเพิ่มไม่เคยอยู่ที่ 20% ของราคารวม แต่เป็น 20% ของราคาสุทธิ 100 ดอลลาร์ เมื่อใดก็ตามที่ผลลัพธ์ VAT ย้อนหลังดูคลาดเคลื่อนเล็กน้อย ให้ตรวจสอบว่าเปอร์เซ็นต์นั้นถูกหักออกจากตัวเลขรวมโดยไม่ได้ตั้งใจหรือไม่ เพราะนั่นเป็นข้อผิดพลาดเกือบทุกครั้ง</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. ฟรีแลนซ์และใบแจ้งหนี้</h4><p class="example-card-body">หากคุณเสนอราคาสุทธิ $1,000 และอัตรา VAT ของคุณคือ 20% ให้ออกใบแจ้งหนี้รวม $1,200 หากลูกค้าให้งบประมาณรวม 1,200 ดอลลาร์แก่คุณแทน รายได้สุทธิของคุณคือ 1,000 ดอลลาร์ ไม่ใช่ 960 ดอลลาร์ ดังนั้นให้กำหนดราคางานของคุณจากตัวเลขสุทธิ</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. เปรียบเทียบราคาข้ามพรมแดน</h4><p class="example-card-body">สินค้าชนิดเดียวกันอาจดูถูกกว่าในต่างประเทศเพียงเพราะอัตราภาษีมูลค่าเพิ่มที่ต่ำกว่า ตัด VAT ออกจากราคาทั้งสองเพื่อเปรียบเทียบราคาสุทธิที่แท้จริงก่อนตัดสินใจว่าจะซื้อที่ไหน</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. อัตราที่ลดลงและเป็นศูนย์</h4><p class="example-card-body">อาหาร หนังสือ ยา และสินค้าสำหรับเด็กมักจะมีอัตราที่ลดลงหรือเป็นศูนย์ซึ่งแตกต่างกันไปในแต่ละประเทศ ใช้อัตราสำหรับหมวดหมู่ผลิตภัณฑ์เฉพาะของคุณ ไม่ใช่อัตรามาตรฐาน เมื่อหมวดหมู่นั้นเข้าเกณฑ์</p></div>
+        </div>
+        <p class="content-paragraph">กฎเกณฑ์ อัตรา และการยกเว้นภาษีมูลค่าเพิ่มจะเปลี่ยนแปลงเมื่อเวลาผ่านไปและแตกต่างกันไปในแต่ละประเทศ ดังนั้นเครื่องคิดเลขนี้จึงให้คำแนะนำทางคณิตศาสตร์แก่คุณ ไม่ใช่คำแนะนำด้านภาษี สำหรับการยื่นเอกสารทางธุรกิจ ให้ยืนยันอัตราปัจจุบันและการปฏิบัติที่ถูกต้องกับหน่วยงานด้านภาษีหรือนักบัญชีในพื้นที่ของคุณ</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          คำถามที่พบบ่อย (FAQ)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open="None">
+            <summary class="faq-question">ราคาสุทธิและราคารวมต่างกันอย่างไร?</summary>
+            <div class="faq-answer">ราคาสุทธิไม่รวมภาษีมูลค่าเพิ่ม ในขณะที่ราคารวมรวมอยู่ด้วย ราคาสุทธิ 100 ดอลลาร์พร้อมภาษีมูลค่าเพิ่ม 20% จะกลายเป็นราคารวม 120 ดอลลาร์ ราคาธุรกิจมักจะเป็นราคาสุทธิ ในขณะที่ราคาร้านค้าที่แสดงต่อผู้บริโภคมักจะเป็นราคารวม</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">เหตุใดฉันจึงไม่สามารถหัก 20% จากราคารวมเพื่อลบ VAT ได้</summary>
+            <div class="faq-answer">เนื่องจากภาษีมูลค่าเพิ่มเป็นเปอร์เซ็นต์ของราคาสุทธิ ไม่ใช่ราคารวม ราคารวมภาษีมูลค่าเพิ่ม 20% อยู่ที่ 120 ดอลลาร์ ภาษีจะอยู่ที่ 20 ดอลลาร์ ไม่ใช่ 24 ดอลลาร์ สูตรย้อนกลับที่ถูกต้องคือ net = รวม / 1.20 ซึ่งให้ 100 ดอลลาร์ ไม่ใช่ 96 ดอลลาร์</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">ฉันควรใช้อัตราภาษีมูลค่าเพิ่มเท่าไร?</summary>
+            <div class="faq-answer">ใช้อัตรามาตรฐานของประเทศที่มีการลดราคา เว้นแต่ว่าผลิตภัณฑ์จะเข้าเกณฑ์สำหรับอัตราที่ลดลงหรือเป็นศูนย์ อัตรามาตรฐานทั่วไปได้แก่ 20% ในสหราชอาณาจักร, 21% ในสเปน และ 19% ในเยอรมนี แต่อัตราจะเปลี่ยนแปลง ดังนั้นโปรดตรวจสอบอัตราปัจจุบันของผลิตภัณฑ์และประเทศของคุณ</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">เครื่องคิดเลขนี้รองรับอัตรา VAT ที่ลดลงหรือไม่</summary>
+            <div class="faq-answer">ใช่. ป้อนอัตราใดก็ได้ตั้งแต่ 0% ถึง 100% รวมถึงอัตราที่ลดลง เช่น 5% หรือ 10% และอัตรา 0% ใช้สูตรเพิ่มและลบแบบเดียวกันในทุกอัตรา</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">ข้อมูลราคาของฉันถูกบันทึกไว้หรือถูกส่งไปที่ใดก็ได้หรือไม่?</summary>
+            <div class="faq-answer">ไม่ OmniTools ทำงานทั้งหมดในเบราว์เซอร์ของคุณ ราคาและอัตรา VAT ของคุณจะไม่ถูกส่งไปยังเซิร์ฟเวอร์ จัดเก็บไว้ในฐานข้อมูล หรือแชร์กับใครก็ตาม</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools มอบเครื่องคิดเลขออนไลน์และยูทิลิตี้ฟรี น้ำหนักเบา เน้นความเป็นส่วนตัวสำหรับการเงิน ประสิทธิภาพการทำงาน และการศึกษา</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">เครื่องมือที่กำลังมาแรง</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">เครื่องคำนวณอายุ</a></li>
+            <li><a href="bmi-calculator.html">ตัวติดตามค่าดัชนีมวลกาย</a></li>
+            <li><a href="loan-calculator.html">เครื่องคำนวณสินเชื่อ EMI</a></li>
+            <li><a href="password-generator.html">ตัวสร้างรหัสผ่าน</a></li>
+            <li><a href="word-counter.html">เครื่องนับคำ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">สาธารณูปโภค</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">เครื่องคำนวณเปอร์เซ็นต์</a></li>
+            <li><a href="discount-calculator.html">เครื่องคำนวณส่วนลด</a></li>
+            <li><a href="unit-converter.html">ตัวแปลงหน่วย</a></li>
+            <li><a href="date-calculator.html">ความแตกต่างวันที่</a></li>
+            <li><a href="case-converter.html">ตัวแปลงกรณีข้อความ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">กฎหมายและข้อมูล</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="../contact.html">ติดต่อเรา</a></li>
+            <li><a href="../privacy-policy.html">นโยบายความเป็นส่วนตัว</a></li>
+            <li><a href="../terms.html">ข้อกำหนดในการให้บริการ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools. สงวนลิขสิทธิ์. ยูทิลิตี้ออนไลน์ฟรีสำหรับทุกคน</p>
+        <div class="footer-lang-select">
+          <span>ภาษา:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var amtInput = document.getElementById('vatAmount');
+  var rateInput = document.getElementById('vatRate');
+  var modeSelect = document.getElementById('vatMode');
+  var resultsBox = document.getElementById('vatResultsBox');
+  var errorBox = document.getElementById('vatErrorBox');
+  var copyBtn = document.getElementById('vatCopyBtn');
+  [amtInput, rateInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateVAT(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('th-TH', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeVAT = function(amount, rate, mode) {
+    if (mode === 'remove') {
+      var net = amount / (1 + rate / 100);
+      return { net: net, tax: amount - net, gross: amount };
+    }
+    var tax = amount * rate / 100;
+    return { net: amount, tax: tax, gross: amount + tax };
+  };
+  window.calculateVAT = function() {
+    var amount = parseFloat(amtInput.value);
+    var rate = parseFloat(rateInput.value);
+    var mode = modeSelect.value;
+    if (isNaN(amount) || isNaN(rate) || amount <= 0 || rate < 0) {
+      showError('โปรดป้อนราคาบวกและอัตราภาษีมูลค่าเพิ่มที่ถูกต้อง อัตราอาจเป็น 0%');
+      return;
+    }
+    if (amount > 100000000) { showError('ราคาไม่เกิน 100,000,000.'); return; }
+    if (rate > 100) { showError('อัตราภาษีมูลค่าเพิ่มต้องไม่เกิน 100%'); return; }
+    hideError();
+    var res = computeVAT(amount, rate, mode);
+    document.getElementById('vatNetValue').textContent = fmt(res.net);
+    document.getElementById('vatTaxValue').textContent = fmt(res.tax);
+    document.getElementById('vatGrossValue').textContent = fmt(res.gross);
+    var modeLabel = (mode === 'remove') ? 'ป้อนราคารวมแล้ว' : 'ราคาสุทธิที่ป้อน';
+    document.getElementById('vatModeLabel').textContent = modeLabel;
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'ภาษีมูลค่าเพิ่ม ณ ' + rate + '% (' + modeLabel + '): สุทธิ ' + fmt(res.net) + ', ภาษีมูลค่าเพิ่ม ' + fmt(res.tax) + ', ทั้งหมด ' + fmt(res.gross) + '. คำนวณด้วย OmniTools'); }
+  };
+  window.resetVAT = function() {
+    amtInput.value = ''; rateInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('คัดลอกสรุป VAT ไปยังคลิปบอร์ดแล้ว!'); }).catch(function() { prompt('สรุปการคัดลอก:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>
