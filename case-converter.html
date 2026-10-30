@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Converter - UPPER CASE, lower case, Title Case & Sentence Case | OmniTools</title>
+  <meta name="description" content="Convert text instantly to UPPER CASE, lower case, Title Case, Sentence case, aLtErNaTiNg case and iNVERSE case. Free, live, and 100% private — your text never leaves your browser.">
+  <meta name="keywords" content="case converter, text case converter, uppercase converter, lowercase converter, title case converter, sentence case converter, alternating case, inverse case">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/case-converter.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/case-converter.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/convertidor-de-mayusculas.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/case-converter.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/case-converter.html">
+  <meta property="og:title" content="Case Converter - UPPER CASE, lower case, Title Case & Sentence Case">
+  <meta property="og:description" content="Convert text instantly to UPPER CASE, lower case, Title Case, Sentence case, alternating case and inverse case. 100% free and private.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-case-converter.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Case Converter | OmniTools">
+  <meta name="twitter:description" content="Instant text case conversion: UPPER CASE, lower case, Title Case, Sentence case, alternating and inverse case.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Case Converter",
+    "url": "https://omnitools.pages.dev/case-converter.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Convert text instantly to UPPER CASE, lower case, Title Case, Sentence case, alternating case and inverse case.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://omnitools.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Text & Writing",
+        "item": "https://omnitools.pages.dev/#text"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Case Converter",
+        "item": "https://omnitools.pages.dev/case-converter.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the Case Converter do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It changes the capitalisation of your text instantly. Paste or type any text, choose one of the six styles — UPPER CASE, lower case, Title Case, Sentence case, aLtErNaTiNg case or iNVERSE case — and copy the converted result."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Title Case handle words like don't?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Title Case capitalises the first letter of each word and lowers the rest, treating an apostrophe as part of the word. So don't becomes Don't, not Don'T, and can't becomes Can't."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Sentence case decide where a sentence starts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sentence case lowers the whole text, then capitalises the first letter of the text and the first letter after every full stop, exclamation mark or question mark followed by a space. Abbreviations such as e.g. or Dr. may be treated as sentence ends, so give the result a quick read before publishing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the converter change my spacing, line breaks, numbers or punctuation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Line breaks and spacing are preserved exactly, and numbers and punctuation are left unchanged. In alternating case, spaces and punctuation do not advance the upper-lower pattern — only letters count."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my text saved or sent anywhere?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. OmniTools runs entirely in your browser. Your text is converted on your own device and is never sent to a server, stored, or shared."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="case-converter.html" class="active">Case Converter</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="case-converter.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/convertidor-de-mayusculas.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#text">Text &amp; Writing</a></li>
+          <li aria-current="page">Case Converter</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Text Case Converter</h1>
+        <p class="tool-header-desc">
+          Convert text instantly to UPPER CASE, lower case, Title Case, Sentence case, aLtErNaTiNg case or iNVERSE case. Paste your text, pick a style, and copy the result — live, free, and completely private.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <div class="form-group">
+              <label for="caseInput" class="form-label">
+                <span>Your Text</span>
+                <span class="label-hint">Type or paste here</span>
+              </label>
+              <textarea id="caseInput" class="form-input" rows="6" placeholder="e.g. hello world. this is a test." style="resize: vertical; min-height: 140px;"></textarea>
+              <span class="form-help" id="caseCounts">Words: 0 &nbsp;|&nbsp; Characters: 0 &nbsp;|&nbsp; Tip: pick a case style below, then keep typing — the output updates live.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="caseOutput" class="form-label">
+                <span>Converted Text</span>
+                <span class="label-hint">Result</span>
+              </label>
+              <textarea id="caseOutput" class="form-input" rows="6" readonly placeholder="Your converted text will appear here." style="resize: vertical; min-height: 140px; background: var(--bg-surface-alt);"></textarea>
+              <span class="form-help" id="caseHint">Choose a case style below to convert your text. If the input is empty, the output stays empty.</span>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="caseErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" class="btn btn-outline" onclick="convertCase('upper')">UPPER CASE</button>
+            <button type="button" class="btn btn-outline" onclick="convertCase('lower')">lower case</button>
+            <button type="button" class="btn btn-outline" onclick="convertCase('title')">Title Case</button>
+            <button type="button" class="btn btn-outline" onclick="convertCase('sentence')">Sentence case</button>
+            <button type="button" class="btn btn-outline" onclick="convertCase('alternating')">aLtErNaTiNg case</button>
+            <button type="button" class="btn btn-outline" onclick="convertCase('inverse')">iNVERSE case</button>
+            <button type="button" id="copyCaseBtn" class="btn btn-primary">Copy Result</button>
+            <button type="button" id="clearCaseBtn" class="btn btn-outline" onclick="clearCase()">Clear</button>
+          </div>
+
+          <!-- Conversion Results Box -->
+          <div id="caseResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Conversion Result
+              </span>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="resultWordsValue">0</div>
+                <div class="metric-label">Input Words</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="resultCharsValue">0</div>
+                <div class="metric-label">Input Characters</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="resultOutputCharsValue">0</div>
+                <div class="metric-label">Output Characters</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="resultStyleValue" style="color: var(--accent);">—</div>
+                <div class="metric-label">Case Style Applied</div>
+              </div>
+            </div>
+            <p class="form-help" style="margin-top: 0.5rem;">Line breaks, spacing, numbers and punctuation are preserved exactly as you typed them.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="word-counter.html" style="display: flex; align-items: center; justify-content: space-between;">Word Counter <span>→</span></a></li>
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age &amp; Milestone Calculator <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools Case Converter
+        </h2>
+        <p class="content-paragraph">
+          Fixing capitalisation by hand is slow and error-prone, especially in a long document, a pasted email, or a block of text copied from a PDF. The OmniTools Case Converter does the whole job in one click, and it keeps working live as you type, so you can watch the result change and correct mistakes before you copy anything out.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Type or paste your text</strong>
+              Click in the first box and type, or paste text from a document, email, chat message, or web page. There is no length limit to worry about for ordinary writing, and the live word and character counts update as you type.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Choose a case style</strong>
+              Click one of the six style buttons: UPPER CASE, lower case, Title Case, Sentence case, aLtErNaTiNg case, or iNVERSE case. The converted text appears immediately in the second box.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Keep editing, live</strong>
+              Once you have picked a style, you do not need to click again. Every change you make to the input is converted again at once, in the same style, so you can fix a typo and see the corrected result without starting over.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Copy and use the result</strong>
+              Click “Copy Result” to copy the converted text to your clipboard, then paste it wherever you need it: a document, an email, a form, a title field, or a social media post. Click “Clear” to empty both boxes and start fresh.
+            </div>
+          </li>
+        </ol>
+        <p class="content-paragraph">
+          If you click a style button while the input box is empty, nothing breaks. You will simply see a friendly hint asking you to type something first, and the output stays empty until you do. That is deliberate: an empty result should never look like a successful conversion, and it should never overwrite text you meant to keep.
+        </p>
+      </section>
+
+      <!-- Section 2: The six styles -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 5v14m6-7h6m-3 0v7" />
+          </svg>
+          The Six Case Styles, Explained
+        </h2>
+        <p class="content-paragraph">
+          Each style follows one simple rule, applied to every letter in your text. Nothing else changes: your line breaks stay where they are, your spaces are not collapsed or trimmed, and numbers and punctuation are left exactly as you wrote them. The only thing that changes is the capitalisation of letters.
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            Example: “hello world. don't shout!”
+          </div>
+          <div class="formula-explanation">
+            UPPER CASE: HELLO WORLD. DON'T SHOUT!<br>
+            lower case: hello world. don't shout!<br>
+            Title Case: Hello World. Don't Shout!<br>
+            Sentence case: Hello world. Don't shout!<br>
+            aLtErNaTiNg case: hElLo WoRlD. dOn'T sHoUt! (spaces and punctuation do not flip the pattern)<br>
+            iNVERSE case: HELLO WORLD. DON'T SHOUT! — every small letter becomes capital, and every capital becomes small.
+          </div>
+        </div>
+        <p class="content-paragraph">
+          UPPER CASE turns every letter into a capital. It is the loudest style, so use it sparingly. Lower case does the opposite: every letter becomes small, which is useful when you have pasted text that arrived in all capitals, for example from a scanned form, a spreadsheet header, or a shouting email thread you want to calm down before replying.
+        </p>
+        <p class="content-paragraph">
+          Title Case capitalises the first letter of each word and lowers the rest. It treats an apostrophe as part of the word, so “don't” becomes “Don't” and “can't” becomes “Can't”, rather than the common mistake “Don'T”. Hyphenated words are treated word by word, so “well-known” becomes “Well-Known”. Sentence case is different: it lowers the whole text first, then capitalises only the first letter of the text and the first letter after each full stop, exclamation mark, or question mark that is followed by a space. Everything else in the sentence stays lower case, which is exactly how ordinary sentences are written.
+        </p>
+        <p class="content-paragraph">
+          Alternating case alternates lower and upper letter by letter, starting with a lower-case first letter: “hello world” becomes “hElLo WoRlD”. Spaces, punctuation, and numbers do not advance the pattern and do not flip it, so the rhythm stays tied to letters only — the space after “hello” does not make the “w” of “world” start a new pattern. Inverse case simply swaps every letter: capitals become small and small letters become capitals, so “Hello” becomes “hELLO”. It is the fastest way to fix text typed with Caps Lock on, or text pasted in the opposite case to the one you wanted.
+        </p>
+      </section>
+
+      <!-- Section 3: When to use each -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          When to Use Each Style: Titles, Sentences, Code and Social Media
+        </h2>
+        <p class="content-paragraph">
+          The right style depends on where the text is going. For titles — blog posts, video titles, presentation slides, book chapters, and headings — Title Case is the standard choice in English, because it looks polished and is easy to scan. For ordinary writing, such as paragraphs, emails, essays, and messages, Sentence case is correct: it reads naturally and never looks like shouting. Reserve UPPER CASE for very short labels where emphasis is genuinely needed, such as a warning, a section divider, or a single-word heading, and avoid whole paragraphs in capitals, which are harder to read and can come across as aggressive online.
+        </p>
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Titles and Headings</h4>
+            <p class="example-card-body">
+              Use Title Case for article titles, slide headings, and product names, for example “How To Brew Better Coffee At Home”. It gives a finished, professional look and matches what readers expect from a headline.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">2. Sentences and Paragraphs</h4>
+            <p class="example-card-body">
+              Use Sentence case for body text, emails, and essays. Paste a draft that arrived in all capitals, convert it once, and you have clean, readable prose without retyping a single sentence.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">3. Code, Forms and Social Media</h4>
+            <p class="example-card-body">
+              Use lower case when a form, username field, or piece of code expects it, and use UPPER CASE for short labels or acronyms. Alternating and inverse case are playful styles best kept for memes, jokes, and casual social posts, not for formal documents.
+            </p>
+          </div>
+        </div>
+        <p class="content-paragraph">
+          A practical habit is to convert first and proofread second. Case conversion is mechanical, but meaning is not: a name, a brand, or an acronym such as “NASA” or “iPhone” may need its original capitalisation restored by hand after conversion, because no automatic rule knows that “nasa” in your sentence is an acronym. The same applies to sentence case and abbreviations. The rule here is simple and stated openly: a sentence is treated as ending at a full stop, exclamation mark, or question mark followed by a space. That handles ordinary writing perfectly, but abbreviations such as “e.g.”, “Dr.”, or “Mr.” may be treated as sentence ends, so the next word may be capitalised when you did not intend it. Give the converted text one quick read, fix any abbreviation that was split, and then copy it. That single check is far faster than retyping the whole passage.
+        </p>
+      </section>
+
+      <!-- Section 4: Privacy -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          Rules, Edge Cases and Privacy
+        </h2>
+        <p class="content-paragraph">
+          Three rules cover almost every surprise. First, whitespace is sacred: multiple spaces, tabs, blank lines, and line breaks pass through untouched, so a poem, a list, or a carefully indented passage keeps its shape. Second, only letters change case. Digits such as “2026”, symbols such as “@” and “#”, and punctuation such as commas and brackets are copied unchanged, which means phone numbers, prices, and code snippets survive conversion intact. Third, the conversion is reversible in most cases but not all: converting “Hello World” to lower case and back to Title Case restores it, but converting “iPhone” to lower case loses the capital “P” forever, because the tool cannot know it was there. Keep your original text until you are happy with the result, or convert a copy.
+        </p>
+        <p class="content-paragraph">
+          Privacy is equally straightforward. This tool runs entirely in your browser with plain client-side code and no account, no upload, and no server round trip. Your text never leaves your device, which means you can safely convert private drafts, work documents, and personal messages. When you click “Copy Result”, only your own clipboard is used, and when you click “Clear”, both boxes are emptied at once. Nothing is stored, nothing is tracked, and nothing is shared — the conversion exists only on the page in front of you, for as long as you keep it open.
+        </p>
+      </section>
+
+      <!-- Section 5: Frequently Asked Questions (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">What does the Case Converter do?</summary>
+            <div class="faq-answer">
+              It changes the capitalisation of your text instantly. Paste or type any text, choose one of the six styles — UPPER CASE, lower case, Title Case, Sentence case, aLtErNaTiNg case or iNVERSE case — and copy the converted result.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How does Title Case handle words like don't?</summary>
+            <div class="faq-answer">
+              Title Case capitalises the first letter of each word and lowers the rest, treating an apostrophe as part of the word. So don't becomes Don't, not Don'T, and can't becomes Can't.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How does Sentence case decide where a sentence starts?</summary>
+            <div class="faq-answer">
+              Sentence case lowers the whole text, then capitalises the first letter of the text and the first letter after every full stop, exclamation mark or question mark followed by a space. Abbreviations such as e.g. or Dr. may be treated as sentence ends, so give the result a quick read before publishing.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Does the converter change my spacing, line breaks, numbers or punctuation?</summary>
+            <div class="faq-answer">
+              No. Line breaks and spacing are preserved exactly, and numbers and punctuation are left unchanged. In alternating case, spaces and punctuation do not advance the upper-lower pattern — only letters count.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my text saved or sent anywhere?</summary>
+            <div class="faq-answer">
+              Never. OmniTools runs entirely in your browser. Your text is converted on your own device and is never sent to a server, stored, or shared.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="case-converter.html" style="color: #60a5fa;">English</a> |
+          <a href="es/convertidor-de-mayusculas.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var inputEl = document.getElementById('caseInput');
+    var outputEl = document.getElementById('caseOutput');
+    var resultsBox = document.getElementById('caseResultsBox');
+    var errorBox = document.getElementById('caseErrorBox');
+    var countsEl = document.getElementById('caseCounts');
+    var copyBtn = document.getElementById('copyCaseBtn');
+    var currentStyle = null;
+    var styleNames = {
+      upper: 'UPPER CASE',
+      lower: 'lower case',
+      title: 'Title Case',
+      sentence: 'Sentence case',
+      alternating: 'aLtErNaTiNg case',
+      inverse: 'iNVERSE case'
+    };
+
+    function isLetter(ch) {
+      return /\p{L}/u.test(ch);
+    }
+
+    function toTitleCase(text) {
+      return text.toLowerCase().replace(/[\p{L}\p{N}]+(?:['\u2019][\p{L}\p{N}]+)*/gu, function(word) {
+        return /^\p{L}/u.test(word) ? word.charAt(0).toUpperCase() + word.slice(1) : word;
+      });
+    }
+
+    function toSentenceCase(text) {
+      var lowered = text.toLowerCase();
+      lowered = lowered.replace(/^(\s*)([\p{L}])/u, function(m, spaces, letter) {
+        return spaces + letter.toUpperCase();
+      });
+      lowered = lowered.replace(/([.!?]\s+)([\p{L}])/gu, function(m, sep, letter) {
+        return sep + letter.toUpperCase();
+      });
+      return lowered;
+    }
+
+    function toAlternatingCase(text) {
+      var out = '';
+      var letterIndex = 0;
+      for (var i = 0; i < text.length; i++) {
+        var ch = text[i];
+        if (isLetter(ch)) {
+          out += (letterIndex % 2 === 0) ? ch.toLowerCase() : ch.toUpperCase();
+          letterIndex++;
+        } else {
+          out += ch;
+        }
+      }
+      return out;
+    }
+
+    function toInverseCase(text) {
+      var out = '';
+      for (var i = 0; i < text.length; i++) {
+        var ch = text[i];
+        if (ch === ch.toLowerCase() && ch !== ch.toUpperCase()) {
+          out += ch.toUpperCase();
+        } else if (ch === ch.toUpperCase() && ch !== ch.toLowerCase()) {
+          out += ch.toLowerCase();
+        } else {
+          out += ch;
+        }
+      }
+      return out;
+    }
+
+    function applyCase(text, style) {
+      if (style === 'upper') return text.toUpperCase();
+      if (style === 'lower') return text.toLowerCase();
+      if (style === 'title') return toTitleCase(text);
+      if (style === 'sentence') return toSentenceCase(text);
+      if (style === 'alternating') return toAlternatingCase(text);
+      if (style === 'inverse') return toInverseCase(text);
+      return text;
+    }
+
+    function countWords(text) {
+      var trimmed = text.trim();
+      if (!trimmed) return 0;
+      return trimmed.split(/\s+/).length;
+    }
+
+    function updateCounts() {
+      var text = inputEl ? inputEl.value : '';
+      var words = countWords(text);
+      var chars = text.length;
+      if (countsEl) {
+        countsEl.textContent = 'Words: ' + words + '  |  Characters: ' + chars + '  |  Tip: pick a case style below, then keep typing \u2014 the output updates live.';
+      }
+      var wEl = document.getElementById('resultWordsValue');
+      var cEl = document.getElementById('resultCharsValue');
+      var oEl = document.getElementById('resultOutputCharsValue');
+      if (wEl) wEl.textContent = words;
+      if (cEl) cEl.textContent = chars;
+      if (oEl) oEl.textContent = outputEl ? outputEl.value.length : 0;
+    }
+
+    function showResults() {
+      var sEl = document.getElementById('resultStyleValue');
+      if (sEl) sEl.textContent = currentStyle ? styleNames[currentStyle] : '\u2014';
+      updateCounts();
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+      }
+    }
+
+    function hideResults() {
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    }
+
+    function refreshOutput() {
+      var text = inputEl ? inputEl.value : '';
+      if (!text) {
+        if (outputEl) outputEl.value = '';
+        hideResults();
+        updateCounts();
+        return;
+      }
+      hideError();
+      if (outputEl) outputEl.value = currentStyle ? applyCase(text, currentStyle) : text;
+      if (currentStyle) showResults(); else updateCounts();
+    }
+
+    window.convertCase = function(style) {
+      var text = inputEl ? inputEl.value : '';
+      if (!text || !text.trim()) {
+        if (outputEl) outputEl.value = '';
+        hideResults();
+        updateCounts();
+        showError('Please type or paste some text first, then choose a case style.');
+        return;
+      }
+      currentStyle = style;
+      hideError();
+      refreshOutput();
+    };
+
+    window.clearCase = function() {
+      if (inputEl) inputEl.value = '';
+      if (outputEl) outputEl.value = '';
+      currentStyle = null;
+      hideError();
+      hideResults();
+      updateCounts();
+      if (inputEl) inputEl.focus();
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (inputEl) {
+      inputEl.addEventListener('input', function() {
+        hideError();
+        refreshOutput();
+      });
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = outputEl ? outputEl.value : '';
+        if (!txt) {
+          showError('Nothing to copy yet \u2014 type some text and choose a case style first.');
+          return;
+        }
+        hideError();
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Converted text copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy converted text:', txt);
+          });
+        } else {
+          prompt('Copy converted text:', txt);
+        }
+      });
+    }
+
+    updateCounts();
+  })();
+  </script>
+</body>
+</html>

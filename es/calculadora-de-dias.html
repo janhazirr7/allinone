@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Días - Días entre Fechas y Sumar o Restar Días | OmniTools</title>
+  <meta name="description" content="Calcula el número exacto de días, semanas y meses entre dos fechas, o suma y resta días a cualquier fecha. Gratis, preciso y 100% privado.">
+  <meta name="keywords" content="calculadora de días, días entre fechas, diferencia entre fechas, sumar días a una fecha, restar días a una fecha, cuántos días faltan, semanas entre fechas">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canónica y SEO Multilingüe hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/es/calculadora-de-dias.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/date-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-dias.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/date-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/es/calculadora-de-dias.html">
+  <meta property="og:title" content="Calculadora de Días - Días entre Fechas y Sumar o Restar Días">
+  <meta property="og:description" content="Encuentra los días, semanas y meses exactos entre dos fechas, o suma y resta días a cualquier fecha. 100% gratis y privado.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-date-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de Días | OmniTools">
+  <meta name="twitter:description" content="Cálculo instantáneo de la diferencia entre fechas y suma o resta de días a cualquier fecha.">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Datos Estructurados JSON-LD (WebApplication, BreadcrumbList y FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Calculadora de Días",
+    "url": "https://omnitools.pages.dev/es/calculadora-de-dias.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calcula el número exacto de días, semanas y meses entre dos fechas, o suma y resta días a cualquier fecha.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://omnitools.pages.dev/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Fecha y Hora",
+        "item": "https://omnitools.pages.dev/es/#date"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Calculadora de Días",
+        "item": "https://omnitools.pages.dev/es/calculadora-de-dias.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo se cuenta la diferencia entre dos fechas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La diferencia es la fecha final menos la fecha inicial, en días naturales completos. La fecha inicial en sí no se cuenta, y la fecha final sí se cuenta. Por ejemplo, del 1 de enero al 2 de enero hay 1 día. Si quieres contar tanto la fecha inicial como la final, suma 1 al resultado; ese recuento inclusivo también aparece en los resultados."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué del 28 de febrero de 2024 al 1 de marzo de 2024 hay 2 días?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Porque 2024 es un año bisiesto y febrero tiene 29 días. Contando hacia adelante desde el 28 de febrero, el día siguiente es el 29 de febrero (día 1) y el día después es el 1 de marzo (día 2). En un año no bisiesto, ese mismo par de fechas estaría separado por solo 1 día, porque no existe el 29 de febrero."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué significa el desglose en años, meses y días?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Es un desglose preciso según el calendario, como un cálculo de edad. Primero se cuentan los años naturales completos y luego los meses naturales completos, y los días restantes son lo que queda. Como los meses tienen distinta duración (de 28 a 31 días), el cálculo toma prestados días del mes anterior cuando es necesario, de modo que siempre llega exactamente a la fecha final."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Esta calculadora cuenta días laborables?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Esta calculadora cuenta días naturales, incluidos los sábados y los domingos. No elimina los fines de semana ni los días festivos, porque los festivos varían según el país y la región. Si necesitas solo días laborables, toma el total de días y resta los fines de semana que caigan dentro del periodo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Mi información de fechas se guarda o se envía a algún lugar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nunca. OmniTools funciona por completo en tu propio navegador web. Las fechas que introduces nunca se envían a un servidor, no se guardan en una base de datos ni se comparten con nadie."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navegación -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Todas las Herramientas</a></li>
+          <li><a href="calculadora-de-edad.html">Edad</a></li>
+          <li><a href="calculadora-de-dias.html" class="active">Días</a></li>
+          <li><a href="calculadora-de-prestamos.html">Préstamos</a></li>
+          <li><a href="../about.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de Idioma -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="../date-calculator.html" class="lang-btn" title="English Version">EN</a>
+          <a href="calculadora-de-dias.html" class="lang-btn active" title="Versión en Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Ruta de navegación -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#date">Fecha y Hora</a></li>
+          <li aria-current="page">Calculadora de Días</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Título de la Herramienta -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de Días: Días entre Fechas y Sumar o Restar Días</h1>
+        <p class="tool-header-desc">
+          Encuentra el número exacto de días, semanas y meses entre dos fechas, o avanza y retrocede en el tiempo sumando o restando días a cualquier fecha. Gratis, instantáneo y privado.
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacio Publicitario Superior -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Espacio Publicitario">
+        <span class="ad-slot-placeholder-text">Banner Superior Adaptable (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Widget Principal y Barra Lateral -->
+    <section class="container tool-layout-container">
+
+      <!-- Columna Principal de la Herramienta -->
+      <div>
+        <div class="tool-card-widget">
+
+          <!-- Selector de Modo -->
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="dateMode" class="form-label">
+              <span>¿Qué quieres calcular?</span>
+              <span class="label-hint">Elige un modo</span>
+            </label>
+            <select id="dateMode" class="form-select">
+              <option value="difference" selected>Diferencia entre dos fechas</option>
+              <option value="addsub">Sumar o restar días a una fecha</option>
+            </select>
+            <span class="form-help">Cómo se cuenta: la diferencia es la fecha final menos la fecha inicial, en días completos. La fecha inicial no se cuenta; la fecha final sí se cuenta.</span>
+          </div>
+
+          <!-- Modo A: Diferencia entre Dos Fechas -->
+          <div id="diffPanel">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label for="startDate" class="form-label">
+                  <span>Fecha Inicial</span>
+                  <span class="label-hint">Obligatoria</span>
+                </label>
+                <input type="date" id="startDate" class="form-input">
+                <span class="form-help">La fecha más temprana (no se cuenta en sí misma)</span>
+              </div>
+              <div class="form-group">
+                <label for="endDate" class="form-label">
+                  <span>Fecha Final</span>
+                  <span class="label-hint">Obligatoria</span>
+                </label>
+                <input type="date" id="endDate" class="form-input">
+                <span class="form-help">La fecha más tardía (sí se cuenta)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modo B: Sumar / Restar Días -->
+          <div id="addPanel" style="display: none;">
+            <div class="widget-form-grid">
+              <div class="form-group">
+                <label for="baseDate" class="form-label">
+                  <span>Fecha Base</span>
+                  <span class="label-hint">Obligatoria</span>
+                </label>
+                <input type="date" id="baseDate" class="form-input">
+                <span class="form-help">La fecha desde la que quieres partir</span>
+              </div>
+              <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="dayCount" class="form-label">
+                    <span>Número de Días</span>
+                    <span class="label-hint">Número entero</span>
+                  </label>
+                  <input type="number" id="dayCount" class="form-input" placeholder="p. ej. 90" min="0" max="365000" step="1">
+                  <span class="form-help">De 0 a 365.000 días (unos 1.000 años)</span>
+                </div>
+                <div class="form-group">
+                  <label for="dayDirection" class="form-label">
+                    <span>Dirección</span>
+                    <span class="label-hint">Sumar o restar</span>
+                  </label>
+                  <select id="dayDirection" class="form-select">
+                    <option value="add" selected>Sumar días (avanzar)</option>
+                    <option value="subtract">Restar días (retroceder)</option>
+                  </select>
+                  <span class="form-help">Hacia adelante o hacia atrás en el tiempo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aviso de Error -->
+          <div id="dateErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="widget-actions">
+            <button type="button" id="calcDateBtn" class="btn btn-primary" onclick="calculateDates()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Calcular
+            </button>
+            <button type="button" id="resetDateBtn" class="btn btn-outline" onclick="resetDates()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Restablecer
+            </button>
+          </div>
+
+          <!-- Caja de Resultados -->
+          <div id="dateResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Resultado
+              </span>
+              <button type="button" id="copyDateBtn" class="btn btn-outline btn-sm" title="Copiar resumen del resultado">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar Resumen
+              </button>
+            </div>
+
+            <!-- Tarjeta Principal Destacada -->
+            <div class="hero-result-card">
+              <div class="hero-result-label" id="heroResultLabel">Total de Días</div>
+              <div class="hero-result-value" id="heroResultValue">0 días</div>
+              <div class="hero-result-sub" id="heroResultSub">-</div>
+            </div>
+
+            <!-- Métricas Secundarias -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="metric1Value">-</div>
+                <div class="metric-label" id="metric1Label">Semanas</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="metric2Value">-</div>
+                <div class="metric-label" id="metric2Label">Desglose</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="metric3Value">-</div>
+                <div class="metric-label" id="metric3Label">Total de Meses (aprox.)</div>
+              </div>
+            </div>
+
+            <p id="dateResultNote" class="form-help" style="font-size: 0.875rem; line-height: 1.6;"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral: Anuncio y Enlaces -->
+      <aside>
+        <!-- Anuncio Lateral -->
+        <div class="ad-slot ad-rectangle" aria-label="Espacio Publicitario Lateral">
+          <span class="ad-slot-placeholder-text">Rectángulo Lateral (300x250)</span>
+        </div>
+
+        <!-- Widget de Utilidades -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras Relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="calculadora-de-edad.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Edad e Hitos <span>→</span></a></li>
+            <li><a href="calculadora-de-imc.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+            <li><a href="calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Préstamos <span>→</span></a></li>
+            <li><a href="calculadora-de-porcentaje.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Porcentaje <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Anuncio en Contenido -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Espacio Publicitario en Contenido">
+        <span class="ad-slot-placeholder-text">Banner en Contenido Adaptable (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Guía Educativa -->
+    <article class="container educational-content">
+
+      <!-- Sección 1: Cómo Usar -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar la Calculadora de Días de OmniTools
+        </h2>
+        <p class="content-paragraph">
+          Las fechas importan en casi todo en la vida diaria: unas vacaciones que estás contando, la fecha límite de un proyecto, el vencimiento de un visado, la renovación de una suscripción o el plazo de preaviso de un contrato. Hacer ese recuento a mano es lento y fácil de equivocar, porque los meses tienen distinta duración y los años bisiestos añaden un día extra. Esta calculadora hace el recuento por ti, en segundos, con dos modos sencillos.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Elige tu modo</strong>
+              Selecciona "Diferencia entre dos fechas" para medir el intervalo entre dos fechas del calendario, o "Sumar o restar días a una fecha" para avanzar o retroceder en el tiempo desde una sola fecha inicial.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Introduce tus fechas</strong>
+              Para una diferencia, introduce una fecha inicial y una fecha final. La fecha final debe ser igual o posterior a la inicial; si es anterior, la calculadora mostrará un mensaje de error amable en lugar de un número negativo confuso. Para sumar o restar, introduce tu fecha base, un número entero de días y si quieres sumar o restar.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Pulsa "Calcular"</strong>
+              Verás al instante el total de días, ese mismo intervalo expresado en semanas, un desglose preciso en años, meses y días según el calendario, y un total aproximado en meses. En el modo de sumar o restar, verás la fecha resultante, escrita por completo, junto con su día de la semana.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Copia o restablece</strong>
+              Usa "Copiar Resumen" para copiar un resumen en texto plano que puedes pegar en un mensaje o documento, o pulsa "Restablecer" para limpiar el formulario y empezar un cálculo nuevo.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Sección 2: Cómo se Cuenta la Diferencia -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          Cómo se Cuenta la Diferencia entre Fechas
+        </h2>
+        <p class="content-paragraph">
+          Esta calculadora define la diferencia como la fecha final menos la fecha inicial, medida en días naturales completos. En palabras sencillas: la fecha inicial en sí no se cuenta, y la fecha final sí se cuenta. Así, de lunes a martes hay 1 día, del 1 de enero al 31 de enero hay 30 días, y dos fechas idénticas están separadas por 0 días. Esta es la misma convención que usan la mayoría de las herramientas de cuenta atrás y los sistemas de reservas, y es la única convención que hace que las matemáticas sean coherentes: si sumas la diferencia a la fecha inicial, llegas exactamente a la fecha final.
+        </p>
+        <p class="content-paragraph">
+          Algunas personas necesitan en cambio el recuento inclusivo, en el que se cuentan tanto el primer día como el último; por ejemplo, una estancia de hotel de lunes a viernes podría describirse como cinco días si ambos días están incluidos en la reserva. Eso es simplemente la diferencia más uno, y la calculadora lo muestra por ti en la nota de los resultados, para que nunca tengas que adivinar qué número quiso decir otra persona. Comprueba siempre qué convención usa un contrato, una reserva o una fecha límite, porque un solo día puede cambiar un precio o una penalización.
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            Diferencia en días = Fecha final − Fecha inicial
+          </div>
+          <div class="formula-explanation">
+            Contada en días naturales completos, sin contar la fecha inicial y contando la fecha final.<br><br>
+            <strong>Semanas</strong> = total de días ÷ 7 (con los días restantes mostrados por separado)<br>
+            <strong>Recuento inclusivo</strong> = diferencia + 1 (ambas fechas contadas)<br>
+            <strong>Total de meses (aprox.)</strong> = total de días ÷ 30,44 (la duración media de un mes)
+          </div>
+        </div>
+        <p class="content-paragraph">
+          La calculadora cuenta solo días completos, sin tener en cuenta horas, minutos ni zonas horarias. Eso es deliberado: una fecha por sí sola no tiene hora del día, y contar por fechas del calendario evita los errores de un día que aparecen cuando un ordenador convierte una fecha en una medianoche local que cambia con el horario de verano. Entre bastidores, cada fecha se trata como medianoche en Tiempo Universal Coordinado, así que las mismas dos fechas siempre dan el mismo resultado estés donde estés en el mundo.
+        </p>
+      </section>
+
+      <!-- Sección 3: Años, Meses, Días y Años Bisiestos -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Desglose en Años, Meses y Días y Años Bisiestos
+        </h2>
+        <p class="content-paragraph">
+          Un número bruto de días es útil, pero la mayoría de la gente piensa en años y meses: "¿Cuánto falta para mi aniversario?" o "¿Qué antigüedad tiene este contrato?" El desglose que muestra esta calculadora funciona como un cálculo de edad. Primero cuenta los años naturales completos desde la fecha inicial, luego los meses naturales completos, y por último los días restantes. Cuando el día final del mes es menor que el día inicial, toma prestados días del mes anterior, exactamente como harías al calcularlo en papel. El resultado siempre vuelve a sumar hasta la fecha final, incluso atravesando meses de distinta duración.
+        </p>
+        <p class="content-paragraph">
+          Los años bisiestos son la trampa clásica en las matemáticas de fechas. Un año es bisiesto si es divisible por 4, excepto los años de siglo, que además deben ser divisibles por 400. Así, 2024 fue bisiesto, 2023 no lo fue, 2000 fue bisiesto, pero 1900 no lo fue. En un año bisiesto, febrero tiene 29 días en lugar de 28, lo que cambia toda diferencia que cruce finales de febrero. Por ejemplo, del 28 de febrero de 2024 al 1 de marzo de 2024 hay 2 días, porque el 29 de febrero queda en medio, mientras que ese mismo par de fechas en 2023 está separado por solo 1 día. Esta calculadora gestiona los años bisiestos automáticamente, incluida la rara regla del siglo, así que nunca necesitas consultar un calendario.
+        </p>
+        <p class="content-paragraph">
+          La cifra de "total de meses (aprox.)" es distinta del desglose: simplemente divide el total de días por 30,44, la duración media de un mes en un ciclo de cuatro años que incluye un año bisiesto. Es útil para una planificación aproximada, como estimar cuántos pagos mensuales caen dentro de un periodo, pero para fechas exactas debes usar siempre el desglose en años, meses y días o el modo de sumar y restar, que llegan a una fecha precisa del calendario.
+        </p>
+      </section>
+
+      <!-- Sección 4: Días Laborables y Ejemplos -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Una Nota sobre los Días Laborables, con Ejemplos Cotidianos
+        </h2>
+        <p class="content-paragraph">
+          Esta calculadora cuenta días naturales, incluidos los sábados y los domingos, y no elimina los días festivos. Los festivos varían de un país a otro, e incluso de una región a otra, así que ninguna lista única de festivos sería correcta para todos los visitantes. Si necesitas solo días laborables, un atajo práctico es tomar el total de días naturales, dividirlo por siete para estimar el número de semanas completas, y restar dos días por cada semana completa por el fin de semana, ajustando luego los festivos dentro del periodo. Para plazos legales o laborales, confirma siempre la regla exacta con la organización implicada, porque algunas cuentan el primer día y otras no.
+        </p>
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Cuentas Atrás de Vacaciones y Eventos</h4>
+            <p class="example-card-body">
+              Introduce hoy como fecha inicial y tu vuelo, boda o examen como fecha final para ver exactamente cuántos días, semanas y meses te quedan para prepararte.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">2. Plazos y Periodos de Preaviso</h4>
+            <p class="example-card-body">
+              Suma 30, 60 o 90 días a la fecha en que recibiste un aviso para encontrar la fecha límite exacta y su día de la semana, y que un plazo en fin de semana nunca te pille por sorpresa.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">3. Planificación de Proyectos y Suscripciones</h4>
+            <p class="example-card-body">
+              Mide una fase de proyecto o un periodo de suscripción en días y meses, o resta días a una fecha de renovación para programar un recordatorio con suficiente antelación.
+            </p>
+          </div>
+        </div>
+        <p class="content-paragraph">
+          Sea lo que sea lo que estés contando, el hábito más seguro es calcularlo dos veces: una como diferencia y otra sumando el resultado a la fecha inicial. Si el segundo cálculo llega a tu fecha final, tu respuesta está confirmada. Con esta herramienta, ambas comprobaciones tardan unos segundos, y tus fechas se mantienen completamente privadas, porque cada cálculo ocurre en tu propio navegador y nada se envía jamás a un servidor.
+        </p>
+      </section>
+
+      <!-- Sección 5: Preguntas Frecuentes (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas Frecuentes (FAQ)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Cómo se cuenta la diferencia entre dos fechas?</summary>
+            <div class="faq-answer">
+              La diferencia es la fecha final menos la fecha inicial, en días naturales completos. La fecha inicial en sí no se cuenta, y la fecha final sí se cuenta. Por ejemplo, del 1 de enero al 2 de enero hay 1 día. Si quieres contar tanto la fecha inicial como la final, suma 1 al resultado; ese recuento inclusivo también aparece en los resultados.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Por qué del 28 de febrero de 2024 al 1 de marzo de 2024 hay 2 días?</summary>
+            <div class="faq-answer">
+              Porque 2024 es un año bisiesto y febrero tiene 29 días. Contando hacia adelante desde el 28 de febrero, el día siguiente es el 29 de febrero (día 1) y el día después es el 1 de marzo (día 2). En un año no bisiesto, ese mismo par de fechas estaría separado por solo 1 día, porque no existe el 29 de febrero.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Qué significa el desglose en años, meses y días?</summary>
+            <div class="faq-answer">
+              Es un desglose preciso según el calendario, como un cálculo de edad. Primero se cuentan los años naturales completos y luego los meses naturales completos, y los días restantes son lo que queda. Como los meses tienen distinta duración (de 28 a 31 días), el cálculo toma prestados días del mes anterior cuando es necesario, de modo que siempre llega exactamente a la fecha final.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Esta calculadora cuenta días laborables?</summary>
+            <div class="faq-answer">
+              No. Esta calculadora cuenta días naturales, incluidos los sábados y los domingos. No elimina los fines de semana ni los días festivos, porque los festivos varían según el país y la región. Si necesitas solo días laborables, toma el total de días y resta los fines de semana que caigan dentro del periodo.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Mi información de fechas se guarda o se envía a algún lugar?</summary>
+            <div class="faq-answer">
+              Nunca. OmniTools funciona por completo en tu propio navegador web. Las fechas que introduces nunca se envían a un servidor, no se guardan en una base de datos ni se comparten con nadie.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece utilidades y calculadoras web gratuitas, ligeras y respetuosas con la privacidad para el uso diario.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-edad.html">Calculadora de Edad</a></li>
+            <li><a href="calculadora-de-prestamos.html">Calculadora de Préstamos</a></li>
+            <li><a href="calculadora-de-imc.html">Calculadora de IMC</a></li>
+            <li><a href="generador-de-contrasenas.html">Generador de Contraseñas</a></li>
+            <li><a href="contador-de-palabras.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Otras Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="conversor-de-unidades.html">Conversor de Unidades</a></li>
+            <li><a href="calculadora-de-porcentaje.html">Calculadora de Porcentaje</a></li>
+            <li><a href="calculadora-de-dias.html">Diferencia entre Fechas</a></li>
+            <li><a href="convertidor-de-mayusculas.html">Convertidor de Mayúsculas</a></li>
+            <li><a href="calculadora-de-descuentos.html">Calculadora de Descuentos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Quiénes Somos</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades online gratuitas.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../date-calculator.html">English</a> |
+          <a href="calculadora-de-dias.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Motor Integrado Independiente (Sin Dependencias Externas) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var modeSelect = document.getElementById('dateMode');
+    var diffPanel = document.getElementById('diffPanel');
+    var addPanel = document.getElementById('addPanel');
+    var startInput = document.getElementById('startDate');
+    var endInput = document.getElementById('endDate');
+    var baseInput = document.getElementById('baseDate');
+    var dayCountInput = document.getElementById('dayCount');
+    var directionSelect = document.getElementById('dayDirection');
+    var resultsBox = document.getElementById('dateResultsBox');
+    var errorBox = document.getElementById('dateErrorBox');
+    var copyBtn = document.getElementById('copyDateBtn');
+
+    if (modeSelect) {
+      modeSelect.addEventListener('change', function() {
+        var isDiff = modeSelect.value === 'difference';
+        diffPanel.style.display = isDiff ? 'block' : 'none';
+        addPanel.style.display = isDiff ? 'none' : 'block';
+        hideError();
+        if (resultsBox) {
+          resultsBox.classList.remove('active');
+          resultsBox.style.display = 'none';
+        }
+      });
+    }
+
+    [startInput, endInput, baseInput, dayCountInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateDates();
+        });
+      }
+    });
+
+    function parseDateUTC(value) {
+      if (!value || typeof value !== 'string') return null;
+      var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value.trim());
+      if (!m) return null;
+      var y = parseInt(m[1], 10);
+      var mo = parseInt(m[2], 10);
+      var d = parseInt(m[3], 10);
+      if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+      var dt = new Date(Date.UTC(y, mo - 1, d));
+      if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) return null;
+      return { y: y, m: mo, d: d, utc: dt.getTime() };
+    }
+
+    function daysInMonthUTC(year, monthIndex) {
+      return new Date(Date.UTC(year, monthIndex + 1, 0)).getUTCDate();
+    }
+
+    function ymdBreakdown(s, e) {
+      var years = e.y - s.y;
+      var months = e.m - s.m;
+      var days = e.d - s.d;
+      if (days < 0) {
+        months -= 1;
+        var prevMonthIndex = e.m - 2;
+        var prevYear = e.y;
+        if (prevMonthIndex < 0) { prevMonthIndex += 12; prevYear -= 1; }
+        days += daysInMonthUTC(prevYear, prevMonthIndex);
+      }
+      if (months < 0) {
+        years -= 1;
+        months += 12;
+      }
+      return { years: years, months: months, days: days };
+    }
+
+    function formatLongUTC(parsed, locale) {
+      var dt = new Date(parsed.utc);
+      return dt.toLocaleDateString(locale, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    }
+
+    function formatShortUTC(parsed, locale) {
+      var dt = new Date(parsed.utc);
+      return dt.toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    }
+
+    window.calculateDates = function() {
+      var mode = modeSelect.value;
+      if (mode === 'difference') {
+        var s = parseDateUTC(startInput.value);
+        var e = parseDateUTC(endInput.value);
+        if (!s || !e) {
+          showError('Introduce una fecha inicial y una fecha final válidas.');
+          return;
+        }
+        if (e.utc < s.utc) {
+          showError('La fecha final debe ser igual o posterior a la fecha inicial. Intercambia las fechas o elige una fecha final más tardía.');
+          return;
+        }
+        hideError();
+        var totalDays = Math.round((e.utc - s.utc) / 86400000);
+        var weeks = Math.floor(totalDays / 7);
+        var remDays = totalDays % 7;
+        var bd = ymdBreakdown(s, e);
+        var monthsApprox = (totalDays / 30.44).toFixed(1).replace('.', ',');
+        var dayWord = totalDays === 1 ? 'día' : 'días';
+        document.getElementById('heroResultLabel').textContent = 'Total de Días entre Fechas';
+        document.getElementById('heroResultValue').textContent = totalDays.toLocaleString('es-ES') + ' ' + dayWord;
+        document.getElementById('heroResultSub').textContent = 'Del ' + formatShortUTC(s, 'es-ES') + ' al ' + formatShortUTC(e, 'es-ES');
+        document.getElementById('metric1Label').textContent = 'Semanas';
+        document.getElementById('metric1Value').textContent = weeks + ' sem, ' + remDays + ' d';
+        document.getElementById('metric2Label').textContent = 'Años / Meses / Días';
+        document.getElementById('metric2Value').textContent = bd.years + ' a, ' + bd.months + ' m, ' + bd.days + ' d';
+        document.getElementById('metric3Label').textContent = 'Total de Meses (aprox.)';
+        document.getElementById('metric3Value').textContent = monthsApprox + ' meses';
+        document.getElementById('dateResultNote').textContent = 'Recuento: diferencia = fecha final menos fecha inicial (fecha inicial no contada, fecha final contada). Recuento inclusivo, contando ambas fechas: ' + (totalDays + 1).toLocaleString('es-ES') + ' ' + ((totalDays + 1) === 1 ? 'día' : 'días') + '.';
+        if (copyBtn) {
+          copyBtn.setAttribute('data-summary', 'Diferencia de fechas: del ' + formatShortUTC(s, 'es-ES') + ' al ' + formatShortUTC(e, 'es-ES') + ' = ' + totalDays + ' ' + dayWord + ' (' + weeks + ' semanas, ' + remDays + ' días; ' + bd.years + ' años, ' + bd.months + ' meses, ' + bd.days + ' días). Calculado con OmniTools.');
+        }
+      } else {
+        var b = parseDateUTC(baseInput.value);
+        if (!b) {
+          showError('Introduce una fecha base válida.');
+          return;
+        }
+        var raw = dayCountInput.value;
+        if (raw === '' || raw === null || raw === undefined) {
+          showError('Introduce un número entero de días (de 0 a 365.000).');
+          return;
+        }
+        var n = Number(raw);
+        if (!isFinite(n) || Math.floor(n) !== n || n < 0 || n > 365000) {
+          showError('Introduce un número entero de días entre 0 y 365.000.');
+          return;
+        }
+        hideError();
+        var signed = directionSelect.value === 'subtract' ? -n : n;
+        var resultUtc = b.utc + signed * 86400000;
+        var resultDate = new Date(resultUtc);
+        var resultParsed = { y: resultDate.getUTCFullYear(), m: resultDate.getUTCMonth() + 1, d: resultDate.getUTCDate(), utc: resultUtc };
+        var longStr = formatLongUTC(resultParsed, 'es-ES');
+        var weekday = resultDate.toLocaleDateString('es-ES', { weekday: 'long', timeZone: 'UTC' });
+        var verb = directionSelect.value === 'subtract' ? 'Restando' : 'Sumando';
+        var dayWord2 = n === 1 ? 'día' : 'días';
+        var prep = directionSelect.value === 'subtract' ? 'a' : 'a';
+        document.getElementById('heroResultLabel').textContent = 'Fecha Resultante';
+        document.getElementById('heroResultValue').textContent = longStr;
+        document.getElementById('heroResultSub').textContent = weekday;
+        document.getElementById('metric1Label').textContent = 'Cálculo';
+        document.getElementById('metric1Value').textContent = verb + ' ' + n.toLocaleString('es-ES') + ' ' + dayWord2;
+        document.getElementById('metric2Label').textContent = 'Fecha Base';
+        document.getElementById('metric2Value').textContent = formatShortUTC(b, 'es-ES');
+        document.getElementById('metric3Label').textContent = 'Día de la Semana';
+        document.getElementById('metric3Value').textContent = weekday;
+        document.getElementById('dateResultNote').textContent = verb + ' ' + n.toLocaleString('es-ES') + ' ' + dayWord2 + ' ' + prep + ' ' + formatShortUTC(b, 'es-ES') + ' da como resultado ' + longStr + '.';
+        if (copyBtn) {
+          copyBtn.setAttribute('data-summary', 'Cálculo de fechas: ' + verb + ' ' + n + ' ' + dayWord2 + ' a ' + formatShortUTC(b, 'es-ES') + ' = ' + longStr + '. Calculado con OmniTools.');
+        }
+      }
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+
+    window.resetDates = function() {
+      startInput.value = '';
+      endInput.value = '';
+      baseInput.value = '';
+      dayCountInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Resumen de fechas copiado al portapapeles!');
+          }).catch(function() {
+            prompt('Copiar resumen:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

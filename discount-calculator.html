@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discount Calculator - Final Sale Price, Savings & Sales Tax | OmniTools</title>
+  <meta name="description" content="Calculate discount savings, final sale price, and sales tax instantly. Enter the original price and discount percentage to see exactly how much you save and what you pay.">
+  <meta name="keywords" content="discount calculator, percentage off calculator, sale price calculator, calculate discount savings, sales tax calculator, final price after discount">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/discount-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/discount-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-descuentos.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/discount-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/discount-calculator.html">
+  <meta property="og:title" content="Discount Calculator - Final Sale Price, Savings & Sales Tax">
+  <meta property="og:description" content="Calculate discount savings, final sale price, and sales tax instantly. 100% free and private.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-discount-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Discount & Sales Tax Calculator | OmniTools">
+  <meta name="twitter:description" content="Instant discount savings, final sale price, and sales tax calculations.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Discount Calculator",
+    "url": "https://omnitools.pages.dev/discount-calculator.html",
+    "applicationCategory": "FinancialApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calculate discount savings, final sale price after discount, and sales tax on the discounted price.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://omnitools.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Finance",
+        "item": "https://omnitools.pages.dev/#finance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Discount Calculator",
+        "item": "https://omnitools.pages.dev/discount-calculator.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you calculate a discount price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiply the original price by the discount percentage and divide by 100 to get the amount saved, then subtract that amount from the original price. For example, a $200 item at 25% off saves $50, so the final price is $150."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is sales tax calculated before or after the discount?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most places, sales tax is calculated on the discounted price, not the original price. That is how this calculator works: it first subtracts the discount, then applies the tax percentage to the lower, discounted price, so you pay less tax when an item is on sale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do stacked discounts work? Is 20% off plus 10% off the same as 30% off?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Stacked discounts are applied one after another, not added together. A $100 item at 20% off costs $80, and a further 10% off that $80 saves another $8, giving a final price of $72. That is a total saving of 28%, not 30%. To combine two discounts, enter the first result as the new original price and apply the second discount."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find the discount percentage from two prices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Subtract the sale price from the original price, divide the result by the original price, and multiply by 100. For example, an item reduced from $80 to $60 saves $20, and $20 divided by $80 times 100 is 25%, so the discount is 25% off."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my financial data saved or transmitted to your servers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. OmniTools operates entirely client-side within your device's web browser. No prices, discount percentages, or tax figures are ever sent to external databases or recorded on remote servers."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="discount-calculator.html" class="active">Discount Calc</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="discount-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-descuentos.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">Discount Calculator</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Discount & Sales Tax Calculator</h1>
+        <p class="tool-header-desc">
+          Find out exactly how much you save on a sale, what you pay after the discount, and what the total comes to once sales tax is added. Enter the original price and the discount percentage — the tax is calculated on the discounted price.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Original Price -->
+            <div class="form-group">
+              <label for="originalPrice" class="form-label">
+                <span>Original Price ($)</span>
+                <span class="label-hint">Required</span>
+              </label>
+              <input type="number" id="originalPrice" class="form-input" placeholder="e.g. 200" min="0" step="0.01">
+              <span class="form-help">The full price before any discount</span>
+            </div>
+
+            <!-- Two-Col Inputs: Discount & Tax -->
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="discountPercent" class="form-label">
+                  <span>Discount (%)</span>
+                  <span class="label-hint">Required, 0–100</span>
+                </label>
+                <input type="number" id="discountPercent" class="form-input" placeholder="e.g. 25" min="0" max="100" step="0.01">
+                <span class="form-help">Percentage off, e.g. 25 for 25% off</span>
+              </div>
+
+              <div class="form-group">
+                <label for="taxPercent" class="form-label">
+                  <span>Sales Tax (%)</span>
+                  <span class="label-hint">Optional, 0–100</span>
+                </label>
+                <input type="number" id="taxPercent" class="form-input" placeholder="e.g. 10 (leave blank for 0)" min="0" max="100" step="0.01">
+                <span class="form-help">Leave blank if there is no tax. Tax is charged on the discounted price.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="discountErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="calcDiscountBtn" class="btn btn-primary" onclick="calculateDiscount()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              Calculate Discount
+            </button>
+            <button type="button" id="resetDiscountBtn" class="btn btn-outline" onclick="resetDiscount()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reset
+            </button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="discountResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Discount Breakdown
+              </span>
+              <button type="button" id="copyDiscountBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copy Summary
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card: Final Price -->
+            <div class="hero-result-card">
+              <div class="hero-result-label" id="heroResultLabel">Final Price Including Tax</div>
+              <div class="hero-result-value" id="finalTotalValue">$0.00</div>
+              <div class="hero-result-sub" id="heroResultSub">Total you pay at checkout</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="amountSavedValue" style="color: var(--accent);">$0.00</div>
+                <div class="metric-label">Amount Saved</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="discountedPriceValue">$0.00</div>
+                <div class="metric-label">Price After Discount</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="taxAmountValue">$0.00</div>
+                <div class="metric-label">Tax Amount</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="youSaveValue" style="color: var(--accent);">$0.00</div>
+                <div class="metric-label">You Save vs. Original</div>
+              </div>
+            </div>
+
+            <!-- Price Breakdown -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Price Breakdown
+              </div>
+              <ul class="milestones-list">
+                <li class="milestone-item"><span class="milestone-item-name">Original price</span><span class="milestone-item-val" id="breakOriginal">$0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name">Less discount (<span id="breakDiscountPct">0</span>% off)</span><span class="milestone-item-val" id="breakSaved">− $0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name">Price after discount</span><span class="milestone-item-val" id="breakDiscounted">$0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name">Plus sales tax (<span id="breakTaxPct">0</span>% on the discounted price)</span><span class="milestone-item-val" id="breakTax">+ $0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name"><strong>Total you pay</strong></span><span class="milestone-item-val" id="breakTotal"><strong>$0.00</strong></span></li>
+              </ul>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 0.75rem;">Tax is always calculated on the discounted price, not the original price — so a sale also lowers the tax you pay.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools Discount Calculator
+        </h2>
+        <p class="content-paragraph">
+          Sale signs are designed to make you feel like you are getting a bargain, but the number on the tag is rarely the number you actually pay. Discounts, coupons, and sales tax all change the final total, and doing the arithmetic in your head while standing in a shop is easy to get wrong. This calculator removes the guesswork: type in three numbers and it shows you exactly how much you save, the price after the discount, the tax on that discounted price, and the total you will pay at checkout.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter the Original Price</strong>
+              Type the full price before any discount, for example <code>200</code> for a jacket priced at $200. This field is required and must be greater than zero.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter the Discount Percentage</strong>
+              Type just the number, without the percent sign — for 25% off, enter <code>25</code>. The discount must be between 0 and 100. A discount above 100% is impossible, because a shop cannot take more than the full price off, so the calculator will show a friendly error if you enter one.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter the Sales Tax Percentage (Optional)</strong>
+              If your purchase is taxed, enter the local tax rate, for example <code>10</code> for 10% tax. You may leave this field blank, which is treated as 0% tax. Remember that the tax is calculated on the discounted price, not the original price, which is explained in detail below.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Click "Calculate Discount"</strong>
+              Instantly see the amount saved, the price after discount, the tax amount, and the final total. Use "Copy Summary" to copy the breakdown, or "Reset" to clear the form and start a new calculation.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 2: Discount Formula -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          The Discount Formula, Step by Step
+        </h2>
+        <p class="content-paragraph">
+          Every discount calculation follows the same three simple steps. Once you know them, you can check any sale price with a pocket calculator, and you will never be fooled by a misleading "was" price again.
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Amount Saved = Original Price × Discount % ÷ 100
+          </div>
+          <div class="formula-explanation">
+            Final Price After Discount = Original Price − Amount Saved<br>
+            Tax Amount = Final Price After Discount × Tax % ÷ 100<br>
+            Total You Pay = Final Price After Discount + Tax Amount<br><br>
+            You can also get the discounted price in one step:<br>
+            Final Price After Discount = Original Price × (100 − Discount %) ÷ 100
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          <strong>Worked example:</strong> A pair of shoes costs $200 and is reduced by 25%. First, the amount saved is $200 × 25 ÷ 100 = $50. The price after discount is therefore $200 − $50 = $150. If sales tax is 10%, the tax is calculated on the discounted $150, not on the original $200, so the tax is $150 × 10 ÷ 100 = $15. The total you pay at checkout is $150 + $15 = $165. Notice that you save $50 on the price, and you also pay $5 less tax than you would have paid on the full price, because the tax base itself has fallen.
+        </p>
+      </section>
+
+      <!-- Section 3: Stacked Discounts -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Stacked Discounts: Why 20% Plus 10% Is Not 30%
+        </h2>
+        <p class="content-paragraph">
+          Shops often offer an extra discount on top of a sale price, for example "an extra 10% off already reduced items" or a coupon applied at checkout. It is tempting to add the two percentages together, but that overstates the saving, because the second discount applies only to the already reduced price, not to the original price. This is the single most common discount mistake, and retailers rely on shoppers making it.
+        </p>
+        <p class="content-paragraph">
+          Take a $100 item with 20% off, plus an extra 10% off. The first discount takes $20 off, leaving $80. The second discount takes 10% of $80, which is $8, leaving a final price of $72. Your total saving is $28, which is 28%, not 30%. The gap grows with larger discounts: 50% off plus 50% off does not make an item free — it leaves you paying 25% of the original price, because half of a half is a quarter. To use this calculator for a stacked offer, run the first discount, then enter the result as the new original price and apply the second discount.
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Offer</th>
+                <th>What shoppers often assume</th>
+                <th>Actual final price on $100</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>20% off, then 10% off</strong></td>
+                <td>30% off → $70</td>
+                <td><strong>$72</strong> (28% saved)</td>
+              </tr>
+              <tr>
+                <td><strong>50% off, then 50% off</strong></td>
+                <td>100% off → free</td>
+                <td><strong>$25</strong> (75% saved)</td>
+              </tr>
+              <tr>
+                <td><strong>25% off only</strong></td>
+                <td>$75</td>
+                <td><strong>$75</strong> (25% saved)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Sales Tax -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Sales Tax Explained: Tax Is Charged on the Discounted Price
+        </h2>
+        <p class="content-paragraph">
+          In most countries and states, sales tax or value-added tax is charged on the amount you actually pay for the item, which is the price after any discount. That means a sale saves you twice: once on the price itself, and again on the tax, because the tax is calculated on a smaller amount. This calculator follows that rule, and it states it clearly in the results so there is no confusion about which price the tax was applied to.
+        </p>
+        <p class="content-paragraph">
+          There are a few exceptions worth knowing. In some places, tax is charged before a manufacturer's rebate is applied, because a rebate is treated as a refund after the sale rather than a price reduction at the till. Coupons issued by the shop itself, on the other hand, normally reduce the taxable price. If you are unsure which rule applies to a particular offer, check the receipt: it will show the discounted subtotal and then the tax line beneath it. If the tax was calculated on the higher original price, the receipt will make that obvious, and you can question it.
+        </p>
+        <p class="content-paragraph">
+          A related trap is the price shown on the shelf. In the United States, shelf prices usually exclude sales tax, so the checkout total is higher than the tag price. In much of Europe, the displayed price already includes value-added tax. Either way, this calculator lets you model the real checkout total: leave the tax field blank when tax is already included in the price, or enter your local rate when it is added at the till.
+        </p>
+      </section>
+
+      <!-- Section 5: Worked Shopping Examples -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Worked Shopping Examples
+        </h2>
+        <p class="content-paragraph">
+          The best way to build confidence with discounts is to work through real shopping situations. Try each of these in the calculator above and check that you get the same answers.
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. The 25% Off Jacket — $200, No Tax</h4>
+            <p class="example-card-body">
+              Original price $200, discount 25%, tax left blank. Amount saved: $200 × 25 ÷ 100 = $50. Price after discount: $150. Tax: $0. Total you pay: $150. You save $50.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. The Same Jacket With 10% Tax</h4>
+            <p class="example-card-body">
+              Original price $200, discount 25%, tax 10%. Amount saved is still $50 and the discounted price is still $150. Tax on the discounted price: $150 × 10 ÷ 100 = $15. Total you pay: $165. Note that the tax is $15, not $20 — tax on the original $200 would have been $20.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. A $59.99 Item at 40% Off</h4>
+            <p class="example-card-body">
+              Original price $59.99, discount 40%, tax 8%. Amount saved: $59.99 × 40 ÷ 100 = $24.00 (rounded). Price after discount: $35.99. Tax: $35.99 × 8 ÷ 100 = $2.88. Total you pay: $38.87. Even with cents in the price, the same three steps give the exact checkout total.
+            </p>
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          A final shopping tip: always compare the final price, not the size of the discount. A 50% discount on an overpriced item can still cost more than a 20% discount on a fairly priced one. Enter both final prices in this calculator, compare the totals including tax, and let the numbers — not the size of the sale sign — decide which deal is genuinely better.
+        </p>
+      </section>
+
+      <!-- Section 6: Frequently Asked Questions (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">How do you calculate a discount price?</summary>
+            <div class="faq-answer">
+              Multiply the original price by the discount percentage and divide by 100 to get the amount saved, then subtract that amount from the original price. For example, a $200 item at 25% off saves $50, so the final price is $150.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is sales tax calculated before or after the discount?</summary>
+            <div class="faq-answer">
+              In most places, sales tax is calculated on the discounted price, not the original price. That is how this calculator works: it first subtracts the discount, then applies the tax percentage to the lower, discounted price, so you pay less tax when an item is on sale.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How do stacked discounts work? Is 20% off plus 10% off the same as 30% off?</summary>
+            <div class="faq-answer">
+              No. Stacked discounts are applied one after another, not added together. A $100 item at 20% off costs $80, and a further 10% off that $80 saves another $8, giving a final price of $72. That is a total saving of 28%, not 30%. To combine two discounts, enter the first result as the new original price and apply the second discount.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How do I find the discount percentage from two prices?</summary>
+            <div class="faq-answer">
+              Subtract the sale price from the original price, divide the result by the original price, and multiply by 100. For example, an item reduced from $80 to $60 saves $20, and $20 divided by $80 times 100 is 25%, so the discount is 25% off.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my financial data saved or transmitted to your servers?</summary>
+            <div class="faq-answer">
+              Never. OmniTools operates entirely client-side within your device's web browser. No prices, discount percentages, or tax figures are ever sent to external databases or recorded on remote servers.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="discount-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-descuentos.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var priceInput = document.getElementById('originalPrice');
+    var discountInput = document.getElementById('discountPercent');
+    var taxInput = document.getElementById('taxPercent');
+    var resultsBox = document.getElementById('discountResultsBox');
+    var errorBox = document.getElementById('discountErrorBox');
+    var copyBtn = document.getElementById('copyDiscountBtn');
+
+    [priceInput, discountInput, taxInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateDiscount();
+        });
+      }
+    });
+
+    function formatMoney(val) {
+      return '$' + val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    window.calculateDiscount = function() {
+      var priceRaw = priceInput.value.trim();
+      var discountRaw = discountInput.value.trim();
+      var taxRaw = taxInput.value.trim();
+
+      var price = parseFloat(priceRaw);
+      var discount = parseFloat(discountRaw);
+      var tax = taxRaw === '' ? 0 : parseFloat(taxRaw);
+
+      if (priceRaw === '' || isNaN(price)) {
+        showError('Please enter the original price.');
+        return;
+      }
+      if (price <= 0) {
+        showError('Original price must be greater than 0.');
+        return;
+      }
+      if (discountRaw === '' || isNaN(discount)) {
+        showError('Please enter the discount percentage.');
+        return;
+      }
+      if (discount < 0) {
+        showError('Discount percentage cannot be negative.');
+        return;
+      }
+      if (discount > 100) {
+        showError('Discount percentage cannot be more than 100%.');
+        return;
+      }
+      if (taxRaw !== '' && isNaN(tax)) {
+        showError('Please enter a valid sales tax percentage, or leave it blank.');
+        return;
+      }
+      if (tax < 0) {
+        showError('Sales tax percentage cannot be negative.');
+        return;
+      }
+      if (tax > 100) {
+        showError('Sales tax percentage cannot be more than 100%.');
+        return;
+      }
+
+      hideError();
+
+      var saved = price * discount / 100;
+      var discountedPrice = price - saved;
+      var taxAmount = discountedPrice * tax / 100;
+      var total = discountedPrice + taxAmount;
+
+      document.getElementById('amountSavedValue').textContent = formatMoney(saved);
+      document.getElementById('discountedPriceValue').textContent = formatMoney(discountedPrice);
+      document.getElementById('taxAmountValue').textContent = formatMoney(taxAmount);
+      document.getElementById('youSaveValue').textContent = formatMoney(saved);
+      document.getElementById('finalTotalValue').textContent = formatMoney(total);
+      document.getElementById('breakOriginal').textContent = formatMoney(price);
+      document.getElementById('breakDiscountPct').textContent = discount;
+      document.getElementById('breakSaved').textContent = '− ' + formatMoney(saved);
+      document.getElementById('breakDiscounted').textContent = formatMoney(discountedPrice);
+      document.getElementById('breakTaxPct').textContent = tax;
+      document.getElementById('breakTax').textContent = '+ ' + formatMoney(taxAmount);
+      document.getElementById('breakTotal').textContent = formatMoney(total);
+
+      if (tax > 0) {
+        document.getElementById('heroResultLabel').textContent = 'Final Price Including Tax';
+        document.getElementById('heroResultSub').textContent = 'Total you pay at checkout, tax included';
+      } else {
+        document.getElementById('heroResultLabel').textContent = 'Final Price After Discount';
+        document.getElementById('heroResultSub').textContent = 'Total you pay (no tax entered)';
+      }
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'Discount Summary: Original price ' + formatMoney(price) + ' with ' + discount + '% off. You save ' + formatMoney(saved) + '. Price after discount: ' + formatMoney(discountedPrice) + '. Sales tax (' + tax + '% on the discounted price): ' + formatMoney(taxAmount) + '. Total you pay: ' + formatMoney(total) + '. Calculated with OmniTools.');
+      }
+    };
+
+    window.resetDiscount = function() {
+      priceInput.value = '';
+      discountInput.value = '';
+      taxInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Discount summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy summary:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

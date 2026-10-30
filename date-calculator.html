@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Calculator - Days Between Dates & Add or Subtract Days | OmniTools</title>
+  <meta name="description" content="Calculate the exact number of days, weeks, and months between two dates, or add and subtract days from any date. Free, accurate, and 100% private.">
+  <meta name="keywords" content="date calculator, days between dates, date difference calculator, add days to date, subtract days from date, how many days until, weeks between dates">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/date-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/date-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-dias.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/date-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/date-calculator.html">
+  <meta property="og:title" content="Date Calculator - Days Between Dates & Add or Subtract Days">
+  <meta property="og:description" content="Find the exact days, weeks, and months between two dates, or add and subtract days from any date. 100% free and private.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-date-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Date Calculator | OmniTools">
+  <meta name="twitter:description" content="Instant date difference calculations and add/subtract days from any date.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication, BreadcrumbList & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Date Calculator",
+    "url": "https://omnitools.pages.dev/date-calculator.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calculate the exact number of days, weeks, and months between two dates, or add and subtract days from any date.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://omnitools.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Date & Time",
+        "item": "https://omnitools.pages.dev/#date"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Date Calculator",
+        "item": "https://omnitools.pages.dev/date-calculator.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is the difference between two dates counted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The difference is end date minus start date, in whole calendar days. The start date itself is not counted, and the end date is counted. For example, from 1 January to 2 January is 1 day. If you want to count both the start and the end date, add 1 to the result — that inclusive count is also shown in the results."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is 28 February 2024 to 1 March 2024 equal to 2 days?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because 2024 is a leap year, February has 29 days. Counting forward from 28 February, the next day is 29 February (day 1) and the day after that is 1 March (day 2). In a non-leap year, the same pair of dates would be only 1 day apart, because there is no 29 February."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the years, months, and days breakdown mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is a calendar-accurate breakdown, like an age calculation. Whole years and whole calendar months are counted first, and the remaining days are what is left over. Because months have different lengths (28 to 31 days), the breakdown borrows days from the previous month when needed, so it always lands exactly on the end date."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this calculator count business days?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. This calculator counts calendar days, including Saturdays and Sundays. It does not remove weekends or public holidays, because holidays differ by country and region. If you need working days only, take the total days and subtract the weekends that fall inside the period."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my date information saved or sent anywhere?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. OmniTools works entirely in your own web browser. The dates you enter are never sent to a server, stored in a database, or shared with anyone."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="date-calculator.html" class="active">Date Calc</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="date-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-dias.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#date">Date &amp; Time</a></li>
+          <li aria-current="page">Date Calculator</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Date Calculator: Days Between Dates &amp; Add or Subtract Days</h1>
+        <p class="tool-header-desc">
+          Find the exact number of days, weeks, and months between two dates, or jump forward and backward in time by adding or subtracting days from any date. Free, instant, and private.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <!-- Mode Selector -->
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="dateMode" class="form-label">
+              <span>What do you want to calculate?</span>
+              <span class="label-hint">Choose a mode</span>
+            </label>
+            <select id="dateMode" class="form-select">
+              <option value="difference" selected>Difference between two dates</option>
+              <option value="addsub">Add or subtract days from a date</option>
+            </select>
+            <span class="form-help">How counting works: the difference is end date minus start date, in whole days. The start date is not counted; the end date is counted.</span>
+          </div>
+
+          <!-- Mode A: Difference Between Two Dates -->
+          <div id="diffPanel">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label for="startDate" class="form-label">
+                  <span>Start Date</span>
+                  <span class="label-hint">Required</span>
+                </label>
+                <input type="date" id="startDate" class="form-input">
+                <span class="form-help">The earlier date (not counted itself)</span>
+              </div>
+              <div class="form-group">
+                <label for="endDate" class="form-label">
+                  <span>End Date</span>
+                  <span class="label-hint">Required</span>
+                </label>
+                <input type="date" id="endDate" class="form-input">
+                <span class="form-help">The later date (counted)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mode B: Add / Subtract Days -->
+          <div id="addPanel" style="display: none;">
+            <div class="widget-form-grid">
+              <div class="form-group">
+                <label for="baseDate" class="form-label">
+                  <span>Base Date</span>
+                  <span class="label-hint">Required</span>
+                </label>
+                <input type="date" id="baseDate" class="form-input">
+                <span class="form-help">The date you want to start from</span>
+              </div>
+              <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="dayCount" class="form-label">
+                    <span>Number of Days</span>
+                    <span class="label-hint">Whole number</span>
+                  </label>
+                  <input type="number" id="dayCount" class="form-input" placeholder="e.g. 90" min="0" max="365000" step="1">
+                  <span class="form-help">0 to 365,000 days (about 1,000 years)</span>
+                </div>
+                <div class="form-group">
+                  <label for="dayDirection" class="form-label">
+                    <span>Direction</span>
+                    <span class="label-hint">Add or subtract</span>
+                  </label>
+                  <select id="dayDirection" class="form-select">
+                    <option value="add" selected>Add days (go forward)</option>
+                    <option value="subtract">Subtract days (go backward)</option>
+                  </select>
+                  <span class="form-help">Forward or backward in time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="dateErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="calcDateBtn" class="btn btn-primary" onclick="calculateDates()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Calculate
+            </button>
+            <button type="button" id="resetDateBtn" class="btn btn-outline" onclick="resetDates()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reset
+            </button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="dateResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Result
+              </span>
+              <button type="button" id="copyDateBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copy Summary
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card -->
+            <div class="hero-result-card">
+              <div class="hero-result-label" id="heroResultLabel">Total Days</div>
+              <div class="hero-result-value" id="heroResultValue">0 days</div>
+              <div class="hero-result-sub" id="heroResultSub">-</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="metric1Value">-</div>
+                <div class="metric-label" id="metric1Label">Weeks</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="metric2Value">-</div>
+                <div class="metric-label" id="metric2Label">Breakdown</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="metric3Value">-</div>
+                <div class="metric-label" id="metric3Label">Total Months (approx.)</div>
+              </div>
+            </div>
+
+            <p id="dateResultNote" class="form-help" style="font-size: 0.875rem; line-height: 1.6;"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age &amp; Milestone Calculator <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools Date Calculator
+        </h2>
+        <p class="content-paragraph">
+          Dates matter for almost everything in daily life: a holiday you are counting down to, a project deadline, a visa expiry date, a subscription renewal, or a contract notice period. Doing that counting by hand is slow and easy to get wrong, because months have different lengths and leap years add an extra day. This calculator does the counting for you, in seconds, with two simple modes.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Choose your mode</strong>
+              Pick "Difference between two dates" to measure the gap between two calendar dates, or "Add or subtract days from a date" to jump forward or backward in time from a single starting date.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter your dates</strong>
+              For a difference, enter a start date and an end date. The end date must be on or after the start date; if it is earlier, the calculator will show a friendly error instead of a confusing negative number. For adding or subtracting, enter your base date, a whole number of days, and whether to add or subtract.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Click "Calculate"</strong>
+              You will instantly see the total days, the same gap expressed in weeks, a calendar-accurate years, months, and days breakdown, and an approximate total in months. In add or subtract mode, you will see the resulting date, written out in full, together with its day of the week.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Copy or reset</strong>
+              Use "Copy Summary" to copy a plain-text summary you can paste into a message or document, or press "Reset" to clear the form and start a new calculation.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 2: How Date Difference Is Counted -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          How the Date Difference Is Counted
+        </h2>
+        <p class="content-paragraph">
+          This calculator defines the difference as the end date minus the start date, measured in whole calendar days. In plain words: the start date itself is not counted, and the end date is counted. So from Monday to Tuesday is 1 day, from 1 January to 31 January is 30 days, and two identical dates are 0 days apart. This is the same convention used by most countdown tools and booking systems, and it is the only convention that makes the maths consistent: if you add the difference back to the start date, you land exactly on the end date.
+        </p>
+        <p class="content-paragraph">
+          Some people need the inclusive count instead, where both the first and the last day are counted — for example, a hotel stay from Monday to Friday might be described as five days if both days are included in the booking. That is simply the difference plus one, and the calculator shows it for you in the results note, so you never have to guess which number someone else meant. Always check which convention a contract, a booking, or a deadline uses, because a single day can change a price or a penalty.
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            Difference in days = End date − Start date
+          </div>
+          <div class="formula-explanation">
+            Counted in whole calendar days, exclusive of the start date and inclusive of the end date.<br><br>
+            <strong>Weeks</strong> = total days ÷ 7 (with remaining days shown separately)<br>
+            <strong>Inclusive count</strong> = difference + 1 (both dates counted)<br>
+            <strong>Total months (approx.)</strong> = total days ÷ 30.44 (the average month length)
+          </div>
+        </div>
+        <p class="content-paragraph">
+          The calculator counts in whole days only, ignoring hours, minutes, and time zones. That is deliberate: a date on its own has no time of day, and counting by calendar dates avoids the off-by-one errors that appear when a computer converts a date into a local midnight that shifts with daylight saving time. Behind the scenes, every date is treated as midnight in Coordinated Universal Time, so the same two dates always give the same answer no matter where in the world you are.
+        </p>
+      </section>
+
+      <!-- Section 3: Years, Months, Days and Leap Years -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Years, Months, Days Breakdown and Leap Years
+        </h2>
+        <p class="content-paragraph">
+          A raw number of days is useful, but most people think in years and months: "How long until my anniversary?" or "How old is this contract?" The breakdown shown by this calculator works like an age calculation. It first counts whole calendar years from the start date, then whole calendar months, and finally the remaining days. When the end day of the month is smaller than the start day, it borrows days from the previous month, exactly as you would when working it out on paper. The result always adds back up to the end date, even across months of different lengths.
+        </p>
+        <p class="content-paragraph">
+          Leap years are the classic trap in date maths. A year is a leap year if it is divisible by 4, except for century years, which must also be divisible by 400. So 2024 was a leap year, 2023 was not, 2000 was a leap year, but 1900 was not. In a leap year, February has 29 days instead of 28, which changes every difference that crosses late February. For example, 28 February 2024 to 1 March 2024 is 2 days, because 29 February sits in between, while the same pair of dates in 2023 is only 1 day. This calculator handles leap years automatically, including the rare century rule, so you never need to check a calendar yourself.
+        </p>
+        <p class="content-paragraph">
+          The "total months (approx.)" figure is different from the breakdown: it simply divides the total days by 30.44, the average length of a month over a four-year cycle including one leap year. It is handy for rough planning, such as estimating how many monthly payments fall inside a period, but for exact dates you should always use the years, months, and days breakdown or the add and subtract mode, which land on a precise calendar date.
+        </p>
+      </section>
+
+      <!-- Section 4: Business Days and Examples -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          A Note on Business Days, Plus Everyday Examples
+        </h2>
+        <p class="content-paragraph">
+          This calculator counts calendar days, including Saturdays and Sundays, and it does not remove public holidays. Holidays differ from country to country, and even from region to region, so no single holiday list would be correct for every visitor. If you need working days only, a practical shortcut is to take the total calendar days, divide by seven to estimate the number of full weeks, and subtract two days per full week for the weekend, then adjust for any holidays inside the period. For legal or employment deadlines, always confirm the exact rule with the organisation involved, because some count the first day and others do not.
+        </p>
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Holiday and Event Countdowns</h4>
+            <p class="example-card-body">
+              Enter today as the start date and your flight, wedding, or exam date as the end date to see exactly how many days, weeks, and months you have left to prepare.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">2. Deadlines and Notice Periods</h4>
+            <p class="example-card-body">
+              Add 30, 60, or 90 days to the date you received a notice to find the exact deadline date and its day of the week, so a weekend deadline never catches you by surprise.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">3. Project and Subscription Planning</h4>
+            <p class="example-card-body">
+              Measure a project phase or a subscription period in days and months, or subtract days from a renewal date to set a reminder comfortably in advance.
+            </p>
+          </div>
+        </div>
+        <p class="content-paragraph">
+          Whatever you are counting, the safest habit is to calculate it twice: once as a difference and once by adding the result back to the start date. If the second calculation lands on your end date, your answer is confirmed. With this tool, both checks take a few seconds, and your dates stay completely private, because every calculation happens in your own browser and nothing is ever sent to a server.
+        </p>
+      </section>
+
+      <!-- Section 5: Frequently Asked Questions (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">How is the difference between two dates counted?</summary>
+            <div class="faq-answer">
+              The difference is end date minus start date, in whole calendar days. The start date itself is not counted, and the end date is counted. For example, from 1 January to 2 January is 1 day. If you want to count both the start and the end date, add 1 to the result — that inclusive count is also shown in the results.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Why is 28 February 2024 to 1 March 2024 equal to 2 days?</summary>
+            <div class="faq-answer">
+              Because 2024 is a leap year, February has 29 days. Counting forward from 28 February, the next day is 29 February (day 1) and the day after that is 1 March (day 2). In a non-leap year, the same pair of dates would be only 1 day apart, because there is no 29 February.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What does the years, months, and days breakdown mean?</summary>
+            <div class="faq-answer">
+              It is a calendar-accurate breakdown, like an age calculation. Whole years and whole calendar months are counted first, and the remaining days are what is left over. Because months have different lengths (28 to 31 days), the breakdown borrows days from the previous month when needed, so it always lands exactly on the end date.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Does this calculator count business days?</summary>
+            <div class="faq-answer">
+              No. This calculator counts calendar days, including Saturdays and Sundays. It does not remove weekends or public holidays, because holidays differ by country and region. If you need working days only, take the total days and subtract the weekends that fall inside the period.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my date information saved or sent anywhere?</summary>
+            <div class="faq-answer">
+              Never. OmniTools works entirely in your own web browser. The dates you enter are never sent to a server, stored in a database, or shared with anyone.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="date-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-dias.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var modeSelect = document.getElementById('dateMode');
+    var diffPanel = document.getElementById('diffPanel');
+    var addPanel = document.getElementById('addPanel');
+    var startInput = document.getElementById('startDate');
+    var endInput = document.getElementById('endDate');
+    var baseInput = document.getElementById('baseDate');
+    var dayCountInput = document.getElementById('dayCount');
+    var directionSelect = document.getElementById('dayDirection');
+    var resultsBox = document.getElementById('dateResultsBox');
+    var errorBox = document.getElementById('dateErrorBox');
+    var copyBtn = document.getElementById('copyDateBtn');
+
+    if (modeSelect) {
+      modeSelect.addEventListener('change', function() {
+        var isDiff = modeSelect.value === 'difference';
+        diffPanel.style.display = isDiff ? 'block' : 'none';
+        addPanel.style.display = isDiff ? 'none' : 'block';
+        hideError();
+        if (resultsBox) {
+          resultsBox.classList.remove('active');
+          resultsBox.style.display = 'none';
+        }
+      });
+    }
+
+    [startInput, endInput, baseInput, dayCountInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateDates();
+        });
+      }
+    });
+
+    function parseDateUTC(value) {
+      if (!value || typeof value !== 'string') return null;
+      var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value.trim());
+      if (!m) return null;
+      var y = parseInt(m[1], 10);
+      var mo = parseInt(m[2], 10);
+      var d = parseInt(m[3], 10);
+      if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+      var dt = new Date(Date.UTC(y, mo - 1, d));
+      if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) return null;
+      return { y: y, m: mo, d: d, utc: dt.getTime() };
+    }
+
+    function daysInMonthUTC(year, monthIndex) {
+      return new Date(Date.UTC(year, monthIndex + 1, 0)).getUTCDate();
+    }
+
+    function ymdBreakdown(s, e) {
+      var years = e.y - s.y;
+      var months = e.m - s.m;
+      var days = e.d - s.d;
+      if (days < 0) {
+        months -= 1;
+        var prevMonthIndex = e.m - 2;
+        var prevYear = e.y;
+        if (prevMonthIndex < 0) { prevMonthIndex += 12; prevYear -= 1; }
+        days += daysInMonthUTC(prevYear, prevMonthIndex);
+      }
+      if (months < 0) {
+        years -= 1;
+        months += 12;
+      }
+      return { years: years, months: months, days: days };
+    }
+
+    function formatLongUTC(parsed, locale) {
+      var dt = new Date(parsed.utc);
+      return dt.toLocaleDateString(locale, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    }
+
+    function formatShortUTC(parsed, locale) {
+      var dt = new Date(parsed.utc);
+      return dt.toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    }
+
+    window.calculateDates = function() {
+      var mode = modeSelect.value;
+      if (mode === 'difference') {
+        var s = parseDateUTC(startInput.value);
+        var e = parseDateUTC(endInput.value);
+        if (!s || !e) {
+          showError('Please enter both a valid start date and a valid end date.');
+          return;
+        }
+        if (e.utc < s.utc) {
+          showError('The end date must be on or after the start date. Please swap the dates or pick a later end date.');
+          return;
+        }
+        hideError();
+        var totalDays = Math.round((e.utc - s.utc) / 86400000);
+        var weeks = Math.floor(totalDays / 7);
+        var remDays = totalDays % 7;
+        var bd = ymdBreakdown(s, e);
+        var monthsApprox = (totalDays / 30.44).toFixed(1);
+        var dayWord = totalDays === 1 ? 'day' : 'days';
+        document.getElementById('heroResultLabel').textContent = 'Total Days Between Dates';
+        document.getElementById('heroResultValue').textContent = totalDays.toLocaleString() + ' ' + dayWord;
+        document.getElementById('heroResultSub').textContent = 'From ' + formatShortUTC(s, 'en-GB') + ' to ' + formatShortUTC(e, 'en-GB');
+        document.getElementById('metric1Label').textContent = 'Weeks';
+        document.getElementById('metric1Value').textContent = weeks + ' wk, ' + remDays + ' d';
+        document.getElementById('metric2Label').textContent = 'Years / Months / Days';
+        document.getElementById('metric2Value').textContent = bd.years + ' y, ' + bd.months + ' mo, ' + bd.days + ' d';
+        document.getElementById('metric3Label').textContent = 'Total Months (approx.)';
+        document.getElementById('metric3Value').textContent = monthsApprox + ' months';
+        document.getElementById('dateResultNote').textContent = 'Counting: difference = end date minus start date (start date not counted, end date counted). Inclusive count, counting both dates: ' + (totalDays + 1).toLocaleString() + ' ' + ((totalDays + 1) === 1 ? 'day' : 'days') + '.';
+        if (copyBtn) {
+          copyBtn.setAttribute('data-summary', 'Date difference: ' + formatShortUTC(s, 'en-GB') + ' to ' + formatShortUTC(e, 'en-GB') + ' = ' + totalDays + ' ' + dayWord + ' (' + weeks + ' weeks, ' + remDays + ' days; ' + bd.years + ' years, ' + bd.months + ' months, ' + bd.days + ' days). Calculated with OmniTools.');
+        }
+      } else {
+        var b = parseDateUTC(baseInput.value);
+        if (!b) {
+          showError('Please enter a valid base date.');
+          return;
+        }
+        var raw = dayCountInput.value;
+        if (raw === '' || raw === null || raw === undefined) {
+          showError('Please enter a whole number of days (0 to 365,000).');
+          return;
+        }
+        var n = Number(raw);
+        if (!isFinite(n) || Math.floor(n) !== n || n < 0 || n > 365000) {
+          showError('Please enter a whole number of days between 0 and 365,000.');
+          return;
+        }
+        hideError();
+        var signed = directionSelect.value === 'subtract' ? -n : n;
+        var resultUtc = b.utc + signed * 86400000;
+        var resultDate = new Date(resultUtc);
+        var resultParsed = { y: resultDate.getUTCFullYear(), m: resultDate.getUTCMonth() + 1, d: resultDate.getUTCDate(), utc: resultUtc };
+        var longStr = formatLongUTC(resultParsed, 'en-GB');
+        var weekday = resultDate.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'UTC' });
+        var verb = directionSelect.value === 'subtract' ? 'Subtracting' : 'Adding';
+        var dayWord2 = n === 1 ? 'day' : 'days';
+        document.getElementById('heroResultLabel').textContent = 'Resulting Date';
+        document.getElementById('heroResultValue').textContent = longStr;
+        document.getElementById('heroResultSub').textContent = weekday;
+        document.getElementById('metric1Label').textContent = 'Calculation';
+        document.getElementById('metric1Value').textContent = verb + ' ' + n.toLocaleString() + ' ' + dayWord2;
+        document.getElementById('metric2Label').textContent = 'Base Date';
+        document.getElementById('metric2Value').textContent = formatShortUTC(b, 'en-GB');
+        document.getElementById('metric3Label').textContent = 'Day of Week';
+        document.getElementById('metric3Value').textContent = weekday;
+        document.getElementById('dateResultNote').textContent = verb + ' ' + n.toLocaleString() + ' ' + dayWord2 + ' ' + (directionSelect.value === 'subtract' ? 'from' : 'to') + ' ' + formatShortUTC(b, 'en-GB') + ' gives ' + longStr + '.';
+        if (copyBtn) {
+          copyBtn.setAttribute('data-summary', 'Date calculation: ' + verb + ' ' + n + ' ' + dayWord2 + ' ' + (directionSelect.value === 'subtract' ? 'from' : 'to') + ' ' + formatShortUTC(b, 'en-GB') + ' = ' + longStr + '. Calculated with OmniTools.');
+        }
+      }
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+
+    window.resetDates = function() {
+      startInput.value = '';
+      endInput.value = '';
+      baseInput.value = '';
+      dayCountInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Date summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy summary:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Contraseñas Seguras - Contraseñas Aleatorias Fuertes con Medidor de Fortaleza | OmniTools</title>
+  <meta name="description" content="Genera contraseñas fuertes y aleatorias al instante. Elige longitud de 8 a 64 caracteres, mayúsculas, minúsculas, números y símbolos, y consulta fortaleza, entropía y tiempo de descifrado. 100% gratis y privado.">
+  <meta name="keywords" content="generador de contraseñas, generador de contraseñas seguras, crear contraseña fuerte, contraseña aleatoria, comprobar fortaleza de contraseña, generar contraseña segura">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canónica y SEO Multilingüe hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/es/generador-de-contrasenas.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/password-generator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/generador-de-contrasenas.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/password-generator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/es/generador-de-contrasenas.html">
+  <meta property="og:title" content="Generador de Contraseñas Seguras - Contraseñas Aleatorias Fuertes">
+  <meta property="og:description" content="Genera contraseñas fuertes y aleatorias con medidor de fortaleza, puntuación de entropía y tiempo estimado de descifrado. 100% gratis y privado.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-password-generator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Generador de Contraseñas Seguras | OmniTools">
+  <meta name="twitter:description" content="Contraseñas fuertes y aleatorias al instante, con fortaleza, entropía y tiempo de descifrado estimados.">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Datos Estructurados JSON-LD (WebApplication y FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Generador de Contraseñas Seguras",
+    "url": "https://omnitools.pages.dev/es/generador-de-contrasenas.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Genera contraseñas fuertes y aleatorias con longitud y conjuntos de caracteres personalizables, además de medidor de fortaleza, puntuación de entropía y tiempo estimado de descifrado.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://omnitools.pages.dev/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Seguridad",
+        "item": "https://omnitools.pages.dev/es/#security"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Generador de Contraseñas",
+        "item": "https://omnitools.pages.dev/es/generador-de-contrasenas.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué longitud debe tener una contraseña segura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apunta a al menos 16 caracteres para cuentas importantes. Las contraseñas más largas son exponencialmente más difíciles de descifrar: cada carácter adicional multiplica el número de contraseñas posibles por el tamaño del conjunto de caracteres, por lo que la longitud importa más que las sustituciones ingeniosas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Mi contraseña generada se envía a un servidor o se guarda en algún lugar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Este generador funciona por completo en tu navegador. Tu contraseña nunca se envía a un servidor, se guarda en una base de datos ni se comparte con nadie. Por seguridad, evita generar contraseñas en un dispositivo compartido o que no sea de confianza."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué significa la puntuación de entropía?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La entropía, medida en bits, estima lo impredecible que es una contraseña. Se calcula multiplicando la longitud de la contraseña por el logaritmo en base 2 del tamaño del conjunto de caracteres. Una entropía mayor significa más combinaciones posibles y un tiempo estimado de descifrado más largo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué son los caracteres ambiguos y por qué excluirlos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los caracteres ambiguos se parecen en muchas fuentes, como el dígito 0 y la letra O, o el dígito 1 y la letra l minúscula. Excluirlos hace que una contraseña sea más fácil de leer y de escribir correctamente cuando la copias a mano."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Debo reutilizar la misma contraseña en varias cuentas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Si un sitio sufre una filtración, todas las demás cuentas que usan la misma contraseña quedan en riesgo. Usa una contraseña única para cada cuenta y guárdalas en un gestor de contraseñas de confianza, con la autenticación en dos pasos activada siempre que esté disponible."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navegación -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Todas las Herramientas</a></li>
+          <li><a href="calculadora-de-edad.html">Edad</a></li>
+          <li><a href="calculadora-de-prestamos.html">Préstamos</a></li>
+          <li><a href="generador-de-contrasenas.html" class="active">Generador de Contraseñas</a></li>
+          <li><a href="../about.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de Idioma -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="../password-generator.html" class="lang-btn" title="English Version">EN</a>
+          <a href="generador-de-contrasenas.html" class="lang-btn active" title="Versión en Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Migas de pan -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#security">Seguridad</a></li>
+          <li aria-current="page">Generador de Contraseñas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Título de la Herramienta -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Generador de Contraseñas Seguras</h1>
+        <p class="tool-header-desc">
+          Crea contraseñas fuertes y aleatorias con un solo clic. Elige la longitud, selecciona los conjuntos de caracteres y consulta la fortaleza, la entropía y el tiempo estimado de descifrado, todo en privado en tu navegador.
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacio Publicitario Superior -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Espacio Publicitario">
+        <span class="ad-slot-placeholder-text">Banner Superior Adaptable (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Widget Principal y Barra Lateral -->
+    <section class="container tool-layout-container">
+
+      <!-- Columna Principal -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Longitud -->
+            <div class="form-group">
+              <label for="pwLength" class="form-label">
+                <span>Longitud de la contraseña: <span id="pwLengthValue">16</span> caracteres</span>
+                <span class="label-hint">De 8 a 64</span>
+              </label>
+              <input type="range" id="pwLength" class="form-input" min="8" max="64" step="1" value="16">
+              <span class="form-help">Las contraseñas más largas son mucho más difíciles de descifrar. 16 caracteres es un buen valor por defecto.</span>
+            </div>
+
+            <!-- Conjuntos de caracteres -->
+            <div class="form-group">
+              <span class="form-label"><span>Conjuntos de caracteres</span><span class="label-hint">Elige al menos uno</span></span>
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem;"><input type="checkbox" id="pwUpper" checked> Letras mayúsculas (A-Z)</label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem;"><input type="checkbox" id="pwLower" checked> Letras minúsculas (a-z)</label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem;"><input type="checkbox" id="pwNumbers" checked> Números (0-9)</label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem;"><input type="checkbox" id="pwSymbols" checked> Símbolos (!@#$%...)</label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem;"><input type="checkbox" id="pwExcludeAmbiguous"> Excluir caracteres ambiguos (0, O, 1, l, I, |)</label>
+              <span class="form-help">Se garantiza que cada conjunto seleccionado aparezca al menos una vez en la contraseña.</span>
+            </div>
+          </div>
+
+          <!-- Mensaje de Error -->
+          <div id="pwErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="widget-actions">
+            <button type="button" id="generatePwBtn" class="btn btn-primary" onclick="generatePassword()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              Generar Contraseña
+            </button>
+            <button type="button" id="resetPwBtn" class="btn btn-outline" onclick="resetPassword()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Restablecer
+            </button>
+          </div>
+
+          <!-- Caja de Resultados -->
+          <div id="pwResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Tu Contraseña Generada
+              </span>
+              <button type="button" id="copyPwBtn" class="btn btn-outline btn-sm" title="Copiar contraseña">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar
+              </button>
+            </div>
+
+            <!-- Tarjeta Principal: Contraseña -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Contraseña Generada</div>
+              <div class="hero-result-value" id="generatedPasswordValue" style="font-size: 1.25rem; word-break: break-all; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;">-</div>
+              <div class="hero-result-sub" id="strengthLabelSub">Fortaleza: -</div>
+            </div>
+
+            <!-- Medidor de Fortaleza -->
+            <div class="milestones-wrapper">
+              <div class="milestones-title">Fortaleza de la Contraseña</div>
+              <div style="background: #e2e8f0; height: 12px; border-radius: 9999px; overflow: hidden;">
+                <div id="strengthBar" style="height: 12px; width: 0%; background: #ef4444; border-radius: 9999px;"></div>
+              </div>
+              <p style="margin-top: 0.75rem; font-size: 0.875rem;"><strong id="strengthLabel">-</strong> <span id="strengthNote">Genera una contraseña para ver su fortaleza.</span></p>
+            </div>
+
+            <!-- Métricas Secundarias -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="entropyValue">-</div>
+                <div class="metric-label">Entropía (bits)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="poolValue">-</div>
+                <div class="metric-label">Tamaño del Conjunto</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="crackTimeValue" style="color: var(--accent);">-</div>
+                <div class="metric-label">Tiempo Estimado de Descifrado</div>
+              </div>
+            </div>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">El tiempo de descifrado es una estimación aproximada a 10 000 millones de intentos por segundo, suponiendo que un atacante prueba contraseñas al azar. Los ataques reales varían, así que tómalo como una orientación, no como una garantía.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral: Anuncio y Enlaces -->
+      <aside>
+        <!-- Anuncio Lateral -->
+        <div class="ad-slot ad-rectangle" aria-label="Espacio Publicitario Lateral">
+          <span class="ad-slot-placeholder-text">Rectángulo Lateral (300x250)</span>
+        </div>
+
+        <!-- Herramientas Relacionadas -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras Relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="calculadora-de-edad.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Edad e Hitos <span>→</span></a></li>
+            <li><a href="calculadora-de-imc.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+            <li><a href="calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Préstamos <span>→</span></a></li>
+            <li><a href="contador-de-palabras.html" style="display: flex; align-items: center; justify-content: space-between;">Contador de Palabras <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Anuncio en Contenido -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Espacio Publicitario en Contenido">
+        <span class="ad-slot-placeholder-text">Banner en Contenido Adaptable (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Guía Educativa -->
+    <article class="container educational-content">
+
+      <!-- Sección 1: Cómo Usar -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar el Generador de Contraseñas de OmniTools
+        </h2>
+        <p class="content-paragraph">
+          Una contraseña fuerte es tu primera línea de defensa en internet, y sin embargo la mayoría de las personas sigue reutilizando contraseñas cortas y predecibles porque inventar una nueva para cada cuenta parece un trabajo pesado. Este generador elimina ese esfuerzo: crea una contraseña realmente aleatoria para ti, mide su fortaleza y te permite copiarla directamente en tu cuenta o en tu gestor de contraseñas. Nada de lo que generas sale de tu navegador, así que puedes usarlo con confianza en tu propio dispositivo.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Elige una longitud</strong>
+              Arrastra el control deslizante para fijar la longitud de la contraseña, de 8 a 64 caracteres. El número se actualiza mientras arrastras. Para cuentas cotidianas, 16 caracteres es un valor sensato por defecto; para el correo, la banca y la contraseña maestra de tu gestor de contraseñas, considera 20 caracteres o más.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Elige tus conjuntos de caracteres</strong>
+              Marca mayúsculas, minúsculas, números y símbolos. Se garantiza que cada conjunto que marques aparezca al menos una vez en el resultado, así que la contraseña nunca sale sin un tipo que hayas pedido. Si un sitio web rechaza un símbolo en particular, desmarca los símbolos y genera otra.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Excluye caracteres ambiguos si lo necesitas</strong>
+              Si alguna vez necesitas leer o escribir una contraseña a mano, marca "Excluir caracteres ambiguos". Esto elimina parecidos como el dígito 0 y la letra O, y el dígito 1 y la letra l minúscula, que se confunden con facilidad en muchas fuentes.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Genera, comprueba y copia</strong>
+              Pulsa "Generar Contraseña" o, simplemente, cambia cualquier control y aparecerá una contraseña nueva automáticamente. Comprueba la etiqueta de fortaleza, la entropía y el tiempo estimado de descifrado, luego pulsa "Copiar" y pega la contraseña donde la necesites. Pulsa "Restablecer" en cualquier momento para volver a los valores por defecto y borrar el resultado.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Sección 2: Qué Hace Fuerte a una Contraseña -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          ¿Qué Hace Fuerte a una Contraseña?
+        </h2>
+        <p class="content-paragraph">
+          La fortaleza depende de dos cosas: la longitud y la imprevisibilidad. Una contraseña corta, por ingeniosa que parezca, tiene muchas menos combinaciones posibles que una larga y aleatoria, así que un atacante que adivina de forma sistemática la alcanzará antes. La imprevisibilidad importa igual de mucho. Las contraseñas formadas con nombres, fechas de nacimiento, equipos favoritos o palabras comunes son fáciles de adivinar porque los atacantes prueban primero diccionarios, listas de contraseñas filtradas y datos personales. Sustituir una letra por un número de aspecto parecido, como escribir "c0ntraseña" en lugar de "contraseña", no hace fuerte a una contraseña, porque esos trucos ya están en todas las listas de los atacantes.
+        </p>
+        <p class="content-paragraph">
+          Una contraseña aleatoria evita todo esto. Cada carácter se elige de forma independiente, sin patrón, palabra ni significado personal que un atacante pueda aprovechar. Mezclar tipos de caracteres también ayuda, porque amplía el conjunto de caracteres posibles en cada posición. Con mayúsculas, minúsculas, números y símbolos combinados, cada posición puede ser uno de unos 90 caracteres distintos, así que incluso un pequeño aumento de la longitud multiplica enormemente el número total de combinaciones. Por eso los expertos en seguridad recomiendan siempre contraseñas largas, aleatorias y únicas en lugar de contraseñas cortas y memorables, y por eso un gestor de contraseñas resulta tan útil: recuerda las contraseñas aleatorias para que tú no tengas que hacerlo.
+        </p>
+        <p class="content-paragraph">
+          También hay hábitos que debilitan incluso una contraseña fuerte. Reutilizar una misma contraseña en varios sitios significa que una sola filtración expone a todos ellos. Compartir contraseñas por correo o por chat, escribirlas en notas adhesivas o guardarlas en un documento sin protección crea copias extra que un atacante podría encontrar. Y una contraseña por sí sola nunca es toda la historia: en cualquier sitio que ofrezca autenticación en dos pasos, actívala, para que una contraseña robada por sí sola no baste para entrar como tú.
+        </p>
+      </section>
+
+      <!-- Sección 3: Entropía Explicada -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          La Entropía Explicada en Lenguaje Sencillo
+        </h2>
+        <p class="content-paragraph">
+          La entropía es un solo número, medido en bits, que resume lo difícil que es adivinar una contraseña por fuerza bruta. Piensa en ella como el tamaño del pajar en el que un atacante debe buscar. La fórmula que usa esta herramienta es sencilla y honesta, y supone que la contraseña se generó de forma aleatoria, que es exactamente lo que hace este generador:
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            Entropía (bits) = Longitud × log2(Tamaño del Conjunto de Caracteres)
+          </div>
+          <div class="formula-explanation">
+            Donde:<br>
+            • <strong>Longitud</strong> = el número de caracteres de la contraseña<br>
+            • <strong>Tamaño del Conjunto de Caracteres</strong> = cuántos caracteres distintos pueden aparecer en cada posición<br>
+            • <strong>log2</strong> = logaritmo en base 2<br><br>
+            <strong>Ejemplo:</strong> una contraseña de 16 caracteres que usa los cuatro conjuntos tiene un conjunto de 89 caracteres. log2(89) es aproximadamente 6,48, así que su entropía es aproximadamente 16 × 6,48 = 104 bits. Eso significa aproximadamente 2^104 contraseñas posibles.
+          </div>
+        </div>
+        <p class="content-paragraph">
+          Las etiquetas de fortaleza de esta página siguen la puntuación de entropía: por debajo de 28 bits es Débil, por debajo de 36 bits es Aceptable, por debajo de 60 bits es Fuerte, y 60 bits o más es Muy fuerte. Una contraseña corta formada solo por minúsculas puede caer con facilidad en el rango Débil, mientras que una contraseña de 16 caracteres que usa los cuatro conjuntos de caracteres alcanza con comodidad Muy fuerte. El tiempo estimado de descifrado que se muestra junto a la puntuación traduce la entropía a tiempo a un ritmo de 10 000 millones de intentos por segundo. Es un atacante rápido y, aun así, una contraseña Muy fuerte tardaría muchísimo más que una vida humana en descifrarse de este modo. Recuerda, sin embargo, que la entropía solo mide la resistencia a la adivinación ciega. No puede proteger una contraseña filtrada, robada por engaño o reutilizada, por lo que las contraseñas únicas y la autenticación en dos pasos siguen siendo esenciales.
+        </p>
+      </section>
+
+      <!-- Sección 4: Gestores de Contraseñas -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Usa un Gestor de Contraseñas y No Memorices Contraseñas Aleatorias
+        </h2>
+        <p class="content-paragraph">
+          El problema honesto de las contraseñas fuertes es que nadie puede memorizar docenas de cadenas largas y aleatorias, y nadie debería intentarlo. Un gestor de contraseñas lo resuelve guardando cada contraseña única en una bóveda cifrada que desbloqueas con una sola contraseña maestra fuerte, idealmente protegida por autenticación en dos pasos. Tu navegador o tu teléfono quizá ya ofrezcan uno integrado, y los gestores dedicados añaden funciones útiles como avisarte cuando una contraseña aparece en una filtración conocida, detectar contraseñas reutilizadas y rellenarlas automáticamente para que nunca las escribas donde un sitio falso podría capturarlas.
+        </p>
+        <p class="content-paragraph">
+          Una rutina práctica es la siguiente. Empieza por tu cuenta de correo, porque el acceso a tu correo puede restablecer muchas otras cuentas, y dale una contraseña larga y única más autenticación en dos pasos. Haz lo mismo con la banca, con tu propio gestor de contraseñas y con cualquier cuenta que guarde datos de pago. Luego recorre tus demás cuentas poco a poco, generando una contraseña nueva para cada una y guardándola en el gestor antes de seguir adelante. Si algún servicio informa alguna vez de una filtración, cambia solo esa contraseña de inmediato; como es única, ninguna otra se ve afectada. Con el tiempo, esta rutina convierte la seguridad de las contraseñas de una prueba de memoria en un hábito sencillo, y es el paso más eficaz que la mayoría de las personas puede dar para proteger sus cuentas en línea.
+        </p>
+      </section>
+
+      <!-- Sección 5: Preguntas Frecuentes -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas Frecuentes
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Qué longitud debe tener una contraseña segura?</summary>
+            <div class="faq-answer">
+              Apunta a al menos 16 caracteres para cuentas importantes. Las contraseñas más largas son exponencialmente más difíciles de descifrar: cada carácter adicional multiplica el número de contraseñas posibles por el tamaño del conjunto de caracteres, por lo que la longitud importa más que las sustituciones ingeniosas.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Mi contraseña generada se envía a un servidor o se guarda en algún lugar?</summary>
+            <div class="faq-answer">
+              No. Este generador funciona por completo en tu navegador. Tu contraseña nunca se envía a un servidor, se guarda en una base de datos ni se comparte con nadie. Por seguridad, evita generar contraseñas en un dispositivo compartido o que no sea de confianza.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Qué significa la puntuación de entropía?</summary>
+            <div class="faq-answer">
+              La entropía, medida en bits, estima lo impredecible que es una contraseña. Se calcula multiplicando la longitud de la contraseña por el logaritmo en base 2 del tamaño del conjunto de caracteres. Una entropía mayor significa más combinaciones posibles y un tiempo estimado de descifrado más largo.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Qué son los caracteres ambiguos y por qué excluirlos?</summary>
+            <div class="faq-answer">
+              Los caracteres ambiguos se parecen en muchas fuentes, como el dígito 0 y la letra O, o el dígito 1 y la letra l minúscula. Excluirlos hace que una contraseña sea más fácil de leer y de escribir correctamente cuando la copias a mano.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Debo reutilizar la misma contraseña en varias cuentas?</summary>
+            <div class="faq-answer">
+              No. Si un sitio sufre una filtración, todas las demás cuentas que usan la misma contraseña quedan en riesgo. Usa una contraseña única para cada cuenta y guárdalas en un gestor de contraseñas de confianza, con la autenticación en dos pasos activada siempre que esté disponible.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece utilidades y calculadoras web gratuitas, ligeras y respetuosas con la privacidad para el uso diario.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-edad.html">Calculadora de Edad</a></li>
+            <li><a href="calculadora-de-prestamos.html">Calculadora de Préstamos</a></li>
+            <li><a href="calculadora-de-imc.html">Calculadora de IMC</a></li>
+            <li><a href="generador-de-contrasenas.html">Generador de Contraseñas</a></li>
+            <li><a href="contador-de-palabras.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Otras Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="conversor-de-unidades.html">Conversor de Unidades</a></li>
+            <li><a href="calculadora-de-porcentaje.html">Calculadora de Porcentaje</a></li>
+            <li><a href="calculadora-de-dias.html">Diferencia entre Fechas</a></li>
+            <li><a href="convertidor-de-mayusculas.html">Convertidor de Mayúsculas</a></li>
+            <li><a href="calculadora-de-descuentos.html">Calculadora de Descuentos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Quiénes Somos</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades online gratuitas.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../password-generator.html">English</a> |
+          <a href="generador-de-contrasenas.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Motor Integrado (Sin Dependencias Externas) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var lengthInput = document.getElementById('pwLength');
+    var lengthValue = document.getElementById('pwLengthValue');
+    var upperInput = document.getElementById('pwUpper');
+    var lowerInput = document.getElementById('pwLower');
+    var numbersInput = document.getElementById('pwNumbers');
+    var symbolsInput = document.getElementById('pwSymbols');
+    var excludeInput = document.getElementById('pwExcludeAmbiguous');
+    var resultsBox = document.getElementById('pwResultsBox');
+    var errorBox = document.getElementById('pwErrorBox');
+    var copyBtn = document.getElementById('copyPwBtn');
+
+    var SETS = {
+      upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+      lower: 'abcdefghijklmnopqrstuvwxyz',
+      numbers: '0123456789',
+      symbols: '!@#$%^&*()-_=+[]{};:,.<>?/~'
+    };
+    var AMBIGUOUS = '0O1lI|';
+
+    function randomIndex(max) {
+      if (window.crypto && window.crypto.getRandomValues) {
+        var arr = new Uint32Array(1);
+        window.crypto.getRandomValues(arr);
+        return arr[0] % max;
+      }
+      return Math.floor(Math.random() * max);
+    }
+
+    function pickChar(chars) {
+      return chars.charAt(randomIndex(chars.length));
+    }
+
+    function getSelectedSets() {
+      var sets = [];
+      var exclude = excludeInput.checked;
+      function filtered(chars) {
+        if (!exclude) return chars;
+        var out = '';
+        for (var i = 0; i < chars.length; i++) {
+          if (AMBIGUOUS.indexOf(chars.charAt(i)) === -1) out += chars.charAt(i);
+        }
+        return out;
+      }
+      if (upperInput.checked) sets.push(filtered(SETS.upper));
+      if (lowerInput.checked) sets.push(filtered(SETS.lower));
+      if (numbersInput.checked) sets.push(filtered(SETS.numbers));
+      if (symbolsInput.checked) sets.push(filtered(SETS.symbols));
+      return sets.filter(function(s) { return s.length > 0; });
+    }
+
+    function strengthFor(entropy) {
+      if (entropy < 28) return { label: 'Débil', color: '#ef4444', width: 25 };
+      if (entropy < 36) return { label: 'Aceptable', color: '#f59e0b', width: 50 };
+      if (entropy < 60) return { label: 'Fuerte', color: '#2563eb', width: 75 };
+      return { label: 'Muy fuerte', color: '#10b981', width: 100 };
+    }
+
+    function formatCrackTime(seconds) {
+      if (seconds < 60) return Math.max(1, Math.round(seconds)) + ' segundos';
+      if (seconds < 3600) return Math.round(seconds / 60) + ' minutos';
+      if (seconds < 86400) return Math.round(seconds / 3600) + ' horas';
+      if (seconds < 31557600) return Math.round(seconds / 86400) + ' días';
+      var years = seconds / 31557600;
+      if (years < 100) return years.toFixed(1) + ' años';
+      return Math.round(years).toLocaleString(undefined) + ' años';
+    }
+
+    window.generatePassword = function() {
+      var length = parseInt(lengthInput.value, 10);
+      if (isNaN(length)) length = 16;
+      length = Math.max(8, Math.min(64, length));
+      lengthInput.value = length;
+      lengthValue.textContent = length;
+
+      var sets = getSelectedSets();
+      if (sets.length === 0) {
+        showError('Selecciona al menos un conjunto de caracteres (mayúsculas, minúsculas, números o símbolos).');
+        if (resultsBox) {
+          resultsBox.classList.remove('active');
+          resultsBox.style.display = 'none';
+        }
+        return;
+      }
+      hideError();
+
+      var pool = '';
+      sets.forEach(function(s) { pool += s; });
+
+      var chars = [];
+      sets.forEach(function(s) { chars.push(pickChar(s)); });
+      while (chars.length < length) {
+        chars.push(pickChar(pool));
+      }
+      for (var i = chars.length - 1; i > 0; i--) {
+        var j = randomIndex(i + 1);
+        var tmp = chars[i];
+        chars[i] = chars[j];
+        chars[j] = tmp;
+      }
+      var password = chars.join('');
+
+      var entropy = length * (Math.log(pool.length) / Math.log(2));
+      var strength = strengthFor(entropy);
+      var crackSeconds = Math.pow(2, entropy) / 10000000000;
+
+      document.getElementById('generatedPasswordValue').textContent = password;
+      document.getElementById('strengthLabelSub').textContent = 'Fortaleza: ' + strength.label;
+      document.getElementById('strengthLabel').textContent = strength.label;
+      document.getElementById('strengthNote').textContent = 'Entropía: ' + entropy.toFixed(1) + ' bits. Tiempo estimado de descifrado a 10 000 millones de intentos por segundo: ' + formatCrackTime(crackSeconds) + '.';
+      var bar = document.getElementById('strengthBar');
+      if (bar) {
+        bar.style.width = strength.width + '%';
+        bar.style.background = strength.color;
+      }
+      document.getElementById('entropyValue').textContent = entropy.toFixed(1) + ' bits';
+      document.getElementById('poolValue').textContent = pool.length;
+      document.getElementById('crackTimeValue').textContent = formatCrackTime(crackSeconds);
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-password', password);
+      }
+    };
+
+    window.resetPassword = function() {
+      lengthInput.value = 16;
+      lengthValue.textContent = '16';
+      upperInput.checked = true;
+      lowerInput.checked = true;
+      numbersInput.checked = true;
+      symbolsInput.checked = true;
+      excludeInput.checked = false;
+      hideError();
+      document.getElementById('generatedPasswordValue').textContent = '-';
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    [lengthInput, upperInput, lowerInput, numbersInput, symbolsInput, excludeInput].forEach(function(el) {
+      if (el) {
+        el.addEventListener('input', function() { generatePassword(); });
+        el.addEventListener('change', function() { generatePassword(); });
+      }
+    });
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-password') || document.getElementById('generatedPasswordValue').textContent;
+        if (!txt || txt === '-') return;
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Contraseña copiada al portapapeles!');
+          }).catch(function() {
+            prompt('Copia la contraseña:', txt);
+          });
+        } else {
+          prompt('Copia la contraseña:', txt);
+        }
+      });
+    }
+
+    generatePassword();
+  })();
+  </script>
+</body>
+</html>

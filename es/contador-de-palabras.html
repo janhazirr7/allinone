@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de Palabras - Cuenta Palabras, Caracteres, Frases y Tiempo de Lectura | OmniTools</title>
+  <meta name="description" content="Contador de palabras gratis en vivo: cuenta palabras, caracteres con y sin espacios, frases, párrafos y tiempo estimado de lectura mientras escribes. 100% gratis y privado.">
+  <meta name="keywords" content="contador de palabras, contador de caracteres, contar palabras online, contador de frases, contador de párrafos, tiempo de lectura, herramienta gratis de conteo de palabras">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canónica y SEO Multilingüe hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/es/contador-de-palabras.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/word-counter.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/contador-de-palabras.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/word-counter.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/es/contador-de-palabras.html">
+  <meta property="og:title" content="Contador de Palabras - Cuenta Palabras, Caracteres y Tiempo de Lectura">
+  <meta property="og:description" content="Conteo en vivo de palabras, caracteres, frases y párrafos, más tiempo estimado de lectura. Gratis, instantáneo y privado.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-word-counter.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contador de Palabras | OmniTools">
+  <meta name="twitter:description" content="Conteo instantáneo de palabras, caracteres, frases y tiempo de lectura — gratis y privado.">
+  <meta name="twitter:image" content="https://omnitools.pages.dev/og-word-counter.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Datos Estructurados JSON-LD (WebApplication y FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Contador de Palabras",
+    "url": "https://omnitools.pages.dev/es/contador-de-palabras.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Cuenta palabras, caracteres con y sin espacios, frases, párrafos y tiempo estimado de lectura de cualquier texto, en vivo mientras escribes.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://omnitools.pages.dev/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Texto",
+        "item": "https://omnitools.pages.dev/es/#text"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Contador de Palabras",
+        "item": "https://omnitools.pages.dev/es/contador-de-palabras.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo cuenta las palabras el contador de palabras?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El contador divide el texto por espacios en blanco (espacios, tabulaciones y saltos de línea). Cada fragmento que contiene al menos una letra o un número cuenta como una palabra, así que los espacios extra, las líneas en blanco y la puntuación por sí sola no inflan el resultado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la diferencia entre caracteres con espacios y sin espacios?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los caracteres con espacios son la longitud total del texto, incluyendo cada espacio, tabulación y salto de línea. Los caracteres sin espacios eliminan primero todos los espacios en blanco, así que cuentan solo letras, dígitos y signos de puntuación. Las biografías de redes sociales y algunos formularios usan uno u otro, por eso se muestran ambos números."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se calcula el tiempo estimado de lectura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El tiempo de lectura divide el número de palabras entre 200 palabras por minuto, la velocidad media de lectura silenciosa de un adulto. Un texto de 200 palabras tarda alrededor de 1 minuto, y uno de 1.000 palabras alrededor de 5 minutos. El texto denso o técnico suele tardar más, así que toma la cifra como una estimación útil, no como una medida exacta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se cuentan las frases y los párrafos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las frases se cuentan a partir de grupos de signos de puntuación final (. ! ?), así que unos puntos suspensivos o una serie de signos de exclamación cuentan como un solo final de frase. Un texto con palabras pero sin puntuación final cuenta como una frase. Los párrafos son bloques de texto separados por líneas en blanco."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Mi texto se guarda o se envía a algún sitio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. OmniTools funciona por completo en tu navegador. Tu texto se cuenta localmente en tu dispositivo y nunca se sube, se almacena ni se envía a ningún servidor, así que puedes revisar borradores, redacciones y documentos de trabajo con total tranquilidad."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navegación -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Todas las Herramientas</a></li>
+          <li><a href="calculadora-de-edad.html">Edad</a></li>
+          <li><a href="calculadora-de-prestamos.html">Préstamos</a></li>
+          <li><a href="contador-de-palabras.html" class="active">Contador</a></li>
+          <li><a href="../about.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de Idioma -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="../word-counter.html" class="lang-btn" title="English Version">EN</a>
+          <a href="contador-de-palabras.html" class="lang-btn active" title="Versión en Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Ruta de navegación -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#text">Texto</a></li>
+          <li aria-current="page">Contador de Palabras</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Título de la Herramienta -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Contador de Palabras y Caracteres</h1>
+        <p class="tool-header-desc">
+          Pega o escribe tu texto y observa cómo el conteo de palabras, caracteres, frases, párrafos y tiempo de lectura se actualiza en vivo — sin pulsar ningún botón, sin registrarte y sin que nada salga de tu navegador.
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacio Publicitario Superior -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Espacio Publicitario">
+        <span class="ad-slot-placeholder-text">Banner Superior Adaptable (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Diseño Principal y Barra Lateral -->
+    <section class="container tool-layout-container">
+
+      <!-- Columna Principal de la Herramienta -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Entrada de Texto -->
+            <div class="form-group">
+              <label for="wordText" class="form-label">
+                <span>Tu Texto</span>
+                <span class="label-hint">El conteo se actualiza mientras escribes</span>
+              </label>
+              <textarea id="wordText" class="form-input" rows="10" placeholder="Escribe o pega tu texto aquí..." style="resize: vertical; min-height: 200px; line-height: 1.6;"></textarea>
+              <span class="form-help">Funciona con redacciones, artículos, descripciones, correos y cualquier texto plano.</span>
+            </div>
+          </div>
+
+          <!-- Aviso de Error -->
+          <div id="wordErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="widget-actions">
+            <button type="button" id="copyTextBtn" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              Copiar Texto
+            </button>
+            <button type="button" id="clearTextBtn" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Limpiar
+            </button>
+          </div>
+
+          <!-- Caja de Resultados en Vivo -->
+          <div id="wordResultsBox" class="results-box active" style="display: block;">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Estadísticas del Texto en Vivo
+              </span>
+              <button type="button" id="copySummaryBtn" class="btn btn-outline btn-sm" title="Copiar resumen de resultados">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar Resumen
+              </button>
+            </div>
+
+            <!-- Tarjeta Principal: Palabras -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Palabras</div>
+              <div class="hero-result-value" id="countWords">0</div>
+              <div class="hero-result-sub">Conteo en vivo — se actualiza mientras escribes</div>
+            </div>
+
+            <!-- Métricas Secundarias -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="countCharsWith">0</div>
+                <div class="metric-label">Caracteres (con espacios)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="countCharsWithout">0</div>
+                <div class="metric-label">Caracteres (sin espacios)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="countSentences">0</div>
+                <div class="metric-label">Frases</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="countParagraphs">0</div>
+                <div class="metric-label">Párrafos</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="readingTime" style="color: var(--accent);">0 seg</div>
+                <div class="metric-label">Tiempo de Lectura (200 ppm)</div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.8125rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">El tiempo de lectura se estima a 200 palabras por minuto, la velocidad media de lectura silenciosa de un adulto.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral: Anuncio y Enlaces -->
+      <aside>
+        <!-- Anuncio Lateral -->
+        <div class="ad-slot ad-rectangle" aria-label="Espacio Publicitario Lateral">
+          <span class="ad-slot-placeholder-text">Rectángulo Lateral (300x250)</span>
+        </div>
+
+        <!-- Widget de Utilidades -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Herramientas Relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="convertidor-de-mayusculas.html" style="display: flex; align-items: center; justify-content: space-between;">Convertidor de Mayúsculas <span>→</span></a></li>
+            <li><a href="calculadora-de-porcentaje.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Porcentaje <span>→</span></a></li>
+            <li><a href="calculadora-de-edad.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Edad e Hitos <span>→</span></a></li>
+            <li><a href="calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Préstamos <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Anuncio en Contenido -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Espacio Publicitario en Contenido">
+        <span class="ad-slot-placeholder-text">Banner en Contenido Adaptable (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Guía Educativa (más de 500 palabras) -->
+    <article class="container educational-content">
+
+      <!-- Sección 1: Cómo Usarlo -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar el Contador de Palabras de OmniTools
+        </h2>
+        <p class="content-paragraph">
+          Los límites de palabras aparecen en todas partes: redacciones escolares, solicitudes universitarias, entradas de blog, descripciones de redes sociales, guiones de vídeo y solicitudes de empleo. Adivinar el número de palabras hace perder tiempo y puede provocar que rechacen un trabajo, así que esta herramienta cuenta tu texto en cuanto lo escribes, sin pulsar ningún botón y sin subir ningún archivo. Todo ocurre en tu propio navegador, lo que significa que tus borradores se mantienen completamente privados.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Escribe o pega tu texto</strong>
+              Haz clic dentro del cuadro de arriba y empieza a escribir, o pega un texto copiado de un documento, un correo o una página web. Los conteos se actualizan con cada tecla y con cada pegado.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Lee los resultados en vivo</strong>
+              El número grande de arriba es tu conteo de palabras. Debajo encontrarás caracteres con y sin espacios, frases, párrafos y tu tiempo estimado de lectura.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Recorta o amplía hasta alcanzar tu objetivo</strong>
+              Si superas un límite, elimina una frase o resume un párrafo y observa cómo los números bajan al instante. Si te falta texto para un mínimo, añade detalles y observa cómo suben.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Copia tu texto de nuevo</strong>
+              Usa el botón Copiar Texto para copiar todo el texto al portapapeles, o Copiar Resumen para copiar solo los conteos. Usa Limpiar para empezar de nuevo con el cuadro vacío.
+            </div>
+          </li>
+        </ol>
+        <p class="content-paragraph">
+          No hay registro, la herramienta en sí no impone ningún límite de palabras y no hay que esperar. Los documentos largos se procesan igual que las descripciones cortas: el contador simplemente recorre el texto y actualiza los números, así que ni siquiera una redacción o un artículo completo ralentizará la página ni la romperá.
+        </p>
+      </section>
+
+      <!-- Sección 2: Qué Significa Cada Métrica -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+          Qué Significa Cada Métrica
+        </h2>
+        <p class="content-paragraph">
+          El conteo de palabras por sí solo solo cuenta una parte de la historia. Las distintas plataformas y tareas valoran números diferentes, así que esta herramienta los muestra todos juntos. Entender cada uno te ayuda a cumplir el requisito exacto en lugar de adivinar qué número usará una plataforma.
+        </p>
+        <p class="content-paragraph">
+          <strong>Palabras.</strong> Las palabras son secuencias separadas por espacios en blanco: espacios, tabulaciones y saltos de línea. Un fragmento solo cuenta como palabra si contiene al menos una letra o un número, así que los espacios extra, las líneas en blanco y los signos de puntuación sueltos no inflan el total. Esto importa cuando pegas texto desde un documento con formato, donde los dobles espacios y las líneas vacías son habituales. Por ejemplo, la frase “¡Hola, mundo!” cuenta como dos palabras, mientras que una línea que solo contiene signos de exclamación cuenta como ninguna.
+        </p>
+        <p class="content-paragraph">
+          <strong>Caracteres con espacios.</strong> Esta es la longitud bruta de tu texto, contando cada letra, dígito, signo de puntuación, espacio, tabulación y salto de línea. Algunas plataformas fijan un límite de caracteres en lugar de palabras, y casi siempre se refieren a este número, porque coincide con lo que ves en el cuadro.
+        </p>
+        <p class="content-paragraph">
+          <strong>Caracteres sin espacios.</strong> Esta cifra elimina primero todos los espacios en blanco y cuenta solo los caracteres visibles. Es el número que debes revisar cuando una consigna dice “caracteres sin contar los espacios”, algo habitual en trabajos académicos y de traducción, donde los espacios no deben contar como contenido.
+        </p>
+        <p class="content-paragraph">
+          <strong>Frases.</strong> Las frases se cuentan a partir de grupos de signos de puntuación final: puntos, signos de exclamación y signos de interrogación. Una serie de signos como “...” o “!!!” cuenta como un solo final de frase, lo que mantiene el conteo sensato en textos expresivos. Un texto que tiene palabras pero ninguna puntuación final cuenta igualmente como una frase, porque un borrador sin terminar sigue siendo un pensamiento en curso.
+        </p>
+        <p class="content-paragraph">
+          <strong>Párrafos.</strong> Los párrafos son bloques de texto separados por líneas en blanco. Pulsar Intro una vez dentro de un bloque no inicia un párrafo nuevo aquí; dejar una línea vacía entre bloques sí lo hace. Eso coincide con cómo la mayoría de procesadores de texto y plataformas de publicación tratan los párrafos, y premia un formato limpio y legible en lugar de saltos de línea sueltos.
+        </p>
+      </section>
+
+      <!-- Sección 3: Tiempo de Lectura -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          El Tiempo de Lectura Explicado
+        </h2>
+        <p class="content-paragraph">
+          La estimación del tiempo de lectura divide el número de palabras entre 200 palabras por minuto, la media ampliamente usada para la lectura silenciosa de adultos. A esa velocidad, una descripción de 200 palabras tarda alrededor de un minuto en leerse, una entrada de blog de 500 palabras tarda alrededor de dos minutos y medio, y un artículo de 1.000 palabras tarda alrededor de cinco minutos. Los textos cortos de menos de un minuto se muestran como “menos de 1 min”, así que un borrador del tamaño de un mensaje nunca se redondea a un minuto completo que no necesita.
+        </p>
+        <p class="content-paragraph">
+          Toma esta cifra como una ayuda para planificar, no como una medida precisa. La velocidad real de lectura varía mucho: el texto sencillo y familiar se lee más rápido de 200 palabras por minuto, mientras que el material denso, técnico o desconocido se lee mucho más despacio. Los lectores también hacen pausas, releen pasajes difíciles y hojean los títulos, y todo eso cambia el tiempo real. Usa la estimación para etiquetar artículos (“5 min de lectura”), para planificar discursos y locuciones, y para juzgar si un borrador respeta el tiempo de tu lector; después confía en tu propio criterio para la decisión final.
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            Tiempo de lectura = Palabras ÷ 200 palabras por minuto
+          </div>
+          <div class="formula-explanation">
+            Ejemplos:<br>
+            • 200 palabras ÷ 200 = 1 minuto<br>
+            • 500 palabras ÷ 200 = 2 minutos y 30 segundos<br>
+            • 1.000 palabras ÷ 200 = 5 minutos<br>
+            • 3.000 palabras ÷ 200 = 15 minutos
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 4: Consejos para Escritores -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Consejos para Escritores: Alcanzar un Conteo sin Relleno
+        </h2>
+        <p class="content-paragraph">
+          El problema más difícil con el conteo de palabras rara vez es contar: es alcanzar el objetivo con honestidad. Rellenar con palabras vacías debilita el texto, y recortar a ciegas puede eliminar las mejores partes. Los siguientes hábitos ayudan en ambas direcciones, tanto si necesitas recortar una redacción como si necesitas convertir un borrador corto en un artículo completo.
+        </p>
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Recorta palabras, no ideas</h4>
+            <p class="example-card-body">
+              Cuando superes el límite, elimina primero los modificadores débiles, las frases repetidas y las introducciones innecesarias. Una frase que dice lo mismo en doce palabras en lugar de veinte es más fuerte, no solo más corta, y tu argumento queda intacto.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">2. Añade ejemplos, no relleno</h4>
+            <p class="example-card-body">
+              Cuando no llegues al mínimo, añade un ejemplo concreto, una breve explicación o un punto de vista contrario en lugar de repetirte. Los ejemplos aportan valor real al lector y elevan el conteo de forma natural, párrafo a párrafo.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">3. Vigila la longitud de las frases</h4>
+            <p class="example-card-body">
+              Las frases muy largas son difíciles de seguir y fáciles de contar mal mentalmente. Dividir una frase larga en dos suele mejorar la claridad, y el conteo de frases que muestra esta herramienta te ayuda a detectar borradores donde todo se encadena sin pausa.
+            </p>
+          </div>
+        </div>
+        <p class="content-paragraph">
+          Por último, recuerda que distintos contadores pueden diferir en unas pocas palabras, porque tratan de forma diferente las palabras con guion, los números y los símbolos. Si una entrega es estricta, revisa tu texto aquí, haz después una comprobación final en la plataforma donde lo entregarás, y deja un pequeño margen por debajo del máximo para que una mínima diferencia de conteo no te haga superarlo.
+        </p>
+      </section>
+
+      <!-- Sección 5: Preguntas Frecuentes -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas Frecuentes
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Cómo cuenta las palabras el contador de palabras?</summary>
+            <div class="faq-answer">
+              El contador divide el texto por espacios en blanco (espacios, tabulaciones y saltos de línea). Cada fragmento que contiene al menos una letra o un número cuenta como una palabra, así que los espacios extra, las líneas en blanco y la puntuación por sí sola no inflan el resultado.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Cuál es la diferencia entre caracteres con espacios y sin espacios?</summary>
+            <div class="faq-answer">
+              Los caracteres con espacios son la longitud total del texto, incluyendo cada espacio, tabulación y salto de línea. Los caracteres sin espacios eliminan primero todos los espacios en blanco, así que cuentan solo letras, dígitos y signos de puntuación. Las biografías de redes sociales y algunos formularios usan uno u otro, por eso se muestran ambos números.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Cómo se calcula el tiempo estimado de lectura?</summary>
+            <div class="faq-answer">
+              El tiempo de lectura divide el número de palabras entre 200 palabras por minuto, la velocidad media de lectura silenciosa de un adulto. Un texto de 200 palabras tarda alrededor de 1 minuto, y uno de 1.000 palabras alrededor de 5 minutos. El texto denso o técnico suele tardar más, así que toma la cifra como una estimación útil, no como una medida exacta.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Cómo se cuentan las frases y los párrafos?</summary>
+            <div class="faq-answer">
+              Las frases se cuentan a partir de grupos de signos de puntuación final (. ! ?), así que unos puntos suspensivos o una serie de signos de exclamación cuentan como un solo final de frase. Un texto con palabras pero sin puntuación final cuenta como una frase. Los párrafos son bloques de texto separados por líneas en blanco.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Mi texto se guarda o se envía a algún sitio?</summary>
+            <div class="faq-answer">
+              No. OmniTools funciona por completo en tu navegador. Tu texto se cuenta localmente en tu dispositivo y nunca se sube, se almacena ni se envía a ningún servidor, así que puedes revisar borradores, redacciones y documentos de trabajo con total tranquilidad.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece utilidades y calculadoras web gratuitas, ligeras y respetuosas con la privacidad para el uso diario.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-edad.html">Calculadora de Edad</a></li>
+            <li><a href="calculadora-de-prestamos.html">Calculadora de Préstamos</a></li>
+            <li><a href="calculadora-de-imc.html">Calculadora de IMC</a></li>
+            <li><a href="generador-de-contrasenas.html">Generador de Contraseñas</a></li>
+            <li><a href="contador-de-palabras.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Otras Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="conversor-de-unidades.html">Conversor de Unidades</a></li>
+            <li><a href="calculadora-de-porcentaje.html">Calculadora de Porcentaje</a></li>
+            <li><a href="calculadora-de-dias.html">Diferencia entre Fechas</a></li>
+            <li><a href="convertidor-de-mayusculas.html">Convertidor de Mayúsculas</a></li>
+            <li><a href="calculadora-de-descuentos.html">Calculadora de Descuentos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Quiénes Somos</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades online gratuitas.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../word-counter.html">English</a> |
+          <a href="contador-de-palabras.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Motor Integrado (Sin Dependencias Externas) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var textInput = document.getElementById('wordText');
+    var resultsBox = document.getElementById('wordResultsBox');
+    var errorBox = document.getElementById('wordErrorBox');
+    var copyTextBtn = document.getElementById('copyTextBtn');
+    var clearBtn = document.getElementById('clearTextBtn');
+    var copySummaryBtn = document.getElementById('copySummaryBtn');
+
+    function countText(text) {
+      var trimmed = text.trim();
+      var tokens = trimmed ? trimmed.split(/\s+/) : [];
+      var words = 0;
+      for (var i = 0; i < tokens.length; i++) {
+        if (/[A-Za-z0-9\u00C0-\u024F\u1E00-\u1EFF]/.test(tokens[i])) words++;
+      }
+      var charsWith = text.length;
+      var charsWithout = text.replace(/\s/g, '').length;
+      var endings = text.match(/[.!?]+/g);
+      var sentences = endings ? endings.length : (words > 0 ? 1 : 0);
+      var paragraphs = 0;
+      if (trimmed) {
+        var blocks = text.split(/\r?\n\s*\r?\n/);
+        for (var j = 0; j < blocks.length; j++) {
+          if (blocks[j].trim()) paragraphs++;
+        }
+      }
+      return { words: words, charsWith: charsWith, charsWithout: charsWithout, sentences: sentences, paragraphs: paragraphs };
+    }
+
+    function formatReadingTime(words) {
+      if (words === 0) return '0 seg';
+      var totalSeconds = Math.round(words / 200 * 60);
+      if (totalSeconds < 60) return 'menos de 1 min';
+      var mins = Math.floor(totalSeconds / 60);
+      var secs = totalSeconds % 60;
+      return secs === 0 ? mins + ' min' : mins + ' min ' + secs + ' seg';
+    }
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    function updateCounts() {
+      if (!textInput) return;
+      hideError();
+      var stats = countText(textInput.value);
+      document.getElementById('countWords').textContent = stats.words.toLocaleString();
+      document.getElementById('countCharsWith').textContent = stats.charsWith.toLocaleString();
+      document.getElementById('countCharsWithout').textContent = stats.charsWithout.toLocaleString();
+      document.getElementById('countSentences').textContent = stats.sentences.toLocaleString();
+      document.getElementById('countParagraphs').textContent = stats.paragraphs.toLocaleString();
+      document.getElementById('readingTime').textContent = formatReadingTime(stats.words);
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+      }
+      if (copySummaryBtn) {
+        copySummaryBtn.setAttribute('data-summary', 'Resumen del Contador de Palabras: ' + stats.words + ' palabras, ' + stats.charsWith + ' caracteres (con espacios), ' + stats.charsWithout + ' caracteres (sin espacios), ' + stats.sentences + ' frases, ' + stats.paragraphs + ' párrafos, tiempo de lectura ' + formatReadingTime(stats.words) + ' (a 200 palabras por minuto). Contado con OmniTools.');
+      }
+    }
+
+    if (textInput) {
+      textInput.addEventListener('input', updateCounts);
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        if (textInput) textInput.value = '';
+        hideError();
+        updateCounts();
+        if (textInput) textInput.focus();
+      });
+    }
+
+    function copyTextWithFallback(txt, okMsg) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(txt).then(function() {
+          alert(okMsg);
+        }).catch(function() {
+          prompt('Copiar:', txt);
+        });
+      } else {
+        prompt('Copiar:', txt);
+      }
+    }
+
+    if (copyTextBtn) {
+      copyTextBtn.addEventListener('click', function() {
+        var txt = textInput ? textInput.value : '';
+        if (!txt.trim()) {
+          showError('Todavía no hay nada que copiar. Escribe o pega un texto primero.');
+          return;
+        }
+        hideError();
+        copyTextWithFallback(txt, '¡Texto copiado al portapapeles!');
+      });
+    }
+
+    if (copySummaryBtn) {
+      copySummaryBtn.addEventListener('click', function() {
+        var txt = copySummaryBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Resumen copiado al portapapeles!');
+          }).catch(function() {
+            prompt('Copiar resumen:', txt);
+          });
+        } else if (txt) {
+          prompt('Copiar resumen:', txt);
+        }
+      });
+    }
+
+    updateCounts();
+  })();
+  </script>
+</body>
+</html>

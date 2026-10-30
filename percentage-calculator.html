@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage Calculator - What Percent, Percent of a Number & Increase/Decrease | OmniTools</title>
+  <meta name="description" content="Free percentage calculator with three modes: find X% of Y, find what percent X is of Y, and calculate percentage increase or decrease between two numbers. Instant, private, and 100% free.">
+  <meta name="keywords" content="percentage calculator, percent of a number calculator, what percent calculator, percentage increase calculator, percentage decrease calculator, calculate percent">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/percentage-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/percentage-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-porcentaje.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/percentage-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/percentage-calculator.html">
+  <meta property="og:title" content="Percentage Calculator - Percent of a Number, What Percent & Change">
+  <meta property="og:description" content="Calculate percentages instantly: X% of Y, X as a percent of Y, and percentage increase or decrease. 100% free and private.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-percentage-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Percentage Calculator | OmniTools">
+  <meta name="twitter:description" content="Instant percentage calculations: percent of a number, what percent, and percentage increase or decrease.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Percentage Calculator",
+    "url": "https://omnitools.pages.dev/percentage-calculator.html",
+    "applicationCategory": "FinancialApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calculate X% of Y, what percent X is of Y, and the percentage increase or decrease between two numbers.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://omnitools.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Finance",
+        "item": "https://omnitools.pages.dev/#finance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Percentage Calculator",
+        "item": "https://omnitools.pages.dev/percentage-calculator.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a percentage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A percentage is a way of expressing a number as a fraction of 100. The word comes from the Latin 'per centum', meaning 'by the hundred'. So 25% simply means 25 out of every 100, or 25/100, which is the same as 0.25."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate X% of Y?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiply X by Y and divide by 100: (X x Y) / 100. For example, 25% of 200 is (25 x 200) / 100 = 50."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate a percentage increase or decrease?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Subtract the old value from the new value, divide by the old value, and multiply by 100: ((new - old) / old) x 100. A positive result is an increase and a negative result is a decrease. For example, going from 80 to 100 is ((100 - 80) / 80) x 100 = 25% increase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between percentage points and percent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Percentage points measure the simple difference between two percentages, while percent measures the relative change. If a rate rises from 20% to 25%, that is a rise of 5 percentage points, but a 25% relative increase (5 / 20 x 100)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data saved or transmitted to your servers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. OmniTools operates entirely client-side within your device's web browser. No numbers you enter are ever sent to external databases or recorded on remote servers."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="percentage-calculator.html" class="active">Percentage</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="percentage-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-porcentaje.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">Percentage Calculator</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Percentage Calculator</h1>
+        <p class="tool-header-desc">
+          Solve any percentage problem in seconds: find X% of a number, work out what percent one number is of another, or measure the percentage increase or decrease between two values.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Mode Selector -->
+            <div class="form-group">
+              <label for="pctMode" class="form-label">
+                <span>Calculation Mode</span>
+                <span class="label-hint">Choose one</span>
+              </label>
+              <select id="pctMode" class="form-select">
+                <option value="a" selected>X% of Y — find a percent of a number</option>
+                <option value="b">X is what % of Y — find a percentage share</option>
+                <option value="c">Percentage change — increase or decrease</option>
+              </select>
+              <span class="form-help">Pick the question you want to answer, then fill in the two numbers.</span>
+            </div>
+
+            <!-- Mode A: X% of Y -->
+            <div id="modeAFields">
+              <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="pctA" class="form-label">
+                    <span>Percentage (%)</span>
+                    <span class="label-hint">Required</span>
+                  </label>
+                  <input type="number" id="pctA" class="form-input" placeholder="e.g. 25" step="any">
+                  <span class="form-help">The percent you want to take, e.g. 25</span>
+                </div>
+                <div class="form-group">
+                  <label for="baseA" class="form-label">
+                    <span>Of number (Y)</span>
+                    <span class="label-hint">Required</span>
+                  </label>
+                  <input type="number" id="baseA" class="form-input" placeholder="e.g. 200" step="any">
+                  <span class="form-help">The number to take the percent of</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mode B: X is what % of Y -->
+            <div id="modeBFields" style="display: none;">
+              <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="partB" class="form-label">
+                    <span>Part (X)</span>
+                    <span class="label-hint">Required</span>
+                  </label>
+                  <input type="number" id="partB" class="form-input" placeholder="e.g. 50" step="any">
+                  <span class="form-help">The smaller (or part) value</span>
+                </div>
+                <div class="form-group">
+                  <label for="wholeB" class="form-label">
+                    <span>Whole (Y)</span>
+                    <span class="label-hint">Required</span>
+                  </label>
+                  <input type="number" id="wholeB" class="form-input" placeholder="e.g. 200" step="any">
+                  <span class="form-help">The total value; cannot be zero</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mode C: Percentage change -->
+            <div id="modeCFields" style="display: none;">
+              <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="oldC" class="form-label">
+                    <span>Old value</span>
+                    <span class="label-hint">Required</span>
+                  </label>
+                  <input type="number" id="oldC" class="form-input" placeholder="e.g. 80" step="any">
+                  <span class="form-help">The starting value; cannot be zero</span>
+                </div>
+                <div class="form-group">
+                  <label for="newC" class="form-label">
+                    <span>New value</span>
+                    <span class="label-hint">Required</span>
+                  </label>
+                  <input type="number" id="newC" class="form-input" placeholder="e.g. 100" step="any">
+                  <span class="form-help">The later or current value</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="pctErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="calcPctBtn" class="btn btn-primary" onclick="calculatePercentage()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              Calculate
+            </button>
+            <button type="button" id="resetPctBtn" class="btn btn-outline" onclick="resetPercentage()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reset
+            </button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="pctResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Percentage Result
+              </span>
+              <button type="button" id="copyPctBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copy Summary
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card -->
+            <div class="hero-result-card">
+              <div class="hero-result-label" id="pctResultLabel">Result</div>
+              <div class="hero-result-value" id="pctHeroValue">0</div>
+              <div class="hero-result-sub" id="pctFormulaLine">Enter two numbers and press Calculate.</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="pctMetric1Value">-</div>
+                <div class="metric-label" id="pctMetric1Label">Detail 1</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="pctMetric2Value">-</div>
+                <div class="metric-label" id="pctMetric2Label">Detail 2</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="pctMetric3Value" style="color: var(--accent);">-</div>
+                <div class="metric-label" id="pctMetric3Label">Detail 3</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount & Sales Tax Calculator <span>→</span></a></li>
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools Percentage Calculator
+        </h2>
+        <p class="content-paragraph">
+          Percentages appear everywhere in everyday life: shop discounts, exam scores, tax on a bill, salary raises, and interest on savings. This calculator handles the three questions people ask most often, all on one page, so you never have to guess which formula to use. Everything runs in your browser, and nothing you type is sent anywhere.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Choose a calculation mode.</strong> Use "X% of Y" when you know a percent and a total, for example a 20% tip on a bill. Use "X is what % of Y" when you know a part and a whole, for example 45 marks out of 60. Use "Percentage change" when you compare an old value with a new one, for example a price that rose from $80 to $100.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter the two numbers.</strong> Type plain numbers only, without a % sign or currency symbol. Decimals are fine, so you can enter 12.5 for twelve and a half percent, or 49.99 for a price.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Click "Calculate".</strong> The result appears in the large card at the top of the results box, together with the exact formula used, so you can check the working at a glance. The smaller cards below it show useful extra details, such as how much is left over or the absolute difference between the two values.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Copy or reset.</strong> Press "Copy Summary" to copy a plain-text summary you can paste into a message, homework answer, or spreadsheet note. Press "Reset" to clear all fields and start a fresh calculation.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 2: Formulas -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          The Three Percentage Formulas, Explained Simply
+        </h2>
+        <p class="content-paragraph">
+          A percentage is just a fraction out of 100. The word comes from the Latin phrase "per centum", meaning "by the hundred", so 25% literally means 25 out of every 100. Once you remember that, every percentage problem becomes a simple fraction problem. Here are the three formulas this calculator uses, with nothing hidden:
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Mode A: X% of Y = (X × Y) / 100
+          </div>
+          <div class="formula-explanation">
+            Mode B: X is what % of Y = (X / Y) × 100<br>
+            Mode C: Percentage change = ((New − Old) / Old) × 100<br><br>
+            In mode C, a positive answer means an increase and a negative answer means a decrease. If the new value equals the old value, the change is exactly 0%.
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          Notice that mode C always divides by the <em>old</em> value, not the new one. That is the most common mistake people make with percentage change: the starting point is the reference, so a rise from 50 to 75 is a 50% increase, because 25 divided by 50 is one half. Going back down from 75 to 50 is not a 50% decrease, it is a 33.33% decrease, because 25 divided by 75 is one third. Percentages are not symmetrical, and that asymmetry surprises almost everyone the first time they meet it.
+        </p>
+      </section>
+
+      <!-- Section 3: Worked Examples -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Worked Examples You Can Try Right Now
+        </h2>
+        <p class="content-paragraph">
+          Try these three examples in the calculator above and check that you get the same answers. Each one matches one of the three modes, and each one is the kind of problem that comes up in real life:
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. A tip on a restaurant bill</h4>
+            <p class="example-card-body">
+              What is 20% of $85? Using mode A: (20 × 85) / 100 = 17. The tip is $17, so the total to pay is $102. The same idea works for a sales tax rate, a commission, or any discount expressed as a percent of a price.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. An exam score as a percent</h4>
+            <p class="example-card-body">
+              You scored 45 out of 60. What percent is that? Using mode B: (45 / 60) × 100 = 75%. Notice that the answer can be over 100% too: if you score 70 out of 60 with bonus marks, that is 116.67%, which simply means more than the full total.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. A price rise, or a pay cut</h4>
+            <p class="example-card-body">
+              A monthly bill rises from $80 to $100. Using mode C: ((100 − 80) / 80) × 100 = 25% increase. If instead a salary falls from $2,000 to $1,800, the same formula gives ((1,800 − 2,000) / 2,000) × 100 = −10%, a 10% decrease.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Tips and Common Mistakes -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Tips and Common Mistakes to Avoid
+        </h2>
+        <p class="content-paragraph">
+          First, never divide by zero: a percentage share of a zero total, or a change from a starting value of zero, has no meaningful answer, which is why this calculator shows a clear error message instead of a misleading number. Second, watch out for percentage points versus percent. If an interest rate rises from 4% to 6%, that is a rise of 2 percentage points, but a 50% relative increase, because 2 divided by 4 is one half. News reports mix these up often, so knowing the difference protects you from being misled. Third, remember that two equal-looking percent moves do not cancel out: a price that rises 10% and then falls 10% does not return to its starting value, because the fall is taken from a larger base. Finally, when a problem says "increase by 20%", the new value is 120% of the old one, not 20% of it. Add the percent to 100 before you multiply, or use mode C in reverse. Keeping these four habits in mind turns percentages from a source of confusion into a tool you can trust for shopping, studying, budgeting, and business decisions alike.
+        </p>
+        <p class="content-paragraph">
+          For related money maths, try the OmniTools Loan EMI Calculator for monthly loan payments, or the Discount &amp; Sales Tax Calculator when a sale price already includes a percentage off. All of these tools are free, work entirely in your browser, and never store your numbers.
+        </p>
+      </section>
+
+      <!-- Section 5: Frequently Asked Questions (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">What is a percentage?</summary>
+            <div class="faq-answer">
+              A percentage is a way of expressing a number as a fraction of 100. The word comes from the Latin "per centum", meaning "by the hundred". So 25% simply means 25 out of every 100, or 25/100, which is the same as 0.25.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How do I calculate X% of Y?</summary>
+            <div class="faq-answer">
+              Multiply X by Y and divide by 100: (X × Y) / 100. For example, 25% of 200 is (25 × 200) / 100 = 50.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How do I calculate a percentage increase or decrease?</summary>
+            <div class="faq-answer">
+              Subtract the old value from the new value, divide by the old value, and multiply by 100: ((new − old) / old) × 100. A positive result is an increase and a negative result is a decrease. For example, going from 80 to 100 is ((100 − 80) / 80) × 100 = 25% increase.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What is the difference between percentage points and percent?</summary>
+            <div class="faq-answer">
+              Percentage points measure the simple difference between two percentages, while percent measures the relative change. If a rate rises from 20% to 25%, that is a rise of 5 percentage points, but a 25% relative increase (5 / 20 × 100).
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my data saved or transmitted to your servers?</summary>
+            <div class="faq-answer">
+              Never. OmniTools operates entirely client-side within your device's web browser. No numbers you enter are ever sent to external databases or recorded on remote servers.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="percentage-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-porcentaje.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var modeSelect = document.getElementById('pctMode');
+    var modeAFields = document.getElementById('modeAFields');
+    var modeBFields = document.getElementById('modeBFields');
+    var modeCFields = document.getElementById('modeCFields');
+    var resultsBox = document.getElementById('pctResultsBox');
+    var errorBox = document.getElementById('pctErrorBox');
+    var copyBtn = document.getElementById('copyPctBtn');
+
+    var inputs = ['pctA', 'baseA', 'partB', 'wholeB', 'oldC', 'newC'].map(function(id) {
+      return document.getElementById(id);
+    });
+
+    function updateModeVisibility() {
+      var mode = modeSelect.value;
+      modeAFields.style.display = (mode === 'a') ? 'block' : 'none';
+      modeBFields.style.display = (mode === 'b') ? 'block' : 'none';
+      modeCFields.style.display = (mode === 'c') ? 'block' : 'none';
+    }
+
+    if (modeSelect) {
+      modeSelect.addEventListener('change', function() {
+        hideError();
+        if (resultsBox) {
+          resultsBox.classList.remove('active');
+          resultsBox.style.display = 'none';
+        }
+        updateModeVisibility();
+      });
+    }
+
+    inputs.forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculatePercentage();
+        });
+      }
+    });
+
+    function formatNum(val) {
+      return val.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+    }
+
+    function formatPct(val) {
+      return formatNum(val) + '%';
+    }
+
+    function validNumber(val) {
+      return val !== '' && val !== null && typeof val === 'number' && isFinite(val) && Math.abs(val) <= 1000000000000;
+    }
+
+    window.calculatePercentage = function() {
+      var mode = modeSelect.value;
+      var heroValue = document.getElementById('pctHeroValue');
+      var resultLabel = document.getElementById('pctResultLabel');
+      var formulaLine = document.getElementById('pctFormulaLine');
+
+      if (mode === 'a') {
+        var x = parseFloat(document.getElementById('pctA').value);
+        var y = parseFloat(document.getElementById('baseA').value);
+        if (!validNumber(x) || !validNumber(y)) {
+          showError('Please enter two valid numbers: a percentage and the number to take it from.');
+          return;
+        }
+        hideError();
+        var result = (x * y) / 100;
+        resultLabel.textContent = formatPct(x) + ' of ' + formatNum(y);
+        heroValue.textContent = formatNum(result);
+        formulaLine.textContent = formatPct(x) + ' of ' + formatNum(y) + ' = ' + formatNum(result);
+        document.getElementById('pctMetric1Label').textContent = 'Amount taken';
+        document.getElementById('pctMetric1Value').textContent = formatNum(result);
+        document.getElementById('pctMetric2Label').textContent = 'Remaining amount';
+        document.getElementById('pctMetric2Value').textContent = formatNum(y - result);
+        document.getElementById('pctMetric3Label').textContent = 'Original number';
+        document.getElementById('pctMetric3Value').textContent = formatNum(y);
+        if (copyBtn) copyBtn.setAttribute('data-summary', 'Percentage result: ' + formatPct(x) + ' of ' + formatNum(y) + ' = ' + formatNum(result) + '. Calculated with OmniTools.');
+      } else if (mode === 'b') {
+        var part = parseFloat(document.getElementById('partB').value);
+        var whole = parseFloat(document.getElementById('wholeB').value);
+        if (!validNumber(part) || !validNumber(whole)) {
+          showError('Please enter two valid numbers: the part and the whole.');
+          return;
+        }
+        if (whole === 0) {
+          showError('The whole (Y) cannot be zero. Please enter a non-zero total value.');
+          return;
+        }
+        hideError();
+        var pct = (part / whole) * 100;
+        resultLabel.textContent = formatNum(part) + ' as a percentage of ' + formatNum(whole);
+        heroValue.textContent = formatPct(pct);
+        formulaLine.textContent = '(' + formatNum(part) + ' / ' + formatNum(whole) + ') × 100 = ' + formatPct(pct);
+        document.getElementById('pctMetric1Label').textContent = 'Percentage share';
+        document.getElementById('pctMetric1Value').textContent = formatPct(pct);
+        document.getElementById('pctMetric2Label').textContent = 'Part (X)';
+        document.getElementById('pctMetric2Value').textContent = formatNum(part);
+        document.getElementById('pctMetric3Label').textContent = 'Whole (Y)';
+        document.getElementById('pctMetric3Value').textContent = formatNum(whole);
+        if (copyBtn) copyBtn.setAttribute('data-summary', 'Percentage result: ' + formatNum(part) + ' is ' + formatPct(pct) + ' of ' + formatNum(whole) + '. Calculated with OmniTools.');
+      } else {
+        var oldVal = parseFloat(document.getElementById('oldC').value);
+        var newVal = parseFloat(document.getElementById('newC').value);
+        if (!validNumber(oldVal) || !validNumber(newVal)) {
+          showError('Please enter two valid numbers: the old value and the new value.');
+          return;
+        }
+        if (oldVal === 0) {
+          showError('The old value cannot be zero. Percentage change from zero is not defined.');
+          return;
+        }
+        hideError();
+        var change = ((newVal - oldVal) / oldVal) * 100;
+        var direction = (change > 0) ? 'increase' : (change < 0) ? 'decrease' : 'no change';
+        resultLabel.textContent = 'Percentage ' + direction;
+        heroValue.textContent = formatPct(change);
+        formulaLine.textContent = '((' + formatNum(newVal) + ' − ' + formatNum(oldVal) + ') / ' + formatNum(oldVal) + ') × 100 = ' + formatPct(change) + ' (' + direction + ')';
+        document.getElementById('pctMetric1Label').textContent = 'Percentage change';
+        document.getElementById('pctMetric1Value').textContent = formatPct(change);
+        document.getElementById('pctMetric2Label').textContent = 'Absolute difference';
+        document.getElementById('pctMetric2Value').textContent = formatNum(newVal - oldVal);
+        document.getElementById('pctMetric3Label').textContent = 'Direction';
+        document.getElementById('pctMetric3Value').textContent = direction;
+        if (copyBtn) copyBtn.setAttribute('data-summary', 'Percentage change from ' + formatNum(oldVal) + ' to ' + formatNum(newVal) + ' = ' + formatPct(change) + ' (' + direction + '). Calculated with OmniTools.');
+      }
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+
+    window.resetPercentage = function() {
+      inputs.forEach(function(inp) { if (inp) inp.value = ''; });
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Percentage summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy summary:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

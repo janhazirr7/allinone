@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Counter - Count Words, Characters, Sentences & Reading Time | OmniTools</title>
+  <meta name="description" content="Free live word counter: count words, characters with and without spaces, sentences, paragraphs, and estimated reading time as you type. 100% free and private.">
+  <meta name="keywords" content="word counter, character counter, count words online, sentence counter, paragraph counter, reading time calculator, free word count tool">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/word-counter.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/word-counter.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/contador-de-palabras.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/word-counter.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/word-counter.html">
+  <meta property="og:title" content="Word Counter - Count Words, Characters & Reading Time">
+  <meta property="og:description" content="Live word, character, sentence and paragraph counts plus estimated reading time. Free, instant and private.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-word-counter.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Word Counter | OmniTools">
+  <meta name="twitter:description" content="Instant live word count, character count, sentence count and reading time — free and private.">
+  <meta name="twitter:image" content="https://omnitools.pages.dev/og-word-counter.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Word Counter",
+    "url": "https://omnitools.pages.dev/word-counter.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Count words, characters with and without spaces, sentences, paragraphs, and estimated reading time in any text, live as you type.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://omnitools.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Text & Writing",
+        "item": "https://omnitools.pages.dev/#text"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Word Counter",
+        "item": "https://omnitools.pages.dev/word-counter.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does the word counter count words?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The counter splits your text on whitespace (spaces, tabs and line breaks). Each chunk that contains at least one letter or number counts as one word, so extra spaces, blank lines and punctuation on its own do not inflate the count."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between characters with spaces and without spaces?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Characters with spaces is the full length of your text, including every space, tab and line break. Characters without spaces removes all whitespace first, so it counts only letters, digits and punctuation. Social media bios and some submission forms use one or the other, so both numbers are shown."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is the estimated reading time calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reading time divides your word count by 200 words per minute, the average adult silent reading speed. A 200-word text takes about 1 minute, a 1,000-word text about 5 minutes. Dense or technical text usually takes longer, so treat the figure as a helpful estimate, not an exact measurement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are sentences and paragraphs counted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sentences are counted from groups of sentence-ending punctuation (. ! ?), so an ellipsis or a run of exclamation marks counts as one sentence ending. Text with words but no final punctuation counts as one sentence. Paragraphs are blocks of text separated by blank lines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my text saved or sent anywhere?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. OmniTools runs entirely in your browser. Your text is counted locally on your device and is never uploaded, stored or sent to any server, so you can safely check drafts, essays and work documents."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="word-counter.html" class="active">Word Counter</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="word-counter.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/contador-de-palabras.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#text">Text &amp; Writing</a></li>
+          <li aria-current="page">Word Counter</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Word &amp; Character Counter</h1>
+        <p class="tool-header-desc">
+          Paste or type your text and watch the word count, character count, sentences, paragraphs and reading time update live — no button to press, no sign-up, and nothing leaves your browser.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Text Input -->
+            <div class="form-group">
+              <label for="wordText" class="form-label">
+                <span>Your Text</span>
+                <span class="label-hint">Counts update as you type</span>
+              </label>
+              <textarea id="wordText" class="form-input" rows="10" placeholder="Type or paste your text here..." style="resize: vertical; min-height: 200px; line-height: 1.6;"></textarea>
+              <span class="form-help">Works with essays, articles, captions, emails and any plain text.</span>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="wordErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="copyTextBtn" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              Copy Text
+            </button>
+            <button type="button" id="clearTextBtn" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Clear
+            </button>
+          </div>
+
+          <!-- Live Results Box -->
+          <div id="wordResultsBox" class="results-box active" style="display: block;">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Live Text Statistics
+              </span>
+              <button type="button" id="copySummaryBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copy Summary
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card: Word Count -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Words</div>
+              <div class="hero-result-value" id="countWords">0</div>
+              <div class="hero-result-sub">Live count — updates as you type</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="countCharsWith">0</div>
+                <div class="metric-label">Characters (with spaces)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="countCharsWithout">0</div>
+                <div class="metric-label">Characters (without spaces)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="countSentences">0</div>
+                <div class="metric-label">Sentences</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="countParagraphs">0</div>
+                <div class="metric-label">Paragraphs</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="readingTime" style="color: var(--accent);">0 sec</div>
+                <div class="metric-label">Reading Time (200 wpm)</div>
+              </div>
+            </div>
+
+            <p style="font-size: 0.8125rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">Reading time is estimated at 200 words per minute, the average adult silent reading speed.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="case-converter.html" style="display: flex; align-items: center; justify-content: space-between;">Text Case Converter <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age &amp; Milestone Calculator <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools Word Counter
+        </h2>
+        <p class="content-paragraph">
+          Word limits show up everywhere: school essays, university applications, blog posts, social media captions, video scripts and job applications. Guessing your word count wastes time and risks a rejected submission, so this tool counts your text the moment you type it, with no button to press and no file to upload. Everything happens in your own browser, which means your drafts stay completely private.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Type or paste your text</strong>
+              Click inside the box above and start typing, or paste text copied from a document, email or web page. The counts update on every keystroke and every paste.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Read the live results</strong>
+              The large number at the top is your word count. Below it you will find characters with and without spaces, sentences, paragraphs and your estimated reading time.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Trim or expand to hit your target</strong>
+              If you are over a limit, delete a sentence or tighten a paragraph and watch the numbers fall instantly. If you are under a minimum, add detail and watch them rise.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Copy your text back out</strong>
+              Use the Copy Text button to copy the whole text to your clipboard, or Copy Summary to copy just the counts. Use Clear to start fresh with an empty box.
+            </div>
+          </li>
+        </ol>
+        <p class="content-paragraph">
+          There is no sign-up, no word limit on the tool itself, and no waiting. Long documents are handled the same way as short captions: the counter simply scans the text and updates the numbers, so even a full essay or article will not slow it down or break the page.
+        </p>
+      </section>
+
+      <!-- Section 2: What Each Metric Means -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+          What Each Metric Means
+        </h2>
+        <p class="content-paragraph">
+          A word count on its own only tells part of the story. Different platforms and assignments care about different numbers, so this tool shows them all side by side. Understanding each one helps you meet the exact requirement instead of guessing which number a platform will use.
+        </p>
+        <p class="content-paragraph">
+          <strong>Words.</strong> Words are sequences separated by whitespace: spaces, tabs and line breaks. A chunk only counts as a word if it contains at least one letter or number, so extra spaces, blank lines and stray punctuation marks do not inflate the total. That matters when you paste text from a formatted document, where double spaces and empty lines are common. For example, the sentence “Hello, world!” counts as two words, while a line containing only exclamation marks counts as none.
+        </p>
+        <p class="content-paragraph">
+          <strong>Characters with spaces.</strong> This is the raw length of your text, counting every letter, digit, punctuation mark, space, tab and line break. Some forms and platforms set a character limit rather than a word limit, and they almost always mean this number, because it matches what you see in the box.
+        </p>
+        <p class="content-paragraph">
+          <strong>Characters without spaces.</strong> This removes all whitespace first and counts only the visible characters. It is the number to check when a brief says “characters excluding spaces”, which is common in academic and translation work, where spaces should not earn credit as content.
+        </p>
+        <p class="content-paragraph">
+          <strong>Sentences.</strong> Sentences are counted from groups of sentence-ending punctuation: full stops, exclamation marks and question marks. A run of punctuation such as “...” or “!!!” counts as a single sentence ending, which keeps the count sensible for expressive writing. Text that has words but no final punctuation still counts as one sentence, because an unfinished draft is still one thought in progress.
+        </p>
+        <p class="content-paragraph">
+          <strong>Paragraphs.</strong> Paragraphs are blocks of text separated by blank lines. Pressing Enter once inside a block does not start a new paragraph here; leaving an empty line between blocks does. That matches how most word processors and publishing platforms treat paragraphs, and it rewards clean, readable formatting rather than single-spaced line breaks.
+        </p>
+      </section>
+
+      <!-- Section 3: Reading Time Explained -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Reading Time Explained
+        </h2>
+        <p class="content-paragraph">
+          The reading time estimate divides your word count by 200 words per minute, the widely used average for silent reading by adults. Under that speed, a 200-word caption takes about one minute to read, a 500-word blog post takes about two and a half minutes, and a 1,000-word article takes about five minutes. Short texts under a minute are shown as “&lt; 1 min”, so a tweet-length draft is never rounded up to a full minute it does not need.
+        </p>
+        <p class="content-paragraph">
+          Treat this figure as a planning aid, not a precise measurement. Real reading speed varies a great deal: simple, familiar text is read faster than 200 words per minute, while dense, technical or unfamiliar material is read much more slowly. Readers also pause, re-read difficult passages and skim headings, all of which change the real time. Use the estimate to label articles (“5 min read”), to plan speeches and voiceovers, and to judge whether a draft respects your reader's time — then trust your own judgement for the final call.
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            Reading time = Words ÷ 200 words per minute
+          </div>
+          <div class="formula-explanation">
+            Examples:<br>
+            • 200 words ÷ 200 = 1 minute<br>
+            • 500 words ÷ 200 = 2 minutes 30 seconds<br>
+            • 1,000 words ÷ 200 = 5 minutes<br>
+            • 3,000 words ÷ 200 = 15 minutes
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Tips for Writers -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Tips for Writers: Hitting a Word Count Without Padding
+        </h2>
+        <p class="content-paragraph">
+          The hardest word-count problem is rarely counting — it is reaching the target honestly. Padding with filler words makes writing weaker, and cutting blindly can remove the best parts. The following habits help in both directions, whether you need to trim an essay or grow a short draft into a full article.
+        </p>
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Cut words, not ideas</h4>
+            <p class="example-card-body">
+              When you are over the limit, remove weak modifiers, repeated phrases and throat-clearing introductions first. A sentence that says the same thing in twelve words instead of twenty is stronger, not just shorter, and your argument stays intact.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">2. Add examples, not filler</h4>
+            <p class="example-card-body">
+              When you are under the minimum, add a concrete example, a short explanation or a counterpoint rather than repeating yourself. Examples add genuine value for the reader and raise the count naturally, paragraph by paragraph.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">3. Watch sentence length</h4>
+            <p class="example-card-body">
+              Very long sentences are hard to follow and easy to miscount in your head. Breaking one long sentence into two usually improves clarity, and the sentence count shown here helps you spot drafts where everything runs together.
+            </p>
+          </div>
+        </div>
+        <p class="content-paragraph">
+          Finally, remember that different counters can disagree by a few words, because they handle hyphenated words, numbers and symbols differently. If a submission is strict, check your text here, then do a final check in the platform where you will submit it, and leave a small margin below the maximum so a tiny counting difference cannot push you over the limit.
+        </p>
+      </section>
+
+      <!-- Section 5: Frequently Asked Questions (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">How does the word counter count words?</summary>
+            <div class="faq-answer">
+              The counter splits your text on whitespace (spaces, tabs and line breaks). Each chunk that contains at least one letter or number counts as one word, so extra spaces, blank lines and punctuation on its own do not inflate the count.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What is the difference between characters with spaces and without spaces?</summary>
+            <div class="faq-answer">
+              Characters with spaces is the full length of your text, including every space, tab and line break. Characters without spaces removes all whitespace first, so it counts only letters, digits and punctuation. Social media bios and some submission forms use one or the other, so both numbers are shown.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How is the estimated reading time calculated?</summary>
+            <div class="faq-answer">
+              Reading time divides your word count by 200 words per minute, the average adult silent reading speed. A 200-word text takes about 1 minute, a 1,000-word text about 5 minutes. Dense or technical text usually takes longer, so treat the figure as a helpful estimate, not an exact measurement.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How are sentences and paragraphs counted?</summary>
+            <div class="faq-answer">
+              Sentences are counted from groups of sentence-ending punctuation (. ! ?), so an ellipsis or a run of exclamation marks counts as one sentence ending. Text with words but no final punctuation counts as one sentence. Paragraphs are blocks of text separated by blank lines.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my text saved or sent anywhere?</summary>
+            <div class="faq-answer">
+              No. OmniTools runs entirely in your browser. Your text is counted locally on your device and is never uploaded, stored or sent to any server, so you can safely check drafts, essays and work documents.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="word-counter.html" style="color: #60a5fa;">English</a> |
+          <a href="es/contador-de-palabras.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var textInput = document.getElementById('wordText');
+    var resultsBox = document.getElementById('wordResultsBox');
+    var errorBox = document.getElementById('wordErrorBox');
+    var copyTextBtn = document.getElementById('copyTextBtn');
+    var clearBtn = document.getElementById('clearTextBtn');
+    var copySummaryBtn = document.getElementById('copySummaryBtn');
+
+    function countText(text) {
+      var trimmed = text.trim();
+      var tokens = trimmed ? trimmed.split(/\s+/) : [];
+      var words = 0;
+      for (var i = 0; i < tokens.length; i++) {
+        if (/[A-Za-z0-9\u00C0-\u024F\u1E00-\u1EFF]/.test(tokens[i])) words++;
+      }
+      var charsWith = text.length;
+      var charsWithout = text.replace(/\s/g, '').length;
+      var endings = text.match(/[.!?]+/g);
+      var sentences = endings ? endings.length : (words > 0 ? 1 : 0);
+      var paragraphs = 0;
+      if (trimmed) {
+        var blocks = text.split(/\r?\n\s*\r?\n/);
+        for (var j = 0; j < blocks.length; j++) {
+          if (blocks[j].trim()) paragraphs++;
+        }
+      }
+      return { words: words, charsWith: charsWith, charsWithout: charsWithout, sentences: sentences, paragraphs: paragraphs };
+    }
+
+    function formatReadingTime(words) {
+      if (words === 0) return '0 sec';
+      var totalSeconds = Math.round(words / 200 * 60);
+      if (totalSeconds < 60) return '< 1 min';
+      var mins = Math.floor(totalSeconds / 60);
+      var secs = totalSeconds % 60;
+      return secs === 0 ? mins + ' min' : mins + ' min ' + secs + ' sec';
+    }
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    function updateCounts() {
+      if (!textInput) return;
+      hideError();
+      var stats = countText(textInput.value);
+      document.getElementById('countWords').textContent = stats.words.toLocaleString();
+      document.getElementById('countCharsWith').textContent = stats.charsWith.toLocaleString();
+      document.getElementById('countCharsWithout').textContent = stats.charsWithout.toLocaleString();
+      document.getElementById('countSentences').textContent = stats.sentences.toLocaleString();
+      document.getElementById('countParagraphs').textContent = stats.paragraphs.toLocaleString();
+      document.getElementById('readingTime').textContent = formatReadingTime(stats.words);
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+      }
+      if (copySummaryBtn) {
+        copySummaryBtn.setAttribute('data-summary', 'Word Counter Summary: ' + stats.words + ' words, ' + stats.charsWith + ' characters (with spaces), ' + stats.charsWithout + ' characters (without spaces), ' + stats.sentences + ' sentences, ' + stats.paragraphs + ' paragraphs, reading time ' + formatReadingTime(stats.words) + ' (at 200 words per minute). Counted with OmniTools.');
+      }
+    }
+
+    if (textInput) {
+      textInput.addEventListener('input', updateCounts);
+    }
+
+    if (clearBtn) {
+      clearBtn.addEventListener('click', function() {
+        if (textInput) textInput.value = '';
+        hideError();
+        updateCounts();
+        if (textInput) textInput.focus();
+      });
+    }
+
+    function copyTextWithFallback(txt, okMsg) {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(txt).then(function() {
+          alert(okMsg);
+        }).catch(function() {
+          prompt('Copy:', txt);
+        });
+      } else {
+        prompt('Copy:', txt);
+      }
+    }
+
+    if (copyTextBtn) {
+      copyTextBtn.addEventListener('click', function() {
+        var txt = textInput ? textInput.value : '';
+        if (!txt.trim()) {
+          showError('Nothing to copy yet. Type or paste some text first.');
+          return;
+        }
+        hideError();
+        copyTextWithFallback(txt, 'Text copied to clipboard!');
+      });
+    }
+
+    if (copySummaryBtn) {
+      copySummaryBtn.addEventListener('click', function() {
+        var txt = copySummaryBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy summary:', txt);
+          });
+        } else if (txt) {
+          prompt('Copy summary:', txt);
+        }
+      });
+    }
+
+    updateCounts();
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Descuentos - Precio Final, Ahorro e Impuestos | OmniTools</title>
+  <meta name="description" content="Calcula al instante el ahorro de un descuento, el precio final en oferta y el impuesto sobre las ventas. Introduce el precio original y el porcentaje de descuento para ver exactamente cuánto ahorras y cuánto pagas.">
+  <meta name="keywords" content="calculadora de descuentos, calculadora de porcentaje de descuento, precio final en oferta, calcular ahorro en rebajas, calculadora de impuestos, precio con descuento">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canónica y SEO Multilingüe hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/es/calculadora-de-descuentos.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/discount-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-descuentos.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/discount-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/es/calculadora-de-descuentos.html">
+  <meta property="og:title" content="Calculadora de Descuentos - Precio Final, Ahorro e Impuestos">
+  <meta property="og:description" content="Calcula al instante el ahorro de un descuento, el precio final en oferta y el impuesto sobre las ventas. 100% gratis y privado.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-discount-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de Descuentos e IVA | OmniTools">
+  <meta name="twitter:description" content="Cálculos instantáneos de ahorro por descuento, precio final en oferta e impuesto sobre las ventas.">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Datos Estructurados JSON-LD (WebApplication y FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Calculadora de Descuentos",
+    "url": "https://omnitools.pages.dev/es/calculadora-de-descuentos.html",
+    "inLanguage": "es",
+    "applicationCategory": "FinancialApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calcula el ahorro de un descuento, el precio final después del descuento y el impuesto calculado sobre el precio con descuento.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://omnitools.pages.dev/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Finanzas",
+        "item": "https://omnitools.pages.dev/es/#finance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Calculadora de Descuentos",
+        "item": "https://omnitools.pages.dev/es/calculadora-de-descuentos.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo se calcula el precio con descuento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiplica el precio original por el porcentaje de descuento y divide entre 100 para obtener la cantidad ahorrada, y luego resta esa cantidad del precio original. Por ejemplo, un artículo de $200 con un 25% de descuento ahorra $50, así que el precio final es $150."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El impuesto se calcula antes o después del descuento?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En la mayoría de los lugares, el impuesto se calcula sobre el precio con descuento, no sobre el precio original. Así funciona esta calculadora: primero resta el descuento y después aplica el porcentaje de impuesto al precio más bajo, ya rebajado, de modo que pagas menos impuesto cuando un artículo está en oferta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo funcionan los descuentos acumulados? ¿Un 20% más un 10% es lo mismo que un 30%?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Los descuentos acumulados se aplican uno tras otro, no se suman. Un artículo de $100 con un 20% de descuento cuesta $80, y un 10% adicional sobre esos $80 ahorra otros $8, lo que da un precio final de $72. Eso es un ahorro total del 28%, no del 30%. Para combinar dos descuentos, introduce el primer resultado como nuevo precio original y aplica el segundo descuento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo encuentro el porcentaje de descuento a partir de dos precios?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Resta el precio en oferta del precio original, divide el resultado entre el precio original y multiplica por 100. Por ejemplo, un artículo rebajado de $80 a $60 ahorra $20, y $20 dividido entre $80 y multiplicado por 100 es 25%, así que el descuento es del 25%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se guardan mis datos financieros o se envían a sus servidores?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nunca. OmniTools funciona por completo en el navegador de tu dispositivo. Ningún precio, porcentaje de descuento ni cifra de impuesto se envía a bases de datos externas ni se registra en servidores remotos."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navegación -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Todas las Herramientas</a></li>
+          <li><a href="calculadora-de-edad.html">Edad</a></li>
+          <li><a href="calculadora-de-imc.html">IMC</a></li>
+          <li><a href="calculadora-de-descuentos.html" class="active">Descuentos</a></li>
+          <li><a href="../about.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de Idioma -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="../discount-calculator.html" class="lang-btn" title="English Version">EN</a>
+          <a href="calculadora-de-descuentos.html" class="lang-btn active" title="Versión en Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Migas de pan -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#finance">Finanzas</a></li>
+          <li aria-current="page">Calculadora de Descuentos</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Título de la Herramienta -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de Descuentos e Impuestos</h1>
+        <p class="tool-header-desc">
+          Descubre exactamente cuánto ahorras en una oferta, cuánto pagas después del descuento y cuál es el total una vez añadido el impuesto sobre las ventas. Introduce el precio original y el porcentaje de descuento: el impuesto se calcula sobre el precio con descuento.
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacio Publicitario Superior -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Espacio Publicitario">
+        <span class="ad-slot-placeholder-text">Banner Superior Adaptable (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Diseño Principal y Barra Lateral -->
+    <section class="container tool-layout-container">
+
+      <!-- Columna Principal -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Precio Original -->
+            <div class="form-group">
+              <label for="originalPrice" class="form-label">
+                <span>Precio Original ($)</span>
+                <span class="label-hint">Obligatorio</span>
+              </label>
+              <input type="number" id="originalPrice" class="form-input" placeholder="p. ej. 200" min="0" step="0.01">
+              <span class="form-help">El precio completo antes de cualquier descuento</span>
+            </div>
+
+            <!-- Dos Columnas: Descuento e Impuesto -->
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="discountPercent" class="form-label">
+                  <span>Descuento (%)</span>
+                  <span class="label-hint">Obligatorio, 0–100</span>
+                </label>
+                <input type="number" id="discountPercent" class="form-input" placeholder="p. ej. 25" min="0" max="100" step="0.01">
+                <span class="form-help">Porcentaje de rebaja, p. ej. 25 para un 25% de descuento</span>
+              </div>
+
+              <div class="form-group">
+                <label for="taxPercent" class="form-label">
+                  <span>Impuesto sobre las Ventas (%)</span>
+                  <span class="label-hint">Opcional, 0–100</span>
+                </label>
+                <input type="number" id="taxPercent" class="form-input" placeholder="p. ej. 10 (déjalo en blanco para 0)" min="0" max="100" step="0.01">
+                <span class="form-help">Déjalo en blanco si no hay impuesto. El impuesto se aplica sobre el precio con descuento.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aviso de Error -->
+          <div id="discountErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="widget-actions">
+            <button type="button" id="calcDiscountBtn" class="btn btn-primary" onclick="calculateDiscount()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+              </svg>
+              Calcular Descuento
+            </button>
+            <button type="button" id="resetDiscountBtn" class="btn btn-outline" onclick="resetDiscount()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Restablecer
+            </button>
+          </div>
+
+          <!-- Caja de Resultados -->
+          <div id="discountResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Desglose del Descuento
+              </span>
+              <button type="button" id="copyDiscountBtn" class="btn btn-outline btn-sm" title="Copiar resumen de resultados">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar Resumen
+              </button>
+            </div>
+
+            <!-- Tarjeta Principal: Precio Final -->
+            <div class="hero-result-card">
+              <div class="hero-result-label" id="heroResultLabel">Precio Final con Impuestos</div>
+              <div class="hero-result-value" id="finalTotalValue">$0.00</div>
+              <div class="hero-result-sub" id="heroResultSub">Total que pagas en caja</div>
+            </div>
+
+            <!-- Métricas Secundarias -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="amountSavedValue" style="color: var(--accent);">$0.00</div>
+                <div class="metric-label">Cantidad Ahorrada</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="discountedPriceValue">$0.00</div>
+                <div class="metric-label">Precio con Descuento</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="taxAmountValue">$0.00</div>
+                <div class="metric-label">Importe del Impuesto</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="youSaveValue" style="color: var(--accent);">$0.00</div>
+                <div class="metric-label">Ahorras frente al Original</div>
+              </div>
+            </div>
+
+            <!-- Desglose del Precio -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Desglose del Precio
+              </div>
+              <ul class="milestones-list">
+                <li class="milestone-item"><span class="milestone-item-name">Precio original</span><span class="milestone-item-val" id="breakOriginal">$0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name">Menos descuento (<span id="breakDiscountPct">0</span>% de descuento)</span><span class="milestone-item-val" id="breakSaved">− $0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name">Precio con descuento</span><span class="milestone-item-val" id="breakDiscounted">$0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name">Más impuesto (<span id="breakTaxPct">0</span>% sobre el precio con descuento)</span><span class="milestone-item-val" id="breakTax">+ $0.00</span></li>
+                <li class="milestone-item"><span class="milestone-item-name"><strong>Total que pagas</strong></span><span class="milestone-item-val" id="breakTotal"><strong>$0.00</strong></span></li>
+              </ul>
+              <p style="font-size: 0.8125rem; color: var(--text-muted); margin-top: 0.75rem;">El impuesto siempre se calcula sobre el precio con descuento, no sobre el precio original, así que una oferta también reduce el impuesto que pagas.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral: Anuncio y Enlaces -->
+      <aside>
+        <!-- Anuncio Lateral -->
+        <div class="ad-slot ad-rectangle" aria-label="Espacio Publicitario Lateral">
+          <span class="ad-slot-placeholder-text">Rectángulo Lateral (300x250)</span>
+        </div>
+
+        <!-- Calculadoras Relacionadas -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras Relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="calculadora-de-porcentaje.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Porcentaje <span>→</span></a></li>
+            <li><a href="calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Préstamos <span>→</span></a></li>
+            <li><a href="calculadora-de-edad.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Edad e Hitos <span>→</span></a></li>
+            <li><a href="calculadora-de-imc.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Anuncio en Contenido -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Espacio Publicitario en Contenido">
+        <span class="ad-slot-placeholder-text">Banner en Contenido Adaptable (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Guía Educativa (más de 500 palabras) -->
+    <article class="container educational-content">
+
+      <!-- Sección 1: Cómo Usar -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar la Calculadora de Descuentos de OmniTools
+        </h2>
+        <p class="content-paragraph">
+          Los carteles de oferta están diseñados para hacerte sentir que estás consiguiendo una ganga, pero el número de la etiqueta rara vez es el número que realmente pagas. Los descuentos, los cupones y los impuestos cambian el total final, y hacer la operación mentalmente mientras estás en una tienda es fácil de equivocar. Esta calculadora elimina las dudas: escribe tres números y te muestra exactamente cuánto ahorras, el precio después del descuento, el impuesto sobre ese precio rebajado y el total que pagarás en caja.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Introduce el Precio Original</strong>
+              Escribe el precio completo antes de cualquier descuento, por ejemplo <code>200</code> para una chaqueta de $200. Este campo es obligatorio y debe ser mayor que cero.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Introduce el Porcentaje de Descuento</strong>
+              Escribe solo el número, sin el signo de porcentaje: para un 25% de descuento, escribe <code>25</code>. El descuento debe estar entre 0 y 100. Un descuento superior al 100% es imposible, porque una tienda no puede rebajar más que el precio completo, así que la calculadora mostrará un mensaje de error amable si introduces uno.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Introduce el Porcentaje de Impuesto (Opcional)</strong>
+              Si tu compra tiene impuesto, escribe la tasa local, por ejemplo <code>10</code> para un 10% de impuesto. Puedes dejar este campo en blanco, lo que se interpreta como un 0% de impuesto. Recuerda que el impuesto se calcula sobre el precio con descuento, no sobre el precio original, como se explica en detalle más abajo.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Haz clic en "Calcular Descuento"</strong>
+              Verás al instante la cantidad ahorrada, el precio con descuento, el importe del impuesto y el total final. Usa "Copiar Resumen" para copiar el desglose, o "Restablecer" para limpiar el formulario y empezar un cálculo nuevo.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Sección 2: Fórmula -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          La Fórmula del Descuento, Paso a Paso
+        </h2>
+        <p class="content-paragraph">
+          Todo cálculo de descuento sigue los mismos tres pasos sencillos. Una vez que los conoces, puedes comprobar cualquier precio en oferta con una calculadora de bolsillo y nunca más te engañará un precio "antes" inflado.
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Cantidad Ahorrada = Precio Original × Descuento % ÷ 100
+          </div>
+          <div class="formula-explanation">
+            Precio Final con Descuento = Precio Original − Cantidad Ahorrada<br>
+            Importe del Impuesto = Precio Final con Descuento × Impuesto % ÷ 100<br>
+            Total que Pagas = Precio Final con Descuento + Importe del Impuesto<br><br>
+            También puedes obtener el precio con descuento en un solo paso:<br>
+            Precio Final con Descuento = Precio Original × (100 − Descuento %) ÷ 100
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          <strong>Ejemplo resuelto:</strong> Unos zapatos cuestan $200 y tienen un 25% de descuento. Primero, la cantidad ahorrada es $200 × 25 ÷ 100 = $50. El precio con descuento es, por tanto, $200 − $50 = $150. Si el impuesto es del 10%, el impuesto se calcula sobre los $150 rebajados, no sobre los $200 originales, así que el impuesto es $150 × 10 ÷ 100 = $15. El total que pagas en caja es $150 + $15 = $165. Observa que ahorras $50 en el precio y además pagas $5 menos de impuesto que si hubieras pagado el precio completo, porque la base del impuesto también ha bajado.
+        </p>
+      </section>
+
+      <!-- Sección 3: Descuentos Acumulados -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Descuentos Acumulados: Por Qué un 20% Más un 10% No Es un 30%
+        </h2>
+        <p class="content-paragraph">
+          Las tiendas suelen ofrecer un descuento adicional sobre un precio ya rebajado, por ejemplo "un 10% extra en artículos ya rebajados" o un cupón aplicado en caja. Es tentador sumar los dos porcentajes, pero eso exagera el ahorro, porque el segundo descuento se aplica solo al precio ya reducido, no al precio original. Este es el error de descuento más común, y los comercios cuentan con que los compradores lo cometan.
+        </p>
+        <p class="content-paragraph">
+          Toma un artículo de $100 con un 20% de descuento, más un 10% adicional. El primer descuento resta $20 y deja $80. El segundo descuento resta el 10% de $80, es decir $8, y deja un precio final de $72. Tu ahorro total es de $28, es decir un 28%, no un 30%. La diferencia crece con descuentos mayores: un 50% más un 50% no deja el artículo gratis, sino que te hace pagar el 25% del precio original, porque la mitad de la mitad es un cuarto. Para usar esta calculadora con una oferta acumulada, calcula el primer descuento y después introduce el resultado como nuevo precio original y aplica el segundo descuento.
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Oferta</th>
+                <th>Lo que muchos suponen</th>
+                <th>Precio final real sobre $100</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>20% y luego 10%</strong></td>
+                <td>30% de descuento → $70</td>
+                <td><strong>$72</strong> (28% ahorrado)</td>
+              </tr>
+              <tr>
+                <td><strong>50% y luego 50%</strong></td>
+                <td>100% de descuento → gratis</td>
+                <td><strong>$25</strong> (75% ahorrado)</td>
+              </tr>
+              <tr>
+                <td><strong>Solo 25%</strong></td>
+                <td>$75</td>
+                <td><strong>$75</strong> (25% ahorrado)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sección 4: Impuesto -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          El Impuesto Explicado: Se Cobra sobre el Precio con Descuento
+        </h2>
+        <p class="content-paragraph">
+          En la mayoría de los países y estados, el impuesto sobre las ventas o el impuesto sobre el valor añadido se cobra sobre la cantidad que realmente pagas por el artículo, es decir, el precio después de cualquier descuento. Eso significa que una oferta te ahorra dos veces: una en el precio en sí y otra en el impuesto, porque el impuesto se calcula sobre una cantidad menor. Esta calculadora sigue esa regla y lo indica claramente en los resultados, para que no haya dudas sobre a qué precio se aplicó el impuesto.
+        </p>
+        <p class="content-paragraph">
+          Hay algunas excepciones que conviene conocer. En ciertos lugares, el impuesto se cobra antes de aplicar un reembolso del fabricante, porque un reembolso se trata como una devolución posterior a la venta y no como una reducción del precio en caja. Los cupones emitidos por la propia tienda, en cambio, normalmente reducen el precio sujeto a impuesto. Si no estás seguro de qué regla se aplica a una oferta concreta, revisa el recibo: mostrará el subtotal con descuento y después la línea del impuesto debajo. Si el impuesto se calculó sobre el precio original más alto, el recibo lo dejará claro y podrás reclamarlo.
+        </p>
+        <p class="content-paragraph">
+          Una trampa relacionada es el precio que se muestra en la estantería. En Estados Unidos, los precios en tienda suelen excluir el impuesto sobre las ventas, así que el total en caja es mayor que el precio de la etiqueta. En gran parte de Europa, el precio mostrado ya incluye el impuesto sobre el valor añadido. En cualquier caso, esta calculadora te permite modelar el total real en caja: deja el campo del impuesto en blanco cuando el impuesto ya está incluido en el precio, o introduce tu tasa local cuando se añade en caja.
+        </p>
+      </section>
+
+      <!-- Sección 5: Ejemplos de Compra -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Ejemplos de Compra Resueltos
+        </h2>
+        <p class="content-paragraph">
+          La mejor forma de ganar confianza con los descuentos es trabajar con situaciones reales de compra. Prueba cada uno de estos ejemplos en la calculadora de arriba y comprueba que obtienes las mismas respuestas.
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. La Chaqueta con un 25% de Descuento — $200, Sin Impuesto</h4>
+            <p class="example-card-body">
+              Precio original $200, descuento 25%, impuesto en blanco. Cantidad ahorrada: $200 × 25 ÷ 100 = $50. Precio con descuento: $150. Impuesto: $0. Total que pagas: $150. Ahorras $50.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. La Misma Chaqueta con un 10% de Impuesto</h4>
+            <p class="example-card-body">
+              Precio original $200, descuento 25%, impuesto 10%. La cantidad ahorrada sigue siendo $50 y el precio con descuento sigue siendo $150. Impuesto sobre el precio con descuento: $150 × 10 ÷ 100 = $15. Total que pagas: $165. Observa que el impuesto es de $15, no de $20: el impuesto sobre los $200 originales habría sido de $20.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. Un Artículo de $59.99 con un 40% de Descuento</h4>
+            <p class="example-card-body">
+              Precio original $59.99, descuento 40%, impuesto 8%. Cantidad ahorrada: $59.99 × 40 ÷ 100 = $24.00 (redondeado). Precio con descuento: $35.99. Impuesto: $35.99 × 8 ÷ 100 = $2.88. Total que pagas: $38.87. Incluso con céntimos en el precio, los mismos tres pasos dan el total exacto en caja.
+            </p>
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          Un último consejo de compra: compara siempre el precio final, no el tamaño del descuento. Un descuento del 50% sobre un artículo con un precio inflado puede costar más que un descuento del 20% sobre un artículo con un precio justo. Introduce ambos precios finales en esta calculadora, compara los totales con impuesto incluido y deja que los números —no el tamaño del cartel de oferta— decidan qué oferta es realmente mejor.
+        </p>
+      </section>
+
+      <!-- Sección 6: Preguntas Frecuentes -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas Frecuentes (FAQ)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Cómo se calcula el precio con descuento?</summary>
+            <div class="faq-answer">
+              Multiplica el precio original por el porcentaje de descuento y divide entre 100 para obtener la cantidad ahorrada, y luego resta esa cantidad del precio original. Por ejemplo, un artículo de $200 con un 25% de descuento ahorra $50, así que el precio final es $150.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿El impuesto se calcula antes o después del descuento?</summary>
+            <div class="faq-answer">
+              En la mayoría de los lugares, el impuesto se calcula sobre el precio con descuento, no sobre el precio original. Así funciona esta calculadora: primero resta el descuento y después aplica el porcentaje de impuesto al precio más bajo, ya rebajado, de modo que pagas menos impuesto cuando un artículo está en oferta.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Cómo funcionan los descuentos acumulados? ¿Un 20% más un 10% es lo mismo que un 30%?</summary>
+            <div class="faq-answer">
+              No. Los descuentos acumulados se aplican uno tras otro, no se suman. Un artículo de $100 con un 20% de descuento cuesta $80, y un 10% adicional sobre esos $80 ahorra otros $8, lo que da un precio final de $72. Eso es un ahorro total del 28%, no del 30%. Para combinar dos descuentos, introduce el primer resultado como nuevo precio original y aplica el segundo descuento.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Cómo encuentro el porcentaje de descuento a partir de dos precios?</summary>
+            <div class="faq-answer">
+              Resta el precio en oferta del precio original, divide el resultado entre el precio original y multiplica por 100. Por ejemplo, un artículo rebajado de $80 a $60 ahorra $20, y $20 dividido entre $80 y multiplicado por 100 es 25%, así que el descuento es del 25%.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Se guardan mis datos financieros o se envían a sus servidores?</summary>
+            <div class="faq-answer">
+              Nunca. OmniTools funciona por completo en el navegador de tu dispositivo. Ningún precio, porcentaje de descuento ni cifra de impuesto se envía a bases de datos externas ni se registra en servidores remotos.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece utilidades y calculadoras web gratuitas, ligeras y respetuosas con la privacidad para el uso diario.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-edad.html">Calculadora de Edad</a></li>
+            <li><a href="calculadora-de-prestamos.html">Calculadora de Préstamos</a></li>
+            <li><a href="calculadora-de-imc.html">Calculadora de IMC</a></li>
+            <li><a href="generador-de-contrasenas.html">Generador de Contraseñas</a></li>
+            <li><a href="contador-de-palabras.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Otras Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="conversor-de-unidades.html">Conversor de Unidades</a></li>
+            <li><a href="calculadora-de-porcentaje.html">Calculadora de Porcentaje</a></li>
+            <li><a href="calculadora-de-dias.html">Diferencia entre Fechas</a></li>
+            <li><a href="convertidor-de-mayusculas.html">Convertidor de Mayúsculas</a></li>
+            <li><a href="calculadora-de-descuentos.html">Calculadora de Descuentos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Quiénes Somos</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades online gratuitas.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../discount-calculator.html">English</a> |
+          <a href="calculadora-de-descuentos.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Motor Integrado (Sin Dependencias Externas) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var priceInput = document.getElementById('originalPrice');
+    var discountInput = document.getElementById('discountPercent');
+    var taxInput = document.getElementById('taxPercent');
+    var resultsBox = document.getElementById('discountResultsBox');
+    var errorBox = document.getElementById('discountErrorBox');
+    var copyBtn = document.getElementById('copyDiscountBtn');
+
+    [priceInput, discountInput, taxInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateDiscount();
+        });
+      }
+    });
+
+    function formatMoney(val) {
+      return '$' + val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    window.calculateDiscount = function() {
+      var priceRaw = priceInput.value.trim();
+      var discountRaw = discountInput.value.trim();
+      var taxRaw = taxInput.value.trim();
+
+      var price = parseFloat(priceRaw);
+      var discount = parseFloat(discountRaw);
+      var tax = taxRaw === '' ? 0 : parseFloat(taxRaw);
+
+      if (priceRaw === '' || isNaN(price)) {
+        showError('Por favor, introduce el precio original.');
+        return;
+      }
+      if (price <= 0) {
+        showError('El precio original debe ser mayor que 0.');
+        return;
+      }
+      if (discountRaw === '' || isNaN(discount)) {
+        showError('Por favor, introduce el porcentaje de descuento.');
+        return;
+      }
+      if (discount < 0) {
+        showError('El porcentaje de descuento no puede ser negativo.');
+        return;
+      }
+      if (discount > 100) {
+        showError('El porcentaje de descuento no puede ser mayor del 100%.');
+        return;
+      }
+      if (taxRaw !== '' && isNaN(tax)) {
+        showError('Por favor, introduce un porcentaje de impuesto válido o déjalo en blanco.');
+        return;
+      }
+      if (tax < 0) {
+        showError('El porcentaje de impuesto no puede ser negativo.');
+        return;
+      }
+      if (tax > 100) {
+        showError('El porcentaje de impuesto no puede ser mayor del 100%.');
+        return;
+      }
+
+      hideError();
+
+      var saved = price * discount / 100;
+      var discountedPrice = price - saved;
+      var taxAmount = discountedPrice * tax / 100;
+      var total = discountedPrice + taxAmount;
+
+      document.getElementById('amountSavedValue').textContent = formatMoney(saved);
+      document.getElementById('discountedPriceValue').textContent = formatMoney(discountedPrice);
+      document.getElementById('taxAmountValue').textContent = formatMoney(taxAmount);
+      document.getElementById('youSaveValue').textContent = formatMoney(saved);
+      document.getElementById('finalTotalValue').textContent = formatMoney(total);
+      document.getElementById('breakOriginal').textContent = formatMoney(price);
+      document.getElementById('breakDiscountPct').textContent = discount;
+      document.getElementById('breakSaved').textContent = '− ' + formatMoney(saved);
+      document.getElementById('breakDiscounted').textContent = formatMoney(discountedPrice);
+      document.getElementById('breakTaxPct').textContent = tax;
+      document.getElementById('breakTax').textContent = '+ ' + formatMoney(taxAmount);
+      document.getElementById('breakTotal').textContent = formatMoney(total);
+
+      if (tax > 0) {
+        document.getElementById('heroResultLabel').textContent = 'Precio Final con Impuestos';
+        document.getElementById('heroResultSub').textContent = 'Total que pagas en caja, impuestos incluidos';
+      } else {
+        document.getElementById('heroResultLabel').textContent = 'Precio Final con Descuento';
+        document.getElementById('heroResultSub').textContent = 'Total que pagas (sin impuesto introducido)';
+      }
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'Resumen del descuento: Precio original ' + formatMoney(price) + ' con un ' + discount + '% de descuento. Ahorras ' + formatMoney(saved) + '. Precio con descuento: ' + formatMoney(discountedPrice) + '. Impuesto (' + tax + '% sobre el precio con descuento): ' + formatMoney(taxAmount) + '. Total que pagas: ' + formatMoney(total) + '. Calculado con OmniTools.');
+      }
+    };
+
+    window.resetDiscount = function() {
+      priceInput.value = '';
+      discountInput.value = '';
+      taxInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Resumen del descuento copiado al portapapeles!');
+          }).catch(function() {
+            prompt('Copiar resumen:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

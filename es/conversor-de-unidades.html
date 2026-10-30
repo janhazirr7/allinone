@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Unidades - Longitud, Peso y Temperatura | OmniTools</title>
+  <meta name="description" content="Convierte longitud, peso y temperatura al instante: metros a pies, kilómetros a millas, kilogramos a libras, Celsius a Fahrenheit y Kelvin. Gratis, preciso y 100% privado.">
+  <meta name="keywords" content="conversor de unidades, conversor de longitud, conversor de peso, conversor de temperatura, metros a pies, km a millas, kg a libras, celsius a fahrenheit, conversor métrico a imperial">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canónica y SEO Multilingüe hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/es/conversor-de-unidades.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/unit-converter.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/conversor-de-unidades.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/unit-converter.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/es/conversor-de-unidades.html">
+  <meta property="og:title" content="Conversor de Unidades - Longitud, Peso y Temperatura">
+  <meta property="og:description" content="Convierte longitud, peso y temperatura entre el sistema métrico y el imperial al instante. 100% gratis y privado.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-unit-converter.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Conversor de Unidades | OmniTools">
+  <meta name="twitter:description" content="Conversiones instantáneas de longitud, peso y temperatura entre el sistema métrico y el imperial.">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Datos Estructurados JSON-LD (WebApplication y FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Conversor de Unidades",
+    "url": "https://omnitools.pages.dev/es/conversor-de-unidades.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Convierte longitud, peso y temperatura entre el sistema métrico y el imperial con factores de conversión exactos y fórmulas reales de temperatura.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://omnitools.pages.dev/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Conversores",
+        "item": "https://omnitools.pages.dev/es/#converter"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Conversor de Unidades",
+        "item": "https://omnitools.pages.dev/es/conversor-de-unidades.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuántos pies hay en un metro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un metro equivale exactamente a 3,28084 pies, porque un pie se define como exactamente 0,3048 metros. Para convertir metros a pies, divide entre 0,3048; para convertir pies a metros, multiplica por 0,3048."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuántas libras hay en un kilogramo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un kilogramo equivale aproximadamente a 2,20462 libras, porque una libra se define como exactamente 0,45359237 kilogramos. Para convertir kilogramos a libras, divide entre 0,45359237; para convertir libras a kilogramos, multiplica por 0,45359237."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué la temperatura no se puede convertir con un simple factor de multiplicación?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las escalas de longitud y peso comparten el mismo punto cero, por lo que se convierten con un solo factor de multiplicación. Celsius y Fahrenheit tienen puntos cero distintos, así que la conversión de temperatura necesita tanto una multiplicación como una suma o una resta, por ejemplo, Fahrenheit equivale a Celsius por 9 entre 5 más 32."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué se rechaza un valor Kelvin por debajo de cero?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kelvin empieza en el cero absoluto, la temperatura más baja físicamente posible, que equivale a menos 273,15 grados Celsius. Un valor Kelvin negativo no puede existir, así que este conversor muestra un error en lugar de un resultado sin sentido."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se guardan o se envían mis datos de conversión a algún lugar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. OmniTools funciona por completo en tu navegador. Tus valores y conversiones nunca se envían a un servidor, ni se almacenan ni se comparten con nadie."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navegación -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Todas las Herramientas</a></li>
+          <li><a href="calculadora-de-edad.html">Edad</a></li>
+          <li><a href="calculadora-de-imc.html">IMC</a></li>
+          <li><a href="conversor-de-unidades.html" class="active">Conversor</a></li>
+          <li><a href="../about.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de Idioma -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="../unit-converter.html" class="lang-btn" title="English Version">EN</a>
+          <a href="conversor-de-unidades.html" class="lang-btn active" title="Versión en Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Migas de pan -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#converter">Conversores</a></li>
+          <li aria-current="page">Conversor de Unidades</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Título de la Herramienta -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Conversor de Unidades Todo en Uno</h1>
+        <p class="tool-header-desc">
+          Convierte longitud, peso y temperatura al instante entre el sistema métrico y el imperial: metros a pies, kilómetros a millas, kilogramos a libras y Celsius a Fahrenheit, con factores exactos y fórmulas reales de temperatura.
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacio Publicitario Superior -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Espacio Publicitario">
+        <span class="ad-slot-placeholder-text">Banner Superior Adaptable (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Widget Principal y Barra Lateral -->
+    <section class="container tool-layout-container">
+
+      <!-- Columna Principal de la Herramienta -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Categoría -->
+            <div class="form-group">
+              <label for="convCategory" class="form-label">
+                <span>Categoría</span>
+                <span class="label-hint">Elige qué convertir</span>
+              </label>
+              <select id="convCategory" class="form-select">
+                <option value="length" selected>Longitud</option>
+                <option value="weight">Peso</option>
+                <option value="temperature">Temperatura</option>
+              </select>
+              <span class="form-help">Al cambiar la categoría, las unidades de abajo cambian automáticamente.</span>
+            </div>
+
+            <!-- Valor -->
+            <div class="form-group">
+              <label for="convValue" class="form-label">
+                <span>Valor a convertir</span>
+                <span class="label-hint">Obligatorio</span>
+              </label>
+              <input type="number" id="convValue" class="form-input" placeholder="p. ej. 5" step="any" value="5">
+              <span class="form-help">Escribe cualquier número. Se aceptan valores negativos, excepto Kelvin por debajo de cero.</span>
+            </div>
+
+            <!-- Dos Columnas: De y A -->
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="convFrom" class="form-label">
+                  <span>Unidad de origen</span>
+                  <span class="label-hint">Origen</span>
+                </label>
+                <select id="convFrom" class="form-select"></select>
+                <span class="form-help">La unidad desde la que conviertes.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="convTo" class="form-label">
+                  <span>Unidad de destino</span>
+                  <span class="label-hint">Destino</span>
+                </label>
+                <select id="convTo" class="form-select"></select>
+                <span class="form-help">La unidad en la que quieres el resultado.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alerta de Error -->
+          <div id="convErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="widget-actions">
+            <button type="button" id="convertBtn" class="btn btn-primary" onclick="convertUnits()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+              Convertir
+            </button>
+            <button type="button" id="swapBtn" class="btn btn-outline" onclick="swapUnits()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+              Intercambiar unidades
+            </button>
+            <button type="button" id="resetBtn" class="btn btn-outline" onclick="resetConverter()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Restablecer
+            </button>
+          </div>
+
+          <!-- Caja de Resultados -->
+          <div id="convResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Resultado de la Conversión
+              </span>
+              <button type="button" id="copyConvBtn" class="btn btn-outline btn-sm" title="Copiar resultado">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar Resultado
+              </button>
+            </div>
+
+            <!-- Tarjeta Principal -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Valor convertido</div>
+              <div class="hero-result-value" id="convHeroValue">-</div>
+              <div class="hero-result-sub" id="convFormulaText"></div>
+            </div>
+
+            <!-- Métricas Secundarias -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="convBaseValue">-</div>
+                <div class="metric-label">Valor en la unidad base</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="convReverseValue">-</div>
+                <div class="metric-label">Conversión inversa (1 unidad)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="convCategoryValue">-</div>
+                <div class="metric-label">Categoría</div>
+              </div>
+            </div>
+
+            <!-- Valor en Todas las Unidades -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Tu valor en todas las unidades de esta categoría
+              </div>
+
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Unidad</th>
+                      <th>Símbolo</th>
+                      <th>Valor</th>
+                    </tr>
+                  </thead>
+                  <tbody id="convAllTableBody">
+                    <!-- Se completa dinámicamente con JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral: Anuncio y Enlaces -->
+      <aside>
+        <!-- Anuncio en la Barra Lateral -->
+        <div class="ad-slot ad-rectangle" aria-label="Espacio Publicitario en la Barra Lateral">
+          <span class="ad-slot-placeholder-text">Rectángulo en la Barra Lateral (300x250)</span>
+        </div>
+
+        <!-- Widget de Utilidades -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras Relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="calculadora-de-edad.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Edad e Hitos <span>→</span></a></li>
+            <li><a href="calculadora-de-imc.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+            <li><a href="calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Préstamos <span>→</span></a></li>
+            <li><a href="calculadora-de-porcentaje.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Porcentaje <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Anuncio en Contenido -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Espacio Publicitario en Contenido">
+        <span class="ad-slot-placeholder-text">Banner en Contenido Adaptable (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Guía Educativa (más de 500 palabras) -->
+    <article class="container educational-content">
+
+      <!-- Sección 1: Cómo Usar -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar el Conversor de Unidades de OmniTools
+        </h2>
+        <p class="content-paragraph">
+          Ya sea que sigas una receta de otro país, compruebes una distancia en carretera durante unas vacaciones, leas un pronóstico del tiempo o compres tela por internet, tarde o temprano necesitarás cambiar una medida de una unidad a otra. El Conversor de Unidades de OmniTools hace ese trabajo por ti en un solo lugar, sin registro, sin instalar ninguna aplicación y sin que tus datos salgan de tu dispositivo. Todo se calcula al instante en tu navegador, así que puedes convertir tantos valores como quieras, tan rápido como puedas escribirlos.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Elige una categoría</strong>
+              Escoge Longitud, Peso o Temperatura. Las listas de unidades de abajo cambian automáticamente, así que solo verás unidades que pertenecen a la misma familia.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Escribe tu valor</strong>
+              Escribe el número que quieres convertir, por ejemplo 5 para cinco kilómetros, o 72 para setenta y dos grados Fahrenheit.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Elige las unidades de origen y destino</strong>
+              Elige la unidad que tienes y la unidad que quieres. Usa el botón Intercambiar si quieres invertir la dirección, por ejemplo de millas a kilómetros en lugar de kilómetros a millas.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Pulsa Convertir</strong>
+              Verás el resultado principal, la fórmula utilizada, el valor en la unidad base, la conversión inversa y una tabla con tu valor en todas las unidades de esa categoría, algo muy útil cuando comparas varias unidades a la vez.
+            </div>
+          </li>
+        </ol>
+        <p class="content-paragraph">
+          Un consejo útil: convertir de una unidad a sí misma es totalmente válido y simplemente devuelve el mismo valor. Eso puede servir como comprobación rápida: si 10 metros se convierten en 10 metros, la herramienta funciona exactamente como debe, y entonces solo tienes que cambiar la unidad de destino.
+        </p>
+      </section>
+
+      <!-- Sección 2: Longitud y Peso -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          Longitud y Peso: Una Regla Sencilla
+        </h2>
+        <p class="content-paragraph">
+          La longitud y el peso son los casos fáciles, porque todas las unidades de la misma familia miden desde el mismo cero. Eso significa que cada conversión es una sola multiplicación o división. El conversor primero cambia tu valor a una unidad base — metros para la longitud, kilogramos para el peso — y luego cambia ese valor base a tu unidad de destino. Como los factores son exactos por definición, los resultados también son exactos, salvo el pequeño redondeo que solo se usa para que la pantalla sea fácil de leer.
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Resultado = Valor × (Unidad de origen en unidades base) ÷ (Unidad de destino en unidades base)
+          </div>
+          <div class="formula-explanation">
+            Ejemplo: 5 km a millas = 5 × 1000 ÷ 1609,344 = 3,10686 millas.<br>
+            Ejemplo: 1 kg a libras = 1 × 1 ÷ 0,45359237 = 2,20462 libras.
+          </div>
+        </div>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Unidad de longitud</th>
+                <th>Símbolo</th>
+                <th>Equivale en metros</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Kilómetro</strong></td><td>km</td><td>1000 m</td></tr>
+              <tr><td><strong>Metro</strong></td><td>m</td><td>1 m (unidad base)</td></tr>
+              <tr><td><strong>Centímetro</strong></td><td>cm</td><td>0,01 m</td></tr>
+              <tr><td><strong>Milla</strong></td><td>mi</td><td>1609,344 m</td></tr>
+              <tr><td><strong>Pie</strong></td><td>ft</td><td>0,3048 m</td></tr>
+              <tr><td><strong>Pulgada</strong></td><td>in</td><td>0,0254 m</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Unidad de peso</th>
+                <th>Símbolo</th>
+                <th>Equivale en kilogramos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Kilogramo</strong></td><td>kg</td><td>1 kg (unidad base)</td></tr>
+              <tr><td><strong>Gramo</strong></td><td>g</td><td>0,001 kg</td></tr>
+              <tr><td><strong>Libra</strong></td><td>lb</td><td>0,45359237 kg</td></tr>
+              <tr><td><strong>Onza</strong></td><td>oz</td><td>0,028349523125 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="content-paragraph">
+          Dos conversiones aparecen una y otra vez en la vida cotidiana. Una milla son 1,609344 kilómetros, así que una carrera de 10 kilómetros son unas 6,21 millas, y un maratón de 26,2 millas son unos 42,2 kilómetros. En cuanto al peso, una libra es algo menos de medio kilogramo, así que 150 libras son unos 68 kilogramos, y una bolsa de harina de 5 kilogramos pesa unas 11 libras. Recordar estos dos puntos de referencia facilita comprobar cualquier resultado de un vistazo.
+        </p>
+      </section>
+
+      <!-- Sección 3: Temperatura -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Temperatura: Ceros Distintos, Fórmulas Reales
+        </h2>
+        <p class="content-paragraph">
+          La temperatura es distinta de la longitud y el peso, y esa diferencia confunde a mucha gente. Celsius y Fahrenheit no comparten el mismo cero: el agua se congela a 0 grados Celsius pero a 32 grados Fahrenheit, y hierve a 100 grados Celsius pero a 212 grados Fahrenheit. Como los puntos cero son distintos, no se puede convertir la temperatura con una sola multiplicación. Cada conversión necesita una multiplicación y una suma o una resta, y este conversor usa las fórmulas reales en lugar de una aproximación.
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            °F = °C × 9/5 + 32 &nbsp;&nbsp;|&nbsp;&nbsp; °C = (°F − 32) × 5/9 &nbsp;&nbsp;|&nbsp;&nbsp; K = °C + 273,15
+          </div>
+          <div class="formula-explanation">
+            Conjunto completo que usa este conversor:<br>
+            • Celsius a Fahrenheit: °F = °C × 9/5 + 32<br>
+            • Fahrenheit a Celsius: °C = (°F − 32) × 5/9<br>
+            • Celsius a Kelvin: K = °C + 273,15<br>
+            • Kelvin a Celsius: °C = K − 273,15<br>
+            • Fahrenheit a Kelvin: K = (°F − 32) × 5/9 + 273,15<br>
+            • Kelvin a Fahrenheit: °F = (K − 273,15) × 9/5 + 32<br><br>
+            Referencias cotidianas: 0 °C = 32 °F (congelación), 20 °C = 68 °F (una habitación agradable), 37 °C = 98,6 °F (temperatura corporal), 100 °C = 212 °F (ebullición).
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          Kelvin merece una nota especial. Es la escala científica de temperatura y empieza en el cero absoluto, la temperatura más fría que puede existir físicamente. El cero absoluto son 0 kelvin, que equivalen a menos 273,15 grados Celsius. Por eso este conversor rechaza cualquier valor Kelvin por debajo de cero: una temperatura así no puede existir, y mostrar un número convertido para ella sería engañoso. Los valores negativos en Celsius y Fahrenheit, en cambio, son completamente normales y se aceptan sin ningún problema.
+        </p>
+      </section>
+
+      <!-- Sección 4: Métrico frente a Imperial -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Sistema Métrico frente a Sistema Imperial: Por Qué Ambos Siguen Importando
+        </h2>
+        <p class="content-paragraph">
+          La mayor parte del mundo usa el sistema métrico, construido sobre potencias de diez limpias: 100 centímetros en un metro, 1000 metros en un kilómetro, 1000 gramos en un kilogramo. Es fácil de aprender y fácil de ampliar o reducir. El sistema imperial — pulgadas, pies, millas, libras y onzas — sigue siendo el sistema cotidiano en Estados Unidos y aparece en muchas recetas antiguas, etiquetas de productos, medidas deportivas y señales de tráfico en todo el mundo. Esa división es exactamente la razón por la que un conversor resulta útil: una receta en tazas y onzas, una altura dada en pies y pulgadas o un límite de velocidad en millas por hora necesitan traducirse cuando vives, cocinas o viajas entre sistemas.
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Cocinar entre países</h4>
+            <p class="example-card-body">
+              Una receta que pide 500 gramos de harina está pidiendo unas 17,6 onzas, o algo más de 1,1 libras. Convertir antes de empezar evita adivinar y hace que la receta funcione tal como la pensó su autor.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. Viajes y distancias en carretera</h4>
+            <p class="example-card-body">
+              Una señal que dice que el próximo pueblo está a 30 millas significa unos 48 kilómetros. Convertir las distancias antes de un viaje ayuda a calcular combustible, tiempo y paradas en las unidades en las que piensas.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. El tiempo en otro país</h4>
+            <p class="example-card-body">
+              Un pronóstico de 77 grados Fahrenheit suena caluroso hasta que lo conviertes: son 25 grados Celsius, un día de verano cálido pero normal. La conversión de temperatura convierte un número desconocido en un tiempo que realmente puedes imaginar.
+            </p>
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          Una última precaución se aplica a cualquier conversor, no solo a este: ten cuidado con los resultados redondeados cuando la precisión importa. Para el uso cotidiano, un resultado redondeado a unos pocos decimales es más que suficiente. Para ingeniería, medicina, trabajo de laboratorio o medidas legales, comprueba siempre la definición oficial de la unidad y conserva toda la precisión durante tus cálculos, redondeando solo al final. Este conversor muestra suficientes dígitos para las decisiones cotidianas y mantiene el resultado principal fácil de leer, y sus factores internos son las definiciones exactas, así que las matemáticas que hay detrás son tan precisas como las propias unidades.
+        </p>
+      </section>
+
+      <!-- Sección 5: Preguntas Frecuentes -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas Frecuentes
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Cuántos pies hay en un metro?</summary>
+            <div class="faq-answer">
+              Un metro equivale exactamente a 3,28084 pies, porque un pie se define como exactamente 0,3048 metros. Para convertir metros a pies, divide entre 0,3048; para convertir pies a metros, multiplica por 0,3048.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Cuántas libras hay en un kilogramo?</summary>
+            <div class="faq-answer">
+              Un kilogramo equivale aproximadamente a 2,20462 libras, porque una libra se define como exactamente 0,45359237 kilogramos. Para convertir kilogramos a libras, divide entre 0,45359237; para convertir libras a kilogramos, multiplica por 0,45359237.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Por qué la temperatura no se puede convertir con un simple factor de multiplicación?</summary>
+            <div class="faq-answer">
+              Las escalas de longitud y peso comparten el mismo punto cero, por lo que se convierten con un solo factor de multiplicación. Celsius y Fahrenheit tienen puntos cero distintos, así que la conversión de temperatura necesita tanto una multiplicación como una suma o una resta, por ejemplo, Fahrenheit equivale a Celsius por 9 entre 5 más 32.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Por qué se rechaza un valor Kelvin por debajo de cero?</summary>
+            <div class="faq-answer">
+              Kelvin empieza en el cero absoluto, la temperatura más baja físicamente posible, que equivale a menos 273,15 grados Celsius. Un valor Kelvin negativo no puede existir, así que este conversor muestra un error en lugar de un resultado sin sentido.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Se guardan o se envían mis datos de conversión a algún lugar?</summary>
+            <div class="faq-answer">
+              No. OmniTools funciona por completo en tu navegador. Tus valores y conversiones nunca se envían a un servidor, ni se almacenan ni se comparten con nadie.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece utilidades y calculadoras web gratuitas, ligeras y respetuosas con la privacidad para el uso diario.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-edad.html">Calculadora de Edad</a></li>
+            <li><a href="calculadora-de-prestamos.html">Calculadora de Préstamos</a></li>
+            <li><a href="calculadora-de-imc.html">Calculadora de IMC</a></li>
+            <li><a href="generador-de-contrasenas.html">Generador de Contraseñas</a></li>
+            <li><a href="contador-de-palabras.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Otras Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="conversor-de-unidades.html">Conversor de Unidades</a></li>
+            <li><a href="calculadora-de-porcentaje.html">Calculadora de Porcentaje</a></li>
+            <li><a href="calculadora-de-dias.html">Diferencia entre Fechas</a></li>
+            <li><a href="convertidor-de-mayusculas.html">Convertidor de Mayúsculas</a></li>
+            <li><a href="calculadora-de-descuentos.html">Calculadora de Descuentos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Quiénes Somos</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades online gratuitas.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../unit-converter.html">English</a> |
+          <a href="conversor-de-unidades.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Motor Integrado (Sin Dependencias Externas) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var categorySelect = document.getElementById('convCategory');
+    var valueInput = document.getElementById('convValue');
+    var fromSelect = document.getElementById('convFrom');
+    var toSelect = document.getElementById('convTo');
+    var resultsBox = document.getElementById('convResultsBox');
+    var errorBox = document.getElementById('convErrorBox');
+    var copyBtn = document.getElementById('copyConvBtn');
+
+    var UNITS = {
+      length: [
+        { id: 'm', name: 'Metro', factor: 1 },
+        { id: 'km', name: 'Kilómetro', factor: 1000 },
+        { id: 'mi', name: 'Milla', factor: 1609.344 },
+        { id: 'ft', name: 'Pie', factor: 0.3048 },
+        { id: 'in', name: 'Pulgada', factor: 0.0254 },
+        { id: 'cm', name: 'Centímetro', factor: 0.01 }
+      ],
+      weight: [
+        { id: 'kg', name: 'Kilogramo', factor: 1 },
+        { id: 'g', name: 'Gramo', factor: 0.001 },
+        { id: 'lb', name: 'Libra', factor: 0.45359237 },
+        { id: 'oz', name: 'Onza', factor: 0.028349523125 }
+      ],
+      temperature: [
+        { id: 'c', name: 'Celsius', symbol: '\u00B0C' },
+        { id: 'f', name: 'Fahrenheit', symbol: '\u00B0F' },
+        { id: 'k', name: 'Kelvin', symbol: 'K' }
+      ]
+    };
+
+    var BASE_LABEL = { length: 'metros (m)', weight: 'kilogramos (kg)', temperature: 'Celsius (\u00B0C)' };
+    var CATEGORY_LABEL = { length: 'Longitud', weight: 'Peso', temperature: 'Temperatura' };
+
+    function unitSymbol(cat, unit) {
+      if (cat === 'temperature') return unit.symbol;
+      return unit.id;
+    }
+
+    function unitLabel(cat, unit) {
+      return unit.name + ' (' + unitSymbol(cat, unit) + ')';
+    }
+
+    function findUnit(cat, id) {
+      var list = UNITS[cat];
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].id === id) return list[i];
+      }
+      return null;
+    }
+
+    function toCelsius(value, from) {
+      if (from === 'c') return value;
+      if (from === 'f') return (value - 32) * 5 / 9;
+      return value - 273.15;
+    }
+
+    function fromCelsius(celsius, to) {
+      if (to === 'c') return celsius;
+      if (to === 'f') return celsius * 9 / 5 + 32;
+      return celsius + 273.15;
+    }
+
+    function convertValue(cat, value, from, to) {
+      if (cat === 'temperature') {
+        return fromCelsius(toCelsius(value, from), to);
+      }
+      var fromUnit = findUnit(cat, from);
+      var toUnit = findUnit(cat, to);
+      var base = value * fromUnit.factor;
+      return base / toUnit.factor;
+    }
+
+    function toBaseValue(cat, value, from) {
+      if (cat === 'temperature') return toCelsius(value, from);
+      return value * findUnit(cat, from).factor;
+    }
+
+    function tempFormula(from, to, value) {
+      if (from === to) return 'Misma unidad: el valor no cambia.';
+      var map = {
+        'c-f': '\u00B0F = \u00B0C \u00D7 9/5 + 32',
+        'f-c': '\u00B0C = (\u00B0F \u2212 32) \u00D7 5/9',
+        'c-k': 'K = \u00B0C + 273,15',
+        'k-c': '\u00B0C = K \u2212 273,15',
+        'f-k': 'K = (\u00B0F \u2212 32) \u00D7 5/9 + 273,15',
+        'k-f': '\u00B0F = (K \u2212 273,15) \u00D7 9/5 + 32'
+      };
+      return 'Fórmula utilizada: ' + map[from + '-' + to];
+    }
+
+    function formatNum(v) {
+      if (v === 0) return '0';
+      var a = Math.abs(v);
+      if (a >= 1000000 || a < 0.0001) return parseFloat(v.toPrecision(6)).toString();
+      return parseFloat(v.toPrecision(7)).toString();
+    }
+
+    function populateUnits(cat) {
+      var list = UNITS[cat];
+      fromSelect.innerHTML = '';
+      toSelect.innerHTML = '';
+      list.forEach(function(u) {
+        var o1 = document.createElement('option');
+        o1.value = u.id;
+        o1.textContent = unitLabel(cat, u);
+        fromSelect.appendChild(o1);
+        var o2 = document.createElement('option');
+        o2.value = u.id;
+        o2.textContent = unitLabel(cat, u);
+        toSelect.appendChild(o2);
+      });
+      if (cat === 'length') { fromSelect.value = 'km'; toSelect.value = 'mi'; }
+      else if (cat === 'weight') { fromSelect.value = 'kg'; toSelect.value = 'lb'; }
+      else { fromSelect.value = 'c'; toSelect.value = 'f'; }
+    }
+
+    window.convertUnits = function() {
+      var cat = categorySelect.value;
+      var raw = valueInput.value;
+      var value = parseFloat(raw);
+      var from = fromSelect.value;
+      var to = toSelect.value;
+
+      if (raw === '' || raw === null || isNaN(value) || !isFinite(value)) {
+        showError('Por favor, escribe un número válido para convertir.');
+        return;
+      }
+      if (cat === 'temperature' && ((from === 'k' && value < 0) || (to === 'k' && toCelsius(value, from) + 273.15 < 0))) {
+        showError('Kelvin no puede ser inferior a cero (el cero absoluto es 0 K = -273,15 \u00B0C). Por favor, escribe una temperatura de 0 K o superior.');
+        return;
+      }
+
+      hideError();
+
+      var result = convertValue(cat, value, from, to);
+      var fromUnit = findUnit(cat, from);
+      var toUnit = findUnit(cat, to);
+      var fromSym = unitSymbol(cat, fromUnit);
+      var toSym = unitSymbol(cat, toUnit);
+      var hero = formatNum(value) + ' ' + fromSym + ' = ' + formatNum(result) + ' ' + toSym;
+
+      document.getElementById('convHeroValue').textContent = hero;
+
+      var formulaText;
+      if (cat === 'temperature') {
+        formulaText = tempFormula(from, to, value);
+      } else if (from === to) {
+        formulaText = 'Misma unidad: el valor no cambia.';
+      } else {
+        formulaText = 'Fórmula utilizada: ' + formatNum(value) + ' ' + fromSym + ' \u00D7 ' + fromUnit.factor + ' \u00F7 ' + toUnit.factor + ' = ' + formatNum(result) + ' ' + toSym;
+      }
+      document.getElementById('convFormulaText').textContent = formulaText;
+
+      var baseVal = toBaseValue(cat, value, from);
+      document.getElementById('convBaseValue').textContent = formatNum(baseVal) + ' ' + BASE_LABEL[cat].split(' ')[1];
+      var reverse = convertValue(cat, 1, to, from);
+      document.getElementById('convReverseValue').textContent = '1 ' + toSym + ' = ' + formatNum(reverse) + ' ' + fromSym;
+      document.getElementById('convCategoryValue').textContent = CATEGORY_LABEL[cat];
+
+      var tbody = document.getElementById('convAllTableBody');
+      tbody.innerHTML = '';
+      UNITS[cat].forEach(function(u) {
+        var v = convertValue(cat, value, from, u.id);
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td><strong>' + u.name + '</strong></td><td>' + unitSymbol(cat, u) + '</td><td>' + formatNum(v) + '</td>';
+        tbody.appendChild(tr);
+      });
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'Conversión de unidades: ' + hero + '. Calculado con OmniTools.');
+      }
+    };
+
+    window.swapUnits = function() {
+      var tmp = fromSelect.value;
+      fromSelect.value = toSelect.value;
+      toSelect.value = tmp;
+      if (valueInput.value !== '') convertUnits();
+    };
+
+    window.resetConverter = function() {
+      valueInput.value = '';
+      categorySelect.value = 'length';
+      populateUnits('length');
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (categorySelect) {
+      categorySelect.addEventListener('change', function() {
+        populateUnits(categorySelect.value);
+        if (valueInput.value !== '') convertUnits();
+      });
+    }
+    if (valueInput) {
+      valueInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') convertUnits();
+      });
+      valueInput.addEventListener('input', function() {
+        if (valueInput.value === '') {
+          hideError();
+          if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+        } else {
+          convertUnits();
+        }
+      });
+    }
+    if (fromSelect) fromSelect.addEventListener('change', function() { if (valueInput.value !== '') convertUnits(); });
+    if (toSelect) toSelect.addEventListener('change', function() { if (valueInput.value !== '') convertUnits(); });
+
+    populateUnits('length');
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Resultado de la conversión copiado al portapapeles!');
+          }).catch(function() {
+            prompt('Copiar resultado:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
