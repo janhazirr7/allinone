@@ -251,13 +251,13 @@
 
           <!-- Action Buttons -->
           <div class="widget-actions">
-            <button type="button" id="calcBmiBtn" class="btn btn-primary">
+            <button type="button" id="calcBmiBtn" class="btn btn-primary" onclick="calculateBMI()">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
               </svg>
               Calculate BMI
             </button>
-            <button type="button" id="resetBmiBtn" class="btn btn-outline">
+            <button type="button" id="resetBmiBtn" class="btn btn-outline" onclick="resetBMI()">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
@@ -693,9 +693,245 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
-  <script src="js/bmi-calculator.js"></script>
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    // 1. Mobile Navigation Toggle
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    // 2. Unit Toggling
+    var metricTab = document.getElementById('metricTabBtn');
+    var imperialTab = document.getElementById('imperialTabBtn');
+    var metricGroup = document.getElementById('metricInputGroup');
+    var imperialGroup = document.getElementById('imperialInputGroup');
+    var currentUnit = 'metric';
+
+    if (metricTab && imperialTab) {
+      metricTab.addEventListener('click', function() {
+        metricTab.classList.add('active');
+        imperialTab.classList.remove('active');
+        metricGroup.classList.add('active');
+        metricGroup.style.display = 'block';
+        imperialGroup.classList.remove('active');
+        imperialGroup.style.display = 'none';
+        currentUnit = 'metric';
+      });
+
+      imperialTab.addEventListener('click', function() {
+        imperialTab.classList.add('active');
+        metricTab.classList.remove('active');
+        imperialGroup.classList.add('active');
+        imperialGroup.style.display = 'block';
+        metricGroup.classList.remove('active');
+        metricGroup.style.display = 'none';
+        currentUnit = 'imperial';
+      });
+    }
+
+    var resultsBox = document.getElementById('bmiResultsBox');
+    var errorBox = document.getElementById('bmiErrorBox');
+    var copyBtn = document.getElementById('copyBmiBtn');
+
+    // 3. BMI Calculation Function (Globally Accessible)
+    window.calculateBMI = function() {
+      var heightMeters = 0;
+      var weightKg = 0;
+      var displayHeight = '';
+      var displayWeight = '';
+
+      if (currentUnit === 'metric') {
+        var cm = parseFloat(document.getElementById('heightCm').value);
+        var kg = parseFloat(document.getElementById('weightKg').value);
+
+        if (!cm || cm <= 0 || !kg || kg <= 0) {
+          showError('Please enter positive numbers for height and weight.');
+          return;
+        }
+        if (cm < 50 || cm > 260) {
+          showError('Please enter a realistic height between 50 cm and 260 cm.');
+          return;
+        }
+        if (kg < 10 || kg > 500) {
+          showError('Please enter a realistic weight between 10 kg and 500 kg.');
+          return;
+        }
+
+        heightMeters = cm / 100;
+        weightKg = kg;
+        displayHeight = cm + ' cm';
+        displayWeight = kg + ' kg';
+      } else {
+        var ft = parseFloat(document.getElementById('heightFt').value) || 0;
+        var inch = parseFloat(document.getElementById('heightIn').value) || 0;
+        var lbs = parseFloat(document.getElementById('weightLbs').value);
+
+        var totalInches = (ft * 12) + inch;
+        if (totalInches <= 0 || !lbs || lbs <= 0) {
+          showError('Please enter positive numbers for height and weight.');
+          return;
+        }
+        if (totalInches < 20 || totalInches > 105) {
+          showError('Please enter a realistic height between 1 ft 8 in and 8 ft 9 in.');
+          return;
+        }
+        if (lbs < 20 || lbs > 1100) {
+          showError('Please enter a realistic weight between 20 lbs and 1100 lbs.');
+          return;
+        }
+
+        heightMeters = totalInches * 0.0254;
+        weightKg = lbs * 0.45359237;
+        displayHeight = ft + ' ft ' + inch + ' in';
+        displayWeight = lbs + ' lbs';
+      }
+
+      hideError();
+
+      var bmi = weightKg / (heightMeters * heightMeters);
+      var bmiRounded = Math.round(bmi * 10) / 10;
+
+      var category = '';
+      var badgeClass = '';
+      var categoryDesc = '';
+
+      if (bmi < 16.0) {
+        category = 'Severe Thinness';
+        badgeClass = 'bmi-badge-underweight';
+        categoryDesc = 'Significant risk of nutritional deficiency; clinical evaluation advised.';
+      } else if (bmi >= 16.0 && bmi < 17.0) {
+        category = 'Moderate Thinness';
+        badgeClass = 'bmi-badge-underweight';
+        categoryDesc = 'Below recommended body weight; consult a healthcare professional.';
+      } else if (bmi >= 17.0 && bmi < 18.5) {
+        category = 'Mild Thinness (Underweight)';
+        badgeClass = 'bmi-badge-underweight';
+        categoryDesc = 'Slightly below healthy weight range.';
+      } else if (bmi >= 18.5 && bmi < 25.0) {
+        category = 'Normal Weight';
+        badgeClass = 'bmi-badge-normal';
+        categoryDesc = 'Healthy body mass index associated with lowest statistical health risks.';
+      } else if (bmi >= 25.0 && bmi < 30.0) {
+        category = 'Overweight (Pre-obese)';
+        badgeClass = 'bmi-badge-overweight';
+        categoryDesc = 'Moderate excess body mass; lifestyle and dietary adjustments recommended.';
+      } else if (bmi >= 30.0 && bmi < 35.0) {
+        category = 'Obesity Class I';
+        badgeClass = 'bmi-badge-obese';
+        categoryDesc = 'Elevated risk of cardiovascular and metabolic conditions.';
+      } else if (bmi >= 35.0 && bmi < 40.0) {
+        category = 'Obesity Class II';
+        badgeClass = 'bmi-badge-obese';
+        categoryDesc = 'High health risk; medical guidance strongly advised.';
+      } else {
+        category = 'Obesity Class III (Morbid)';
+        badgeClass = 'bmi-badge-obese';
+        categoryDesc = 'Very high clinical risk category.';
+      }
+
+      var minHealthyKg = 18.5 * (heightMeters * heightMeters);
+      var maxHealthyKg = 24.9 * (heightMeters * heightMeters);
+      var minHealthyLbs = minHealthyKg * 2.20462;
+      var maxHealthyLbs = maxHealthyKg * 2.20462;
+
+      var idealWeightStr = (currentUnit === 'metric')
+        ? minHealthyKg.toFixed(1) + ' kg - ' + maxHealthyKg.toFixed(1) + ' kg'
+        : minHealthyLbs.toFixed(1) + ' lbs - ' + maxHealthyLbs.toFixed(1) + ' lbs';
+
+      var targetDeltaStr = '';
+      if (bmi < 18.5) {
+        var toGainKg = minHealthyKg - weightKg;
+        var toGainLbs = toGainKg * 2.20462;
+        targetDeltaStr = (currentUnit === 'metric')
+          ? 'Gain ' + toGainKg.toFixed(1) + ' kg to reach healthy minimum'
+          : 'Gain ' + toGainLbs.toFixed(1) + ' lbs to reach healthy minimum';
+      } else if (bmi >= 25.0) {
+        var toLoseKg = weightKg - maxHealthyKg;
+        var toLoseLbs = toLoseKg * 2.20462;
+        targetDeltaStr = (currentUnit === 'metric')
+          ? 'Lose ' + toLoseKg.toFixed(1) + ' kg to reach healthy maximum'
+          : 'Lose ' + toLoseLbs.toFixed(1) + ' lbs to reach healthy maximum';
+      } else {
+        targetDeltaStr = 'You are comfortably within the healthy weight range';
+      }
+
+      var bmiPrime = (bmi / 25.0).toFixed(2);
+      var ponderalIndex = (weightKg / Math.pow(heightMeters, 3)).toFixed(1);
+
+      var pointerPercent = ((bmi - 15) / (40 - 15)) * 100;
+      pointerPercent = Math.max(3, Math.min(pointerPercent, 97));
+
+      document.getElementById('bmiHeroValue').textContent = bmiRounded.toFixed(1);
+      var categoryBadge = document.getElementById('bmiCategoryBadge');
+      categoryBadge.textContent = category;
+      categoryBadge.className = 'bmi-badge ' + badgeClass;
+      document.getElementById('bmiCategoryNote').textContent = categoryDesc;
+
+      var pointer = document.getElementById('bmiGaugePointer');
+      if (pointer) pointer.style.left = pointerPercent + '%';
+
+      document.getElementById('idealWeightRange').textContent = idealWeightStr;
+      document.getElementById('weightTargetNote').textContent = targetDeltaStr;
+      document.getElementById('bmiPrimeValue').textContent = bmiPrime + ' (' + (bmiPrime <= 1.0 ? 'Optimal' : 'Above Target') + ')';
+      document.getElementById('ponderalIndexValue').textContent = ponderalIndex + ' kg/m³';
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'My BMI: ' + bmiRounded.toFixed(1) + ' (' + category + ') for ' + displayHeight + ' and ' + displayWeight + '. Healthy range: ' + idealWeightStr + '. Calculated on OmniTools.');
+      }
+    };
+
+    window.resetBMI = function() {
+      document.getElementById('heightCm').value = '';
+      document.getElementById('weightKg').value = '';
+      document.getElementById('heightFt').value = '';
+      document.getElementById('heightIn').value = '';
+      document.getElementById('weightLbs').value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('BMI summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy summary:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
 </body>
 </html>
 
