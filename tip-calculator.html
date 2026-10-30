@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator - Tip, Total &amp; Split Per Person | OmniTools</title>
+  <meta name="description" content="Calculate restaurant tips fast: tip amount, total to pay, and each person&#x27;s share for any bill, tip percentage, and group size. Free and private.">
+  <meta name="keywords" content="tip calculator, restaurant tip calculator, split bill calculator, tip per person calculator, gratuity calculator">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/tip-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/tip-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-propinas.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/tip-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/tip-calculator.html">
+  <meta property="og:title" content="Tip Calculator | OmniTools">
+  <meta property="og:description" content="Calculate restaurant tips fast: tip amount, total to pay, and each person&#x27;s share for any bill, tip percentage, and group size. Free and private.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-tip-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tip Calculator | OmniTools">
+  <meta name="twitter:description" content="Calculate restaurant tips fast: tip amount, total to pay, and each person&#x27;s share for any bill, tip percentage, and group size. Free and private.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools Tip Calculator",
+  "url": "https://janhazirr7.github.io/allinone/tip-calculator.html",
+  "applicationCategory": "FinancialApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calculate restaurant tips fast: tip amount, total to pay, and each person's share for any bill, tip percentage, and group size. Free and private.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finance",
+      "item": "https://janhazirr7.github.io/allinone/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tip Calculator",
+      "item": "https://janhazirr7.github.io/allinone/tip-calculator.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much should I tip at a restaurant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the country and the service. In the United States, 15% to 20% of the pre-tax bill is standard for table service. In much of Europe, rounding up or 5% to 10% is common when no service charge is included. Always check the bill for a service charge first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I tip on the pre-tax or post-tax amount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The usual convention is the pre-tax subtotal: food and drink before sales tax is added. Tipping on the post-tax total raises the tip by the tax rate. This calculator uses the bill amount you enter, so enter the pre-tax subtotal if you want to follow that convention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I split a bill fairly between friends?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For shared meals, divide the total including tip equally: each person pays (bill + tip) / number of people. For very uneven orders, each person should pay for their own items plus tip on those items, and shared items should be split equally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the number of people is 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter 1 and the calculator simply shows the tip and the total for one payer. The per-person amount then equals the full total, which is useful when you just want to know the tipped total for yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my bill amount saved or sent anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. OmniTools runs entirely in your browser. Your bill, tip percentage, and number of people are never sent to a server, stored in a database, or shared with anyone."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Tip Calculator",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Enter the bill amount",
+      "text": "Type the total before tip."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Choose a tip percentage",
+      "text": "Tap a quick percentage or type your own from 0 to 100."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter the number of people",
+      "text": "Type how many people are splitting the bill."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calculate",
+      "text": "Press Calculate Tip to see the tip, the total, and each person's share."
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="tip-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-propinas.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">Tip Calculator</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Tip Calculator</h1>
+        <p class="tool-header-desc">Work out the tip, the total, and what each person pays. Enter the bill, pick a tip percentage, and split it fairly among your group in seconds.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="tipBill" class="form-label"><span>Bill Amount ($)</span><span class="label-hint">Required</span></label>
+              <input type="number" id="tipBill" class="form-input" placeholder="e.g. 100" min="0.01" max="1000000" step="0.01">
+              <span class="form-help">Total before tip, excluding tax adjustments</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="tipPct" class="form-label"><span>Tip Percentage (%)</span><span class="label-hint">%</span></label>
+                <input type="number" id="tipPct" class="form-input" placeholder="e.g. 15" min="0" max="100" step="1">
+                <span class="form-help">Tap a quick percentage or type your own</span>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem;">
+                  <button type="button" class="btn btn-outline btn-sm" onclick="setTipPct(10)">10%</button>
+                  <button type="button" class="btn btn-outline btn-sm" onclick="setTipPct(15)">15%</button>
+                  <button type="button" class="btn btn-outline btn-sm" onclick="setTipPct(18)">18%</button>
+                  <button type="button" class="btn btn-outline btn-sm" onclick="setTipPct(20)">20%</button>
+                  <button type="button" class="btn btn-outline btn-sm" onclick="setTipPct(25)">25%</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tipPeople" class="form-label"><span>Number of People</span><span class="label-hint">Split</span></label>
+                <input type="number" id="tipPeople" class="form-input" placeholder="e.g. 4" min="1" max="100" step="1">
+                <span class="form-help">How many people are splitting the bill</span>
+              </div>
+            </div>
+          </div>
+          <div id="tipErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateTip()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" /></svg> Calculate Tip</button>
+            <button type="button" class="btn btn-outline" onclick="resetTip()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Reset</button>
+          </div>
+          <div id="tipResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Tip Breakdown</span>
+              <button type="button" id="tipCopyBtn" class="btn btn-outline btn-sm" title="Copy result summary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg> Copy Summary</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Total to Pay (Bill + Tip)</div>
+              <div class="hero-result-value" id="tipTotalValue">$0.00</div>
+              <div class="hero-result-sub">Split equally among everyone</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="tipAmountValue" style="color: #d97706;">$0.00</div><div class="metric-label">Tip Amount</div></div>
+              <div class="metric-card"><div class="metric-value" id="tipPerPersonValue">$0.00</div><div class="metric-label">Each Person Pays</div></div>
+              <div class="metric-card"><div class="metric-value" id="tipPerPersonTipValue">$0.00</div><div class="metric-label">Tip Per Person</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount Calculator <span>→</span></a></li>
+            <li><a href="vat-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">VAT Calculator <span>→</span></a></li>
+            <li><a href="salary-hourly-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Salary to Hourly Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">How to Use the Tip Calculator</h2>
+        <p class="content-paragraph">Splitting a restaurant bill should take seconds, not a phone passed around the table while everyone argues about the math. This calculator works out the tip, the total, and exactly what each person owes, including the tip share per person, so nobody overpays and nobody is left covering the difference. It runs entirely in your browser, with no account and no data stored anywhere.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Enter the bill amount</strong>Type the total before tip, for example 100 for a hundred-dollar meal.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Choose a tip percentage</strong>Tap 10%, 15%, 18%, 20%, or 25%, or type any percentage from 0 to 100 if you want something different.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Enter the number of people</strong>Type how many people are splitting the bill, from 1 to 100. Use 1 if you are paying alone and just want the tipped total.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Calculate</strong>Press Calculate Tip to see the tip amount, the total to pay, what each person pays, and the tip included in each share.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">The Tip Formulas Explained</h2>
+        <p class="content-paragraph">There are only three steps, and each one follows directly from the last. Once you see them written out, you can check any tip calculation on paper or in your head, and you will immediately spot the most common mistake: tipping on the total after tax instead of the pre-tax bill, which quietly inflates the tip.</p>
+        <div class="formula-box">
+          <div class="formula-expression">Tip = Bill × (Tip % / 100)</div>
+          <div class="formula-explanation">Where:<br>• <strong>Total to pay</strong> = Bill + Tip<br>• <strong>Each person pays</strong> = Total to pay / Number of people<br>• <strong>Tip per person</strong> = Tip / Number of people</div>
+        </div>
+        <p class="content-paragraph">Rounding is worth a moment of thought when splitting. If a total of $115 is split four ways, each share is $28.75 exactly, but many totals do not divide neatly. In practice, groups usually round each share up to the nearest dollar or let one person cover the odd cents. The calculator shows exact cents so the group can decide fairly, rather than hiding a rounding gap that someone has to absorb.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Worked Example: $100 Bill, 15% Tip, 4 People</h2>
+        <p class="content-paragraph">A group of four finishes a meal with a $100 bill and agrees on a 15% tip. The tip is $100 × 15 / 100, which equals $15. The total to pay is $115, each person pays $115 / 4, which is $28.75, and the tip included in each share is $15 / 4, which is $3.75. Everyone can see the same numbers, which ends the usual debate about who owes what and whether the tip was included.</p>
+        <p class="content-paragraph">Tipping customs vary a lot by country, and the percentage you choose should follow local norms and the quality of service. In the United States, 15% to 20% is standard for table service, with 18% to 20% common in cities. In much of Europe, a small tip or rounding up is normal because a service charge is often already included, so always check the bill for a service line before adding a tip on top of it. In Japan, tipping is generally not expected at all. When in doubt, a polite question to the server avoids both undertipping and double-tipping.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Check for a service charge first</h4><p class="example-card-body">If the bill already includes a service charge, usually 10% to 15%, that amount is the tip in many countries. Adding another full tip on top means paying twice for the same service.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Tip on the pre-tax amount</h4><p class="example-card-body">The usual convention is to calculate the tip on the food and drink subtotal, before sales tax. Tipping on the taxed total raises the tip by the tax rate for no extra service.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Splitting uneven orders fairly</h4><p class="example-card-body">This calculator splits equally, which suits groups that shared food. If one person ordered far more than the rest, calculate their share separately or let them pay their own items plus their tip.</p></div>
+        </div>
+        <p class="content-paragraph">A good tip rewards good service and keeps the evening pleasant for everyone, including the staff. Using a calculator removes the awkward arithmetic from the moment, so the group can settle quickly, thank the server properly, and move on to the rest of the night.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open>
+            <summary class="faq-question">How much should I tip at a restaurant?</summary>
+            <div class="faq-answer">It depends on the country and the service. In the United States, 15% to 20% of the pre-tax bill is standard for table service. In much of Europe, rounding up or 5% to 10% is common when no service charge is included. Always check the bill for a service charge first.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Should I tip on the pre-tax or post-tax amount?</summary>
+            <div class="faq-answer">The usual convention is the pre-tax subtotal: food and drink before sales tax is added. Tipping on the post-tax total raises the tip by the tax rate. This calculator uses the bill amount you enter, so enter the pre-tax subtotal if you want to follow that convention.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">How do I split a bill fairly between friends?</summary>
+            <div class="faq-answer">For shared meals, divide the total including tip equally: each person pays (bill + tip) / number of people. For very uneven orders, each person should pay for their own items plus tip on those items, and shared items should be split equally.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">What if the number of people is 1?</summary>
+            <div class="faq-answer">Enter 1 and the calculator simply shows the tip and the total for one payer. The per-person amount then equals the full total, which is useful when you just want to know the tipped total for yourself.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Is my bill amount saved or sent anywhere?</summary>
+            <div class="faq-answer">No. OmniTools runs entirely in your browser. Your bill, tip percentage, and number of people are never sent to a server, stored in a database, or shared with anyone.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="tip-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-propinas.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var billInput = document.getElementById('tipBill');
+  var pctInput = document.getElementById('tipPct');
+  var peopleInput = document.getElementById('tipPeople');
+  var resultsBox = document.getElementById('tipResultsBox');
+  var errorBox = document.getElementById('tipErrorBox');
+  var copyBtn = document.getElementById('tipCopyBtn');
+  [billInput, pctInput, peopleInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateTip(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeTip = function(bill, pct, people) {
+    var tip = bill * pct / 100;
+    var total = bill + tip;
+    return { tip: tip, total: total, perPerson: total / people, perPersonTip: tip / people };
+  };
+  window.calculateTip = function() {
+    var bill = parseFloat(billInput.value);
+    var pct = parseFloat(pctInput.value);
+    var people = parseFloat(peopleInput.value);
+    if (isNaN(bill) || isNaN(pct) || isNaN(people) || bill <= 0 || pct < 0 || people <= 0) {
+      showError('Please enter a valid bill amount, tip percentage, and number of people. Tip may be 0%.');
+      return;
+    }
+    if (bill > 1000000) { showError('Bill amount cannot exceed 1,000,000.'); return; }
+    if (pct > 100) { showError('Tip percentage cannot exceed 100%.'); return; }
+    if (people % 1 !== 0 || people > 100) { showError('Number of people must be a whole number between 1 and 100.'); return; }
+    hideError();
+    var res = computeTip(bill, pct, people);
+    document.getElementById('tipTotalValue').textContent = fmt(res.total);
+    document.getElementById('tipAmountValue').textContent = fmt(res.tip);
+    document.getElementById('tipPerPersonValue').textContent = fmt(res.perPerson);
+    document.getElementById('tipPerPersonTipValue').textContent = fmt(res.perPersonTip);
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'Tip: Bill ' + fmt(bill) + ' with ' + pct + '% tip for ' + people + ' people. Tip: ' + fmt(res.tip) + ', Total: ' + fmt(res.total) + ', Per person: ' + fmt(res.perPerson) + '. Calculated with OmniTools.'); }
+  };
+  window.resetTip = function() {
+    billInput.value = ''; pctInput.value = ''; peopleInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  window.setTipPct = function(v) { pctInput.value = v; };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('Tip summary copied to clipboard!'); }).catch(function() { prompt('Copy summary:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>

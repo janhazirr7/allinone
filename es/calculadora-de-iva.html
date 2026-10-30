@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IVA - Añadir o quitar IVA, precios netos y brutos | OmniTools</title>
+  <meta name="description" content="Calcula el IVA en ambas direcciones: añade el IVA a un precio neto para obtener el precio bruto, o quita el IVA de un precio bruto para hallar el precio neto y el monto del impuesto. Gratis y privada.">
+  <meta name="keywords" content="calculadora de IVA, añadir IVA, quitar IVA, calculadora neto a bruto, bruto a neto IVA, calculadora de impuestos">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/es/calculadora-de-iva.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/vat-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-iva.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/vat-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/es/calculadora-de-iva.html">
+  <meta property="og:title" content="Calculadora de IVA | OmniTools">
+  <meta property="og:description" content="Calcula el IVA en ambas direcciones: añade el IVA a un precio neto para obtener el precio bruto, o quita el IVA de un precio bruto para hallar el precio neto y el monto del impuesto. Gratis y privada.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-vat-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de IVA | OmniTools">
+  <meta name="twitter:description" content="Calcula el IVA en ambas direcciones: añade el IVA a un precio neto para obtener el precio bruto, o quita el IVA de un precio bruto para hallar el precio neto y el monto del impuesto. Gratis y privada.">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de IVA de OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/es/calculadora-de-iva.html",
+  "applicationCategory": "FinancialApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calcula el IVA en ambas direcciones: añade el IVA a un precio neto para obtener el precio bruto, o quita el IVA de un precio bruto para hallar el precio neto y el monto del impuesto. Gratis y privada.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finance",
+      "item": "https://janhazirr7.github.io/allinone/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calculadora de IVA",
+      "item": "https://janhazirr7.github.io/allinone/es/calculadora-de-iva.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la diferencia entre un precio neto y un precio bruto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El precio neto excluye el IVA, mientras que el precio bruto lo incluye. Un precio neto de $100 con un IVA del 20% se convierte en un precio bruto de $120. Los presupuestos empresariales suelen ser netos, mientras que los precios en tienda mostrados a los consumidores suelen ser brutos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué no puedo simplemente restar el 20% de un precio bruto para quitar el IVA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque el IVA es un porcentaje del precio neto, no del precio bruto. En un precio bruto de $120 con un IVA del 20%, el impuesto es $20, no $24. La fórmula inversa correcta es neto = bruto / 1,20, lo que da $100, no $96."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué tasa de IVA debo usar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa la tasa estándar del país donde ocurre la venta, a menos que el producto califique para una tasa reducida o cero. Las tasas estándar comunes incluyen el 20% en el Reino Unido, el 21% en España y el 19% en Alemania, pero las tasas cambian, así que comprueba la tasa vigente para tu producto y país."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esta calculadora maneja tasas reducidas de IVA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Ingresa cualquier tasa del 0% al 100%, incluidas tasas reducidas como el 5% o el 10% y una tasa cero del 0%. Las mismas fórmulas de añadir y quitar se aplican con cualquier tasa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se guardan o se envían mis datos de precios a algún lugar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. OmniTools funciona por completo en tu navegador. Tu precio y tu tasa de IVA nunca se envían a un servidor, no se almacenan en una base de datos ni se comparten con nadie."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Calculadora de IVA",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Elige el modo",
+      "text": "Elige Añadir IVA para un precio neto o Quitar IVA para un precio bruto."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Ingresa el precio",
+      "text": "Escribe el precio neto en modo Añadir o el precio bruto en modo Quitar."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Ingresa la tasa de IVA",
+      "text": "Escribe la tasa de IVA como porcentaje, por ejemplo 20."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calcula",
+      "text": "Pulsa Calcular IVA para ver el precio neto, el monto del IVA y el precio bruto."
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Calc. de edad</a></li>
+          <li><a href="../bmi-calculator.html">IMC</a></li>
+          <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../vat-calculator.html" class="lang-btn" title="English">EN</a>
+          <a href="calculadora-de-iva.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#finance">Finance</a></li>
+          <li aria-current="page">Calculadora de IVA</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de IVA</h1>
+        <p class="tool-header-desc">Añade el IVA a un precio neto o quítalo de un precio bruto. Ingresa un precio y una tasa de IVA para ver el precio neto, el monto del impuesto y el precio bruto al instante.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="vatMode" class="form-label"><span>Modo de cálculo</span><span class="label-hint">Añadir o quitar IVA</span></label>
+              <select id="vatMode" class="form-select">
+                <option value="add" selected>Añadir IVA (neto → bruto)</option>
+                <option value="remove">Quitar IVA (bruto → neto)</option>
+              </select>
+              <span class="form-help">Elige qué precio ya tienes</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="vatAmount" class="form-label"><span>Precio ($)</span><span class="label-hint">Obligatorio</span></label>
+                <input type="number" id="vatAmount" class="form-input" placeholder="ej. 100" min="0.01" max="100000000" step="0.01">
+                <span class="form-help">Precio neto en modo Añadir, precio bruto en modo Quitar</span>
+              </div>
+              <div class="form-group">
+                <label for="vatRate" class="form-label"><span>Tasa de IVA (%)</span><span class="label-hint">%</span></label>
+                <input type="number" id="vatRate" class="form-input" placeholder="ej. 20" min="0" max="100" step="0.5">
+                <span class="form-help">Tasas comunes: 20% Reino Unido, 21% España, 19% Alemania</span>
+              </div>
+            </div>
+          </div>
+          <div id="vatErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateVAT()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" /></svg> Calcular IVA</button>
+            <button type="button" class="btn btn-outline" onclick="resetVAT()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Restablecer</button>
+          </div>
+          <div id="vatResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Desglose del IVA</span>
+              <button type="button" id="vatCopyBtn" class="btn btn-outline btn-sm" title="Copy result summary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg> Copiar resumen</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Precio bruto (con IVA)</div>
+              <div class="hero-result-value" id="vatGrossValue">$0.00</div>
+              <div class="hero-result-sub" id="vatModeLabel">Lo que paga el cliente</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="vatNetValue">$0.00</div><div class="metric-label">Precio neto (sin IVA)</div></div>
+              <div class="metric-card"><div class="metric-value" id="vatTaxValue" style="color: #d97706;">$0.00</div><div class="metric-label">Monto del IVA</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../calculadora-de-descuentos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de descuentos <span>→</span></a></li>
+            <li><a href="../calculadora-de-porcentajes.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentajes <span>→</span></a></li>
+            <li><a href="../calculadora-de-propinas.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de propinas <span>→</span></a></li>
+            <li><a href="../calculadora-de-salario-por-hora.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de salario por hora <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">Cómo usar la calculadora de IVA</h2>
+        <p class="content-paragraph">El impuesto sobre el valor añadido, normalmente abreviado como IVA, es el impuesto al consumo que se añade a la mayoría de bienes y servicios en Europa y en muchos otros países. Los precios en las tiendas suelen incluir ya el IVA, mientras que los presupuestos entre empresas a menudo lo excluyen, y esa diferencia causa confusión constante. Esta calculadora maneja ambas direcciones: añadir el IVA a un precio neto para obtener el precio bruto que paga el cliente, o quitar el IVA de un precio bruto para hallar el precio neto y el impuesto oculto dentro de él.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Elige el modo de cálculo</strong>Elige Añadir IVA si tienes un precio neto y quieres el precio bruto, o Quitar IVA si tienes un precio bruto y quieres extraer el precio neto y el impuesto.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa el precio</strong>Escribe el precio que ya tienes: el precio neto en modo Añadir, o el precio bruto en modo Quitar.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa la tasa de IVA</strong>Escribe la tasa como porcentaje, por ejemplo 20 para la tasa estándar del Reino Unido, 21 para España o 19 para Alemania. Se aplican tasas reducidas a algunos bienes, así que comprueba la tasa correcta para tu producto.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Calcula</strong>Pulsa Calcular IVA para ver el precio neto, el monto del IVA y el precio bruto uno al lado del otro.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Las fórmulas del IVA explicadas, en ambas direcciones</h2>
+        <p class="content-paragraph">Añadir el IVA es una simple multiplicación, pero quitar el IVA confunde a mucha gente, porque el impuesto es un porcentaje del precio neto, no del precio bruto. Quitar el 20% de un precio bruto no elimina el IVA: elimina demasiado, porque el 20% del precio bruto es mayor que el 20% del precio neto, que es menor. El cálculo inverso correcto divide entre uno más la tasa.</p>
+        <div class="formula-box">
+          <div class="formula-expression">Añadir IVA: Bruto = Neto × (1 + tasa/100)</div>
+          <div class="formula-explanation">Quitar IVA: Neto = Bruto / (1 + tasa/100)<br>• <strong>Monto del IVA</strong> = Bruto − Neto (en modo Quitar) o Neto × tasa/100 (en modo Añadir)<br>• Ejemplo al 20%: un precio neto de $100 se convierte en $120 brutos, y un precio bruto de $120 vuelve a dividirse a exactamente $100 netos, con $20 de IVA.</div>
+        </div>
+        <p class="content-paragraph">Esta distinción importa para autónomos y pequeñas empresas que recuperan el IVA, para compradores que comprueban si un descuento se aplicó antes o después del impuesto, y para cualquiera que compare precios entre países con tasas diferentes. Confirma siempre si un precio cotizado es neto o bruto antes de firmar un contrato o emitir una factura, porque un malentendido del 20% cambia el total en una quinta parte completa del precio neto.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Ejemplos resueltos: añadir y quitar un IVA del 20%</h2>
+        <p class="content-paragraph">Añadir IVA: un producto con precio neto de $100 y una tasa de IVA del 20% lleva $20 de impuesto, ya que $100 × 20 / 100 es igual a $20, así que el precio bruto que paga el cliente es $120. Quitar IVA: un producto con precio bruto de $120 y la misma tasa del 20% tiene un precio neto de $120 / 1,20, lo que equivale a $100, y el IVA dentro de él es $120 − $100, es decir $20. Ambas direcciones coinciden, como deben, porque describen la misma transacción desde lados opuestos.</p>
+        <p class="content-paragraph">El error común es calcular el 20% de $120, que es $24, y restarlo para obtener $96. Esa respuesta está equivocada por $4, porque el IVA nunca fue el 20% del precio bruto: fue el 20% del precio neto de $100. Siempre que un resultado de IVA inverso parezca ligeramente incorrecto, comprueba si el porcentaje se tomó por error de la cifra bruta, ya que ese es el error casi siempre.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Autónomos y facturas</h4><p class="example-card-body">Si cotizas $1.000 netos y tu tasa de IVA es del 20%, factura $1.200 brutos. Si un cliente te da un presupuesto bruto de $1.200, tu ingreso neto es $1.000, no $960, así que fija el precio de tu trabajo a partir de la cifra neta.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Comparar precios entre países</h4><p class="example-card-body">El mismo producto puede parecer más barato en el extranjero simplemente por una tasa de IVA menor. Quita el IVA de ambos precios para comparar el verdadero costo neto antes de decidir dónde comprar.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Tasas reducidas y cero</h4><p class="example-card-body">Alimentos, libros, medicinas y productos infantiles suelen tener tasas reducidas o cero que difieren según el país. Usa la tasa de tu categoría de producto específica, no la tasa estándar, cuando la categoría califique.</p></div>
+        </div>
+        <p class="content-paragraph">Las normas, tasas y exenciones del IVA cambian con el tiempo y difieren según el país, así que esta calculadora te da la aritmética, no asesoramiento fiscal. Para declaraciones empresariales, confirma la tasa vigente y el tratamiento correcto con tu autoridad tributaria local o tu contador.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas frecuentes (FAQ)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open>
+            <summary class="faq-question">¿Cuál es la diferencia entre un precio neto y un precio bruto?</summary>
+            <div class="faq-answer">El precio neto excluye el IVA, mientras que el precio bruto lo incluye. Un precio neto de $100 con un IVA del 20% se convierte en un precio bruto de $120. Los presupuestos empresariales suelen ser netos, mientras que los precios en tienda mostrados a los consumidores suelen ser brutos.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Por qué no puedo simplemente restar el 20% de un precio bruto para quitar el IVA?</summary>
+            <div class="faq-answer">Porque el IVA es un porcentaje del precio neto, no del precio bruto. En un precio bruto de $120 con un IVA del 20%, el impuesto es $20, no $24. La fórmula inversa correcta es neto = bruto / 1,20, lo que da $100, no $96.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Qué tasa de IVA debo usar?</summary>
+            <div class="faq-answer">Usa la tasa estándar del país donde ocurre la venta, a menos que el producto califique para una tasa reducida o cero. Las tasas estándar comunes incluyen el 20% en el Reino Unido, el 21% en España y el 19% en Alemania, pero las tasas cambian, así que comprueba la tasa vigente para tu producto y país.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Esta calculadora maneja tasas reducidas de IVA?</summary>
+            <div class="faq-answer">Sí. Ingresa cualquier tasa del 0% al 100%, incluidas tasas reducidas como el 5% o el 10% y una tasa cero del 0%. Las mismas fórmulas de añadir y quitar se aplican con cualquier tasa.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Se guardan o se envían mis datos de precios a algún lugar?</summary>
+            <div class="faq-answer">No. OmniTools funciona por completo en tu navegador. Tu precio y tu tasa de IVA nunca se envían a un servidor, no se almacenan en una base de datos ni se comparten con nadie.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad para finanzas, productividad y educación.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Herramientas populares</h4>
+          <ul class="footer-links">
+            <li><a href="../age-calculator.html">Calculadora de edad</a></li>
+            <li><a href="../bmi-calculator.html">Calculadora de IMC</a></li>
+            <li><a href="../loan-calculator.html">Calculadora de préstamo EMI</a></li>
+            <li><a href="../password-generator.html">Generador de contraseñas</a></li>
+            <li><a href="../word-counter.html">Contador de palabras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="../percentage-calculator.html">Calculadora de porcentajes</a></li>
+            <li><a href="../discount-calculator.html">Calculadora de descuentos</a></li>
+            <li><a href="../unit-converter.html">Conversor de unidades</a></li>
+            <li><a href="../date-calculator.html">Diferencia de fechas</a></li>
+            <li><a href="../case-converter.html">Conversor de mayúsculas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal e información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Acerca de nosotros</a></li>
+            <li><a href="../contact.html">Contáctanos</a></li>
+            <li><a href="../privacy-policy.html">Política de privacidad</a></li>
+            <li><a href="../terms.html">Términos de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../vat-calculator.html">English</a> |
+          <a href="calculadora-de-iva.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var amtInput = document.getElementById('vatAmount');
+  var rateInput = document.getElementById('vatRate');
+  var modeSelect = document.getElementById('vatMode');
+  var resultsBox = document.getElementById('vatResultsBox');
+  var errorBox = document.getElementById('vatErrorBox');
+  var copyBtn = document.getElementById('vatCopyBtn');
+  [amtInput, rateInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateVAT(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeVAT = function(amount, rate, mode) {
+    if (mode === 'remove') {
+      var net = amount / (1 + rate / 100);
+      return { net: net, tax: amount - net, gross: amount };
+    }
+    var tax = amount * rate / 100;
+    return { net: amount, tax: tax, gross: amount + tax };
+  };
+  window.calculateVAT = function() {
+    var amount = parseFloat(amtInput.value);
+    var rate = parseFloat(rateInput.value);
+    var mode = modeSelect.value;
+    if (isNaN(amount) || isNaN(rate) || amount <= 0 || rate < 0) {
+      showError('Por favor, ingresa un precio positivo válido y una tasa de IVA. La tasa puede ser 0%.');
+      return;
+    }
+    if (amount > 100000000) { showError('El precio no puede superar 100.000.000.'); return; }
+    if (rate > 100) { showError('La tasa de IVA no puede superar el 100%.'); return; }
+    hideError();
+    var res = computeVAT(amount, rate, mode);
+    document.getElementById('vatNetValue').textContent = fmt(res.net);
+    document.getElementById('vatTaxValue').textContent = fmt(res.tax);
+    document.getElementById('vatGrossValue').textContent = fmt(res.gross);
+    var modeLabel = (mode === 'remove') ? 'Precio bruto ingresado' : 'Precio neto ingresado';
+    document.getElementById('vatModeLabel').textContent = modeLabel;
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'IVA al ' + rate + '% (' + modeLabel + '): Neto ' + fmt(res.net) + ', IVA ' + fmt(res.tax) + ', Bruto ' + fmt(res.gross) + '. Calculado con OmniTools.'); }
+  };
+  window.resetVAT = function() {
+    amtInput.value = ''; rateInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('¡Resumen de IVA copiado al portapapeles!'); }).catch(function() { prompt('Copiar resumen:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>

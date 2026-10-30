@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAT Calculator - Add or Remove VAT, Net &amp; Gross Prices | OmniTools</title>
+  <meta name="description" content="Calculate VAT both ways: add VAT to a net price to get the gross price, or remove VAT from a gross price to find the net price and tax amount. Free and private.">
+  <meta name="keywords" content="vat calculator, add vat calculator, remove vat calculator, net to gross calculator, gross to net vat, tax calculator">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/vat-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/vat-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-iva.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/vat-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/vat-calculator.html">
+  <meta property="og:title" content="VAT Calculator | OmniTools">
+  <meta property="og:description" content="Calculate VAT both ways: add VAT to a net price to get the gross price, or remove VAT from a gross price to find the net price and tax amount. Free and private.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-vat-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VAT Calculator | OmniTools">
+  <meta name="twitter:description" content="Calculate VAT both ways: add VAT to a net price to get the gross price, or remove VAT from a gross price to find the net price and tax amount. Free and private.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools VAT Calculator",
+  "url": "https://janhazirr7.github.io/allinone/vat-calculator.html",
+  "applicationCategory": "FinancialApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calculate VAT both ways: add VAT to a net price to get the gross price, or remove VAT from a gross price to find the net price and tax amount. Free and private.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finance",
+      "item": "https://janhazirr7.github.io/allinone/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "VAT Calculator",
+      "item": "https://janhazirr7.github.io/allinone/vat-calculator.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a net price and a gross price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The net price excludes VAT, while the gross price includes it. A $100 net price at 20% VAT becomes a $120 gross price. Business quotes are often net, while shop prices shown to consumers are usually gross."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can't I just subtract 20% from a gross price to remove VAT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because VAT is a percentage of the net price, not the gross price. On a $120 gross price at 20% VAT, the tax is $20, not $24. The correct reverse formula is net = gross / 1.20, which gives $100, not $96."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What VAT rate should I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the standard rate of the country where the sale happens, unless the product qualifies for a reduced or zero rate. Common standard rates include 20% in the UK, 21% in Spain, and 19% in Germany, but rates change, so check the current rate for your product and country."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator handle reduced VAT rates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Enter any rate from 0% to 100%, including reduced rates such as 5% or 10% and a 0% zero rate. The same add and remove formulas apply at every rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my price data saved or sent anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. OmniTools runs entirely in your browser. Your price and VAT rate are never sent to a server, stored in a database, or shared with anyone."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "VAT Calculator",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Choose the mode",
+      "text": "Pick Add VAT for a net price or Remove VAT for a gross price."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter the price",
+      "text": "Type the net price in Add mode or the gross price in Remove mode."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter the VAT rate",
+      "text": "Type the VAT rate as a percentage, for example 20."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calculate",
+      "text": "Press Calculate VAT to see the net price, the VAT amount, and the gross price."
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="vat-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-iva.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">VAT Calculator</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">VAT Calculator</h1>
+        <p class="tool-header-desc">Add VAT to a net price or strip it out of a gross price. Enter a price and a VAT rate to see the net price, the tax amount, and the gross price instantly.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="vatMode" class="form-label"><span>Calculation Mode</span><span class="label-hint">Add or remove VAT</span></label>
+              <select id="vatMode" class="form-select">
+                <option value="add" selected>Add VAT (net → gross)</option>
+                <option value="remove">Remove VAT (gross → net)</option>
+              </select>
+              <span class="form-help">Choose which price you already have</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="vatAmount" class="form-label"><span>Price ($)</span><span class="label-hint">Required</span></label>
+                <input type="number" id="vatAmount" class="form-input" placeholder="e.g. 100" min="0.01" max="100000000" step="0.01">
+                <span class="form-help">Net price in Add mode, gross price in Remove mode</span>
+              </div>
+              <div class="form-group">
+                <label for="vatRate" class="form-label"><span>VAT Rate (%)</span><span class="label-hint">%</span></label>
+                <input type="number" id="vatRate" class="form-input" placeholder="e.g. 20" min="0" max="100" step="0.5">
+                <span class="form-help">Common rates: 20% UK, 21% Spain, 19% Germany</span>
+              </div>
+            </div>
+          </div>
+          <div id="vatErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateVAT()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" /></svg> Calculate VAT</button>
+            <button type="button" class="btn btn-outline" onclick="resetVAT()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Reset</button>
+          </div>
+          <div id="vatResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> VAT Breakdown</span>
+              <button type="button" id="vatCopyBtn" class="btn btn-outline btn-sm" title="Copy result summary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg> Copy Summary</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Gross Price (with VAT)</div>
+              <div class="hero-result-value" id="vatGrossValue">$0.00</div>
+              <div class="hero-result-sub" id="vatModeLabel">What the customer pays</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="vatNetValue">$0.00</div><div class="metric-label">Net Price (without VAT)</div></div>
+              <div class="metric-card"><div class="metric-value" id="vatTaxValue" style="color: #d97706;">$0.00</div><div class="metric-label">VAT Amount</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount Calculator <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="tip-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Tip Calculator <span>→</span></a></li>
+            <li><a href="salary-hourly-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Salary to Hourly Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">How to Use the VAT Calculator</h2>
+        <p class="content-paragraph">Value Added Tax, usually shortened to VAT, is the consumption tax added to most goods and services in Europe and many other countries. Prices on shop shelves usually already include VAT, while business-to-business quotes often exclude it, and that mismatch causes constant confusion. This calculator handles both directions: add VAT to a net price to get the gross price a customer pays, or strip VAT out of a gross price to find the net price and the tax hidden inside it.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Choose the calculation mode</strong>Pick Add VAT if you have a net price and want the gross price, or Remove VAT if you have a gross price and want to extract the net price and tax.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Enter the price</strong>Type the price you already have: the net price in Add mode, or the gross price in Remove mode.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Enter the VAT rate</strong>Type the rate as a percentage, for example 20 for the standard UK rate, 21 for Spain, or 19 for Germany. Reduced rates apply to some goods, so check the correct rate for your product.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Calculate</strong>Press Calculate VAT to see the net price, the VAT amount, and the gross price side by side.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">The VAT Formulas Explained, Both Directions</h2>
+        <p class="content-paragraph">Adding VAT is simple multiplication, but removing VAT trips up many people, because the tax is a percentage of the net price, not of the gross price. Removing 20% from a gross price does not remove the VAT: it removes too much, because 20% of the gross price is larger than 20% of the smaller net price. The correct reverse calculation divides by one plus the rate.</p>
+        <div class="formula-box">
+          <div class="formula-expression">Adding VAT: Gross = Net × (1 + rate/100)</div>
+          <div class="formula-explanation">Removing VAT: Net = Gross / (1 + rate/100)<br>• <strong>VAT amount</strong> = Gross − Net (in Remove mode) or Net × rate/100 (in Add mode)<br>• Example at 20%: a $100 net price becomes $120 gross, and a $120 gross price divides back to exactly $100 net, with $20 of VAT.</div>
+        </div>
+        <p class="content-paragraph">This distinction matters for freelancers and small businesses reclaiming VAT, for shoppers checking whether a discount was applied before or after tax, and for anyone comparing prices across countries with different rates. Always confirm whether a quoted price is net or gross before signing a contract or issuing an invoice, because a 20% misunderstanding changes the total by a full fifth of the net price.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Worked Examples: Adding and Removing 20% VAT</h2>
+        <p class="content-paragraph">Adding VAT: a product priced at $100 net with a 20% VAT rate carries $20 of tax, since $100 × 20 / 100 equals $20, so the gross price the customer pays is $120. Removing VAT: a product priced at $120 gross with the same 20% rate has a net price of $120 / 1.20, which equals $100, and the VAT inside it is $120 − $100, which is $20. Both directions agree, as they must, because they describe the same transaction from opposite sides.</p>
+        <p class="content-paragraph">The common mistake is to calculate 20% of $120, which is $24, and subtract it to get $96. That answer is wrong by $4, because the VAT was never 20% of the gross price: it was 20% of the $100 net price. Whenever a reverse VAT result looks slightly off, check whether the percentage was taken from the gross figure by mistake, since that is the error almost every time.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Freelancers and invoices</h4><p class="example-card-body">If you quote $1,000 net and your VAT rate is 20%, invoice $1,200 gross. If a client gives you a $1,200 gross budget instead, your net revenue is $1,000, not $960, so price your work from the net figure.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Comparing prices across borders</h4><p class="example-card-body">The same product can look cheaper abroad simply because of a lower VAT rate. Strip VAT out of both prices to compare the true net cost before deciding where to buy.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Reduced and zero rates</h4><p class="example-card-body">Food, books, medicine, and children's goods often carry reduced or zero rates that differ by country. Use the rate for your specific product category, not the standard rate, when the category qualifies.</p></div>
+        </div>
+        <p class="content-paragraph">VAT rules, rates, and exemptions change over time and differ by country, so this calculator gives you the arithmetic, not tax advice. For business filings, confirm the current rate and the correct treatment with your local tax authority or accountant.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open>
+            <summary class="faq-question">What is the difference between a net price and a gross price?</summary>
+            <div class="faq-answer">The net price excludes VAT, while the gross price includes it. A $100 net price at 20% VAT becomes a $120 gross price. Business quotes are often net, while shop prices shown to consumers are usually gross.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Why can&#x27;t I just subtract 20% from a gross price to remove VAT?</summary>
+            <div class="faq-answer">Because VAT is a percentage of the net price, not the gross price. On a $120 gross price at 20% VAT, the tax is $20, not $24. The correct reverse formula is net = gross / 1.20, which gives $100, not $96.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">What VAT rate should I use?</summary>
+            <div class="faq-answer">Use the standard rate of the country where the sale happens, unless the product qualifies for a reduced or zero rate. Common standard rates include 20% in the UK, 21% in Spain, and 19% in Germany, but rates change, so check the current rate for your product and country.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Does this calculator handle reduced VAT rates?</summary>
+            <div class="faq-answer">Yes. Enter any rate from 0% to 100%, including reduced rates such as 5% or 10% and a 0% zero rate. The same add and remove formulas apply at every rate.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Is my price data saved or sent anywhere?</summary>
+            <div class="faq-answer">No. OmniTools runs entirely in your browser. Your price and VAT rate are never sent to a server, stored in a database, or shared with anyone.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="vat-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-iva.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var amtInput = document.getElementById('vatAmount');
+  var rateInput = document.getElementById('vatRate');
+  var modeSelect = document.getElementById('vatMode');
+  var resultsBox = document.getElementById('vatResultsBox');
+  var errorBox = document.getElementById('vatErrorBox');
+  var copyBtn = document.getElementById('vatCopyBtn');
+  [amtInput, rateInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateVAT(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeVAT = function(amount, rate, mode) {
+    if (mode === 'remove') {
+      var net = amount / (1 + rate / 100);
+      return { net: net, tax: amount - net, gross: amount };
+    }
+    var tax = amount * rate / 100;
+    return { net: amount, tax: tax, gross: amount + tax };
+  };
+  window.calculateVAT = function() {
+    var amount = parseFloat(amtInput.value);
+    var rate = parseFloat(rateInput.value);
+    var mode = modeSelect.value;
+    if (isNaN(amount) || isNaN(rate) || amount <= 0 || rate < 0) {
+      showError('Please enter a valid positive price and VAT rate. Rate may be 0%.');
+      return;
+    }
+    if (amount > 100000000) { showError('Price cannot exceed 100,000,000.'); return; }
+    if (rate > 100) { showError('VAT rate cannot exceed 100%.'); return; }
+    hideError();
+    var res = computeVAT(amount, rate, mode);
+    document.getElementById('vatNetValue').textContent = fmt(res.net);
+    document.getElementById('vatTaxValue').textContent = fmt(res.tax);
+    document.getElementById('vatGrossValue').textContent = fmt(res.gross);
+    var modeLabel = (mode === 'remove') ? 'Gross price entered' : 'Net price entered';
+    document.getElementById('vatModeLabel').textContent = modeLabel;
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'VAT at ' + rate + '% (' + modeLabel + '): Net ' + fmt(res.net) + ', VAT ' + fmt(res.tax) + ', Gross ' + fmt(res.gross) + '. Calculated with OmniTools.'); }
+  };
+  window.resetVAT = function() {
+    amtInput.value = ''; rateInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('VAT summary copied to clipboard!'); }).catch(function() { prompt('Copy summary:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>

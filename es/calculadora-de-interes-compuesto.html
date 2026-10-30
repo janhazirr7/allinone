@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de interés compuesto - Valor futuro y tabla de crecimiento | OmniTools</title>
+  <meta name="description" content="Calcula el crecimiento del interés compuesto: monto final, interés ganado y tabla de crecimiento año por año con capitalización anual, trimestral, mensual o diaria. Gratis y privada.">
+  <meta name="keywords" content="calculadora de interés compuesto, calculadora de valor futuro, calculadora de crecimiento compuesto, calculadora de inversión, interés sobre interés">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-compuesto.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/compound-interest-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-compuesto.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/compound-interest-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-compuesto.html">
+  <meta property="og:title" content="Calculadora de interés compuesto | OmniTools">
+  <meta property="og:description" content="Calcula el crecimiento del interés compuesto: monto final, interés ganado y tabla de crecimiento año por año con capitalización anual, trimestral, mensual o diaria. Gratis y privada.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-compound-interest-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de interés compuesto | OmniTools">
+  <meta name="twitter:description" content="Calcula el crecimiento del interés compuesto: monto final, interés ganado y tabla de crecimiento año por año con capitalización anual, trimestral, mensual o diaria. Gratis y privada.">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de interés compuesto de OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/es/calculadora-de-interes-compuesto.html",
+  "applicationCategory": "FinancialApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calcula el crecimiento del interés compuesto: monto final, interés ganado y tabla de crecimiento año por año con capitalización anual, trimestral, mensual o diaria. Gratis y privada.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finance",
+      "item": "https://janhazirr7.github.io/allinone/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calculadora de interés compuesto",
+      "item": "https://janhazirr7.github.io/allinone/es/calculadora-de-interes-compuesto.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el interés compuesto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El interés compuesto es el interés ganado tanto sobre el capital original como sobre los intereses ganados en períodos anteriores. Cada vez que el interés se añade al saldo, el período siguiente genera intereses sobre ese saldo mayor, así que el crecimiento se acelera con el tiempo en lugar de mantenerse constante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué se diferencia el interés compuesto del interés simple?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El interés simple se calcula solo sobre el capital original, así que crece en la misma cantidad cada año. El interés compuesto se calcula sobre el saldo creciente, así que la cantidad de interés ganado aumenta en cada período. A largo plazo, la capitalización produce un monto final mucho mayor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Realmente importa la frecuencia de capitalización?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, pero menos que el tiempo y la tasa. Pasar de capitalización anual a mensual con $10.000 al 5% durante 10 años eleva el monto final de $16.288,95 a $16.470,09. La capitalización diaria añade solo un poco más. La frecuencia importa, pero empezar temprano y elegir una buena tasa importan mucho más."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si la tasa de interés es del 0%?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si la tasa es del 0%, no se gana ningún interés y el monto final es igual al capital, sea cual sea la frecuencia de capitalización. La calculadora lo maneja correctamente: el interés ganado muestra $0,00 y la tabla año por año se mantiene plana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se guardan o se envían mis datos financieros a algún lugar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. OmniTools funciona por completo en tu navegador. Tu capital, tu tasa y tus años nunca se envían a un servidor, no se almacenan en una base de datos ni se comparten con nadie."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Calculadora de interés compuesto",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Ingresa el capital",
+      "text": "Escribe la cantidad inicial que planeas invertir o depositar."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Ingresa la tasa anual y los años",
+      "text": "Escribe la tasa de interés anual como porcentaje y cuántos años permanece invertido el dinero."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Elige la frecuencia de capitalización",
+      "text": "Elige capitalización anual, trimestral, mensual o diaria."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calcula",
+      "text": "Pulsa Calcular crecimiento para ver el monto final, el interés ganado y la tabla de crecimiento."
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Calc. de edad</a></li>
+          <li><a href="../bmi-calculator.html">IMC</a></li>
+          <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../compound-interest-calculator.html" class="lang-btn" title="English">EN</a>
+          <a href="calculadora-de-interes-compuesto.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#finance">Finance</a></li>
+          <li aria-current="page">Calculadora de interés compuesto</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de interés compuesto</h1>
+        <p class="tool-header-desc">Descubre cómo crecen tus ahorros cuando el interés genera interés. Ingresa un capital, una tasa y un plazo para obtener el monto final, el interés total y una tabla de crecimiento año por año.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="ciPrincipal" class="form-label"><span>Capital inicial ($)</span><span class="label-hint">Obligatorio</span></label>
+              <input type="number" id="ciPrincipal" class="form-input" placeholder="ej. 10000" min="1" max="100000000" step="100">
+              <span class="form-help">La cantidad inicial que inviertes o depositas</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="ciRate" class="form-label"><span>Tasa de interés anual (%)</span><span class="label-hint">% anual</span></label>
+                <input type="number" id="ciRate" class="form-input" placeholder="ej. 5" min="0" max="50" step="0.1">
+                <span class="form-help">Tasa anual nominal antes de la capitalización</span>
+              </div>
+              <div class="form-group">
+                <label for="ciYears" class="form-label"><span>Plazo (años)</span><span class="label-hint">Duración</span></label>
+                <input type="number" id="ciYears" class="form-input" placeholder="ej. 10" min="1" max="50" step="1">
+                <span class="form-help">Cuánto tiempo permanece invertido el dinero</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ciFreq" class="form-label"><span>Frecuencia de capitalización</span><span class="label-hint">Cada cuánto se suma el interés</span></label>
+              <select id="ciFreq" class="form-select">
+                <option value="1" selected>Anual (una vez al año)</option>
+                <option value="4">Trimestral (4 veces al año)</option>
+                <option value="12">Mensual (12 veces al año)</option>
+                <option value="365">Diaria (365 veces al año)</option>
+              </select>
+              <span class="form-help">Una capitalización más frecuente da un crecimiento ligeramente mayor</span>
+            </div>
+          </div>
+          <div id="ciErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateCompound()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" /></svg> Calcular crecimiento</button>
+            <button type="button" class="btn btn-outline" onclick="resetCompound()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Restablecer</button>
+          </div>
+          <div id="ciResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Desglose del crecimiento compuesto</span>
+              <button type="button" id="ciCopyBtn" class="btn btn-outline btn-sm" title="Copiar resumen"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg> Copiar resumen</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Monto final</div>
+              <div class="hero-result-value" id="ciFinalValue">$0.00</div>
+              <div class="hero-result-sub">Capital más todo el interés compuesto</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="ciInterestValue" style="color: #d97706;">$0.00</div><div class="metric-label">Interés ganado</div></div>
+              <div class="metric-card"><div class="metric-value" id="ciPrincipalValue">$0.00</div><div class="metric-label">Capital invertido</div></div>
+            </div>
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">Tabla de crecimiento año por año</div>
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead><tr><th>Año</th><th>Saldo inicial</th><th>Interés del año</th><th>Saldo final</th></tr></thead>
+                  <tbody id="ciTableBody"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../calculadora-de-interes-simple.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de interés simple <span>→</span></a></li>
+            <li><a href="../calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de préstamo EMI <span>→</span></a></li>
+            <li><a href="../calculadora-de-porcentajes.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentajes <span>→</span></a></li>
+            <li><a href="../calculadora-de-descuentos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de descuentos <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">Cómo usar la calculadora de interés compuesto</h2>
+        <p class="content-paragraph">El interés compuesto es la razón por la que unos ahorros pequeños y regulares pueden convertirse en sumas grandes con el tiempo: ganas intereses no solo sobre tu dinero original, sino también sobre los intereses que ya has ganado. Esta calculadora muestra exactamente cómo funciona ese efecto bola de nieve con tus propios números, año por año, sin registro y sin que tus datos salgan de tu navegador.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa el capital inicial</strong>Escribe la cantidad inicial, por ejemplo 10000 si vas a invertir diez mil dólares.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa la tasa de interés anual</strong>Escribe la tasa anual como porcentaje, por ejemplo 5 para el cinco por ciento. Déjala en 0 para ver una base sin crecimiento.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa el número de años</strong>Elige cuánto tiempo permanece invertido el dinero, de 1 a 50 años. Los plazos más largos muestran el efecto compuesto con mucha más claridad.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Elige la frecuencia de capitalización y calcula</strong>Elige capitalización anual, trimestral, mensual o diaria, y pulsa Calcular crecimiento para ver el monto final, el interés ganado y la tabla completa año por año.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">La fórmula del interés compuesto explicada</h2>
+        <p class="content-paragraph">Los bancos y las cuentas de inversión no simplemente suman el mismo interés cada año. Después de cada período de capitalización, el interés se añade al saldo, así que el período siguiente genera intereses sobre una cantidad ligeramente mayor. Ese proceso repetido es lo que hace que la curva de crecimiento se incline hacia arriba con el tiempo en lugar de subir en línea recta.</p>
+        <div class="formula-box">
+          <div class="formula-expression">A = P × (1 + r/n)^(n × t)</div>
+          <div class="formula-explanation">Donde:<br>• <strong>P</strong> = capital, la cantidad inicial<br>• <strong>r</strong> = tasa de interés anual como decimal (5% = 0,05)<br>• <strong>n</strong> = número de períodos de capitalización por año (1, 4, 12 o 365)<br>• <strong>t</strong> = tiempo en años<br>• <strong>A</strong> = monto final<br>• <strong>Interés ganado</strong> = A − P</div>
+        </div>
+        <p class="content-paragraph">Observa qué recompensa más la fórmula: el tiempo. Duplicar la tasa de interés aproximadamente duplica la ganancia anual, pero añadir diez años extra puede multiplicar el monto final, porque cada año nuevo se capitaliza sobre todo lo anterior. Por eso los asesores financieros repiten tan a menudo el mismo consejo: empieza temprano, aunque sea con una cantidad pequeña, y deja que el tiempo haga el trabajo pesado.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Ejemplo resuelto: $10.000 al 5% durante 10 años</h2>
+        <p class="content-paragraph">Toma un capital de $10.000, una tasa anual del 5% y un horizonte de diez años. Con capitalización anual, el cálculo es $10.000 × (1,05)^10, lo que equivale a $16.288,95. El interés ganado es, por tanto, $6.288,95, más del sesenta por ciento sobre el depósito original, aunque la tasa anual era solo del cinco por ciento. Si cambias la frecuencia a capitalización mensual, los mismos datos dan $16.470,09, porque el interés se añade doce veces al año en lugar de una. La capitalización diaria eleva el resultado a aproximadamente $16.487. Las diferencias entre frecuencias son reales pero modestas; las palancas mucho más importantes son la tasa y, sobre todo, el número de años.</p>
+        <p class="content-paragraph">Compáralo con el interés simple, donde los mismos $10.000 al 5% durante 10 años ganarían exactamente $5.000, para un total de $15.000. La capitalización añade casi $1.289 extra en este ejemplo, y la brecha sigue ampliándose cada año porque el saldo compuesto crece más rápido que una línea recta. A lo largo de treinta años la diferencia se vuelve enorme, por eso los ahorros para la jubilación y los depósitos a largo plazo dependen de la capitalización.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Empieza temprano, aunque sea poco</h4><p class="example-card-body">El dinero invertido a los 25 años tiene diez años más de capitalización que el dinero invertido a los 35. Esos años extra suelen importar más que invertir una suma mayor más tarde, así que un inicio temprano y modesto suele superar a un inicio tardío y mayor.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. No retires los intereses</h4><p class="example-card-body">Retirar los intereses cada año convierte una cuenta compuesta en una cuenta de interés simple. Reinvertir cada dólar de interés mantiene la bola de nieve en marcha y es la forma más fácil de aumentar el monto final.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Vigila la inflación y las comisiones</h4><p class="example-card-body">Un rendimiento del 5% vale menos si los precios suben un 3% al año, y las comisiones de la cuenta reducen silenciosamente el saldo que se capitaliza. Compara siempre la tasa después de comisiones y frente a la inflación, no solo el porcentaje anunciado.</p></div>
+        </div>
+        <p class="content-paragraph">Una precaución final: esta calculadora supone una tasa fija, sin depósitos ni retiros durante el período, y sin impuestos. Las cuentas reales varían, así que trata el resultado como una estimación clara para planificar y no como una promesa garantizada, y revisa las condiciones exactas de cualquier producto bancario o de inversión antes de comprometer dinero.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas frecuentes (FAQ)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open>
+            <summary class="faq-question">¿Qué es el interés compuesto?</summary>
+            <div class="faq-answer">El interés compuesto es el interés ganado tanto sobre el capital original como sobre los intereses ganados en períodos anteriores. Cada vez que el interés se añade al saldo, el período siguiente genera intereses sobre ese saldo mayor, así que el crecimiento se acelera con el tiempo en lugar de mantenerse constante.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿En qué se diferencia el interés compuesto del interés simple?</summary>
+            <div class="faq-answer">El interés simple se calcula solo sobre el capital original, así que crece en la misma cantidad cada año. El interés compuesto se calcula sobre el saldo creciente, así que la cantidad de interés ganado aumenta en cada período. A largo plazo, la capitalización produce un monto final mucho mayor.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Realmente importa la frecuencia de capitalización?</summary>
+            <div class="faq-answer">Sí, pero menos que el tiempo y la tasa. Pasar de capitalización anual a mensual con $10.000 al 5% durante 10 años eleva el monto final de $16.288,95 a $16.470,09. La capitalización diaria añade solo un poco más. La frecuencia importa, pero empezar temprano y elegir una buena tasa importan mucho más.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Qué pasa si la tasa de interés es del 0%?</summary>
+            <div class="faq-answer">Si la tasa es del 0%, no se gana ningún interés y el monto final es igual al capital, sea cual sea la frecuencia de capitalización. La calculadora lo maneja correctamente: el interés ganado muestra $0,00 y la tabla año por año se mantiene plana.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Se guardan o se envían mis datos financieros a algún lugar?</summary>
+            <div class="faq-answer">No. OmniTools funciona por completo en tu navegador. Tu capital, tu tasa y tus años nunca se envían a un servidor, no se almacenan en una base de datos ni se comparten con nadie.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad para finanzas, productividad y educación.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Herramientas populares</h4>
+          <ul class="footer-links">
+            <li><a href="../age-calculator.html">Calculadora de edad</a></li>
+            <li><a href="../bmi-calculator.html">Calculadora de IMC</a></li>
+            <li><a href="../loan-calculator.html">Calculadora de préstamo EMI</a></li>
+            <li><a href="../password-generator.html">Generador de contraseñas</a></li>
+            <li><a href="../word-counter.html">Contador de palabras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="../percentage-calculator.html">Calculadora de porcentajes</a></li>
+            <li><a href="../discount-calculator.html">Calculadora de descuentos</a></li>
+            <li><a href="../unit-converter.html">Conversor de unidades</a></li>
+            <li><a href="../date-calculator.html">Diferencia de fechas</a></li>
+            <li><a href="../case-converter.html">Conversor de mayúsculas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal e información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Acerca de nosotros</a></li>
+            <li><a href="../contact.html">Contáctanos</a></li>
+            <li><a href="../privacy-policy.html">Política de privacidad</a></li>
+            <li><a href="../terms.html">Términos de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../compound-interest-calculator.html">English</a> |
+          <a href="calculadora-de-interes-compuesto.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var pInput = document.getElementById('ciPrincipal');
+  var rInput = document.getElementById('ciRate');
+  var yInput = document.getElementById('ciYears');
+  var fSelect = document.getElementById('ciFreq');
+  var resultsBox = document.getElementById('ciResultsBox');
+  var errorBox = document.getElementById('ciErrorBox');
+  var copyBtn = document.getElementById('ciCopyBtn');
+  [pInput, rInput, yInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateCompound(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeCompound = function(P, r, years, n) {
+    var finalAmt = P * Math.pow(1 + (r / 100) / n, n * years);
+    var rows = [];
+    var prevT = 0; var prevBal = P;
+    var times = [];
+    var full = Math.floor(years);
+    for (var y = 1; y <= full; y++) { times.push(y); }
+    if (years > full) { times.push(years); }
+    for (var i = 0; i < times.length; i++) {
+      var t = times[i];
+      var bal = P * Math.pow(1 + (r / 100) / n, n * t);
+      rows.push({ year: t, start: prevBal, interest: bal - prevBal, end: bal });
+      prevBal = bal; prevT = t;
+    }
+    return { final: finalAmt, interest: finalAmt - P, yearly: rows };
+  };
+  window.calculateCompound = function() {
+    var P = parseFloat(pInput.value);
+    var r = parseFloat(rInput.value);
+    var years = parseFloat(yInput.value);
+    var n = parseInt(fSelect.value, 10);
+    if (isNaN(P) || isNaN(r) || isNaN(years) || P <= 0 || r < 0 || years <= 0) {
+      showError('Por favor, ingresa valores positivos válidos para el capital, la tasa y los años. La tasa puede ser 0.');
+      return;
+    }
+    if (P > 100000000) { showError('El capital no puede superar 100.000.000.'); return; }
+    if (r > 50) { showError('La tasa de interés anual no puede superar el 50%.'); return; }
+    if (years > 50) { showError('Los años no pueden superar 50.'); return; }
+    hideError();
+    var res = computeCompound(P, r, years, n);
+    document.getElementById('ciFinalValue').textContent = fmt(res.final);
+    document.getElementById('ciInterestValue').textContent = fmt(res.interest);
+    document.getElementById('ciPrincipalValue').textContent = fmt(P);
+    var tbody = document.getElementById('ciTableBody');
+    if (tbody) {
+      tbody.innerHTML = '';
+      res.yearly.forEach(function(row) {
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td><strong>Año ' + row.year + '</strong></td><td>' + fmt(row.start) + '</td><td>' + fmt(row.interest) + '</td><td>' + fmt(row.end) + '</td>';
+        tbody.appendChild(tr);
+      });
+    }
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'Interés compuesto: Capital ' + fmt(P) + ' al ' + r + '% durante ' + years + ' años. Monto final: ' + fmt(res.final) + ', Interés ganado: ' + fmt(res.interest) + '. Calculado con OmniTools.'); }
+  };
+  window.resetCompound = function() {
+    pInput.value = ''; rInput.value = ''; yInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('¡Resumen de interés compuesto copiado al portapapeles!'); }).catch(function() { prompt('Copiar resumen:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>

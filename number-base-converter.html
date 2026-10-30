@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Base Converter - Binary, Octal, Decimal &amp; Hexadecimal | OmniTools</title>
+  <meta name="description" content="Convert numbers between binary, octal, decimal, and hexadecimal instantly. Enter a value in any base and see all four forms at once, with digit validation.">
+  <meta name="keywords" content="number base converter, binary to decimal, decimal to hex, binary to hexadecimal, octal converter">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/number-base-converter.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/number-base-converter.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-bases-numericas.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/number-base-converter.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/number-base-converter.html">
+  <meta property="og:title" content="Number Base Converter - Binary, Octal, Decimal &amp; Hexadecimal | OmniTools">
+  <meta property="og:description" content="Convert numbers between binary, octal, decimal, and hexadecimal instantly. Enter a value in any base and see all four forms at once, with digit validation.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-number-base-converter.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Number Base Converter - Binary, Octal, Decimal &amp; Hexadecimal | OmniTools">
+  <meta name="twitter:description" content="Convert numbers between binary, octal, decimal, and hexadecimal instantly. Enter a value in any base and see all four forms at once, with digit validation.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Number Base Converter",
+    "url": "https://janhazirr7.github.io/allinone/number-base-converter.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Convert numbers between binary, octal, decimal, and hexadecimal instantly. Enter a value in any base and see all four forms at once, with digit validation.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 2, "name": "Math Tools", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 3, "name": "Number Base Converter", "item": "https://janhazirr7.github.io/allinone/number-base-converter.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is 255 in binary, octal, and hexadecimal?", "acceptedAnswer": {"@type": "Answer", "text": "255 in binary is 11111111, in octal is 377, and in hexadecimal is FF. All four forms represent the same value; only the counting system changes."}},
+      {"@type": "Question", "name": "Why does binary 102 give an error?", "acceptedAnswer": {"@type": "Answer", "text": "Binary uses only the digits 0 and 1, so the digit 2 is illegal in base 2. If you meant the decimal number one hundred and two, select decimal as the input base first."}},
+      {"@type": "Question", "name": "What are hexadecimal letters A to F?", "acceptedAnswer": {"@type": "Answer", "text": "Hexadecimal needs sixteen digits, but we only have ten numerals, so the letters A to F stand for the values 10, 11, 12, 13, 14, and 15. That is why FF means 15 times 16 plus 15, which is 255."}},
+      {"@type": "Question", "name": "How do I convert binary to hexadecimal quickly?", "acceptedAnswer": {"@type": "Answer", "text": "Group the binary digits in fours from the right, padding the leftmost group with zeros, then convert each group of four to one hex digit. For example, 11111111 groups as 1111 1111, which is F F."}},
+      {"@type": "Question", "name": "Does this converter handle negative numbers or fractions?", "acceptedAnswer": {"@type": "Answer", "text": "No. It converts whole non-negative integers up to 64 digits. Negative numbers and fractions in other bases need a different representation, such as two's complement or a fractional point, which this tool does not cover."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Number Base Converter - Binary, Octal, Decimal &amp; Hexadecimal | OmniTools",
+    "description": "Convert numbers between binary, octal, decimal, and hexadecimal instantly. Enter a value in any base and see all four forms at once, with digit validation.",
+    "step": [
+        {"@type": "HowToStep", "name": "Enter your number", "text": "Type a whole non-negative number, such as 255 or FF."},
+        {"@type": "HowToStep", "name": "Choose its base", "text": "Select binary, octal, decimal, or hexadecimal as the input base."},
+        {"@type": "HowToStep", "name": "Convert and compare", "text": "Press Convert to see the value in all four bases at once."}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="number-base-converter.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/conversor-de-bases-numericas.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="https://janhazirr7.github.io/allinone/">Home</a></li>
+          <li><a href="index.html">All Tools</a></li>
+          <li aria-current="page">Number Base Converter</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Number Base Converter</h1>
+        <p class="tool-header-desc">Convert numbers between binary, octal, decimal, and hexadecimal instantly. Enter a value in any base and see all four forms at once, with digit validation.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+          <div class="widget-form-grid">
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="baseValue" class="form-label"><span>Value to convert</span><span class="label-hint">Required</span></label>
+                <input type="text" id="baseValue" class="form-input" placeholder="e.g. 255" maxlength="64">
+                <span class="form-help">Only digits valid for the chosen base</span>
+              </div>
+              <div class="form-group">
+                <label for="baseFrom" class="form-label"><span>Input base</span></label>
+                <select id="baseFrom" class="form-select">
+                  <option value="2">Binary (base 2)</option>
+                  <option value="8">Octal (base 8)</option>
+                  <option value="10" selected>Decimal (base 10)</option>
+                  <option value="16">Hexadecimal (base 16)</option>
+                </select>
+                <span class="form-help">&nbsp;</span>
+              </div>
+            </div>
+          </div>
+          <div id="baseErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="convertBases()">Convert</button>
+            <button type="button" class="btn btn-outline" onclick="resetBases()">Reset</button>
+          </div>
+          <div id="baseResultsBox" class="results-box">
+            <div class="results-header"><span class="results-title">All Four Bases at Once</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Decimal value</div>
+              <div class="hero-result-value" id="baseHeroValue">-</div>
+            </div>
+            <div class="metrics-grid" style="margin-bottom: 0;">
+              <div class="metric-card"><div class="metric-value" id="baseBin" style="word-break: break-all;">-</div><div class="metric-label">Binary</div></div>
+              <div class="metric-card"><div class="metric-value" id="baseOct" style="word-break: break-all;">-</div><div class="metric-label">Octal</div></div>
+              <div class="metric-card"><div class="metric-value" id="baseDec" style="word-break: break-all;">-</div><div class="metric-label">Decimal</div></div>
+              <div class="metric-card"><div class="metric-value" id="baseHex" style="word-break: break-all;">-</div><div class="metric-label">Hexadecimal</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li><li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount & Sales Tax Calculator <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">How to Use the Number Base Converter</h2>
+        <p class="content-paragraph">Computers, programmers, and electronics engineers constantly switch between number bases: binary for hardware, octal for older systems and file permissions, decimal for everyday arithmetic, and hexadecimal as a compact shorthand for binary. This converter takes a number in any one of those four bases and instantly shows all four values at once, so you never have to convert twice or wonder whether a digit is legal in the base you chose.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Type your number</strong>Enter the value in the first box, for example 255, 1010, or FF. Whole non-negative numbers only; signs and decimal points are not part of these integer bases.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Tell the converter which base it is in</strong>Choose binary, octal, decimal, or hexadecimal from the dropdown. This matters: 1010 means ten in binary but one thousand and ten in decimal.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Press Convert and read all four results</strong>The binary, octal, decimal, and hexadecimal values appear together, with the decimal value highlighted, so you can copy whichever form your code or homework needs.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>If an error appears, check your digits</strong>Each base allows only certain digits. Binary allows only 0 and 1, so 102 is rejected; octal allows 0 to 7, so 89 is rejected; hexadecimal allows 0 to 9 and A to F, so G is rejected.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">What Is a Number Base, and Why Do We Have More Than One?</h2>
+        <p class="content-paragraph">A number base, also called a radix, is simply how many distinct digits a counting system uses before it carries over to a new place. Decimal, the system we learn as children, uses ten digits (0 to 9) because humans have ten fingers. Each position is worth ten times the one to its right: in 255, the digits mean 2 hundreds + 5 tens + 5 ones. Binary uses only two digits, 0 and 1, because computer hardware is built from switches that are either off or on. Each binary position is worth twice the one to its right, so 1010 means 8 + 0 + 2 + 0 = 10. Octal uses eight digits, 0 to 7, and hexadecimal uses sixteen: 0 to 9 plus the letters A to F for the values ten to fifteen.</p>
+        <p class="content-paragraph">Hexadecimal exists mainly as a convenience for humans reading binary. One hexadecimal digit corresponds to exactly four binary digits, so a long binary string like 11111111 collapses neatly into FF. That is why you see hexadecimal everywhere in computing: color codes on the web such as #FF5733 are really three hexadecimal bytes for red, green, and blue; memory addresses are shown in hex; and network engineers read device addresses in hex. Octal played a similar role in early computing, when machines used word sizes divisible by three bits, and it still appears in Unix file permissions, where a value like 755 encodes read, write, and execute rights for owner, group, and others.</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Base</th><th>Digits allowed</th><th>Example</th><th>Decimal value</th></tr></thead><tbody>
+        <tr><td><strong>Binary (2)</strong></td><td>0, 1</td><td>11111111</td><td>255</td></tr>
+        <tr><td><strong>Octal (8)</strong></td><td>0 to 7</td><td>377</td><td>255</td></tr>
+        <tr><td><strong>Decimal (10)</strong></td><td>0 to 9</td><td>255</td><td>255</td></tr>
+        <tr><td><strong>Hexadecimal (16)</strong></td><td>0 to 9, A to F</td><td>FF</td><td>255</td></tr>
+        </tbody></table></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Converting by Hand: Two Worked Examples</h2>
+        <p class="content-paragraph">Converting binary to decimal by hand teaches the place-value idea better than any definition. Take 101101. Reading from the right, the positions are worth 1, 2, 4, 8, 16, and 32. The digits are 1, 0, 1, 1, 0, 1 from the right, so the value is 1 + 4 + 8 + 32 = 45. Converting decimal to binary goes the other way: repeatedly divide by 2 and record the remainders. For 45, the remainders are 1, 0, 1, 1, 0, 1, and reading them backwards gives 101101, confirming the first conversion. Hexadecimal works the same way with powers of sixteen: 1A3 means 1 times 256, plus A (10) times 16, plus 3, which is 256 + 160 + 3 = 419.</p>
+        <p class="content-paragraph">A quick shortcut connects binary, octal, and hexadecimal without passing through decimal. Group binary digits in threes from the right for octal, or in fours for hexadecimal, then convert each group. For example, 101011110 becomes 101 011 110 in octal groups, which is 5 3 6, and 1 0101 1110 in hexadecimal groups, which is 1 5 E, so the value is 536 in octal and 15E in hexadecimal. Students often make two mistakes here: forgetting to pad the leftmost group with leading zeros, and reading groups from the left instead of the right. Both change the answer, so always start grouping at the rightmost digit.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Practical Tips and Common Mistakes</h2>
+        <p class="content-paragraph">First, always state the base when sharing a number that could be ambiguous: writing 1010 alone does not tell anyone whether you mean ten or one thousand and ten, which is why programmers write prefixes such as 0b1010 for binary and 0xFF for hexadecimal. Second, remember that leading zeros do not change a value, so 0001010 in binary is still ten; they are often added purely to pad a number to a neat width, such as eight bits. Third, this converter handles whole numbers only. Fractions in other bases, negative numbers, and extremely long inputs beyond 64 digits are outside its scope, and the converter will tell you so rather than guessing. Finally, everything runs in your browser with no data sent anywhere, so you can convert homework answers, code constants, and permission values privately and as often as you like.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Frequently Asked Questions (FAQs)</h2>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">What is 255 in binary, octal, and hexadecimal?</summary>
+            <div class="faq-answer">255 in binary is 11111111, in octal is 377, and in hexadecimal is FF. All four forms represent the same value; only the counting system changes.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Why does binary 102 give an error?</summary>
+            <div class="faq-answer">Binary uses only the digits 0 and 1, so the digit 2 is illegal in base 2. If you meant the decimal number one hundred and two, select decimal as the input base first.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">What are hexadecimal letters A to F?</summary>
+            <div class="faq-answer">Hexadecimal needs sixteen digits, but we only have ten numerals, so the letters A to F stand for the values 10, 11, 12, 13, 14, and 15. That is why FF means 15 times 16 plus 15, which is 255.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">How do I convert binary to hexadecimal quickly?</summary>
+            <div class="faq-answer">Group the binary digits in fours from the right, padding the leftmost group with zeros, then convert each group of four to one hex digit. For example, 11111111 groups as 1111 1111, which is F F.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Does this converter handle negative numbers or fractions?</summary>
+            <div class="faq-answer">No. It converts whole non-negative integers up to 64 digits. Negative numbers and fractions in other bases need a different representation, such as two's complement or a fractional point, which this tool does not cover.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div><h4 class="footer-heading">Trending Tools</h4><ul class="footer-links"><li><a href="age-calculator.html">Age Calculator</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Loan EMI Calculator</a></li><li><a href="password-generator.html">Password Generator</a></li><li><a href="word-counter.html">Word Counter</a></li></ul></div>
+        <div><h4 class="footer-heading">Utilities</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Percentage Calculator</a></li><li><a href="discount-calculator.html">Discount Calculator</a></li><li><a href="unit-converter.html">Unit Converter</a></li><li><a href="date-calculator.html">Date Difference</a></li><li><a href="case-converter.html">Text Case Converter</a></li></ul></div>
+        <div><h4 class="footer-heading">Legal & Info</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="number-base-converter.html" style="color: #60a5fa;">English</a> |
+          <a href="es/conversor-de-bases-numericas.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+(function() {
+  var MSG = {"invalid": "That value is not valid for the chosen base. For example, binary allows only 0 and 1, octal allows only 0 to 7, and hexadecimal allows 0 to 9 and A to F."};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); });
+  }
+  var PATTERNS = { 2: /^[01]+$/, 8: /^[0-7]+$/, 10: /^[0-9]+$/, 16: /^[0-9a-fA-F]+$/ };
+  function convertBase(valueStr, fromBase) {
+    if (typeof valueStr !== 'string') return null;
+    var s = valueStr.trim();
+    if (!s || s.length > 64) return null;
+    if (!PATTERNS[fromBase].test(s)) return null;
+    var big;
+    try {
+      if (fromBase === 2) big = BigInt('0b' + s);
+      else if (fromBase === 8) big = BigInt('0o' + s);
+      else if (fromBase === 16) big = BigInt('0x' + s);
+      else big = BigInt(s);
+    } catch (e) { return null; }
+    return { binary: big.toString(2), octal: big.toString(8), decimal: big.toString(10), hex: big.toString(16).toUpperCase() };
+  }
+  window.OmniTest = { convertBase: convertBase };
+  function showError(msg) { var b = document.getElementById('baseErrorBox'); if (b) { b.textContent = msg; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('baseErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  window.convertBases = function() {
+    var val = document.getElementById('baseValue').value;
+    var from = parseInt(document.getElementById('baseFrom').value, 10);
+    var r = convertBase(val, from);
+    if (r === null) { showError(MSG.invalid); return; }
+    hideError();
+    document.getElementById('baseBin').textContent = r.binary;
+    document.getElementById('baseOct').textContent = r.octal;
+    document.getElementById('baseDec').textContent = r.decimal;
+    document.getElementById('baseHex').textContent = r.hex;
+    document.getElementById('baseHeroValue').textContent = r.decimal;
+    var box = document.getElementById('baseResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetBases = function() {
+    document.getElementById('baseValue').value = '';
+    document.getElementById('baseFrom').value = '10';
+    hideError();
+    var box = document.getElementById('baseResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var vEl = document.getElementById('baseValue');
+  if (vEl) vEl.addEventListener('keydown', function(e) { if (e.key === 'Enter') convertBases(); });
+})();
+
+  </script>
+</body>
+</html>

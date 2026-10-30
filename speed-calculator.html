@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Calculator - Distance, Time &amp; Speed with km/h, mph, m/s | OmniTools</title>
+  <meta name="description" content="Enter any two of distance, time, and speed to calculate the third, with km/h, mph, and m/s conversion built in. Free, instant, and easy to check.">
+  <meta name="keywords" content="speed calculator, distance time speed calculator, kmh to mph, pace calculator, average speed calculator">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/speed-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/speed-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-velocidad.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/speed-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/speed-calculator.html">
+  <meta property="og:title" content="Speed Calculator - Distance, Time &amp; Speed with km/h, mph, m/s | OmniTools">
+  <meta property="og:description" content="Enter any two of distance, time, and speed to calculate the third, with km/h, mph, and m/s conversion built in. Free, instant, and easy to check.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-speed-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Speed Calculator - Distance, Time &amp; Speed with km/h, mph, m/s | OmniTools">
+  <meta name="twitter:description" content="Enter any two of distance, time, and speed to calculate the third, with km/h, mph, and m/s conversion built in. Free, instant, and easy to check.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Speed Calculator",
+    "url": "https://janhazirr7.github.io/allinone/speed-calculator.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Enter any two of distance, time, and speed to calculate the third, with km/h, mph, and m/s conversion built in. Free, instant, and easy to check.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 2, "name": "Math Tools", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 3, "name": "Speed Calculator", "item": "https://janhazirr7.github.io/allinone/speed-calculator.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How do I calculate speed from distance and time?", "acceptedAnswer": {"@type": "Answer", "text": "Divide distance by time. For example, 240 km in 3 hours is 240 / 3 = 80 km/h. Enter the distance and time, leave speed blank, and this calculator does the division and any unit conversion."}},
+      {"@type": "Question", "name": "How do I convert mph to km/h?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply by 1.609344. So 60 mph is 60 x 1.609344 = 96.56 km/h. This calculator applies the exact factor when your speed unit differs from your distance and time units."}},
+      {"@type": "Question", "name": "What if I enter all three values?", "acceptedAnswer": {"@type": "Answer", "text": "The calculator asks you to enter exactly two values and leave the third blank, because the blank one is the answer. Entering all three would leave nothing to solve for."}},
+      {"@type": "Question", "name": "Why is my trip time estimate different from the calculator?", "acceptedAnswer": {"@type": "Answer", "text": "The calculator assumes constant speed, so its time is a pure driving time. Real trips add stops, traffic, and slower sections, so add a margin to the calculated time for a realistic arrival estimate."}},
+      {"@type": "Question", "name": "What is the difference between speed and pace?", "acceptedAnswer": {"@type": "Answer", "text": "Speed is distance per unit of time, such as km/h. Pace is the inverse: time per unit of distance, such as minutes per kilometre. A runner at 12 km/h has a pace of 5 minutes per kilometre."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Speed Calculator - Distance, Time &amp; Speed with km/h, mph, m/s | OmniTools",
+    "description": "Enter any two of distance, time, and speed to calculate the third, with km/h, mph, and m/s conversion built in. Free, instant, and easy to check.",
+    "step": [
+        {"@type": "HowToStep", "name": "Enter exactly two values", "text": "Fill in any two of distance, time, and speed, leaving the unknown blank."},
+        {"@type": "HowToStep", "name": "Pick your units", "text": "Choose km, miles, or metres; hours, minutes, or seconds; and km/h, mph, or m/s."},
+        {"@type": "HowToStep", "name": "Calculate", "text": "Press Calculate to see the missing value in its selected unit."}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="speed-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-velocidad.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="https://janhazirr7.github.io/allinone/">Home</a></li>
+          <li><a href="index.html">All Tools</a></li>
+          <li aria-current="page">Speed Calculator</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Speed Calculator</h1>
+        <p class="tool-header-desc">Enter any two of distance, time, and speed to calculate the third, with km/h, mph, and m/s conversion built in. Free, instant, and easy to check.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+          <div class="widget-form-grid">
+            <div class="form-group">
+              <label for="speedDist" class="form-label"><span>Distance (leave the unknown blank)</span></label>
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="number" id="speedDist" class="form-input" placeholder="e.g. 120" min="0" step="any" style="flex: 2;">
+                <select id="speedDistUnit" class="form-select" style="flex: 1.5;"><option value="km" selected>km</option><option value="mi">miles</option><option value="m">m</option></select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="speedTime" class="form-label"><span>Time (leave the unknown blank)</span></label>
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="number" id="speedTime" class="form-input" placeholder="e.g. 2" min="0" step="any" style="flex: 2;">
+                <select id="speedTimeUnit" class="form-select" style="flex: 1.5;"><option value="h" selected>hours</option><option value="min">minutes</option><option value="s">seconds</option></select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="speedSpeed" class="form-label"><span>Speed (leave the unknown blank)</span></label>
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="number" id="speedSpeed" class="form-input" placeholder="e.g. 60" min="0" step="any" style="flex: 2;">
+                <select id="speedSpeedUnit" class="form-select" style="flex: 1.5;"><option value="kmh" selected>km/h</option><option value="mph">mph</option><option value="ms">m/s</option></select>
+              </div>
+              <span class="form-help">Enter exactly TWO values; the calculator will find the third.</span>
+            </div>
+          </div>
+          <div id="speedErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateSpeed()">Calculate</button>
+            <button type="button" class="btn btn-outline" onclick="resetSpeed()">Reset</button>
+          </div>
+          <div id="speedResultsBox" class="results-box">
+            <div class="results-header"><span class="results-title">Result</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label" id="speedFoundLabel">Calculated value</div>
+              <div class="hero-result-value" id="speedHeroValue">-</div>
+              <div class="hero-result-sub" id="speedHeroSub"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li><li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount & Sales Tax Calculator <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">How to Use the Speed Calculator</h2>
+        <p class="content-paragraph">Speed, distance, and time are tied together by one simple relationship: if you know any two of them, you can always work out the third. Drivers use it to estimate arrival times, runners use it to plan race paces, and students meet it in almost every physics course. This calculator does all three rearrangements for you, and it converts between kilometres per hour, miles per hour, and metres per second, so you can mix the units you actually have instead of converting them by hand first.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Fill in exactly two boxes</strong>Enter any two of distance, time, and speed, and leave the third box empty. The empty box is the value the calculator will find for you.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Choose the unit for each value</strong>Distance can be in kilometres, miles, or metres; time in hours, minutes, or seconds; speed in km/h, mph, or m/s. The answer is given in the unit you selected for the missing value.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Press Calculate</strong>The missing value appears instantly. If you filled in all three boxes, or only one, the calculator asks you to correct that instead of guessing.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Check that the answer makes sense</strong>A car trip of 120 km at 60 km/h should take 2 hours. If your answer looks wildly different, check whether a unit is wrong, for example minutes entered as hours.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">The Three Formulas: One Relationship, Three Arrangements</h2>
+        <p class="content-paragraph">The core formula is speed equals distance divided by time. Rearranging it gives the other two forms: distance equals speed multiplied by time, and time equals distance divided by speed. These are not three separate facts to memorize; they are the same triangle of quantities with a different corner covered up. If you remember that speed sits on top of distance over time, you can recover any of the three forms by covering the unknown and reading what remains. That is exactly how this calculator works internally: it converts everything to metres and seconds, applies the right arrangement, and converts the answer back to your chosen unit.</p>
+        <div class="formula-box">
+          <div class="formula-expression">speed = distance / time &nbsp;&nbsp;|&nbsp;&nbsp; distance = speed × time &nbsp;&nbsp;|&nbsp;&nbsp; time = distance / speed</div>
+          <div class="formula-explanation">Worked example: a train covers 240 km in 3 hours. Its speed is 240 / 3 = 80 km/h. Driving 80 km/h for 2.5 hours covers 80 × 2.5 = 200 km. Covering 200 km at 80 km/h takes 200 / 80 = 2.5 hours.</div>
+        </div>
+        <p class="content-paragraph">Unit conversion is where most mistakes happen, and it is worth learning the key factors. One mile is exactly 1609.344 metres, so 60 mph is about 96.56 km/h, not 60 km/h. One metre per second equals 3.6 kilometres per hour, because there are 3600 seconds in an hour and 1000 metres in a kilometre, so 10 m/s is 36 km/h. Time conversions are equally easy to slip on: 90 minutes is 1.5 hours, not 1.9 hours, and 45 minutes is 0.75 hours. This calculator handles all of these conversions for you, but knowing the factors helps you spot an answer that cannot be right.</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Conversion</th><th>Factor</th><th>Example</th></tr></thead><tbody>
+        <tr><td><strong>mph to km/h</strong></td><td>multiply by 1.609344</td><td>60 mph = 96.56 km/h</td></tr>
+        <tr><td><strong>km/h to mph</strong></td><td>multiply by 0.621371</td><td>100 km/h = 62.14 mph</td></tr>
+        <tr><td><strong>m/s to km/h</strong></td><td>multiply by 3.6</td><td>10 m/s = 36 km/h</td></tr>
+        <tr><td><strong>km/h to m/s</strong></td><td>divide by 3.6</td><td>72 km/h = 20 m/s</td></tr>
+        <tr><td><strong>minutes to hours</strong></td><td>divide by 60</td><td>90 min = 1.5 h</td></tr>
+        </tbody></table></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Everyday Uses: Trips, Running, and Reaction Distances</h2>
+        <p class="content-paragraph">Road trips are the most common use. If a journey is 300 km and you average 100 km/h on the motorway, the driving time is 3 hours, before stops, traffic, and fuel breaks, which is why real arrival estimates always add a margin. Runners think in pace rather than speed: pace is time per unit distance, the inverse of speed. A runner covering 10 km in 50 minutes averages 12 km/h, which is a pace of 5 minutes per kilometre. Cyclists, swimmers, and rowers use the same relationship with their own units, and this calculator works for all of them as long as the motion is at a roughly steady speed.</p>
+        <p class="content-paragraph">One important limitation deserves emphasis: these formulas assume constant speed. Real journeys involve accelerating, braking, traffic lights, and hills, so the speed you calculate is always an average over the whole trip, not the speed shown on the dashboard at any moment. If a car covers 120 km in 2 hours, its average speed is 60 km/h even if it spent half the trip at 90 km/h and half stuck in traffic at 30 km/h. For safety calculations such as stopping distance, average speed is not enough, because braking distance grows with the square of speed; doubling speed roughly quadruples braking distance. Keep that in mind whenever a calculation touches real driving decisions, and remember that this tool, like all of OmniTools, runs entirely in your browser without sending your numbers anywhere.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Frequently Asked Questions (FAQs)</h2>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">How do I calculate speed from distance and time?</summary>
+            <div class="faq-answer">Divide distance by time. For example, 240 km in 3 hours is 240 / 3 = 80 km/h. Enter the distance and time, leave speed blank, and this calculator does the division and any unit conversion.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">How do I convert mph to km/h?</summary>
+            <div class="faq-answer">Multiply by 1.609344. So 60 mph is 60 x 1.609344 = 96.56 km/h. This calculator applies the exact factor when your speed unit differs from your distance and time units.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">What if I enter all three values?</summary>
+            <div class="faq-answer">The calculator asks you to enter exactly two values and leave the third blank, because the blank one is the answer. Entering all three would leave nothing to solve for.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Why is my trip time estimate different from the calculator?</summary>
+            <div class="faq-answer">The calculator assumes constant speed, so its time is a pure driving time. Real trips add stops, traffic, and slower sections, so add a margin to the calculated time for a realistic arrival estimate.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">What is the difference between speed and pace?</summary>
+            <div class="faq-answer">Speed is distance per unit of time, such as km/h. Pace is the inverse: time per unit of distance, such as minutes per kilometre. A runner at 12 km/h has a pace of 5 minutes per kilometre.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div><h4 class="footer-heading">Trending Tools</h4><ul class="footer-links"><li><a href="age-calculator.html">Age Calculator</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Loan EMI Calculator</a></li><li><a href="password-generator.html">Password Generator</a></li><li><a href="word-counter.html">Word Counter</a></li></ul></div>
+        <div><h4 class="footer-heading">Utilities</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Percentage Calculator</a></li><li><a href="discount-calculator.html">Discount Calculator</a></li><li><a href="unit-converter.html">Unit Converter</a></li><li><a href="date-calculator.html">Date Difference</a></li><li><a href="case-converter.html">Text Case Converter</a></li></ul></div>
+        <div><h4 class="footer-heading">Legal & Info</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="speed-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-velocidad.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+(function() {
+  var MSG = {"count": "Please enter exactly TWO values and leave the third one blank — that is the one you want to calculate.", "positive": "All values must be positive numbers greater than 0.", "distanceLabel": "Calculated distance", "timeLabel": "Calculated time", "speedLabel": "Calculated speed"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); });
+  }
+  var DIST = { km: 1000, mi: 1609.344, m: 1 };
+  var TIME = { h: 3600, min: 60, s: 1 };
+  var SPEED = { kmh: 1000 / 3600, mph: 1609.344 / 3600, ms: 1 };
+  function solveSpeed(dist, distUnit, time, timeUnit, speed, speedUnit) {
+    var given = 0;
+    if (dist !== null) given++;
+    if (time !== null) given++;
+    if (speed !== null) given++;
+    if (given !== 2) return { error: 'count' };
+    if ((dist !== null && !(dist > 0)) || (time !== null && !(time > 0)) || (speed !== null && !(speed > 0))) return { error: 'positive' };
+    var dSI = dist !== null ? dist * DIST[distUnit] : null;
+    var tSI = time !== null ? time * TIME[timeUnit] : null;
+    var sSI = speed !== null ? speed * SPEED[speedUnit] : null;
+    if (dist === null) return { missing: 'distance', value: (sSI * tSI) / DIST[distUnit] };
+    if (time === null) return { missing: 'time', value: (dSI / sSI) / TIME[timeUnit] };
+    return { missing: 'speed', value: (dSI / tSI) / SPEED[speedUnit] };
+  }
+  window.OmniTest = { solveSpeed: solveSpeed };
+  function showError(msg) { var b = document.getElementById('speedErrorBox'); if (b) { b.textContent = msg; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('speedErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function numOrNull(id) { var v = parseFloat(document.getElementById(id).value); return (document.getElementById(id).value.trim() === '' || isNaN(v)) ? null : v; }
+  window.calculateSpeed = function() {
+    var r = solveSpeed(numOrNull('speedDist'), document.getElementById('speedDistUnit').value,
+                       numOrNull('speedTime'), document.getElementById('speedTimeUnit').value,
+                       numOrNull('speedSpeed'), document.getElementById('speedSpeedUnit').value);
+    if (r.error === 'count') { showError(MSG.count); return; }
+    if (r.error === 'positive') { showError(MSG.positive); return; }
+    hideError();
+    var label = MSG[r.missing + 'Label'];
+    var unit = r.missing === 'distance' ? document.getElementById('speedDistUnit').selectedOptions[0].text
+             : r.missing === 'time' ? document.getElementById('speedTimeUnit').selectedOptions[0].text
+             : document.getElementById('speedSpeedUnit').selectedOptions[0].text;
+    document.getElementById('speedHeroValue').textContent = r.value.toFixed(2) + ' ' + unit;
+    document.getElementById('speedHeroSub').textContent = label;
+    document.getElementById('speedFoundLabel').textContent = label;
+    var box = document.getElementById('speedResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetSpeed = function() {
+    ['speedDist', 'speedTime', 'speedSpeed'].forEach(function(id) { document.getElementById(id).value = ''; });
+    hideError();
+    var box = document.getElementById('speedResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+})();
+
+  </script>
+</body>
+</html>

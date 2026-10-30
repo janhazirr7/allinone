@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de interés simple - Interés y monto total | OmniTools</title>
+  <meta name="description" content="Calcula el interés simple al instante: monto del interés, monto total a devolver e interés por año a partir del capital, la tasa y el tiempo. Gratis y privada.">
+  <meta name="keywords" content="calculadora de interés simple, fórmula de interés simple, calcular interés simple, calculadora de interés de préstamo, calculadora de interés sobre capital">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-simple.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-simple.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/simple-interest-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-simple.html">
+  <meta property="og:title" content="Calculadora de interés simple | OmniTools">
+  <meta property="og:description" content="Calcula el interés simple al instante: monto del interés, monto total a devolver e interés por año a partir del capital, la tasa y el tiempo. Gratis y privada.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-simple-interest-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de interés simple | OmniTools">
+  <meta name="twitter:description" content="Calcula el interés simple al instante: monto del interés, monto total a devolver e interés por año a partir del capital, la tasa y el tiempo. Gratis y privada.">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de interés simple de OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/es/calculadora-de-interes-simple.html",
+  "applicationCategory": "FinancialApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calcula el interés simple al instante: monto del interés, monto total a devolver e interés por año a partir del capital, la tasa y el tiempo. Gratis y privada.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finance",
+      "item": "https://janhazirr7.github.io/allinone/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calculadora de interés simple",
+      "item": "https://janhazirr7.github.io/allinone/es/calculadora-de-interes-simple.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el interés simple?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El interés simple es el interés calculado solo sobre el capital original. Se mantiene igual cada año porque nunca incluye los intereses ganados en años anteriores, lo que lo hace fácil de predecir y comprobar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la fórmula del interés simple?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El interés es igual al capital por la tasa por el tiempo, dividido entre 100: I = (P × R × T) / 100. El monto total es el capital más ese interés. Por ejemplo, $10.000 al 5% durante 3 años da $1.500 de interés y un total de $11.500."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El interés simple es mejor que el interés compuesto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de tu lado del trato. Para quien pide prestado, el interés simple suele ser más barato, porque el interés no se capitaliza. Para quien ahorra o invierte, el interés compuesto es mejor, porque las ganancias se reinvierten y crecen más rápido con el tiempo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El tiempo puede ser una fracción de año?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. El tiempo puede ingresarse como decimal, por ejemplo 2,5 años, y la fórmula se ajusta proporcionalmente. Seis meses al 5% sobre $10.000 dan $250 de interés simple, exactamente la mitad de un año completo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se guardan o se envían mis datos financieros a algún lugar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. OmniTools funciona por completo en tu navegador. Tu capital, tu tasa y tu tiempo nunca se envían a un servidor, no se almacenan en una base de datos ni se comparten con nadie."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Calculadora de interés simple",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Ingresa el capital",
+      "text": "Escribe la cantidad original prestada o invertida."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Ingresa la tasa anual",
+      "text": "Escribe la tasa de interés anual fija como porcentaje."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Ingresa el tiempo en años",
+      "text": "Escribe la duración del préstamo o la inversión en años."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calcula",
+      "text": "Pulsa Calcular interés para ver el interés, el monto total y el interés por año."
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Calc. de edad</a></li>
+          <li><a href="../bmi-calculator.html">IMC</a></li>
+          <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../simple-interest-calculator.html" class="lang-btn" title="English">EN</a>
+          <a href="calculadora-de-interes-simple.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#finance">Finance</a></li>
+          <li aria-current="page">Calculadora de interés simple</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de interés simple</h1>
+        <p class="tool-header-desc">Calcula el interés simple de la forma más directa: un porcentaje fijo de la cantidad original por el número de años. Obtén el interés, el monto total y el costo anual en segundos.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="siPrincipal" class="form-label"><span>Capital inicial ($)</span><span class="label-hint">Obligatorio</span></label>
+              <input type="number" id="siPrincipal" class="form-input" placeholder="ej. 10000" min="1" max="100000000" step="100">
+              <span class="form-help">La cantidad inicial prestada o invertida</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="siRate" class="form-label"><span>Tasa de interés anual (%)</span><span class="label-hint">% anual</span></label>
+                <input type="number" id="siRate" class="form-input" placeholder="ej. 5" min="0" max="50" step="0.1">
+                <span class="form-help">Tasa anual fija, sin capitalización</span>
+              </div>
+              <div class="form-group">
+                <label for="siYears" class="form-label"><span>Plazo (años)</span><span class="label-hint">Duración</span></label>
+                <input type="number" id="siYears" class="form-input" placeholder="ej. 3" min="0.1" max="50" step="0.5">
+                <span class="form-help">Duración del préstamo o la inversión en años</span>
+              </div>
+            </div>
+          </div>
+          <div id="siErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateSimple()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" /></svg> Calcular interés</button>
+            <button type="button" class="btn btn-outline" onclick="resetSimple()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Restablecer</button>
+          </div>
+          <div id="siResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Desglose del interés simple</span>
+              <button type="button" id="siCopyBtn" class="btn btn-outline btn-sm" title="Copy result summary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg> Copiar resumen</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Monto total (capital + interés)</div>
+              <div class="hero-result-value" id="siTotalValue">$0.00</div>
+              <div class="hero-result-sub">Cantidad a devolver o recibir al final</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="siInterestValue" style="color: #d97706;">$0.00</div><div class="metric-label">Monto del interés</div></div>
+              <div class="metric-card"><div class="metric-value" id="siPrincipalValue">$0.00</div><div class="metric-label">Capital</div></div>
+              <div class="metric-card"><div class="metric-value" id="siYearlyValue">$0.00</div><div class="metric-label">Interés por año</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../calculadora-de-interes-compuesto.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de interés compuesto <span>→</span></a></li>
+            <li><a href="../calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de préstamo EMI <span>→</span></a></li>
+            <li><a href="../calculadora-de-porcentajes.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentajes <span>→</span></a></li>
+            <li><a href="../calculadora-de-descuentos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de descuentos <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">Cómo usar la calculadora de interés simple</h2>
+        <p class="content-paragraph">El interés simple es la forma más directa de calcular intereses: un porcentaje fijo de la cantidad original, multiplicado por el número de años. Es el método usado en muchos préstamos a corto plazo, algunos préstamos para autos y productos de ahorro básicos, y también es el cálculo de interés más fácil de comprobar a mano. Esta calculadora lo hace al instante y también muestra el interés por año, para que veas exactamente lo que cuesta o genera cada año.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa el capital</strong>Escribe la cantidad original prestada o invertida, por ejemplo 10000.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa la tasa anual</strong>Escribe el porcentaje anual, por ejemplo 5 para el cinco por ciento. La tasa se mantiene fija durante todo el período en un cálculo de interés simple.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Ingresa el tiempo en años</strong>Escribe la duración, por ejemplo 3 para tres años. Se aceptan valores de medio año como 2,5.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Calcula</strong>Pulsa Calcular interés para ver el monto del interés, el monto total a devolver o recibir, y el interés cobrado o ganado por año.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">La fórmula del interés simple explicada</h2>
+        <p class="content-paragraph">A diferencia del interés compuesto, el interés simple nunca genera intereses sobre sí mismo. Cada año cuesta exactamente la misma cantidad, porque el cálculo siempre vuelve al capital original. Esa previsibilidad es su principal ventaja: los prestatarios saben desde el primer día lo que costará cada año, y no hay sorpresas a medida que cambia el saldo.</p>
+        <div class="formula-box">
+          <div class="formula-expression">Interés = (P × R × T) / 100</div>
+          <div class="formula-explanation">Donde:<br>• <strong>P</strong> = capital, la cantidad original<br>• <strong>R</strong> = tasa de interés anual en porcentaje<br>• <strong>T</strong> = tiempo en años<br>• <strong>Monto total</strong> = P + Interés<br>• <strong>Interés por año</strong> = Interés / T</div>
+        </div>
+        <p class="content-paragraph">La fórmula es lineal, lo que significa que duplicar cualquiera de los datos duplica el interés: el doble del capital, el doble de la tasa o el doble del tiempo producen el doble del interés. Esa proporcionalidad simple facilita comparar ofertas rápidamente. Si un prestamista ofrece 6% durante 4 años y otro ofrece 8% durante 3 años sobre el mismo capital, el primero cuesta el 24% del capital en intereses, mientras que el segundo también cuesta el 24%, así que solo en intereses son idénticos.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Ejemplo resuelto: $10.000 al 5% durante 3 años</h2>
+        <p class="content-paragraph">Pide prestados $10.000 a una tasa anual simple del 5% durante 3 años. El interés es ($10.000 × 5 × 3) / 100, lo que equivale a $1.500. El monto total a devolver es, por tanto, $11.500, y el interés por año es $500. No hay nada oculto en ese resultado: el año uno cuesta $500, el año dos cuesta $500 y el año tres cuesta $500, porque el interés siempre se calcula sobre los $10.000 originales y no sobre un saldo creciente.</p>
+        <p class="content-paragraph">Ahora compara los mismos datos con interés compuesto, donde el total sería de $11.576,25 con capitalización anual. La diferencia de $76,25 es pequeña en tres años, pero crece rápidamente en períodos más largos, y es exactamente por eso que prestamistas y ahorradores siempre deben comprobar qué método usa un producto. Un préstamo anunciado con una tasa baja puede seguir siendo caro si se capitaliza mensualmente, mientras que un préstamo de interés simple con una tasa algo mayor puede resultar más barato en total.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Préstamos a corto plazo</h4><p class="example-card-body">El interés simple es habitual en préstamos personales cortos y en parte de la financiación de autos, donde el prestamista quiere un calendario de pagos predecible y fácil de explicar, sin capitalización mensual.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Comprobar una oferta</h4><p class="example-card-body">Si un prestamista cotiza un interés total muy superior a (capital × tasa × años) / 100, probablemente el producto capitaliza o incluye comisiones. Pregunta qué método se usa antes de firmar nada.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Pago anticipado</h4><p class="example-card-body">Con interés simple, pagar antes de tiempo suele ahorrar una cantidad proporcional y clara de intereses, porque cada año restante habría costado la misma suma fija. Confirma primero que no haya penalización por pago anticipado.</p></div>
+        </div>
+        <p class="content-paragraph">Recuerda que los préstamos reales suelen añadir comisiones, seguros o impuestos sobre el interés, así que el resultado de la calculadora muestra el costo puro del interés. Úsalo para comparar el costo básico de diferentes ofertas y luego suma cualquier comisión que el prestamista revele para obtener el total real.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas frecuentes (FAQ)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open>
+            <summary class="faq-question">¿Qué es el interés simple?</summary>
+            <div class="faq-answer">El interés simple es el interés calculado solo sobre el capital original. Se mantiene igual cada año porque nunca incluye los intereses ganados en años anteriores, lo que lo hace fácil de predecir y comprobar.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Cuál es la fórmula del interés simple?</summary>
+            <div class="faq-answer">El interés es igual al capital por la tasa por el tiempo, dividido entre 100: I = (P × R × T) / 100. El monto total es el capital más ese interés. Por ejemplo, $10.000 al 5% durante 3 años da $1.500 de interés y un total de $11.500.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿El interés simple es mejor que el interés compuesto?</summary>
+            <div class="faq-answer">Depende de tu lado del trato. Para quien pide prestado, el interés simple suele ser más barato, porque el interés no se capitaliza. Para quien ahorra o invierte, el interés compuesto es mejor, porque las ganancias se reinvierten y crecen más rápido con el tiempo.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿El tiempo puede ser una fracción de año?</summary>
+            <div class="faq-answer">Sí. El tiempo puede ingresarse como decimal, por ejemplo 2,5 años, y la fórmula se ajusta proporcionalmente. Seis meses al 5% sobre $10.000 dan $250 de interés simple, exactamente la mitad de un año completo.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">¿Se guardan o se envían mis datos financieros a algún lugar?</summary>
+            <div class="faq-answer">No. OmniTools funciona por completo en tu navegador. Tu capital, tu tasa y tu tiempo nunca se envían a un servidor, no se almacenan en una base de datos ni se comparten con nadie.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad para finanzas, productividad y educación.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Herramientas populares</h4>
+          <ul class="footer-links">
+            <li><a href="../age-calculator.html">Calculadora de edad</a></li>
+            <li><a href="../bmi-calculator.html">Calculadora de IMC</a></li>
+            <li><a href="../loan-calculator.html">Calculadora de préstamo EMI</a></li>
+            <li><a href="../password-generator.html">Generador de contraseñas</a></li>
+            <li><a href="../word-counter.html">Contador de palabras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="../percentage-calculator.html">Calculadora de porcentajes</a></li>
+            <li><a href="../discount-calculator.html">Calculadora de descuentos</a></li>
+            <li><a href="../unit-converter.html">Conversor de unidades</a></li>
+            <li><a href="../date-calculator.html">Diferencia de fechas</a></li>
+            <li><a href="../case-converter.html">Conversor de mayúsculas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal e información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Acerca de nosotros</a></li>
+            <li><a href="../contact.html">Contáctanos</a></li>
+            <li><a href="../privacy-policy.html">Política de privacidad</a></li>
+            <li><a href="../terms.html">Términos de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../simple-interest-calculator.html">English</a> |
+          <a href="calculadora-de-interes-simple.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var pInput = document.getElementById('siPrincipal');
+  var rInput = document.getElementById('siRate');
+  var tInput = document.getElementById('siYears');
+  var resultsBox = document.getElementById('siResultsBox');
+  var errorBox = document.getElementById('siErrorBox');
+  var copyBtn = document.getElementById('siCopyBtn');
+  [pInput, rInput, tInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateSimple(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeSimple = function(P, r, t) {
+    var interest = P * r * t / 100;
+    return { interest: interest, total: P + interest };
+  };
+  window.calculateSimple = function() {
+    var P = parseFloat(pInput.value);
+    var r = parseFloat(rInput.value);
+    var t = parseFloat(tInput.value);
+    if (isNaN(P) || isNaN(r) || isNaN(t) || P <= 0 || r < 0 || t <= 0) {
+      showError('Por favor, ingresa valores positivos válidos para el capital, la tasa y el tiempo. La tasa puede ser 0.');
+      return;
+    }
+    if (P > 100000000) { showError('El capital no puede superar 100.000.000.'); return; }
+    if (r > 50) { showError('La tasa de interés anual no puede superar el 50%.'); return; }
+    if (t > 50) { showError('El tiempo no puede superar 50 años.'); return; }
+    hideError();
+    var res = computeSimple(P, r, t);
+    document.getElementById('siInterestValue').textContent = fmt(res.interest);
+    document.getElementById('siTotalValue').textContent = fmt(res.total);
+    document.getElementById('siPrincipalValue').textContent = fmt(P);
+    document.getElementById('siYearlyValue').textContent = fmt(res.interest / t);
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'Interés simple: Capital ' + fmt(P) + ' al ' + r + '% durante ' + t + ' años. Interés: ' + fmt(res.interest) + ', Monto total: ' + fmt(res.total) + '. Calculado con OmniTools.'); }
+  };
+  window.resetSimple = function() {
+    pInput.value = ''; rInput.value = ''; tInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('¡Resumen de interés simple copiado al portapapeles!'); }).catch(function() { prompt('Copiar resumen:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>

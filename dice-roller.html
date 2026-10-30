@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dice Roller - Roll d4, d6, d8, d10, d12, d20 & d100 Online | OmniTools</title>
+<meta name="description" content="Roll virtual dice online: choose 1 to 10 dice and d4, d6, d8, d10, d12, d20, or d100. See every die, the total, and your last 10 rolls. Free, no signup.">
+<meta name="keywords" content="dice roller, roll dice online, d20 roller, dnd dice roller, virtual dice, roll d6, polyhedral dice roller">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/dice-roller.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/dice-roller.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/lanzador-de-dados.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/dice-roller.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/dice-roller.html">
+<meta property="og:title" content="Dice Roller - Roll d4, d6, d8, d10, d12, d20 & d100 Online | OmniTools">
+<meta property="og:description" content="Roll virtual dice online: choose 1 to 10 dice and d4, d6, d8, d10, d12, d20, or d100. See every die, the total, and your last 10 rolls. Free, no signup.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-dice-roller.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dice Roller - Roll d4, d6, d8, d10, d12, d20 & d100 Online | OmniTools">
+<meta name="twitter:description" content="Roll virtual dice online: choose 1 to 10 dice and d4, d6, d8, d10, d12, d20, or d100. See every die, the total, and your last 10 rolls. Free, no signup.">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools Dice Roller",
+  "url": "https://janhazirr7.github.io/allinone/dice-roller.html",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Roll virtual dice online: choose 1 to 10 dice and d4, d6, d8, d10, d12, d20, or d100. See every die, the total, and your last 10 rolls. Free, no signup.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Utilities",
+      "item": "https://janhazirr7.github.io/allinone/#utilities"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dice Roller",
+      "item": "https://janhazirr7.github.io/allinone/dice-roller.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does 2d6 mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dice notation puts the number of dice before the letter d and the number of sides after it. 2d6 means roll two six-sided dice and add them together. 1d20 means one twenty-sided die, and 3d8 means three eight-sided dice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the average roll of a die?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a single fair die, the average is the number of sides plus one, divided by two. A d6 averages 3.5, a d20 averages 10.5, and a d100 averages 50.5. For several dice, multiply by the count: 2d6 averages 7."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is 7 the most common result of 2d6?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because six different combinations add up to 7 (1+6, 2+5, 3+4, 4+3, 5+2, 6+1), while 2 and 12 each have only one combination. Middle totals are always more common than extremes when you add dice together."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are digital dice rolls fair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for games and teaching. Every face has an equal chance on every roll, using your browser's random generator. Short streaks of high or low rolls are normal in random data and do not mean the roller is biased."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many rolls does the history keep?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The last 10 rolls. Older rolls drop off the list automatically as you keep rolling, so the history stays short and readable."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to use the Dice Roller",
+  "description": "Roll virtual dice online: choose 1 to 10 dice and d4, d6, d8, d10, d12, d20, or d100. See every die, the total, and your last 10 rolls. Free, no signup.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Choose dice and sides",
+      "text": "Pick 1 to 10 dice and a die type from d4 to d100."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Roll",
+      "text": "Press Roll Dice to see every die and the total."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Check history",
+      "text": "Review your last 10 rolls below the result."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="dice-roller.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/lanzador-de-dados.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#utilities">Utilities</a></li>
+<li aria-current="page">Dice Roller</li>
+</ul></div></div>
+<section class="tool-header-section"><div class="container">
+<h1 class="tool-header-title">Dice Roller</h1>
+<p class="tool-header-desc">Roll 1 to 10 virtual dice with d4, d6, d8, d10, d12, d20, or d100 sides. Every die is shown, plus the total and a 10-roll history.</p>
+</div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container"><div><div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="diceCount" class="form-label"><span>Number of dice</span></label>
+                <select id="diceCount" class="form-select"><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
+                <span class="form-help">From 1 to 10 dice per roll.</span>
+              </div>
+              <div class="form-group">
+                <label for="diceSides" class="form-label"><span>Sides per die</span></label>
+                <select id="diceSides" class="form-select"><option value="4">d4</option><option value="6" selected>d6</option><option value="8">d8</option><option value="10">d10</option><option value="12">d12</option><option value="20">d20</option><option value="100">d100</option></select>
+                <span class="form-help">Pick the die type: d4, d6, d8, d10, d12, d20, or d100.</span>
+              </div>
+            </div>
+          </div>
+          <div id="diceErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" id="rollDiceBtn" class="btn btn-primary">Roll Dice</button>
+            <button type="button" id="resetDiceBtn" class="btn btn-outline">Reset</button>
+          </div>
+          <div id="diceResultsBox" class="results-box"><div class="results-header"><span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Roll Result</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Roll Total</div>
+              <div class="hero-result-value" id="diceTotalValue">0</div>
+              <div class="hero-result-sub">Sum of all dice in this roll.</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="diceRangeValue">-</div><div class="metric-label">Possible range</div></div>
+            </div>
+            <div class="milestones-wrapper" style="margin-top: 0;">
+              <div class="milestones-title">Each die</div>
+              <div id="diceRolls" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+            </div>
+            <div class="milestones-wrapper">
+              <div class="milestones-title">Roll history (last 10)</div>
+              <ul class="milestones-list" id="diceHistory"></ul>
+              <p id="diceHistoryEmpty" style="font-size: 0.875rem; color: var(--text-muted);">No rolls yet. Press Roll Dice to start.</p>
+            </div>
+          </div>
+</div></div>
+<aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+<li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount &amp; Sales Tax Calculator <span>→</span></a></li>
+<li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age &amp; Milestone Calculator <span>→</span></a></li>
+<li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">How to Use the Dice Roller</h2>
+        <p class="content-paragraph">Whether you are playing a board game, running a tabletop role-playing session, or teaching probability, you sometimes need dice you do not have on hand, or more dice than fit in your palm. This roller covers the standard polyhedral dice used in modern games: d4, d6, d8, d10, d12, d20, and d100. Choose how many dice to roll, pick the die type, and press Roll Dice to see every individual result, the total, and a history of your recent rolls.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Choose the number of dice</strong>Roll from 1 to 10 dice at once. Rolling 3d6 for a character's strength, or 2d20 with advantage in mind, is a single click instead of three separate rolls.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Pick the die type</strong>Select the number of sides: 4, 6, 8, 10, 12, 20, or 100. The classic six-sided die suits board games, while the twenty-sided die is the heart of most role-playing games.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Roll and read the result</strong>Each die shows its own face value, so you can see exactly which dice rolled high or low, and the total is highlighted at the top. The possible range, from all ones to all maximums, is shown for reference.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Check the history</strong>The last 10 rolls stay listed below the result, so you can settle disputes, track a run of luck, or simply remember what you rolled two turns ago.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Dice Notation and What to Expect on Average</h2>
+        <p class="content-paragraph">Gamers write dice rolls in a compact notation: the number before the letter d is how many dice to roll, and the number after it is how many sides each die has. So 2d6 means roll two six-sided dice and add them, 1d20 means a single twenty-sided die, and 3d8 means three eight-sided dice. This roller follows that convention exactly, and its history labels each roll the same way, such as 2d6, so the record is easy to read at a glance.</p>
+        <p class="content-paragraph">Every fair die has an average value right in the middle of its range. For a single die, the expected value is the number of sides plus one, divided by two: a d6 averages 3.5, a d20 averages 10.5, and a d100 averages 50.5. Multiply by the number of dice for the average total, so 2d6 averages 7 and 3d6 averages 10.5. That average is a useful anchor, but individual rolls swing widely around it. With 2d6, a total of 7 is the most common result because six different combinations produce it, while 2 and 12 each have only one combination. Understanding that bell shape, where middle totals are common and extremes are rare, is the beginning of real probability intuition, and it is why game designers choose particular dice for particular jobs.</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Roll</th><th>Possible range</th><th>Average total</th><th>Common use</th></tr></thead><tbody>
+        <tr><td><strong>1d6</strong></td><td>1 - 6</td><td>3.5</td><td>Board games, simple checks</td></tr>
+        <tr><td><strong>2d6</strong></td><td>2 - 12</td><td>7</td><td>Movement, damage, classic board games</td></tr>
+        <tr><td><strong>1d20</strong></td><td>1 - 20</td><td>10.5</td><td>Role-playing attacks and skill checks</td></tr>
+        <tr><td><strong>3d6</strong></td><td>3 - 18</td><td>10.5</td><td>Character ability scores</td></tr>
+        <tr><td><strong>1d100</strong></td><td>1 - 100</td><td>50.5</td><td>Percentage rolls, random tables</td></tr>
+        </tbody></table></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Fairness, Streaks, and Good Table Manners</h2>
+        <p class="content-paragraph">Digital dice use the same browser random generator as the random number tool, giving every face an equal chance on every roll. That fairness is easy to state and surprisingly hard to feel: humans expect randomness to look evenly spread, so a run of three low rolls feels suspicious even though it is perfectly normal. With a d20, the chance of any single face is 1 in 20, and short streaks happen all the time across a long evening of play. If a result matters for a whole group, roll where everyone can see the screen, agree the die type and count before rolling, and let the history list settle any disagreement about what was rolled.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Advantage and disadvantage</h4><p class="example-card-body">Some games ask you to roll two d20s and keep the higher (advantage) or lower (disadvantage) one. Roll 2d20 here, look at the individual dice, and keep the one your rules require.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Damage and healing</h4><p class="example-card-body">Weapon damage like 2d6 or spell effects like 4d8 are one click here, with every die visible so the table can check the maths instead of trusting a hidden total.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Teaching probability</h4><p class="example-card-body">Roll 2d6 fifty times and tally the totals. The pile around 7, with 2 and 12 barely appearing, teaches the bell curve better than any textbook diagram.</p></div>
+        </div>
+        <p class="content-paragraph">Keep the limitations in mind too. This roller is for games, teaching, and casual decisions, not for gambling or any contest where money or prizes depend on an audited result. For those, use certified equipment or systems. For a game night, a classroom, or a quick decision among friends, it is fast, free, and private: every roll happens in your browser, nothing is sent to a server, and the last 10 rolls are always there when you need to look back.</p>
+      </section>
+<section class="content-section"><h2 class="content-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Frequently Asked Questions (FAQs)</h2>
+<div class="faq-list">
+<details class="faq-item" open>
+<summary class="faq-question">What does 2d6 mean?</summary>
+<div class="faq-answer">Dice notation puts the number of dice before the letter d and the number of sides after it. 2d6 means roll two six-sided dice and add them together. 1d20 means one twenty-sided die, and 3d8 means three eight-sided dice.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">What is the average roll of a die?</summary>
+<div class="faq-answer">For a single fair die, the average is the number of sides plus one, divided by two. A d6 averages 3.5, a d20 averages 10.5, and a d100 averages 50.5. For several dice, multiply by the count: 2d6 averages 7.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Why is 7 the most common result of 2d6?</summary>
+<div class="faq-answer">Because six different combinations add up to 7 (1+6, 2+5, 3+4, 4+3, 5+2, 6+1), while 2 and 12 each have only one combination. Middle totals are always more common than extremes when you add dice together.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Are digital dice rolls fair?</summary>
+<div class="faq-answer">Yes, for games and teaching. Every face has an equal chance on every roll, using your browser's random generator. Short streaks of high or low rolls are normal in random data and do not mean the roller is biased.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">How many rolls does the history keep?</summary>
+<div class="faq-answer">The last 10 rolls. Older rolls drop off the list automatically as you keep rolling, so the history stays short and readable.</div>
+</details>
+</div>
+</section></article></main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+<li><a href="bmi-calculator.html">BMI Tracker</a></li>
+<li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+<li><a href="password-generator.html">Password Generator</a></li>
+<li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+<li><a href="discount-calculator.html">Discount Calculator</a></li>
+<li><a href="unit-converter.html">Unit Converter</a></li>
+<li><a href="date-calculator.html">Date Difference</a></li>
+<li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="dice-roller.html" style="color: #60a5fa;">English</a> |
+          <a href="es/lanzador-de-dados.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+
+(function() {
+  var MSG = {"invalid": "Please choose between 1 and 10 dice and a valid die type.", "rollLabel": "Roll"};
+  var VALID_SIDES = [4, 6, 8, 10, 12, 20, 100];
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  function rollDice(numDice, sides, randFn) {
+    randFn = randFn || Math.random;
+    if (!Number.isInteger(numDice) || numDice < 1 || numDice > 10) { throw new Error(MSG.invalid); }
+    if (VALID_SIDES.indexOf(sides) === -1) { throw new Error(MSG.invalid); }
+    var rolls = [], total = 0;
+    for (var i = 0; i < numDice; i++) {
+      var r = Math.floor(randFn() * sides) + 1;
+      rolls.push(r); total += r;
+    }
+    return { rolls: rolls, total: total };
+  }
+  function pushHistory(history, entry, max) {
+    max = max || 10;
+    history.unshift(entry);
+    if (history.length > max) { history.length = max; }
+    return history;
+  }
+  window.OmniTest = { rollDice: rollDice, pushHistory: pushHistory, VALID_SIDES: VALID_SIDES };
+  var diceHistory = [];
+  function showError(m) { var b = document.getElementById('diceErrorBox'); if (b) { b.textContent = m; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('diceErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function renderHistory() {
+    var ul = document.getElementById('diceHistory');
+    if (!ul) return;
+    ul.innerHTML = '';
+    for (var i = 0; i < diceHistory.length; i++) {
+      var li = document.createElement('li');
+      li.className = 'milestone-item';
+      var name = document.createElement('span'); name.className = 'milestone-item-name'; name.textContent = diceHistory[i].label;
+      var val = document.createElement('span'); val.className = 'milestone-item-val'; val.textContent = String(diceHistory[i].total);
+      li.appendChild(name); li.appendChild(val); ul.appendChild(li);
+    }
+    var empty = document.getElementById('diceHistoryEmpty');
+    if (empty) empty.style.display = diceHistory.length ? 'none' : 'block';
+  }
+  window.rollDiceAction = function() {
+    var n = parseInt(document.getElementById('diceCount').value, 10);
+    var s = parseInt(document.getElementById('diceSides').value, 10);
+    var r;
+    try { r = rollDice(n, s); } catch (e) { showError(e.message); return; }
+    hideError();
+    document.getElementById('diceTotalValue').textContent = String(r.total);
+    document.getElementById('diceRangeValue').textContent = n + ' - ' + (n * s);
+    var wrap = document.getElementById('diceRolls');
+    wrap.innerHTML = '';
+    for (var i = 0; i < r.rolls.length; i++) {
+      var chip = document.createElement('span');
+      chip.textContent = String(r.rolls[i]);
+      chip.style.cssText = 'display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; background: #ffffff; border: 2px solid #2563eb; color: #0f172a; font-weight: 800; font-size: 1.25rem; border-radius: 10px;';
+      wrap.appendChild(chip);
+    }
+    pushHistory(diceHistory, { label: MSG.rollLabel + ' ' + (diceHistory.length + 1) + ': ' + n + 'd' + s + ' = ' + r.rolls.join(', '), total: r.total }, 10);
+    renderHistory();
+    var box = document.getElementById('diceResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetDice = function() {
+    document.getElementById('diceCount').value = '2';
+    document.getElementById('diceSides').value = '6';
+    diceHistory = [];
+    renderHistory();
+    hideError();
+    var box = document.getElementById('diceResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var rollBtn = document.getElementById('rollDiceBtn');
+  if (rollBtn) rollBtn.addEventListener('click', window.rollDiceAction);
+  var resetBtn = document.getElementById('resetDiceBtn');
+  if (resetBtn) resetBtn.addEventListener('click', window.resetDice);
+})();
+
+</script>
+</body>
+</html>

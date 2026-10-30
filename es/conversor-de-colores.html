@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de colores - HEX a RGB a HSL con vista previa | OmniTools</title>
+<meta name="description" content="Convierte colores entre HEX, RGB y HSL al instante, con muestra de vista previa en vivo y CSS listo para copiar. Gratis, privado y en tu navegador.">
+<meta name="keywords" content="conversor de colores, hex a rgb, rgb a hsl, hex a hsl, conversor color css, código color hex">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/es/conversor-de-colores.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/color-converter.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-colores.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/color-converter.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/es/conversor-de-colores.html">
+<meta property="og:title" content="Conversor de colores - HEX a RGB a HSL con vista previa | OmniTools">
+<meta property="og:description" content="Convierte colores entre HEX, RGB y HSL al instante, con muestra de vista previa en vivo y CSS listo para copiar. Gratis, privado y en tu navegador.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-color-converter.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conversor de colores - HEX a RGB a HSL con vista previa | OmniTools">
+<meta name="twitter:description" content="Convierte colores entre HEX, RGB y HSL al instante, con muestra de vista previa en vivo y CSS listo para copiar. Gratis, privado y en tu navegador.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Conversor de colores de OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/es/conversor-de-colores.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Convierte colores entre HEX, RGB y HSL al instante, con muestra de vista previa en vivo y CSS listo para copiar. Gratis, privado y en tu navegador.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Utilidades",
+      "item": "https://janhazirr7.github.io/allinone/#utilities"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Conversor de colores",
+      "item": "https://janhazirr7.github.io/allinone/es/conversor-de-colores.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un código de color HEX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un código HEX es una forma abreviada hexadecimal de seis dígitos para valores RGB, escrita con una almohadilla inicial, como #FF0000 para el rojo puro. Cada par de dígitos representa el rojo, el verde y el azul, de 00 (nada) a FF (máximo, o 255). Los códigos de tres dígitos como F00 son una abreviatura que duplica cada dígito hasta FF0000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo convierto HEX a RGB?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide los seis dígitos hexadecimales en tres pares y convierte cada par de hexadecimal a decimal. Para #2563EB, 25 se convierte en 37, 63 en 99 y EB en 235, dando rgb(37, 99, 235). Este conversor hace esa aritmética por ti en ambas direcciones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significan H, S y L en HSL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "H es el tono, la posición en la rueda de color de 0 a 360 grados, donde 0 es rojo, 120 verde y 240 azul. S es la saturación, de 0% gris a 100% totalmente vívido. L es la luminosidad, de 0% negro pasando por 50% color puro hasta 100% blanco."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué convertir de ida y vuelta cambia un valor en 1?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los porcentajes de HSL se redondean a números enteros aquí, y los canales RGB son enteros, así que un viaje de ida y vuelta puede cambiar un canal en una unidad. La diferencia es invisible al ojo. Conserva tu valor HEX o RGB original como copia maestra para trabajos perfectos al píxel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo usar este conversor para colores de impresión?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para diseño de pantalla, sí. La impresión usa CMYK, un modelo distinto basado en tinta en lugar de luz, así que un color de pantalla convertido para impresión se verá distinto en papel. Comprueba siempre los colores de impresión con los valores CMYK de tu imprenta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se guardan los datos de mis colores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Todas las conversiones se ejecutan en tu navegador. Nada de lo que introduzcas se envía a un servidor ni se guarda."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo usar el Conversor de colores",
+  "description": "Convierte colores entre HEX, RGB y HSL al instante, con muestra de vista previa en vivo y CSS listo para copiar. Gratis, privado y en tu navegador.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Introduce un color en cualquier formato",
+      "text": "Escribe un código HEX, valores RGB o valores HSL."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Convierte",
+      "text": "Pulsa el botón Convertir correspondiente para completar los otros dos formatos."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Previsualiza y copia",
+      "text": "Comprueba la muestra en vivo y luego copia el HEX o el CSS que necesites."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Edad</a></li>
+          <li><a href="../bmi-calculator.html">IMC</a></li>
+          <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../color-converter.html" class="lang-btn" title="English">EN</a>
+          <a href="conversor-de-colores.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+<li><a href="../index.html">Inicio</a></li>
+<li><a href="../index.html#utilities">Utilidades</a></li>
+<li aria-current="page">Conversor de colores</li>
+</ul></div></div>
+<section class="tool-header-section"><div class="container">
+<h1 class="tool-header-title">Conversor de colores</h1>
+<p class="tool-header-desc">Convierte cualquier color entre HEX, RGB y HSL, ve los tres formatos a la vez y previsualiza el color en vivo antes de copiarlo.</p>
+</div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container"><div><div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="colorHex" class="form-label"><span>Color HEX</span></label>
+              <input type="text" id="colorHex" class="form-input" placeholder="#2563EB" value="#2563EB" maxlength="7" style="font-family: ui-monospace, Menlo, monospace;">
+              <span class="form-help">Escribe 6 dígitos hexadecimales, con o sin #, por ejemplo #2563EB o FF0000. También valen 3 dígitos, como F00.</span>
+              <div style="margin-top: 0.5rem;"><button type="button" id="fromHexBtn" class="btn btn-outline btn-sm">Convertir desde HEX</button></div>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label class="form-label"><span>RGB (rojo, verde, azul)</span></label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="colorR" class="form-input" placeholder="R" min="0" max="255" step="1" value="37" aria-label="Red">
+                  <input type="number" id="colorG" class="form-input" placeholder="G" min="0" max="255" step="1" value="99" aria-label="Green">
+                  <input type="number" id="colorB" class="form-input" placeholder="B" min="0" max="255" step="1" value="235" aria-label="Blue">
+                </div>
+                <span class="form-help">Cada canal va de 0 a 255.</span>
+                <div style="margin-top: 0.5rem;"><button type="button" id="fromRgbBtn" class="btn btn-outline btn-sm">Convertir desde RGB</button></div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><span>HSL (tono, saturación, luminosidad)</span></label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="colorH" class="form-input" placeholder="H" min="0" max="360" step="1" value="221" aria-label="Hue">
+                  <input type="number" id="colorS" class="form-input" placeholder="S%" min="0" max="100" step="1" value="83" aria-label="Saturation">
+                  <input type="number" id="colorL" class="form-input" placeholder="L%" min="0" max="100" step="1" value="53" aria-label="Lightness">
+                </div>
+                <span class="form-help">Tono de 0 a 360 grados; saturación y luminosidad de 0 a 100%.</span>
+                <div style="margin-top: 0.5rem;"><button type="button" id="fromHslBtn" class="btn btn-outline btn-sm">Convertir desde HSL</button></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label"><span>Vista previa del color</span></label>
+              <div id="colorSwatch" style="width: 100%; height: 6rem; border-radius: 10px; border: 1px solid var(--border-color); background: #2563EB;"></div>
+              <span class="form-help">La muestra se actualiza al convertir desde cualquier formato. Pruébala con tu color de marca.</span>
+            </div>
+          </div>
+          <div id="colorErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" id="resetColorBtn" class="btn btn-outline">Restablecer</button>
+          </div>
+          <div id="colorResultsBox" class="results-box"><div class="results-header"><span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Valores convertidos</span></div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="colorHexOut" style="font-size: 1.1rem;">#2563EB</div><div class="metric-label">HEX</div></div>
+              <div class="metric-card"><div class="metric-value" id="colorRgbOut" style="font-size: 1.1rem;">rgb(37, 99, 235)</div><div class="metric-label">RGB</div></div>
+              <div class="metric-card"><div class="metric-value" id="colorHslOut" style="font-size: 1.1rem;">hsl(221, 83%, 53%)</div><div class="metric-label">HSL</div></div>
+            </div>
+            <div class="milestones-wrapper" style="margin-bottom: 0;">
+              <div class="milestones-title">Código CSS listo para copiar</div>
+              <p style="font-family: ui-monospace, Menlo, monospace; font-size: 0.875rem; color: var(--text-main);" id="colorCssOut">color: #2563EB; background-color: rgb(37, 99, 235);</p>
+              <div style="margin-top: 0.75rem;"><button type="button" id="copyColorBtn" class="btn btn-outline btn-sm">Copiar HEX</button></div>
+            </div>
+          </div>
+</div></div>
+<aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentaje <span>→</span></a></li>
+<li><a href="../discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de descuento e impuestos <span>→</span></a></li>
+<li><a href="../age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de edad <span>→</span></a></li>
+<li><a href="../bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">C\u00f3mo usar el conversor de colores</h2>
+        <p class="content-paragraph">Dise\u00f1adores, desarrolladores e imprentas describen el mismo color en lenguajes distintos. Un desarrollador web escribe #2563EB, un dise\u00f1ador de impresi\u00f3n piensa en porcentajes de ci\u00e1n y magenta, y un autor de CSS que ajusta el brillo recurre a HSL. Convertir entre estos formatos a mano es lento y propenso a errores, sobre todo por las matem\u00e1ticas de HSL. Este conversor lo hace al instante: introduce un color en cualquiera de los formatos y ve los tres a la vez, con una muestra en vivo para juzgar el resultado con tus ojos, no solo con n\u00fameros.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Empieza desde HEX</strong>Escribe un c\u00f3digo hexadecimal con o sin almohadilla, por ejemplo #FF0000 o 2563EB, y pulsa Convertir desde HEX. La forma abreviada de 3 d\u00edgitos, como F00, tambi\u00e9n funciona y se expande a FF0000.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>O empieza desde RGB</strong>Introduce los canales rojo, verde y azul, cada uno de 0 a 255, y pulsa Convertir desde RGB. Esto es \u00fatil cuando una herramienta de dise\u00f1o o un selector de capturas te da valores RGB.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>O empieza desde HSL</strong>Introduce el tono de 0 a 360 grados, m\u00e1s la saturaci\u00f3n y la luminosidad en porcentaje, y pulsa Convertir desde HSL. HSL es el formato m\u00e1s f\u00e1cil para crear versiones m\u00e1s claras u oscuras de un color.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Copia lo que necesites</strong>Los valores convertidos aparecen abajo, junto con CSS listo para copiar. La muestra de vista previa se actualiza desde cualquier entrada, para que puedas experimentar libremente y ver c\u00f3mo cambia el color.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">HEX, RGB y HSL explicados</h2>
+        <p class="content-paragraph">HEX es la forma abreviada web de RGB. Cada par de d\u00edgitos hexadecimales representa un canal: el primer par es el rojo, el segundo el verde y el tercero el azul. FF0000 es, por tanto, rojo puro, 00FF00 verde puro y 000000 negro, mientras que FFFFFF es blanco. El sistema hexadecimal usa los d\u00edgitos del 0 al 9 m\u00e1s las letras de la A a la F, donde A significa 10 y F significa 15, por eso dos d\u00edgitos hexadecimales pueden representar cualquier valor de 0 a 255. La forma abreviada de tres d\u00edgitos simplemente duplica cada d\u00edgito, as\u00ed que F00 se convierte en FF0000 y 369 en 336699.</p>
+        <p class="content-paragraph">RGB describe el color como luz: cu\u00e1nta luz roja, verde y azul mezclar. Las pantallas emiten luz, as\u00ed que sumar los tres canales a plena intensidad produce blanco, y apagarlos todos produce negro. Ese modelo aditivo es intuitivo para pantallas, pero inc\u00f3modo para las personas que intentan ajustar un color, porque cambiar el brillo significa cambiar los tres n\u00fameros a la vez. HSL lo resuelve describiendo el color como piensan las personas: el tono es la posici\u00f3n en la rueda de color en grados, donde 0 es rojo, 120 verde y 240 azul; la saturaci\u00f3n es lo v\u00edvido que es el color, de gris al 0% a color pleno al 100%; y la luminosidad va del negro al 0% pasando por el color puro al 50% hasta el blanco al 100%.</p>
+        <div class="formula-box"><div class="formula-expression">HEX #RRGGBB = RGB (rojo, verde, azul), cada uno de 0 a 255<br>HSL (tono 0-360, saturaci\u00f3n 0-100%, luminosidad 0-100%)</div><div class="formula-explanation">Ejemplos: el rojo puro es #FF0000 = rgb(255, 0, 0) = hsl(0, 100%, 50%). El verde puro es #00FF00 = rgb(0, 255, 0) = hsl(120, 100%, 50%). El gris tiene 0% de saturaci\u00f3n con cualquier tono.</div></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Usos pr\u00e1cticos y consejos de accesibilidad</h2>
+        <p class="content-paragraph">La tarea de conversi\u00f3n m\u00e1s habitual es mover un color de marca entre herramientas. Un archivo de logotipo puede darte un c\u00f3digo hexadecimal, la hoja de estilos de un desarrollador necesita RGB para efectos de transparencia como rgba(37, 99, 235, 0,5), y un dise\u00f1ador que crea un estado al pasar el cursor necesita HSL para aclarar el mismo color subiendo la luminosidad diez puntos. Hacer esos pasos aqu\u00ed mantiene una \u00fanica fuente de verdad: escribe el color de marca una vez y todos los formatos se mantienen coherentes en lugar de desviarse por errores manuales de escritura y redondeo.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Crea una paleta a partir de un color</h4><p class="example-card-body">Empieza desde tu color principal en HSL, mant\u00e9n fijo el tono y var\u00eda la luminosidad: 30% para texto oscuro, 50% para el color principal, 85% para un tinte de fondo p\u00e1lido. El resultado parece dise\u00f1ado, no aleatorio.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Comprueba el contraste antes de publicar</h4><p class="example-card-body">El texto claro sobre fondo claro es el fallo de accesibilidad m\u00e1s com\u00fan en la web. Usa la muestra para juzgar de un vistazo, y prefiere texto oscuro sobre colores p\u00e1lidos y texto blanco sobre colores oscuros saturados.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Corrige colores de capturas</h4><p class="example-card-body">Los selectores de color suelen informar valores RGB. P\u00e9galos aqu\u00ed para obtener el c\u00f3digo hexadecimal de tu hoja de estilos, o los valores HSL para ajustar el tono sin adivinar canal por canal.</p></div>
+        </div>
+        <p class="content-paragraph">Una nota final sobre la precisi\u00f3n: convertir entre RGB y HSL implica redondeo, porque los porcentajes de HSL son n\u00fameros enteros aqu\u00ed, mientras que los canales RGB tambi\u00e9n son enteros. Convertir un color a HSL y volver puede cambiar un canal en una unidad, lo que es invisible al ojo y normal en cualquier conversor. Si necesitas una reproducci\u00f3n perfecta al p\u00edxel para impresi\u00f3n, conserva los valores hexadecimales o RGB originales como copia maestra. Todo aqu\u00ed se ejecuta en privado en tu navegador, as\u00ed que los colores de tu marca y tus paletas nunca se suben ni se guardan.</p>
+      </section>
+<section class="content-section"><h2 class="content-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Preguntas frecuentes (FAQ)</h2>
+<div class="faq-list">
+<details class="faq-item" open>
+<summary class="faq-question">¿Qué es un código de color HEX?</summary>
+<div class="faq-answer">Un código HEX es una forma abreviada hexadecimal de seis dígitos para valores RGB, escrita con una almohadilla inicial, como #FF0000 para el rojo puro. Cada par de dígitos representa el rojo, el verde y el azul, de 00 (nada) a FF (máximo, o 255). Los códigos de tres dígitos como F00 son una abreviatura que duplica cada dígito hasta FF0000.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Cómo convierto HEX a RGB?</summary>
+<div class="faq-answer">Divide los seis dígitos hexadecimales en tres pares y convierte cada par de hexadecimal a decimal. Para #2563EB, 25 se convierte en 37, 63 en 99 y EB en 235, dando rgb(37, 99, 235). Este conversor hace esa aritmética por ti en ambas direcciones.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Qué significan H, S y L en HSL?</summary>
+<div class="faq-answer">H es el tono, la posición en la rueda de color de 0 a 360 grados, donde 0 es rojo, 120 verde y 240 azul. S es la saturación, de 0% gris a 100% totalmente vívido. L es la luminosidad, de 0% negro pasando por 50% color puro hasta 100% blanco.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Por qué convertir de ida y vuelta cambia un valor en 1?</summary>
+<div class="faq-answer">Los porcentajes de HSL se redondean a números enteros aquí, y los canales RGB son enteros, así que un viaje de ida y vuelta puede cambiar un canal en una unidad. La diferencia es invisible al ojo. Conserva tu valor HEX o RGB original como copia maestra para trabajos perfectos al píxel.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Puedo usar este conversor para colores de impresión?</summary>
+<div class="faq-answer">Para diseño de pantalla, sí. La impresión usa CMYK, un modelo distinto basado en tinta en lugar de luz, así que un color de pantalla convertido para impresión se verá distinto en papel. Comprueba siempre los colores de impresión con los valores CMYK de tu imprenta.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Se guardan los datos de mis colores?</summary>
+<div class="faq-answer">No. Todas las conversiones se ejecutan en tu navegador. Nada de lo que introduzcas se envía a un servidor ni se guarda.</div>
+</details>
+</div>
+</section></article></main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad, para finanzas, productividad y educación.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Herramientas populares</h4>
+          <ul class="footer-links">
+            <li><a href="../age-calculator.html">Calculadora de edad</a></li>
+<li><a href="../bmi-calculator.html">Calculadora de IMC</a></li>
+<li><a href="../loan-calculator.html">Calculadora de préstamo EMI</a></li>
+<li><a href="../password-generator.html">Generador de contraseñas</a></li>
+<li><a href="../word-counter.html">Contador de palabras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="../percentage-calculator.html">Calculadora de porcentaje</a></li>
+<li><a href="../discount-calculator.html">Calculadora de descuento</a></li>
+<li><a href="../unit-converter.html">Convertidor de unidades</a></li>
+<li><a href="../date-calculator.html">Diferencia de fechas</a></li>
+<li><a href="../case-converter.html">Convertidor de mayúsculas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal e información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Acerca de nosotros</a></li>
+<li><a href="../contact.html">Contáctanos</a></li>
+<li><a href="../privacy-policy.html">Política de privacidad</a></li>
+<li><a href="../terms.html">Términos de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../color-converter.html">English</a> |
+          <a href="conversor-de-colores.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+
+(function() {
+  var MSG = {"badHex": "Por favor, introduce un color HEX válido: 3 o 6 dígitos hexadecimales, con o sin # (por ejemplo, #FF0000).", "badRgb": "Los valores RGB deben ser números enteros entre 0 y 255.", "badHsl": "H debe estar entre 0 y 360, y S y L entre 0 y 100.", "copied": "¡HEX copiado al portapapeles!"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  function normalizeHex(input) {
+    var h = String(input).trim();
+    if (h.charAt(0) === '#') { h = h.slice(1); }
+    if (h.length === 3) { h = h.split('').map(function(c) { return c + c; }).join(''); }
+    if (!/^[0-9a-fA-F]{6}$/.test(h)) { throw new Error(MSG.badHex); }
+    return '#' + h.toUpperCase();
+  }
+  function isValidHex(input) { try { normalizeHex(input); return true; } catch (e) { return false; } }
+  function hexToRgb(hex) {
+    var n = normalizeHex(hex);
+    return { r: parseInt(n.substr(1, 2), 16), g: parseInt(n.substr(3, 2), 16), b: parseInt(n.substr(5, 2), 16) };
+  }
+  function componentToHex(c) { var s = c.toString(16); return s.length === 1 ? '0' + s : s; }
+  function rgbToHex(r, g, b) {
+    var vals = [r, g, b];
+    for (var i = 0; i < 3; i++) {
+      if (!Number.isInteger(vals[i]) || vals[i] < 0 || vals[i] > 255) { throw new Error(MSG.badRgb); }
+    }
+    return ('#' + componentToHex(r) + componentToHex(g) + componentToHex(b)).toUpperCase();
+  }
+  function rgbToHsl(r, g, b) {
+    var rn = r / 255, gn = g / 255, bn = b / 255;
+    var max = Math.max(rn, gn, bn), min = Math.min(rn, gn, bn);
+    var h = 0, s = 0, l = (max + min) / 2;
+    if (max !== min) {
+      var d = max - min;
+      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+      if (max === rn) { h = (gn - bn) / d + (gn < bn ? 6 : 0); }
+      else if (max === gn) { h = (bn - rn) / d + 2; }
+      else { h = (rn - gn) / d + 4; }
+      h *= 60;
+    }
+    return { h: Math.round(h), s: Math.round(s * 100), l: Math.round(l * 100) };
+  }
+  function hslToRgb(h, s, l) {
+    if (!(h >= 0) || h > 360 || !(s >= 0) || s > 100 || !(l >= 0) || l > 100) { throw new Error(MSG.badHsl); }
+    s /= 100; l /= 100;
+    var c = (1 - Math.abs(2 * l - 1)) * s;
+    var x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+    var m = l - c / 2;
+    var rp = 0, gp = 0, bp = 0;
+    if (h < 60) { rp = c; gp = x; bp = 0; }
+    else if (h < 120) { rp = x; gp = c; bp = 0; }
+    else if (h < 180) { rp = 0; gp = c; bp = x; }
+    else if (h < 240) { rp = 0; gp = x; bp = c; }
+    else if (h < 300) { rp = x; gp = 0; bp = c; }
+    else { rp = c; gp = 0; bp = x; }
+    return { r: Math.round((rp + m) * 255), g: Math.round((gp + m) * 255), b: Math.round((bp + m) * 255) };
+  }
+  window.OmniTest = { normalizeHex: normalizeHex, isValidHex: isValidHex, hexToRgb: hexToRgb, rgbToHex: rgbToHex, rgbToHsl: rgbToHsl, hslToRgb: hslToRgb };
+  function showError(m) { var b = document.getElementById('colorErrorBox'); if (b) { b.textContent = m; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('colorErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function showAll(hex) {
+    var rgb = hexToRgb(hex);
+    var hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
+    document.getElementById('colorHex').value = hex;
+    document.getElementById('colorR').value = String(rgb.r);
+    document.getElementById('colorG').value = String(rgb.g);
+    document.getElementById('colorB').value = String(rgb.b);
+    document.getElementById('colorH').value = String(hsl.h);
+    document.getElementById('colorS').value = String(hsl.s);
+    document.getElementById('colorL').value = String(hsl.l);
+    var sw = document.getElementById('colorSwatch');
+    if (sw) sw.style.background = hex;
+    document.getElementById('colorHexOut').textContent = hex;
+    document.getElementById('colorRgbOut').textContent = 'rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ')';
+    document.getElementById('colorHslOut').textContent = 'hsl(' + hsl.h + ', ' + hsl.s + '%, ' + hsl.l + '%)';
+    document.getElementById('colorCssOut').textContent = 'color: ' + hex + '; background-color: rgb(' + rgb.r + ', ' + rgb.g + ', ' + rgb.b + ');';
+    var box = document.getElementById('colorResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  }
+  window.convertFromHex = function() {
+    var hex;
+    try { hex = normalizeHex(document.getElementById('colorHex').value); } catch (e) { showError(e.message); return; }
+    hideError(); showAll(hex);
+  };
+  window.convertFromRgb = function() {
+    var r = parseFloat(document.getElementById('colorR').value);
+    var g = parseFloat(document.getElementById('colorG').value);
+    var b = parseFloat(document.getElementById('colorB').value);
+    var hex;
+    try { hex = rgbToHex(r, g, b); } catch (e) { showError(e.message); return; }
+    hideError(); showAll(hex);
+  };
+  window.convertFromHsl = function() {
+    var h = parseFloat(document.getElementById('colorH').value);
+    var s = parseFloat(document.getElementById('colorS').value);
+    var l = parseFloat(document.getElementById('colorL').value);
+    var rgb, hex;
+    try { rgb = hslToRgb(h, s, l); hex = rgbToHex(rgb.r, rgb.g, rgb.b); } catch (e) { showError(e.message); return; }
+    hideError(); showAll(hex);
+  };
+  window.resetColor = function() {
+    hideError();
+    try { showAll('#2563EB'); } catch (e) {}
+  };
+  var fh = document.getElementById('fromHexBtn');
+  if (fh) fh.addEventListener('click', window.convertFromHex);
+  var fr = document.getElementById('fromRgbBtn');
+  if (fr) fr.addEventListener('click', window.convertFromRgb);
+  var fs = document.getElementById('fromHslBtn');
+  if (fs) fs.addEventListener('click', window.convertFromHsl);
+  var rc = document.getElementById('resetColorBtn');
+  if (rc) rc.addEventListener('click', window.resetColor);
+  var hexEl = document.getElementById('colorHex');
+  if (hexEl) hexEl.addEventListener('input', function() {
+    try {
+      var hex = normalizeHex(hexEl.value);
+      var sw = document.getElementById('colorSwatch');
+      if (sw) sw.style.background = hex;
+      hideError();
+    } catch (e) { /* wait for a complete value; Convert shows the error */ }
+  });
+  var copyBtn = document.getElementById('copyColorBtn');
+  if (copyBtn) copyBtn.addEventListener('click', function() {
+    var txt = document.getElementById('colorHexOut').textContent;
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert(MSG.copied); }); }
+  });
+})();
+
+</script>
+</body>
+</html>

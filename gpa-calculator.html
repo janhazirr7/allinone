@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPA Calculator - Calculate Your Grade Point Average (4.0 Scale) | OmniTools</title>
+<meta name="description" content="Calculate your GPA on the standard 4.0 scale. Add courses with letter grades and credit hours to get your credit-weighted GPA, total credits, and quality points.">
+<meta name="keywords" content="gpa calculator, grade point average calculator, calculate gpa, 4.0 scale, college gpa calculator, quality points">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/gpa-calculator.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/gpa-calculator.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-promedio.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/gpa-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/gpa-calculator.html">
+<meta property="og:title" content="GPA Calculator - Calculate Your Grade Point Average (4.0 Scale) | OmniTools">
+<meta property="og:description" content="Calculate your GPA on the standard 4.0 scale. Add courses with letter grades and credit hours to get your credit-weighted GPA, total credits, and quality points.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-gpa-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GPA Calculator - Calculate Your Grade Point Average (4.0 Scale) | OmniTools">
+<meta name="twitter:description" content="Calculate your GPA on the standard 4.0 scale. Add courses with letter grades and credit hours to get your credit-weighted GPA, total credits, and quality points.">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools GPA Calculator",
+  "url": "https://janhazirr7.github.io/allinone/gpa-calculator.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calculate your GPA on the standard 4.0 scale. Add courses with letter grades and credit hours to get your credit-weighted GPA, total credits, and quality points.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Education",
+      "item": "https://janhazirr7.github.io/allinone/#education"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "GPA Calculator",
+      "item": "https://janhazirr7.github.io/allinone/gpa-calculator.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a GPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Grade Point Average (GPA) is a number, usually on a 0 to 4.0 scale, that summarises your grades across courses. Each letter grade is worth a set number of points, and your GPA is the credit-weighted average of those points: total quality points divided by total credit hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are quality points?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Quality points measure how much a single course contributes to your GPA. They equal the grade points for the letter grade multiplied by the course's credit hours. An A (4.0) in a 3-credit course earns 12 quality points, while the same A in a 1-credit course earns only 4."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a good GPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your goals, but generally a GPA of 3.5 or above is considered strong, 3.0 to 3.49 is good, and 2.0 is usually the minimum to stay in good academic standing. Competitive scholarships and graduate programmes often look for 3.5 or higher, alongside essays and recommendations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my GPA not a simple average of my grades?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because courses carry different credit hours. A 4-credit course should count more than a 1-credit course, so GPA weights each grade by its credits. Averaging letters without weighting would overstate easy, low-credit courses and understate demanding ones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator use my school's exact scale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It uses the standard 4.0 scale: A 4.0, A- 3.7, B+ 3.3, B 3.0, B- 2.7, C+ 2.3, C 2.0, C- 1.7, D 1.0, F 0.0. Some schools differ slightly, for example by offering A+ or no minus grades, so check your institution's scale for an official figure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my grade data stored anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The calculator runs entirely in your browser. Your grades and credit hours are never sent to a server or stored."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to use the GPA Calculator",
+  "description": "Calculate your GPA on the standard 4.0 scale. Add courses with letter grades and credit hours to get your credit-weighted GPA, total credits, and quality points.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Add your courses",
+      "text": "Add one row per course, pick its letter grade, and enter its credit hours."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calculate",
+      "text": "Press Calculate GPA to see your GPA, total credits, and quality points."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Plan ahead",
+      "text": "Change grades to model future semesters and see what you need for your target GPA."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="gpa-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-promedio.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#education">Education</a></li>
+<li aria-current="page">GPA Calculator</li>
+</ul></div></div>
+<section class="tool-header-section"><div class="container">
+<h1 class="tool-header-title">GPA Calculator</h1>
+<p class="tool-header-desc">Add your courses with letter grades and credit hours to calculate your GPA on the standard 4.0 scale, instantly and privately.</p>
+</div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container"><div><div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label class="form-label"><span>Your courses</span></label>
+              <span class="form-help">Add one row per course, pick the letter grade, and enter the credit hours. Three example courses are included to get you started.</span>
+              <div id="gpaRows" style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;"></div>
+              <div style="margin-top: 0.75rem;"><button type="button" id="addCourseBtn" class="btn btn-outline btn-sm">+ Add Course</button></div>
+              <template id="gpaRowTemplate"><div style="display: flex; gap: 0.5rem; align-items: stretch;">
+                <select class="form-select" style="flex: 1;" aria-label="Grade"><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D">D</option><option value="F">F</option></select>
+                <input type="number" class="form-input" style="flex: 1;" placeholder="3" min="0" step="0.5" aria-label="Credit hours">
+                <button type="button" class="btn btn-outline btn-sm" style="white-space: nowrap;">Remove</button>
+              </div></template>
+            </div>
+          </div>
+          <div id="gpaErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" id="calcGpaBtn" class="btn btn-primary">Calculate GPA</button>
+            <button type="button" id="resetGpaBtn" class="btn btn-outline">Reset</button>
+          </div>
+          <div id="gpaResultsBox" class="results-box"><div class="results-header"><span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Your GPA Result</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Your GPA (4.0 scale)</div>
+              <div class="hero-result-value" id="gpaValue">0.00</div>
+              <div class="hero-result-sub" id="gpaBandText">Credit-weighted average across all your courses.</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="gpaCreditsValue">0</div><div class="metric-label">Total credits</div></div>
+              <div class="metric-card"><div class="metric-value" id="gpaCoursesValue">0</div><div class="metric-label">Courses</div></div>
+              <div class="metric-card"><div class="metric-value" id="gpaPointsValue">0.0</div><div class="metric-label">Quality points</div></div>
+            </div>
+          </div>
+</div></div>
+<aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+<li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount &amp; Sales Tax Calculator <span>→</span></a></li>
+<li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age &amp; Milestone Calculator <span>→</span></a></li>
+<li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">How to Use the GPA Calculator</h2>
+        <p class="content-paragraph">Your Grade Point Average, or GPA, is a single number that summarises how well you have done across all your courses. Colleges, scholarship committees, and some employers use it as a quick measure of academic performance. This calculator works it out for you: add one row per course, choose the letter grade you earned, enter the credit hours, and press Calculate GPA. Your GPA, total credits, course count, and total quality points appear instantly.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Start with the example rows</strong>The calculator opens with three example courses. Change their grades and credit hours to match your own, or remove them and start fresh.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Add a row for every course</strong>Press Add Course for each additional subject. Include every graded course from the semester or period you are measuring, and leave out pass/fail courses unless your school counts them.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Enter credit hours honestly</strong>Credit hours reflect how much weight a course carries. A 4-credit laboratory science affects your GPA more than a 1-credit seminar, so copying the credits from your transcript matters.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Calculate and read the result</strong>Your GPA appears on the 4.0 scale, together with a plain-language description of what that range means, so you can see at a glance where you stand.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">The Standard 4.0 Grade Scale</h2>
+        <p class="content-paragraph">Most schools in the United States and many international programmes use the 4.0 scale below. Each letter grade is worth a fixed number of grade points, and plus and minus grades sit between the whole letters. An A is worth 4.0, an A-minus 3.7, a B-plus 3.3, and so on down to an F, which is worth zero. Some schools use slightly different values, for example an A-plus at 4.3 or no minus grades at all, so check your own institution's scale if your result needs to match an official transcript exactly. This calculator uses the widely taught standard scale, which is the right default for planning and estimates.</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Letter grade</th><th>Grade points</th><th>Meaning</th></tr></thead><tbody>
+        <tr><td><strong>A</strong></td><td>4.0</td><td>Excellent</td></tr>
+        <tr><td><strong>A-</strong></td><td>3.7</td><td>Excellent</td></tr>
+        <tr><td><strong>B+</strong></td><td>3.3</td><td>Good</td></tr>
+        <tr><td><strong>B</strong></td><td>3.0</td><td>Good</td></tr>
+        <tr><td><strong>B-</strong></td><td>2.7</td><td>Good</td></tr>
+        <tr><td><strong>C+</strong></td><td>2.3</td><td>Satisfactory</td></tr>
+        <tr><td><strong>C</strong></td><td>2.0</td><td>Satisfactory</td></tr>
+        <tr><td><strong>C-</strong></td><td>1.7</td><td>Satisfactory</td></tr>
+        <tr><td><strong>D</strong></td><td>1.0</td><td>Passing, but weak</td></tr>
+        <tr><td><strong>F</strong></td><td>0.0</td><td>Failing</td></tr>
+        </tbody></table></div>
+        <p class="content-paragraph">The GPA formula is a weighted average, not a simple average of grades. Each course contributes its grade points multiplied by its credit hours, and those products are called quality points. Add up all the quality points and divide by the total credit hours. For example, an A (4.0) in a 4-credit course, a B (3.0) in a 3-credit course, and a C (2.0) in a 3-credit course give quality points of 16, 9, and 6, a total of 31, divided by 10 credits, which is a GPA of 3.10. Notice that the 4-credit A pulls the average up more than the 3-credit C pulls it down, which is exactly why weighting by credits is fairer than averaging letters alone.</p>
+        <div class="formula-box"><div class="formula-expression">GPA = total quality points / total credit hours<br>Quality points for one course = grade points x credit hours</div><div class="formula-explanation">Worked example: (4.0 x 4) + (3.0 x 3) + (2.0 x 3) = 16 + 9 + 6 = 31 quality points. 31 / 10 credits = 3.10 GPA.</div></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Weighted vs. Unweighted GPA, and How to Raise Yours</h2>
+        <p class="content-paragraph">An unweighted GPA caps every course at 4.0, no matter how hard it is. A weighted GPA gives extra points for honours, Advanced Placement, or International Baccalaureate courses, sometimes up to 5.0, to reward students who take harder classes. This calculator computes an unweighted GPA on the standard 4.0 scale, which is the figure most colleges ask for first; if your school reports a weighted GPA, treat this result as the unweighted baseline and check how your school adds its bonus points.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Focus on high-credit courses</h4><p class="example-card-body">Because GPA is credit-weighted, improving a 4-credit course moves your GPA twice as much as improving a 2-credit one. Put extra study time where the credits are.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Think in semesters, not single grades</h4><p class="example-card-body">One low grade hurts less as you accumulate credits. Run the calculator with your current GPA plus planned future grades to see what you need next semester to reach your target.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Retakes and grade replacement</h4><p class="example-card-body">Some schools replace a failed grade when you retake a course, while others average both attempts. Ask your registrar which policy applies before assuming a retake erases the old grade.</p></div>
+        </div>
+        <p class="content-paragraph">A GPA is a useful summary, but it is not the whole story of a student. Admissions officers also read essays, recommendations, and the difficulty of your courses, and a rising trend across semesters often impresses more than a flat average. Use this calculator to plan and to check your progress, and keep the bigger picture in mind. All calculations run privately in your browser, so your grades are never sent to a server or stored anywhere.</p>
+      </section>
+<section class="content-section"><h2 class="content-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Frequently Asked Questions (FAQs)</h2>
+<div class="faq-list">
+<details class="faq-item" open>
+<summary class="faq-question">What is a GPA?</summary>
+<div class="faq-answer">A Grade Point Average (GPA) is a number, usually on a 0 to 4.0 scale, that summarises your grades across courses. Each letter grade is worth a set number of points, and your GPA is the credit-weighted average of those points: total quality points divided by total credit hours.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">What are quality points?</summary>
+<div class="faq-answer">Quality points measure how much a single course contributes to your GPA. They equal the grade points for the letter grade multiplied by the course's credit hours. An A (4.0) in a 3-credit course earns 12 quality points, while the same A in a 1-credit course earns only 4.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">What is a good GPA?</summary>
+<div class="faq-answer">It depends on your goals, but generally a GPA of 3.5 or above is considered strong, 3.0 to 3.49 is good, and 2.0 is usually the minimum to stay in good academic standing. Competitive scholarships and graduate programmes often look for 3.5 or higher, alongside essays and recommendations.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Why is my GPA not a simple average of my grades?</summary>
+<div class="faq-answer">Because courses carry different credit hours. A 4-credit course should count more than a 1-credit course, so GPA weights each grade by its credits. Averaging letters without weighting would overstate easy, low-credit courses and understate demanding ones.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Does this calculator use my school's exact scale?</summary>
+<div class="faq-answer">It uses the standard 4.0 scale: A 4.0, A- 3.7, B+ 3.3, B 3.0, B- 2.7, C+ 2.3, C 2.0, C- 1.7, D 1.0, F 0.0. Some schools differ slightly, for example by offering A+ or no minus grades, so check your institution's scale for an official figure.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Is my grade data stored anywhere?</summary>
+<div class="faq-answer">No. The calculator runs entirely in your browser. Your grades and credit hours are never sent to a server or stored.</div>
+</details>
+</div>
+</section></article></main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+<li><a href="bmi-calculator.html">BMI Tracker</a></li>
+<li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+<li><a href="password-generator.html">Password Generator</a></li>
+<li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+<li><a href="discount-calculator.html">Discount Calculator</a></li>
+<li><a href="unit-converter.html">Unit Converter</a></li>
+<li><a href="date-calculator.html">Date Difference</a></li>
+<li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="gpa-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-promedio.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+
+(function() {
+  var MSG = {"invalid": "Please add at least one course with a valid grade and credit hours.", "badCredits": "Credit hours must be greater than 0 and no more than 12 per course.", "badGrade": "Please choose a valid grade for every course.", "bandA": "Excellent work: outstanding achievement.", "bandB": "Good work: above-average achievement.", "bandC": "Satisfactory work: average achievement.", "bandD": "Passing, but weak: room to improve.", "bandF": "Below passing: seek academic support."};
+  var GRADE_POINTS = {'A': 4.0, 'A-': 3.7, 'B+': 3.3, 'B': 3.0, 'B-': 2.7, 'C+': 2.3, 'C': 2.0, 'C-': 1.7, 'D': 1.0, 'F': 0.0};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  function gradePoints(letter) { return GRADE_POINTS[letter]; }
+  function computeGPA(courses) {
+    if (!courses || courses.length === 0) { throw new Error(MSG.invalid); }
+    var points = 0, credits = 0;
+    for (var i = 0; i < courses.length; i++) {
+      var gp = GRADE_POINTS[courses[i].grade];
+      if (gp === undefined) { throw new Error(MSG.badGrade); }
+      var cr = courses[i].credits;
+      if (!(cr > 0) || cr > 12) { throw new Error(MSG.badCredits); }
+      points += gp * cr; credits += cr;
+    }
+    if (credits === 0) { throw new Error(MSG.invalid); }
+    return { gpa: points / credits, credits: credits, points: points, count: courses.length };
+  }
+  function gpaBand(gpa) {
+    if (gpa >= 3.7) return MSG.bandA;
+    if (gpa >= 3.0) return MSG.bandB;
+    if (gpa >= 2.0) return MSG.bandC;
+    if (gpa >= 1.0) return MSG.bandD;
+    return MSG.bandF;
+  }
+  window.OmniTest = { gradePoints: gradePoints, computeGPA: computeGPA, gpaBand: gpaBand, GRADE_POINTS: GRADE_POINTS };
+  function showError(m) { var b = document.getElementById('gpaErrorBox'); if (b) { b.textContent = m; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('gpaErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function addCourseRow(grade, credits) {
+    var container = document.getElementById('gpaRows');
+    if (!container) return;
+    var tpl = document.getElementById('gpaRowTemplate');
+    var row;
+    if (tpl && tpl.content && tpl.content.cloneNode) {
+      var frag = tpl.content.cloneNode(true);
+      row = frag.querySelector ? frag.querySelector('div') : null;
+      if (!row) { row = document.createElement('div'); }
+    } else {
+      row = document.createElement('div');
+      row.style.display = 'flex'; row.style.gap = '0.5rem';
+      var sel = document.createElement('select'); sel.className = 'form-select';
+      var grades = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D', 'F'];
+      for (var i = 0; i < grades.length; i++) { var o = document.createElement('option'); o.value = grades[i]; o.textContent = grades[i]; sel.appendChild(o); }
+      var inp = document.createElement('input'); inp.className = 'form-input'; inp.type = 'number';
+      var btn = document.createElement('button'); btn.className = 'btn btn-outline btn-sm'; btn.type = 'button';
+      btn.addEventListener('click', function() { if (row.parentNode) { row.parentNode.removeChild(row); } });
+      row.appendChild(sel); row.appendChild(inp); row.appendChild(btn);
+    }
+    var gradeSel = row.querySelector('select');
+    var creditInp = row.querySelector('input');
+    var removeBtn = row.querySelector('button');
+    if (gradeSel) gradeSel.value = grade || 'A';
+    if (creditInp) creditInp.value = (credits === undefined || credits === null) ? '3' : String(credits);
+    if (removeBtn) removeBtn.addEventListener('click', function() { if (row.parentNode) { row.parentNode.removeChild(row); } else if (container.removeChild) { try { container.removeChild(row); } catch (e) {} } });
+    container.appendChild(row);
+    return row;
+  }
+  window.calculateGPA = function() {
+    var container = document.getElementById('gpaRows');
+    var rows = container ? (container.children || container.querySelectorAll('div')) : [];
+    var courses = [];
+    for (var i = 0; i < rows.length; i++) {
+      var gs = rows[i].querySelector('select');
+      var ci = rows[i].querySelector('input');
+      courses.push({ grade: gs ? gs.value : '', credits: ci ? parseFloat(ci.value) : NaN });
+    }
+    var r;
+    try { r = computeGPA(courses); } catch (e) { showError(e.message); return; }
+    hideError();
+    document.getElementById('gpaValue').textContent = r.gpa.toFixed(2);
+    document.getElementById('gpaBandText').textContent = gpaBand(r.gpa);
+    document.getElementById('gpaCreditsValue').textContent = String(r.credits);
+    document.getElementById('gpaCoursesValue').textContent = String(r.count);
+    document.getElementById('gpaPointsValue').textContent = r.points.toFixed(1);
+    var box = document.getElementById('gpaResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetGPA = function() {
+    var container = document.getElementById('gpaRows');
+    if (container) container.innerHTML = '';
+    addCourseRow('A', 3); addCourseRow('B', 3); addCourseRow('C', 3);
+    hideError();
+    var box = document.getElementById('gpaResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var addBtn = document.getElementById('addCourseBtn');
+  if (addBtn) addBtn.addEventListener('click', function() { addCourseRow('A', 3); });
+  var calcBtn = document.getElementById('calcGpaBtn');
+  if (calcBtn) calcBtn.addEventListener('click', window.calculateGPA);
+  var resetBtn = document.getElementById('resetGpaBtn');
+  if (resetBtn) resetBtn.addEventListener('click', window.resetGPA);
+  addCourseRow('A', 3); addCourseRow('B', 3); addCourseRow('C', 3);
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Calculator - Best Bedtimes and Wake-Up Times | OmniTools</title>
+<meta name="description" content="Calculate the best bedtimes for your wake-up time, or the best wake-up times for your bedtime, using 90-minute sleep cycles.">
+<meta name="keywords" content="sleep calculator, best bedtime, sleep cycles, wake up time calculator">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/sleep-calculator.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/sleep-calculator.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-sueno.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/sleep-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/sleep-calculator.html">
+<meta property="og:title" content="Sleep Calculator | OmniTools">
+<meta property="og:description" content="Calculate the best bedtimes for your wake-up time, or the best wake-up times for your bedtime, using 90-minute sleep cycles.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-sleep-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sleep Calculator | OmniTools">
+<meta name="twitter:description" content="Calculate the best bedtimes for your wake-up time, or the best wake-up times for your bedtime, using 90-minute sleep cycles.">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools Sleep Calculator",
+  "url": "https://janhazirr7.github.io/allinone/sleep-calculator.html",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calculate the best bedtimes for your wake-up time, or the best wake-up times for your bedtime, using 90-minute sleep cycles.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Health",
+      "item": "https://janhazirr7.github.io/allinone/#health"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sleep Calculator",
+      "item": "https://janhazirr7.github.io/allinone/sleep-calculator.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why 90-minute sleep cycles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sleep runs in cycles of roughly 90 minutes, moving from light sleep to deep sleep and dreaming sleep. Waking at the end of a cycle, when sleep is lightest, usually feels easier than waking from deep sleep in the middle of a cycle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the calculator add 15 minutes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most people need some time to fall asleep after getting into bed. The calculator allows about 15 minutes for this, so the bedtime it shows is when to get into bed, with sleep starting roughly 15 minutes later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is six hours of sleep enough?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Four cycles, or six hours, is a short night and is not enough as a regular pattern for most adults, who need seven to nine hours. It is better than a half-finished cycle, but it should not become your normal target."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I work night shifts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The same maths applies at any hour. Enter the time you must wake, even if it is in the afternoon or evening, and the calculator counts backwards through your sleep window, wrapping across midnight where needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data stored anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This calculator runs entirely in your browser. Your times and mode choice are never sent to a server or stored by OmniTools."
+      }
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Sleep Calculator",
+  "description": "Calculate the best bedtimes for your wake-up time, or the best wake-up times for your bedtime, using 90-minute sleep cycles.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Choose a mode",
+      "text": "Choose wake-up mode or bedtime mode."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter your time",
+      "text": "Enter your wake-up time or bedtime in 24-hour format."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calculate",
+      "text": "Press Calculate Sleep to see times for four, five, and six cycles."
+    }
+  ]
+}</script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a href="index.html" class="brand-logo" aria-label="OmniTools Home"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
+<nav aria-label="Main Navigation"><ul class="nav-links"><li><a href="index.html">All Tools</a></li><li><a href="age-calculator.html">Age Calc</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Loan EMI</a></li><li><a href="about.html">About</a></li></ul></nav>
+<div class="nav-actions"><div class="lang-switcher" aria-label="Language Selector"><a href="sleep-calculator.html" class="lang-btn active" title="English">EN</a><a href="es/calculadora-de-sueno.html" class="lang-btn" title="Español">ES</a></div><button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button></div></div></header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">Home</a></li><li><a href="index.html#health">Health</a></li><li aria-current="page">Sleep Calculator</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">Sleep Calculator</h1><p class="tool-header-desc">Find bedtimes and wake-up times that end at the end of a complete sleep cycle, so you wake up feeling more rested.</p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container">
+<div><div class="tool-card-widget">
+<div class="widget-form-grid">
+<div class="form-group"><label class="form-label" for="sleepMode"><span>Mode</span></label><select id="sleepMode" class="form-select" onchange="toggleSleepMode()"><option value="wake" selected>I want to wake at a time: when should I go to bed?</option><option value="bed">I am going to bed at a time: when should I wake up?</option></select></div>
+<div id="wakeGroup" class="form-group"><label class="form-label" for="wakeTime"><span>Wake-up time</span><span class="label-hint">Required</span></label><input type="time" id="wakeTime" class="form-input" value="07:00"><span class="form-help">The time you need to get up</span></div>
+<div id="bedGroup" class="form-group" style="display:none;"><label class="form-label" for="bedTime"><span>Bedtime</span><span class="label-hint">Required</span></label><input type="time" id="bedTime" class="form-input" value="23:00"><span class="form-help">The time you plan to fall asleep</span></div>
+</div><p style="font-size:0.875rem;color:#64748b;margin-top:-0.5rem;">The calculation allows about 15 minutes to fall asleep and uses 90-minute sleep cycles.</p>
+<div id="sleepErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateSleepUI()">Calculate Sleep</button><button type="button" class="btn btn-outline" onclick="resetSleep()">Reset</button></div>
+<div id="sleepResultsBox" class="results-box">
+<div class="results-header"><span class="results-title">Your best times</span><button type="button" class="btn btn-outline btn-sm" id="copySleepBtn">Copy Summary</button></div>
+<div class="hero-result-card"><div class="hero-result-label" id="sleepHeroLabel">Best bedtime</div><div class="hero-result-value" id="sleepHeroValue">--:--</div><div class="hero-result-sub" id="sleepHeroSub"></div></div>
+<div class="milestones-wrapper"><div class="milestones-title">All options (90-minute cycles)</div><ul class="milestones-list" id="sleepOptionsList"></ul></div>
+<p style="font-size:0.875rem;color:#334155;line-height:1.6;">Waking at the end of a cycle usually feels better than waking in the middle of deep sleep. If you can only sleep a short time, choose the largest number of complete cycles that fits, not a half-finished cycle.</p>
+</div>
+</div></div>
+<aside><div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement"><span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="bmr-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMR & Calorie Calculator <span>→</span></a></li><li><a href="water-intake-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Water Intake Calculator <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age Calculator <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li></ul></div></aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section"><h2 class="content-heading">How to use the sleep calculator</h2><p class="content-paragraph">Sleep does not happen in one smooth block. It runs in cycles of roughly ninety minutes, moving from light sleep into deep sleep and then into dreaming sleep, before starting again. Waking up at the end of a cycle, when sleep is lightest, usually feels much easier than being dragged out of deep sleep in the middle of a cycle, even if the total time asleep is slightly shorter. This calculator works backwards or forwards from the time you give it, in whole ninety-minute cycles, and it adds about fifteen minutes for falling asleep, because most people do not fall asleep the instant their head touches the pillow.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>Choose a mode</strong>Pick wake-up mode if you must get up at a fixed time, for work or school. Pick bedtime mode if you know when you will go to bed and want the best times to set your alarm.</div></li><li class="step-item"><div class="step-item-content"><strong>Enter your time</strong>Use the time picker to enter your wake-up time or bedtime in 24-hour format. The calculator handles times that cross midnight automatically.</div></li><li class="step-item"><div class="step-item-content"><strong>Compare four, five, and six cycles</strong>Four cycles is six hours of sleep, five is seven and a half hours, and six is nine hours. Most adults need seven to nine hours, so five or six cycles is the usual target.</div></li><li class="step-item"><div class="step-item-content"><strong>Pick the longest option you can actually keep</strong>The best bedtime is the one that gives you the most complete cycles and that you can repeat most nights, not a perfect time you only manage once a week.</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">How the calculation works</h2><p class="content-paragraph">The maths is deliberately simple and transparent. For a wake-up time, the calculator subtracts fifteen minutes for falling asleep, then subtracts ninety minutes per cycle. For a bedtime, it adds the same fifteen minutes and then ninety minutes per cycle. The fifteen-minute falling-asleep allowance is an average, not a personal measurement: some people fall asleep in five minutes and others need thirty, so if you know your own pattern, shift the result by that difference. The ninety-minute cycle is also an average. Real cycles vary between about seventy and 110 minutes and change through the night, but ninety minutes is the standard figure used by sleep calculators and it gives a useful target.</p><div class="formula-box"><div class="formula-expression">Bedtime = wake-up time - 15 minutes - (cycles x 90 minutes)</div><div class="formula-expression">Wake-up time = bedtime + 15 minutes + (cycles x 90 minutes)</div><div class="formula-explanation">Example: to wake at 07:00 with six cycles, 07:00 - 15 minutes - 540 minutes = 21:45 the previous evening. With five cycles it is 23:15, and with four cycles it is 00:45. Going to bed at 23:00 gives wake-up options of 05:15 (four cycles), 06:45 (five cycles), and 08:15 (six cycles).</div></div><p class="content-paragraph">Times that cross midnight are handled by wrapping around the 24-hour clock. A bedtime of 21:45 means the evening before your 07:00 alarm, not the same calendar day, and the calculator shows the clock time you need rather than a date. If you work night shifts, the same logic applies: enter the time you must wake, whatever hour that is, and the calculator will count backwards through your sleep window correctly.</p></section>
+<section class="content-section"><h2 class="content-heading">How much sleep do adults really need</h2><p class="content-paragraph">Most healthy adults need seven to nine hours of sleep per night, which is roughly five to six full cycles. Some adults function well on slightly less and others genuinely need more, and the right amount also changes with illness, heavy training, stress, and age. Teenagers need more than adults, typically eight to ten hours, while older adults often sleep a little less at night but may nap during the day. The number that matters is how you function: if you need an alarm and caffeine to get through the morning, fall asleep quickly whenever you sit still, or feel foggy most days, you are probably not getting enough, whatever the calculator says.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>Cycles</th><th>Sleep time</th><th>Who it suits</th></tr></thead><tbody><tr><td><strong>4 cycles</strong></td><td>6 hours</td><td>Short night only; not enough as a regular pattern for most adults</td></tr><tr><td><strong>5 cycles</strong></td><td>7.5 hours</td><td>Good regular target for many adults</td></tr><tr><td><strong>6 cycles</strong></td><td>9 hours</td><td>Good for people who need more sleep, are ill, or train hard</td></tr></tbody></table></div><p class="content-paragraph">Short sleep is not made up by one long lie-in at the weekend. Sleep debt can be partly repaid, but irregular bedtimes also confuse your body clock, which is why sleep experts stress regularity almost as much as duration. Going to bed and waking at similar times every day, including weekends as far as possible, helps your body expect sleep at the right time and makes falling asleep faster.</p></section>
+<section class="content-section"><h2 class="content-heading">Making the bedtime actually work</h2><p class="content-paragraph">A calculated bedtime only helps if you can fall asleep near it. Bright screens, caffeine late in the day, alcohol, and a hot or noisy bedroom all delay sleep or break it up, even if you are in bed on time. Caffeine can stay in your system for six hours or more, so an afternoon coffee can still be working at midnight. Alcohol may make you drowsy at first but it fragments sleep later in the night, which is why you can sleep eight hours after drinking and still wake up tired. A cool, dark, quiet room and a short wind-down routine, reading or stretching instead of scrolling, give the fifteen-minute falling-asleep allowance a realistic chance.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. Set a wind-down alarm</h4><p class="example-card-body">Set an alarm thirty minutes before bedtime to stop work and screens. Without it, the bedtime you calculated is easy to miss by an hour without noticing.</p></div><div class="example-card"><h4 class="example-card-title">2. Keep the same wake time</h4><p class="example-card-body">If you can only fix one time, fix wake-up time. A steady wake time anchors your body clock and makes bedtime naturally earlier over a few days.</p></div><div class="example-card"><h4 class="example-card-title">3. Do not watch the clock</h4><p class="example-card-body">If you cannot sleep, lying there calculating the hours left usually makes it worse. Get up, do something calm in low light, and return when you feel sleepy.</p></div></div><p class="content-paragraph">This calculator is an educational planning tool, not a medical device. If you snore loudly, stop breathing during sleep, regularly cannot fall asleep for weeks, fall asleep uncontrollably during the day, or feel exhausted despite enough time in bed, talk to a doctor. Those patterns can point to sleep apnoea, insomnia, or another sleep disorder that a bedtime calculator cannot diagnose or treat.</p></section>
+<section class="content-section"><h2 class="content-heading">Frequently Asked Questions (FAQs)</h2><div class="faq-list"><details class="faq-item" open><summary class="faq-question">Why 90-minute sleep cycles?</summary><div class="faq-answer">Sleep runs in cycles of roughly 90 minutes, moving from light sleep to deep sleep and dreaming sleep. Waking at the end of a cycle, when sleep is lightest, usually feels easier than waking from deep sleep in the middle of a cycle.</div></details><details class="faq-item"><summary class="faq-question">Why does the calculator add 15 minutes?</summary><div class="faq-answer">Most people need some time to fall asleep after getting into bed. The calculator allows about 15 minutes for this, so the bedtime it shows is when to get into bed, with sleep starting roughly 15 minutes later.</div></details><details class="faq-item"><summary class="faq-question">Is six hours of sleep enough?</summary><div class="faq-answer">Four cycles, or six hours, is a short night and is not enough as a regular pattern for most adults, who need seven to nine hours. It is better than a half-finished cycle, but it should not become your normal target.</div></details><details class="faq-item"><summary class="faq-question">What if I work night shifts?</summary><div class="faq-answer">The same maths applies at any hour. Enter the time you must wake, even if it is in the afternoon or evening, and the calculator counts backwards through your sleep window, wrapping across midnight where needed.</div></details><details class="faq-item"><summary class="faq-question">Is my data stored anywhere?</summary><div class="faq-answer">No. This calculator runs entirely in your browser. Your times and mode choice are never sent to a server or stored by OmniTools.</div></details></div></section>
+</article>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p></div>
+<div><h4 class="footer-heading">Trending Tools</h4><ul class="footer-links"><li><a href="age-calculator.html">Age Calculator</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Loan EMI Calculator</a></li><li><a href="password-generator.html">Password Generator</a></li><li><a href="word-counter.html">Word Counter</a></li></ul></div>
+<div><h4 class="footer-heading">Utilities</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Percentage Calculator</a></li><li><a href="discount-calculator.html">Discount Calculator</a></li><li><a href="unit-converter.html">Unit Converter</a></li><li><a href="date-calculator.html">Date Difference</a></li><li><a href="case-converter.html">Text Case Converter</a></li></ul></div>
+<div><h4 class="footer-heading">Legal & Info</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p><div class="footer-lang-select"><span>Language:</span><a href="sleep-calculator.html" style="color: #60a5fa;">English</a> | <a href="es/calculadora-de-sueno.html">Español</a></div></div></div></footer>
+<script>
+function parseTimeToMinutes(s) {
+  if (typeof s !== "string") return null;
+  var parts = s.split(":");
+  if (parts.length !== 2) return null;
+  var h = parseInt(parts[0], 10), m = parseInt(parts[1], 10);
+  if (isNaN(h) || isNaN(m) || h < 0 || h > 23 || m < 0 || m > 59) return null;
+  return h * 60 + m;
+}
+function minutesToTime(total) {
+  total = ((total % 1440) + 1440) % 1440;
+  var h = Math.floor(total / 60), m = total % 60;
+  return (h < 10 ? "0" + h : "" + h) + ":" + (m < 10 ? "0" + m : "" + m);
+}
+function bedtimesForWake(wakeStr) {
+  var wake = parseTimeToMinutes(wakeStr);
+  if (wake === null) return null;
+  var out = [];
+  [6, 5, 4].forEach(function(c) { out.push({ cycles: c, time: minutesToTime(wake - 15 - c * 90), hours: (c * 90) / 60 }); });
+  return out;
+}
+function wakeTimesForBed(bedStr) {
+  var bed = parseTimeToMinutes(bedStr);
+  if (bed === null) return null;
+  var out = [];
+  [4, 5, 6].forEach(function(c) { out.push({ cycles: c, time: minutesToTime(bed + 15 + c * 90), hours: (c * 90) / 60 }); });
+  return out;
+}
+// --- DOM ---
+ (function() {
+  var t = document.querySelector(".mobile-nav-toggle"); var n = document.querySelector(".nav-links");
+  if (t && n) t.addEventListener("click", function(){ n.classList.toggle("active"); });
+  window.toggleSleepMode = function() {
+    var mode = document.getElementById("sleepMode").value;
+    document.getElementById("wakeGroup").style.display = mode === "wake" ? "block" : "none";
+    document.getElementById("bedGroup").style.display = mode === "bed" ? "block" : "none";
+  };
+  window.calculateSleepUI = function() {
+    var errBox = document.getElementById("sleepErrorBox"), res = document.getElementById("sleepResultsBox");
+    var mode = document.getElementById("sleepMode").value;
+    var opts = mode === "wake" ? bedtimesForWake(document.getElementById("wakeTime").value) : wakeTimesForBed(document.getElementById("bedTime").value);
+    if (opts === null) { errBox.textContent = "Please enter a valid time in 24-hour format (HH:MM)."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    errBox.style.display = "none";
+    var best = mode === "wake" ? opts[0] : opts[opts.length - 1];
+    document.getElementById("sleepHeroLabel").textContent = mode === "wake" ? "Best bedtime" : "Best wake-up time";
+    document.getElementById("sleepHeroValue").textContent = best.time;
+    document.getElementById("sleepHeroSub").textContent = best.cycles + " cycles (" + best.hours + " hours of sleep)";
+    var list = document.getElementById("sleepOptionsList"); list.innerHTML = "";
+    opts.forEach(function(o) {
+      var li = document.createElement("li"); li.className = "milestone-item";
+      li.innerHTML = '<span class="milestone-item-name">' + o.cycles + ' cycles</span><span class="milestone-item-val">' + o.time + " (" + o.hours + " hours of sleep)" + "</span>";
+      list.appendChild(li);
+    });
+    var cb = document.getElementById("copySleepBtn");
+    if (cb) cb.setAttribute("data-summary", "Sleep options: " + opts.map(function(o){ return o.cycles + " cycles: " + o.time; }).join(", "));
+    if (res) { res.classList.add("active"); res.style.display = "block"; }
+  };
+  window.resetSleep = function() {
+    var e=document.getElementById("sleepErrorBox"); if(e) e.style.display="none";
+    var r=document.getElementById("sleepResultsBox"); if(r){ r.classList.remove("active"); r.style.display="none"; }
+  };
+  var cb=document.getElementById("copySleepBtn");
+  if (cb) cb.addEventListener("click", function(){ var s=cb.getAttribute("data-summary"); if(s && navigator.clipboard) navigator.clipboard.writeText(s).catch(function(){}); });
+})();
+</script>
+</body>
+</html>

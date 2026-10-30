@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roman Numeral Converter - Convert Numbers to Roman Numerals &amp; Back | OmniTools</title>
+  <meta name="description" content="Convert numbers 1-3999 to Roman numerals and Roman numerals back to numbers, with validation that rejects invalid forms like IIII or VV. Free and instant.">
+  <meta name="keywords" content="roman numeral converter, number to roman numerals, roman to number, convert to roman numerals, roman numerals chart">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/roman-numeral-converter.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/roman-numeral-converter.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-numeros-romanos.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/roman-numeral-converter.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/roman-numeral-converter.html">
+  <meta property="og:title" content="Roman Numeral Converter - Convert Numbers to Roman Numerals &amp; Back | OmniTools">
+  <meta property="og:description" content="Convert numbers 1-3999 to Roman numerals and Roman numerals back to numbers, with validation that rejects invalid forms like IIII or VV. Free and instant.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-roman-numeral-converter.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roman Numeral Converter - Convert Numbers to Roman Numerals &amp; Back | OmniTools">
+  <meta name="twitter:description" content="Convert numbers 1-3999 to Roman numerals and Roman numerals back to numbers, with validation that rejects invalid forms like IIII or VV. Free and instant.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Roman Numeral Converter",
+    "url": "https://janhazirr7.github.io/allinone/roman-numeral-converter.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Convert numbers 1-3999 to Roman numerals and Roman numerals back to numbers, with validation that rejects invalid forms like IIII or VV. Free and instant.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 2, "name": "Math Tools", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 3, "name": "Roman Numeral Converter", "item": "https://janhazirr7.github.io/allinone/roman-numeral-converter.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How do I convert 2024 to Roman numerals?", "acceptedAnswer": {"@type": "Answer", "text": "Break 2024 into 2000 + 20 + 4. That gives MM + XX + IV, so 2024 is MMXXIV. This converter shows the same breakdown automatically for any number you enter."}},
+      {"@type": "Question", "name": "Why is IIII rejected when some clocks use it?", "acceptedAnswer": {"@type": "Answer", "text": "In standard Roman numerals, I may repeat at most three times, so 4 is IV, not IIII. Clock faces are a traditional exception kept for visual symmetry, but IIII is not correct standard form, so the converter rejects it."}},
+      {"@type": "Question", "name": "What is the largest number this converter handles?", "acceptedAnswer": {"@type": "Answer", "text": "3999 (MMMCMXCIX). The classical system has no symbol above M (1000), so 3999 is the largest value writable with the standard rules. There is also no Roman zero."}},
+      {"@type": "Question", "name": "What does XLIX mean?", "acceptedAnswer": {"@type": "Answer", "text": "XLIX means 49. XL is 40 (50 minus 10) and IX is 9 (10 minus 1), so 40 + 9 = 49. Writing IL for 49 is invalid because I may only be subtracted from V and X."}},
+      {"@type": "Question", "name": "Can I enter lowercase Roman numerals?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lowercase input such as mmxxiv is converted to uppercase automatically before conversion, so it works exactly like MMXXIV."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Roman Numeral Converter - Convert Numbers to Roman Numerals &amp; Back | OmniTools",
+    "description": "Convert numbers 1-3999 to Roman numerals and Roman numerals back to numbers, with validation that rejects invalid forms like IIII or VV. Free and instant.",
+    "step": [
+        {"@type": "HowToStep", "name": "Enter a number or a Roman numeral", "text": "Type a whole number from 1 to 3999, or a Roman numeral such as MMXXIV."},
+        {"@type": "HowToStep", "name": "Press the matching convert button", "text": "Use Convert to Roman for numbers, or Convert to Number for Roman numerals."},
+        {"@type": "HowToStep", "name": "Read the result and breakdown", "text": "See the converted value plus how it is built from its symbols."}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="roman-numeral-converter.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/conversor-de-numeros-romanos.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="https://janhazirr7.github.io/allinone/">Home</a></li>
+          <li><a href="index.html">All Tools</a></li>
+          <li aria-current="page">Roman Numeral Converter</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Roman Numeral Converter</h1>
+        <p class="tool-header-desc">Convert numbers 1-3999 to Roman numerals and Roman numerals back to numbers, with validation that rejects invalid forms like IIII or VV. Free and instant.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+          <div class="widget-form-grid">
+            <div class="form-group">
+              <label for="romanNumber" class="form-label"><span>Number (1–3999)</span><span class="label-hint">1–3999</span></label>
+              <input type="number" id="romanNumber" class="form-input" placeholder="e.g. 2024" min="1" max="3999" step="1">
+              <span class="form-help">Enter a whole number from 1 to 3999</span>
+            </div>
+            <div class="form-group">
+              <label for="romanText" class="form-label"><span>Roman numeral</span></label>
+              <input type="text" id="romanText" class="form-input" placeholder="e.g. MMXXIV" maxlength="15" style="text-transform: uppercase;">
+              <span class="form-help">Example: XIV, MCMLXXXIV</span>
+            </div>
+          </div>
+          <div id="romanErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="convertToRoman()">Convert to Roman</button>
+            <button type="button" class="btn btn-primary" onclick="convertToNumber()">Convert to Number</button>
+            <button type="button" class="btn btn-outline" onclick="resetRoman()">Reset</button>
+          </div>
+          <div id="romanResultsBox" class="results-box">
+            <div class="results-header"><span class="results-title">Conversion Result</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Result</div>
+              <div class="hero-result-value" id="romanHeroValue">-</div>
+              <div class="hero-result-sub" id="romanHeroSub"></div>
+            </div>
+            <div class="metrics-grid" style="margin-bottom: 0;">
+              <div class="metric-card"><div class="metric-value" id="romanMetric1">-</div><div class="metric-label" id="romanMetric1Label">-</div></div>
+              <div class="metric-card"><div class="metric-value" id="romanMetric2">-</div><div class="metric-label" id="romanMetric2Label">-</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li><li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount & Sales Tax Calculator <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">How to Use the Roman Numeral Converter</h2>
+        <p class="content-paragraph">Roman numerals are the number system of ancient Rome, still used today on clock faces, book chapters, movie credits, and monuments. This converter works in both directions: type a regular number from 1 to 3999 to see it in Roman numerals, or type a Roman numeral to find out what number it represents. Both directions validate your input and explain mistakes in plain language, so it is also a handy learning tool for students.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Number to Roman</strong>Type a whole number between 1 and 3999 in the first box, for example 2024, and press Convert to Roman. The result appears with a breakdown showing how the number is built from Roman symbols.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Roman to number</strong>Type a Roman numeral in the second box, for example MMXXIV, and press Convert to Number. Lowercase letters work too; they are converted automatically.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Check the error message if one appears</strong>Invalid forms such as IIII, VV, or IL are rejected with an explanation, because real Roman numerals follow strict rules about repetition and subtraction.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">The Seven Symbols and the Rules That Govern Them</h2>
+        <p class="content-paragraph">The whole system uses just seven letters. I stands for 1, V for 5, X for 10, L for 50, C for 100, D for 500, and M for 1000. Symbols are normally written from largest to smallest and added together, so XVI means 10 + 5 + 1 = 16. The clever part is subtraction: when a smaller symbol appears before a larger one, it is subtracted instead. That is how IV means 4 (5 minus 1) rather than 6, and how XC means 90 (100 minus 10). Only six subtractive pairs are allowed: IV (4), IX (9), XL (40), XC (90), CD (400), and CM (900).</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Symbol</th><th>Value</th><th>Subtractive pair</th><th>Value</th></tr></thead><tbody>
+        <tr><td><strong>I</strong></td><td>1</td><td>IV</td><td>4</td></tr>
+        <tr><td><strong>V</strong></td><td>5</td><td>IX</td><td>9</td></tr>
+        <tr><td><strong>X</strong></td><td>10</td><td>XL</td><td>40</td></tr>
+        <tr><td><strong>L</strong></td><td>50</td><td>XC</td><td>90</td></tr>
+        <tr><td><strong>C</strong></td><td>100</td><td>CD</td><td>400</td></tr>
+        <tr><td><strong>D</strong></td><td>500</td><td>CM</td><td>900</td></tr>
+        <tr><td><strong>M</strong></td><td>1000</td><td>—</td><td>—</td></tr>
+        </tbody></table></div>
+        <p class="content-paragraph">Three more rules keep the system unambiguous. First, I, X, C, and M may be repeated at most three times in a row, so 3 is III but 4 is never IIII. Second, V, L, and D are never repeated, because VV would simply be X and LL would be C. Third, a smaller symbol may only be subtracted from the next two larger values: I can precede V or X, X can precede L or C, and C can precede D or M. That is why IL is wrong for 49; the correct form is XLIX, which is 40 + 9. These rules are exactly what this converter checks, which is why it rejects IIII, VV, IL, and similar forms that sometimes appear on souvenirs or in films.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Converting Step by Step: The Example of 2024</h2>
+        <p class="content-paragraph">Converting a number to Roman numerals is easiest by breaking it into thousands, hundreds, tens, and ones, then converting each part separately. Take 2024. The thousands part is 2000, written MM. The hundreds part is 0, so nothing is written. The tens part is 20, written XX. The ones part is 4, written IV. Put them together and you get MMXXIV. Try the same method on 1984: 1000 is M, 900 is CM, 80 is LXXX, and 4 is IV, giving MCMLXXXIV. Going the other way works by reading left to right and adding each symbol, except when a smaller symbol sits before a larger one, in which case you subtract it: in MCMLXXXIV, the C before M means subtract 100 from 1000, giving 900.</p>
+        <p class="content-paragraph">Why does the converter stop at 3999? The classical system has no symbol larger than M (1000), and the largest number that can be written with the standard rules is 3999, or MMMCMXCIX. Larger numbers in ancient Rome were sometimes written with a bar over a symbol to multiply it by 1000, but that notation is not part of everyday use and is hard to type, so most converters and textbooks use 1 to 3999. There is also no Roman zero, because the system was built for counting and recording quantities, not for the place-value arithmetic that zero makes possible. That is one reason the Hindu-Arabic system eventually replaced it for mathematics, while Roman numerals survived for decoration, tradition, and numbering.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Where Roman Numerals Still Appear Today</h2>
+        <p class="content-paragraph">You will meet Roman numerals more often than you might expect. Clock faces traditionally use IIII for 4 rather than IV, a deliberate exception kept for visual symmetry with VIII on the opposite side. Films and television shows stamp their copyright year in Roman numerals at the end of the credits. Books number their introductory pages in lowercase Roman numerals, monarchs and popes take Roman regnal numbers, and major sporting events such as the Super Bowl are numbered this way. Knowing how to read them turns a confusing string of letters on a building or a monument into a date you can understand at a glance, which is exactly what this converter is for.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Frequently Asked Questions (FAQs)</h2>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">How do I convert 2024 to Roman numerals?</summary>
+            <div class="faq-answer">Break 2024 into 2000 + 20 + 4. That gives MM + XX + IV, so 2024 is MMXXIV. This converter shows the same breakdown automatically for any number you enter.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Why is IIII rejected when some clocks use it?</summary>
+            <div class="faq-answer">In standard Roman numerals, I may repeat at most three times, so 4 is IV, not IIII. Clock faces are a traditional exception kept for visual symmetry, but IIII is not correct standard form, so the converter rejects it.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">What is the largest number this converter handles?</summary>
+            <div class="faq-answer">3999 (MMMCMXCIX). The classical system has no symbol above M (1000), so 3999 is the largest value writable with the standard rules. There is also no Roman zero.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">What does XLIX mean?</summary>
+            <div class="faq-answer">XLIX means 49. XL is 40 (50 minus 10) and IX is 9 (10 minus 1), so 40 + 9 = 49. Writing IL for 49 is invalid because I may only be subtracted from V and X.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Can I enter lowercase Roman numerals?</summary>
+            <div class="faq-answer">Yes. Lowercase input such as mmxxiv is converted to uppercase automatically before conversion, so it works exactly like MMXXIV.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div><h4 class="footer-heading">Trending Tools</h4><ul class="footer-links"><li><a href="age-calculator.html">Age Calculator</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Loan EMI Calculator</a></li><li><a href="password-generator.html">Password Generator</a></li><li><a href="word-counter.html">Word Counter</a></li></ul></div>
+        <div><h4 class="footer-heading">Utilities</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Percentage Calculator</a></li><li><a href="discount-calculator.html">Discount Calculator</a></li><li><a href="unit-converter.html">Unit Converter</a></li><li><a href="date-calculator.html">Date Difference</a></li><li><a href="case-converter.html">Text Case Converter</a></li></ul></div>
+        <div><h4 class="footer-heading">Legal & Info</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="roman-numeral-converter.html" style="color: #60a5fa;">English</a> |
+          <a href="es/conversor-de-numeros-romanos.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+(function() {
+  var MSG = {"range": "Please enter a whole number between 1 and 3999.", "invalidRoman": "That is not a valid Roman numeral. Check the rules: for example, IIII or VV are not valid; 4 is written IV and 10 is written X.", "toRomanSub": "The number {n} in Roman numerals", "toNumSub": "The Roman numeral {r} as a number", "decLabel": "Decimal number", "romanLabel": "Roman numeral", "breakLabel": "Breakdown"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); });
+  }
+  var TABLE = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
+  var VALUES = { I:1, V:5, X:10, L:50, C:100, D:500, M:1000 };
+  function toRoman(num) {
+    if (!Number.isInteger(num) || num < 1 || num > 3999) return null;
+    var out = '', rest = num, parts = [];
+    TABLE.forEach(function(pair) {
+      while (rest >= pair[0]) { out += pair[1]; parts.push(pair[1]); rest -= pair[0]; }
+    });
+    return { roman: out, parts: parts };
+  }
+  function fromRoman(str) {
+    if (typeof str !== 'string') return null;
+    var s = str.trim().toUpperCase();
+    if (!s) return null;
+    if (!/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(s)) return null;
+    var total = 0;
+    for (var i = 0; i < s.length; i++) {
+      var v = VALUES[s[i]], next = VALUES[s[i + 1]];
+      total += (next && next > v) ? -v : v;
+    }
+    return total;
+  }
+  window.OmniTest = { toRoman: toRoman, fromRoman: fromRoman };
+  function showError(msg) { var b = document.getElementById('romanErrorBox'); if (b) { b.textContent = msg; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('romanErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function showResult(hero, sub, m1, l1, m2, l2) {
+    document.getElementById('romanHeroValue').textContent = hero;
+    document.getElementById('romanHeroSub').textContent = sub;
+    document.getElementById('romanMetric1').textContent = m1;
+    document.getElementById('romanMetric1Label').textContent = l1;
+    document.getElementById('romanMetric2').textContent = m2;
+    document.getElementById('romanMetric2Label').textContent = l2;
+    var box = document.getElementById('romanResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  }
+  window.convertToRoman = function() {
+    var n = parseInt(document.getElementById('romanNumber').value, 10);
+    if (isNaN(n) || n < 1 || n > 3999) { showError(MSG.range); return; }
+    hideError();
+    var r = toRoman(n);
+    showResult(r.roman, MSG.toRomanSub.replace('{n}', n), n, MSG.decLabel, r.parts.join(' + '), MSG.breakLabel);
+  };
+  window.convertToNumber = function() {
+    var s = document.getElementById('romanText').value;
+    var v = fromRoman(s);
+    if (v === null) { showError(MSG.invalidRoman); return; }
+    hideError();
+    showResult(String(v), MSG.toNumSub.replace('{r}', s.trim().toUpperCase()), s.trim().toUpperCase(), MSG.romanLabel, String(v), MSG.decLabel);
+  };
+  window.resetRoman = function() {
+    document.getElementById('romanNumber').value = '';
+    document.getElementById('romanText').value = '';
+    hideError();
+    var box = document.getElementById('romanResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var numEl = document.getElementById('romanNumber'), txtEl = document.getElementById('romanText');
+  if (numEl) numEl.addEventListener('keydown', function(e) { if (e.key === 'Enter') convertToRoman(); });
+  if (txtEl) txtEl.addEventListener('keydown', function(e) { if (e.key === 'Enter') convertToNumber(); });
+})();
+
+  </script>
+</body>
+</html>

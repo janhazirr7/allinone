@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Number Generator - Random Integers, Unique & Sorted | OmniTools</title>
+<meta name="description" content="Generate random integers in any range, with unique-only and sorted options. Perfect for raffles, sampling, games, and teaching. Free and private.">
+<meta name="keywords" content="random number generator, random integers, random picker, raffle number generator, unique random numbers, random number between">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/random-number-generator.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/random-number-generator.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/generador-de-numeros-aleatorios.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/random-number-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/random-number-generator.html">
+<meta property="og:title" content="Random Number Generator - Random Integers, Unique & Sorted | OmniTools">
+<meta property="og:description" content="Generate random integers in any range, with unique-only and sorted options. Perfect for raffles, sampling, games, and teaching. Free and private.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-random-number-generator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Random Number Generator - Random Integers, Unique & Sorted | OmniTools">
+<meta name="twitter:description" content="Generate random integers in any range, with unique-only and sorted options. Perfect for raffles, sampling, games, and teaching. Free and private.">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools Random Number Generator",
+  "url": "https://janhazirr7.github.io/allinone/random-number-generator.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Generate random integers in any range, with unique-only and sorted options. Perfect for raffles, sampling, games, and teaching. Free and private.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Utilities",
+      "item": "https://janhazirr7.github.io/allinone/#utilities"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Random Number Generator",
+      "item": "https://janhazirr7.github.io/allinone/random-number-generator.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are the numbers truly random?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are pseudo-random numbers from your browser's built-in generator. For giveaways, games, sampling, and teaching they behave exactly like true randomness: every value in your range has an equal chance. They are not suitable for cryptography or security codes, which need specialised hardware randomness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does unique numbers only mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It means no value repeats in the same set. If you ask for 5 unique numbers from 1 to 100, you get 5 different values. If you ask for more unique numbers than exist in the range, the tool shows an error instead of repeating a value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the minimum and maximum included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Both endpoints can appear. A range of 1 to 10 can produce 1, 10, or anything in between, and the number of possible values is maximum minus minimum plus 1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I generate the same set twice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each generation is independent, so repeating an exact set is possible by chance but unlikely for large ranges. There is no seed or history setting: every press of Generate Numbers starts fresh."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my generated data stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Numbers are generated locally in your browser and are never sent to a server or stored anywhere."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to use the Random Number Generator",
+  "description": "Generate random integers in any range, with unique-only and sorted options. Perfect for raffles, sampling, games, and teaching. Free and private.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Set the range",
+      "text": "Enter a minimum and a maximum; both are included."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Choose count and options",
+      "text": "Pick how many numbers, and tick unique-only or sorted if you need them."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Generate",
+      "text": "Press Generate Numbers, and copy the result if you need it elsewhere."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="random-number-generator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/generador-de-numeros-aleatorios.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#utilities">Utilities</a></li>
+<li aria-current="page">Random Number Generator</li>
+</ul></div></div>
+<section class="tool-header-section"><div class="container">
+<h1 class="tool-header-title">Random Number Generator</h1>
+<p class="tool-header-desc">Generate random integers in any range, with options for unique numbers only and sorted output, for raffles, sampling, and games.</p>
+</div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container"><div><div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="rngMin" class="form-label"><span>Minimum number</span><span class="label-hint">Required</span></label>
+                <input type="number" id="rngMin" class="form-input" placeholder="e.g. 1" step="1" value="1">
+                <span class="form-help">Both endpoints included: the minimum and maximum can both appear.</span>
+              </div>
+              <div class="form-group">
+                <label for="rngMax" class="form-label"><span>Maximum number</span><span class="label-hint">Required</span></label>
+                <input type="number" id="rngMax" class="form-input" placeholder="e.g. 100" step="1" value="100">
+                <span class="form-help">Both endpoints included: the minimum and maximum can both appear.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="rngCount" class="form-label"><span>How many numbers</span><span class="label-hint">Required</span></label>
+              <input type="number" id="rngCount" class="form-input" placeholder="e.g. 5" min="1" max="1000" step="1" value="5">
+              <span class="form-help">Between 1 and 1000 numbers per generation.</span>
+            </div>
+            <div class="form-group">
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; font-weight: 500; cursor: pointer;"><input type="checkbox" id="rngUnique" style="width: 1.1rem; height: 1.1rem;"> Unique numbers only (no repeats)</label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; font-weight: 500; cursor: pointer;"><input type="checkbox" id="rngSorted" style="width: 1.1rem; height: 1.1rem;"> Sort results smallest to largest</label>
+            </div>
+          </div>
+          <div id="rngErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" id="genRngBtn" class="btn btn-primary">Generate Numbers</button>
+            <button type="button" id="resetRngBtn" class="btn btn-outline">Reset</button>
+          </div>
+          <div id="rngResultsBox" class="results-box"><div class="results-header"><span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Generated Numbers</span></div>
+            <div class="hero-result-card" style="text-align: left;">
+              <div class="hero-result-label">Generated Numbers</div>
+              <div id="rngNumbers" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem;"></div>
+              <div class="hero-result-sub" style="margin-top: 1rem;"><button type="button" id="copyRngBtn" class="btn btn-outline btn-sm">Copy Numbers</button></div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="rngCountOut">0</div><div class="metric-label">Numbers generated</div></div>
+              <div class="metric-card"><div class="metric-value" id="rngMinOut">-</div><div class="metric-label">Smallest</div></div>
+              <div class="metric-card"><div class="metric-value" id="rngMaxOut">-</div><div class="metric-label">Largest</div></div>
+            </div>
+          </div>
+</div></div>
+<aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+<li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount &amp; Sales Tax Calculator <span>→</span></a></li>
+<li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age &amp; Milestone Calculator <span>→</span></a></li>
+<li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">How to Use the Random Number Generator</h2>
+        <p class="content-paragraph">Sometimes you need a number you cannot predict: a raffle winner, a random sample, a lottery-style draw, or a fair way to split people into teams. Guessing a number yourself is never truly random, because humans unconsciously favour certain digits and patterns. This generator removes that bias. Set your range, choose how many numbers you want, and get a fresh, unbiased set in one click.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Set the minimum and maximum</strong>Both endpoints are included, so a range of 1 to 100 can produce 1, 100, or anything in between. Whole numbers only: decimals are rejected with a friendly message.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Choose how many numbers</strong>Enter any count from 1 to 1000. One number is perfect for a single draw; larger counts suit sampling, simulations, and classroom demonstrations.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Tick the options you need</strong>Unique numbers only guarantees no repeats, which is what a raffle or lottery draw needs. Sort results if you want the output in ascending order for easier reading.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Generate, and generate again</strong>Every press of Generate Numbers produces a brand new set. Use Copy Numbers to paste the result into a spreadsheet, a document, or a message.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">How Random Numbers Actually Work in a Browser</h2>
+        <p class="content-paragraph">This tool uses your browser's built-in random function, which produces what mathematicians call pseudo-random numbers. They are generated by an algorithm starting from an unpredictable seed, and for everyday purposes they are indistinguishable from true randomness: each number in your range has an equal chance of appearing, and one result gives no clue about the next. That is more than enough for giveaways, games, sampling, teaching, and testing. It is not, however, suitable for cryptography, gambling systems, or security codes, where specialised hardware randomness and audited systems are required.</p>
+        <p class="content-paragraph">Understanding the range is the key to using the tool well. If you ask for numbers between 1 and 10, there are exactly 10 possible values, so each has a 1 in 10 chance on every draw. If you ask for 10 unique numbers from that range, you will simply get all ten values in a shuffled order, because there is nothing else to draw. And if you ask for 11 unique numbers from a range of 10, the tool stops you with a clear error instead of silently repeating a value, because the request is mathematically impossible. That guardrail is what makes the unique option trustworthy for draws where fairness matters.</p>
+        <div class="formula-box"><div class="formula-expression">Possible values = maximum - minimum + 1<br>Chance of any one value on a single draw = 1 / possible values</div><div class="formula-explanation">Example: range 1 to 100 gives 100 possible values, each with a 1% chance per draw. Asking for 5 unique numbers from that range always succeeds, because 5 is smaller than 100.</div></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Fair Ways to Use Random Numbers</h2>
+        <p class="content-paragraph">Random draws feel fair only when the rules are set before the draw happens. Decide the range, the count, and whether repeats are allowed, and share those rules with everyone involved before you press generate. For a classroom raffle, assign each student a number in the range and draw with unique numbers on, so nobody can win twice. For a prize draw, record the generated set with a screenshot or by copying it somewhere visible, so the result can be checked afterwards.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Raffles and giveaways</h4><p class="example-card-body">Number every entry, set the range to cover all entries, and draw with unique numbers on. Each entry then has exactly the same chance, and the result is easy to verify.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Random sampling</h4><p class="example-card-body">To survey 20 customers out of 500, generate 20 unique numbers from 1 to 500 and survey those rows. Random sampling avoids the bias of picking the first names on a list.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Games and teaching</h4><p class="example-card-body">Generate numbers for bingo cards, maths drills, or probability lessons. Watching hundreds of draws cluster evenly across a range is a vivid way to teach how chance really behaves.</p></div>
+        </div>
+        <p class="content-paragraph">One honest caveat: randomness does not remember. If you roll a 7 three times in a row, the next draw is no more or less likely to be a 7. Streaks and clusters are normal in random data, not evidence that the generator is broken. If you need a draw that the whole world can audit, such as a public lottery, use a certified system with witnesses instead. For everything else, this free tool is fast, private, and fair, and every number is generated locally in your browser with nothing sent to a server.</p>
+      </section>
+<section class="content-section"><h2 class="content-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Frequently Asked Questions (FAQs)</h2>
+<div class="faq-list">
+<details class="faq-item" open>
+<summary class="faq-question">Are the numbers truly random?</summary>
+<div class="faq-answer">They are pseudo-random numbers from your browser's built-in generator. For giveaways, games, sampling, and teaching they behave exactly like true randomness: every value in your range has an equal chance. They are not suitable for cryptography or security codes, which need specialised hardware randomness.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">What does unique numbers only mean?</summary>
+<div class="faq-answer">It means no value repeats in the same set. If you ask for 5 unique numbers from 1 to 100, you get 5 different values. If you ask for more unique numbers than exist in the range, the tool shows an error instead of repeating a value.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Are the minimum and maximum included?</summary>
+<div class="faq-answer">Yes. Both endpoints can appear. A range of 1 to 10 can produce 1, 10, or anything in between, and the number of possible values is maximum minus minimum plus 1.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Can I generate the same set twice?</summary>
+<div class="faq-answer">Each generation is independent, so repeating an exact set is possible by chance but unlikely for large ranges. There is no seed or history setting: every press of Generate Numbers starts fresh.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">Is my generated data stored?</summary>
+<div class="faq-answer">No. Numbers are generated locally in your browser and are never sent to a server or stored anywhere.</div>
+</details>
+</div>
+</section></article></main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+<li><a href="bmi-calculator.html">BMI Tracker</a></li>
+<li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+<li><a href="password-generator.html">Password Generator</a></li>
+<li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+<li><a href="discount-calculator.html">Discount Calculator</a></li>
+<li><a href="unit-converter.html">Unit Converter</a></li>
+<li><a href="date-calculator.html">Date Difference</a></li>
+<li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="privacy-policy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="random-number-generator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/generador-de-numeros-aleatorios.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+
+(function() {
+  var MSG = {"invalid": "Please enter valid whole numbers for minimum, maximum, and count.", "minmax": "The minimum number must be smaller than the maximum number.", "countRange": "Count must be between 1 and 1000.", "uniqueTooMany": "You cannot ask for more unique numbers than exist in the range. Widen the range or reduce the count.", "copied": "Numbers copied to clipboard!"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  function generateRandomNumbers(min, max, count, unique, sorted, randFn) {
+    randFn = randFn || Math.random;
+    if (!Number.isInteger(min) || !Number.isInteger(max) || !Number.isInteger(count)) { throw new Error(MSG.invalid); }
+    if (min >= max) { throw new Error(MSG.minmax); }
+    if (count < 1 || count > 1000) { throw new Error(MSG.countRange); }
+    var range = max - min + 1;
+    if (unique && count > range) { throw new Error(MSG.uniqueTooMany); }
+    var out = [], seen = {};
+    var guard = 0;
+    while (out.length < count) {
+      guard++;
+      if (guard > count * 1000 + 10000) { throw new Error(MSG.uniqueTooMany); }
+      var n = Math.floor(randFn() * range) + min;
+      if (unique) { if (seen[n]) { continue; } seen[n] = true; }
+      out.push(n);
+    }
+    if (sorted) { out.sort(function(a, b) { return a - b; }); }
+    return out;
+  }
+  window.OmniTest = { generateRandomNumbers: generateRandomNumbers };
+  function showError(m) { var b = document.getElementById('rngErrorBox'); if (b) { b.textContent = m; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('rngErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  window.generateRng = function() {
+    var min = parseFloat(document.getElementById('rngMin').value);
+    var max = parseFloat(document.getElementById('rngMax').value);
+    var count = parseFloat(document.getElementById('rngCount').value);
+    var unique = !!document.getElementById('rngUnique').checked;
+    var sorted = !!document.getElementById('rngSorted').checked;
+    var nums;
+    try { nums = generateRandomNumbers(min, max, count, unique, sorted); } catch (e) { showError(e.message); return; }
+    hideError();
+    var wrap = document.getElementById('rngNumbers');
+    wrap.innerHTML = '';
+    for (var i = 0; i < nums.length; i++) {
+      var chip = document.createElement('span');
+      chip.textContent = String(nums[i]);
+      chip.style.cssText = 'display: inline-block; background: #2563eb; color: #ffffff; font-weight: 700; padding: 0.5rem 0.9rem; border-radius: 9999px; font-size: 1rem;';
+      wrap.appendChild(chip);
+    }
+    document.getElementById('rngCountOut').textContent = String(nums.length);
+    var s = nums.slice().sort(function(a, b) { return a - b; });
+    document.getElementById('rngMinOut').textContent = String(s[0]);
+    document.getElementById('rngMaxOut').textContent = String(s[s.length - 1]);
+    var box = document.getElementById('rngResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+    var copyBtn = document.getElementById('copyRngBtn');
+    if (copyBtn) copyBtn.setAttribute('data-nums', nums.join(', '));
+  };
+  window.resetRng = function() {
+    document.getElementById('rngMin').value = '1';
+    document.getElementById('rngMax').value = '100';
+    document.getElementById('rngCount').value = '5';
+    document.getElementById('rngUnique').checked = false;
+    document.getElementById('rngSorted').checked = false;
+    hideError();
+    var box = document.getElementById('rngResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var genBtn = document.getElementById('genRngBtn');
+  if (genBtn) genBtn.addEventListener('click', window.generateRng);
+  var resetBtn = document.getElementById('resetRngBtn');
+  if (resetBtn) resetBtn.addEventListener('click', window.resetRng);
+  var copyBtn = document.getElementById('copyRngBtn');
+  if (copyBtn) copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-nums');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert(MSG.copied); }); }
+  });
+})();
+
+</script>
+</body>
+</html>

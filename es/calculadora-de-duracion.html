@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de duración - Tiempo entre dos horas y sumar o restar horas | OmniTools</title>
+<meta name="description" content="Calcula la duración entre dos horas, incluido el paso por la medianoche, y suma o resta horas y minutos a cualquier hora.">
+<meta name="keywords" content="calculadora de duración, tiempo entre dos horas, sumar horas, restar horas, turno nocturno">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/es/calculadora-de-duracion.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/time-duration-calculator.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-duracion.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/time-duration-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/es/calculadora-de-duracion.html">
+<meta property="og:title" content="Calculadora de duración | OmniTools">
+<meta property="og:description" content="Calcula la duración entre dos horas, incluido el paso por la medianoche, y suma o resta horas y minutos a cualquier hora.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-time-duration-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de duración | OmniTools">
+<meta name="twitter:description" content="Calcula la duración entre dos horas, incluido el paso por la medianoche, y suma o resta horas y minutos a cualquier hora.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools Calculadora de duración",
+  "url": "https://janhazirr7.github.io/allinone/es/calculadora-de-duracion.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calcula la duración entre dos horas, incluido el paso por la medianoche, y suma o resta horas y minutos a cualquier hora.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Productividad",
+      "item": "https://janhazirr7.github.io/allinone/#productivity"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calculadora de duración",
+      "item": "https://janhazirr7.github.io/allinone/es/calculadora-de-duracion.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si la hora de fin es anterior a la de inicio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La calculadora lo trata como nocturno, es decir, la hora de fin pertenece al día siguiente. Por ejemplo, de 22:00 a 06:00 son 8 horas, y el resultado se marca como nocturno para que puedas detectarlo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Y si ambas horas son iguales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La duración es cero, porque no ha pasado tiempo entre horas de reloj idénticas. Un periodo completo de 24 horas no puede mostrarse solo con horas de reloj, ya que necesita una fecha además de una hora."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo sumo horas a una hora que cruza la medianoche?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Introduce la hora base, elige Sumar e introduce horas y minutos. El resultado se envuelve alrededor del reloj de 24 horas, así que 23:30 más 2 horas da 01:30."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esta calculadora maneja zonas horarias u horario de verano?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Funciona solo con horas de reloj, así que no se ajusta a zonas horarias ni a cambios de reloj. Un periodo que cruza un cambio de horario de verano será una hora distinto en tiempo real transcurrido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se guardan mis datos en algún lugar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Esta calculadora funciona por completo en tu navegador. Tus horas nunca se envían a un servidor ni las guarda OmniTools."
+      }
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Calculadora de duración",
+  "description": "Calcula la duración entre dos horas, incluido el paso por la medianoche, y suma o resta horas y minutos a cualquier hora.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Enter start and end times",
+      "text": "Enter a start time and an end time in 24-hour format."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add or subtract time",
+      "text": "Enter a base time, choose Add or Subtract, and enter hours and minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calculate",
+      "text": "Press Calculate Duration to see the duration, total minutes, and shifted time."
+    }
+  ]
+}</script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a href="../index.html" class="brand-logo" aria-label="OmniTools Home"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
+<nav aria-label="Main Navigation"><ul class="nav-links"><li><a href="../index.html">Todas las herramientas</a></li><li><a href="../age-calculator.html">Calc. de edad</a></li><li><a href="../bmi-calculator.html">IMC</a></li><li><a href="../loan-calculator.html">Préstamo EMI</a></li><li><a href="../about.html">Acerca de</a></li></ul></nav>
+<div class="nav-actions"><div class="lang-switcher" aria-label="Language Selector"><a href="../time-duration-calculator.html" class="lang-btn" title="English">EN</a><a href="calculadora-de-duracion.html" class="lang-btn active" title="Español">ES</a></div><button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button></div></div></header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="../index.html">Home</a></li><li><a href="../index.html#productivity">Productividad</a></li><li aria-current="page">Calculadora de duración</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">Calculadora de duración</h1><p class="tool-header-desc">Calcula cuánto tiempo hay entre dos horas, aunque pasen la medianoche, y desplaza cualquier hora sumando o restando horas y minutos.</p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container">
+<div><div class="tool-card-widget">
+<div class="widget-form-grid">
+<div class="form-group"><label class="form-label" for="durStart"><span>Hora de inicio</span><span class="label-hint">Obligatorio</span></label><input type="time" id="durStart" class="form-input" value="09:00"></div>
+<div class="form-group"><label class="form-label" for="durEnd"><span>Hora de fin</span><span class="label-hint">Obligatorio</span></label><input type="time" id="durEnd" class="form-input" value="17:30"><span class="form-help">Si la hora de fin es anterior a la de inicio, se cuenta como la noche siguiente</span></div>
+</div>
+<div class="widget-form-grid two-col">
+<div class="form-group"><label class="form-label" for="durBase"><span>Hora base (para sumar o restar)</span></label><input type="time" id="durBase" class="form-input" value="23:30"></div>
+<div class="form-group"><label class="form-label" for="durOp"><span>Operación</span></label><select id="durOp" class="form-select"><option value="add" selected>Sumar</option><option value="sub">Restar</option></select></div>
+<div class="form-group"><label class="form-label" for="durHours"><span>Horas</span></label><input type="number" id="durHours" class="form-input" placeholder="p. ej. 2" min="0" max="1000" step="1" value="2"></div>
+<div class="form-group"><label class="form-label" for="durMinutes"><span>Minutos</span></label><input type="number" id="durMinutes" class="form-input" placeholder="p. ej. 30" min="0" max="59" step="1" value="30"></div>
+</div>
+<div id="timeErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateTimeUI()">Calcular duración</button><button type="button" class="btn btn-outline" onclick="resetTime()">Restablecer</button></div>
+<div id="timeResultsBox" class="results-box">
+<div class="results-header"><span class="results-title">Tu resultado de duración</span><button type="button" class="btn btn-outline btn-sm" id="copyTimeBtn">Copiar resumen</button></div>
+<div class="hero-result-card"><div class="hero-result-label">Duración entre las dos horas</div><div class="hero-result-value" id="durValue">-</div><div class="hero-result-sub" id="durSub"></div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="durTotalMinValue">-</div><div class="metric-label">Total en minutos</div></div><div class="metric-card"><div class="metric-value" id="durOvernightValue">-</div><div class="metric-label">¿Pasa la medianoche?</div></div><div class="metric-card"><div class="metric-value" id="durShiftedValue">-</div><div class="metric-label">Hora base desplazada</div></div></div>
+</div>
+</div></div>
+<aside><div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement"><span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="../date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Diferencia de fechas <span>→</span></a></li><li><a href="../age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de edad <span>→</span></a></li><li><a href="../percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentajes <span>→</span></a></li><li><a href="calculadora-de-calorias.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de TMB <span>→</span></a></li></ul></div></aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section"><h2 class="content-heading">Cómo usar la calculadora de duración</h2><p class="content-paragraph">La aritmética del tiempo parece fácil hasta que interviene la medianoche. Restar 22:00 de 06:00 da un número negativo si tratas ambas horas como pertenecientes al mismo día, pero cualquiera que trabaje ese turno de noche sabe que la respuesta es ocho horas. Esta calculadora trata las horas como puntos en un reloj de 24 horas y maneja el cruce de medianoche por ti, para que puedas calcular turnos, viajes, sesiones de estudio y duraciones de eventos sin hacer aritmética de reloj mentalmente. También incluye un segundo cálculo en la misma página: sumar o restar un número de horas y minutos a cualquier hora base, lo que es útil cuando necesitas saber qué hora será después de un vuelo, una reunión o una cuenta atrás.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>Introduce una hora de inicio y una hora de fin</strong>Usa los selectores de hora en formato de 24 horas. Para un periodo del mismo día, introduce primero la hora anterior y después la posterior, por ejemplo de 09:00 a 17:30.</div></li><li class="step-item"><div class="step-item-content"><strong>Deja que los periodos nocturnos se envuelvan automáticamente</strong>Si la hora de fin es anterior a la de inicio, la calculadora supone que el fin pertenece al día siguiente. Un turno de 22:00 a 06:00 es por tanto ocho horas, y el resultado lo dice.</div></li><li class="step-item"><div class="step-item-content"><strong>Usa también la sección de sumar y restar</strong>Introduce una hora base, elige sumar o restar, e introduce horas y minutos. El resultado se envuelve alrededor de la medianoche en cualquier dirección, así que 23:30 más dos horas es 01:30.</div></li><li class="step-item"><div class="step-item-content"><strong>Lee horas, minutos y minutos totales</strong>El titular muestra la duración como horas y minutos, que es como la gente habla del tiempo. El total en minutos es útil para nóminas, facturación y hojas de cálculo, donde un solo número es más fácil de multiplicar.</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">Cómo funciona el cálculo</h2><p class="content-paragraph">Cada hora se convierte primero a minutos desde la medianoche. La medianoche en sí es cero, las 09:00 son 540 minutos y las 23:30 son 1.410 minutos. La duración es entonces el valor final menos el valor inicial. Si esa diferencia es negativa, se suman 1.440 minutos, un día completo, lo que es lo mismo que mover la hora final al día siguiente. Si las dos horas son idénticas, la duración es cero, porque no ha pasado tiempo entre ellas. Esta es una elección deliberada: un periodo de 09:00 a 09:00 se trata como ninguna duración, no como 24 horas completas, ya que un día completo necesitaría una fecha además de una hora para no ser ambiguo.</p><div class="formula-box"><div class="formula-expression">Duración = minutos finales - minutos iniciales (suma 1440 si es negativo)</div><div class="formula-expression">Hora desplazada = (minutos base +/- horas x 60 +/- minutos) envuelto a 0-1439</div><div class="formula-explanation">Ejemplos: de 09:00 a 17:30 = 1050 - 540 = 510 minutos = 8 horas 30 minutos. De 22:00 a 06:00 = 360 - 1320 = -960, más 1440 = 480 minutos = 8 horas, nocturno. 23:30 más 2 horas = 1410 + 120 = 1530, envuelto restando 1440 = 90 minutos = 01:30.</div></div><p class="content-paragraph">Sumar y restar usa la misma idea de minutos desde la medianoche, con envoltura en ambas direcciones. Restar dos horas de 01:00 da 23:00 del día anterior, mostrada como hora de reloj sin fecha. Como la calculadora trabaja solo con horas de reloj, no puede saber sobre fechas, zonas horarias o cambios de horario de verano. Un periodo que cruza un cambio de reloj en primavera u otoño será una hora distinto en tiempo real transcurrido, y un viaje entre zonas horarias necesita las horas locales en cada extremo, no solo una resta.</p></section>
+<section class="content-section"><h2 class="content-heading">Mismo día, nocturno y casos límite</h2><p class="content-paragraph">La confusión más habitual es si una hora de fin anterior a la de inicio es un error o un periodo nocturno. Esta calculadora siempre lo trata como nocturno, lo que coincide con cómo se describen normalmente los turnos, vuelos y eventos. Si en realidad cometiste un error de escritura y querías un periodo del mismo día, la etiqueta nocturna en el resultado es tu pista: revisa el resultado, y si dice nocturno y no lo esperabas, intercambia o corrige las horas. El otro caso límite es el de horas iguales, que dan cero. Si querías un periodo completo de 24 horas, necesitas una calculadora basada en fechas en lugar de una solo de horas, porque una hora de reloj por sí sola no puede distinguir cero horas de 24 horas.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>Inicio</th><th>Fin</th><th>Duración</th><th>¿Nocturno?</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>8 horas 30 minutos</td><td>No</td></tr><tr><td>22:00</td><td>06:00</td><td>8 horas</td><td>Sí</td></tr><tr><td>23:30</td><td>01:30</td><td>2 horas</td><td>Sí</td></tr><tr><td>09:00</td><td>09:00</td><td>0 horas</td><td>No</td></tr></tbody></table></div><p class="content-paragraph">Los minutos en la sección de sumar y restar están limitados de 0 a 59, lo que te obliga a pasar los minutos sobrantes a horas, igual que harías en un reloj. Las horas pueden llegar hasta 1.000, así que puedes sumar horas equivalentes a varios días y el resultado seguirá siendo una hora de reloj válida, porque el total se envuelve alrededor del reloj de 24 horas. Esa envoltura es correcta para preguntar qué hora del día será, pero no te dice qué fecha será: sumar 50 horas al lunes a las 10:00 da el miércoles a las 12:00, y aquí solo se muestra la parte de las 12:00.</p></section>
+<section class="content-section"><h2 class="content-heading">Usos prácticos</h2><p class="content-paragraph">Los trabajadores por turnos usan este tipo de cálculo para comprobar las horas pagadas, especialmente cuando un turno cruza la medianoche y una resta simple fallaría. Los autónomos y consultores usan los minutos totales para convertir una sesión de trabajo en una cifra facturable, ya que la mayoría de las facturas multiplican una tarifa por hora por un número decimal de horas. Los viajeros usan la sección de sumar y restar para calcular horas de llegada, duraciones de escala y qué hora será en casa cuando aterricen. Los estudiantes y organizadores de eventos la usan para dividir un día en bloques, por ejemplo para comprobar que un programa de charlas, descansos y comida cabe de verdad entre una hora de inicio y una de fin sin pasarse.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. Comprueba un turno antes de la nómina</h4><p class="example-card-body">Introduce el inicio y el fin del turno, anota la marca nocturna y usa los minutos totales para convertir a horas decimales: divide los minutos entre 60 antes de multiplicar por una tarifa por hora.</p></div><div class="example-card"><h4 class="example-card-title">2. Planifica un viaje hacia atrás</h4><p class="example-card-body">Para saber cuándo salir, resta el tiempo de viaje de tu hora requerida de llegada con la opción de restar, en lugar de adivinar y llegar tarde.</p></div><div class="example-card"><h4 class="example-card-title">3. Mantén honestos los programas de eventos</h4><p class="example-card-body">Suma cada duración de sesión a su hora de inicio por turnos. Si la última hora desplazada es posterior a cuando termina tu reserva del lugar, algo del programa tiene que moverse.</p></div></div><p class="content-paragraph">Esta calculadora trabaja solo con horas de reloj y no usa fechas, zonas horarias ni reglas de horario de verano. Para cualquier cosa en la que la fecha importe, como un viaje de varios días, una fecha límite de contrato o un periodo de nómina que abarque un cambio de reloj, usa una calculadora de fecha y hora y comprueba el resultado con tu calendario local. Para la aritmética cotidiana de reloj del mismo día y nocturna, sin embargo, el método de minutos desde la medianoche usado aquí es exacto.</p></section>
+<section class="content-section"><h2 class="content-heading">Preguntas frecuentes</h2><div class="faq-list"><details class="faq-item" open><summary class="faq-question">¿Qué pasa si la hora de fin es anterior a la de inicio?</summary><div class="faq-answer">La calculadora lo trata como nocturno, es decir, la hora de fin pertenece al día siguiente. Por ejemplo, de 22:00 a 06:00 son 8 horas, y el resultado se marca como nocturno para que puedas detectarlo.</div></details><details class="faq-item"><summary class="faq-question">¿Y si ambas horas son iguales?</summary><div class="faq-answer">La duración es cero, porque no ha pasado tiempo entre horas de reloj idénticas. Un periodo completo de 24 horas no puede mostrarse solo con horas de reloj, ya que necesita una fecha además de una hora.</div></details><details class="faq-item"><summary class="faq-question">¿Cómo sumo horas a una hora que cruza la medianoche?</summary><div class="faq-answer">Introduce la hora base, elige Sumar e introduce horas y minutos. El resultado se envuelve alrededor del reloj de 24 horas, así que 23:30 más 2 horas da 01:30.</div></details><details class="faq-item"><summary class="faq-question">¿Esta calculadora maneja zonas horarias u horario de verano?</summary><div class="faq-answer">No. Funciona solo con horas de reloj, así que no se ajusta a zonas horarias ni a cambios de reloj. Un periodo que cruza un cambio de horario de verano será una hora distinto en tiempo real transcurrido.</div></details><details class="faq-item"><summary class="faq-question">¿Se guardan mis datos en algún lugar?</summary><div class="faq-answer">No. Esta calculadora funciona por completo en tu navegador. Tus horas nunca se envían a un servidor ni las guarda OmniTools.</div></details></div></section>
+</article>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand-col"><a href="../index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad para finanzas, productividad y educación.</p></div>
+<div><h4 class="footer-heading">Herramientas populares</h4><ul class="footer-links"><li><a href="../age-calculator.html">Calculadora de edad</a></li><li><a href="../bmi-calculator.html">Calculadora de IMC</a></li><li><a href="../loan-calculator.html">Calculadora de préstamo EMI</a></li><li><a href="../password-generator.html">Generador de contraseñas</a></li><li><a href="../word-counter.html">Contador de palabras</a></li></ul></div>
+<div><h4 class="footer-heading">Utilidades</h4><ul class="footer-links"><li><a href="../percentage-calculator.html">Calculadora de porcentajes</a></li><li><a href="../discount-calculator.html">Calculadora de descuentos</a></li><li><a href="../unit-converter.html">Convertidor de unidades</a></li><li><a href="../date-calculator.html">Diferencia de fechas</a></li><li><a href="../case-converter.html">Convertidor de mayúsculas</a></li></ul></div>
+<div><h4 class="footer-heading">Legal e info</h4><ul class="footer-links"><li><a href="../about.html">Acerca de nosotros</a></li><li><a href="../contact.html">Contacto</a></li><li><a href="../privacy-policy.html">Política de privacidad</a></li><li><a href="../terms.html">Términos de servicio</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p><div class="footer-lang-select"><span>Idioma:</span><a href="../time-duration-calculator.html" style="color: #60a5fa;">English</a> | <a href="calculadora-de-duracion.html">Español</a></div></div></div></footer>
+<script>
+function parseTimeToMinutes2(s) {
+  if (typeof s !== "string") return null;
+  var parts = s.split(":");
+  if (parts.length !== 2) return null;
+  var h = parseInt(parts[0], 10), m = parseInt(parts[1], 10);
+  if (isNaN(h) || isNaN(m) || h < 0 || h > 23 || m < 0 || m > 59) return null;
+  return h * 60 + m;
+}
+function minutesToTime2(total) {
+  total = ((total % 1440) + 1440) % 1440;
+  var h = Math.floor(total / 60), m = total % 60;
+  return (h < 10 ? "0" + h : "" + h) + ":" + (m < 10 ? "0" + m : "" + m);
+}
+function durationBetween(startStr, endStr) {
+  var s = parseTimeToMinutes2(startStr), e = parseTimeToMinutes2(endStr);
+  if (s === null || e === null) return null;
+  var diff = e - s;
+  var overnight = false;
+  if (diff < 0) { diff += 1440; overnight = true; }
+  return { hours: Math.floor(diff / 60), minutes: diff % 60, totalMinutes: diff, overnight: overnight };
+}
+function shiftTime(baseStr, hours, minutes, op) {
+  var b = parseTimeToMinutes2(baseStr);
+  if (b === null) return null;
+  if (!isFinite(hours) || !isFinite(minutes) || hours < 0 || hours > 1000 || minutes < 0 || minutes > 59) return null;
+  if (op !== "add" && op !== "sub") return null;
+  var delta = hours * 60 + minutes;
+  return minutesToTime2(op === "add" ? b + delta : b - delta);
+}
+// --- DOM ---
+ (function() {
+  var t = document.querySelector(".mobile-nav-toggle"); var n = document.querySelector(".nav-links");
+  if (t && n) t.addEventListener("click", function(){ n.classList.toggle("active"); });
+  window.calculateTimeUI = function() {
+    var errBox = document.getElementById("timeErrorBox"), res = document.getElementById("timeResultsBox");
+    var d = durationBetween(document.getElementById("durStart").value, document.getElementById("durEnd").value);
+    var shifted = shiftTime(document.getElementById("durBase").value, parseFloat(document.getElementById("durHours").value), parseFloat(document.getElementById("durMinutes").value), document.getElementById("durOp").value);
+    if (d === null || shifted === null) { errBox.textContent = "Introduce horas válidas en formato 24 horas y horas de 0 a 1000 con minutos de 0 a 59."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    errBox.style.display = "none";
+    document.getElementById("durValue").textContent = d.hours + "h " + d.minutes + "m";
+    document.getElementById("durSub").textContent = document.getElementById("durStart").value + " to " + document.getElementById("durEnd").value;
+    document.getElementById("durTotalMinValue").textContent = d.totalMinutes + " min";
+    document.getElementById("durOvernightValue").textContent = d.overnight ? "Sí, pasa la medianoche" : "No, mismo día";
+    document.getElementById("durShiftedValue").textContent = shifted;
+    var cb = document.getElementById("copyTimeBtn");
+    if (cb) cb.setAttribute("data-summary", "Duration: " + d.hours + "h " + d.minutes + "m; shifted base time: " + shifted + ".");
+    if (res) { res.classList.add("active"); res.style.display = "block"; }
+  };
+  window.resetTime = function() {
+    var e=document.getElementById("timeErrorBox"); if(e) e.style.display="none";
+    var r=document.getElementById("timeResultsBox"); if(r){ r.classList.remove("active"); r.style.display="none"; }
+  };
+  var cb=document.getElementById("copyTimeBtn");
+  if (cb) cb.addEventListener("click", function(){ var s=cb.getAttribute("data-summary"); if(s && navigator.clipboard) navigator.clipboard.writeText(s).catch(function(){}); });
+})();
+</script>
+</body>
+</html>

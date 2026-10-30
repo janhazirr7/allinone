@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de números aleatorios - Enteros, únicos y ordenados | OmniTools</title>
+<meta name="description" content="Genera números enteros aleatorios en cualquier rango, con opciones de únicos y ordenados. Perfecto para sorteos, muestreos, juegos y enseñanza. Gratis y privado.">
+<meta name="keywords" content="generador números aleatorios, números al azar, generador sorteo, números únicos aleatorios, número aleatorio entre">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/es/generador-de-numeros-aleatorios.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/random-number-generator.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/generador-de-numeros-aleatorios.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/random-number-generator.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/es/generador-de-numeros-aleatorios.html">
+<meta property="og:title" content="Generador de números aleatorios - Enteros, únicos y ordenados | OmniTools">
+<meta property="og:description" content="Genera números enteros aleatorios en cualquier rango, con opciones de únicos y ordenados. Perfecto para sorteos, muestreos, juegos y enseñanza. Gratis y privado.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-random-number-generator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Generador de números aleatorios - Enteros, únicos y ordenados | OmniTools">
+<meta name="twitter:description" content="Genera números enteros aleatorios en cualquier rango, con opciones de únicos y ordenados. Perfecto para sorteos, muestreos, juegos y enseñanza. Gratis y privado.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Generador de números aleatorios de OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/es/generador-de-numeros-aleatorios.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Genera números enteros aleatorios en cualquier rango, con opciones de únicos y ordenados. Perfecto para sorteos, muestreos, juegos y enseñanza. Gratis y privado.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Utilidades",
+      "item": "https://janhazirr7.github.io/allinone/#utilities"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Generador de números aleatorios",
+      "item": "https://janhazirr7.github.io/allinone/es/generador-de-numeros-aleatorios.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Los números son realmente aleatorios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son números pseudoaleatorios del generador integrado en tu navegador. Para sorteos, juegos, muestreos y enseñanza se comportan exactamente como la verdadera aleatoriedad: cada valor de tu rango tiene la misma probabilidad. No son adecuados para criptografía ni códigos de seguridad, que necesitan aleatoriedad de hardware especializada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significa solo números únicos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Significa que ningún valor se repite en el mismo conjunto. Si pides 5 números únicos del 1 al 100, obtienes 5 valores distintos. Si pides más números únicos de los que hay en el rango, la herramienta muestra un error en lugar de repetir un valor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El mínimo y el máximo están incluidos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Ambos extremos pueden aparecer. Un rango de 1 a 10 puede dar 1, 10 o cualquier valor intermedio, y el número de valores posibles es el máximo menos el mínimo más 1."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo generar el mismo conjunto dos veces?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cada generación es independiente, así que repetir un conjunto exacto es posible por azar, pero improbable en rangos grandes. No hay semilla ni ajuste de historial: cada vez que pulsas Generar números se empieza de cero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se guardan los datos generados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Los números se generan localmente en tu navegador y nunca se envían a un servidor ni se guardan en ningún sitio."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo usar el Generador de números aleatorios",
+  "description": "Genera números enteros aleatorios en cualquier rango, con opciones de únicos y ordenados. Perfecto para sorteos, muestreos, juegos y enseñanza. Gratis y privado.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Define el rango",
+      "text": "Escribe un mínimo y un máximo; ambos están incluidos."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Elige cantidad y opciones",
+      "text": "Elige cuántos números y marca únicos u ordenados si los necesitas."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Genera",
+      "text": "Pulsa Generar números y copia el resultado si lo necesitas en otro sitio."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Edad</a></li>
+          <li><a href="../bmi-calculator.html">IMC</a></li>
+          <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../random-number-generator.html" class="lang-btn" title="English">EN</a>
+          <a href="generador-de-numeros-aleatorios.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+<li><a href="../index.html">Inicio</a></li>
+<li><a href="../index.html#utilities">Utilidades</a></li>
+<li aria-current="page">Generador de números aleatorios</li>
+</ul></div></div>
+<section class="tool-header-section"><div class="container">
+<h1 class="tool-header-title">Generador de números aleatorios</h1>
+<p class="tool-header-desc">Genera números enteros aleatorios en cualquier rango, con opciones de números únicos y salida ordenada, para sorteos, muestreos y juegos.</p>
+</div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container"><div><div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="rngMin" class="form-label"><span>Número mínimo</span><span class="label-hint">Obligatorio</span></label>
+                <input type="number" id="rngMin" class="form-input" placeholder="e.g. 1" step="1" value="1">
+                <span class="form-help">Ambos incluidos: el mínimo y el máximo pueden salir.</span>
+              </div>
+              <div class="form-group">
+                <label for="rngMax" class="form-label"><span>Número máximo</span><span class="label-hint">Obligatorio</span></label>
+                <input type="number" id="rngMax" class="form-input" placeholder="e.g. 100" step="1" value="100">
+                <span class="form-help">Ambos incluidos: el mínimo y el máximo pueden salir.</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="rngCount" class="form-label"><span>Cantidad de números</span><span class="label-hint">Obligatorio</span></label>
+              <input type="number" id="rngCount" class="form-input" placeholder="e.g. 5" min="1" max="1000" step="1" value="5">
+              <span class="form-help">Entre 1 y 1000 números por generación.</span>
+            </div>
+            <div class="form-group">
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; font-weight: 500; cursor: pointer;"><input type="checkbox" id="rngUnique" style="width: 1.1rem; height: 1.1rem;"> Solo números únicos (sin repetidos)</label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9375rem; font-weight: 500; cursor: pointer;"><input type="checkbox" id="rngSorted" style="width: 1.1rem; height: 1.1rem;"> Ordenar los resultados de menor a mayor</label>
+            </div>
+          </div>
+          <div id="rngErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" id="genRngBtn" class="btn btn-primary">Generar números</button>
+            <button type="button" id="resetRngBtn" class="btn btn-outline">Restablecer</button>
+          </div>
+          <div id="rngResultsBox" class="results-box"><div class="results-header"><span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Números generados</span></div>
+            <div class="hero-result-card" style="text-align: left;">
+              <div class="hero-result-label">Números generados</div>
+              <div id="rngNumbers" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem;"></div>
+              <div class="hero-result-sub" style="margin-top: 1rem;"><button type="button" id="copyRngBtn" class="btn btn-outline btn-sm">Copiar números</button></div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="rngCountOut">0</div><div class="metric-label">Números generados</div></div>
+              <div class="metric-card"><div class="metric-value" id="rngMinOut">-</div><div class="metric-label">Más pequeño</div></div>
+              <div class="metric-card"><div class="metric-value" id="rngMaxOut">-</div><div class="metric-label">Más grande</div></div>
+            </div>
+          </div>
+</div></div>
+<aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentaje <span>→</span></a></li>
+<li><a href="../discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de descuento e impuestos <span>→</span></a></li>
+<li><a href="../age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de edad <span>→</span></a></li>
+<li><a href="../bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">C\u00f3mo usar el generador de n\u00fameros aleatorios</h2>
+        <p class="content-paragraph">A veces necesitas un n\u00famero que no puedas predecir: un ganador de un sorteo, una muestra aleatoria, un sorteo tipo loter\u00eda o una forma justa de dividir personas en equipos. Elegir un n\u00famero t\u00fa mismo nunca es realmente aleatorio, porque las personas favorecen sin darse cuenta ciertos d\u00edgitos y patrones. Este generador elimina ese sesgo. Define tu rango, elige cu\u00e1ntos n\u00fameros quieres y obt\u00e9n un conjunto nuevo e imparcial con un clic.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Define el m\u00ednimo y el m\u00e1ximo</strong>Ambos extremos est\u00e1n incluidos, as\u00ed que un rango de 1 a 100 puede dar 1, 100 o cualquier valor intermedio. Solo n\u00fameros enteros: los decimales se rechazan con un mensaje amable.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Elige cu\u00e1ntos n\u00fameros</strong>Escribe cualquier cantidad entre 1 y 1000. Un n\u00famero es perfecto para un solo sorteo; cantidades mayores sirven para muestreos, simulaciones y demostraciones en clase.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Marca las opciones que necesites</strong>Solo n\u00fameros \u00fanicos garantiza que no haya repetidos, que es lo que necesita un sorteo o una loter\u00eda. Ordenar los resultados los muestra en orden ascendente para leerlos con m\u00e1s facilidad.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Genera, y vuelve a generar</strong>Cada vez que pulses Generar n\u00fameros obtienes un conjunto completamente nuevo. Usa Copiar n\u00fameros para pegar el resultado en una hoja de c\u00e1lculo, un documento o un mensaje.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">C\u00f3mo funcionan realmente los n\u00fameros aleatorios en un navegador</h2>
+        <p class="content-paragraph">Esta herramienta usa la funci\u00f3n aleatoria integrada en tu navegador, que produce lo que los matem\u00e1ticos llaman n\u00fameros pseudoaleatorios. Se generan mediante un algoritmo que parte de una semilla impredecible y, para fines cotidianos, son indistinguibles de la verdadera aleatoriedad: cada n\u00famero de tu rango tiene la misma probabilidad de aparecer y un resultado no da ninguna pista sobre el siguiente. Eso es m\u00e1s que suficiente para sorteos, juegos, muestreos, ense\u00f1anza y pruebas. Sin embargo, no es adecuado para criptograf\u00eda, sistemas de apuestas o c\u00f3digos de seguridad, donde se requieren aleatoriedad de hardware especializada y sistemas auditados.</p>
+        <p class="content-paragraph">Entender el rango es la clave para usar bien la herramienta. Si pides n\u00fameros entre 1 y 10, hay exactamente 10 valores posibles, as\u00ed que cada uno tiene una probabilidad de 1 entre 10 en cada extracci\u00f3n. Si pides 10 n\u00fameros \u00fanicos de ese rango, simplemente obtendr\u00e1s los diez valores en orden mezclado, porque no hay nada m\u00e1s que extraer. Y si pides 11 n\u00fameros \u00fanicos de un rango de 10, la herramienta te detiene con un error claro en lugar de repetir un valor en silencio, porque la petici\u00f3n es matem\u00e1ticamente imposible. Esa protecci\u00f3n es lo que hace que la opci\u00f3n de \u00fanicos sea fiable para sorteos donde la imparcialidad importa.</p>
+        <div class="formula-box"><div class="formula-expression">Valores posibles = m\u00e1ximo - m\u00ednimo + 1<br>Probabilidad de un valor concreto en una extracci\u00f3n = 1 / valores posibles</div><div class="formula-explanation">Ejemplo: el rango de 1 a 100 da 100 valores posibles, cada uno con un 1% de probabilidad por extracci\u00f3n. Pedir 5 n\u00fameros \u00fanicos de ese rango siempre funciona, porque 5 es menor que 100.</div></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Formas justas de usar n\u00fameros aleatorios</h2>
+        <p class="content-paragraph">Los sorteos aleatorios solo parecen justos cuando las reglas se fijan antes del sorteo. Decide el rango, la cantidad y si se permiten repetidos, y comparte esas reglas con todos los implicados antes de pulsar generar. Para un sorteo en clase, asigna a cada estudiante un n\u00famero del rango y sortea con n\u00fameros \u00fanicos activados, para que nadie pueda ganar dos veces. Para un sorteo de premios, guarda el conjunto generado con una captura de pantalla o copi\u00e1ndolo en un lugar visible, para que el resultado pueda comprobarse despu\u00e9s.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Rifas y sorteos</h4><p class="example-card-body">Numera cada participaci\u00f3n, ajusta el rango para cubrirlas todas y sortea con n\u00fameros \u00fanicos activados. Cada participaci\u00f3n tiene entonces exactamente la misma probabilidad y el resultado es f\u00e1cil de verificar.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Muestreo aleatorio</h4><p class="example-card-body">Para encuestar a 20 clientes de 500, genera 20 n\u00fameros \u00fanicos del 1 al 500 y encuesta esas filas. El muestreo aleatorio evita el sesgo de elegir los primeros nombres de una lista.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Juegos y ense\u00f1anza</h4><p class="example-card-body">Genera n\u00fameros para cartones de bingo, ejercicios de matem\u00e1ticas o lecciones de probabilidad. Ver c\u00f3mo cientos de extracciones se reparten de forma uniforme por un rango es una forma muy visual de ense\u00f1ar c\u00f3mo se comporta realmente el azar.</p></div>
+        </div>
+        <p class="content-paragraph">Una advertencia honesta: el azar no tiene memoria. Si sale un 7 tres veces seguidas, la siguiente extracci\u00f3n no tiene m\u00e1s ni menos probabilidad de ser un 7. Las rachas y los grupos son normales en datos aleatorios, no una prueba de que el generador est\u00e9 roto. Si necesitas un sorteo que todo el mundo pueda auditar, como una loter\u00eda p\u00fablica, usa un sistema certificado con testigos. Para todo lo dem\u00e1s, esta herramienta gratuita es r\u00e1pida, privada y justa, y cada n\u00famero se genera localmente en tu navegador sin enviar nada a un servidor.</p>
+      </section>
+<section class="content-section"><h2 class="content-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Preguntas frecuentes (FAQ)</h2>
+<div class="faq-list">
+<details class="faq-item" open>
+<summary class="faq-question">¿Los números son realmente aleatorios?</summary>
+<div class="faq-answer">Son números pseudoaleatorios del generador integrado en tu navegador. Para sorteos, juegos, muestreos y enseñanza se comportan exactamente como la verdadera aleatoriedad: cada valor de tu rango tiene la misma probabilidad. No son adecuados para criptografía ni códigos de seguridad, que necesitan aleatoriedad de hardware especializada.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Qué significa solo números únicos?</summary>
+<div class="faq-answer">Significa que ningún valor se repite en el mismo conjunto. Si pides 5 números únicos del 1 al 100, obtienes 5 valores distintos. Si pides más números únicos de los que hay en el rango, la herramienta muestra un error en lugar de repetir un valor.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿El mínimo y el máximo están incluidos?</summary>
+<div class="faq-answer">Sí. Ambos extremos pueden aparecer. Un rango de 1 a 10 puede dar 1, 10 o cualquier valor intermedio, y el número de valores posibles es el máximo menos el mínimo más 1.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Puedo generar el mismo conjunto dos veces?</summary>
+<div class="faq-answer">Cada generación es independiente, así que repetir un conjunto exacto es posible por azar, pero improbable en rangos grandes. No hay semilla ni ajuste de historial: cada vez que pulsas Generar números se empieza de cero.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Se guardan los datos generados?</summary>
+<div class="faq-answer">No. Los números se generan localmente en tu navegador y nunca se envían a un servidor ni se guardan en ningún sitio.</div>
+</details>
+</div>
+</section></article></main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad, para finanzas, productividad y educación.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Herramientas populares</h4>
+          <ul class="footer-links">
+            <li><a href="../age-calculator.html">Calculadora de edad</a></li>
+<li><a href="../bmi-calculator.html">Calculadora de IMC</a></li>
+<li><a href="../loan-calculator.html">Calculadora de préstamo EMI</a></li>
+<li><a href="../password-generator.html">Generador de contraseñas</a></li>
+<li><a href="../word-counter.html">Contador de palabras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="../percentage-calculator.html">Calculadora de porcentaje</a></li>
+<li><a href="../discount-calculator.html">Calculadora de descuento</a></li>
+<li><a href="../unit-converter.html">Convertidor de unidades</a></li>
+<li><a href="../date-calculator.html">Diferencia de fechas</a></li>
+<li><a href="../case-converter.html">Convertidor de mayúsculas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal e información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Acerca de nosotros</a></li>
+<li><a href="../contact.html">Contáctanos</a></li>
+<li><a href="../privacy-policy.html">Política de privacidad</a></li>
+<li><a href="../terms.html">Términos de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../random-number-generator.html">English</a> |
+          <a href="generador-de-numeros-aleatorios.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+
+(function() {
+  var MSG = {"invalid": "Por favor, introduce números enteros válidos para el mínimo, el máximo y la cantidad.", "minmax": "El número mínimo debe ser menor que el máximo.", "countRange": "La cantidad debe estar entre 1 y 1000.", "uniqueTooMany": "No puedes pedir más números únicos que los que hay en el rango. Amplía el rango o reduce la cantidad.", "copied": "¡Números copiados al portapapeles!"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  function generateRandomNumbers(min, max, count, unique, sorted, randFn) {
+    randFn = randFn || Math.random;
+    if (!Number.isInteger(min) || !Number.isInteger(max) || !Number.isInteger(count)) { throw new Error(MSG.invalid); }
+    if (min >= max) { throw new Error(MSG.minmax); }
+    if (count < 1 || count > 1000) { throw new Error(MSG.countRange); }
+    var range = max - min + 1;
+    if (unique && count > range) { throw new Error(MSG.uniqueTooMany); }
+    var out = [], seen = {};
+    var guard = 0;
+    while (out.length < count) {
+      guard++;
+      if (guard > count * 1000 + 10000) { throw new Error(MSG.uniqueTooMany); }
+      var n = Math.floor(randFn() * range) + min;
+      if (unique) { if (seen[n]) { continue; } seen[n] = true; }
+      out.push(n);
+    }
+    if (sorted) { out.sort(function(a, b) { return a - b; }); }
+    return out;
+  }
+  window.OmniTest = { generateRandomNumbers: generateRandomNumbers };
+  function showError(m) { var b = document.getElementById('rngErrorBox'); if (b) { b.textContent = m; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('rngErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  window.generateRng = function() {
+    var min = parseFloat(document.getElementById('rngMin').value);
+    var max = parseFloat(document.getElementById('rngMax').value);
+    var count = parseFloat(document.getElementById('rngCount').value);
+    var unique = !!document.getElementById('rngUnique').checked;
+    var sorted = !!document.getElementById('rngSorted').checked;
+    var nums;
+    try { nums = generateRandomNumbers(min, max, count, unique, sorted); } catch (e) { showError(e.message); return; }
+    hideError();
+    var wrap = document.getElementById('rngNumbers');
+    wrap.innerHTML = '';
+    for (var i = 0; i < nums.length; i++) {
+      var chip = document.createElement('span');
+      chip.textContent = String(nums[i]);
+      chip.style.cssText = 'display: inline-block; background: #2563eb; color: #ffffff; font-weight: 700; padding: 0.5rem 0.9rem; border-radius: 9999px; font-size: 1rem;';
+      wrap.appendChild(chip);
+    }
+    document.getElementById('rngCountOut').textContent = String(nums.length);
+    var s = nums.slice().sort(function(a, b) { return a - b; });
+    document.getElementById('rngMinOut').textContent = String(s[0]);
+    document.getElementById('rngMaxOut').textContent = String(s[s.length - 1]);
+    var box = document.getElementById('rngResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+    var copyBtn = document.getElementById('copyRngBtn');
+    if (copyBtn) copyBtn.setAttribute('data-nums', nums.join(', '));
+  };
+  window.resetRng = function() {
+    document.getElementById('rngMin').value = '1';
+    document.getElementById('rngMax').value = '100';
+    document.getElementById('rngCount').value = '5';
+    document.getElementById('rngUnique').checked = false;
+    document.getElementById('rngSorted').checked = false;
+    hideError();
+    var box = document.getElementById('rngResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var genBtn = document.getElementById('genRngBtn');
+  if (genBtn) genBtn.addEventListener('click', window.generateRng);
+  var resetBtn = document.getElementById('resetRngBtn');
+  if (resetBtn) resetBtn.addEventListener('click', window.resetRng);
+  var copyBtn = document.getElementById('copyRngBtn');
+  if (copyBtn) copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-nums');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert(MSG.copied); }); }
+  });
+})();
+
+</script>
+</body>
+</html>

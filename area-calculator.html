@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Calculator - Rectangle, Circle, Triangle &amp; Square Area + Perimeter | OmniTools</title>
+  <meta name="description" content="Calculate the area and perimeter (or circumference) of rectangles, squares, circles, and triangles instantly. Free geometry calculator with triangle validation.">
+  <meta name="keywords" content="area calculator, rectangle area, circle area calculator, triangle area, perimeter calculator">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/area-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/area-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-area.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/area-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/area-calculator.html">
+  <meta property="og:title" content="Area Calculator - Rectangle, Circle, Triangle &amp; Square Area + Perimeter | OmniTools">
+  <meta property="og:description" content="Calculate the area and perimeter (or circumference) of rectangles, squares, circles, and triangles instantly. Free geometry calculator with triangle validation.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-area-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Area Calculator - Rectangle, Circle, Triangle &amp; Square Area + Perimeter | OmniTools">
+  <meta name="twitter:description" content="Calculate the area and perimeter (or circumference) of rectangles, squares, circles, and triangles instantly. Free geometry calculator with triangle validation.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Area Calculator",
+    "url": "https://janhazirr7.github.io/allinone/area-calculator.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calculate the area and perimeter (or circumference) of rectangles, squares, circles, and triangles instantly. Free geometry calculator with triangle validation.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 2, "name": "Math Tools", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 3, "name": "Area Calculator", "item": "https://janhazirr7.github.io/allinone/area-calculator.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is the difference between area and perimeter?", "acceptedAnswer": {"@type": "Answer", "text": "Area measures the surface inside a shape, in square units, while perimeter measures the distance around its edge, in plain units. A rectangle 10 by 5 has an area of 50 square units and a perimeter of 30 units."}},
+      {"@type": "Question", "name": "How do I find a circle's circumference?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply the radius by 2 and by pi (about 3.14159). A circle with a radius of 7 has a circumference of about 43.98 units. This calculator returns the circumference alongside the area."}},
+      {"@type": "Question", "name": "Why does my triangle give an error?", "acceptedAnswer": {"@type": "Answer", "text": "The three sides must satisfy the triangle inequality: each side must be shorter than the sum of the other two. Sides like 2, 3, and 10 cannot form a triangle, so the calculator explains this instead of returning a false area."}},
+      {"@type": "Question", "name": "Is the triangle's height the same as a side?", "acceptedAnswer": {"@type": "Answer", "text": "Not usually. Height is the perpendicular distance from the base to the opposite corner. Only in a right triangle does one side double as the height."}},
+      {"@type": "Question", "name": "Can I mix metres and centimetres?", "acceptedAnswer": {"@type": "Answer", "text": "No. Enter every measurement in the same unit, or convert first. Mixing units gives a wrong result, because area formulas assume consistent units throughout."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Area Calculator - Rectangle, Circle, Triangle &amp; Square Area + Perimeter | OmniTools",
+    "description": "Calculate the area and perimeter (or circumference) of rectangles, squares, circles, and triangles instantly. Free geometry calculator with triangle validation.",
+    "step": [
+        {"@type": "HowToStep", "name": "Choose a shape", "text": "Select rectangle, square, circle, or triangle."},
+        {"@type": "HowToStep", "name": "Enter the measurements", "text": "Use one unit for every measurement; for triangles, enter all three sides plus the height."},
+        {"@type": "HowToStep", "name": "Calculate", "text": "Press Calculate Area to see the area and the perimeter or circumference."}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="area-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-area.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="https://janhazirr7.github.io/allinone/">Home</a></li>
+          <li><a href="index.html">All Tools</a></li>
+          <li aria-current="page">Area Calculator</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Area Calculator</h1>
+        <p class="tool-header-desc">Calculate the area and perimeter (or circumference) of rectangles, squares, circles, and triangles instantly. Free geometry calculator with triangle validation.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+          <div class="widget-form-grid">
+            <div class="form-group">
+              <label for="areaShape" class="form-label"><span>Shape</span></label>
+              <select id="areaShape" class="form-select" onchange="updateAreaShape()">
+                <option value="rectangle" selected>Rectangle</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle</option>
+              </select>
+              <span class="form-help">Use the same unit for every measurement.</span>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-rectangle" style="margin-bottom: 0;">
+              <div class="form-group"><label for="rectLength" class="form-label"><span>Length</span></label><input type="number" id="rectLength" class="form-input" placeholder="e.g. 10" min="0" step="any"></div>
+              <div class="form-group"><label for="rectWidth" class="form-label"><span>Width</span></label><input type="number" id="rectWidth" class="form-input" placeholder="e.g. 5" min="0" step="any"></div>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-square" style="margin-bottom: 0; display: none;">
+              <div class="form-group"><label for="sqSide" class="form-label"><span>Side</span></label><input type="number" id="sqSide" class="form-input" placeholder="e.g. 6" min="0" step="any"></div>
+              <div class="form-group"></div>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-circle" style="margin-bottom: 0; display: none;">
+              <div class="form-group"><label for="circRadius" class="form-label"><span>Radius</span></label><input type="number" id="circRadius" class="form-input" placeholder="e.g. 7" min="0" step="any"></div>
+              <div class="form-group"></div>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-triangle" style="margin-bottom: 0; display: none;">
+              <div class="form-group"><label for="triBase" class="form-label"><span>Base</span></label><input type="number" id="triBase" class="form-input" placeholder="e.g. 8" min="0" step="any"></div>
+              <div class="form-group"><label for="triHeight" class="form-label"><span>Height</span></label><input type="number" id="triHeight" class="form-input" placeholder="e.g. 5" min="0" step="any"></div>
+              <div class="form-group"><label for="triSideA" class="form-label"><span>Side A (other than base)</span></label><input type="number" id="triSideA" class="form-input" placeholder="e.g. 6" min="0" step="any"></div>
+              <div class="form-group"><label for="triSideB" class="form-label"><span>Side B (other than base)</span></label><input type="number" id="triSideB" class="form-input" placeholder="e.g. 7" min="0" step="any"></div>
+            </div>
+          </div>
+          <div id="areaErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateArea()">Calculate Area</button>
+            <button type="button" class="btn btn-outline" onclick="resetArea()">Reset</button>
+          </div>
+          <div id="areaResultsBox" class="results-box">
+            <div class="results-header"><span class="results-title">Area & Perimeter</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Area (square units)</div>
+              <div class="hero-result-value" id="areaHeroValue">-</div>
+              <div class="hero-result-sub" id="areaHeroSub"></div>
+            </div>
+            <div class="metrics-grid" style="margin-bottom: 0;">
+              <div class="metric-card"><div class="metric-value" id="areaPerim">-</div><div class="metric-label">Perimeter / circumference (units)</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li><li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount & Sales Tax Calculator <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">How to Use the Area Calculator</h2>
+        <p class="content-paragraph">Area tells you how much surface a shape covers, while perimeter tells you the distance around its edge. Builders, gardeners, painters, and students need both numbers constantly: area decides how much paint, flooring, or seed to buy, and perimeter decides how much fencing, trim, or edging is required. This calculator handles the four most common shapes and returns both values in one step, so you do not need a second tool for the border.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Choose your shape</strong>Pick rectangle, square, circle, or triangle from the dropdown. Only the inputs for that shape are shown, so there is no confusion about which boxes to fill.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Enter the measurements in one unit</strong>Use the same unit for every measurement, for example all in metres or all in centimetres. Mixing metres and centimetres will give a wrong answer, because the calculator cannot know which unit each number used.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>For a triangle, enter all three sides plus the height</strong>The area comes from base times height divided by two, but the perimeter needs all three sides. The calculator also checks the triangle inequality and warns you if the sides cannot form a real triangle.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Press Calculate Area</strong>The area appears in square units and the perimeter (or circumference for a circle) in plain units, both rounded to two decimal places.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Formulas for All Four Shapes</h2>
+        <p class="content-paragraph">Every formula below uses only the measurements you enter, and each one has a simple geometric reason behind it. A rectangle's area is length times width because you can tile it with unit squares in rows and columns. A square is just a rectangle whose sides are all equal, so its area is side times side and its perimeter is four times the side. A circle's area is pi times radius squared, and its circumference is two times pi times radius; pi is the constant ratio of any circle's circumference to its diameter, approximately 3.14159. A triangle's area is half of base times height because any triangle is exactly half of a parallelogram with the same base and height.</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Shape</th><th>Area formula</th><th>Perimeter formula</th></tr></thead><tbody>
+        <tr><td><strong>Rectangle</strong></td><td>length × width</td><td>2 × (length + width)</td></tr>
+        <tr><td><strong>Square</strong></td><td>side × side</td><td>4 × side</td></tr>
+        <tr><td><strong>Circle</strong></td><td>π × radius²</td><td>2 × π × radius</td></tr>
+        <tr><td><strong>Triangle</strong></td><td>½ × base × height</td><td>side A + side B + base</td></tr>
+        </tbody></table></div>
+        <p class="content-paragraph">Worked examples make the arithmetic easy to check. A rectangle 10 metres long and 5 metres wide has an area of 50 square metres and a perimeter of 30 metres. A circle with a radius of 7 metres has an area of about 153.94 square metres and a circumference of about 43.98 metres. A triangle with a base of 8, a height of 5, and other sides of 6 and 7 has an area of 20 square units and a perimeter of 21 units. Notice how area is always in square units while perimeter is in plain units: that distinction matters when you order materials, because paint covers square metres but fencing is sold by the metre.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">The Triangle Inequality: Why Some Sides Fail</h2>
+        <p class="content-paragraph">Not every set of three lengths can be a triangle. If one side is longer than the other two put together, the two short sides cannot meet, and no triangle exists. This is the triangle inequality: each side must be shorter than the sum of the other two. For example, sides of 2, 3, and 10 cannot form a triangle, because 2 + 3 = 5, which is less than 10. Sides of 6, 7, and 8 work fine, because 6 + 7 is greater than 8, 6 + 8 is greater than 7, and 7 + 8 is greater than 6. This calculator checks all three conditions before calculating, so an impossible triangle produces a clear explanation instead of a meaningless number.</p>
+        <p class="content-paragraph">Another common confusion is height versus side length. In a triangle, the height is the perpendicular distance from the base to the opposite corner, not the length of a sloping side. In a right triangle, one side does double as the height, but in most triangles the height is shorter than either sloping side and must be measured or calculated separately. If you only know the three sides and not the height, you can find the area with Heron's formula, which uses the semi-perimeter, but this calculator keeps things direct by asking for the height alongside the sides.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Real-World Uses: Painting, Flooring, and Fencing</h2>
+        <p class="content-paragraph">Suppose you want to paint a rectangular wall 4 metres wide and 2.5 metres high. Its area is 10 square metres, so one litre of paint covering 10 square metres per coat is exactly one coat's worth, and two coats need two litres. For flooring, a square room with 5-metre sides has an area of 25 square metres; ordering 10 percent extra for cutting waste means buying about 27.5 square metres of material. For a circular garden bed with a radius of 2 metres, the area is about 12.57 square metres of soil or mulch, while the circumference of about 12.57 metres tells you how much edging to buy. Doing both calculations together avoids the classic mistake of buying the right amount of one material and the wrong amount of the other, and because this tool runs entirely in your browser, you can recalculate on site from your phone as measurements change.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Frequently Asked Questions (FAQs)</h2>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">What is the difference between area and perimeter?</summary>
+            <div class="faq-answer">Area measures the surface inside a shape, in square units, while perimeter measures the distance around its edge, in plain units. A rectangle 10 by 5 has an area of 50 square units and a perimeter of 30 units.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">How do I find a circle's circumference?</summary>
+            <div class="faq-answer">Multiply the radius by 2 and by pi (about 3.14159). A circle with a radius of 7 has a circumference of about 43.98 units. This calculator returns the circumference alongside the area.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Why does my triangle give an error?</summary>
+            <div class="faq-answer">The three sides must satisfy the triangle inequality: each side must be shorter than the sum of the other two. Sides like 2, 3, and 10 cannot form a triangle, so the calculator explains this instead of returning a false area.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Is the triangle's height the same as a side?</summary>
+            <div class="faq-answer">Not usually. Height is the perpendicular distance from the base to the opposite corner. Only in a right triangle does one side double as the height.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Can I mix metres and centimetres?</summary>
+            <div class="faq-answer">No. Enter every measurement in the same unit, or convert first. Mixing units gives a wrong result, because area formulas assume consistent units throughout.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div><h4 class="footer-heading">Trending Tools</h4><ul class="footer-links"><li><a href="age-calculator.html">Age Calculator</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Loan EMI Calculator</a></li><li><a href="password-generator.html">Password Generator</a></li><li><a href="word-counter.html">Word Counter</a></li></ul></div>
+        <div><h4 class="footer-heading">Utilities</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Percentage Calculator</a></li><li><a href="discount-calculator.html">Discount Calculator</a></li><li><a href="unit-converter.html">Unit Converter</a></li><li><a href="date-calculator.html">Date Difference</a></li><li><a href="case-converter.html">Text Case Converter</a></li></ul></div>
+        <div><h4 class="footer-heading">Legal & Info</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="area-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-area.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+(function() {
+  var MSG = {"invalid": "Please enter valid positive numbers for every field of the chosen shape.", "triangle": "Those sides cannot form a triangle: the sum of any two sides must be greater than the third side.", "heroSub": "In square units"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); });
+  }
+  function validPositive(x) { return typeof x === 'number' && isFinite(x) && x > 0; }
+  function computeArea(shape, d) {
+    var area, per;
+    if (shape === 'rectangle') {
+      if (!validPositive(d.length) || !validPositive(d.width)) return null;
+      area = d.length * d.width; per = 2 * (d.length + d.width);
+    } else if (shape === 'square') {
+      if (!validPositive(d.side)) return null;
+      area = d.side * d.side; per = 4 * d.side;
+    } else if (shape === 'circle') {
+      if (!validPositive(d.radius)) return null;
+      area = Math.PI * d.radius * d.radius; per = 2 * Math.PI * d.radius;
+    } else if (shape === 'triangle') {
+      if (!validPositive(d.base) || !validPositive(d.height) || !validPositive(d.sideA) || !validPositive(d.sideB)) return null;
+      if (!(d.sideA + d.sideB > d.base && d.sideA + d.base > d.sideB && d.sideB + d.base > d.sideA)) return 'triangle';
+      area = 0.5 * d.base * d.height; per = d.base + d.sideA + d.sideB;
+    } else return null;
+    return { area: area, perimeter: per };
+  }
+  window.OmniTest = { computeArea: computeArea };
+  function showError(msg) { var b = document.getElementById('areaErrorBox'); if (b) { b.textContent = msg; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('areaErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function num(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) ? NaN : v; }
+  function updateAreaShape() {
+    var shape = document.getElementById('areaShape').value;
+    ['rectangle', 'square', 'circle', 'triangle'].forEach(function(s) {
+      var g = document.getElementById('shape-' + s);
+      if (g) g.style.display = (s === shape) ? 'grid' : 'none';
+    });
+  }
+  window.updateAreaShape = updateAreaShape;
+  window.calculateArea = function() {
+    var shape = document.getElementById('areaShape').value;
+    var d = { length: num('rectLength'), width: num('rectWidth'), side: num('sqSide'), radius: num('circRadius'), base: num('triBase'), height: num('triHeight'), sideA: num('triSideA'), sideB: num('triSideB') };
+    var r = computeArea(shape, d);
+    if (r === null) { showError(MSG.invalid); return; }
+    if (r === 'triangle') { showError(MSG.triangle); return; }
+    hideError();
+    document.getElementById('areaHeroValue').textContent = r.area.toFixed(2);
+    document.getElementById('areaHeroSub').textContent = MSG.heroSub;
+    document.getElementById('areaPerim').textContent = r.perimeter.toFixed(2);
+    var box = document.getElementById('areaResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetArea = function() {
+    ['rectLength', 'rectWidth', 'sqSide', 'circRadius', 'triBase', 'triHeight', 'triSideA', 'triSideB'].forEach(function(id) { document.getElementById(id).value = ''; });
+    hideError();
+    var box = document.getElementById('areaResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  updateAreaShape();
+})();
+
+  </script>
+</body>
+</html>

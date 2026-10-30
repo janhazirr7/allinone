@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de área - Rectángulo, círculo, triángulo y cuadrado | OmniTools</title>
+  <meta name="description" content="Calcula el área y el perímetro (o circunferencia) de rectángulos, cuadrados, círculos y triángulos al instante. Calculadora de geometría gratuita con validación de triángulos.">
+  <meta name="keywords" content="calculadora de área, área rectángulo, calculadora área círculo, área triángulo, calculadora perímetro">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/es/calculadora-de-area.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/area-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-area.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/area-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/es/calculadora-de-area.html">
+  <meta property="og:title" content="Calculadora de área - Rectángulo, círculo, triángulo y cuadrado | OmniTools">
+  <meta property="og:description" content="Calcula el área y el perímetro (o circunferencia) de rectángulos, cuadrados, círculos y triángulos al instante. Calculadora de geometría gratuita con validación de triángulos.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-area-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de área - Rectángulo, círculo, triángulo y cuadrado | OmniTools">
+  <meta name="twitter:description" content="Calcula el área y el perímetro (o circunferencia) de rectángulos, cuadrados, círculos y triángulos al instante. Calculadora de geometría gratuita con validación de triángulos.">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Calculadora de área",
+    "url": "https://janhazirr7.github.io/allinone/es/calculadora-de-area.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calcula el área y el perímetro (o circunferencia) de rectángulos, cuadrados, círculos y triángulos al instante. Calculadora de geometría gratuita con validación de triángulos.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 2, "name": "Herramientas de matemáticas", "item": "https://janhazirr7.github.io/allinone/" },
+      { "@type": "ListItem", "position": 3, "name": "Calculadora de área", "item": "https://janhazirr7.github.io/allinone/es/calculadora-de-area.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "¿Cuál es la diferencia entre área y perímetro?", "acceptedAnswer": {"@type": "Answer", "text": "El área mide la superficie dentro de una figura, en unidades cuadradas, mientras que el perímetro mide la distancia alrededor de su borde, en unidades simples. Un rectángulo de 10 por 5 tiene un área de 50 unidades cuadradas y un perímetro de 30 unidades."}},
+      {"@type": "Question", "name": "¿Cómo hallo la circunferencia de un círculo?", "acceptedAnswer": {"@type": "Answer", "text": "Multiplica el radio por 2 y por pi (aproximadamente 3,14159). Un círculo con un radio de 7 tiene una circunferencia de unas 43,98 unidades. Esta calculadora devuelve la circunferencia junto con el área."}},
+      {"@type": "Question", "name": "¿Por qué mi triángulo da un error?", "acceptedAnswer": {"@type": "Answer", "text": "Los tres lados deben cumplir la desigualdad triangular: cada lado debe ser menor que la suma de los otros dos. Lados como 2, 3 y 10 no pueden formar un triángulo, así que la calculadora lo explica en lugar de devolver un área falsa."}},
+      {"@type": "Question", "name": "¿La altura del triángulo es lo mismo que un lado?", "acceptedAnswer": {"@type": "Answer", "text": "Normalmente no. La altura es la distancia perpendicular desde la base hasta el vértice opuesto. Solo en un triángulo rectángulo un lado hace de altura."}},
+      {"@type": "Question", "name": "¿Puedo mezclar metros y centímetros?", "acceptedAnswer": {"@type": "Answer", "text": "No. Introduce todas las medidas en la misma unidad, o convierte primero. Mezclar unidades da un resultado incorrecto, porque las fórmulas de área suponen unidades coherentes en todo el cálculo."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Calculadora de área - Rectángulo, círculo, triángulo y cuadrado | OmniTools",
+    "description": "Calcula el área y el perímetro (o circunferencia) de rectángulos, cuadrados, círculos y triángulos al instante. Calculadora de geometría gratuita con validación de triángulos.",
+    "step": [
+        {"@type": "HowToStep", "name": "Elige una figura", "text": "Selecciona rectángulo, cuadrado, círculo o triángulo."},
+        {"@type": "HowToStep", "name": "Introduce las medidas", "text": "Usa una sola unidad para todas las medidas; para triángulos, introduce los tres lados más la altura."},
+        {"@type": "HowToStep", "name": "Calcula", "text": "Pulsa Calcular área para ver el área y el perímetro o circunferencia."}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Age Calc</a></li>
+          <li><a href="../bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="../loan-calculator.html">Loan EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../area-calculator.html" class="lang-btn" title="English">EN</a>
+          <a href="calculadora-de-area.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="https://janhazirr7.github.io/allinone/">Inicio</a></li>
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li aria-current="page">Calculadora de área</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de área</h1>
+        <p class="tool-header-desc">Calcula el área y el perímetro (o circunferencia) de rectángulos, cuadrados, círculos y triángulos al instante. Calculadora de geometría gratuita con validación de triángulos.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+          <div class="widget-form-grid">
+            <div class="form-group">
+              <label for="areaShape" class="form-label"><span>Figura</span></label>
+              <select id="areaShape" class="form-select" onchange="updateAreaShape()">
+                <option value="rectangle" selected>Rectángulo</option>
+                <option value="square">Cuadrado</option>
+                <option value="circle">Círculo</option>
+                <option value="triangle">Triángulo</option>
+              </select>
+              <span class="form-help">Usa la misma unidad para todas las medidas.</span>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-rectangle" style="margin-bottom: 0;">
+              <div class="form-group"><label for="rectLength" class="form-label"><span>Largo</span></label><input type="number" id="rectLength" class="form-input" placeholder="e.g. 10" min="0" step="any"></div>
+              <div class="form-group"><label for="rectWidth" class="form-label"><span>Ancho</span></label><input type="number" id="rectWidth" class="form-input" placeholder="e.g. 5" min="0" step="any"></div>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-square" style="margin-bottom: 0; display: none;">
+              <div class="form-group"><label for="sqSide" class="form-label"><span>Lado</span></label><input type="number" id="sqSide" class="form-input" placeholder="e.g. 6" min="0" step="any"></div>
+              <div class="form-group"></div>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-circle" style="margin-bottom: 0; display: none;">
+              <div class="form-group"><label for="circRadius" class="form-label"><span>Radio</span></label><input type="number" id="circRadius" class="form-input" placeholder="e.g. 7" min="0" step="any"></div>
+              <div class="form-group"></div>
+            </div>
+            <div class="widget-form-grid two-col" id="shape-triangle" style="margin-bottom: 0; display: none;">
+              <div class="form-group"><label for="triBase" class="form-label"><span>Base</span></label><input type="number" id="triBase" class="form-input" placeholder="e.g. 8" min="0" step="any"></div>
+              <div class="form-group"><label for="triHeight" class="form-label"><span>Altura</span></label><input type="number" id="triHeight" class="form-input" placeholder="e.g. 5" min="0" step="any"></div>
+              <div class="form-group"><label for="triSideA" class="form-label"><span>Lado A (distinto de la base)</span></label><input type="number" id="triSideA" class="form-input" placeholder="e.g. 6" min="0" step="any"></div>
+              <div class="form-group"><label for="triSideB" class="form-label"><span>Lado B (distinto de la base)</span></label><input type="number" id="triSideB" class="form-input" placeholder="e.g. 7" min="0" step="any"></div>
+            </div>
+          </div>
+          <div id="areaErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateArea()">Calcular área</button>
+            <button type="button" class="btn btn-outline" onclick="resetArea()">Restablecer</button>
+          </div>
+          <div id="areaResultsBox" class="results-box">
+            <div class="results-header"><span class="results-title">Área y perímetro</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Área (unidades cuadradas)</div>
+              <div class="hero-result-value" id="areaHeroValue">-</div>
+              <div class="hero-result-sub" id="areaHeroSub"></div>
+            </div>
+            <div class="metrics-grid" style="margin-bottom: 0;">
+              <div class="metric-card"><div class="metric-value" id="areaPerim">-</div><div class="metric-label">Perímetro / circunferencia (unidades)</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentajes <span>→</span></a></li><li><a href="../discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de descuentos <span>→</span></a></li><li><a href="../age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de edad <span>→</span></a></li><li><a href="../bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">Cómo usar la calculadora de área</h2>
+        <p class="content-paragraph">El área indica cuánta superficie cubre una figura, mientras que el perímetro indica la distancia alrededor de su borde. Constructores, jardineros, pintores y estudiantes necesitan ambos números constantemente: el área decide cuánta pintura, suelo o semillas comprar, y el perímetro decide cuánta valla, moldura o borde se necesita. Esta calculadora trabaja con las cuatro figuras más comunes y devuelve ambos valores en un solo paso, para que no necesites otra herramienta para el borde.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Elige tu figura</strong>Selecciona rectángulo, cuadrado, círculo o triángulo en el menú. Solo se muestran las entradas de esa figura, para que no haya confusión sobre qué casillas rellenar.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Introduce las medidas en una sola unidad</strong>Usa la misma unidad para todas las medidas, por ejemplo todo en metros o todo en centímetros. Mezclar metros y centímetros dará una respuesta incorrecta, porque la calculadora no puede saber qué unidad usó cada número.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Para un triángulo, introduce los tres lados más la altura</strong>El área se obtiene de base por altura dividido entre dos, pero el perímetro necesita los tres lados. La calculadora también comprueba la desigualdad triangular y te avisa si los lados no pueden formar un triángulo real.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Pulsa Calcular área</strong>El área aparece en unidades cuadradas y el perímetro (o circunferencia en un círculo) en unidades simples, ambos redondeados a dos decimales.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Fórmulas para las cuatro figuras</h2>
+        <p class="content-paragraph">Cada fórmula siguiente usa solo las medidas que introduces, y cada una tiene una razón geométrica sencilla detrás. El área de un rectángulo es largo por ancho porque puedes cubrirlo con cuadrados unidad en filas y columnas. Un cuadrado es solo un rectángulo cuyos lados son todos iguales, así que su área es lado por lado y su perímetro es cuatro veces el lado. El área de un círculo es pi por radio al cuadrado, y su circunferencia es dos por pi por radio; pi es la razón constante entre la circunferencia y el diámetro de cualquier círculo, aproximadamente 3,14159. El área de un triángulo es la mitad de base por altura porque cualquier triángulo es exactamente la mitad de un paralelogramo con la misma base y altura.</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Figura</th><th>Fórmula del área</th><th>Fórmula del perímetro</th></tr></thead><tbody>
+        <tr><td><strong>Rectángulo</strong></td><td>largo × ancho</td><td>2 × (largo + ancho)</td></tr>
+        <tr><td><strong>Cuadrado</strong></td><td>lado × lado</td><td>4 × lado</td></tr>
+        <tr><td><strong>Círculo</strong></td><td>π × radio²</td><td>2 × π × radio</td></tr>
+        <tr><td><strong>Triángulo</strong></td><td>½ × base × altura</td><td>lado A + lado B + base</td></tr>
+        </tbody></table></div>
+        <p class="content-paragraph">Los ejemplos resueltos facilitan la comprobación de la aritmética. Un rectángulo de 10 metros de largo y 5 metros de ancho tiene un área de 50 metros cuadrados y un perímetro de 30 metros. Un círculo con un radio de 7 metros tiene un área de unos 153,94 metros cuadrados y una circunferencia de unos 43,98 metros. Un triángulo con una base de 8, una altura de 5 y otros lados de 6 y 7 tiene un área de 20 unidades cuadradas y un perímetro de 21 unidades. Observa cómo el área siempre está en unidades cuadradas mientras el perímetro está en unidades simples: esa distinción importa al pedir materiales, porque la pintura cubre metros cuadrados pero la valla se vende por metro.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">La desigualdad triangular: por qué algunos lados fallan</h2>
+        <p class="content-paragraph">No todo conjunto de tres longitudes puede ser un triángulo. Si un lado es más largo que los otros dos juntos, los dos lados cortos no pueden encontrarse y no existe ningún triángulo. Esta es la desigualdad triangular: cada lado debe ser menor que la suma de los otros dos. Por ejemplo, los lados 2, 3 y 10 no pueden formar un triángulo, porque 2 + 3 = 5, que es menor que 10. Los lados 6, 7 y 8 funcionan bien, porque 6 + 7 es mayor que 8, 6 + 8 es mayor que 7 y 7 + 8 es mayor que 6. Esta calculadora comprueba las tres condiciones antes de calcular, así que un triángulo imposible produce una explicación clara en lugar de un número sin sentido.</p>
+        <p class="content-paragraph">Otra confusión común es la altura frente a la longitud del lado. En un triángulo, la altura es la distancia perpendicular desde la base hasta el vértice opuesto, no la longitud de un lado inclinado. En un triángulo rectángulo, un lado sí hace de altura, pero en la mayoría de los triángulos la altura es menor que cualquiera de los lados inclinados y debe medirse o calcularse por separado. Si solo conoces los tres lados y no la altura, puedes hallar el área con la fórmula de Herón, que usa el semiperímetro, pero esta calculadora mantiene las cosas directas pidiendo la altura junto con los lados.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Usos reales: pintura, suelos y vallas</h2>
+        <p class="content-paragraph">Supón que quieres pintar una pared rectangular de 4 metros de ancho y 2,5 metros de alto. Su área es de 10 metros cuadrados, así que un litro de pintura que cubra 10 metros cuadrados por capa es exactamente lo necesario para una capa, y dos capas necesitan dos litros. Para suelos, una habitación cuadrada de 5 metros de lado tiene un área de 25 metros cuadrados; pedir un 10 por ciento extra por recortes significa comprar unos 27,5 metros cuadrados de material. Para un parterre circular con un radio de 2 metros, el área es de unos 12,57 metros cuadrados de tierra o mantillo, mientras que la circunferencia de unos 12,57 metros te dice cuánto borde comprar. Hacer ambos cálculos juntos evita el error clásico de comprar la cantidad correcta de un material y la incorrecta del otro, y como esta herramienta funciona por completo en tu navegador, puedes recalcular en el lugar desde tu teléfono a medida que cambian las medidas.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Cuál es la diferencia entre área y perímetro?</summary>
+            <div class="faq-answer">El área mide la superficie dentro de una figura, en unidades cuadradas, mientras que el perímetro mide la distancia alrededor de su borde, en unidades simples. Un rectángulo de 10 por 5 tiene un área de 50 unidades cuadradas y un perímetro de 30 unidades.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿Cómo hallo la circunferencia de un círculo?</summary>
+            <div class="faq-answer">Multiplica el radio por 2 y por pi (aproximadamente 3,14159). Un círculo con un radio de 7 tiene una circunferencia de unas 43,98 unidades. Esta calculadora devuelve la circunferencia junto con el área.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿Por qué mi triángulo da un error?</summary>
+            <div class="faq-answer">Los tres lados deben cumplir la desigualdad triangular: cada lado debe ser menor que la suma de los otros dos. Lados como 2, 3 y 10 no pueden formar un triángulo, así que la calculadora lo explica en lugar de devolver un área falsa.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿La altura del triángulo es lo mismo que un lado?</summary>
+            <div class="faq-answer">Normalmente no. La altura es la distancia perpendicular desde la base hasta el vértice opuesto. Solo en un triángulo rectángulo un lado hace de altura.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">¿Puedo mezclar metros y centímetros?</summary>
+            <div class="faq-answer">No. Introduce todas las medidas en la misma unidad, o convierte primero. Mezclar unidades da un resultado incorrecto, porque las fórmulas de área suponen unidades coherentes en todo el cálculo.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad para finanzas, productividad y educación.</p>
+        </div>
+        <div><h4 class="footer-heading">Herramientas populares</h4><ul class="footer-links"><li><a href="../age-calculator.html">Calculadora de edad</a></li><li><a href="../bmi-calculator.html">Calculadora de IMC</a></li><li><a href="../loan-calculator.html">Calculadora de préstamos</a></li><li><a href="../password-generator.html">Generador de contraseñas</a></li><li><a href="../word-counter.html">Contador de palabras</a></li></ul></div>
+        <div><h4 class="footer-heading">Utilidades</h4><ul class="footer-links"><li><a href="../percentage-calculator.html">Calculadora de porcentajes</a></li><li><a href="../discount-calculator.html">Calculadora de descuentos</a></li><li><a href="../unit-converter.html">Convertidor de unidades</a></li><li><a href="../date-calculator.html">Diferencia de fechas</a></li><li><a href="../case-converter.html">Convertidor de mayúsculas</a></li></ul></div>
+        <div><h4 class="footer-heading">Legal e información</h4><ul class="footer-links"><li><a href="../about.html">Acerca de</a></li><li><a href="../contact.html">Contacto</a></li><li><a href="../privacy-policy.html">Política de privacidad</a></li><li><a href="../terms.html">Términos de servicio</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../area-calculator.html">English</a> |
+          <a href="calculadora-de-area.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+(function() {
+  var MSG = {"invalid": "Por favor, introduce números positivos válidos para todos los campos de la figura elegida.", "triangle": "Esos lados no pueden formar un triángulo: la suma de dos lados cualesquiera debe ser mayor que el tercer lado.", "heroSub": "En unidades cuadradas"};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) {
+    mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); });
+  }
+  function validPositive(x) { return typeof x === 'number' && isFinite(x) && x > 0; }
+  function computeArea(shape, d) {
+    var area, per;
+    if (shape === 'rectangle') {
+      if (!validPositive(d.length) || !validPositive(d.width)) return null;
+      area = d.length * d.width; per = 2 * (d.length + d.width);
+    } else if (shape === 'square') {
+      if (!validPositive(d.side)) return null;
+      area = d.side * d.side; per = 4 * d.side;
+    } else if (shape === 'circle') {
+      if (!validPositive(d.radius)) return null;
+      area = Math.PI * d.radius * d.radius; per = 2 * Math.PI * d.radius;
+    } else if (shape === 'triangle') {
+      if (!validPositive(d.base) || !validPositive(d.height) || !validPositive(d.sideA) || !validPositive(d.sideB)) return null;
+      if (!(d.sideA + d.sideB > d.base && d.sideA + d.base > d.sideB && d.sideB + d.base > d.sideA)) return 'triangle';
+      area = 0.5 * d.base * d.height; per = d.base + d.sideA + d.sideB;
+    } else return null;
+    return { area: area, perimeter: per };
+  }
+  window.OmniTest = { computeArea: computeArea };
+  function showError(msg) { var b = document.getElementById('areaErrorBox'); if (b) { b.textContent = msg; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('areaErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function num(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) ? NaN : v; }
+  function updateAreaShape() {
+    var shape = document.getElementById('areaShape').value;
+    ['rectangle', 'square', 'circle', 'triangle'].forEach(function(s) {
+      var g = document.getElementById('shape-' + s);
+      if (g) g.style.display = (s === shape) ? 'grid' : 'none';
+    });
+  }
+  window.updateAreaShape = updateAreaShape;
+  window.calculateArea = function() {
+    var shape = document.getElementById('areaShape').value;
+    var d = { length: num('rectLength'), width: num('rectWidth'), side: num('sqSide'), radius: num('circRadius'), base: num('triBase'), height: num('triHeight'), sideA: num('triSideA'), sideB: num('triSideB') };
+    var r = computeArea(shape, d);
+    if (r === null) { showError(MSG.invalid); return; }
+    if (r === 'triangle') { showError(MSG.triangle); return; }
+    hideError();
+    document.getElementById('areaHeroValue').textContent = r.area.toFixed(2);
+    document.getElementById('areaHeroSub').textContent = MSG.heroSub;
+    document.getElementById('areaPerim').textContent = r.perimeter.toFixed(2);
+    var box = document.getElementById('areaResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetArea = function() {
+    ['rectLength', 'rectWidth', 'sqSide', 'circRadius', 'triBase', 'triHeight', 'triSideA', 'triSideB'].forEach(function(id) { document.getElementById(id).value = ''; });
+    hideError();
+    var box = document.getElementById('areaResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  updateAreaShape();
+})();
+
+  </script>
+</body>
+</html>

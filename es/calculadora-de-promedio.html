@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de promedio (GPA) - Calcula tu nota media (escala 4,0) | OmniTools</title>
+<meta name="description" content="Calcula tu GPA en la escala estándar de 4,0. Añade asignaturas con notas y créditos para obtener tu GPA ponderado, los créditos totales y los puntos de calidad.">
+<meta name="keywords" content="calculadora gpa, calculadora de promedio, calcular promedio académico, escala 4.0, puntos de calidad, nota media universidad">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janhazirr7.github.io/allinone/es/calculadora-de-promedio.html">
+<link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/gpa-calculator.html">
+<link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-promedio.html">
+<link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/gpa-calculator.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/es/calculadora-de-promedio.html">
+<meta property="og:title" content="Calculadora de promedio (GPA) - Calcula tu nota media (escala 4,0) | OmniTools">
+<meta property="og:description" content="Calcula tu GPA en la escala estándar de 4,0. Añade asignaturas con notas y créditos para obtener tu GPA ponderado, los créditos totales y los puntos de calidad.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-gpa-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de promedio (GPA) - Calcula tu nota media (escala 4,0) | OmniTools">
+<meta name="twitter:description" content="Calcula tu GPA en la escala estándar de 4,0. Añade asignaturas con notas y créditos para obtener tu GPA ponderado, los créditos totales y los puntos de calidad.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de promedio de OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/es/calculadora-de-promedio.html",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Calcula tu GPA en la escala estándar de 4,0. Añade asignaturas con notas y créditos para obtener tu GPA ponderado, los créditos totales y los puntos de calidad.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Educación",
+      "item": "https://janhazirr7.github.io/allinone/#education"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calculadora de promedio",
+      "item": "https://janhazirr7.github.io/allinone/es/calculadora-de-promedio.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es un GPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El promedio académico (GPA) es un número, normalmente en una escala de 0 a 4,0, que resume tus notas en todas las asignaturas. Cada nota corresponde a un número fijo de puntos, y tu GPA es la media ponderada por créditos de esos puntos: puntos de calidad totales divididos entre los créditos totales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué son los puntos de calidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los puntos de calidad miden cuánto aporta una asignatura a tu GPA. Son los puntos de la nota multiplicados por los créditos de la asignatura. Una A (4,0) en una asignatura de 3 créditos da 12 puntos de calidad, mientras que la misma A en una de 1 crédito solo da 4."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es un buen GPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de tus objetivos, pero en general un GPA de 3,5 o más se considera alto, de 3,0 a 3,49 bueno, y 2,0 suele ser el mínimo para mantener un buen expediente académico. Las becas competitivas y los programas de posgrado suelen buscar 3,5 o más, junto con ensayos y recomendaciones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué mi GPA no es una media simple de mis notas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque las asignaturas tienen distintos créditos. Una asignatura de 4 créditos debe contar más que una de 1 crédito, así que el GPA pondera cada nota por sus créditos. Promediar las letras sin ponderar sobrevaloraría las asignaturas fáciles de pocos créditos e infravaloraría las exigentes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esta calculadora usa la escala exacta de mi centro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usa la escala estándar de 4,0: A 4,0, A- 3,7, B+ 3,3, B 3,0, B- 2,7, C+ 2,3, C 2,0, C- 1,7, D 1,0, F 0,0. Algunos centros difieren ligeramente, por ejemplo al ofrecer A+ o ninguna nota con menos, así que consulta la escala de tu centro para una cifra oficial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se guardan mis notas en algún sitio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. La calculadora funciona por completo en tu navegador. Tus notas y créditos nunca se envían a un servidor ni se guardan."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo usar la Calculadora de promedio",
+  "description": "Calcula tu GPA en la escala estándar de 4,0. Añade asignaturas con notas y créditos para obtener tu GPA ponderado, los créditos totales y los puntos de calidad.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Añade tus asignaturas",
+      "text": "Añade una fila por asignatura, elige su nota e introduce sus créditos."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calcula",
+      "text": "Pulsa Calcular GPA para ver tu GPA, los créditos totales y los puntos de calidad."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Planifica",
+      "text": "Cambia las notas para simular semestres futuros y ver qué necesitas para tu GPA objetivo."
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Edad</a></li>
+          <li><a href="../bmi-calculator.html">IMC</a></li>
+          <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../gpa-calculator.html" class="lang-btn" title="English">EN</a>
+          <a href="calculadora-de-promedio.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+<li><a href="../index.html">Inicio</a></li>
+<li><a href="../index.html#education">Educación</a></li>
+<li aria-current="page">Calculadora de promedio</li>
+</ul></div></div>
+<section class="tool-header-section"><div class="container">
+<h1 class="tool-header-title">Calculadora de promedio (GPA)</h1>
+<p class="tool-header-desc">Añade tus asignaturas con notas y créditos para calcular tu GPA en la escala estándar de 4,0, al instante y en privado.</p>
+</div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement"><span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span></div></div>
+<section class="container tool-layout-container"><div><div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label class="form-label"><span>Tus asignaturas</span></label>
+              <span class="form-help">Añade una fila por asignatura, elige la nota y escribe los créditos. Empieza con tres asignaturas de ejemplo que puedes cambiar.</span>
+              <div id="gpaRows" style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;"></div>
+              <div style="margin-top: 0.75rem;"><button type="button" id="addCourseBtn" class="btn btn-outline btn-sm">+ Añadir asignatura</button></div>
+              <template id="gpaRowTemplate"><div style="display: flex; gap: 0.5rem; align-items: stretch;">
+                <select class="form-select" style="flex: 1;" aria-label="Nota"><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D">D</option><option value="F">F</option></select>
+                <input type="number" class="form-input" style="flex: 1;" placeholder="3" min="0" step="0.5" aria-label="Créditos">
+                <button type="button" class="btn btn-outline btn-sm" style="white-space: nowrap;">Quitar</button>
+              </div></template>
+            </div>
+          </div>
+          <div id="gpaErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" id="calcGpaBtn" class="btn btn-primary">Calcular GPA</button>
+            <button type="button" id="resetGpaBtn" class="btn btn-outline">Restablecer</button>
+          </div>
+          <div id="gpaResultsBox" class="results-box"><div class="results-header"><span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Resultado de tu GPA</span></div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Tu GPA (escala 4,0)</div>
+              <div class="hero-result-value" id="gpaValue">0.00</div>
+              <div class="hero-result-sub" id="gpaBandText">Media ponderada por créditos de todas tus asignaturas.</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="gpaCreditsValue">0</div><div class="metric-label">Créditos totales</div></div>
+              <div class="metric-card"><div class="metric-value" id="gpaCoursesValue">0</div><div class="metric-label">Asignaturas</div></div>
+              <div class="metric-card"><div class="metric-value" id="gpaPointsValue">0.0</div><div class="metric-label">Puntos de calidad</div></div>
+            </div>
+          </div>
+</div></div>
+<aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de porcentaje <span>→</span></a></li>
+<li><a href="../discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de descuento e impuestos <span>→</span></a></li>
+<li><a href="../age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de edad <span>→</span></a></li>
+<li><a href="../bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="In-Article Advertisement"><span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">C\u00f3mo usar la calculadora de promedio (GPA)</h2>
+        <p class="content-paragraph">Tu promedio acad\u00e9mico, o GPA por sus siglas en ingl\u00e9s, es un solo n\u00famero que resume tu rendimiento en todas tus asignaturas. Universidades, comit\u00e9s de becas y algunos empleadores lo usan como una medida r\u00e1pida del desempe\u00f1o acad\u00e9mico. Esta calculadora lo calcula por ti: a\u00f1ade una fila por asignatura, elige la nota obtenida, escribe los cr\u00e9ditos y pulsa Calcular GPA. Tu GPA, los cr\u00e9ditos totales, el n\u00famero de asignaturas y los puntos de calidad totales aparecen al instante.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Empieza con las filas de ejemplo</strong>La calculadora abre con tres asignaturas de ejemplo. Cambia sus notas y cr\u00e9ditos para que coincidan con las tuyas, o elim\u00ednalas y empieza desde cero.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>A\u00f1ade una fila por cada asignatura</strong>Pulsa A\u00f1adir asignatura por cada materia adicional. Incluye todas las asignaturas con nota del semestre o periodo que est\u00e9s midiendo, y deja fuera las de aprobado/suspenso salvo que tu centro las cuente.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Escribe los cr\u00e9ditos con precisi\u00f3n</strong>Los cr\u00e9ditos reflejan el peso de una asignatura. Una ciencia con laboratorio de 4 cr\u00e9ditos afecta tu GPA m\u00e1s que un seminario de 1 cr\u00e9dito, as\u00ed que copiar los cr\u00e9ditos de tu expediente es importante.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Calcula y lee el resultado</strong>Tu GPA aparece en la escala de 4,0, junto con una descripci\u00f3n en lenguaje sencillo de lo que significa ese rango, para que veas de un vistazo d\u00f3nde est\u00e1s.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">La escala est\u00e1ndar de 4,0</h2>
+        <p class="content-paragraph">La mayor\u00eda de los centros de Estados Unidos y muchos programas internacionales usan la escala de 4,0 siguiente. Cada nota corresponde a un n\u00famero fijo de puntos: una A vale 4,0, una A- 3,7, una B+ 3,3, y as\u00ed hasta la F, que vale cero. Algunos centros usan valores ligeramente distintos, por ejemplo una A+ de 4,3 o ninguna nota con menos, as\u00ed que consulta la escala de tu propio centro si el resultado debe coincidir exactamente con un expediente oficial. Esta calculadora usa la escala est\u00e1ndar m\u00e1s ense\u00f1ada, que es la opci\u00f3n correcta por defecto para planificar y estimar.</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>Nota</th><th>Puntos</th><th>Significado</th></tr></thead><tbody>
+        <tr><td><strong>A</strong></td><td>4,0</td><td>Excelente</td></tr>
+        <tr><td><strong>A-</strong></td><td>3,7</td><td>Excelente</td></tr>
+        <tr><td><strong>B+</strong></td><td>3,3</td><td>Bueno</td></tr>
+        <tr><td><strong>B</strong></td><td>3,0</td><td>Bueno</td></tr>
+        <tr><td><strong>B-</strong></td><td>2,7</td><td>Bueno</td></tr>
+        <tr><td><strong>C+</strong></td><td>2,3</td><td>Satisfactorio</td></tr>
+        <tr><td><strong>C</strong></td><td>2,0</td><td>Satisfactorio</td></tr>
+        <tr><td><strong>C-</strong></td><td>1,7</td><td>Satisfactorio</td></tr>
+        <tr><td><strong>D</strong></td><td>1,0</td><td>Aprobado, pero débil</td></tr>
+        <tr><td><strong>F</strong></td><td>0,0</td><td>Suspenso</td></tr>
+        </tbody></table></div>
+        <p class="content-paragraph">La f\u00f3rmula del GPA es una media ponderada, no una media simple de notas. Cada asignatura aporta sus puntos multiplicados por sus cr\u00e9ditos, y esos productos se llaman puntos de calidad. Suma todos los puntos de calidad y divide entre los cr\u00e9ditos totales. Por ejemplo, una A (4,0) en una asignatura de 4 cr\u00e9ditos, una B (3,0) en una de 3 cr\u00e9ditos y una C (2,0) en otra de 3 cr\u00e9ditos dan puntos de calidad de 16, 9 y 6, un total de 31, dividido entre 10 cr\u00e9ditos, lo que da un GPA de 3,10. Observa que la A de 4 cr\u00e9ditos sube la media m\u00e1s de lo que la C de 3 cr\u00e9ditos la baja, y por eso ponderar por cr\u00e9ditos es m\u00e1s justo que promediar las letras sin m\u00e1s.</p>
+        <div class="formula-box"><div class="formula-expression">GPA = puntos de calidad totales / cr\u00e9ditos totales<br>Puntos de calidad de una asignatura = puntos de la nota x cr\u00e9ditos</div><div class="formula-explanation">Ejemplo resuelto: (4,0 x 4) + (3,0 x 3) + (2,0 x 3) = 16 + 9 + 6 = 31 puntos de calidad. 31 / 10 cr\u00e9ditos = GPA de 3,10.</div></div>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">GPA ponderado frente a no ponderado, y c\u00f3mo subir el tuyo</h2>
+        <p class="content-paragraph">Un GPA no ponderado limita cada asignatura a 4,0, sin importar su dificultad. Un GPA ponderado da puntos extra por cursos de honores, Advanced Placement o Bachillerato Internacional, a veces hasta 5,0, para premiar a quienes cursan materias m\u00e1s dif\u00edciles. Esta calculadora calcula un GPA no ponderado en la escala est\u00e1ndar de 4,0, que es la cifra que la mayor\u00eda de las universidades piden primero; si tu centro informa un GPA ponderado, trata este resultado como la base no ponderada y consulta c\u00f3mo a\u00f1ade tu centro los puntos extra.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Conc\u00e9ntrate en las asignaturas con m\u00e1s cr\u00e9ditos</h4><p class="example-card-body">Como el GPA se pondera por cr\u00e9ditos, mejorar una asignatura de 4 cr\u00e9ditos mueve tu GPA el doble que mejorar una de 2 cr\u00e9ditos. Dedica m\u00e1s tiempo de estudio donde est\u00e1n los cr\u00e9ditos.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Piensa en semestres, no en notas aisladas</h4><p class="example-card-body">Una nota baja duele menos a medida que acumulas cr\u00e9ditos. Usa la calculadora con tu GPA actual m\u00e1s las notas futuras previstas para ver qu\u00e9 necesitas el pr\u00f3ximo semestre para alcanzar tu objetivo.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Repetir asignaturas y sustituci\u00f3n de notas</h4><p class="example-card-body">Algunos centros sustituyen una nota de suspenso cuando repites una asignatura, mientras otros promedian ambos intentos. Pregunta en tu secretar\u00eda qu\u00e9 norma se aplica antes de suponer que repetir borra la nota antigua.</p></div>
+        </div>
+        <p class="content-paragraph">Un GPA es un resumen \u00fatil, pero no es toda la historia de un estudiante. Los responsables de admisi\u00f3n tambi\u00e9n leen ensayos, recomendaciones y la dificultad de tus asignaturas, y una tendencia ascendente entre semestres suele impresionar m\u00e1s que una media plana. Usa esta calculadora para planificar y comprobar tu progreso, y ten en cuenta el panorama general. Todos los c\u00e1lculos se ejecutan en privado en tu navegador, as\u00ed que tus notas nunca se env\u00edan a un servidor ni se guardan en ning\u00fan sitio.</p>
+      </section>
+<section class="content-section"><h2 class="content-heading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Preguntas frecuentes (FAQ)</h2>
+<div class="faq-list">
+<details class="faq-item" open>
+<summary class="faq-question">¿Qué es un GPA?</summary>
+<div class="faq-answer">El promedio académico (GPA) es un número, normalmente en una escala de 0 a 4,0, que resume tus notas en todas las asignaturas. Cada nota corresponde a un número fijo de puntos, y tu GPA es la media ponderada por créditos de esos puntos: puntos de calidad totales divididos entre los créditos totales.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Qué son los puntos de calidad?</summary>
+<div class="faq-answer">Los puntos de calidad miden cuánto aporta una asignatura a tu GPA. Son los puntos de la nota multiplicados por los créditos de la asignatura. Una A (4,0) en una asignatura de 3 créditos da 12 puntos de calidad, mientras que la misma A en una de 1 crédito solo da 4.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Qué es un buen GPA?</summary>
+<div class="faq-answer">Depende de tus objetivos, pero en general un GPA de 3,5 o más se considera alto, de 3,0 a 3,49 bueno, y 2,0 suele ser el mínimo para mantener un buen expediente académico. Las becas competitivas y los programas de posgrado suelen buscar 3,5 o más, junto con ensayos y recomendaciones.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Por qué mi GPA no es una media simple de mis notas?</summary>
+<div class="faq-answer">Porque las asignaturas tienen distintos créditos. Una asignatura de 4 créditos debe contar más que una de 1 crédito, así que el GPA pondera cada nota por sus créditos. Promediar las letras sin ponderar sobrevaloraría las asignaturas fáciles de pocos créditos e infravaloraría las exigentes.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Esta calculadora usa la escala exacta de mi centro?</summary>
+<div class="faq-answer">Usa la escala estándar de 4,0: A 4,0, A- 3,7, B+ 3,3, B 3,0, B- 2,7, C+ 2,3, C 2,0, C- 1,7, D 1,0, F 0,0. Algunos centros difieren ligeramente, por ejemplo al ofrecer A+ o ninguna nota con menos, así que consulta la escala de tu centro para una cifra oficial.</div>
+</details>
+<details class="faq-item">
+<summary class="faq-question">¿Se guardan mis notas en algún sitio?</summary>
+<div class="faq-answer">No. La calculadora funciona por completo en tu navegador. Tus notas y créditos nunca se envían a un servidor ni se guardan.</div>
+</details>
+</div>
+</section></article></main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad, para finanzas, productividad y educación.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Herramientas populares</h4>
+          <ul class="footer-links">
+            <li><a href="../age-calculator.html">Calculadora de edad</a></li>
+<li><a href="../bmi-calculator.html">Calculadora de IMC</a></li>
+<li><a href="../loan-calculator.html">Calculadora de préstamo EMI</a></li>
+<li><a href="../password-generator.html">Generador de contraseñas</a></li>
+<li><a href="../word-counter.html">Contador de palabras</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="../percentage-calculator.html">Calculadora de porcentaje</a></li>
+<li><a href="../discount-calculator.html">Calculadora de descuento</a></li>
+<li><a href="../unit-converter.html">Convertidor de unidades</a></li>
+<li><a href="../date-calculator.html">Diferencia de fechas</a></li>
+<li><a href="../case-converter.html">Convertidor de mayúsculas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal e información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Acerca de nosotros</a></li>
+<li><a href="../contact.html">Contáctanos</a></li>
+<li><a href="../privacy-policy.html">Política de privacidad</a></li>
+<li><a href="../terms.html">Términos de servicio</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades en línea gratuitas para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../gpa-calculator.html">English</a> |
+          <a href="calculadora-de-promedio.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+
+(function() {
+  var MSG = {"invalid": "Por favor, añade al menos una asignatura con nota y créditos válidos.", "badCredits": "Los créditos deben ser mayores que 0 y no superar 12 por asignatura.", "badGrade": "Por favor, elige una nota válida para cada asignatura.", "bandA": "Excelente: rendimiento sobresaliente.", "bandB": "Buen rendimiento: por encima de la media.", "bandC": "Satisfactorio: rendimiento medio.", "bandD": "Aprobado, pero débil: hay margen de mejora.", "bandF": "Por debajo del aprobado: busca apoyo académico."};
+  var GRADE_POINTS = {'A': 4.0, 'A-': 3.7, 'B+': 3.3, 'B': 3.0, 'B-': 2.7, 'C+': 2.3, 'C': 2.0, 'C-': 1.7, 'D': 1.0, 'F': 0.0};
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  function gradePoints(letter) { return GRADE_POINTS[letter]; }
+  function computeGPA(courses) {
+    if (!courses || courses.length === 0) { throw new Error(MSG.invalid); }
+    var points = 0, credits = 0;
+    for (var i = 0; i < courses.length; i++) {
+      var gp = GRADE_POINTS[courses[i].grade];
+      if (gp === undefined) { throw new Error(MSG.badGrade); }
+      var cr = courses[i].credits;
+      if (!(cr > 0) || cr > 12) { throw new Error(MSG.badCredits); }
+      points += gp * cr; credits += cr;
+    }
+    if (credits === 0) { throw new Error(MSG.invalid); }
+    return { gpa: points / credits, credits: credits, points: points, count: courses.length };
+  }
+  function gpaBand(gpa) {
+    if (gpa >= 3.7) return MSG.bandA;
+    if (gpa >= 3.0) return MSG.bandB;
+    if (gpa >= 2.0) return MSG.bandC;
+    if (gpa >= 1.0) return MSG.bandD;
+    return MSG.bandF;
+  }
+  window.OmniTest = { gradePoints: gradePoints, computeGPA: computeGPA, gpaBand: gpaBand, GRADE_POINTS: GRADE_POINTS };
+  function showError(m) { var b = document.getElementById('gpaErrorBox'); if (b) { b.textContent = m; b.style.display = 'block'; } }
+  function hideError() { var b = document.getElementById('gpaErrorBox'); if (b) { b.style.display = 'none'; b.textContent = ''; } }
+  function addCourseRow(grade, credits) {
+    var container = document.getElementById('gpaRows');
+    if (!container) return;
+    var tpl = document.getElementById('gpaRowTemplate');
+    var row;
+    if (tpl && tpl.content && tpl.content.cloneNode) {
+      var frag = tpl.content.cloneNode(true);
+      row = frag.querySelector ? frag.querySelector('div') : null;
+      if (!row) { row = document.createElement('div'); }
+    } else {
+      row = document.createElement('div');
+      row.style.display = 'flex'; row.style.gap = '0.5rem';
+      var sel = document.createElement('select'); sel.className = 'form-select';
+      var grades = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D', 'F'];
+      for (var i = 0; i < grades.length; i++) { var o = document.createElement('option'); o.value = grades[i]; o.textContent = grades[i]; sel.appendChild(o); }
+      var inp = document.createElement('input'); inp.className = 'form-input'; inp.type = 'number';
+      var btn = document.createElement('button'); btn.className = 'btn btn-outline btn-sm'; btn.type = 'button';
+      btn.addEventListener('click', function() { if (row.parentNode) { row.parentNode.removeChild(row); } });
+      row.appendChild(sel); row.appendChild(inp); row.appendChild(btn);
+    }
+    var gradeSel = row.querySelector('select');
+    var creditInp = row.querySelector('input');
+    var removeBtn = row.querySelector('button');
+    if (gradeSel) gradeSel.value = grade || 'A';
+    if (creditInp) creditInp.value = (credits === undefined || credits === null) ? '3' : String(credits);
+    if (removeBtn) removeBtn.addEventListener('click', function() { if (row.parentNode) { row.parentNode.removeChild(row); } else if (container.removeChild) { try { container.removeChild(row); } catch (e) {} } });
+    container.appendChild(row);
+    return row;
+  }
+  window.calculateGPA = function() {
+    var container = document.getElementById('gpaRows');
+    var rows = container ? (container.children || container.querySelectorAll('div')) : [];
+    var courses = [];
+    for (var i = 0; i < rows.length; i++) {
+      var gs = rows[i].querySelector('select');
+      var ci = rows[i].querySelector('input');
+      courses.push({ grade: gs ? gs.value : '', credits: ci ? parseFloat(ci.value) : NaN });
+    }
+    var r;
+    try { r = computeGPA(courses); } catch (e) { showError(e.message); return; }
+    hideError();
+    document.getElementById('gpaValue').textContent = r.gpa.toFixed(2);
+    document.getElementById('gpaBandText').textContent = gpaBand(r.gpa);
+    document.getElementById('gpaCreditsValue').textContent = String(r.credits);
+    document.getElementById('gpaCoursesValue').textContent = String(r.count);
+    document.getElementById('gpaPointsValue').textContent = r.points.toFixed(1);
+    var box = document.getElementById('gpaResultsBox');
+    if (box) { box.classList.add('active'); box.style.display = 'block'; }
+  };
+  window.resetGPA = function() {
+    var container = document.getElementById('gpaRows');
+    if (container) container.innerHTML = '';
+    addCourseRow('A', 3); addCourseRow('B', 3); addCourseRow('C', 3);
+    hideError();
+    var box = document.getElementById('gpaResultsBox');
+    if (box) { box.classList.remove('active'); box.style.display = 'none'; }
+  };
+  var addBtn = document.getElementById('addCourseBtn');
+  if (addBtn) addBtn.addEventListener('click', function() { addCourseRow('A', 3); });
+  var calcBtn = document.getElementById('calcGpaBtn');
+  if (calcBtn) calcBtn.addEventListener('click', window.calculateGPA);
+  var resetBtn = document.getElementById('resetGpaBtn');
+  if (resetBtn) resetBtn.addEventListener('click', window.resetGPA);
+  addCourseRow('A', 3); addCourseRow('B', 3); addCourseRow('C', 3);
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salary to Hourly Calculator - Annual &amp; Monthly to Hourly Pay | OmniTools</title>
+  <meta name="description" content="Convert salary to hourly pay: enter an annual or monthly salary and hours per week to get hourly, weekly, monthly, and annual equivalents. Free and private.">
+  <meta name="keywords" content="salary to hourly calculator, annual salary to hourly, monthly salary to hourly, hourly rate calculator, salary converter">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/salary-hourly-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/salary-hourly-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-salario-por-hora.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/salary-hourly-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/salary-hourly-calculator.html">
+  <meta property="og:title" content="Salary to Hourly Calculator | OmniTools">
+  <meta property="og:description" content="Convert salary to hourly pay: enter an annual or monthly salary and hours per week to get hourly, weekly, monthly, and annual equivalents. Free and private.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-salary-hourly-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salary to Hourly Calculator | OmniTools">
+  <meta name="twitter:description" content="Convert salary to hourly pay: enter an annual or monthly salary and hours per week to get hourly, weekly, monthly, and annual equivalents. Free and private.">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools Salary to Hourly Calculator",
+  "url": "https://janhazirr7.github.io/allinone/salary-hourly-calculator.html",
+  "applicationCategory": "FinancialApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "Convert salary to hourly pay: enter an annual or monthly salary and hours per week to get hourly, weekly, monthly, and annual equivalents. Free and private.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://janhazirr7.github.io/allinone/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Finance",
+      "item": "https://janhazirr7.github.io/allinone/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Salary to Hourly Calculator",
+      "item": "https://janhazirr7.github.io/allinone/salary-hourly-calculator.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I convert an annual salary to an hourly rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the annual salary by 52 weeks and then by your hours per week: hourly = annual / (52 × hours). For example, $52,000 a year at 40 hours a week gives $52,000 / 2,080 = $25.00 per hour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is 52 weeks used in the calculation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fifty-two weeks is the standard payroll convention for a year, used by employers and job boards worldwide. Real calendar years have 52 weeks plus one or two days, and paid holidays vary, but 52 weeks keeps every offer comparable on the same basis."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I convert a monthly salary to hourly pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First annualize it by multiplying by 12, then apply the same formula. A monthly salary of $4,000 becomes $48,000 a year, which at 40 hours a week gives $23.08 per hour. This calculator does both steps for you when you select Monthly salary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are the results gross or net pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All results are gross pay, before income tax, social security, pension contributions, and other deductions. Your take-home pay will be lower, and the exact amount depends on your country's tax system and your personal situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my salary data saved or sent anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. OmniTools runs entirely in your browser. Your salary and hours are never sent to a server, stored in a database, or shared with anyone."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Salary to Hourly Calculator",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Enter your salary",
+      "text": "Type the gross salary amount before taxes."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Choose the period",
+      "text": "Select Annual salary or Monthly salary."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter hours per week",
+      "text": "Type your usual weekly working hours."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Calculate",
+      "text": "Press Calculate Hourly Rate to see the hourly, weekly, monthly, and annual equivalents."
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="salary-hourly-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-salario-por-hora.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">Salary to Hourly Calculator</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Salary to Hourly Calculator</h1>
+        <p class="tool-header-desc">Turn an annual or monthly salary into an hourly rate you can actually compare. Enter your salary and weekly hours to see hourly, weekly, monthly, and annual pay.</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="salAmount" class="form-label"><span>Salary Amount ($)</span><span class="label-hint">Required</span></label>
+              <input type="number" id="salAmount" class="form-input" placeholder="e.g. 52000" min="1" max="10000000" step="100">
+              <span class="form-help">Gross salary before taxes and deductions</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="salPeriod" class="form-label"><span>Salary Period</span><span class="label-hint">Period</span></label>
+                <select id="salPeriod" class="form-select">
+                  <option value="annual" selected>Annual salary</option>
+                  <option value="monthly">Monthly salary</option>
+                </select>
+                <span class="form-help">Is the amount you entered yearly or monthly?</span>
+              </div>
+              <div class="form-group">
+                <label for="salHours" class="form-label"><span>Hours Worked Per Week</span><span class="label-hint">Schedule</span></label>
+                <input type="number" id="salHours" class="form-input" placeholder="e.g. 40" min="1" max="80" step="0.5">
+                <span class="form-help">Standard full-time is usually 40 hours</span>
+              </div>
+            </div>
+          </div>
+          <div id="salErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateSalary()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" /></svg> Calculate Hourly Rate</button>
+            <button type="button" class="btn btn-outline" onclick="resetSalary()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg> Reset</button>
+          </div>
+          <div id="salResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> Salary Breakdown</span>
+              <button type="button" id="salCopyBtn" class="btn btn-outline btn-sm" title="Copy result summary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg> Copy Summary</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">Hourly Rate</div>
+              <div class="hero-result-value" id="salHourlyValue">$0.00</div>
+              <div class="hero-result-sub">Gross hourly equivalent, assuming 52 weeks per year</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="salWeeklyValue">$0.00</div><div class="metric-label">Weekly Pay</div></div>
+              <div class="metric-card"><div class="metric-value" id="salMonthlyValue">$0.00</div><div class="metric-label">Monthly Pay</div></div>
+              <div class="metric-card"><div class="metric-value" id="salAnnualValue">$0.00</div><div class="metric-label">Annual Pay</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+            <li><a href="compound-interest-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Compound Interest Calculator <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="tip-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Tip Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">How to Use the Salary to Hourly Calculator</h2>
+        <p class="content-paragraph">Job offers are usually quoted as annual salaries, while freelance work, part-time jobs, and overtime are quoted by the hour, and comparing the two in your head is surprisingly easy to get wrong. This calculator converts in both directions of scale: enter an annual or monthly salary plus your weekly hours, and it shows the equivalent hourly, weekly, monthly, and annual pay, so you can compare any offer against any other on equal terms.</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>Enter your salary amount</strong>Type the gross salary before taxes, for example 52000 for a fifty-two-thousand-dollar annual salary.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Choose the salary period</strong>Select Annual salary if the amount is yearly, or Monthly salary if you entered a monthly figure. The calculator annualizes a monthly salary by multiplying by 12.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Enter your hours per week</strong>Type your usual weekly hours, for example 40 for standard full-time work, or 37.5 or 20 for other schedules.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Calculate</strong>Press Calculate Hourly Rate to see your hourly rate plus the weekly, monthly, and annual equivalents.</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">The Salary Conversion Formulas Explained</h2>
+        <p class="content-paragraph">The conversion rests on one simple convention: a year has 52 weeks. Everything else follows from that single assumption, which is the standard used by payroll departments and job boards, even though real years have slightly more than 52 weeks and paid holidays complicate the picture.</p>
+        <div class="formula-box">
+          <div class="formula-expression">Hourly = Annual salary / (52 × hours per week)</div>
+          <div class="formula-explanation">Where:<br>• <strong>Weekly pay</strong> = Annual salary / 52<br>• <strong>Monthly pay</strong> = Annual salary / 12<br>• <strong>Annual salary</strong> = Monthly salary × 12 (when monthly is selected)<br>• All results are gross figures, before income tax, social contributions, and other deductions.</div>
+        </div>
+        <p class="content-paragraph">Hours matter just as much as salary. Two jobs both paying $52,000 are not equal if one demands 40 hours a week and the other demands 50: the first pays $25.00 an hour, while the second pays only $20.00 an hour for the same annual sum. That is why hourly conversion is the fairest way to compare offers, especially when one role includes regular overtime or a longer working week.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Worked Example: $52,000 a Year at 40 Hours a Week</h2>
+        <p class="content-paragraph">Take an annual salary of $52,000 with a 40-hour week. Weekly pay is $52,000 / 52, which equals $1,000. Monthly pay is $52,000 / 12, which equals $4,333.33. The hourly rate is $52,000 / (52 × 40), which is $52,000 / 2,080, giving exactly $25.00 per hour. These are clean numbers because $52,000 was chosen to divide neatly, but the calculator handles any salary and any hours, including part-time schedules such as 20 hours, where the same $52,000 annual figure would mean $50.00 an hour.</p>
+        <p class="content-paragraph">A monthly example shows the other direction. A monthly salary of $4,000 annualizes to $48,000, which gives weekly pay of $923.08 and, at 40 hours a week, an hourly rate of $23.08. Comparing that against a freelance offer of $25 an hour is now straightforward: the freelance rate is higher per hour, but the salaried role may include paid holidays, sick pay, pension contributions, and job security that freelance work does not, so the hourly figure is only one part of the decision.</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1. Compare offers fairly</h4><p class="example-card-body">Convert every offer to an hourly rate at its real weekly hours before deciding. A higher annual salary can hide a lower hourly rate when the working week is longer.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Price freelance work</h4><p class="example-card-body">Freelancers should charge more per hour than the equivalent salary rate, because they pay their own taxes, holidays, and downtime. A common starting point is 1.5 to 2 times the salaried hourly equivalent.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Remember it is gross pay</h4><p class="example-card-body">These results are before tax. Your take-home pay will be lower after income tax and contributions, and the exact deduction depends on your country, tax band, and personal circumstances.</p></div>
+        </div>
+        <p class="content-paragraph">One limitation to keep in mind: the calculator assumes you are paid for all 52 weeks, including holidays. If your contract gives unpaid leave, or if overtime is paid at a higher rate, your effective hourly value of worked hours will differ slightly. For offer comparison and budgeting, however, the 52-week convention is the standard everyone uses, and it keeps comparisons honest.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open>
+            <summary class="faq-question">How do I convert an annual salary to an hourly rate?</summary>
+            <div class="faq-answer">Divide the annual salary by 52 weeks and then by your hours per week: hourly = annual / (52 × hours). For example, $52,000 a year at 40 hours a week gives $52,000 / 2,080 = $25.00 per hour.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Why is 52 weeks used in the calculation?</summary>
+            <div class="faq-answer">Fifty-two weeks is the standard payroll convention for a year, used by employers and job boards worldwide. Real calendar years have 52 weeks plus one or two days, and paid holidays vary, but 52 weeks keeps every offer comparable on the same basis.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">How do I convert a monthly salary to hourly pay?</summary>
+            <div class="faq-answer">First annualize it by multiplying by 12, then apply the same formula. A monthly salary of $4,000 becomes $48,000 a year, which at 40 hours a week gives $23.08 per hour. This calculator does both steps for you when you select Monthly salary.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Are the results gross or net pay?</summary>
+            <div class="faq-answer">All results are gross pay, before income tax, social security, pension contributions, and other deductions. Your take-home pay will be lower, and the exact amount depends on your country&#x27;s tax system and your personal situation.</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">Is my salary data saved or sent anywhere?</summary>
+            <div class="faq-answer">No. OmniTools runs entirely in your browser. Your salary and hours are never sent to a server, stored in a database, or shared with anyone.</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="salary-hourly-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-salario-por-hora.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var salInput = document.getElementById('salAmount');
+  var periodSelect = document.getElementById('salPeriod');
+  var hoursInput = document.getElementById('salHours');
+  var resultsBox = document.getElementById('salResultsBox');
+  var errorBox = document.getElementById('salErrorBox');
+  var copyBtn = document.getElementById('salCopyBtn');
+  [salInput, hoursInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateSalary(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeSalary = function(amount, period, hours) {
+    var annual = (period === 'monthly') ? amount * 12 : amount;
+    return { annual: annual, monthly: annual / 12, weekly: annual / 52, hourly: annual / (52 * hours) };
+  };
+  window.calculateSalary = function() {
+    var amount = parseFloat(salInput.value);
+    var period = periodSelect.value;
+    var hours = parseFloat(hoursInput.value);
+    if (isNaN(amount) || isNaN(hours) || amount <= 0 || hours <= 0) {
+      showError('Please enter a valid positive salary and hours per week.');
+      return;
+    }
+    if (amount > 10000000) { showError('Salary amount cannot exceed 10,000,000.'); return; }
+    if (hours > 80) { showError('Hours per week cannot exceed 80.'); return; }
+    hideError();
+    var res = computeSalary(amount, period, hours);
+    document.getElementById('salHourlyValue').textContent = fmt(res.hourly);
+    document.getElementById('salWeeklyValue').textContent = fmt(res.weekly);
+    document.getElementById('salMonthlyValue').textContent = fmt(res.monthly);
+    document.getElementById('salAnnualValue').textContent = fmt(res.annual);
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'Salary: ' + fmt(amount) + ' per ' + period + ' at ' + hours + ' hours per week. Hourly: ' + fmt(res.hourly) + ', Weekly: ' + fmt(res.weekly) + ', Monthly: ' + fmt(res.monthly) + ', Annual: ' + fmt(res.annual) + '. Calculated with OmniTools.'); }
+  };
+  window.resetSalary = function() {
+    salInput.value = ''; hoursInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('Salary summary copied to clipboard!'); }).catch(function() { prompt('Copy summary:', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>
