@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI - Penjejak BMI &amp; Status Kesihatan</title>
+  <meta name="description" content="Kira Indeks Jisim Badan (BMI) anda dalam unit metrik atau imperial, lihat kategori berat badan anda, BMI Prime dan julat berat sihat untuk ketinggian anda.">
+  <meta name="keywords" content="kalkulator bmi, kira bmi, indeks jisim badan, berat sihat, bmi metrik imperial">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/ms/bmi-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/bmi-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-imc.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/bmi-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/bmi-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/bmi-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/bmi-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/bmi-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/bmi-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/bmi-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/bmi-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/bmi-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/bmi-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/bmi-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/bmi-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/bmi-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/bmi-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/bmi-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/bmi-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/bmi-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/bmi-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/bmi-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/bmi-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/bmi-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/bmi-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/bmi-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/bmi-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/bmi-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/bmi-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/bmi-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/bmi-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/bmi-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/ms/bmi-calculator.html">
+  <meta property="og:title" content="Kalkulator BMI - Penjejak BMI &amp; Status Kesihatan">
+  <meta property="og:description" content="Kira Indeks Jisim Badan (BMI) anda dalam unit metrik atau imperial, lihat kategori berat badan anda, BMI Prime dan julat berat sihat untuk ketinggian anda.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-bmi-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kalkulator BMI - Penjejak BMI &amp; Status Kesihatan | OmniTools">
+  <meta name="twitter:description" content="Kira Indeks Jisim Badan (BMI) anda dalam unit metrik atau imperial, lihat kategori berat badan anda, BMI Prime dan julat berat sihat untuk ketinggian anda.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "OmniTools Penjejak BMI", "url": "https://janhazirr7.github.io/allinone/ms/bmi-calculator.html", "applicationCategory": "UtilityApplication", "operatingSystem": "All", "browserRequirements": "Requires JavaScript. Requires HTML5.", "description": "Kira Indeks Jisim Badan (BMI) anda dalam unit metrik atau imperial, lihat kategori berat badan anda, BMI Prime dan julat berat sihat untuk ketinggian anda.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "inLanguage": "ms"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Apakah julat BMI yang dianggap sihat untuk orang dewasa?", "acceptedAnswer": {"@type": "Answer", "text": "Untuk orang dewasa, BMI 18.5 hingga 24.9 dianggap normal atau sihat. Di bawah 18.5 ialah kurang berat, 25.0 hingga 29.9 ialah berlebihan berat, dan 30.0 ke atas ialah obes. Julat ini digunakan oleh Pertubuhan Kesihatan Sedunia sebagai panduan saringan."}}, {"@type": "Question", "name": "Bagaimanakah formula BMI berbeza antara unit metrik dan imperial?", "acceptedAnswer": {"@type": "Answer", "text": "Hasilnya sama; hanya unitnya berbeza. Dalam unit metrik, BMI = berat (kg) ÷ ketinggian (m)². Dalam unit imperial, BMI = 703 × berat (lb) ÷ ketinggian (inci)². Faktor 703 menukar unit imperial kepada skala yang sama."}}, {"@type": "Question", "name": "Mengapakah BMI kadang-kadang mengelirukan bagi atlet?", "acceptedAnswer": {"@type": "Answer", "text": "BMI tidak membezakan otot dengan lemak. Atlet yang mempunyai banyak otot boleh mempunyai BMI tinggi dan dikelaskan sebagai berlebihan berat walaupun peratusan lemak badan mereka rendah. Bagi mereka, ukuran seperti peratusan lemak badan atau lilitan pinggang lebih bermakna."}}, {"@type": "Question", "name": "Apakah BMI Prime dan bagaimana ia ditafsirkan?", "acceptedAnswer": {"@type": "Answer", "text": "BMI Prime ialah BMI anda dibahagikan dengan 25, iaitu had atas julat normal. Nilai 1.00 bermakna anda tepat pada had atas normal; di bawah 1.00 bermakna dalam julat normal atau kurang; di atas 1.00 bermakna melebihi julat normal. Contohnya, BMI 22.5 memberikan BMI Prime 0.90."}}, {"@type": "Question", "name": "Adakah data berat atau ketinggian saya disimpan pada mana-mana pelayan?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Semua pengiraan berjalan di dalam pelayar anda sahaja. Berat dan ketinggian anda tidak pernah meninggalkan peranti anda, tidak disimpan dan tidak dapat dilihat oleh pihak ketiga."}}], "inLanguage": "ms"}</script>
+</head>
+<body>
+
+  <!-- Site Header -->
+    <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Laman Utama OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="index.html">Semua Alat</a></li>
+          <li><a href="age-calculator.html">Kalkulator Umur</a></li>
+          <li><a href="loan-calculator.html">EMI Pinjaman</a></li>
+          <li><a href="word-counter.html">Pengira Kata</a></li>
+          <li><a href="../about.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" onchange="if(this.value){window.location.href=this.value;}" aria-label="Pilih bahasa">
+          <option value="../bmi-calculator.html">English</option>
+          <option value="../es/calculadora-de-imc.html">Español</option>
+          <option value="../de/bmi-calculator.html">Deutsch</option>
+          <option value="../fr/bmi-calculator.html">Français</option>
+          <option value="../pt/bmi-calculator.html">Português</option>
+          <option value="../it/bmi-calculator.html">Italiano</option>
+          <option value="../ru/bmi-calculator.html">Русский</option>
+          <option value="../nl/bmi-calculator.html">Nederlands</option>
+          <option value="../pl/bmi-calculator.html">Polski</option>
+          <option value="../sv/bmi-calculator.html">Svenska</option>
+          <option value="../no/bmi-calculator.html">Norsk</option>
+          <option value="../da/bmi-calculator.html">Dansk</option>
+          <option value="../fi/bmi-calculator.html">Suomi</option>
+          <option value="../id/bmi-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/bmi-calculator.html">Türkçe</option>
+          <option value="../vi/bmi-calculator.html">Tiếng Việt</option>
+          <option value="../th/bmi-calculator.html">ไทย</option>
+          <option value="bmi-calculator.html" selected>Bahasa Melayu</option>
+          <option value="../tl/bmi-calculator.html">Filipino</option>
+          <option value="../hi/bmi-calculator.html">हिन्दी</option>
+          <option value="../ur/bmi-calculator.html">اردو</option>
+          <option value="../ar/bmi-calculator.html">العربية</option>
+          <option value="../fa/bmi-calculator.html">فارسی</option>
+          <option value="../he/bmi-calculator.html">עברית</option>
+          <option value="../ja/bmi-calculator.html">日本語</option>
+          <option value="../ko/bmi-calculator.html">한국어</option>
+          <option value="../zh/bmi-calculator.html">简体中文</option>
+          <option value="../zh-TW/bmi-calculator.html">繁體中文</option>
+          <option value="../el/bmi-calculator.html">Ελληνικά</option>
+          <option value="../cs/bmi-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="Togol menu navigasi" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Laman Utama</a></li>
+          <li><a href="index.html#health">Kesihatan</a></li>
+          <li aria-current="page">Penjejak BMI</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Kalkulator BMI & Status Kesihatan</h1>
+        <p class="tool-header-desc">
+          Kira Indeks Jisim Badan (BMI) anda dalam unit metrik atau imperial, lihat kategori berat badan anda, BMI Prime dan julat berat sihat untuk ketinggian anda.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Iklan Papan Pemuka">
+        <span class="ad-slot-placeholder-text">Iklan Papan Pemuka Responsif (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+      
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+          
+          <!-- Unit Selector Tabs -->
+          <div class="unit-toggle-wrap" role="tablist" aria-label="Measurement Units">
+            <button type="button" id="metricTabBtn" class="unit-toggle-btn active">Metric (cm, kg)</button>
+            <button type="button" id="imperialTabBtn" class="unit-toggle-btn">Imperial (ft/in, lbs)</button>
+          </div>
+
+          <!-- Metric Input Group -->
+          <div id="metricInputGroup" class="unit-group active">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label for="heightCm" class="form-label">
+                  <span>Tinggi</span>
+                  <span class="label-hint">Centimeters (cm)</span>
+                </label>
+                <input type="number" id="heightCm" class="form-input" placeholder="e.g. 175" min="50" max="260" step="0.5">
+                <span class="form-help">Julat biasa: 140 - 210 cm</span>
+              </div>
+
+              <div class="form-group">
+                <label for="weightKg" class="form-label">
+                  <span>Berat</span>
+                  <span class="label-hint">Kilograms (kg)</span>
+                </label>
+                <input type="number" id="weightKg" class="form-input" placeholder="e.g. 70" min="10" max="500" step="0.1">
+                <span class="form-help">Berat badan semasa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imperial Input Group -->
+          <div id="imperialInputGroup" class="unit-group">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Tinggi</span>
+                  <span class="label-hint">Feet & Inches</span>
+                </label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="heightFt" class="form-input" placeholder="Kaki (cth. 5)" min="1" max="8">
+                  <input type="number" id="heightIn" class="form-input" placeholder="Inci (cth. 9)" min="0" max="11.9" step="0.5">
+                </div>
+                <span class="form-help">e.g., 5 ft 9 in</span>
+              </div>
+
+              <div class="form-group">
+                <label for="weightLbs" class="form-label">
+                  <span>Berat</span>
+                  <span class="label-hint">Pounds (lbs)</span>
+                </label>
+                <input type="number" id="weightLbs" class="form-input" placeholder="e.g. 160" min="20" max="1100" step="0.5">
+                <span class="form-help">Berat semasa dalam paun</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="bmiErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin-bottom: 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="calcBmiBtn" class="btn btn-primary" onclick="calculateBMI()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>Kira BMI</button>
+            <button type="button" id="resetBmiBtn" class="btn btn-outline" onclick="resetBMI()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>Tetapkan Semula</button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="bmiResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>Keputusan Indeks Jisim Badan Anda</span>
+              <button type="button" id="copyBmiBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>Salin Ringkasan</button>
+            </div>
+
+            <!-- Primary Highlight Card -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Indeks Jisim Badan Dikira</div>
+              <div class="hero-result-value" id="bmiHeroValue">0.0</div>
+              <div style="margin-top: 0.75rem;">
+                <span id="bmiCategoryBadge" class="bmi-badge bmi-badge-normal">Berat Normal</span>
+              </div>
+              <div class="hero-result-sub" id="bmiCategoryNote">Julat indeks jisim badan sihat.</div>
+            </div>
+
+            <!-- Visual BMI Gauge Spectrum -->
+            <div class="bmi-gauge-wrap">
+              <div class="bmi-pointer" id="bmiGaugePointer" style="left: 50%;"></div>
+              <div class="bmi-spectrum-bar">
+                <div class="bmi-bar-underweight" title="Underweight (&lt; 18.5)"></div>
+                <div class="bmi-bar-normal" title="Normal (18.5 - 24.9)"></div>
+                <div class="bmi-bar-overweight" title="Overweight (25 - 29.9)"></div>
+                <div class="bmi-bar-obese" title="Obese (≥ 30)"></div>
+              </div>
+              <div class="bmi-legend">
+                <span>Underweight (&lt;18.5)</span>
+                <span>Normal (18.5-24.9)</span>
+                <span>Overweight (25-29.9)</span>
+                <span>Obese (≥30)</span>
+              </div>
+            </div>
+
+            <!-- Granular Health Metrics -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>Julat Sihat &amp; Analisis Sasaran</div>
+              <ul class="milestones-list">
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Julat Berat Sihat Ideal</span>
+                  <span class="milestone-item-val" id="idealWeightRange">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Nasihat Sasaran Berat</span>
+                  <span class="milestone-item-val" id="weightTargetNote">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">BMI Prime Index (Target ≤ 1.0)</span>
+                  <span class="milestone-item-val" id="bmiPrimeValue">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Indeks Ponderal</span>
+                  <span class="milestone-item-val" id="ponderalIndexValue">-</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Iklan Bar Sisi">
+          <span class="ad-slot-placeholder-text">Segi Empat Tepat Bar Sisi (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Utiliti Berkaitan</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Umur &amp; Pencapaian<span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Peratusan<span>→</span></a></li>
+            <li><a href="unit-converter.html" style="display: flex; align-items: center; justify-content: space-between;">Penukar Unit Serba Guna<span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator EMI Pinjaman<span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Iklan Dalam Artikel">
+        <span class="ad-slot-placeholder-text">Iklan Sepanduk Kandungan Responsif (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">Cara Menggunakan Penjejak BMI</h2>
+        <p class="content-paragraph">Indeks Jisim Badan, atau BMI, ialah ukuran mudah yang membandingkan berat badan anda dengan ketinggian anda. Ia dikira dengan membahagikan berat dalam kilogram dengan kuasa dua ketinggian dalam meter. Kalkulator BMI OmniTools menyokong unit metrik dan imperial, menunjukkan kategori anda — kurang berat, normal, berlebihan berat atau obes — serta BMI Prime anda, iaitu nisbah BMI anda kepada had atas normal, dan julat berat yang dianggap sihat untuk ketinggian anda.</p>
+        <ol class="step-list"><li class="step-item"><div class="step-item-content">Pilih sistem unit: metrik (kg, cm) atau imperial (lb, kaki/inci).</div></li><li class="step-item"><div class="step-item-content">Masukkan berat dan ketinggian anda.</div></li><li class="step-item"><div class="step-item-content">Tekan Kira untuk melihat BMI, kategori dan julat berat sihat anda.</div></li><li class="step-item"><div class="step-item-content">Cuba nilai yang berbeza untuk melihat bagaimana perubahan berat menggerakkan BMI anda.</div></li></ol>
+        <p class="content-paragraph">Alat ini direka untuk menjadi pantas dan mudah: tiada pendaftaran, tiada pemasangan dan tiada menunggu. Masukkan nilai anda, semak hasilnya, dan laraskan input untuk membandingkan senario yang berbeza. Semua pengiraan berlaku serta-merta di dalam pelayar anda, jadi anda boleh mencuba seberapa banyak nilai yang anda mahu tanpa kos.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Mengapa Penjejak BMI Berguna</h2>
+        <p class="content-paragraph">BMI digunakan secara meluas oleh doktor, jurulatih dan program kesihatan sebagai saringan pertama kerana ia cepat, murah dan mudah dibandingkan antara orang. Ia membantu anda menetapkan sasaran berat yang realistik dan menjejaki perubahan dari semasa ke semasa. Namun BMI bukan ukuran lemak badan secara langsung: atlet berotot boleh mempunyai BMI tinggi tanpa lemak berlebihan, manakala warga emas boleh kehilangan otot tetapi kekal dalam julat BMI normal.</p>
+        <p class="content-paragraph">Selain kegunaan harian, alat ini membantu anda mengelakkan kesilapan pengiraan manual yang biasa berlaku apabila membahagi, membundar atau menukar unit dengan cepat. Dengan menunjukkan formula dan langkah pengiraan, ia juga berfungsi sebagai alat pembelajaran: anda bukan sahaja mendapat jawapan, tetapi memahami bagaimana jawapan itu diperoleh, jadi anda boleh menyemak dan mempercayainya.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Contoh Pengiraan</h2>
+        <p class="content-paragraph">Contohnya, seseorang yang beratnya 70 kg dan tingginya 1.75 m mempunyai BMI 70 ÷ (1.75 × 1.75) = 22.9, iaitu dalam kategori normal (18.5–24.9). Julat berat sihat untuk ketinggian 1.75 m ialah kira-kira 56.7 kg hingga 76.3 kg. Jika beratnya naik kepada 85 kg, BMI menjadi 27.8, iaitu kategori berlebihan berat.</p>
+        <p class="content-paragraph">Contoh di atas menunjukkan prinsip asasnya, tetapi kekuatan sebenar alat ini ialah anda boleh menguji nilai anda sendiri. Cuba kes ekstrem yang kecil dan besar, bandingkan dua senario bersebelahan, dan perhatikan bagaimana perubahan kecil pada input boleh mengubah hasil dengan ketara — terutamanya untuk pengiraan yang melibatkan peratus, faedah atau tempoh yang panjang.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Ketepatan dan Privasi</h2>
+        <p class="content-paragraph">Semua pengiraan dilakukan sepenuhnya di dalam pelayar anda. Tiada data yang anda masukkan dihantar ke pelayan, disimpan dalam pangkalan data atau dikongsi dengan pihak ketiga. Anda boleh menggunakan alat ini tanpa akaun, tanpa mendaftar dan tanpa memasang apa-apa, pada telefon, tablet atau komputer.</p>
+        <p class="content-paragraph">Ketepatan bergantung pada input anda: masukkan nilai yang tepat dan semak unit sebelum mengira. Hasil dibundarkan untuk paparan, tetapi pengiraan dalaman menggunakan ketepatan penuh, jadi ralat pembundaran tidak terkumpul. Untuk keputusan kewangan, kesihatan atau undang-undang yang penting, sahkan hasil dengan profesional atau sumber rasmi yang berkaitan sebelum membuat komitmen.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Petua Praktikal</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;"><li>Ukur ketinggian dan berat pada waktu yang sama setiap hari untuk perbandingan yang konsisten.</li><li>Lihat trend selama berminggu-minggu, bukan satu bacaan tunggal.</li><li>Gabungkan BMI dengan ukuran lilitan pinggang dan tahap kecergasan untuk gambaran yang lebih lengkap.</li><li>Jika anda atlet atau warga emas, bincangkan keputusan dengan profesional kesihatan.</li></ul>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Soalan Lazim (FAQ)</h2>
+        <div class="faq-list"><details class="faq-item" open><summary class="faq-question">Apakah julat BMI yang dianggap sihat untuk orang dewasa?</summary><div class="faq-answer">Untuk orang dewasa, BMI 18.5 hingga 24.9 dianggap normal atau sihat. Di bawah 18.5 ialah kurang berat, 25.0 hingga 29.9 ialah berlebihan berat, dan 30.0 ke atas ialah obes. Julat ini digunakan oleh Pertubuhan Kesihatan Sedunia sebagai panduan saringan.</div></details><details class="faq-item"><summary class="faq-question">Bagaimanakah formula BMI berbeza antara unit metrik dan imperial?</summary><div class="faq-answer">Hasilnya sama; hanya unitnya berbeza. Dalam unit metrik, BMI = berat (kg) ÷ ketinggian (m)². Dalam unit imperial, BMI = 703 × berat (lb) ÷ ketinggian (inci)². Faktor 703 menukar unit imperial kepada skala yang sama.</div></details><details class="faq-item"><summary class="faq-question">Mengapakah BMI kadang-kadang mengelirukan bagi atlet?</summary><div class="faq-answer">BMI tidak membezakan otot dengan lemak. Atlet yang mempunyai banyak otot boleh mempunyai BMI tinggi dan dikelaskan sebagai berlebihan berat walaupun peratusan lemak badan mereka rendah. Bagi mereka, ukuran seperti peratusan lemak badan atau lilitan pinggang lebih bermakna.</div></details><details class="faq-item"><summary class="faq-question">Apakah BMI Prime dan bagaimana ia ditafsirkan?</summary><div class="faq-answer">BMI Prime ialah BMI anda dibahagikan dengan 25, iaitu had atas julat normal. Nilai 1.00 bermakna anda tepat pada had atas normal; di bawah 1.00 bermakna dalam julat normal atau kurang; di atas 1.00 bermakna melebihi julat normal. Contohnya, BMI 22.5 memberikan BMI Prime 0.90.</div></details><details class="faq-item"><summary class="faq-question">Adakah data berat atau ketinggian saya disimpan pada mana-mana pelayan?</summary><div class="faq-answer">Tidak. Semua pengiraan berjalan di dalam pelayar anda sahaja. Berat dan ketinggian anda tidak pernah meninggalkan peranti anda, tidak disimpan dan tidak dapat dilihat oleh pihak ketiga.</div></details></div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools menyediakan kalkulator dan utiliti dalam talian yang percuma, ringan dan mengutamakan privasi untuk produktiviti, pendidikan, kewangan dan kesihatan.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Alat Popular</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Kalkulator Umur</a></li>
+            <li><a href="loan-calculator.html">Kalkulator EMI Pinjaman</a></li>
+            <li><a href="bmi-calculator.html">Penjejak BMI</a></li>
+            <li><a href="password-generator.html">Penjana Kata Laluan</a></li>
+            <li><a href="word-counter.html">Pengira Kata</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utiliti</h4>
+          <ul class="footer-links">
+            <li><a href="unit-converter.html">Penukar Unit</a></li>
+            <li><a href="percentage-calculator.html">Kalkulator Peratusan</a></li>
+            <li><a href="date-calculator.html">Perbezaan Tarikh</a></li>
+            <li><a href="case-converter.html">Penukar Huruf Teks</a></li>
+            <li><a href="discount-calculator.html">Kalkulator Diskaun</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Undang-undang &amp; Maklumat</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Tentang Kami</a></li>
+            <li><a href="../contact.html">Hubungi Kami</a></li>
+            <li><a href="../privacy-policy.html">Dasar Privasi</a></li>
+            <li><a href="../terms.html">Terma Perkhidmatan</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Hak cipta terpelihara. Utiliti dalam talian percuma untuk semua.</p>
+        <div class="footer-lang-select">
+          <span>Bahasa:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="index.html" style="color: #60a5fa;">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    // 1. Mobile Navigation Toggle
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    // 2. Unit Toggling
+    var metricTab = document.getElementById('metricTabBtn');
+    var imperialTab = document.getElementById('imperialTabBtn');
+    var metricGroup = document.getElementById('metricInputGroup');
+    var imperialGroup = document.getElementById('imperialInputGroup');
+    var currentUnit = 'metric';
+
+    if (metricTab && imperialTab) {
+      metricTab.addEventListener('click', function() {
+        metricTab.classList.add('active');
+        imperialTab.classList.remove('active');
+        metricGroup.classList.add('active');
+        metricGroup.style.display = 'block';
+        imperialGroup.classList.remove('active');
+        imperialGroup.style.display = 'none';
+        currentUnit = 'metric';
+      });
+
+      imperialTab.addEventListener('click', function() {
+        imperialTab.classList.add('active');
+        metricTab.classList.remove('active');
+        imperialGroup.classList.add('active');
+        imperialGroup.style.display = 'block';
+        metricGroup.classList.remove('active');
+        metricGroup.style.display = 'none';
+        currentUnit = 'imperial';
+      });
+    }
+
+    var resultsBox = document.getElementById('bmiResultsBox');
+    var errorBox = document.getElementById('bmiErrorBox');
+    var copyBtn = document.getElementById('copyBmiBtn');
+
+    // 3. BMI Calculation Function (Globally Accessible)
+    window.calculateBMI = function() {
+      var heightMeters = 0;
+      var weightKg = 0;
+      var displayHeight = '';
+      var displayWeight = '';
+
+      if (currentUnit === 'metric') {
+        var cm = parseFloat(document.getElementById('heightCm').value);
+        var kg = parseFloat(document.getElementById('weightKg').value);
+
+        if (!cm || cm <= 0 || !kg || kg <= 0) {
+          showError('Please enter positive numbers for height and weight.');
+          return;
+        }
+        if (cm < 50 || cm > 260) {
+          showError('Please enter a realistic height between 50 cm and 260 cm.');
+          return;
+        }
+        if (kg < 10 || kg > 500) {
+          showError('Please enter a realistic weight between 10 kg and 500 kg.');
+          return;
+        }
+
+        heightMeters = cm / 100;
+        weightKg = kg;
+        displayHeight = cm + ' cm';
+        displayWeight = kg + ' kg';
+      } else {
+        var ft = parseFloat(document.getElementById('heightFt').value) || 0;
+        var inch = parseFloat(document.getElementById('heightIn').value) || 0;
+        var lbs = parseFloat(document.getElementById('weightLbs').value);
+
+        var totalInches = (ft * 12) + inch;
+        if (totalInches <= 0 || !lbs || lbs <= 0) {
+          showError('Please enter positive numbers for height and weight.');
+          return;
+        }
+        if (totalInches < 20 || totalInches > 105) {
+          showError('Please enter a realistic height between 1 ft 8 in and 8 ft 9 in.');
+          return;
+        }
+        if (lbs < 20 || lbs > 1100) {
+          showError('Please enter a realistic weight between 20 lbs and 1100 lbs.');
+          return;
+        }
+
+        heightMeters = totalInches * 0.0254;
+        weightKg = lbs * 0.45359237;
+        displayHeight = ft + ' ft ' + inch + ' in';
+        displayWeight = lbs + ' lbs';
+      }
+
+      hideError();
+
+      var bmi = weightKg / (heightMeters * heightMeters);
+      var bmiRounded = Math.round(bmi * 10) / 10;
+
+      var category = '';
+      var badgeClass = '';
+      var categoryDesc = '';
+
+      if (bmi < 16.0) {
+        category = 'Severe Thinness';
+        badgeClass = 'bmi-badge-underweight';
+        categoryDesc = 'Significant risk of nutritional deficiency; clinical evaluation advised.';
+      } else if (bmi >= 16.0 && bmi < 17.0) {
+        category = 'Moderate Thinness';
+        badgeClass = 'bmi-badge-underweight';
+        categoryDesc = 'Below recommended body weight; consult a healthcare professional.';
+      } else if (bmi >= 17.0 && bmi < 18.5) {
+        category = 'Mild Thinness (Underweight)';
+        badgeClass = 'bmi-badge-underweight';
+        categoryDesc = 'Slightly below healthy weight range.';
+      } else if (bmi >= 18.5 && bmi < 25.0) {
+        category = 'Normal Weight';
+        badgeClass = 'bmi-badge-normal';
+        categoryDesc = 'Healthy body mass index associated with lowest statistical health risks.';
+      } else if (bmi >= 25.0 && bmi < 30.0) {
+        category = 'Overweight (Pre-obese)';
+        badgeClass = 'bmi-badge-overweight';
+        categoryDesc = 'Moderate excess body mass; lifestyle and dietary adjustments recommended.';
+      } else if (bmi >= 30.0 && bmi < 35.0) {
+        category = 'Obesity Class I';
+        badgeClass = 'bmi-badge-obese';
+        categoryDesc = 'Elevated risk of cardiovascular and metabolic conditions.';
+      } else if (bmi >= 35.0 && bmi < 40.0) {
+        category = 'Obesity Class II';
+        badgeClass = 'bmi-badge-obese';
+        categoryDesc = 'High health risk; medical guidance strongly advised.';
+      } else {
+        category = 'Obesity Class III (Morbid)';
+        badgeClass = 'bmi-badge-obese';
+        categoryDesc = 'Very high clinical risk category.';
+      }
+
+      var minHealthyKg = 18.5 * (heightMeters * heightMeters);
+      var maxHealthyKg = 24.9 * (heightMeters * heightMeters);
+      var minHealthyLbs = minHealthyKg * 2.20462;
+      var maxHealthyLbs = maxHealthyKg * 2.20462;
+
+      var idealWeightStr = (currentUnit === 'metric')
+        ? minHealthyKg.toFixed(1) + ' kg - ' + maxHealthyKg.toFixed(1) + ' kg'
+        : minHealthyLbs.toFixed(1) + ' lbs - ' + maxHealthyLbs.toFixed(1) + ' lbs';
+
+      var targetDeltaStr = '';
+      if (bmi < 18.5) {
+        var toGainKg = minHealthyKg - weightKg;
+        var toGainLbs = toGainKg * 2.20462;
+        targetDeltaStr = (currentUnit === 'metric')
+          ? 'Gain ' + toGainKg.toFixed(1) + ' kg to reach healthy minimum'
+          : 'Gain ' + toGainLbs.toFixed(1) + ' lbs to reach healthy minimum';
+      } else if (bmi >= 25.0) {
+        var toLoseKg = weightKg - maxHealthyKg;
+        var toLoseLbs = toLoseKg * 2.20462;
+        targetDeltaStr = (currentUnit === 'metric')
+          ? 'Lose ' + toLoseKg.toFixed(1) + ' kg to reach healthy maximum'
+          : 'Lose ' + toLoseLbs.toFixed(1) + ' lbs to reach healthy maximum';
+      } else {
+        targetDeltaStr = 'You are comfortably within the healthy weight range';
+      }
+
+      var bmiPrime = (bmi / 25.0).toFixed(2);
+      var ponderalIndex = (weightKg / Math.pow(heightMeters, 3)).toFixed(1);
+
+      var pointerPercent = ((bmi - 15) / (40 - 15)) * 100;
+      pointerPercent = Math.max(3, Math.min(pointerPercent, 97));
+
+      document.getElementById('bmiHeroValue').textContent = bmiRounded.toFixed(1);
+      var categoryBadge = document.getElementById('bmiCategoryBadge');
+      categoryBadge.textContent = category;
+      categoryBadge.className = 'bmi-badge ' + badgeClass;
+      document.getElementById('bmiCategoryNote').textContent = categoryDesc;
+
+      var pointer = document.getElementById('bmiGaugePointer');
+      if (pointer) pointer.style.left = pointerPercent + '%';
+
+      document.getElementById('idealWeightRange').textContent = idealWeightStr;
+      document.getElementById('weightTargetNote').textContent = targetDeltaStr;
+      document.getElementById('bmiPrimeValue').textContent = bmiPrime + ' (' + (bmiPrime <= 1.0 ? 'Optimal' : 'Above Target') + ')';
+      document.getElementById('ponderalIndexValue').textContent = ponderalIndex + ' kg/m³';
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'My BMI: ' + bmiRounded.toFixed(1) + ' (' + category + ') for ' + displayHeight + ' and ' + displayWeight + '. Healthy range: ' + idealWeightStr + '. Calculated on OmniTools.');
+      }
+    };
+
+    window.resetBMI = function() {
+      document.getElementById('heightCm').value = '';
+      document.getElementById('weightKg').value = '';
+      document.getElementById('heightFt').value = '';
+      document.getElementById('heightIn').value = '';
+      document.getElementById('weightLbs').value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('BMI summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Salin ringkasan:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
+

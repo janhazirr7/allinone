@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penukar Mata Wang - Kadar Tukaran Langsung Percuma</title>
+  <meta name="description" content="Tukar mata wang dengan kadar tukaran langsung daripada API terbuka, termasuk penukaran antara dua mata wang bukan USD dan tarikh kadar.">
+  <meta name="keywords" content="penukar mata wang, kadar tukaran langsung, usd ke myr, tukar mata wang">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/ms/currency-converter.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/currency-converter.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/currency-converter.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/currency-converter.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/currency-converter.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/currency-converter.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/currency-converter.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/currency-converter.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/currency-converter.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/currency-converter.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/currency-converter.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/currency-converter.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/currency-converter.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/currency-converter.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/currency-converter.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/currency-converter.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/currency-converter.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/currency-converter.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/currency-converter.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/currency-converter.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/currency-converter.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/currency-converter.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/currency-converter.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/currency-converter.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/currency-converter.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/currency-converter.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/currency-converter.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/currency-converter.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/currency-converter.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/currency-converter.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/currency-converter.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/ms/currency-converter.html">
+  <meta property="og:title" content="Penukar Mata Wang - Kadar Tukaran Langsung Percuma">
+  <meta property="og:description" content="Tukar mata wang dengan kadar tukaran langsung daripada API terbuka, termasuk penukaran antara dua mata wang bukan USD dan tarikh kadar.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-currency-converter.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Penukar Mata Wang - Kadar Tukaran Langsung Percuma | OmniTools">
+  <meta name="twitter:description" content="Tukar mata wang dengan kadar tukaran langsung daripada API terbuka, termasuk penukaran antara dua mata wang bukan USD dan tarikh kadar.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "OmniTools Penukar Mata Wang", "url": "https://janhazirr7.github.io/allinone/ms/currency-converter.html", "applicationCategory": "UtilityApplication", "operatingSystem": "All", "browserRequirements": "Requires JavaScript. Requires HTML5.", "description": "Tukar mata wang dengan kadar tukaran langsung daripada API terbuka, termasuk penukaran antara dua mata wang bukan USD dan tarikh kadar.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "inLanguage": "ms"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Dari manakah kadar tukaran datang?", "acceptedAnswer": {"@type": "Answer", "text": "Kadar diambil secara langsung daripada API kadar terbuka: sumber utama ialah open.er-api.com dan sumber sandaran ialah exchangerate-api.com. Kedua-duanya menerbitkan kadar rujukan pasaran yang dikemas kini setiap hari."}}, {"@type": "Question", "name": "Adakah kadar itu benar-benar langsung, atau disimpan pada halaman?", "acceptedAnswer": {"@type": "Answer", "text": "Kadar diambil secara langsung apabila halaman dimuatkan, dan tarikh kadar ditunjukkan. Jika kadar tidak dapat dimuatkan, alat ini menunjukkan ralat yang jelas dan bukannya menggunakan kadar lapuk yang tersimpan."}}, {"@type": "Question", "name": "Bagaimanakah penukaran antara dua mata wang bukan USD dikira?", "acceptedAnswer": {"@type": "Answer", "text": "Melalui USD sebagai mata wang asas. Contohnya, untuk menukar MYR kepada EUR, alat ini menggunakan kadar USD MYR dan kadar USD EUR yang diterbitkan untuk mengira kadar silang MYR ke EUR."}}, {"@type": "Question", "name": "Mengapakah bank atau kad saya menunjukkan kadar yang berbeza?", "acceptedAnswer": {"@type": "Answer", "text": "Kerana bank dan penyedia kad menambah margin kepada kadar pasaran pertengahan dan mungkin mengenakan yuran transaksi asing. Kadar yang anda terima biasanya 1 hingga 4 peratus kurang baik daripada kadar pasaran."}}, {"@type": "Question", "name": "Adakah amaun atau data peribadi saya dihantar ke mana-mana?", "acceptedAnswer": {"@type": "Answer", "text": "Amaun anda hanya digunakan di dalam pelayar anda untuk pengiraan. Permintaan kadar pergi ke penyedia API kadar awam, tetapi amaun dan maklumat peribadi anda tidak dihantar bersama permintaan itu."}}], "inLanguage": "ms"}</script>
+</head>
+<body>
+
+  <!-- Site Header -->
+    <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Laman Utama OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="index.html">Semua Alat</a></li>
+          <li><a href="age-calculator.html">Kalkulator Umur</a></li>
+          <li><a href="loan-calculator.html">EMI Pinjaman</a></li>
+          <li><a href="word-counter.html">Pengira Kata</a></li>
+          <li><a href="../about.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" onchange="if(this.value){window.location.href=this.value;}" aria-label="Pilih bahasa">
+          <option value="../currency-converter.html">English</option>
+          <option value="../es/conversor-de-divisas.html">Español</option>
+          <option value="../de/currency-converter.html">Deutsch</option>
+          <option value="../fr/currency-converter.html">Français</option>
+          <option value="../pt/currency-converter.html">Português</option>
+          <option value="../it/currency-converter.html">Italiano</option>
+          <option value="../ru/currency-converter.html">Русский</option>
+          <option value="../nl/currency-converter.html">Nederlands</option>
+          <option value="../pl/currency-converter.html">Polski</option>
+          <option value="../sv/currency-converter.html">Svenska</option>
+          <option value="../no/currency-converter.html">Norsk</option>
+          <option value="../da/currency-converter.html">Dansk</option>
+          <option value="../fi/currency-converter.html">Suomi</option>
+          <option value="../id/currency-converter.html">Bahasa Indonesia</option>
+          <option value="../tr/currency-converter.html">Türkçe</option>
+          <option value="../vi/currency-converter.html">Tiếng Việt</option>
+          <option value="../th/currency-converter.html">ไทย</option>
+          <option value="currency-converter.html" selected>Bahasa Melayu</option>
+          <option value="../tl/currency-converter.html">Filipino</option>
+          <option value="../hi/currency-converter.html">हिन्दी</option>
+          <option value="../ur/currency-converter.html">اردو</option>
+          <option value="../ar/currency-converter.html">العربية</option>
+          <option value="../fa/currency-converter.html">فارسی</option>
+          <option value="../he/currency-converter.html">עברית</option>
+          <option value="../ja/currency-converter.html">日本語</option>
+          <option value="../ko/currency-converter.html">한국어</option>
+          <option value="../zh/currency-converter.html">简体中文</option>
+          <option value="../zh-TW/currency-converter.html">繁體中文</option>
+          <option value="../el/currency-converter.html">Ελληνικά</option>
+          <option value="../cs/currency-converter.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="Togol menu navigasi" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Laman Utama</a></li>
+          <li><a href="index.html#finance">Kewangan</a></li>
+          <li aria-current="page">Penukar Mata Wang</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Penukar Mata Wang Langsung</h1>
+        <p class="tool-header-desc">
+          Tukar mata wang dengan kadar tukaran langsung daripada API terbuka, termasuk penukaran antara dua mata wang bukan USD dan tarikh kadar.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Iklan Papan Pemuka">
+        <span class="ad-slot-placeholder-text">Iklan Papan Pemuka Responsif (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Amount -->
+            <div class="form-group">
+              <label for="fxAmount" class="form-label">
+                <span>Amaun</span>
+                <span class="label-hint">Diperlukan</span>
+              </label>
+              <input type="number" id="fxAmount" class="form-input" placeholder="e.g. 100" min="0" step="any" value="100">
+              <span class="form-help">Masukkan sebarang amaun positif</span>
+            </div>
+
+            <!-- From / Swap / To -->
+            <div style="display: flex; gap: 0.5rem; align-items: flex-end;">
+              <div class="form-group" style="flex: 1;">
+                <label for="fxFrom" class="form-label">
+                  <span>Dari</span>
+                </label>
+                <select id="fxFrom" class="form-select"></select>
+                <span class="form-help">Mata wang yang anda ada</span>
+              </div>
+              <button type="button" id="fxSwapBtn" class="btn btn-outline" title="Swap currencies" style="margin-bottom: 1.5rem;">⇄</button>
+              <div class="form-group" style="flex: 1;">
+                <label for="fxTo" class="form-label">
+                  <span>Ke</span>
+                </label>
+                <select id="fxTo" class="form-select"></select>
+                <span class="form-help">Mata wang yang anda mahu</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loading State -->
+          <div id="fxLoadingBox" style="display: none; background: var(--bg-surface); color: var(--text-main); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent); margin: 1rem 0 0; font-size: 0.875rem; font-weight: 500;">
+            Loading live exchange rates…
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="fxErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="fxConvertBtn" class="btn btn-primary" onclick="fxConvert()" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>Tukar</button>
+            <button type="button" id="fxResetBtn" class="btn btn-outline" onclick="fxReset()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>Tetapkan Semula</button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="fxResultsBox" class="results-box" style="display: none;">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>Hasil Penukaran</span>
+              <button type="button" id="fxCopyBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>Salin Ringkasan</button>
+            </div>
+
+            <!-- Primary Highlight Card: Converted Amount -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Amaun Ditukar</div>
+              <div class="hero-result-value" id="fxResultValue">-</div>
+              <div class="hero-result-sub" id="fxRateLine">-</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="fxReverseLine">-</div>
+                <div class="metric-label">Kadar Songsang</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="fxOriginalLine">-</div>
+                <div class="metric-label">Amaun Asal</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="fxUpdatedLine" style="color: var(--accent);">-</div>
+                <div class="metric-label">Rates Last Updated</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Iklan Bar Sisi">
+          <span class="ad-slot-placeholder-text">Segi Empat Tepat Bar Sisi (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Kalkulator Berkaitan</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="compound-interest-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Faedah Kompaun<span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Peratusan<span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator EMI Pinjaman<span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Diskaun &amp; Cukai Jualan<span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Iklan Dalam Artikel">
+        <span class="ad-slot-placeholder-text">Iklan Sepanduk Kandungan Responsif (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">Cara Menggunakan Penukar Mata Wang</h2>
+        <p class="content-paragraph">Penukar Mata Wang OmniTools menukar amaun antara mata wang dunia menggunakan kadar tukaran langsung yang diambil daripada API kadar terbuka. Kadar utama datang daripada open.er-api.com dan, jika ia gagal, daripada exchangerate-api.com sebagai sandaran. Semua kadar yang diterbitkan menggunakan dolar AS sebagai mata wang asas, dan penukaran antara dua mata wang bukan USD dikira melalui USD. Tarikh kadar ditunjukkan supaya anda tahu betapa baharunya kadar itu, dan ralat yang jelas ditunjukkan jika kedua-dua API gagal, bukannya nombor yang salah.</p>
+        <ol class="step-list"><li class="step-item"><div class="step-item-content">Masukkan amaun yang ingin ditukar.</div></li><li class="step-item"><div class="step-item-content">Pilih mata wang asal dan mata wang sasaran.</div></li><li class="step-item"><div class="step-item-content">Tekan Tukar atau gunakan butang Tukar untuk menukar arah.</div></li><li class="step-item"><div class="step-item-content">Lihat hasil, kadar dan tarikh kadar.</div></li></ol>
+        <p class="content-paragraph">Alat ini direka untuk menjadi pantas dan mudah: tiada pendaftaran, tiada pemasangan dan tiada menunggu. Masukkan nilai anda, semak hasilnya, dan laraskan input untuk membandingkan senario yang berbeza. Semua pengiraan berlaku serta-merta di dalam pelayar anda, jadi anda boleh mencuba seberapa banyak nilai yang anda mahu tanpa kos.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Mengapa Penukar Mata Wang Berguna</h2>
+        <p class="content-paragraph">Penukaran mata wang diperlukan untuk perjalanan, membeli-belah dalam talian, kiriman wang dan perniagaan antarabangsa. Kadar bank atau kad anda mungkin berbeza daripada kadar pasaran pertengahan yang ditunjukkan di sini kerana bank menambah margin dan yuran. Penukaran antara dua mata wang bukan USD, contohnya MYR ke EUR, dikira dengan menukar MYR kepada USD dahulu, kemudian USD kepada EUR, menggunakan kadar yang diterbitkan untuk kedua-duanya.</p>
+        <p class="content-paragraph">Selain kegunaan harian, alat ini membantu anda mengelakkan kesilapan pengiraan manual yang biasa berlaku apabila membahagi, membundar atau menukar unit dengan cepat. Dengan menunjukkan formula dan langkah pengiraan, ia juga berfungsi sebagai alat pembelajaran: anda bukan sahaja mendapat jawapan, tetapi memahami bagaimana jawapan itu diperoleh, jadi anda boleh menyemak dan mempercayainya.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Contoh Pengiraan</h2>
+        <p class="content-paragraph">Contohnya, 200 USD kepada PKR pada kadar 278.50 memberikan 200 × 278.50 = 55,700 PKR. Jika kadar USD ke MYR ialah 4.40, maka 100 USD bersamaan 440 MYR, dan 440 MYR bersamaan kira-kira 100 USD pada kadar yang sama. Itulah wang perbelanjaan anda sebelum sebarang yuran pertukaran.</p>
+        <p class="content-paragraph">Contoh di atas menunjukkan prinsip asasnya, tetapi kekuatan sebenar alat ini ialah anda boleh menguji nilai anda sendiri. Cuba kes ekstrem yang kecil dan besar, bandingkan dua senario bersebelahan, dan perhatikan bagaimana perubahan kecil pada input boleh mengubah hasil dengan ketara — terutamanya untuk pengiraan yang melibatkan peratus, faedah atau tempoh yang panjang.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Ketepatan dan Privasi</h2>
+        <p class="content-paragraph">Semua pengiraan dilakukan sepenuhnya di dalam pelayar anda. Tiada data yang anda masukkan dihantar ke pelayan, disimpan dalam pangkalan data atau dikongsi dengan pihak ketiga. Anda boleh menggunakan alat ini tanpa akaun, tanpa mendaftar dan tanpa memasang apa-apa, pada telefon, tablet atau komputer.</p>
+        <p class="content-paragraph">Ketepatan bergantung pada input anda: masukkan nilai yang tepat dan semak unit sebelum mengira. Hasil dibundarkan untuk paparan, tetapi pengiraan dalaman menggunakan ketepatan penuh, jadi ralat pembundaran tidak terkumpul. Untuk keputusan kewangan, kesihatan atau undang-undang yang penting, sahkan hasil dengan profesional atau sumber rasmi yang berkaitan sebelum membuat komitmen.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Petua Praktikal</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;"><li>Semak tarikh kadar: kadar hujung minggu mungkin kadar Jumaat.</li><li>Bandingkan dengan kadar bank anda: bank menambah margin dan yuran.</li><li>Untuk jumlah besar, kunci kadar dengan penyedia anda jika boleh.</li><li>Jika kedua-dua API gagal, cuba lagi kemudian daripada menerima nombor lapuk.</li></ul>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Soalan Lazim (FAQ)</h2>
+        <div class="faq-list"><details class="faq-item" open><summary class="faq-question">Dari manakah kadar tukaran datang?</summary><div class="faq-answer">Kadar diambil secara langsung daripada API kadar terbuka: sumber utama ialah open.er-api.com dan sumber sandaran ialah exchangerate-api.com. Kedua-duanya menerbitkan kadar rujukan pasaran yang dikemas kini setiap hari.</div></details><details class="faq-item"><summary class="faq-question">Adakah kadar itu benar-benar langsung, atau disimpan pada halaman?</summary><div class="faq-answer">Kadar diambil secara langsung apabila halaman dimuatkan, dan tarikh kadar ditunjukkan. Jika kadar tidak dapat dimuatkan, alat ini menunjukkan ralat yang jelas dan bukannya menggunakan kadar lapuk yang tersimpan.</div></details><details class="faq-item"><summary class="faq-question">Bagaimanakah penukaran antara dua mata wang bukan USD dikira?</summary><div class="faq-answer">Melalui USD sebagai mata wang asas. Contohnya, untuk menukar MYR kepada EUR, alat ini menggunakan kadar USD MYR dan kadar USD EUR yang diterbitkan untuk mengira kadar silang MYR ke EUR.</div></details><details class="faq-item"><summary class="faq-question">Mengapakah bank atau kad saya menunjukkan kadar yang berbeza?</summary><div class="faq-answer">Kerana bank dan penyedia kad menambah margin kepada kadar pasaran pertengahan dan mungkin mengenakan yuran transaksi asing. Kadar yang anda terima biasanya 1 hingga 4 peratus kurang baik daripada kadar pasaran.</div></details><details class="faq-item"><summary class="faq-question">Adakah amaun atau data peribadi saya dihantar ke mana-mana?</summary><div class="faq-answer">Amaun anda hanya digunakan di dalam pelayar anda untuk pengiraan. Permintaan kadar pergi ke penyedia API kadar awam, tetapi amaun dan maklumat peribadi anda tidak dihantar bersama permintaan itu.</div></details></div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools menyediakan kalkulator dan utiliti dalam talian yang percuma, ringan dan mengutamakan privasi untuk produktiviti, pendidikan, kewangan dan kesihatan.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Alat Popular</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Kalkulator Umur</a></li>
+            <li><a href="loan-calculator.html">Kalkulator EMI Pinjaman</a></li>
+            <li><a href="bmi-calculator.html">Penjejak BMI</a></li>
+            <li><a href="password-generator.html">Penjana Kata Laluan</a></li>
+            <li><a href="word-counter.html">Pengira Kata</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utiliti</h4>
+          <ul class="footer-links">
+            <li><a href="unit-converter.html">Penukar Unit</a></li>
+            <li><a href="percentage-calculator.html">Kalkulator Peratusan</a></li>
+            <li><a href="date-calculator.html">Perbezaan Tarikh</a></li>
+            <li><a href="case-converter.html">Penukar Huruf Teks</a></li>
+            <li><a href="discount-calculator.html">Kalkulator Diskaun</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Undang-undang &amp; Maklumat</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Tentang Kami</a></li>
+            <li><a href="../contact.html">Hubungi Kami</a></li>
+            <li><a href="../privacy-policy.html">Dasar Privasi</a></li>
+            <li><a href="../terms.html">Terma Perkhidmatan</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Hak cipta terpelihara. Utiliti dalam talian percuma untuk semua.</p>
+        <div class="footer-lang-select">
+          <span>Bahasa:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="index.html" style="color: #60a5fa;">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (live rates via ExchangeRate-API only) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var CURRENCIES = [
+      { code: 'USD', name: 'Dolar AS' },
+      { code: 'EUR', name: 'Euro' },
+      { code: 'GBP', name: 'British Pound Sterling' },
+      { code: 'CHF', name: 'Franc Swiss' },
+      { code: 'CAD', name: 'Dolar Kanada' },
+      { code: 'AUD', name: 'Dolar Australia' },
+      { code: 'NZD', name: 'Dolar New Zealand' },
+      { code: 'JPY', name: 'Yen Jepun' },
+      { code: 'CNY', name: 'Yuan China' },
+      { code: 'INR', name: 'Rupee India' },
+      { code: 'PKR', name: 'Rupee Pakistan' },
+      { code: 'BDT', name: 'Bangladeshi Taka' },
+      { code: 'AED', name: 'Dirham UAE' },
+      { code: 'SAR', name: 'Riyal Saudi' },
+      { code: 'QAR', name: 'Qatari Riyal' },
+      { code: 'KWD', name: 'Kuwaiti Dinar' },
+      { code: 'BHD', name: 'Bahraini Dinar' },
+      { code: 'OMR', name: 'Omani Rial' },
+      { code: 'TRY', name: 'Lira Turki' },
+      { code: 'BRL', name: 'Real Brazil' },
+      { code: 'MXN', name: 'Peso Mexico' },
+      { code: 'ZAR', name: 'Rand Afrika Selatan' },
+      { code: 'RUB', name: 'Ruble Rusia' },
+      { code: 'KRW', name: 'Won Korea Selatan' },
+      { code: 'SGD', name: 'Dolar Singapura' },
+      { code: 'HKD', name: 'Dolar Hong Kong' },
+      { code: 'THB', name: 'Baht Thailand' },
+      { code: 'MYR', name: 'Ringgit Malaysia' },
+      { code: 'IDR', name: 'Rupiah Indonesia' },
+      { code: 'PHP', name: 'Peso Filipina' },
+      { code: 'VND', name: 'Dong Vietnam' },
+      { code: 'EGP', name: 'Egyptian Pound' },
+      { code: 'NGN', name: 'Nigerian Naira' },
+      { code: 'KES', name: 'Kenyan Shilling' },
+      { code: 'PLN', name: 'Polish Zloty' },
+      { code: 'SEK', name: 'Swedish Krona' },
+      { code: 'NOK', name: 'Norwegian Krone' },
+      { code: 'DKK', name: 'Danish Krone' },
+      { code: 'CZK', name: 'Czech Koruna' },
+      { code: 'HUF', name: 'Hungarian Forint' },
+      { code: 'ILS', name: 'Israeli New Shekel' },
+      { code: 'UAH', name: 'Ukrainian Hryvnia' }
+    ];
+
+    var amountInput = document.getElementById('fxAmount');
+    var fromSelect = document.getElementById('fxFrom');
+    var toSelect = document.getElementById('fxTo');
+    var swapBtn = document.getElementById('fxSwapBtn');
+    var convertBtn = document.getElementById('fxConvertBtn');
+    var resetBtn = document.getElementById('fxResetBtn');
+    var copyBtn = document.getElementById('fxCopyBtn');
+    var resultsBox = document.getElementById('fxResultsBox');
+    var errorBox = document.getElementById('fxErrorBox');
+    var loadingBox = document.getElementById('fxLoadingBox');
+    var resultValue = document.getElementById('fxResultValue');
+    var rateLine = document.getElementById('fxRateLine');
+    var reverseLine = document.getElementById('fxReverseLine');
+    var originalLine = document.getElementById('fxOriginalLine');
+    var updatedLine = document.getElementById('fxUpdatedLine');
+
+    CURRENCIES.forEach(function(c) {
+      var o1 = document.createElement('option');
+      o1.value = c.code;
+      o1.textContent = c.code + ' — ' + c.name;
+      fromSelect.appendChild(o1);
+      var o2 = document.createElement('option');
+      o2.value = c.code;
+      o2.textContent = c.code + ' — ' + c.name;
+      toSelect.appendChild(o2);
+    });
+    fromSelect.value = 'USD';
+    toSelect.value = 'EUR';
+
+    var rates = null;
+    var ratesUpdated = '';
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    function trimNum(v, decimals) {
+      return parseFloat(v.toFixed(decimals));
+    }
+
+    function formatNum(v) {
+      if (v === 0) return '0';
+      var r = Math.abs(v) < 0.01 ? trimNum(v, 6) : trimNum(v, 2);
+      return r.toLocaleString('en-US', { maximumFractionDigits: 6 });
+    }
+
+    function formatRate(v) {
+      return trimNum(v, 6).toLocaleString('en-US', { maximumFractionDigits: 6 });
+    }
+
+    function compute(amount, from, to, r) {
+      if (from === to) return amount;
+      return amount * (r[to] / r[from]);
+    }
+
+    // Exposed for testing: pure math + loader hooks.
+    window.fxCompute = compute;
+    window.fxFormatNum = formatNum;
+    window.fxFormatRate = formatRate;
+    window.fxCurrencies = CURRENCIES;
+    window.fxGetRates = function() { return rates; };
+    window.fxSetRates = function(r, updated) { rates = r; ratesUpdated = updated || ''; };
+
+    async function loadRates() {
+      if (loadingBox) loadingBox.style.display = 'block';
+      hideError();
+      var endpoints = [
+        'https://open.er-api.com/v6/latest/USD',
+        'https://api.exchangerate-api.com/v4/latest/USD'
+      ];
+      for (var i = 0; i < endpoints.length; i++) {
+        try {
+          var res = await fetch(endpoints[i]);
+          if (!res.ok) continue;
+          var data = await res.json();
+          if (data && data.rates && typeof data.rates.USD === 'number') {
+            rates = data.rates;
+            ratesUpdated = data.time_last_update_utc || data.date || '';
+            if (loadingBox) loadingBox.style.display = 'none';
+            if (convertBtn) convertBtn.disabled = false;
+            fxConvert();
+            return true;
+          }
+        } catch (e) {
+          // Try the next source.
+        }
+      }
+      if (loadingBox) loadingBox.style.display = 'none';
+      showError('Could not load live exchange rates. Please check your internet connection and try again.');
+      return false;
+    }
+    window.fxLoadRates = loadRates;
+
+    function fxConvert() {
+      hideError();
+      if (!rates) {
+        showError('Kadar tukaran masih dimuatkan. Sila tunggu sebentar dan cuba lagi.');
+        return;
+      }
+      var amount = parseFloat(amountInput.value);
+      if (isNaN(amount) || amount <= 0) {
+        showError('Sila masukkan amaun yang sah melebihi sifar.');
+        if (resultsBox) resultsBox.style.display = 'none';
+        return;
+      }
+      var from = fromSelect.value;
+      var to = toSelect.value;
+      var result = compute(amount, from, to, rates);
+      var rate = from === to ? 1 : rates[to] / rates[from];
+      var rev = from === to ? 1 : rates[from] / rates[to];
+      resultValue.textContent = formatNum(result) + ' ' + to;
+      rateLine.textContent = '1 ' + from + ' = ' + formatRate(rate) + ' ' + to;
+      reverseLine.textContent = '1 ' + to + ' = ' + formatRate(rev) + ' ' + from;
+      originalLine.textContent = formatNum(amount) + ' ' + from;
+      updatedLine.textContent = ratesUpdated ? ratesUpdated : '-';
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', formatNum(amount) + ' ' + from + ' = ' + formatNum(result) + ' ' + to + ' (1 ' + from + ' = ' + formatRate(rate) + ' ' + to + ')');
+      }
+      if (resultsBox) resultsBox.style.display = 'block';
+    }
+    window.fxConvert = fxConvert;
+
+    window.fxSwap = function() {
+      var t = fromSelect.value;
+      fromSelect.value = toSelect.value;
+      toSelect.value = t;
+      if (rates) fxConvert();
+    };
+
+    window.fxReset = function() {
+      amountInput.value = '100';
+      fromSelect.value = 'USD';
+      toSelect.value = 'EUR';
+      hideError();
+      if (resultsBox) resultsBox.style.display = 'none';
+      if (rates) fxConvert();
+    };
+
+    if (swapBtn) swapBtn.addEventListener('click', window.fxSwap);
+    if (resetBtn) resetBtn.addEventListener('click', window.fxReset);
+    if (convertBtn) convertBtn.addEventListener('click', fxConvert);
+    if (amountInput) {
+      amountInput.addEventListener('input', function() { if (rates) fxConvert(); });
+      amountInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') fxConvert(); });
+    }
+    if (fromSelect) fromSelect.addEventListener('change', function() { if (rates) fxConvert(); });
+    if (toSelect) toSelect.addEventListener('change', function() { if (rates) fxConvert(); });
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Conversion summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Salin ringkasan:', txt);
+          });
+        }
+      });
+    }
+
+    loadRates();
+  })();
+  </script>
+</body>
+</html>

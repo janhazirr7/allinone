@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMR - Kalori Harian &amp; TDEE</title>
+  <meta name="description" content="Kira Kadar Metabolik Basal (BMR) dan jumlah perbelanjaan tenaga harian (TDEE) berdasarkan umur, jantina, berat, ketinggian dan tahap aktiviti.">
+  <meta name="keywords" content="kalkulator bmr, kira kalori harian, tdee, kadar metabolik basal, keperluan kalori">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/ms/bmr-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-calorias.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/bmr-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/bmr-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/bmr-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/bmr-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/bmr-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/bmr-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/bmr-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/bmr-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/bmr-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/bmr-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/bmr-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/bmr-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/bmr-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/bmr-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/bmr-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/bmr-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/bmr-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/bmr-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/bmr-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/bmr-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/bmr-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/bmr-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/bmr-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/bmr-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/bmr-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/bmr-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ms_MY">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/ms/bmr-calculator.html">
+  <meta property="og:title" content="Kalkulator BMR - Kalori Harian &amp; TDEE">
+  <meta property="og:description" content="Kira Kadar Metabolik Basal (BMR) dan jumlah perbelanjaan tenaga harian (TDEE) berdasarkan umur, jantina, berat, ketinggian dan tahap aktiviti.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-bmr-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kalkulator BMR - Kalori Harian &amp; TDEE | OmniTools">
+  <meta name="twitter:description" content="Kira Kadar Metabolik Basal (BMR) dan jumlah perbelanjaan tenaga harian (TDEE) berdasarkan umur, jantina, berat, ketinggian dan tahap aktiviti.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "OmniTools Kalkulator BMR", "url": "https://janhazirr7.github.io/allinone/ms/bmr-calculator.html", "applicationCategory": "UtilityApplication", "operatingSystem": "All", "browserRequirements": "Requires JavaScript. Requires HTML5.", "description": "Kira Kadar Metabolik Basal (BMR) dan jumlah perbelanjaan tenaga harian (TDEE) berdasarkan umur, jantina, berat, ketinggian dan tahap aktiviti.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "inLanguage": "ms"}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Apakah itu BMR?", "acceptedAnswer": {"@type": "Answer", "text": "BMR ialah bilangan kalori yang diperlukan oleh badan anda semasa rehat sepenuhnya untuk fungsi asas seperti bernafas, peredaran darah dan kawalan suhu. Ia merangkumi kira-kira 60 hingga 75 peratus daripada jumlah perbelanjaan tenaga harian kebanyakan orang."}}, {"@type": "Question", "name": "Bagaimanakah BMR berbeza daripada TDEE?", "acceptedAnswer": {"@type": "Answer", "text": "BMR hanya merangkumi rehat. TDEE (Total Daily Energy Expenditure) ialah BMR didarabkan dengan faktor aktiviti, jadi ia merangkumi semua pergerakan harian, kerja dan senaman. TDEE ialah anggaran jumlah kalori yang anda bakar dalam sehari."}}, {"@type": "Question", "name": "Mengapakah kalkulator bertanya tentang jantina?", "acceptedAnswer": {"@type": "Answer", "text": "Persamaan BMR menggunakan pemalar berbeza untuk lelaki dan wanita kerana komposisi badan purata berbeza: lelaki biasanya mempunyai lebih banyak jisim otot dan kurang lemak badan, yang meningkatkan BMR pada berat yang sama."}}, {"@type": "Question", "name": "Bolehkah saya menggunakan nombor kalori ini untuk menurunkan berat dengan selamat?", "acceptedAnswer": {"@type": "Answer", "text": "Ya, sebagai titik permulaan. Sasarkan defisit sederhana 300 hingga 500 kalori sehari dan jangan turun di bawah keperluan minimum tanpa nasihat profesional. Pantau kemajuan selama beberapa minggu dan laraskan mengikut keperluan."}}, {"@type": "Question", "name": "Adakah data saya disimpan di mana-mana?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Semua pengiraan dilakukan di dalam pelayar anda. Umur, berat dan maklumat lain tidak pernah meninggalkan peranti anda."}}], "inLanguage": "ms"}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Laman Utama OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="index.html">Semua Alat</a></li>
+          <li><a href="age-calculator.html">Kalkulator Umur</a></li>
+          <li><a href="loan-calculator.html">EMI Pinjaman</a></li>
+          <li><a href="word-counter.html">Pengira Kata</a></li>
+          <li><a href="../about.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" onchange="if(this.value){window.location.href=this.value;}" aria-label="Pilih bahasa">
+          <option value="../bmr-calculator.html">English</option>
+          <option value="../es/calculadora-de-calorias.html">Español</option>
+          <option value="../de/bmr-calculator.html">Deutsch</option>
+          <option value="../fr/bmr-calculator.html">Français</option>
+          <option value="../pt/bmr-calculator.html">Português</option>
+          <option value="../it/bmr-calculator.html">Italiano</option>
+          <option value="../ru/bmr-calculator.html">Русский</option>
+          <option value="../nl/bmr-calculator.html">Nederlands</option>
+          <option value="../pl/bmr-calculator.html">Polski</option>
+          <option value="../sv/bmr-calculator.html">Svenska</option>
+          <option value="../no/bmr-calculator.html">Norsk</option>
+          <option value="../da/bmr-calculator.html">Dansk</option>
+          <option value="../fi/bmr-calculator.html">Suomi</option>
+          <option value="../id/bmr-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/bmr-calculator.html">Türkçe</option>
+          <option value="../vi/bmr-calculator.html">Tiếng Việt</option>
+          <option value="../th/bmr-calculator.html">ไทย</option>
+          <option value="bmr-calculator.html" selected>Bahasa Melayu</option>
+          <option value="../tl/bmr-calculator.html">Filipino</option>
+          <option value="../hi/bmr-calculator.html">हिन्दी</option>
+          <option value="../ur/bmr-calculator.html">اردو</option>
+          <option value="../ar/bmr-calculator.html">العربية</option>
+          <option value="../fa/bmr-calculator.html">فارسی</option>
+          <option value="../he/bmr-calculator.html">עברית</option>
+          <option value="../ja/bmr-calculator.html">日本語</option>
+          <option value="../ko/bmr-calculator.html">한국어</option>
+          <option value="../zh/bmr-calculator.html">简体中文</option>
+          <option value="../zh-TW/bmr-calculator.html">繁體中文</option>
+          <option value="../el/bmr-calculator.html">Ελληνικά</option>
+          <option value="../cs/bmr-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="Togol menu navigasi" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs">
+          <li><a href="index.html">Laman Utama</a></li>
+          <li><a href="index.html#health">Kesihatan</a></li>
+          <li aria-current="page">Kalkulator BMR</li>
+        </ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">Kalkulator BMR & Kalori</h1><p class="tool-header-desc">
+          Kira Kadar Metabolik Basal (BMR) dan jumlah perbelanjaan tenaga harian (TDEE) berdasarkan umur, jantina, berat, ketinggian dan tahap aktiviti.
+        </p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Iklan Papan Pemuka"><span class="ad-slot-placeholder-text">Iklan Papan Pemuka Responsif (728x90)</span></div></div>
+<section class="container tool-layout-container">
+<div><div class="tool-card-widget">
+<div class="unit-toggle-wrap"><button type="button" class="unit-toggle-btn active" id="unitMetricBtn" onclick="setUnits('metric')">Metric (kg, cm)</button><button type="button" class="unit-toggle-btn" id="unitImperialBtn" onclick="setUnits('imperial')">Imperial (lb, feet)</button></div>
+<div class="widget-form-grid">
+<div class="form-group"><label class="form-label" for="bmrSex"><span>Jantina</span><span class="label-hint">Diperlukan</span></label><select id="bmrSex" class="form-select"><option value="male">Lelaki</option><option value="female">Perempuan</option></select></div>
+<div class="form-group"><label class="form-label" for="bmrAge"><span>Age (years)</span><span class="label-hint">10–120</span></label><input type="number" id="bmrAge" class="form-input" placeholder="e.g. 30" min="10" max="120" step="1"><span class="form-help">Umur anda dalam tahun penuh</span></div>
+<div id="metricGroup" class="unit-group active"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightCm"><span>Height (cm)</span></label><input type="number" id="bmrHeightCm" class="form-input" placeholder="e.g. 175" min="50" max="250" step="1"></div><div class="form-group"><label class="form-label" for="bmrWeightKg"><span>Weight (kg)</span></label><input type="number" id="bmrWeightKg" class="form-input" placeholder="e.g. 70" min="20" max="400" step="0.1"></div></div></div>
+<div id="imperialGroup" class="unit-group"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightFt"><span>Ketinggian (kaki dan inci)</span></label><div style="display:flex;gap:0.5rem;"><input type="number" id="bmrHeightFt" class="form-input" placeholder="kaki" min="1" max="8" step="1" style="flex:1;"><input type="number" id="bmrHeightIn" class="form-input" placeholder="inci" min="0" max="11" step="1" style="flex:1;"></div></div><div class="form-group"><label class="form-label" for="bmrWeightLb"><span>Weight (lb)</span></label><input type="number" id="bmrWeightLb" class="form-input" placeholder="e.g. 154" min="44" max="880" step="0.1"></div></div></div>
+<div class="form-group"><label class="form-label" for="bmrActivity"><span>Tahap aktiviti</span></label><select id="bmrActivity" class="form-select"><option value="sedentary">Sedentary (little or no exercise)</option><option value="light">Light (1–3 days/week)</option><option value="moderate" selected>Moderate (3–5 days/week)</option><option value="active">Active (6–7 days/week)</option><option value="veryactive">Sangat aktif (kerja fizikal atau latihan dua kali sehari)</option></select><span class="form-help">Pilih tahap yang paling hampir dengan minggu biasa anda</span></div>
+</div>
+<div id="bmrErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateBMRUI()">Kira Kalori</button><button type="button" class="btn btn-outline" onclick="resetBMR()">Tetapkan Semula</button></div>
+<div id="bmrResultsBox" class="results-box">
+<div class="results-header"><span class="results-title">Keputusan kalori anda</span><button type="button" class="btn btn-outline btn-sm" id="copyBmrBtn">Salin Ringkasan</button></div>
+<div class="hero-result-card"><div class="hero-result-label">Kalori penyelenggaraan harian</div><div class="hero-result-value" id="dailyCalValue">0 kcal</div><div class="hero-result-sub">Berdasarkan BMR dan tahap aktiviti anda</div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="bmrValue">0 kcal</div><div class="metric-label">BMR (at rest)</div></div><div class="metric-card"><div class="metric-value" id="loseValue">0 kcal</div><div class="metric-label">Untuk menurunkan berat (anggaran)</div></div><div class="metric-card"><div class="metric-value" id="gainValue">0 kcal</div><div class="metric-label">Untuk menambah berat (anggaran)</div></div></div>
+<p style="font-size:0.875rem;color:#334155;line-height:1.6;">Angka turun dan naik berat hanyalah panduan: ia menolak atau menambah kira-kira 500 kcal kepada penyelenggaraan. Ia bukan nasihat perubatan. Jika anda mempunyai keadaan kesihatan, sedang hamil, atau mengambil ubat, berbincanglah dengan profesional kesihatan dahulu.</p>
+</div>
+</div></div>
+<aside><div class="ad-slot ad-rectangle" aria-label="Iklan Bar Sisi"><span class="ad-slot-placeholder-text">Segi Empat Tepat Bar Sisi (300x250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Kalkulator Berkaitan</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Penjejak BMI<span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Peratusan<span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Umur<span>→</span></a></li><li><a href="water-intake-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Pengambilan Air<span>→</span></a></li></ul></div></aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="Iklan Dalam Artikel"><span class="ad-slot-placeholder-text">Iklan Sepanduk Kandungan Responsif (728x90 / 300x250)</span></div></div>
+
+    <article class="container educational-content">
+      <section class="content-section">
+        <h2 class="content-heading">Cara Menggunakan Kalkulator BMR</h2>
+        <p class="content-paragraph">BMR, atau Kadar Metabolik Basal, ialah bilangan kalori yang dibakar oleh badan anda semasa rehat sepenuhnya hanya untuk terus hidup — bernafas, mengepam darah dan mengekalkan suhu badan. Kalkulator BMR OmniTools menggunakan persamaan Mifflin-St Jeor yang diterima secara meluas, berdasarkan umur, jantina, berat dan ketinggian anda, kemudian mendarabkannya dengan faktor aktiviti untuk menganggarkan TDEE, iaitu jumlah kalori harian anda termasuk pergerakan dan senaman.</p>
+        <ol class="step-list"><li class="step-item"><div class="step-item-content">Masukkan umur, jantina, berat dan ketinggian anda.</div></li><li class="step-item"><div class="step-item-content">Pilih tahap aktiviti anda daripada tidak aktif hingga sangat aktif.</div></li><li class="step-item"><div class="step-item-content">Tekan Kira untuk melihat BMR dan TDEE anda.</div></li><li class="step-item"><div class="step-item-content">Gunakan TDEE sebagai titik permulaan untuk sasaran penurunan, pengekalan atau penambahan berat.</div></li></ol>
+        <p class="content-paragraph">Alat ini direka untuk menjadi pantas dan mudah: tiada pendaftaran, tiada pemasangan dan tiada menunggu. Masukkan nilai anda, semak hasilnya, dan laraskan input untuk membandingkan senario yang berbeza. Semua pengiraan berlaku serta-merta di dalam pelayar anda, jadi anda boleh mencuba seberapa banyak nilai yang anda mahu tanpa kos.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Mengapa Kalkulator BMR Berguna</h2>
+        <p class="content-paragraph">Mengetahui TDEE membantu anda menetapkan sasaran kalori yang realistik. Untuk menurunkan berat badan, makan sedikit di bawah TDEE; untuk mengekalkan berat, makan sekitar TDEE; untuk menambah berat, makan sedikit di atasnya. Defisit yang sederhana, sekitar 300 hingga 500 kalori sehari, biasanya lebih mampan daripada diet melampau. BMR berbeza mengikut jantina kerana lelaki secara purata mempunyai lebih banyak jisim otot, yang membakar lebih banyak kalori semasa rehat.</p>
+        <p class="content-paragraph">Selain kegunaan harian, alat ini membantu anda mengelakkan kesilapan pengiraan manual yang biasa berlaku apabila membahagi, membundar atau menukar unit dengan cepat. Dengan menunjukkan formula dan langkah pengiraan, ia juga berfungsi sebagai alat pembelajaran: anda bukan sahaja mendapat jawapan, tetapi memahami bagaimana jawapan itu diperoleh, jadi anda boleh menyemak dan mempercayainya.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Contoh Pengiraan</h2>
+        <p class="content-paragraph">Contohnya, wanita berumur 30 tahun, berat 65 kg dan tinggi 165 cm mempunyai BMR kira-kira 1,383 kalori sehari. Dengan aktiviti sederhana (faktor 1.55), TDEEnya kira-kira 2,144 kalori sehari. Jika beliau makan 1,650 kalori sehari, defisit kira-kira 500 kalori boleh menghasilkan penurunan kira-kira 0.5 kg seminggu.</p>
+        <p class="content-paragraph">Contoh di atas menunjukkan prinsip asasnya, tetapi kekuatan sebenar alat ini ialah anda boleh menguji nilai anda sendiri. Cuba kes ekstrem yang kecil dan besar, bandingkan dua senario bersebelahan, dan perhatikan bagaimana perubahan kecil pada input boleh mengubah hasil dengan ketara — terutamanya untuk pengiraan yang melibatkan peratus, faedah atau tempoh yang panjang.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Ketepatan dan Privasi</h2>
+        <p class="content-paragraph">Semua pengiraan dilakukan sepenuhnya di dalam pelayar anda. Tiada data yang anda masukkan dihantar ke pelayan, disimpan dalam pangkalan data atau dikongsi dengan pihak ketiga. Anda boleh menggunakan alat ini tanpa akaun, tanpa mendaftar dan tanpa memasang apa-apa, pada telefon, tablet atau komputer.</p>
+        <p class="content-paragraph">Ketepatan bergantung pada input anda: masukkan nilai yang tepat dan semak unit sebelum mengira. Hasil dibundarkan untuk paparan, tetapi pengiraan dalaman menggunakan ketepatan penuh, jadi ralat pembundaran tidak terkumpul. Untuk keputusan kewangan, kesihatan atau undang-undang yang penting, sahkan hasil dengan profesional atau sumber rasmi yang berkaitan sebelum membuat komitmen.</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Petua Praktikal</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;"><li>Fokus pada trend, bukan satu hari: berat badan berubah-ubah setiap hari.</li><li>Kekalkan protein dan pergerakan dalam pelan anda untuk melindungi otot semasa menurunkan berat.</li><li>Laraskan sasaran selepas perubahan berat yang besar kerana BMR berubah dengan berat.</li><li>Dapatkan nasihat profesional jika anda mempunyai keadaan kesihatan atau sasaran melampau.</li></ul>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">Soalan Lazim (FAQ)</h2>
+        <div class="faq-list"><details class="faq-item" open><summary class="faq-question">Apakah itu BMR?</summary><div class="faq-answer">BMR ialah bilangan kalori yang diperlukan oleh badan anda semasa rehat sepenuhnya untuk fungsi asas seperti bernafas, peredaran darah dan kawalan suhu. Ia merangkumi kira-kira 60 hingga 75 peratus daripada jumlah perbelanjaan tenaga harian kebanyakan orang.</div></details><details class="faq-item"><summary class="faq-question">Bagaimanakah BMR berbeza daripada TDEE?</summary><div class="faq-answer">BMR hanya merangkumi rehat. TDEE (Total Daily Energy Expenditure) ialah BMR didarabkan dengan faktor aktiviti, jadi ia merangkumi semua pergerakan harian, kerja dan senaman. TDEE ialah anggaran jumlah kalori yang anda bakar dalam sehari.</div></details><details class="faq-item"><summary class="faq-question">Mengapakah kalkulator bertanya tentang jantina?</summary><div class="faq-answer">Persamaan BMR menggunakan pemalar berbeza untuk lelaki dan wanita kerana komposisi badan purata berbeza: lelaki biasanya mempunyai lebih banyak jisim otot dan kurang lemak badan, yang meningkatkan BMR pada berat yang sama.</div></details><details class="faq-item"><summary class="faq-question">Bolehkah saya menggunakan nombor kalori ini untuk menurunkan berat dengan selamat?</summary><div class="faq-answer">Ya, sebagai titik permulaan. Sasarkan defisit sederhana 300 hingga 500 kalori sehari dan jangan turun di bawah keperluan minimum tanpa nasihat profesional. Pantau kemajuan selama beberapa minggu dan laraskan mengikut keperluan.</div></details><details class="faq-item"><summary class="faq-question">Adakah data saya disimpan di mana-mana?</summary><div class="faq-answer">Tidak. Semua pengiraan dilakukan di dalam pelayar anda. Umur, berat dan maklumat lain tidak pernah meninggalkan peranti anda.</div></details></div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools menyediakan kalkulator dan utiliti dalam talian yang percuma, ringan dan mengutamakan privasi untuk produktiviti, pendidikan, kewangan dan kesihatan.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Alat Popular</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Kalkulator Umur</a></li>
+            <li><a href="loan-calculator.html">Kalkulator EMI Pinjaman</a></li>
+            <li><a href="bmi-calculator.html">Penjejak BMI</a></li>
+            <li><a href="password-generator.html">Penjana Kata Laluan</a></li>
+            <li><a href="word-counter.html">Pengira Kata</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Utiliti</h4>
+          <ul class="footer-links">
+            <li><a href="unit-converter.html">Penukar Unit</a></li>
+            <li><a href="percentage-calculator.html">Kalkulator Peratusan</a></li>
+            <li><a href="date-calculator.html">Perbezaan Tarikh</a></li>
+            <li><a href="case-converter.html">Penukar Huruf Teks</a></li>
+            <li><a href="discount-calculator.html">Kalkulator Diskaun</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Undang-undang &amp; Maklumat</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Tentang Kami</a></li>
+            <li><a href="../contact.html">Hubungi Kami</a></li>
+            <li><a href="../privacy-policy.html">Dasar Privasi</a></li>
+            <li><a href="../terms.html">Terma Perkhidmatan</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Hak cipta terpelihara. Utiliti dalam talian percuma untuk semua.</p>
+        <div class="footer-lang-select">
+          <span>Bahasa:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="index.html" style="color: #60a5fa;">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+function computeBMR(sex, age, heightCm, weightKg) {
+  if (sex !== "male" && sex !== "female") return null;
+  if (!isFinite(age) || age < 10 || age > 120) return null;
+  if (!isFinite(heightCm) || heightCm < 50 || heightCm > 250) return null;
+  if (!isFinite(weightKg) || weightKg < 20 || weightKg > 400) return null;
+  var base = 10 * weightKg + 6.25 * heightCm - 5 * age;
+  return sex === "male" ? base + 5 : base - 161;
+}
+function activityFactor(level) {
+  var m = { sedentary: 1.2, light: 1.375, moderate: 1.55, active: 1.725, veryactive: 1.9 };
+  return m[level] === undefined ? null : m[level];
+}
+function caloriesFor(bmr, level) {
+  var f = activityFactor(level);
+  if (bmr === null || f === null) return null;
+  return Math.round(bmr * f);
+}
+function cmFromFeetInches(ft, inch) {
+  if (!isFinite(ft) || !isFinite(inch) || ft < 1 || ft > 8 || inch < 0 || inch > 11) return null;
+  return (ft * 12 + inch) * 2.54;
+}
+function kgFromLb(lb) {
+  if (!isFinite(lb) || lb < 44 || lb > 880) return null;
+  return lb / 2.20462;
+}
+// --- DOM ---
+ (function() {
+  var t = document.querySelector(".mobile-nav-toggle"); var n = document.querySelector(".nav-links");
+  if (t && n) t.addEventListener("click", function(){ n.classList.toggle("active"); });
+  window.setUnits = function(mode) {
+    var mg = document.getElementById("metricGroup"), ig = document.getElementById("imperialGroup");
+    var mb = document.getElementById("unitMetricBtn"), ib = document.getElementById("unitImperialBtn");
+    if (mg && ig) { mg.classList.toggle("active", mode === "metric"); ig.classList.toggle("active", mode === "imperial"); }
+    if (mb && ib) { mb.classList.toggle("active", mode === "metric"); ib.classList.toggle("active", mode === "imperial"); }
+  };
+  window.calculateBMRUI = function() {
+    var errBox = document.getElementById("bmrErrorBox"), res = document.getElementById("bmrResultsBox");
+    var sex = document.getElementById("bmrSex").value;
+    var age = parseFloat(document.getElementById("bmrAge").value);
+    var level = document.getElementById("bmrActivity").value;
+    var metric = document.getElementById("metricGroup").classList.contains("active");
+    var cm, kg;
+    if (metric) { cm = parseFloat(document.getElementById("bmrHeightCm").value); kg = parseFloat(document.getElementById("bmrWeightKg").value); }
+    else { cm = cmFromFeetInches(parseFloat(document.getElementById("bmrHeightFt").value), parseFloat(document.getElementById("bmrHeightIn").value)); kg = kgFromLb(parseFloat(document.getElementById("bmrWeightLb").value)); }
+    var bmr = computeBMR(sex, age, cm, kg);
+    var daily = caloriesFor(bmr, level);
+    if (bmr === null || daily === null) { errBox.textContent = "Please enter valid values: age 10 to 120, height and weight within the limits shown, and an activity level."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    errBox.style.display = "none";
+    document.getElementById("bmrValue").textContent = Math.round(bmr).toLocaleString() + " kcal";
+    document.getElementById("dailyCalValue").textContent = daily.toLocaleString() + " kcal";
+    document.getElementById("loseValue").textContent = Math.max(1200, daily - 500).toLocaleString() + " kcal";
+    document.getElementById("gainValue").textContent = (daily + 500).toLocaleString() + " kcal";
+    var cb = document.getElementById("copyBmrBtn");
+    if (cb) cb.setAttribute("data-summary", "BMR: " + Math.round(bmr) + " kcal, maintenance: " + daily + " kcal/day.");
+    if (res) { res.classList.add("active"); res.style.display = "block"; }
+  };
+  window.resetBMR = function() {
+    ["bmrAge","bmrHeightCm","bmrWeightKg","bmrHeightFt","bmrHeightIn","bmrWeightLb"].forEach(function(id){ var el=document.getElementById(id); if(el) el.value=""; });
+    var e=document.getElementById("bmrErrorBox"); if(e) e.style.display="none";
+    var r=document.getElementById("bmrResultsBox"); if(r){ r.classList.remove("active"); r.style.display="none"; }
+  };
+  var cb=document.getElementById("copyBmrBtn");
+  if (cb) cb.addEventListener("click", function(){ var s=cb.getAttribute("data-summary"); if(s && navigator.clipboard) navigator.clipboard.writeText(s).catch(function(){}); });
+})();
+</script>
+</body>
+</html>
