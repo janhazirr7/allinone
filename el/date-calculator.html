@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Υπολογιστής ημερομηνίας - Ημέρες μεταξύ ημερομηνιών &amp; προσθήκη ή αφαίρεση ημερών | OmniTools</title>
+  <meta name="description" content="Υπολογίστε τον ακριβή αριθμό ημερών, εβδομάδων και μηνών μεταξύ δύο ημερομηνιών ή προσθέστε και αφαιρέστε ημέρες από οποιαδήποτε ημερομηνία. Δωρεάν, ακριβές και 100% ιδιωτικό.">
+  <meta name="keywords" content="αριθμομηχανή ημερομηνίας, ημέρες μεταξύ ημερομηνιών, αριθμομηχανή διαφοράς ημερομηνίας, προσθήκη ημερών στην ημερομηνία, αφαίρεση ημερών από την ημερομηνία, πόσες ημέρες έως, εβδομάδες μεταξύ ημερομηνιών">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  
+    <link rel="canonical" href="https://janhazirr7.github.io/allinone/el/date-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/date-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-dias.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/date-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/date-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/date-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/date-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/date-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/date-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/date-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/date-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/date-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/date-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/date-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/date-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/date-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/date-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/date-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/date-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/date-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/date-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/date-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/date-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/date-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/date-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/date-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/date-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/date-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/date-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/date-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/date-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/date-calculator.html">
+
+  
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/el/date-calculator.html">
+  <meta property="og:title" content="Υπολογιστής Ημερομηνιών - Ημέρες μεταξύ Ημερομηνιών &amp; Προσθήκη ή Αφαίρεση Ημερών">
+  <meta property="og:description" content="Βρείτε τις ακριβείς ημέρες, εβδομάδες και μήνες μεταξύ δύο ημερομηνιών ή προσθέστε και αφαιρέστε ημέρες από οποιαδήποτε ημερομηνία. 100% δωρεάν και ιδιωτικό.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-date-calculator.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Υπολογιστής ημερομηνίας | OmniTools">
+  <meta name="twitter:description" content="Άμεσοι υπολογισμοί διαφοράς ημερομηνίας και προσθήκη/αφαίρεση ημερών από οποιαδήποτε ημερομηνία.">
+
+  
+  <link rel="stylesheet" href="../style.css">
+
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Υπολογιστής ημερομηνίας OmniTools",
+  "url": "https://janhazirr7.github.io/allinone/el/date-calculator.html",
+  "applicationCategory": "Εφαρμογή Utilities",
+  "operatingSystem": "All",
+  "browserRequirements": "Απαιτεί JavaScript. Απαιτεί HTML5.",
+  "description": "Υπολογίστε τον ακριβή αριθμό ημερών, εβδομάδων και μηνών μεταξύ δύο ημερομηνιών ή προσθέστε και αφαιρέστε ημέρες από οποιαδήποτε ημερομηνία.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "el"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Σπίτι",
+      "item": "https://janhazirr7.github.io/allinone/el/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ημερομηνία & Ώρα",
+      "item": "https://janhazirr7.github.io/allinone/el/#date"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Υπολογιστής ημερομηνίας",
+      "item": "https://janhazirr7.github.io/allinone/el/date-calculator.html"
+    }
+  ],
+  "inLanguage": "el"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Πώς υπολογίζεται η διαφορά μεταξύ δύο ημερομηνιών;",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Η διαφορά είναι η ημερομηνία λήξης μείον την ημερομηνία έναρξης, σε ολόκληρες ημερολογιακές ημέρες. Η ίδια η ημερομηνία έναρξης δεν υπολογίζεται και η ημερομηνία λήξης μετράται. Για παράδειγμα, από 1 Ιανουαρίου έως 2 Ιανουαρίου είναι 1 ημέρα. Εάν θέλετε να μετρήσετε τόσο την ημερομηνία έναρξης όσο και την ημερομηνία λήξης, προσθέστε 1 στο αποτέλεσμα — αυτή η μέτρηση χωρίς αποκλεισμούς εμφανίζεται επίσης στα αποτελέσματα."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Γιατί η 28η Φεβρουαρίου 2024 έως την 1η Μαρτίου 2024 είναι ίση με 2 ημέρες;",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Επειδή το 2024 είναι δίσεκτο, ο Φεβρουάριος έχει 29 ημέρες. Μετρώντας προς τα εμπρός από τις 28 Φεβρουαρίου, η επόμενη ημέρα είναι 29 Φεβρουαρίου (ημέρα 1) και η επόμενη ημέρα είναι η 1η Μαρτίου (ημέρα 2). Σε ένα μη δίσεκτο έτος, το ίδιο ζεύγος ημερομηνιών θα είχε μόνο 1 ημέρα διαφορά, επειδή δεν υπάρχει 29 Φεβρουαρίου."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Τι σημαίνει η ανάλυση ετών, μηνών και ημερών;",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Είναι μια ανάλυση με ακρίβεια ημερολογίου, όπως ένας υπολογισμός ηλικίας. Ολόκληρα χρόνια και ολόκληροι ημερολογιακοί μήνες μετρώνται πρώτα και οι υπόλοιπες μέρες είναι ό,τι περισσεύει. Επειδή οι μήνες έχουν διαφορετική διάρκεια (28 έως 31 ημέρες), η ανάλυση δανείζεται ημέρες από τον προηγούμενο μήνα όταν χρειάζεται, επομένως προσγειώνεται πάντα ακριβώς στην ημερομηνία λήξης."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Μετράει αυτή η αριθμομηχανή εργάσιμες ημέρες;",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Όχι. Αυτή η αριθμομηχανή μετράει ημερολογιακές ημέρες, συμπεριλαμβανομένων των Σαββάτων και των Κυριακών. Δεν καταργεί τα Σαββατοκύριακα ή τις επίσημες αργίες, επειδή οι αργίες διαφέρουν ανά χώρα και περιοχή. Εάν χρειάζεστε μόνο εργάσιμες ημέρες, πάρτε το σύνολο των ημερών και αφαιρέστε τα Σαββατοκύριακα που εμπίπτουν στην περίοδο."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Οι πληροφορίες ημερομηνίας αποθηκεύονται ή αποστέλλονται οπουδήποτε;",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ποτέ. Το OmniTools λειτουργεί εξ ολοκλήρου στο δικό σας πρόγραμμα περιήγησης ιστού. Οι ημερομηνίες που εισάγετε δεν αποστέλλονται ποτέ σε διακομιστή, δεν αποθηκεύονται σε μια βάση δεδομένων ή δεν κοινοποιούνται σε κανέναν."
+      }
+    }
+  ],
+  "inLanguage": "el"
+}
+  </script>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Αρχική σελίδα OmniTools">
+        <div class="brand-icon">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      
+      <nav aria-label="Κύρια πλοήγηση">
+        <ul class="nav-links">
+          <li><a href="index.html">Όλα τα εργαλεία</a></li>
+          <li><a href="age-calculator.html">Ηλικία Υπολογ</a></li>
+          <li><a href="bmi-calculator.html">Ιχνηλάτης ΔΜΣ</a></li>
+          <li><a href="date-calculator.html" class="active">Ημερομηνία Υπολογ</a></li>
+          <li><a href="../about.html">Για</a></li>
+        </ul>
+      </nav>
+
+      
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="Επιλέξτε γλώσσα" onchange="window.location.href=this.value">
+          <option value="../date-calculator.html">English</option>
+          <option value="../es/calculadora-de-dias.html">Español</option>
+          <option value="../de/date-calculator.html">Deutsch</option>
+          <option value="../fr/date-calculator.html">Français</option>
+          <option value="../pt/date-calculator.html">Português</option>
+          <option value="../it/date-calculator.html">Italiano</option>
+          <option value="../ru/date-calculator.html">Русский</option>
+          <option value="../nl/date-calculator.html">Nederlands</option>
+          <option value="../pl/date-calculator.html">Polski</option>
+          <option value="../sv/date-calculator.html">Svenska</option>
+          <option value="../no/date-calculator.html">Norsk</option>
+          <option value="../da/date-calculator.html">Dansk</option>
+          <option value="../fi/date-calculator.html">Suomi</option>
+          <option value="../id/date-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/date-calculator.html">Türkçe</option>
+          <option value="../vi/date-calculator.html">Tiếng Việt</option>
+          <option value="../th/date-calculator.html">ไทย</option>
+          <option value="../ms/date-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/date-calculator.html">Filipino</option>
+          <option value="../hi/date-calculator.html">हिन्दी</option>
+          <option value="../ur/date-calculator.html">اردو</option>
+          <option value="../ar/date-calculator.html">العربية</option>
+          <option value="../fa/date-calculator.html">فارسی</option>
+          <option value="../he/date-calculator.html">עברית</option>
+          <option value="../ja/date-calculator.html">日本語</option>
+          <option value="../ko/date-calculator.html">한국어</option>
+          <option value="../zh/date-calculator.html">简体中文</option>
+          <option value="../zh-TW/date-calculator.html">繁體中文</option>
+          <option value="date-calculator.html" selected>Ελληνικά</option>
+          <option value="../cs/date-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="Εναλλαγή μενού πλοήγησης" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Σπίτι</a></li>
+          <li><a href="index.html#date">Ημερομηνία &amp; Ώρα</a></li>
+          <li aria-current="page">Υπολογιστής ημερομηνίας</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Υπολογιστής ημερομηνίας: Ημέρες μεταξύ ημερομηνιών και προσθήκη ή αφαίρεση ημερών</h1>
+        <p class="tool-header-desc">
+          Βρείτε τον ακριβή αριθμό ημερών, εβδομάδων και μηνών μεταξύ δύο ημερομηνιών ή μεταβείτε στο χρόνο προς τα εμπρός και προς τα πίσω προσθέτοντας ή αφαιρώντας ημέρες από οποιαδήποτε ημερομηνία. Δωρεάν, άμεσο και ιδιωτικό.
+        </p>
+      </div>
+    </section>
+
+    
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Διαφήμιση Leaderboard">
+        <span class="ad-slot-placeholder-text">Αποκριτική διαφήμιση Leaderboard (728x90)</span>
+      </div>
+    </div>
+
+    
+    <section class="container tool-layout-container">
+
+      
+      <div>
+        <div class="tool-card-widget">
+
+          
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="dateMode" class="form-label">
+              <span>Τι θέλετε να υπολογίσετε;</span>
+              <span class="label-hint">Επιλέξτε μια λειτουργία</span>
+            </label>
+            <select id="dateMode" class="form-select">
+              <option value="difference" selected="None">Διαφορά μεταξύ δύο ημερομηνιών</option>
+              <option value="addsub">Προσθέστε ή αφαιρέστε ημέρες από μια ημερομηνία</option>
+            </select>
+            <span class="form-help">Πώς λειτουργεί η καταμέτρηση: η διαφορά είναι η ημερομηνία λήξης μείον την ημερομηνία έναρξης, σε ολόκληρες ημέρες. Η ημερομηνία έναρξης δεν υπολογίζεται. υπολογίζεται η ημερομηνία λήξης.</span>
+          </div>
+
+          
+          <div id="diffPanel">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label for="startDate" class="form-label">
+                  <span>Ημερομηνία έναρξης</span>
+                  <span class="label-hint">Υποχρεούμαι</span>
+                </label>
+                <input type="date" id="startDate" class="form-input">
+                <span class="form-help">Η προηγούμενη ημερομηνία (δεν υπολογίζεται από μόνη της)</span>
+              </div>
+              <div class="form-group">
+                <label for="endDate" class="form-label">
+                  <span>Ημερομηνία λήξης</span>
+                  <span class="label-hint">Υποχρεούμαι</span>
+                </label>
+                <input type="date" id="endDate" class="form-input">
+                <span class="form-help">Η μεταγενέστερη ημερομηνία (υπολογισμένη)</span>
+              </div>
+            </div>
+          </div>
+
+          
+          <div id="addPanel" style="display: none;">
+            <div class="widget-form-grid">
+              <div class="form-group">
+                <label for="baseDate" class="form-label">
+                  <span>Ημερομηνία βάσης</span>
+                  <span class="label-hint">Υποχρεούμαι</span>
+                </label>
+                <input type="date" id="baseDate" class="form-input">
+                <span class="form-help">Η ημερομηνία από την οποία θέλετε να ξεκινήσετε</span>
+              </div>
+              <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+                <div class="form-group">
+                  <label for="dayCount" class="form-label">
+                    <span>Αριθμός Ημερών</span>
+                    <span class="label-hint">Ολόκληρος αριθμός</span>
+                  </label>
+                  <input type="number" id="dayCount" class="form-input" placeholder="π.χ. 90" min="0" max="365000" step="1">
+                  <span class="form-help">0 έως 365.000 ημέρες (περίπου 1.000 χρόνια)</span>
+                </div>
+                <div class="form-group">
+                  <label for="dayDirection" class="form-label">
+                    <span>Κατεύθυνση</span>
+                    <span class="label-hint">Προσθέστε ή αφαιρέστε</span>
+                  </label>
+                  <select id="dayDirection" class="form-select">
+                    <option value="add" selected="None">Προσθήκη ημερών (προχωρήστε)</option>
+                    <option value="subtract">Αφαίρεση ημερών (πίσω)</option>
+                  </select>
+                  <span class="form-help">Εμπρός ή πίσω στο χρόνο</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div id="dateErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          
+          <div class="widget-actions">
+            <button type="button" id="calcDateBtn" class="btn btn-primary" onclick="calculateDates()">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Υπολογίζω
+            </button>
+            <button type="button" id="resetDateBtn" class="btn btn-outline" onclick="resetDates()">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+              Επαναφορά
+            </button>
+          </div>
+
+          
+          <div id="dateResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Αποτέλεσμα
+              </span>
+              <button type="button" id="copyDateBtn" class="btn btn-outline btn-sm" title="Αντιγραφή περίληψης αποτελεσμάτων">
+                <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                </svg>
+                Αντίγραφο Περίληψη
+              </button>
+            </div>
+
+            
+            <div class="hero-result-card">
+              <div class="hero-result-label" id="heroResultLabel">Σύνολο ημερών</div>
+              <div class="hero-result-value" id="heroResultValue">0 ημέρες</div>
+              <div class="hero-result-sub" id="heroResultSub">-</div>
+            </div>
+
+            
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="metric1Value">-</div>
+                <div class="metric-label" id="metric1Label">Εβδομάδες</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="metric2Value">-</div>
+                <div class="metric-label" id="metric2Label">Ανάλυση</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="metric3Value">-</div>
+                <div class="metric-label" id="metric3Label">Σύνολο μηνών (περίπου)</div>
+              </div>
+            </div>
+
+            <p id="dateResultNote" class="form-help" style="font-size: 0.875rem; line-height: 1.6;"></p>
+          </div>
+        </div>
+      </div>
+
+      
+      <aside>
+        
+        <div class="ad-slot ad-rectangle" aria-label="Διαφήμιση Sidebar">
+          <span class="ad-slot-placeholder-text">Ορθογώνιο πλευρικής γραμμής (300x250)</span>
+        </div>
+
+        
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Σχετικές αριθμομηχανές</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Αριθμομηχανή ηλικίας και ορόσημο <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Παρακολούθηση Δείκτη Μάζας Σώματος <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Υπολογιστής EMI δανείου <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Υπολογιστής ποσοστού <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Διαφήμιση εντός άρθρου">
+        <span class="ad-slot-placeholder-text">Banner αποκριτικού περιεχομένου (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    
+    <article class="container educational-content">
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          Πώς να χρησιμοποιήσετε τον υπολογιστή ημερομηνίας OmniTools
+        </h2>
+        <p class="content-paragraph">
+          Οι ημερομηνίες έχουν σημασία σχεδόν για τα πάντα στην καθημερινή ζωή: διακοπές για τις οποίες μετράτε αντίστροφα, προθεσμία έργου, ημερομηνία λήξης βίζας, ανανέωση συνδρομής ή περίοδος ειδοποίησης σύμβασης. Η μέτρηση με το χέρι είναι αργή και είναι εύκολο να γίνει λάθος, επειδή οι μήνες έχουν διαφορετική διάρκεια και τα δίσεκτα έτη προσθέτουν μια επιπλέον ημέρα. Αυτή η αριθμομηχανή κάνει τη μέτρηση για εσάς, σε δευτερόλεπτα, με δύο απλές λειτουργίες.
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Επιλέξτε τη λειτουργία σας</strong>
+              Επιλέξτε "Διαφορά μεταξύ δύο ημερομηνιών" για να μετρήσετε το κενό μεταξύ δύο ημερολογιακών ημερομηνιών ή "Προσθήκη ή αφαίρεση ημερών από μια ημερομηνία" για να μεταβείτε χρονικά προς τα εμπρός ή προς τα πίσω από μία μόνο ημερομηνία έναρξης.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Εισαγάγετε τις ημερομηνίες σας</strong>
+              Για διαφορά, εισαγάγετε μια ημερομηνία έναρξης και μια ημερομηνία λήξης. Η ημερομηνία λήξης πρέπει να είναι κατά ή μετά την ημερομηνία έναρξης. Εάν είναι νωρίτερα, η αριθμομηχανή θα εμφανίσει ένα φιλικό σφάλμα αντί για έναν αρνητικό αριθμό που προκαλεί σύγχυση. Για πρόσθεση ή αφαίρεση, εισαγάγετε την ημερομηνία βάσης, έναν ακέραιο αριθμό ημερών και αν θέλετε να προσθέσετε ή να αφαιρέσετε.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Κάντε κλικ στο "Υπολογισμός"</strong>
+              Θα δείτε αμέσως τις συνολικές ημέρες, το ίδιο κενό εκφρασμένο σε εβδομάδες, μια ημερολογιακά ακριβή ανάλυση ετών, μηνών και ημερών και ένα κατά προσέγγιση σύνολο σε μήνες. Στη λειτουργία πρόσθεσης ή αφαίρεσης, θα δείτε την ημερομηνία που προκύπτει, γραμμένη πλήρως, μαζί με την ημέρα της εβδομάδας.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Αντιγραφή ή επαναφορά</strong>
+              Χρησιμοποιήστε το "Αντιγραφή περίληψης" για να αντιγράψετε μια σύνοψη απλού κειμένου που μπορείτε να επικολλήσετε σε ένα μήνυμα ή έγγραφο ή πατήστε "Επαναφορά" για να διαγράψετε τη φόρμα και να ξεκινήσετε έναν νέο υπολογισμό.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
+          </svg>
+          Πώς υπολογίζεται η διαφορά ημερομηνίας
+        </h2>
+        <p class="content-paragraph">
+          Αυτή η αριθμομηχανή ορίζει τη διαφορά ως ημερομηνία λήξης μείον την ημερομηνία έναρξης, μετρούμενη σε ολόκληρες ημερολογιακές ημέρες. Με απλά λόγια: η ίδια η ημερομηνία έναρξης δεν υπολογίζεται και η ημερομηνία λήξης μετράται. Έτσι, από Δευτέρα έως Τρίτη είναι 1 ημέρα, από 1 Ιανουαρίου έως 31 Ιανουαρίου είναι 30 ημέρες και δύο ίδιες ημερομηνίες έχουν διαφορά 0 ημερών. Αυτή είναι η ίδια σύμβαση που χρησιμοποιείται από τα περισσότερα εργαλεία αντίστροφης μέτρησης και συστήματα κρατήσεων, και είναι η μόνη σύμβαση που κάνει τα μαθηματικά συνεπή: αν προσθέσετε τη διαφορά πίσω στην ημερομηνία έναρξης, προσγειώνεστε ακριβώς στην ημερομηνία λήξης.
+        </p>
+        <p class="content-paragraph">
+          Μερικοί άνθρωποι χρειάζονται το πλήθος χωρίς αποκλεισμούς, όπου υπολογίζονται τόσο η πρώτη όσο και η τελευταία ημέρα — για παράδειγμα, μια διαμονή σε ξενοδοχείο από Δευτέρα έως Παρασκευή μπορεί να περιγραφεί ως πέντε ημέρες, εάν και οι δύο ημέρες περιλαμβάνονται στην κράτηση. Αυτή είναι απλώς η διαφορά συν ένα και η αριθμομηχανή σας το δείχνει στη σημείωση των αποτελεσμάτων, επομένως δεν χρειάζεται ποτέ να μαντέψετε ποιον αριθμό εννοούσε κάποιος άλλος. Να ελέγχετε πάντα ποια σύμβαση χρησιμοποιεί ένα συμβόλαιο, μια κράτηση ή μια προθεσμία, γιατί μια μέρα μπορεί να αλλάξει μια τιμή ή μια ποινή.
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            Διαφορά σε ημέρες = Ημερομηνία λήξης − Ημερομηνία έναρξης
+          </div>
+          <div class="formula-explanation">
+            Μετράται σε ολόκληρες ημερολογιακές ημέρες, εκτός από την ημερομηνία έναρξης και συμπεριλαμβανομένης της ημερομηνίας λήξης.<br><br>
+            <strong>Εβδομάδες</strong> = σύνολο ημερών ÷ 7 (με τις υπόλοιπες ημέρες να εμφανίζονται ξεχωριστά)<br>
+            <strong>Καταμέτρηση χωρίς αποκλεισμούς</strong> = διαφορά + 1 (μετρήθηκαν και οι δύο ημερομηνίες)<br>
+            <strong>Σύνολο μηνών (περίπου)</strong> = συνολικές ημέρες ÷ 30,44 (η μέση διάρκεια του μήνα)
+          </div>
+        </div>
+        <p class="content-paragraph">
+          Η αριθμομηχανή μετράει μόνο σε ολόκληρες ημέρες, αγνοώντας τις ώρες, τα λεπτά και τις ζώνες ώρας. Αυτό είναι σκόπιμα: μια ημερομηνία από μόνη της δεν έχει ώρα της ημέρας και η καταμέτρηση με ημερολογιακές ημερομηνίες αποφεύγει τα σφάλματα που εμφανίζονται όταν ένας υπολογιστής μετατρέπει μια ημερομηνία σε τοπικά μεσάνυχτα που αλλάζει με τη θερινή ώρα. Πίσω από τις σκηνές, κάθε ραντεβού αντιμετωπίζεται ως μεσάνυχτα στη Συντονισμένη Παγκόσμια Ώρα, επομένως οι ίδιες δύο ημερομηνίες δίνουν πάντα την ίδια απάντηση σε όποιο μέρος του κόσμου κι αν βρίσκεστε.
+        </p>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          Έτη, Μήνες, Ημέρες Ανάλυση και Δισεκτικά Έτη
+        </h2>
+        <p class="content-paragraph">
+          Ένας ακατέργαστος αριθμός ημερών είναι χρήσιμος, αλλά οι περισσότεροι άνθρωποι σκέφτονται σε χρόνια και μήνες: "Πόσο καιρό μέχρι την επέτειό μου;" ή "Πόσο χρονών είναι αυτό το συμβόλαιο;" Η ανάλυση που εμφανίζεται από αυτήν την αριθμομηχανή λειτουργεί σαν υπολογισμός ηλικίας. Μετρά πρώτα ολόκληρα ημερολογιακά έτη από την ημερομηνία έναρξης, μετά ολόκληρους ημερολογιακούς μήνες και τέλος τις υπόλοιπες ημέρες. Όταν η ημέρα λήξης του μήνα είναι μικρότερη από την ημέρα έναρξης, δανείζεται ημέρες από τον προηγούμενο μήνα, ακριβώς όπως θα κάνατε όταν το επεξεργαστείτε σε χαρτί. Το αποτέλεσμα πάντα προστίθεται στην ημερομηνία λήξης, ακόμη και σε μήνες διαφορετικού μήκους.
+        </p>
+        <p class="content-paragraph">
+          Τα δίσεκτα έτη είναι η κλασική παγίδα στα μαθηματικά ημερομηνίας. Ένα έτος είναι δίσεκτο αν διαιρείται με το 4, εκτός από τα έτη του αιώνα, τα οποία πρέπει επίσης να διαιρούνται με το 400. Άρα το 2024 ήταν δίσεκτο, το 2023 όχι, το 2000 ήταν δίσεκτο, αλλά το 1900 δεν ήταν. Σε ένα δίσεκτο έτος, ο Φεβρουάριος έχει 29 ημέρες αντί για 28, κάτι που αλλάζει κάθε διαφορά που διασταυρώνεται στα τέλη Φεβρουαρίου. Για παράδειγμα, η 28η Φεβρουαρίου 2024 έως την 1η Μαρτίου 2024 είναι 2 ημέρες, επειδή η 29η Φεβρουαρίου βρίσκεται στο ενδιάμεσο, ενώ το ίδιο ζεύγος ημερομηνιών το 2023 είναι μόνο 1 ημέρα. Αυτή η αριθμομηχανή χειρίζεται αυτόματα δίσεκτα έτη, συμπεριλαμβανομένου του κανόνα του σπάνιου αιώνα, επομένως δεν χρειάζεται ποτέ να ελέγχετε μόνοι σας ένα ημερολόγιο.
+        </p>
+        <p class="content-paragraph">
+          Ο αριθμός "συνολικοί μήνες (περίπου)" είναι διαφορετικός από την ανάλυση: διαιρεί απλώς τις συνολικές ημέρες με 30,44, τη μέση διάρκεια ενός μήνα σε έναν τετραετή κύκλο συμπεριλαμβανομένου ενός δίσεκτου έτους. Είναι βολικό για πρόχειρο σχεδιασμό, όπως η εκτίμηση του πόσες μηνιαίες πληρωμές εμπίπτουν σε μια περίοδο, αλλά για ακριβείς ημερομηνίες θα πρέπει πάντα να χρησιμοποιείτε την ανάλυση ετών, μηνών και ημερών ή τη λειτουργία πρόσθεσης και αφαίρεσης, η οποία προσγειώνεται σε μια ακριβή ημερολογιακή ημερομηνία.
+        </p>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+          </svg>
+          Σημείωση για τις εργάσιμες ημέρες, συν τα καθημερινά παραδείγματα
+        </h2>
+        <p class="content-paragraph">
+          Αυτή η αριθμομηχανή μετράει ημερολογιακές ημέρες, συμπεριλαμβανομένων των Σαββάτων και των Κυριακών, και δεν καταργεί τις επίσημες αργίες. Οι διακοπές διαφέρουν από χώρα σε χώρα, ακόμη και από περιοχή σε περιοχή, επομένως καμία λίστα διακοπών δεν θα ήταν σωστή για κάθε επισκέπτη. Εάν χρειάζεστε μόνο εργάσιμες ημέρες, μια πρακτική συντόμευση είναι να λάβετε τις συνολικές ημερολογιακές ημέρες, να διαιρέσετε με το επτά για να υπολογίσετε τον αριθμό των πλήρων εβδομάδων και να αφαιρέσετε δύο ημέρες ανά ολόκληρη εβδομάδα για το Σαββατοκύριακο και, στη συνέχεια, να προσαρμόσετε τυχόν αργίες εντός της περιόδου. Για νόμιμες προθεσμίες ή προθεσμίες απασχόλησης, επιβεβαιώνετε πάντα τον ακριβή κανόνα με τον εμπλεκόμενο οργανισμό, γιατί άλλοι μετρούν την πρώτη ημέρα και άλλοι όχι.
+        </p>
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Αντίστροφες μετρήσεις για διακοπές και εκδηλώσεις</h4>
+            <p class="example-card-body">
+              Εισαγάγετε τη σημερινή ημέρα ως ημερομηνία έναρξης και την ημερομηνία της πτήσης, του γάμου ή των εξετάσεων ως ημερομηνία λήξης για να δείτε ακριβώς πόσες ημέρες, εβδομάδες και μήνες σας απομένουν για προετοιμασία.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">2. Προθεσμίες και περίοδοι προειδοποίησης</h4>
+            <p class="example-card-body">
+              Προσθέστε 30, 60 ή 90 ημέρες στην ημερομηνία που λάβατε μια ειδοποίηση για να βρείτε την ακριβή ημερομηνία λήξης και την ημέρα της εβδομάδας, έτσι ώστε η προθεσμία του Σαββατοκύριακου να μην σας εκπλήξει ποτέ.
+            </p>
+          </div>
+          <div class="example-card">
+            <h4 class="example-card-title">3. Σχεδιασμός Έργων και Συνδρομών</h4>
+            <p class="example-card-body">
+              Μετρήστε μια φάση έργου ή μια περίοδο συνδρομής σε ημέρες και μήνες ή αφαιρέστε ημέρες από μια ημερομηνία ανανέωσης για να ορίσετε μια υπενθύμιση άνετα εκ των προτέρων.
+            </p>
+          </div>
+        </div>
+        <p class="content-paragraph">
+          Ό,τι και να μετράτε, η πιο ασφαλής συνήθεια είναι να το υπολογίζετε δύο φορές: μία ως διαφορά και μία φορά προσθέτοντας το αποτέλεσμα πίσω στην ημερομηνία έναρξης. Εάν ο δεύτερος υπολογισμός φτάσει στην ημερομηνία λήξης σας, η απάντησή σας επιβεβαιώνεται. Με αυτό το εργαλείο, και οι δύο έλεγχοι διαρκούν μερικά δευτερόλεπτα και οι ημερομηνίες σας παραμένουν εντελώς ιδιωτικές, επειδή κάθε υπολογισμός γίνεται στο δικό σας πρόγραμμα περιήγησης και τίποτα δεν αποστέλλεται ποτέ σε διακομιστή.
+        </p>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          Συχνές Ερωτήσεις (Συχνές Ερωτήσεις)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open="None">
+            <summary class="faq-question">Πώς υπολογίζεται η διαφορά μεταξύ δύο ημερομηνιών;</summary>
+            <div class="faq-answer">
+              Η διαφορά είναι η ημερομηνία λήξης μείον την ημερομηνία έναρξης, σε ολόκληρες ημερολογιακές ημέρες. Η ίδια η ημερομηνία έναρξης δεν υπολογίζεται και η ημερομηνία λήξης μετράται. Για παράδειγμα, από 1 Ιανουαρίου έως 2 Ιανουαρίου είναι 1 ημέρα. Εάν θέλετε να μετρήσετε τόσο την ημερομηνία έναρξης όσο και την ημερομηνία λήξης, προσθέστε 1 στο αποτέλεσμα — αυτή η μέτρηση χωρίς αποκλεισμούς εμφανίζεται επίσης στα αποτελέσματα.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Γιατί η 28η Φεβρουαρίου 2024 έως την 1η Μαρτίου 2024 είναι ίση με 2 ημέρες;</summary>
+            <div class="faq-answer">
+              Επειδή το 2024 είναι δίσεκτο, ο Φεβρουάριος έχει 29 ημέρες. Μετρώντας προς τα εμπρός από τις 28 Φεβρουαρίου, η επόμενη ημέρα είναι 29 Φεβρουαρίου (ημέρα 1) και η επόμενη ημέρα είναι η 1η Μαρτίου (ημέρα 2). Σε ένα μη δίσεκτο έτος, το ίδιο ζεύγος ημερομηνιών θα είχε μόνο 1 ημέρα διαφορά, επειδή δεν υπάρχει 29 Φεβρουαρίου.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Τι σημαίνει η ανάλυση ετών, μηνών και ημερών;</summary>
+            <div class="faq-answer">
+              Είναι μια ανάλυση με ακρίβεια ημερολογίου, όπως ένας υπολογισμός ηλικίας. Ολόκληρα χρόνια και ολόκληροι ημερολογιακοί μήνες μετρώνται πρώτα και οι υπόλοιπες μέρες είναι ό,τι περισσεύει. Επειδή οι μήνες έχουν διαφορετική διάρκεια (28 έως 31 ημέρες), η ανάλυση δανείζεται ημέρες από τον προηγούμενο μήνα όταν χρειάζεται, επομένως προσγειώνεται πάντα ακριβώς στην ημερομηνία λήξης.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Μετράει αυτή η αριθμομηχανή εργάσιμες ημέρες;</summary>
+            <div class="faq-answer">
+              Όχι. Αυτή η αριθμομηχανή μετράει ημερολογιακές ημέρες, συμπεριλαμβανομένων των Σαββάτων και των Κυριακών. Δεν καταργεί τα Σαββατοκύριακα ή τις επίσημες αργίες, επειδή οι αργίες διαφέρουν ανά χώρα και περιοχή. Εάν χρειάζεστε μόνο εργάσιμες ημέρες, πάρτε το σύνολο των ημερών και αφαιρέστε τα Σαββατοκύριακα που εμπίπτουν στην περίοδο.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Οι πληροφορίες ημερομηνίας αποθηκεύονται ή αποστέλλονται οπουδήποτε;</summary>
+            <div class="faq-answer">
+              Ποτέ. Το OmniTools λειτουργεί εξ ολοκλήρου στο δικό σας πρόγραμμα περιήγησης ιστού. Οι ημερομηνίες που εισάγετε δεν αποστέλλονται ποτέ σε διακομιστή, δεν αποθηκεύονται σε μια βάση δεδομένων ή δεν κοινοποιούνται σε κανέναν.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            Το OmniTools παρέχει δωρεάν, ελαφριές ηλεκτρονικές αριθμομηχανές και βοηθητικά προγράμματα με επίκεντρο το απόρρητο για οικονομικά, παραγωγικότητα και εκπαίδευση.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Αριθμομηχανή ηλικίας</a></li>
+            <li><a href="bmi-calculator.html">Ιχνηλάτης ΔΜΣ</a></li>
+            <li><a href="loan-calculator.html">Υπολογιστής EMI δανείου</a></li>
+            <li><a href="password-generator.html">Γεννήτρια κωδικών πρόσβασης</a></li>
+            <li><a href="word-counter.html">Μετρητής λέξεων</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Βοηθητικά προγράμματα</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Υπολογιστής ποσοστού</a></li>
+            <li><a href="discount-calculator.html">Υπολογιστής έκπτωσης</a></li>
+            <li><a href="unit-converter.html">Μετατροπέας μονάδων</a></li>
+            <li><a href="date-calculator.html">Διαφορά ημερομηνίας</a></li>
+            <li><a href="case-converter.html">Μετατροπέας κεφαλαίων κειμένου</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Νομικά &amp; Πληροφορίες</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Σχετικά με εμάς</a></li>
+            <li><a href="../contact.html">Επικοινωνήστε μαζί μας</a></li>
+            <li><a href="../privacy-policy.html">Πολιτική Απορρήτου</a></li>
+            <li><a href="../terms.html">Όροι Παροχής Υπηρεσιών</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools. Με την επιφύλαξη παντός δικαιώματος. Δωρεάν διαδικτυακά βοηθητικά προγράμματα για όλους.</p>
+        <div class="footer-lang-select">
+          <span>Γλώσσες:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var modeSelect = document.getElementById('dateMode');
+    var diffPanel = document.getElementById('diffPanel');
+    var addPanel = document.getElementById('addPanel');
+    var startInput = document.getElementById('startDate');
+    var endInput = document.getElementById('endDate');
+    var baseInput = document.getElementById('baseDate');
+    var dayCountInput = document.getElementById('dayCount');
+    var directionSelect = document.getElementById('dayDirection');
+    var resultsBox = document.getElementById('dateResultsBox');
+    var errorBox = document.getElementById('dateErrorBox');
+    var copyBtn = document.getElementById('copyDateBtn');
+
+    if (modeSelect) {
+      modeSelect.addEventListener('change', function() {
+        var isDiff = modeSelect.value === 'difference';
+        diffPanel.style.display = isDiff ? 'block' : 'none';
+        addPanel.style.display = isDiff ? 'none' : 'block';
+        hideError();
+        if (resultsBox) {
+          resultsBox.classList.remove('active');
+          resultsBox.style.display = 'none';
+        }
+      });
+    }
+
+    [startInput, endInput, baseInput, dayCountInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateDates();
+        });
+      }
+    });
+
+    function parseDateUTC(value) {
+      if (!value || typeof value !== 'string') return null;
+      var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value.trim());
+      if (!m) return null;
+      var y = parseInt(m[1], 10);
+      var mo = parseInt(m[2], 10);
+      var d = parseInt(m[3], 10);
+      if (mo < 1 || mo > 12 || d < 1 || d > 31) return null;
+      var dt = new Date(Date.UTC(y, mo - 1, d));
+      if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) return null;
+      return { y: y, m: mo, d: d, utc: dt.getTime() };
+    }
+
+    function daysInMonthUTC(year, monthIndex) {
+      return new Date(Date.UTC(year, monthIndex + 1, 0)).getUTCDate();
+    }
+
+    function ymdBreakdown(s, e) {
+      var years = e.y - s.y;
+      var months = e.m - s.m;
+      var days = e.d - s.d;
+      if (days < 0) {
+        months -= 1;
+        var prevMonthIndex = e.m - 2;
+        var prevYear = e.y;
+        if (prevMonthIndex < 0) { prevMonthIndex += 12; prevYear -= 1; }
+        days += daysInMonthUTC(prevYear, prevMonthIndex);
+      }
+      if (months < 0) {
+        years -= 1;
+        months += 12;
+      }
+      return { years: years, months: months, days: days };
+    }
+
+    function formatLongUTC(parsed, locale) {
+      var dt = new Date(parsed.utc);
+      return dt.toLocaleDateString(locale, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    }
+
+    function formatShortUTC(parsed, locale) {
+      var dt = new Date(parsed.utc);
+      return dt.toLocaleDateString(locale, { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    }
+
+    window.calculateDates = function() {
+      var mode = modeSelect.value;
+      if (mode === 'difference') {
+        var s = parseDateUTC(startInput.value);
+        var e = parseDateUTC(endInput.value);
+        if (!s || !e) {
+          showError('Εισαγάγετε και μια έγκυρη ημερομηνία έναρξης και μια έγκυρη ημερομηνία λήξης.');
+          return;
+        }
+        if (e.utc < s.utc) {
+          showError('Η ημερομηνία λήξης πρέπει να είναι κατά ή μετά την ημερομηνία έναρξης. Αλλάξτε τις ημερομηνίες ή επιλέξτε μια μεταγενέστερη ημερομηνία λήξης.');
+          return;
+        }
+        hideError();
+        var totalDays = Math.round((e.utc - s.utc) / 86400000);
+        var weeks = Math.floor(totalDays / 7);
+        var remDays = totalDays % 7;
+        var bd = ymdBreakdown(s, e);
+        var monthsApprox = (totalDays / 30.44).toFixed(1);
+        var dayWord = totalDays === 1 ? 'ημέρα' : 'ημέρες';
+        document.getElementById('heroResultLabel').textContent = 'Σύνολο ημερών μεταξύ ημερομηνιών';
+        document.getElementById('heroResultValue').textContent = totalDays.toLocaleString() + ' ' + dayWord;
+        document.getElementById('heroResultSub').textContent = 'Από ' + formatShortUTC(s, 'el-GR') + ' έως ' + formatShortUTC(e, 'el-GR');
+        document.getElementById('metric1Label').textContent = 'Εβδομάδες';
+        document.getElementById('metric1Value').textContent = weeks + ' εβδομάδα, ' + remDays + ' ρε';
+        document.getElementById('metric2Label').textContent = 'Χρόνια / Μήνες / Ημέρες';
+        document.getElementById('metric2Value').textContent = bd.years + ' y, ' + bd.months + ' μην, ' + bd.days + ' ρε';
+        document.getElementById('metric3Label').textContent = 'Σύνολο μηνών (περίπου)';
+        document.getElementById('metric3Value').textContent = monthsApprox + ' μήνες';
+        document.getElementById('dateResultNote').textContent = 'Καταμέτρηση: διαφορά = ημερομηνία λήξης μείον ημερομηνία έναρξης (η ημερομηνία έναρξης δεν υπολογίζεται, η ημερομηνία λήξης υπολογίζεται). Συμπεριλαμβανομένης καταμέτρησης, μετρώντας και τις δύο ημερομηνίες: ' + (totalDays + 1).toLocaleString() + ' ' + ((totalDays + 1) === 1 ? 'ημέρα' : 'ημέρες') + '.';
+        if (copyBtn) {
+          copyBtn.setAttribute('data-summary', 'Διαφορά ημερομηνίας: ' + formatShortUTC(s, 'el-GR') + ' έως ' + formatShortUTC(e, 'el-GR') + ' = ' + totalDays + ' ' + dayWord + ' (' + weeks + ' εβδομάδες, ' + remDays + ' ημέρες? ' + bd.years + ' χρόνια, ' + bd.months + ' μήνες, ' + bd.days + ' ημέρες). Υπολογίστηκε με το OmniTools.');
+        }
+      } else {
+        var b = parseDateUTC(baseInput.value);
+        if (!b) {
+          showError('Εισαγάγετε μια έγκυρη ημερομηνία βάσης.');
+          return;
+        }
+        var raw = dayCountInput.value;
+        if (raw === '' || raw === null || raw === undefined) {
+          showError('Εισαγάγετε έναν ακέραιο αριθμό ημερών (0 έως 365.000).');
+          return;
+        }
+        var n = Number(raw);
+        if (!isFinite(n) || Math.floor(n) !== n || n < 0 || n > 365000) {
+          showError('Εισαγάγετε έναν ακέραιο αριθμό ημερών μεταξύ 0 και 365.000.');
+          return;
+        }
+        hideError();
+        var signed = directionSelect.value === 'subtract' ? -n : n;
+        var resultUtc = b.utc + signed * 86400000;
+        var resultDate = new Date(resultUtc);
+        var resultParsed = { y: resultDate.getUTCFullYear(), m: resultDate.getUTCMonth() + 1, d: resultDate.getUTCDate(), utc: resultUtc };
+        var longStr = formatLongUTC(resultParsed, 'el-GR');
+        var weekday = resultDate.toLocaleDateString('el-GR', { weekday: 'long', timeZone: 'UTC' });
+        var verb = directionSelect.value === 'subtract' ? 'Αφαίρεση' : 'Προσθήκη';
+        var dayWord2 = n === 1 ? 'ημέρα' : 'ημέρες';
+        document.getElementById('heroResultLabel').textContent = 'Ημερομηνία Αποτέλεσματος';
+        document.getElementById('heroResultValue').textContent = longStr;
+        document.getElementById('heroResultSub').textContent = weekday;
+        document.getElementById('metric1Label').textContent = 'Υπολογισμός';
+        document.getElementById('metric1Value').textContent = verb + ' ' + n.toLocaleString() + ' ' + dayWord2;
+        document.getElementById('metric2Label').textContent = 'Ημερομηνία βάσης';
+        document.getElementById('metric2Value').textContent = formatShortUTC(b, 'el-GR');
+        document.getElementById('metric3Label').textContent = 'Ημέρα της εβδομάδας';
+        document.getElementById('metric3Value').textContent = weekday;
+        document.getElementById('dateResultNote').textContent = verb + ' ' + n.toLocaleString() + ' ' + dayWord2 + ' ' + (directionSelect.value === 'subtract' ? 'από' : 'έως') + ' ' + formatShortUTC(b, 'el-GR') + ' δίνει ' + longStr + '.';
+        if (copyBtn) {
+          copyBtn.setAttribute('data-summary', 'Υπολογισμός ημερομηνίας: ' + verb + ' ' + n + ' ' + dayWord2 + ' ' + (directionSelect.value === 'subtract' ? 'από' : 'έως') + ' ' + formatShortUTC(b, 'el-GR') + ' = ' + longStr + '. Υπολογίστηκε με το OmniTools.');
+        }
+      }
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+
+    window.resetDates = function() {
+      startInput.value = '';
+      endInput.value = '';
+      baseInput.value = '';
+      dayCountInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Η σύνοψη της ημερομηνίας αντιγράφηκε στο πρόχειρο!');
+          }).catch(function() {
+            prompt('Αντιγραφή περίληψης:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
