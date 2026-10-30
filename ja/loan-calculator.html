@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ローン EMI 計算ツール - 毎月の支払いと償却スケジュール |OmniTools</title>
+  <meta name="description" content="毎月のローン分割払い (EMI)、支払うべき利息の総額、および年間償却スケジュールを計算します。住宅ローン、自動車ローン、個人融資に最適です。">
+  <meta name="keywords" content="ローン emi 計算機、住宅ローン支払い計算機、ローン月々の支払額の計算、ローン償却スケジュール、自動車ローン計算機、支払利息計算機">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  
+    <link rel="canonical" href="https://janhazirr7.github.io/allinone/ja/loan-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/loan-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-prestamos.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/loan-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/loan-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/loan-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/loan-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/loan-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/loan-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/loan-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/loan-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/loan-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/loan-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/loan-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/loan-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/loan-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/loan-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/loan-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/loan-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/loan-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/loan-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/loan-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/loan-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/loan-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/loan-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/loan-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/loan-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/loan-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/loan-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/loan-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/loan-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/loan-calculator.html">
+
+  
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/ja/loan-calculator.html">
+  <meta property="og:title" content="ローン EMI 計算ツール - 毎月の支払いと償却スケジュール">
+  <meta property="og:description" content="インタラクティブなグラフと償却表を使用して、ローン EMI、総利息、返済スケジュールを計算します。完全に無料でプライベートです。">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-loan-calculator.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ローンおよび住宅ローン EMI 計算ツール |OmniTools">
+  <meta name="twitter:description" content="利息の内訳と償却スケジュールを含む月々のローン支払いを即座に計算します。">
+
+  
+  <link rel="stylesheet" href="../style.css">
+
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools ローン EMI 計算ツール",
+  "url": "https://janhazirr7.github.io/allinone/ja/loan-calculator.html",
+  "applicationCategory": "金融アプリケーション",
+  "operatingSystem": "All",
+  "browserRequirements": "JavaScriptが必要です。 HTML5が必要です。",
+  "description": "毎月のローン EMI 支払い、支払われる利息の合計、および包括的なローン返済スケジュールを計算します。",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "ja"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "家",
+      "item": "https://janhazirr7.github.io/allinone/ja/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ファイナンス",
+      "item": "https://janhazirr7.github.io/allinone/ja/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "ローン計算機",
+      "item": "https://janhazirr7.github.io/allinone/ja/loan-calculator.html"
+    }
+  ],
+  "inLanguage": "ja"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "EMI (均等月割) とは何ですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "等価月次分割払い (EMI) は、毎月特定の日に借り手が金融業者に支払う固定の支払い額です。各EMIは2つの部分に分かれており、1つの部分はその月に発生した利息を支払い、残りの部分は元本のローン残高を減らします。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ローンの初期段階で金利が高くなるのはなぜですか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "残高減少ローンの初期段階では、未払いの元本はピークに達します。したがって、月々の利息が各分割払いの大部分を占めます。元金を少しずつ返済していくと利息部分が減り、元金の返済が加速していきます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "より長いローン期間を選択すると総コストにどのような影響がありますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "より長い契約期間を選択すると、毎月の EMI が軽減され、短期的には支払いがより​​管理しやすくなります。ただし、利息は長期間にわたって発生するため、支払われる累積利息の合計は元の借入額を容易に超える可能性があります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "私の財務データは保存されますか、それともサーバーに送信されますか?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一度もない。 OmniTools は、デバイスの Web ブラウザ内で完全にクライアント側で動作します。金額、利息額、ローンパラメータが外部データベースに送信されたり、リモートサーバーに記録されたりすることはありません。"
+      }
+    }
+  ],
+  "inLanguage": "ja"
+}
+  </script>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniToolsホーム">
+        <div class="brand-icon">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      
+      <nav aria-label="メインナビゲーション">
+        <ul class="nav-links">
+          <li><a href="index.html">すべてのツール</a></li>
+          <li><a href="age-calculator.html">年齢計算</a></li>
+          <li><a href="bmi-calculator.html">BMIトラッカー</a></li>
+          <li><a href="loan-calculator.html" class="active">ローンEMI</a></li>
+          <li><a href="../about.html">について</a></li>
+        </ul>
+      </nav>
+
+      
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="言語を選択" onchange="window.location.href=this.value">
+          <option value="../loan-calculator.html">English</option>
+          <option value="../es/calculadora-de-prestamos.html">Español</option>
+          <option value="../de/loan-calculator.html">Deutsch</option>
+          <option value="../fr/loan-calculator.html">Français</option>
+          <option value="../pt/loan-calculator.html">Português</option>
+          <option value="../it/loan-calculator.html">Italiano</option>
+          <option value="../ru/loan-calculator.html">Русский</option>
+          <option value="../nl/loan-calculator.html">Nederlands</option>
+          <option value="../pl/loan-calculator.html">Polski</option>
+          <option value="../sv/loan-calculator.html">Svenska</option>
+          <option value="../no/loan-calculator.html">Norsk</option>
+          <option value="../da/loan-calculator.html">Dansk</option>
+          <option value="../fi/loan-calculator.html">Suomi</option>
+          <option value="../id/loan-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/loan-calculator.html">Türkçe</option>
+          <option value="../vi/loan-calculator.html">Tiếng Việt</option>
+          <option value="../th/loan-calculator.html">ไทย</option>
+          <option value="../ms/loan-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/loan-calculator.html">Filipino</option>
+          <option value="../hi/loan-calculator.html">हिन्दी</option>
+          <option value="../ur/loan-calculator.html">اردو</option>
+          <option value="../ar/loan-calculator.html">العربية</option>
+          <option value="../fa/loan-calculator.html">فارسی</option>
+          <option value="../he/loan-calculator.html">עברית</option>
+          <option value="loan-calculator.html" selected>日本語</option>
+          <option value="../ko/loan-calculator.html">한국어</option>
+          <option value="../zh/loan-calculator.html">简体中文</option>
+          <option value="../zh-TW/loan-calculator.html">繁體中文</option>
+          <option value="../el/loan-calculator.html">Ελληνικά</option>
+          <option value="../cs/loan-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="ナビゲーションメニューを切り替えます" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">家</a></li>
+          <li><a href="index.html#finance">ファイナンス</a></li>
+          <li aria-current="page">ローンEMI計算機</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">ローンおよび住宅ローン EMI 支払い計算ツール</h1>
+        <p class="tool-header-desc">
+          住宅ローン、自動車ローン、または個人融資の正確な月々の分割払い (EMI)、合計利息、および包括的な償却スケジュールを計算します。
+        </p>
+      </div>
+    </section>
+
+    
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="リーダーボードの広告">
+        <span class="ad-slot-placeholder-text">レスポンシブ リーダーボード広告 (728x90)</span>
+      </div>
+    </div>
+
+    
+    <section class="container tool-layout-container">
+      
+      
+      <div>
+        <div class="tool-card-widget">
+          
+          <div class="widget-form-grid">
+            
+            <div class="form-group">
+              <label for="loanAmount" class="form-label">
+                <span>元本融資額 ($)</span>
+                <span class="label-hint">必須</span>
+              </label>
+              <input type="number" id="loanAmount" class="form-input" placeholder="例えば50000" min="100" max="100000000" step="500">
+              <span class="form-help">借入総額</span>
+            </div>
+
+            
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="interestRate" class="form-label">
+                  <span>年利(%)</span>
+                  <span class="label-hint">年間 ％</span>
+                </label>
+                <input type="number" id="interestRate" class="form-input" placeholder="例：7.5" min="0" max="50" step="0.05">
+                <span class="form-help">年率 (APR)</span>
+              </div>
+
+              <div class="form-group">
+                <label for="loanTenure" class="form-label">
+                  <span>融資期間/期間</span>
+                  <span class="label-hint">間隔</span>
+                </label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="loanTenure" class="form-input" placeholder="例えば5" min="1" max="600" step="1" style="flex: 2;">
+                  <select id="tenureUnit" class="form-select" style="flex: 1.5;">
+                    <option value="years" selected="None">年</option>
+                    <option value="months">月</option>
+                  </select>
+                </div>
+                <span class="form-help">年または月を選択してください</span>
+              </div>
+            </div>
+          </div>
+
+          
+          <div id="loanErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          
+          <div class="widget-actions">
+            <button type="button" id="calcLoanBtn" class="btn btn-primary" onclick="calculateLoan()">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
+              </svg>
+              EMIの計算
+            </button>
+            <button type="button" id="resetLoanBtn" class="btn btn-outline" onclick="resetLoan()">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+              リセット
+            </button>
+          </div>
+
+          
+          <div id="loanResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                ローン支払いの内訳
+              </span>
+              <button type="button" id="copyLoanBtn" class="btn btn-outline btn-sm" title="コピー結果の概要">
+                <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                </svg>
+                コピーの概要
+              </button>
+            </div>
+
+            
+            <div class="hero-result-card">
+              <div class="hero-result-label">均等月割（EMI）</div>
+              <div class="hero-result-value" id="monthlyEmiValue">$0.00</div>
+              <div class="hero-result-sub">毎月支払う固定月額料金</div>
+            </div>
+
+            
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="totalInterestValue" style="color: #d97706;">$0.00</div>
+                <div class="metric-label">支払利息総額</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="totalPaymentValue">$0.00</div>
+                <div class="metric-label">支払総額（元金＋利息）</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="payoffDateValue" style="color: var(--accent);">-</div>
+                <div class="metric-label">推定返済日</div>
+              </div>
+            </div>
+
+            
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                </svg>
+                支払比率（元金対利息）
+              </div>
+              
+              <div class="loan-proportion-bar">
+                <div id="barPrincipal" class="loan-bar-principal" style="width: 70%;" title="主要部分"></div>
+                <div id="barInterest" class="loan-bar-interest" style="width: 30%;" title="利息部分"></div>
+              </div>
+
+              <div class="loan-legend-wrap">
+                <div class="loan-legend-item">
+                  <span class="loan-legend-dot loan-dot-principal"></span>
+                  <span>主要： <strong id="legendPrincipalPct" style="color: var(--primary);">0%</strong></span>
+                </div>
+                <div class="loan-legend-item">
+                  <span class="loan-legend-dot loan-dot-interest"></span>
+                  <span>合計利息: <strong id="legendInterestPct" style="color: #d97706;">0%</strong></span>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                年間償却スケジュール
+              </div>
+              
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>年</th>
+                      <th>期首残高</th>
+                      <th>元金支払い</th>
+                      <th>支払利息</th>
+                      <th>期末残高</th>
+                    </tr>
+                  </thead>
+                  <tbody id="amortizationTableBody">
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <aside>
+        
+        <div class="ad-slot ad-rectangle" aria-label="サイドバー広告">
+          <span class="ad-slot-placeholder-text">サイドバー長方形 (300x250)</span>
+        </div>
+
+        
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">関連する電卓</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">パーセンテージ計算機 <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">割引と消費税の計算 <span>→</span></a></li>
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">年齢とマイルストーンの計算機 <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMIトラッカー <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="記事内広告">
+        <span class="ad-slot-placeholder-text">レスポンシブコンテンツバナー (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    
+    <article class="container educational-content">
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          OmniTools ローン EMI 計算ツールの使用方法
+        </h2>
+        <p class="content-paragraph">
+          住宅の購入、車のローン、個人の借金の整理など、ローンを組むことは、かなりの金銭的負担を意味します。 OmniTools ローン EMI 計算ツールを使用すると、月々の債務、支払利息の総額、および年間返済の軌道が即座に明確になります。
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>元金の借入額を入力してください</strong>
+              借入資本の合計をドルで入力します (頭金または前払い手数料を除く)。たとえば、頭金 50,000 ドルで 300,000 ドルの不動産に 250,000 ドルの住宅ローンを組む場合、次のように入力します。 <code>250000</code>.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>年利率 (%) を指定します</strong>
+              金融機関が見積もった固定年率 (APR) を入力します (例: <code>6.5</code> 住宅ローン金利は 6.50% の場合）。
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>ローン期間 (年または月) を選択してください</strong>
+              ローン契約の期間を入力します。年を自由に切り替えることができます (例: <code>30</code> 従来の住宅ローンの場合は数年）または数か月（例: <code>60</code> 5 年間の自動車ローンの場合は数か月）。
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>「EMIの計算」をクリックします。</strong>
+              月々の分割払い (EMI)、ローン全期間にわたる支払利息総額、全額返済額、およびインタラクティブな年間償却の内訳を即座に分析します。
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
+          </svg>
+          EMI の数学的公式と導出
+        </h2>
+        <p class="content-paragraph">
+          標準的なリテール バンキングでは、融資には <strong>残高を減らす複利手法</strong>。これにより、毎月、元のローン総額ではなく、未払いの元金に対して厳密に利息が課されるようになります。
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            EMI = [ P × r × (1 + r)^n ] / [ (1 + r)^n - 1 ]
+          </div>
+          <div class="formula-explanation">
+            どこ：<br>
+            • <strong>P</strong> =元本融資額<br>
+            • <strong>r</strong> = 月利 = 年利 / (12 × 100)<br>
+            • <strong>n</strong> = 月々の分割払いの合計数 (ローン年数 × 12)<br><br>
+            <strong>お支払い総額</strong> = EMI × n<br>
+            <strong>支払利息総額</strong> = 支払総額 - P
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          <strong>段階的な計算例:</strong> 年利 8.5% で 100,000 ドルの個人ローンを 5 年間 (60 か月) 借りたとします。
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
+          <li>月利 $r = 8.5 / (12 \times 100) = 0.0070833$</li>
+          <li>期間の数 $n = 60$</li>
+          <li>複合係数 $(1 + r)^{60} = (1.0070833)^{60} \約 1.5273$</li>
+          <li>分子 = $100,000 \times 0.0070833 \times 1.5273 \およそ 1081.85$</li>
+          <li>分母 = 1.5273 ドル - 1 = 0.5273 ドル</li>
+          <li>月間 EMI = $1081.85 / 0.5273 =$ <strong>$2,051.65 / 月</strong></li>
+          <li>総返済額 = $2,051.65 \times 60 =$ <strong>$123,099.19</strong> (利息 $23,099.19)</li>
+        </ul>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          </svg>
+          残高ローンと定額ローンの削減: 欺瞞的な見積もりを避ける
+        </h2>
+        <p class="content-paragraph">
+          ローンを利用する際、借り手は貸し手が使用する 2 つの異なる計算アプローチに遭遇することがよくあります。違いを理解すると、数千ドルを節約できます。
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>特徴</th>
+                <th>減額融資（銀行基準）</th>
+                <th>定額ローン（注意）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>利息の計算</strong></td>
+                <td>未払元金残高の減少に基づいて厳密に計算されます。</td>
+                <td>全期間を通じて最初の融資額全額に基づいて計算されます。</td>
+              </tr>
+              <tr>
+                <td><strong>実効金利</strong></td>
+                <td>実際の年利は見積レートと一致します (例: 10% = 10% 年利)。</td>
+                <td>実効年利はほぼ <strong>ダブル</strong> 見積名目レート！</td>
+              </tr>
+              <tr>
+                <td><strong>支払利息総額</strong></td>
+                <td>毎月元本が減っていくので大幅に減ります。</td>
+                <td>すでに返済したお金に利息を支払うため、大幅に高くなります。</td>
+              </tr>
+              <tr>
+                <td><strong>前払い特典</strong></td>
+                <td>直接的に元金が減り、将来の金利負担が軽減されます。</td>
+                <td>多くの場合、早期返済時にごくわずかな利息の軽減が提供されます。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+          </svg>
+          住宅ローンとローンの金利を最小限に抑えるための 3 つの実績のある戦略
+        </h2>
+        <p class="content-paragraph">
+          借り手は簡単な返済テクニックを利用して、長期債務を数万ドル削減できます。
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1.隔週支払いハック</h4>
+            <p class="example-card-body">
+              月に 1 回支払う代わりに、毎月の EMI の半分を 2 週間ごとに支払います。暦年は 52 週間あるため、半額支払いを 26 回行うことになります。これは、月々の全額支払いを 12 回ではなく 13 回に相当します。30 年の住宅ローンの場合、この習慣を 1 つ行うだけで、期間を 4 ～ 6 年間短縮できます。
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. 元金直接繰上返済</h4>
+            <p class="example-card-body">
+              税金の還付、年次ボーナス、または余剰貯蓄を元本削減に直接適用すると、残存債務が大幅に減少します。将来の利息は残高のみに基づいて計算されるため、ローン スケジュールの早い段階で前払いすることで複利の節約が実現します。
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. 借り換え時の期間短縮</h4>
+            <p class="example-card-body">
+              市場金利が低下するか収入が増加した場合、30 年の住宅ローンを 15 年または 20 年の期間に借り換えると、金利が低く抑えられ、累積支払利息を数十万ドル節約できます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          よくある質問 (FAQ)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open="None">
+            <summary class="faq-question">EMI (均等月割) とは何ですか?</summary>
+            <div class="faq-answer">
+              等価月次分割払い (EMI) は、毎月特定の日に借り手が金融業者に支払う固定の支払い額です。各EMIは2つの部分に分かれており、1つの部分はその月に発生した利息を支払い、残りの部分は元本のローン残高を減らします。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">ローンの初期段階で金利が高くなるのはなぜですか?</summary>
+            <div class="faq-answer">
+              残高減少ローンの初期段階では、未払いの元本はピークに達します。したがって、月々の利息が各分割払いの大部分を占めます。元金を少しずつ返済していくと利息部分が減り、元金の返済が加速していきます。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">より長いローン期間を選択すると総コストにどのような影響がありますか?</summary>
+            <div class="faq-answer">
+              より長い契約期間を選択すると、毎月の EMI が軽減され、短期的には支払いがより​​管理しやすくなります。ただし、利息は長期間にわたって発生するため、支払われる累積利息の合計は元の借入額を容易に超える可能性があります。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">私の財務データは保存されますか、それともサーバーに送信されますか?</summary>
+            <div class="faq-answer">
+              一度もない。 OmniTools は、デバイスの Web ブラウザ内で完全にクライアント側で動作します。金額、利息額、ローンパラメータが外部データベースに送信されたり、リモートサーバーに記録されたりすることはありません。
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools は、財務、生産性、教育向けに、プライバシーを重視した軽量のオンライン計算機とユーティリティを無料で提供します。
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">トレンドツール</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">年齢計算機</a></li>
+            <li><a href="bmi-calculator.html">BMIトラッカー</a></li>
+            <li><a href="loan-calculator.html">ローンEMI計算機</a></li>
+            <li><a href="password-generator.html">パスワードジェネレーター</a></li>
+            <li><a href="word-counter.html">ワードカウンター</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">公共事業</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">パーセンテージ計算機</a></li>
+            <li><a href="discount-calculator.html">割引計算機</a></li>
+            <li><a href="unit-converter.html">単位換算器</a></li>
+            <li><a href="date-calculator.html">日付の違い</a></li>
+            <li><a href="case-converter.html">テキストケースコンバーター</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">法務と情報</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">私たちについて</a></li>
+            <li><a href="../contact.html">お問い合わせ</a></li>
+            <li><a href="../privacy-policy.html">プライバシーポリシー</a></li>
+            <li><a href="../terms.html">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools。無断転載を禁じます。誰でも使える無料のオンライン ユーティリティ。</p>
+        <div class="footer-lang-select">
+          <span>言語：</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var loanAmountInput = document.getElementById('loanAmount');
+    var interestRateInput = document.getElementById('interestRate');
+    var loanTenureInput = document.getElementById('loanTenure');
+    var tenureUnitSelect = document.getElementById('tenureUnit');
+    var resultsBox = document.getElementById('loanResultsBox');
+    var errorBox = document.getElementById('loanErrorBox');
+    var copyBtn = document.getElementById('copyLoanBtn');
+
+    [loanAmountInput, interestRateInput, loanTenureInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateLoan();
+        });
+      }
+    });
+
+    window.calculateLoan = function() {
+      var P = parseFloat(loanAmountInput.value);
+      var R = parseFloat(interestRateInput.value);
+      var tenureVal = parseFloat(loanTenureInput.value);
+      var unit = tenureUnitSelect.value;
+
+      if (!P || P <= 0 || isNaN(R) || R < 0 || !tenureVal || tenureVal <= 0) {
+        showError('ローン金額、金利、期間には有効な正の値を入力してください。');
+        return;
+      }
+      if (P > 100000000) {
+        showError('融資額は100,000,000を超えることはできません。');
+        return;
+      }
+      if (R > 50) {
+        showError('年利は 50% を超えることはできません。');
+        return;
+      }
+
+      var n = (unit === 'years') ? Math.round(tenureVal * 12) : Math.round(tenureVal);
+      if (n < 1 || n > 600) {
+        showError('融資期間は 1 か月から 50 年 (600 か月) まででなければなりません。');
+        return;
+      }
+
+      hideError();
+
+      var emi = 0;
+      var totalPayment = 0;
+      var totalInterest = 0;
+
+      if (R === 0) {
+        emi = P / n;
+        totalPayment = P;
+        totalInterest = 0;
+      } else {
+        var r = R / (12 * 100);
+        var factor = Math.pow(1 + r, n);
+        emi = (P * r * factor) / (factor - 1);
+        totalPayment = emi * n;
+        totalInterest = totalPayment - P;
+      }
+
+      var principalPercent = ((P / totalPayment) * 100).toFixed(1);
+      var interestPercent = ((totalInterest / totalPayment) * 100).toFixed(1);
+
+      var today = new Date();
+      var payoffDate = new Date(today.getFullYear(), today.getMonth() + n, 1);
+      var payoffStr = payoffDate.toLocaleDateString('ja-JP', { month: 'long', year: 'numeric' });
+
+      function formatCurr(val) {
+        return '$' + val.toLocaleString('ja-JP', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      document.getElementById('monthlyEmiValue').textContent = formatCurr(emi);
+      document.getElementById('totalInterestValue').textContent = formatCurr(totalInterest);
+      document.getElementById('totalPaymentValue').textContent = formatCurr(totalPayment);
+      document.getElementById('payoffDateValue').textContent = payoffStr;
+
+      var barPrincipal = document.getElementById('barPrincipal');
+      var barInterest = document.getElementById('barInterest');
+      if (barPrincipal && barInterest) {
+        barPrincipal.style.width = principalPercent + '%';
+        barInterest.style.width = interestPercent + '%';
+      }
+      document.getElementById('legendPrincipalPct').textContent = principalPercent + '%';
+      document.getElementById('legendInterestPct').textContent = interestPercent + '%';
+
+      generateSchedule(P, R, n, emi);
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'ローン概要: 元金 ' + formatCurr(P) + ' で ' + R + '％ のために ' + n + ' 数か月。月刊EMI: ' + formatCurr(emi) + '、合計利息: ' + formatCurr(totalInterest) + '、支払い総額: ' + formatCurr(totalPayment) + '。 OmniTools で計算されます。');
+      }
+    };
+
+    function generateSchedule(principal, annualRate, totalMonths, emi) {
+      var tableBody = document.getElementById('amortizationTableBody');
+      if (!tableBody) return;
+      tableBody.innerHTML = '';
+
+      var r = (annualRate > 0) ? annualRate / (12 * 100) : 0;
+      var balance = principal;
+      var currentMonth = 0;
+      var yearNum = 1;
+
+      while (currentMonth < totalMonths && balance > 0) {
+        var yearStartBalance = balance;
+        var yearPrincipal = 0;
+        var yearInterest = 0;
+
+        var monthsInThisYear = Math.min(12, totalMonths - currentMonth);
+
+        for (var m = 0; m < monthsInThisYear; m++) {
+          var monthInterest = balance * r;
+          var monthPrincipal = emi - monthInterest;
+
+          if (monthPrincipal > balance || (currentMonth + m === totalMonths - 1)) {
+            monthPrincipal = balance;
+          }
+
+          yearInterest += monthInterest;
+          yearPrincipal += monthPrincipal;
+          balance -= monthPrincipal;
+        }
+
+        currentMonth += monthsInThisYear;
+        var yearEndBalance = Math.max(0, balance);
+
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td><strong>Year ' + yearNum + '</strong></td>' +
+          '<td>$' + Math.round(yearStartBalance).toLocaleString() + '</td>' +
+          '<td>$' + Math.round(yearPrincipal).toLocaleString() + '</td>' +
+          '<td>$' + Math.round(yearInterest).toLocaleString() + '</td>' +
+          '<td>$' + Math.round(yearEndBalance).toLocaleString() + '</td>';
+        tableBody.appendChild(tr);
+        yearNum++;
+      }
+    }
+
+    window.resetLoan = function() {
+      loanAmountInput.value = '';
+      interestRateInput.value = '';
+      loanTenureInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('ローン概要をクリップボードにコピーしました!');
+          }).catch(function() {
+            prompt('コピーの概要:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
