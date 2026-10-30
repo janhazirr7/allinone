@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMR 및 칼로리 계산기 - 활동 수준별 일일 칼로리 | OmniTools</title>
+<meta name="description" content="Mifflin-St Jeor 방정식을 사용하여 기초 대사율(BMR)과 활동 수준별 일일 칼로리를 미터법 또는 영국식 단위로 계산하세요.">
+<meta name="keywords" content="BMR 계산기, 칼로리 계산기, Mifflin St Jeor, 일일 필요 칼로리, 기초대사량">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/ko/bmr-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-calorias.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/bmr-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/bmr-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/bmr-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/bmr-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/bmr-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/bmr-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/bmr-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/bmr-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/bmr-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/bmr-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/bmr-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/bmr-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/bmr-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/bmr-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/bmr-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/bmr-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/bmr-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/bmr-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/bmr-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/bmr-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/bmr-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/bmr-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/bmr-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/bmr-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/bmr-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/bmr-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+
+
+
+
+<meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/ko/bmr-calculator.html">
+<meta property="og:title" content="BMR 및 칼로리 계산기 | OmniTools">
+<meta property="og:description" content="Mifflin-St Jeor 방정식을 사용하여 기초 대사율(BMR)과 활동 수준별 일일 칼로리를 미터법 또는 영국식 단위로 계산하세요.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-bmr-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BMR 및 칼로리 계산기 | OmniTools">
+<meta name="twitter:description" content="Mifflin-St Jeor 방정식을 사용하여 기초 대사율(BMR)과 활동 수준별 일일 칼로리를 미터법 또는 영국식 단위로 계산하세요.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools BMR 및 칼로리 계산기",
+  "url": "https://janhazirr7.github.io/allinone/ko/bmr-calculator.html",
+  "applicationCategory": "건강신청",
+  "operatingSystem": "All",
+  "browserRequirements": "자바스크립트가 필요합니다. HTML5가 필요합니다.",
+  "description": "Mifflin-St Jeor 방정식을 사용하여 기초 대사율(BMR)과 활동 수준별 일일 칼로리를 미터법 또는 영국식 단위로 계산하세요.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "ko"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "집",
+      "item": "https://janhazirr7.github.io/allinone/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "건강",
+      "item": "https://janhazirr7.github.io/allinone/ko/#health"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "BMR 및 칼로리 계산기",
+      "item": "https://janhazirr7.github.io/allinone/ko/bmr-calculator.html"
+    }
+  ],
+  "inLanguage": "ko"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "BMR이란 무엇입니까?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "기초 대사율(BMR)은 호흡, 순환, 체온 유지를 포함하여 신체가 휴식 중에 생명을 유지하기 위해 소모하는 칼로리 수입니다. 운동이나 운동을 통해 소모된 칼로리는 포함되지 않습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BMR은 TDEE와 어떻게 다릅니까?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BMR은 휴식 중 화상만을 의미하는 반면 총 일일 에너지 소비량(TDEE)은 BMR에 활동 요인을 곱한 것이므로 일, 운동 및 일상적인 움직임이 포함됩니다. 이 계산기는 BMR을 더 작은 숫자로 표시하고 TDEE를 일일 유지 칼로리로 표시합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "계산기가 섹스를 요구하는 이유는 무엇입니까?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mifflin-St Jeor 방정식에는 성별이 포함됩니다. 평균적으로 같은 키, 몸무게, 나이의 남성과 여성은 근육량과 신체 구성이 다르기 때문에 휴식 에너지 ​​사용에 영향을 미칩니다. 공식은 남성의 경우 5를 더하고 여성의 경우 161을 뺍니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "이 칼로리 수치를 사용해 안전하게 체중을 감량할 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "출발점으로서, 대부분의 건강한 성인의 경우 그렇습니다. 유지량보다 약 500칼로리를 섭취하면 일반적으로 주당 약 0.5kg의 점진적인 체중 감소로 이어집니다. 훨씬 더 큰 적자 또는 질병이나 임신 중 칼로리 목표에 대해서는 의료 전문가와 논의해야 합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "내 데이터는 어디에나 저장되어 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. 이 계산기는 전적으로 귀하의 브라우저에서 실행됩니다. 귀하의 나이, 체중, 키 및 활동 수준은 서버로 전송되거나 OmniTools에 저장되지 않습니다."
+      }
+    }
+  ],
+  "inLanguage": "ko"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "BMR 및 칼로리 계산기",
+  "description": "Mifflin-St Jeor 방정식을 사용하여 기초 대사율(BMR)과 활동 수준별 일일 칼로리를 미터법 또는 영국식 단위로 계산하세요.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "세부 정보를 입력하세요",
+      "text": "성별, 나이, 키, 체중을 미터법 또는 영국식 단위로 입력하세요."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "활동 수준을 선택하세요",
+      "text": "평소에 가장 가까운 활동 수준을 선택하세요."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "믿다",
+      "text": "칼로리 계산을 눌러 BMR 및 일일 유지 칼로리를 확인하세요."
+    }
+  ],
+  "inLanguage": "ko"
+}
+  </script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a href="index.html" class="brand-logo" aria-label="OmniTools 홈"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
+<nav aria-label="메인 네비게이션"><ul class="nav-links"><li><a href="index.html">모든 도구</a></li><li><a href="age-calculator.html">나이 계산</a></li><li><a href="bmi-calculator.html">BMI 추적기</a></li><li><a href="loan-calculator.html">대출 EMI</a></li><li><a href="../about.html">에 대한</a></li></ul></nav>
+<div class="nav-actions"><select id="langSelect" aria-label="언어 선택" onchange="window.location.href=this.value">
+          <option value="../bmr-calculator.html">English</option>
+          <option value="../es/calculadora-de-calorias.html">Español</option>
+          <option value="../de/bmr-calculator.html">Deutsch</option>
+          <option value="../fr/bmr-calculator.html">Français</option>
+          <option value="../pt/bmr-calculator.html">Português</option>
+          <option value="../it/bmr-calculator.html">Italiano</option>
+          <option value="../ru/bmr-calculator.html">Русский</option>
+          <option value="../nl/bmr-calculator.html">Nederlands</option>
+          <option value="../pl/bmr-calculator.html">Polski</option>
+          <option value="../sv/bmr-calculator.html">Svenska</option>
+          <option value="../no/bmr-calculator.html">Norsk</option>
+          <option value="../da/bmr-calculator.html">Dansk</option>
+          <option value="../fi/bmr-calculator.html">Suomi</option>
+          <option value="../id/bmr-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/bmr-calculator.html">Türkçe</option>
+          <option value="../vi/bmr-calculator.html">Tiếng Việt</option>
+          <option value="../th/bmr-calculator.html">ไทย</option>
+          <option value="../ms/bmr-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/bmr-calculator.html">Filipino</option>
+          <option value="../hi/bmr-calculator.html">हिन्दी</option>
+          <option value="../ur/bmr-calculator.html">اردو</option>
+          <option value="../ar/bmr-calculator.html">العربية</option>
+          <option value="../fa/bmr-calculator.html">فارسی</option>
+          <option value="../he/bmr-calculator.html">עברית</option>
+          <option value="../ja/bmr-calculator.html">日本語</option>
+          <option value="bmr-calculator.html" selected>한국어</option>
+          <option value="../zh/bmr-calculator.html">简体中文</option>
+          <option value="../zh-TW/bmr-calculator.html">繁體中文</option>
+          <option value="../el/bmr-calculator.html">Ελληνικά</option>
+          <option value="../cs/bmr-calculator.html">Čeština</option>
+        </select><button class="mobile-nav-toggle" aria-label="탐색 메뉴 전환" aria-expanded="false">☰</button></div></div></header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">집</a></li><li><a href="index.html#health">건강</a></li><li aria-current="page">BMR 및 칼로리 계산기</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">BMR 및 칼로리 계산기</h1><p class="tool-header-desc">활동 수준에 따라 신체가 휴식 중에 소모하는 칼로리 양과 체중을 유지하는 데 매일 필요한 칼로리 양을 알아보세요.</p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="리더보드 광고"><span class="ad-slot-placeholder-text">반응형 리더보드 광고(728x90)</span></div></div>
+<section class="container tool-layout-container">
+<div><div class="tool-card-widget">
+<div class="unit-toggle-wrap"><button type="button" class="unit-toggle-btn active" id="unitMetricBtn" onclick="setUnits('metric')">미터법(kg, cm)</button><button type="button" class="unit-toggle-btn" id="unitImperialBtn" onclick="setUnits('imperial')">영국식(파운드, 피트)</button></div>
+<div class="widget-form-grid">
+<div class="form-group"><label class="form-label" for="bmrSex"><span>섹스</span><span class="label-hint">필수의</span></label><select id="bmrSex" class="form-select"><option value="male">남성</option><option value="female">여성</option></select></div>
+<div class="form-group"><label class="form-label" for="bmrAge"><span>나이(세)</span><span class="label-hint">10–120</span></label><input type="number" id="bmrAge" class="form-input" placeholder="예: 30" min="10" max="120" step="1"><span class="form-help">귀하의 나이(연수)</span></div>
+<div id="metricGroup" class="unit-group active"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightCm"><span>높이(cm)</span></label><input type="number" id="bmrHeightCm" class="form-input" placeholder="예를 들어 175" min="50" max="250" step="1"></div><div class="form-group"><label class="form-label" for="bmrWeightKg"><span>체중(kg)</span></label><input type="number" id="bmrWeightKg" class="form-input" placeholder="예를 들어 70" min="20" max="400" step="0.1"></div></div></div>
+<div id="imperialGroup" class="unit-group"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightFt"><span>높이(피트 및 인치)</span></label><div style="display:flex;gap:0.5rem;"><input type="number" id="bmrHeightFt" class="form-input" placeholder="피트" min="1" max="8" step="1" style="flex:1;"><input type="number" id="bmrHeightIn" class="form-input" placeholder="신장" min="0" max="11" step="1" style="flex:1;"></div></div><div class="form-group"><label class="form-label" for="bmrWeightLb"><span>무게(파운드)</span></label><input type="number" id="bmrWeightLb" class="form-input" placeholder="예를 들어 154" min="44" max="880" step="0.1"></div></div></div>
+<div class="form-group"><label class="form-label" for="bmrActivity"><span>활동 수준</span></label><select id="bmrActivity" class="form-select"><option value="sedentary">앉아서 생활함(운동이 거의 또는 전혀 없음)</option><option value="light">가벼운 (1~3일/주)</option><option value="moderate" selected="None">중등도(주 3~5일)</option><option value="active">활성(주 6~7일)</option><option value="veryactive">매우 활동적입니다(신체 직업 또는 하루 2회 훈련).</option></select><span class="form-help">평소에 가장 가까운 레벨을 선택하세요.</span></div>
+</div>
+<div id="bmrErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateBMRUI()">칼로리 계산</button><button type="button" class="btn btn-outline" onclick="resetBMR()">다시 놓기</button></div>
+<div id="bmrResultsBox" class="results-box">
+<div class="results-header"><span class="results-title">칼로리 결과</span><button type="button" class="btn btn-outline btn-sm" id="copyBmrBtn">요약 복사</button></div>
+<div class="hero-result-card"><div class="hero-result-label">일일 유지 칼로리</div><div class="hero-result-value" id="dailyCalValue">0kcal</div><div class="hero-result-sub">BMR 및 활동 수준을 기준으로</div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="bmrValue">0kcal</div><div class="metric-label">BMR(휴식 중)</div></div><div class="metric-card"><div class="metric-value" id="loseValue">0kcal</div><div class="metric-label">살을 빼다(대략)</div></div><div class="metric-card"><div class="metric-value" id="gainValue">0kcal</div><div class="metric-label">체중을 늘리기 위해 (대략)</div></div></div>
+<p style="font-size:0.875rem;color:#334155;line-height:1.6;">손실 및 이득 수치는 단지 참고용일 뿐입니다. 유지 관리에 약 500kcal을 빼거나 추가합니다. 이는 의학적 조언이 아닙니다. 건강상의 문제가 있거나, 임신 중이거나, 약을 복용 중인 경우, 먼저 의료 전문가와 상담하세요.</p>
+</div>
+</div></div>
+<aside><div class="ad-slot ad-rectangle" aria-label="사이드바 광고"><span class="ad-slot-placeholder-text">사이드바 직사각형(300x250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">관련 계산기</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMI 추적기 <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">백분율 계산기 <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">나이 계산기 <span>→</span></a></li><li><a href="water-intake-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">물 섭취량 계산기 <span>→</span></a></li></ul></div></aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="기사 내 광고"><span class="ad-slot-placeholder-text">반응형 콘텐츠 배너(728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section"><h2 class="content-heading">BMR 및 칼로리 계산기 사용 방법</h2><p class="content-paragraph">기초 대사율(BMR)은 호흡, 심장 박동 유지, 체온 유지, 두뇌 및 장기 작동 등 생존을 위해 완전한 휴식 상태에서 신체가 연소하는 칼로리의 수입니다. 움직이고, 일하고, 운동하고, 음식을 소화할 때도 칼로리가 소모되기 때문에 일일 총 소모량과 동일하지 않습니다. 이 계산기는 먼저 BMR을 추정한 다음, 여기에 활동 계수를 곱하여 현재 체중을 유지하는 데 매일 필요한 칼로리를 추정합니다.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>미터법 또는 영국식 단위 선택</strong>킬로그램, 센티미터 또는 파운드, 피트, 인치 중 아는 것을 사용하세요. 계산기는 무엇이든 계산하기 전에 영국식 값을 변환합니다.</div></li><li class="step-item"><div class="step-item-content"><strong>성별, 나이, 키, 몸무게를 입력하세요.</strong>이 네 가지 값은 Mifflin-St Jeor 방정식을 구동합니다. 가장 정확한 결과를 얻으려면 현재 체중과 신발을 신지 않은 키를 사용하세요.</div></li><li class="step-item"><div class="step-item-content"><strong>정직한 활동 수준을 선택하세요</strong>대부분의 사람들은 자신이 얼마나 활동적인지 과대평가합니다. 하루의 대부분을 앉아 있고 일주일에 몇 번씩 운동한다면, 매우 활동적이지 않은 가벼운 또는 중간 정도의 운동을 선택하십시오.</div></li><li class="step-item"><div class="step-item-content"><strong>숫자 3개를 읽어보세요</strong>BMR은 휴식 전용 수치입니다. 큰 헤드라인 숫자는 유지 관리 수준입니다. 두 개의 작은 수치는 점진적인 체중 감소 또는 증가의 일반적인 시작점인 유지 관리 미만 및 초과의 대략 500칼로리를 보여줍니다.</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">미플린-세인트 조르(Mifflin-St Jeor) 공식</h2><p class="content-paragraph">영양학 연구자들은 Mifflin-St Jeor 방정식을 널리 사용합니다. 왜냐하면 이 방정식은 측정된 대사율에 대해 검증되었으며 대부분의 성인에게 이전 공식보다 더 정확한 경향이 있기 때문입니다. 체중, 키, 나이, 성별을 사용합니다. 근육량, 신체 크기, 나이 모두 신체가 휴식 시 사용하는 에너지의 양을 변경하기 때문입니다. 남성은 일반적으로 같은 크기와 연령의 여성보다 BMR이 약간 높기 때문에 공식에서 남성의 경우 5칼로리를 더하고 여성의 경우 161칼로리를 뺍니다. 이러한 상수는 공개된 방정식의 일부이며 개인에 대한 판단이 아닙니다.</p><div class="formula-box"><div class="formula-expression">남성: BMR = 10 x 체중(kg) + 6.25 x 신장(cm) - 5 x 나이 + 5</div><div class="formula-expression">여성: BMR = 10 x 체중(kg) + 6.25 x 신장(cm) - 5 x 나이 - 161</div><div class="formula-explanation">예: 체중이 80kg이고 키가 180cm인 30세 남성의 BMR은 휴식 시 하루 10 x 80 + 6.25 x 180 - 5 x 30 + 5 = 1,780kcal입니다. 적당한 활동 수준에서는 유지를 위해 하루 1,780 x 1.55 = 2,759 kcal입니다.</div></div><p class="content-paragraph">어떤 공식도 신체를 직접 측정할 수 없습니다. 실제 BMR은 근육량, 갑상선 기능, 질병, 임신, 실내 온도에 따라 다릅니다. 결과를 확실한 시작 추정치로 간주한 다음 2~4주에 걸쳐 체중 추세를 관찰하여 조정하세요. 체중이 일정하다면 유지 관리 추정치가 거의 가까워졌습니다. 한 방향으로 꾸준히 표류하는 경우 실제 유지 관리 금액은 대략 해당 표류에 따른 추정치보다 높거나 낮습니다.</p></section>
+<section class="content-section"><h2 class="content-heading">활동 수준과 그 의미</h2><p class="content-paragraph">활동 승수는 대부분의 칼로리 계산기가 잘못된 부분입니다. 활동적이라는 단일 단어는 사람마다 다른 의미를 갖기 때문입니다. 아래 표는 Mifflin-St Jeor 방정식과 함께 사용되는 표준 Harris-Benedict 스타일 승수를 따르며, 단 하루의 운동일이 아닌 일주일 전체를 설명합니다.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>수준</th><th>승수</th><th>일반적인 주</th></tr></thead><tbody><tr><td><strong>앉아 있는</strong></td><td>1.2</td><td>사무직, 운동 거의 없음, 주로 앉아 있음</td></tr><tr><td><strong>빛</strong></td><td>1.375</td><td>1~3일 동안 가벼운 운동이나 스포츠</td></tr><tr><td><strong>보통의</strong></td><td>1.55</td><td>3~5일간 적당한 운동</td></tr><tr><td><strong>활동적인</strong></td><td>1.725</td><td>6~7일간 고강도 운동</td></tr><tr><td><strong>매우 활동적</strong></td><td>1.9</td><td>육체 노동과 힘든 훈련 또는 하루 2회 훈련</td></tr></tbody></table></div><p class="content-paragraph">유용한 규칙은 처음 선택하려는 수준보다 한 수준 낮은 수준에서 시작하는 것입니다. 특히 앉아서 일하는 직업인 경우 더욱 그렇습니다. 계획보다 빨리 체중이 감량되고 있다면 언제든지 조금 더 먹을 수 있지만, 너무 높게 시작하여 원치 않는 체중이 증가하는 것은 취소하기가 더 느린 문제입니다. 운동선수, 육체 노동자, 근육량이 많은 사람들에게는 실제로 더 높은 승수가 필요할 수 있으며, 이 경우 더 높은 수치가 정직한 수치입니다.</p></section>
+<section class="content-section"><h2 class="content-heading">결과물을 안전하게 활용하는 방법</h2><p class="content-paragraph">칼로리는 건강의 한 부분일 뿐입니다. 음식의 질, 수면, 단백질 섭취, 근력 운동은 모두 기분이 어떤지, 그리고 체중 감량이 지방에서 비롯되는지 아니면 근육에서 비롯되는지에 영향을 미칩니다. 하루 약 500칼로리의 결핍은 일반적으로 주당 약 0.5kg의 체중 감소로 이어지며, 이는 대부분의 성인에게 지속 가능한 속도입니다. 적자가 훨씬 크면 피곤하고 배고프며 나중에 체중이 다시 늘어날 가능성이 높으므로 전문가의 지도를 받는 경우에만 사용하는 것이 가장 좋습니다.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. 하루가 아닌 추세를 추적하세요</h4><p class="example-card-body">동일한 조건에서 일주일에 몇 번씩 체중을 측정하고 주간 평균을 살펴보세요. 일일 체중은 물, 음식, 소금에 따라 오르락내리락하므로 한 번의 측정으로는 거의 의미가 없습니다.</p></div><div class="example-card"><h4 class="example-card-title">2. 계획대로 단백질과 운동을 유지하세요</h4><p class="example-card-body">칼로리를 적게 섭취하면 충분한 단백질과 규칙적인 저항 운동이 근육을 보호하는 데 도움이 되므로 감량한 체중의 대부분이 지방입니다. 매일 걷는 것도 극도로 배가 고프지 않으면서 도움이 됩니다.</p></div><div class="example-card"><h4 class="example-card-title">3. 큰 변화 후 재계산</h4><p class="example-card-body">체중이 감소하거나 증가함에 따라 BMR도 변경됩니다. 신체가 작거나 클수록 에너지가 더 적게 또는 더 많이 필요하기 때문입니다. 5~10kg의 변화마다 또는 몇 달마다 이 계산기를 다시 실행하십시오.</p></div></div><p class="content-paragraph">이 계산기는 교육용 도구이지 의료기기가 아닙니다. 의사나 영양사의 조언을 진단, 치료 또는 대체하지 않습니다. 어린이, 청소년, 임산부, 섭식 장애, 당뇨병, 갑상선 질환 또는 신진대사에 영향을 미치는 기타 질환이 있는 사람은 전문가의 조언 없이 일반적인 칼로리 목표를 사용해서는 안 됩니다.</p></section>
+<section class="content-section"><h2 class="content-heading">자주 묻는 질문(FAQ)</h2><div class="faq-list"><details class="faq-item" open="None"><summary class="faq-question">BMR이란 무엇입니까?</summary><div class="faq-answer">기초 대사율(BMR)은 호흡, 순환, 체온 유지를 포함하여 신체가 휴식 중에 생명을 유지하기 위해 소모하는 칼로리 수입니다. 운동이나 운동을 통해 소모된 칼로리는 포함되지 않습니다.</div></details><details class="faq-item"><summary class="faq-question">BMR은 TDEE와 어떻게 다릅니까?</summary><div class="faq-answer">BMR은 휴식 중 화상만을 의미하는 반면 총 일일 에너지 소비량(TDEE)은 BMR에 활동 요인을 곱한 것이므로 일, 운동 및 일상적인 움직임이 포함됩니다. 이 계산기는 BMR을 더 작은 숫자로 표시하고 TDEE를 일일 유지 칼로리로 표시합니다.</div></details><details class="faq-item"><summary class="faq-question">계산기가 섹스를 요구하는 이유는 무엇입니까?</summary><div class="faq-answer">Mifflin-St Jeor 방정식에는 성별이 포함됩니다. 평균적으로 같은 키, 몸무게, 나이의 남성과 여성은 근육량과 신체 구성이 다르기 때문에 휴식 에너지 ​​사용에 영향을 미칩니다. 공식은 남성의 경우 5를 더하고 여성의 경우 161을 뺍니다.</div></details><details class="faq-item"><summary class="faq-question">이 칼로리 수치를 사용해 안전하게 체중을 감량할 수 있나요?</summary><div class="faq-answer">출발점으로서, 대부분의 건강한 성인의 경우 그렇습니다. 유지량보다 약 500칼로리를 섭취하면 일반적으로 주당 약 0.5kg의 점진적인 체중 감소로 이어집니다. 훨씬 더 큰 적자 또는 질병이나 임신 중 칼로리 목표에 대해서는 의료 전문가와 논의해야 합니다.</div></details><details class="faq-item"><summary class="faq-question">내 데이터는 어디에나 저장되어 있나요?</summary><div class="faq-answer">아니요. 이 계산기는 전적으로 귀하의 브라우저에서 실행됩니다. 귀하의 나이, 체중, 키 및 활동 수준은 서버로 전송되거나 OmniTools에 저장되지 않습니다.</div></details></div></section>
+</article>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools는 금융, 생산성 및 교육을 위한 가볍고 개인 정보 보호에 초점을 맞춘 온라인 계산기와 유틸리티를 무료로 제공합니다.</p></div>
+<div><h4 class="footer-heading">트렌드 도구</h4><ul class="footer-links"><li><a href="age-calculator.html">나이 계산기</a></li><li><a href="bmi-calculator.html">BMI 추적기</a></li><li><a href="loan-calculator.html">대출 EMI 계산기</a></li><li><a href="password-generator.html">비밀번호 생성기</a></li><li><a href="word-counter.html">단어 카운터</a></li></ul></div>
+<div><h4 class="footer-heading">유용</h4><ul class="footer-links"><li><a href="percentage-calculator.html">백분율 계산기</a></li><li><a href="discount-calculator.html">할인 계산기</a></li><li><a href="unit-converter.html">단위 변환기</a></li><li><a href="date-calculator.html">날짜 차이</a></li><li><a href="case-converter.html">텍스트 대소문자 변환기</a></li></ul></div>
+<div><h4 class="footer-heading">법률 및 정보</h4><ul class="footer-links"><li><a href="../about.html">회사 소개</a></li><li><a href="../contact.html">문의하기</a></li><li><a href="../privacy-policy.html">개인 정보 보호 정책</a></li><li><a href="../terms.html">서비스 약관</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools. 모든 권리 보유. 모든 사람을 위한 무료 온라인 유틸리티입니다.</p><div class="footer-lang-select">
+          <span>언어:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div></div></div></footer>
+<script>
+function computeBMR(sex, age, heightCm, weightKg) {
+  if (sex !== "male" && sex !== "female") return null;
+  if (!isFinite(age) || age < 10 || age > 120) return null;
+  if (!isFinite(heightCm) || heightCm < 50 || heightCm > 250) return null;
+  if (!isFinite(weightKg) || weightKg < 20 || weightKg > 400) return null;
+  var base = 10 * weightKg + 6.25 * heightCm - 5 * age;
+  return sex === "male" ? base + 5 : base - 161;
+}
+function activityFactor(level) {
+  var m = { sedentary: 1.2, light: 1.375, moderate: 1.55, active: 1.725, veryactive: 1.9 };
+  return m[level] === undefined ? null : m[level];
+}
+function caloriesFor(bmr, level) {
+  var f = activityFactor(level);
+  if (bmr === null || f === null) return null;
+  return Math.round(bmr * f);
+}
+function cmFromFeetInches(ft, inch) {
+  if (!isFinite(ft) || !isFinite(inch) || ft < 1 || ft > 8 || inch < 0 || inch > 11) return null;
+  return (ft * 12 + inch) * 2.54;
+}
+function kgFromLb(lb) {
+  if (!isFinite(lb) || lb < 44 || lb > 880) return null;
+  return lb / 2.20462;
+}
+// --- DOM ---
+ (function() {
+  var t = document.querySelector(".mobile-nav-toggle"); var n = document.querySelector(".nav-links");
+  if (t && n) t.addEventListener("click", function(){ n.classList.toggle("active"); });
+  window.setUnits = function(mode) {
+    var mg = document.getElementById("metricGroup"), ig = document.getElementById("imperialGroup");
+    var mb = document.getElementById("unitMetricBtn"), ib = document.getElementById("unitImperialBtn");
+    if (mg && ig) { mg.classList.toggle("active", mode === "metric"); ig.classList.toggle("active", mode === "imperial"); }
+    if (mb && ib) { mb.classList.toggle("active", mode === "metric"); ib.classList.toggle("active", mode === "imperial"); }
+  };
+  window.calculateBMRUI = function() {
+    var errBox = document.getElementById("bmrErrorBox"), res = document.getElementById("bmrResultsBox");
+    var sex = document.getElementById("bmrSex").value;
+    var age = parseFloat(document.getElementById("bmrAge").value);
+    var level = document.getElementById("bmrActivity").value;
+    var metric = document.getElementById("metricGroup").classList.contains("active");
+    var cm, kg;
+    if (metric) { cm = parseFloat(document.getElementById("bmrHeightCm").value); kg = parseFloat(document.getElementById("bmrWeightKg").value); }
+    else { cm = cmFromFeetInches(parseFloat(document.getElementById("bmrHeightFt").value), parseFloat(document.getElementById("bmrHeightIn").value)); kg = kgFromLb(parseFloat(document.getElementById("bmrWeightLb").value)); }
+    var bmr = computeBMR(sex, age, cm, kg);
+    var daily = caloriesFor(bmr, level);
+    if (bmr === null || daily === null) { errBox.textContent = "유효한 값(10~120세, 표시된 한도 내의 키와 몸무게, 활동 수준)을 입력하세요."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    errBox.style.display = "none";
+    document.getElementById("bmrValue").textContent = Math.round(bmr).toLocaleString() + " 칼로리";
+    document.getElementById("dailyCalValue").textContent = daily.toLocaleString() + " 칼로리";
+    document.getElementById("loseValue").textContent = Math.max(1200, daily - 500).toLocaleString() + " 칼로리";
+    document.getElementById("gainValue").textContent = (daily + 500).toLocaleString() + " 칼로리";
+    var cb = document.getElementById("copyBmrBtn");
+    if (cb) cb.setAttribute("data-summary", "기초대사량: " + Math.round(bmr) + " kcal, 유지관리: " + daily + " kcal/일.");
+    if (res) { res.classList.add("active"); res.style.display = "block"; }
+  };
+  window.resetBMR = function() {
+    ["bmrAge","bmrHeightCm","bmrWeightKg","bmrHeightFt","bmrHeightIn","bmrWeightLb"].forEach(function(id){ var el=document.getElementById(id); if(el) el.value=""; });
+    var e=document.getElementById("bmrErrorBox"); if(e) e.style.display="none";
+    var r=document.getElementById("bmrResultsBox"); if(r){ r.classList.remove("active"); r.style.display="none"; }
+  };
+  var cb=document.getElementById("copyBmrBtn");
+  if (cb) cb.addEventListener("click", function(){ var s=cb.getAttribute("data-summary"); if(s && navigator.clipboard) navigator.clipboard.writeText(s).catch(function(){}); });
+})();
+</script>
+</body>
+</html>
