@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - OmniTools</title>
+  <meta name="description" content="Contact the OmniTools editorial and engineering team for feedback, feature requests, or technical support.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://omnitools.pages.dev/contact.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <a href="index.html" class="lang-btn active">EN</a>
+          <a href="es/index.html" class="lang-btn">ES</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding: 3rem 1.25rem; max-width: 860px;">
+    <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: var(--text-main);">Contact OmniTools</h1>
+    <p class="content-paragraph" style="font-size: 1.05rem; color: var(--text-muted); margin-bottom: 2rem;">
+      Have a question, suggestion for a new calculator, or feedback on calculation precision? We'd love to hear from you.
+    </p>
+
+    <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-sm);">
+      <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been noted.'); this.reset();">
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="contactName" class="form-label">Your Name</label>
+          <input type="text" id="contactName" class="form-input" required placeholder="Jane Doe">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label for="contactEmail" class="form-label">Your Email Address</label>
+          <input type="email" id="contactEmail" class="form-input" required placeholder="jane@example.com">
+        </div>
+
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label for="contactMessage" class="form-label">Message or Feature Request</label>
+          <textarea id="contactMessage" class="form-input" rows="5" required placeholder="How can we help you?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="border: none; padding-top: 0;">
+      <p>&copy; 2026 OmniTools. All rights reserved.</p>
+      <div><a href="index.html" style="color: #60a5fa;">Back to Home</a></div>
+    </div>
+  </footer>
+</body>
+</html>
+

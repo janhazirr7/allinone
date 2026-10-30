@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator - Free Body Mass Index & Ideal Weight Tracker | OmniTools</title>
+  <meta name="description" content="Calculate your Body Mass Index (BMI), ideal healthy weight range, and BMI Prime with our free online calculator. Supports both metric and imperial units.">
+  <meta name="keywords" content="bmi calculator, body mass index calculator, calculate bmi, ideal weight calculator, metric bmi calculator, imperial bmi calculator, who bmi chart">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/bmi-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/bmi-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-imc.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/bmi-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/bmi-calculator.html">
+  <meta property="og:title" content="BMI Calculator - Body Mass Index & Ideal Weight Tracker">
+  <meta property="og:description" content="Instant Body Mass Index calculation with metric & imperial units, visual WHO gauge, and healthy weight recommendations.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-bmi-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free BMI Calculator & Health Tracker | OmniTools">
+  <meta name="twitter:description" content="Find out your exact BMI, category status, and target healthy weight range. 100% free and private.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools BMI Calculator",
+    "url": "https://omnitools.pages.dev/bmi-calculator.html",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Accurately compute Body Mass Index (BMI), ideal weight boundaries, and BMI Prime according to World Health Organization criteria.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://omnitools.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Health",
+        "item": "https://omnitools.pages.dev/#health"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "BMI Calculator",
+        "item": "https://omnitools.pages.dev/bmi-calculator.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is considered a healthy BMI range for adults?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "According to the World Health Organization (WHO), a healthy adult Body Mass Index ranges between 18.5 and 24.9. A BMI below 18.5 is categorized as underweight, 25.0 to 29.9 is categorized as overweight, and 30.0 or higher is classified as obesity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the BMI formula differ between metric and imperial units?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under the metric system, BMI equals weight in kilograms divided by height in meters squared (kg/m²). Under the imperial system, BMI equals weight in pounds multiplied by 703, then divided by height in inches squared ([lbs × 703] / in²). Both formulas produce mathematically identical results."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is BMI sometimes misleading for athletes and bodybuilders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMI measures total body mass relative to height, but cannot differentiate between dense muscle mass, skeletal weight, and adipose body fat. Highly muscular individuals or athletes may register in the overweight or obese category despite having exceptionally low body fat percentages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is BMI Prime?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMI Prime is a dimensionless ratio of your actual BMI relative to the upper limit of normal BMI (25.0). A BMI Prime of 1.0 represents the exact upper boundary of healthy weight. Values below 0.74 suggest underweight, while values above 1.0 indicate overweight status."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html" class="active">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="word-counter.html">Word Counter</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="bmi-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-imc.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#health">Health</a></li>
+          <li aria-current="page">BMI Calculator</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Body Mass Index (BMI) & Ideal Weight Tracker</h1>
+        <p class="tool-header-desc">
+          Calculate your official Body Mass Index (BMI) using metric or imperial measurements. Discover your healthy weight range, BMI Prime, and World Health Organization (WHO) classification.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+      
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+          
+          <!-- Unit Selector Tabs -->
+          <div class="unit-toggle-wrap" role="tablist" aria-label="Measurement Units">
+            <button type="button" id="metricTabBtn" class="unit-toggle-btn active">Metric (cm, kg)</button>
+            <button type="button" id="imperialTabBtn" class="unit-toggle-btn">Imperial (ft/in, lbs)</button>
+          </div>
+
+          <!-- Metric Input Group -->
+          <div id="metricInputGroup" class="unit-group active">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label for="heightCm" class="form-label">
+                  <span>Height</span>
+                  <span class="label-hint">Centimeters (cm)</span>
+                </label>
+                <input type="number" id="heightCm" class="form-input" placeholder="e.g. 175" min="50" max="260" step="0.5">
+                <span class="form-help">Typical range: 140 - 210 cm</span>
+              </div>
+
+              <div class="form-group">
+                <label for="weightKg" class="form-label">
+                  <span>Weight</span>
+                  <span class="label-hint">Kilograms (kg)</span>
+                </label>
+                <input type="number" id="weightKg" class="form-input" placeholder="e.g. 70" min="10" max="500" step="0.1">
+                <span class="form-help">Current body weight</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Imperial Input Group -->
+          <div id="imperialInputGroup" class="unit-group">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Height</span>
+                  <span class="label-hint">Feet & Inches</span>
+                </label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="heightFt" class="form-input" placeholder="Feet (e.g. 5)" min="1" max="8">
+                  <input type="number" id="heightIn" class="form-input" placeholder="Inches (e.g. 9)" min="0" max="11.9" step="0.5">
+                </div>
+                <span class="form-help">e.g., 5 ft 9 in</span>
+              </div>
+
+              <div class="form-group">
+                <label for="weightLbs" class="form-label">
+                  <span>Weight</span>
+                  <span class="label-hint">Pounds (lbs)</span>
+                </label>
+                <input type="number" id="weightLbs" class="form-input" placeholder="e.g. 160" min="20" max="1100" step="0.5">
+                <span class="form-help">Current weight in pounds</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="bmiErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin-bottom: 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="calcBmiBtn" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              Calculate BMI
+            </button>
+            <button type="button" id="resetBmiBtn" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reset
+            </button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="bmiResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Your Body Mass Index Result
+              </span>
+              <button type="button" id="copyBmiBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copy Summary
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Calculated Body Mass Index</div>
+              <div class="hero-result-value" id="bmiHeroValue">0.0</div>
+              <div style="margin-top: 0.75rem;">
+                <span id="bmiCategoryBadge" class="bmi-badge bmi-badge-normal">Normal Weight</span>
+              </div>
+              <div class="hero-result-sub" id="bmiCategoryNote">Healthy body mass index range.</div>
+            </div>
+
+            <!-- Visual BMI Gauge Spectrum -->
+            <div class="bmi-gauge-wrap">
+              <div class="bmi-pointer" id="bmiGaugePointer" style="left: 50%;"></div>
+              <div class="bmi-spectrum-bar">
+                <div class="bmi-bar-underweight" title="Underweight (&lt; 18.5)"></div>
+                <div class="bmi-bar-normal" title="Normal (18.5 - 24.9)"></div>
+                <div class="bmi-bar-overweight" title="Overweight (25 - 29.9)"></div>
+                <div class="bmi-bar-obese" title="Obese (≥ 30)"></div>
+              </div>
+              <div class="bmi-legend">
+                <span>Underweight (&lt;18.5)</span>
+                <span>Normal (18.5-24.9)</span>
+                <span>Overweight (25-29.9)</span>
+                <span>Obese (≥30)</span>
+              </div>
+            </div>
+
+            <!-- Granular Health Metrics -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Healthy Range & Target Analysis
+              </div>
+              <ul class="milestones-list">
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Ideal Healthy Weight Range</span>
+                  <span class="milestone-item-val" id="idealWeightRange">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Weight Target Advice</span>
+                  <span class="milestone-item-val" id="weightTargetNote">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">BMI Prime Index (Target ≤ 1.0)</span>
+                  <span class="milestone-item-val" id="bmiPrimeValue">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Ponderal Index</span>
+                  <span class="milestone-item-val" id="ponderalIndexValue">-</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Utilities</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="unit-converter.html" style="display: flex; align-items: center; justify-content: space-between;">All-in-One Unit Converter <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools BMI Tracker
+        </h2>
+        <p class="content-paragraph">
+          The Body Mass Index (BMI) is a globally recognized anthropometric index developed to screen adult weight categories against clinical population health risks. Whether evaluating fitness progress, participating in clinical wellness checks, or establishing healthy nutrition habits, our calculator delivers instantaneous, private analysis in seconds:
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Select Preferred Measurement Units</strong>
+              Click either the <strong>Metric (cm, kg)</strong> or <strong>Imperial (ft/in, lbs)</strong> toggle button at the top of the calculator.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter Accurate Height & Weight</strong>
+              Provide your standing height without shoes and your current morning body weight. In metric mode, input height in centimeters (e.g., 178 cm) and weight in kilograms (e.g., 74 kg). In imperial mode, specify feet and inches separately alongside your weight in pounds.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Click "Calculate BMI"</strong>
+              Instantly review your exact numerical BMI score, official World Health Organization weight classification, and an interactive colored gauge indicating where your score sits across clinical spectra.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Review Ideal Weight Targets</strong>
+              Examine the computed "Ideal Healthy Weight Range" customized for your exact height, along with BMI Prime metrics and targeted adjustments.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 2: Mathematical Formula & Methodology -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          Formula & Calculation Methodology
+        </h2>
+        <p class="content-paragraph">
+          Originally formulated by Belgian polymath Adolphe Quetelet in the 19th century (and formerly called the Quetelet Index), Body Mass Index quantifies an individual's tissue mass relative to their skeletal stature:
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Metric Formula: BMI = Weight (kg) / [ Height (m) ]²
+          </div>
+          <div class="formula-explanation">
+            <strong>Example:</strong> For a person measuring 180 cm (1.80 m) and weighing 75 kg:<br>
+            BMI = 75 / (1.80 × 1.80) = 75 / 3.24 = <strong>23.15 kg/m²</strong> (Normal Weight).
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          When calculating in the imperial system (pounds and inches), a mathematical conversion constant of <strong>703.0695796</strong> is applied to reconcile metric conversion factors (0.45359237 kg/lb and 0.0254 m/in):
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Imperial Formula: BMI = [ Weight (lbs) × 703 ] / [ Height (inches) ]²
+          </div>
+          <div class="formula-explanation">
+            <strong>Example:</strong> For a person standing 5 feet 10 inches (70 inches) and weighing 165 lbs:<br>
+            BMI = (165 × 703) / (70 × 70) = 115,995 / 4,900 = <strong>23.67</strong> (Normal Weight).
+          </div>
+        </div>
+
+        <h3 class="content-subheading">Understanding BMI Prime & Ponderal Index</h3>
+        <p class="content-paragraph">
+          While standard BMI is expressed in kg/m², <strong>BMI Prime</strong> expresses an individual's BMI as a simple ratio relative to the upper threshold of healthy weight (BMI 25.0):
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            BMI Prime = Actual BMI / 25.0
+          </div>
+          <div class="formula-explanation">
+            A BMI Prime between 0.74 and 1.00 indicates normal weight. A value greater than 1.00 immediately highlights the percentage by which an individual exceeds the upper healthy boundary (e.g., a BMI Prime of 1.15 corresponds to 15% above the normal weight limit).
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Official WHO Categories Table -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          World Health Organization (WHO) BMI Classifications
+        </h2>
+        <p class="content-paragraph">
+          The table below illustrates the official international adult BMI classification thresholds established by the World Health Organization and recognized by the Centers for Disease Control and Prevention (CDC):
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Classification</th>
+                <th>BMI Range (kg/m²)</th>
+                <th>BMI Prime</th>
+                <th>Associated Clinical Risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Severe Thinness</strong></td>
+                <td>&lt; 16.0</td>
+                <td>&lt; 0.64</td>
+                <td>High risk of nutritional deficiency & immune suppression</td>
+              </tr>
+              <tr>
+                <td><strong>Moderate Thinness</strong></td>
+                <td>16.0 – 16.9</td>
+                <td>0.64 – 0.67</td>
+                <td>Moderate risk of micronutrient deficiencies</td>
+              </tr>
+              <tr>
+                <td><strong>Mild Thinness</strong></td>
+                <td>17.0 – 18.4</td>
+                <td>0.68 – 0.73</td>
+                <td>Mildly elevated health risk</td>
+              </tr>
+              <tr style="background: #f0fdf4;">
+                <td><strong>Normal Weight</strong></td>
+                <td><strong>18.5 – 24.9</strong></td>
+                <td><strong>0.74 – 0.99</strong></td>
+                <td><strong>Lowest statistical risk of cardiovascular/metabolic illness</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Overweight (Pre-obese)</strong></td>
+                <td>25.0 – 29.9</td>
+                <td>1.00 – 1.19</td>
+                <td>Increased risk of hypertension & cardiovascular strain</td>
+              </tr>
+              <tr>
+                <td><strong>Obesity Class I</strong></td>
+                <td>30.0 – 34.9</td>
+                <td>1.20 – 1.39</td>
+                <td>Moderate risk of type 2 diabetes & joint stress</td>
+              </tr>
+              <tr>
+                <td><strong>Obesity Class II</strong></td>
+                <td>35.0 – 39.9</td>
+                <td>1.40 – 1.59</td>
+                <td>Severe metabolic and cardiovascular risk profile</td>
+              </tr>
+              <tr>
+                <td><strong>Obesity Class III (Morbid)</strong></td>
+                <td>≥ 40.0</td>
+                <td>≥ 1.60</td>
+                <td>Very high clinical risk category requiring medical oversight</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Practical Examples & Clinical Nuances -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+          Clinical Nuances & Practical Considerations
+        </h2>
+        <p class="content-paragraph">
+          While BMI serves as an invaluable population screening metric, health professionals consider specific physiological factors when interpreting individual scores:
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Athletes & Muscle Mass Density</h4>
+            <p class="example-card-body">
+              Skeletal muscle tissue is approximately 18% denser than adipose fat tissue. Competitive athletes, powerlifters, and bodybuilders frequently carry substantial lean muscle mass that places them into the "Overweight" or "Obese" numerical bracket despite maintaining low single-digit body fat percentages.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. Geriatric Sarcopenia in Older Adults</h4>
+            <p class="example-card-body">
+              As adults age, natural muscle loss (sarcopenia) can occur alongside an increase in body fat percentage. An elderly individual may have a seemingly "normal" BMI of 22.0 while carrying low muscle reserves, prompting clinicians to pair BMI with grip strength and mobility testing.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. Fat Distribution (Visceral vs. Subcutaneous)</h4>
+            <p class="example-card-body">
+              BMI cannot discern where adipose tissue is stored. Visceral fat surrounding abdominal organs poses significantly greater cardiovascular and diabetic risk than subcutaneous fat stored in thighs or hips. Pairing BMI with waist-to-hip circumference provides enhanced metabolic insights.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">4. Pediatric & Adolescent Percentiles</h4>
+            <p class="example-card-body">
+              For children and teenagers aged 2 to 19, raw adult BMI numbers are not applied directly. Instead, pediatricians utilize age-and-gender-specific BMI percentiles on CDC growth charts to assess appropriate childhood physical development.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Frequently Asked Questions (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">What is considered a healthy BMI range for adults?</summary>
+            <div class="faq-answer">
+              According to the World Health Organization (WHO), a healthy adult Body Mass Index ranges between 18.5 and 24.9. A BMI below 18.5 is categorized as underweight, 25.0 to 29.9 is categorized as overweight (pre-obese), and 30.0 or higher is classified as obesity.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How does the BMI formula differ between metric and imperial units?</summary>
+            <div class="faq-answer">
+              Under the metric system, BMI equals weight in kilograms divided by height in meters squared (kg/m²). Under the imperial system, BMI equals weight in pounds multiplied by 703, then divided by height in inches squared ([lbs × 703] / in²). Both methods compute the exact same mathematical value.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Why is BMI sometimes misleading for athletes?</summary>
+            <div class="faq-answer">
+              BMI evaluates overall weight relative to height without distinguishing between lean muscle, bone mass, and body fat. Because muscle tissue is substantially denser than fat, muscular athletes often register in overweight categories despite being in peak athletic health.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What is BMI Prime and how is it interpreted?</summary>
+            <div class="faq-answer">
+              BMI Prime is a dimensionless ratio of your actual BMI divided by the upper limit of normal BMI (25.0). A BMI Prime of 1.0 represents the exact upper boundary of normal weight. Values below 0.74 indicate underweight status, while values above 1.0 indicate overweight status.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my weight or personal height data saved on any server?</summary>
+            <div class="faq-answer">
+              Never. OmniTools operates on a zero-server privacy architecture. All height, weight, and BMI calculations take place entirely within your local browser's JavaScript engine without transmitting or storing data.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for productivity, education, finance, and wellness.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="bmi-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-imc.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/bmi-calculator.js"></script>
+</body>
+</html>
+
