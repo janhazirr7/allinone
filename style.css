@@ -377,7 +377,7 @@ main {
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -691,6 +691,7 @@ main {
 .form-input,
 .form-select {
   width: 100%;
+  min-width: 0;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   background: var(--bg-surface);
@@ -1320,6 +1321,7 @@ main {
 
 .footer-lang-select {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
   color: #94a3b8;
@@ -1554,5 +1556,42 @@ main {
   background: #f59e0b;
 }
 
+/* Responsive header: keep logo + language select + menu button on one line on phones */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 
+  .header-inner {
+    gap: 0.5rem;
+  }
 
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .brand-logo {
+    font-size: 1.1rem;
+  }
+
+  .brand-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  #langSelect {
+    max-width: 120px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .brand-name {
+    display: none;
+  }
+
+  #langSelect {
+    max-width: 110px;
+  }
+}
