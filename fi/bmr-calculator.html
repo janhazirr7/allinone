@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMR- ja kalorilaskin – päivittäiset kalorit aktiivisuustason mukaan | OmniTools</title>
+<meta name="description" content="Laske perusaineenvaihduntasi (BMR) Mifflin-St Jeor -yhtälön avulla ja päivittäiset kalorit aktiivisuustason mukaan, metrisinä tai brittiläisinä yksiköinä.">
+<meta name="keywords" content="bmr-laskin, kalorilaskin, mifflin st jeor, päivittäinen kaloritarve, perusaineenvaihdunta">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/fi/bmr-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-calorias.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/bmr-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/bmr-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/bmr-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/bmr-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/bmr-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/bmr-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/bmr-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/bmr-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/bmr-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/bmr-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/bmr-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/bmr-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/bmr-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/bmr-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/bmr-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/bmr-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/bmr-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/bmr-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/bmr-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/bmr-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/bmr-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/bmr-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/bmr-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/bmr-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/bmr-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/bmr-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+
+
+
+
+<meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/fi/bmr-calculator.html">
+<meta property="og:title" content="BMR- ja kalorilaskin | OmniTools">
+<meta property="og:description" content="Laske perusaineenvaihduntasi (BMR) Mifflin-St Jeor -yhtälön avulla ja päivittäiset kalorit aktiivisuustason mukaan, metrisinä tai brittiläisinä yksiköinä.">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-bmr-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BMR- ja kalorilaskin | OmniTools">
+<meta name="twitter:description" content="Laske perusaineenvaihduntasi (BMR) Mifflin-St Jeor -yhtälön avulla ja päivittäiset kalorit aktiivisuustason mukaan, metrisinä tai brittiläisinä yksiköinä.">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools BMR- ja kalorilaskin",
+  "url": "https://janhazirr7.github.io/allinone/fi/bmr-calculator.html",
+  "applicationCategory": "Terveyssovellus",
+  "operatingSystem": "All",
+  "browserRequirements": "Edellyttää JavaScriptiä. Vaatii HTML5:n.",
+  "description": "Laske perusaineenvaihduntasi (BMR) Mifflin-St Jeor -yhtälön avulla ja päivittäiset kalorit aktiivisuustason mukaan, metrisinä tai brittiläisinä yksiköinä.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "fi"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Kotiin",
+      "item": "https://janhazirr7.github.io/allinone/fi/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Terveys",
+      "item": "https://janhazirr7.github.io/allinone/fi/#health"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "BMR- ja kalorilaskin",
+      "item": "https://janhazirr7.github.io/allinone/fi/bmr-calculator.html"
+    }
+  ],
+  "inLanguage": "fi"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Mikä on BMR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Perusaineenvaihduntanopeus (BMR) on kalorien määrä, jonka kehosi polttaa levossa pitääkseen sinut hengissä, mukaan lukien hengitys, verenkierto ja kehon lämpötilan ylläpitäminen. Se ei sisällä liikkeellä tai harjoittelulla poltettuja kaloreita."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Miten BMR eroaa TDEE:stä?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BMR on vain lepopoltto, kun taas päivittäisen energian kokonaiskulutus (TDEE) on BMR kerrottuna aktiivisuuskertoimella, joten se sisältää työn, harjoituksen ja päivittäisen liikkeen. Tämä laskin näyttää molemmat: BMR:n pienempänä lukuna ja TDEE:n päivittäisenä ylläpitokalorina."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Miksi laskin kysyy seksiä?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mifflin-St Jeor -yhtälö sisältää sukupuolen, koska keskimäärin samanpituiset, -painoiset ja -ikäiset miehet ja naiset eroavat toisistaan ​​lihasmassassa ja kehon koostumuksessa, mikä vaikuttaa lepoenergian käyttöön. Kaava lisää 5 miesten ja vähentää 161 naisten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Voinko käyttää tätä kalorilukua laihtumiseen turvallisesti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lähtökohtana kyllä ​​useimmille terveille aikuisille: noin 500 kaloria alle ylläpitoarvon syöminen johtaa yleensä asteittaiseen noin puolen kilon painon pudotukseen viikossa. Paljon suuremmista vajeista tai kaikista kaloritavoitteista sairauden tai raskauden aikana tulee keskustella terveydenhuollon ammattilaisen kanssa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Onko tietojani tallennettu missään?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ei. Tämä laskin toimii kokonaan selaimessasi. OmniTools ei koskaan lähetä ikääsi, painoasi, pituuttasi ja aktiivisuustasoasi palvelimelle tai tallenna niitä."
+      }
+    }
+  ],
+  "inLanguage": "fi"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "BMR- ja kalorilaskin",
+  "description": "Laske perusaineenvaihduntasi (BMR) Mifflin-St Jeor -yhtälön avulla ja päivittäiset kalorit aktiivisuustason mukaan, metrisinä tai brittiläisinä yksiköinä.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Anna tietosi",
+      "text": "Anna sukupuolesi, ikäsi, pituutesi ja painosi metrisinä tai brittiläisinä yksiköinä."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Valitse aktiivisuustasosi",
+      "text": "Valitse itsellesi aktiivisuustaso, joka on lähinnä normaalia viikkoa."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Laskea",
+      "text": "Paina Laske kalorit nähdäksesi BMR- ja päivittäiset huoltokalorit."
+    }
+  ],
+  "inLanguage": "fi"
+}
+  </script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a href="index.html" class="brand-logo" aria-label="OmniToolsin etusivu"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
+<nav aria-label="Päänavigointi"><ul class="nav-links"><li><a href="index.html">Kaikki työkalut</a></li><li><a href="age-calculator.html">Ikä Lask</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Laina EMI</a></li><li><a href="../about.html">Noin</a></li></ul></nav>
+<div class="nav-actions"><select id="langSelect" aria-label="Valitse kieli" onchange="window.location.href=this.value">
+          <option value="../bmr-calculator.html">English</option>
+          <option value="../es/calculadora-de-calorias.html">Español</option>
+          <option value="../de/bmr-calculator.html">Deutsch</option>
+          <option value="../fr/bmr-calculator.html">Français</option>
+          <option value="../pt/bmr-calculator.html">Português</option>
+          <option value="../it/bmr-calculator.html">Italiano</option>
+          <option value="../ru/bmr-calculator.html">Русский</option>
+          <option value="../nl/bmr-calculator.html">Nederlands</option>
+          <option value="../pl/bmr-calculator.html">Polski</option>
+          <option value="../sv/bmr-calculator.html">Svenska</option>
+          <option value="../no/bmr-calculator.html">Norsk</option>
+          <option value="../da/bmr-calculator.html">Dansk</option>
+          <option value="bmr-calculator.html" selected>Suomi</option>
+          <option value="../id/bmr-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/bmr-calculator.html">Türkçe</option>
+          <option value="../vi/bmr-calculator.html">Tiếng Việt</option>
+          <option value="../th/bmr-calculator.html">ไทย</option>
+          <option value="../ms/bmr-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/bmr-calculator.html">Filipino</option>
+          <option value="../hi/bmr-calculator.html">हिन्दी</option>
+          <option value="../ur/bmr-calculator.html">اردو</option>
+          <option value="../ar/bmr-calculator.html">العربية</option>
+          <option value="../fa/bmr-calculator.html">فارسی</option>
+          <option value="../he/bmr-calculator.html">עברית</option>
+          <option value="../ja/bmr-calculator.html">日本語</option>
+          <option value="../ko/bmr-calculator.html">한국어</option>
+          <option value="../zh/bmr-calculator.html">简体中文</option>
+          <option value="../zh-TW/bmr-calculator.html">繁體中文</option>
+          <option value="../el/bmr-calculator.html">Ελληνικά</option>
+          <option value="../cs/bmr-calculator.html">Čeština</option>
+        </select><button class="mobile-nav-toggle" aria-label="Vaihda navigointivalikkoa" aria-expanded="false">☰</button></div></div></header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">Kotiin</a></li><li><a href="index.html#health">Terveys</a></li><li aria-current="page">BMR- ja kalorilaskin</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">BMR- ja kalorilaskin</h1><p class="tool-header-desc">Selvitä, kuinka monta kaloria kehosi polttaa levossa ja kuinka paljon tarvitset joka päivä painosi ylläpitämiseen aktiivisuustasosi perusteella.</p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Leaderboard-mainos"><span class="ad-slot-placeholder-text">Responsiivinen jättibannerimainos (728 x 90)</span></div></div>
+<section class="container tool-layout-container">
+<div><div class="tool-card-widget">
+<div class="unit-toggle-wrap"><button type="button" class="unit-toggle-btn active" id="unitMetricBtn" onclick="setUnits('metric')">Metri (kg, cm)</button><button type="button" class="unit-toggle-btn" id="unitImperialBtn" onclick="setUnits('imperial')">Imperial (lb, jalat)</button></div>
+<div class="widget-form-grid">
+<div class="form-group"><label class="form-label" for="bmrSex"><span>seksiä</span><span class="label-hint">Pakollinen</span></label><select id="bmrSex" class="form-select"><option value="male">Uros</option><option value="female">Naaras</option></select></div>
+<div class="form-group"><label class="form-label" for="bmrAge"><span>Ikä (vuotta)</span><span class="label-hint">10–120</span></label><input type="number" id="bmrAge" class="form-input" placeholder="esim. 30" min="10" max="120" step="1"><span class="form-help">Ikäsi täysiä vuosia</span></div>
+<div id="metricGroup" class="unit-group active"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightCm"><span>Korkeus (cm)</span></label><input type="number" id="bmrHeightCm" class="form-input" placeholder="esim. 175" min="50" max="250" step="1"></div><div class="form-group"><label class="form-label" for="bmrWeightKg"><span>Paino (kg)</span></label><input type="number" id="bmrWeightKg" class="form-input" placeholder="esim. 70" min="20" max="400" step="0.1"></div></div></div>
+<div id="imperialGroup" class="unit-group"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightFt"><span>Korkeus (jalkoja ja tuumaa)</span></label><div style="display:flex;gap:0.5rem;"><input type="number" id="bmrHeightFt" class="form-input" placeholder="jalat" min="1" max="8" step="1" style="flex:1;"><input type="number" id="bmrHeightIn" class="form-input" placeholder="tuumaa" min="0" max="11" step="1" style="flex:1;"></div></div><div class="form-group"><label class="form-label" for="bmrWeightLb"><span>Paino (lb)</span></label><input type="number" id="bmrWeightLb" class="form-input" placeholder="esim. 154" min="44" max="880" step="0.1"></div></div></div>
+<div class="form-group"><label class="form-label" for="bmrActivity"><span>Aktiviteettitaso</span></label><select id="bmrActivity" class="form-select"><option value="sedentary">Istuva (vähän tai ei ollenkaan liikuntaa)</option><option value="light">Kevyt (1-3 päivää/viikko)</option><option value="moderate" selected="None">Keskitaso (3–5 päivää/viikko)</option><option value="active">Aktiivinen (6–7 päivää/viikko)</option><option value="veryactive">Erittäin aktiivinen (fyysinen työ tai kahdesti päivässä harjoittelu)</option></select><span class="form-help">Valitse sinulle taso, joka on lähinnä normaalia viikkoa</span></div>
+</div>
+<div id="bmrErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateBMRUI()">Laske kalorit</button><button type="button" class="btn btn-outline" onclick="resetBMR()">Nollaa</button></div>
+<div id="bmrResultsBox" class="results-box">
+<div class="results-header"><span class="results-title">Kalorituloksesi</span><button type="button" class="btn btn-outline btn-sm" id="copyBmrBtn">Kopioi yhteenveto</button></div>
+<div class="hero-result-card"><div class="hero-result-label">Päivittäiset huoltokalorit</div><div class="hero-result-value" id="dailyCalValue">0 kcal</div><div class="hero-result-sub">Perustuu BMR- ja aktiivisuustasosi</div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="bmrValue">0 kcal</div><div class="metric-label">BMR (levossa)</div></div><div class="metric-card"><div class="metric-value" id="loseValue">0 kcal</div><div class="metric-label">Laihduttaaksesi (n.)</div></div><div class="metric-card"><div class="metric-value" id="gainValue">0 kcal</div><div class="metric-label">Lihoaksesi (n.)</div></div></div>
+<p style="font-size:0.875rem;color:#334155;line-height:1.6;">Menetä ja voitto -luvut ovat vain suuntaa antavia: ne vähentävät tai lisäävät noin 500 kcal ylläpitoon. Ne eivät ole lääketieteellisiä neuvoja. Jos sinulla on sairaus, olet raskaana tai käytät lääkkeitä, keskustele ensin terveydenhuollon ammattilaisen kanssa.</p>
+</div>
+</div></div>
+<aside><div class="ad-slot ad-rectangle" aria-label="Sivupalkin mainos"><span class="ad-slot-placeholder-text">Sivupalkin suorakulmio (300 x 250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Aiheeseen liittyvät laskimet</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMI Tracker <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Prosenttilaskin <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Ikälaskuri <span>→</span></a></li><li><a href="water-intake-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Vedenottolaskin <span>→</span></a></li></ul></div></aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="Artikkelin sisäinen mainos"><span class="ad-slot-placeholder-text">Responsiivinen sisältöbanneri (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section"><h2 class="content-heading">Kuinka käyttää BMR- ja kalorilaskuria</h2><p class="content-paragraph">Perusaineenvaihduntasi eli BMR on kalorien määrä, jonka kehosi polttaa täydellisessä levossa vain pysyäkseen hengissä: hengittääkseen, pitääkseen sydämesi lyömässä, ylläpitämässä ruumiinlämpöä ja pyörittääkseen aivoja ja elimiä. Se ei ole sama kuin päivittäinen kokonaispoltosi, koska poltat kaloreita myös liikkuessasi, työskennellessäsi, harjoitellessasi ja sulattaessasi ruokaa. Tämä laskin arvioi ensin BMR:si ja kertoo sen sitten aktiivisuuskertoimella arvioidakseen, kuinka paljon kaloreita tarvitset joka päivä nykyisen painosi ylläpitämiseen.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>Valitse metriset tai englantilaiset yksiköt</strong>Käytä kiloja ja senttejä tai puntaa, jalkoja ja tuumaa, kumpi tahansa tiedät. Laskin muuntaa brittiläiset arvot ennen kuin se laskee mitään.</div></li><li class="step-item"><div class="step-item-content"><strong>Anna sukupuolesi, ikäsi, pituutesi ja painosi</strong>Nämä neljä arvoa ohjaavat Mifflin-St Jeor -yhtälöä. Käytä nykyistä painoasi ja pituuttasi ilman kenkiä saadaksesi tarkimman tuloksen.</div></li><li class="step-item"><div class="step-item-content"><strong>Valitse rehellinen aktiivisuustaso</strong>Useimmat ihmiset yliarvioivat kuinka aktiivisia he ovat. Jos istut suurimman osan päivästä ja harjoittelet muutaman kerran viikossa, valitse kevyt tai kohtalainen, ei kovin aktiivinen.</div></li><li class="step-item"><div class="step-item-content"><strong>Lue kolme numeroa</strong>BMR on vain lepokuvasi. Suuri otsikkonumero on ylläpitotasosi. Kaksi pienempää lukua osoittavat noin 500 kaloria alle ja yli ylläpidon, mikä on yleinen lähtökohta asteittaiselle painonpudotukselle tai -nousulle.</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">Mifflin-St Jeor -kaava</h2><p class="content-paragraph">Ravitsemustutkijat käyttävät laajasti Mifflin-St Jeor -yhtälöä, koska se validoitiin mitattuihin aineenvaihduntanopeuksiin ja se on yleensä tarkempi useimmille aikuisille kuin vanhemmat kaavat. Se käyttää painoa, pituutta, ikää ja sukupuolta, koska lihasmassa, kehon koko ja ikä muuttavat sen, kuinka paljon energiaa keho käyttää levossa. Miehillä on tyypillisesti hieman korkeampi BMR kuin samankokoisilla ja -ikäisillä naisilla, minkä vuoksi kaava lisää miehillä viisi kaloria ja vähentää naisilta 161. Nämä vakiot ovat osa julkaistua yhtälöä, eivät tuomiota yksittäisestä henkilöstä.</p><div class="formula-box"><div class="formula-expression">Miehet: BMR = 10 x paino (kg) + 6,25 x pituus (cm) - 5 x ikä + 5</div><div class="formula-expression">Naiset: BMR = 10 x paino (kg) + 6,25 x pituus (cm) - 5 x ikä - 161</div><div class="formula-explanation">Esimerkki: 30-vuotiaan 80 kg painavan ja 180 cm pitkän miehen BMR on 10 x 80 + 6,25 x 180 - 5 x 30 + 5 = 1 780 kcal päivässä levossa. Kohtuullisella aktiivisuustasolla 1 780 x 1,55 = 2 759 kcal päivässä ylläpitoon.</div></div><p class="content-paragraph">Mikään kaava ei voi mitata kehoasi suoraan. Todellinen BMR vaihtelee lihasmassan, kilpirauhasen toiminnan, sairauden, raskauden ja jopa huoneenlämpötilan mukaan. Käsittele tulosta vankana lähtöarviona ja säädä sitä sitten seuraamalla painotrendiäsi kahden tai neljän viikon aikana. Jos painosi on vakaa, huoltoarviosi on lähellä. Jos se ajelehtii tasaisesti yhteen suuntaan, todellinen huoltosummasi on suurempi tai pienempi kuin arvioitu suunnilleen tuon poikkeaman verran.</p></section>
+<section class="content-section"><h2 class="content-heading">Aktiviteettitasot ja mitä ne tarkoittavat</h2><p class="content-paragraph">Aktiivisuuskerroin on paikka, jossa useimmat kalorilaskurit menevät pieleen, koska yksi sana, kuten aktiivinen, tarkoittaa eri asioita eri ihmisille. Alla oleva taulukko noudattaa Harris-Benedict-tyylisiä kertoimia, joita käytetään Mifflin-St Jeor -yhtälön kanssa, ja se kuvaa kokonaista viikkoa, ei yhtä harjoituspäivää.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>Taso</th><th>Kerroin</th><th>Tyypillinen viikko</th></tr></thead><tbody><tr><td><strong>Istuva</strong></td><td>1.2</td><td>Pöytätyötä, vähän liikuntaa, enimmäkseen istuen</td></tr><tr><td><strong>Kevyt</strong></td><td>1.375</td><td>Kevyt liikunta tai urheilu yhdestä kolmeen päivään</td></tr><tr><td><strong>Kohtalainen</strong></td><td>1.55</td><td>Kohtuullinen harjoitus kolmesta viiteen päivään</td></tr><tr><td><strong>Aktiivinen</strong></td><td>1.725</td><td>Kovaa harjoittelua kuudesta seitsemään päivään</td></tr><tr><td><strong>Erittäin aktiivinen</strong></td><td>1.9</td><td>Fyysinen työ sekä kova harjoittelu tai kahdesti päivässä harjoittelu</td></tr></tbody></table></div><p class="content-paragraph">Hyödyllinen sääntö on aloittaa yhtä tasoa alempana kuin mitä ensin haluat valita, varsinkin jos työsi on istumista. Voit aina syödä hieman enemmän, jos laihdut suunniteltua nopeammin, mutta liian korkealla aloittaminen ja painonnousu, jota et halunnut, on hitaampi ongelma. Urheilijat, ruumiilliset työntekijät ja ihmiset, joilla on paljon lihasmassaa, saattavat todella tarvita suurempia kertoimia, ja siinä tapauksessa korkeampi luku on rehellinen.</p></section>
+<section class="content-section"><h2 class="content-heading">Kuinka käyttää tulosta turvallisesti</h2><p class="content-paragraph">Kalorit ovat vain yksi osa terveyttä. Ruoan laatu, uni, proteiinin saanti ja voimaharjoittelu ratkaisevat olosi ja sen, tuleeko laihduksesi rasvasta vai lihasta. Noin 500 kalorin vaje päivässä johtaa tyypillisesti noin puolen kilon painonpudotukseen viikossa, mikä on kestävä vauhti useimmille aikuisille. Paljon suuremmat vajeet voivat tehdä sinut väsyneeksi, nälkäiseksi ja todennäköisemmin lihoa myöhemmin takaisin, joten niitä on parasta käyttää vain ammattimaisen ohjauksen kanssa.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. Seuraa trendiä, älä yhtä päivää</h4><p class="example-card-body">Punnitse itsesi muutaman kerran viikossa samoissa olosuhteissa ja katso viikoittaista keskiarvoa. Päivittäinen paino hyppää ylös ja alas veden, ruoan ja suolan mukana, joten yksittäinen lukema todistaa hyvin vähän.</p></div><div class="example-card"><h4 class="example-card-title">2. Pidä proteiini ja liike suunnitelmassa</h4><p class="example-card-body">Kun syöt vähemmän kaloreita, riittävä proteiini ja säännöllinen vastustusharjoitus auttavat suojaamaan lihaksia, joten laihduttamastasi painosta suurin osa on rasvaa. Jokapäiväinen kävely auttaa myös ilman, että olet hirveän nälkäinen.</p></div><div class="example-card"><h4 class="example-card-title">3. Laske uudelleen suuren muutoksen jälkeen</h4><p class="example-card-body">Kun laihdut tai lihot, myös BMR muuttuu, koska pienempi tai suurempi keho tarvitsee vähemmän tai enemmän energiaa. Suorita tämä laskin uudelleen 5–10 muutoskilon välein tai muutaman kuukauden välein.</p></div></div><p class="content-paragraph">Tämä laskin on koulutusväline, ei lääketieteellinen laite. Se ei diagnosoi, käsittele tai korvaa lääkärin tai ravitsemusterapeutin neuvoja. Lasten, teini-ikäisten, raskaana olevien ja kenenkään, jolla on syömishäiriö, diabetes, kilpirauhassairaus tai jokin muu aineenvaihduntaan vaikuttava sairaus, ei tulisi käyttää yleistä kaloritavoitetta ilman ammattilaisen neuvoja.</p></section>
+<section class="content-section"><h2 class="content-heading">Usein kysytyt kysymykset (FAQ)</h2><div class="faq-list"><details class="faq-item" open="None"><summary class="faq-question">Mikä on BMR?</summary><div class="faq-answer">Perusaineenvaihduntanopeus (BMR) on kalorien määrä, jonka kehosi polttaa levossa pitääkseen sinut hengissä, mukaan lukien hengitys, verenkierto ja kehon lämpötilan ylläpitäminen. Se ei sisällä liikkeellä tai harjoittelulla poltettuja kaloreita.</div></details><details class="faq-item"><summary class="faq-question">Miten BMR eroaa TDEE:stä?</summary><div class="faq-answer">BMR on vain lepopoltto, kun taas päivittäisen energian kokonaiskulutus (TDEE) on BMR kerrottuna aktiivisuuskertoimella, joten se sisältää työn, harjoituksen ja päivittäisen liikkeen. Tämä laskin näyttää molemmat: BMR:n pienempänä lukuna ja TDEE:n päivittäisenä ylläpitokalorina.</div></details><details class="faq-item"><summary class="faq-question">Miksi laskin kysyy seksiä?</summary><div class="faq-answer">Mifflin-St Jeor -yhtälö sisältää sukupuolen, koska keskimäärin samanpituiset, -painoiset ja -ikäiset miehet ja naiset eroavat toisistaan ​​lihasmassassa ja kehon koostumuksessa, mikä vaikuttaa lepoenergian käyttöön. Kaava lisää 5 miesten ja vähentää 161 naisten.</div></details><details class="faq-item"><summary class="faq-question">Voinko käyttää tätä kalorilukua laihtumiseen turvallisesti?</summary><div class="faq-answer">Lähtökohtana kyllä ​​useimmille terveille aikuisille: noin 500 kaloria alle ylläpitoarvon syöminen johtaa yleensä asteittaiseen noin puolen kilon painon pudotukseen viikossa. Paljon suuremmista vajeista tai kaikista kaloritavoitteista sairauden tai raskauden aikana tulee keskustella terveydenhuollon ammattilaisen kanssa.</div></details><details class="faq-item"><summary class="faq-question">Onko tietojani tallennettu missään?</summary><div class="faq-answer">Ei. Tämä laskin toimii kokonaan selaimessasi. OmniTools ei koskaan lähetä ikääsi, painoasi, pituuttasi ja aktiivisuustasoasi palvelimelle tai tallenna niitä.</div></details></div></section>
+</article>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools tarjoaa ilmaisia, kevyitä, yksityisyyteen keskittyviä online-laskimia ja -apuohjelmia rahoitukseen, tuottavuuteen ja koulutukseen.</p></div>
+<div><h4 class="footer-heading">Trendaavat työkalut</h4><ul class="footer-links"><li><a href="age-calculator.html">Ikälaskuri</a></li><li><a href="bmi-calculator.html">BMI Tracker</a></li><li><a href="loan-calculator.html">Laina-EMI-laskin</a></li><li><a href="password-generator.html">Salasanageneraattori</a></li><li><a href="word-counter.html">Sana laskuri</a></li></ul></div>
+<div><h4 class="footer-heading">Apuohjelmat</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Prosenttilaskin</a></li><li><a href="discount-calculator.html">Alennuslaskuri</a></li><li><a href="unit-converter.html">Yksikkömuunnin</a></li><li><a href="date-calculator.html">Päivämäärän ero</a></li><li><a href="case-converter.html">Text Case Converter</a></li></ul></div>
+<div><h4 class="footer-heading">Lakiasiat ja tiedot</h4><ul class="footer-links"><li><a href="../about.html">Tietoja meistä</a></li><li><a href="../contact.html">Ota yhteyttä</a></li><li><a href="../privacy-policy.html">Tietosuojakäytäntö</a></li><li><a href="../terms.html">Palveluehdot</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools. Kaikki oikeudet pidätetään. Ilmaiset online-apuohjelmat kaikille.</p><div class="footer-lang-select">
+          <span>Kielet:</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div></div></div></footer>
+<script>
+function computeBMR(sex, age, heightCm, weightKg) {
+  if (sex !== "male" && sex !== "female") return null;
+  if (!isFinite(age) || age < 10 || age > 120) return null;
+  if (!isFinite(heightCm) || heightCm < 50 || heightCm > 250) return null;
+  if (!isFinite(weightKg) || weightKg < 20 || weightKg > 400) return null;
+  var base = 10 * weightKg + 6.25 * heightCm - 5 * age;
+  return sex === "male" ? base + 5 : base - 161;
+}
+function activityFactor(level) {
+  var m = { sedentary: 1.2, light: 1.375, moderate: 1.55, active: 1.725, veryactive: 1.9 };
+  return m[level] === undefined ? null : m[level];
+}
+function caloriesFor(bmr, level) {
+  var f = activityFactor(level);
+  if (bmr === null || f === null) return null;
+  return Math.round(bmr * f);
+}
+function cmFromFeetInches(ft, inch) {
+  if (!isFinite(ft) || !isFinite(inch) || ft < 1 || ft > 8 || inch < 0 || inch > 11) return null;
+  return (ft * 12 + inch) * 2.54;
+}
+function kgFromLb(lb) {
+  if (!isFinite(lb) || lb < 44 || lb > 880) return null;
+  return lb / 2.20462;
+}
+// --- DOM ---
+ (function() {
+  var t = document.querySelector(".mobile-nav-toggle"); var n = document.querySelector(".nav-links");
+  if (t && n) t.addEventListener("click", function(){ n.classList.toggle("active"); });
+  window.setUnits = function(mode) {
+    var mg = document.getElementById("metricGroup"), ig = document.getElementById("imperialGroup");
+    var mb = document.getElementById("unitMetricBtn"), ib = document.getElementById("unitImperialBtn");
+    if (mg && ig) { mg.classList.toggle("active", mode === "metric"); ig.classList.toggle("active", mode === "imperial"); }
+    if (mb && ib) { mb.classList.toggle("active", mode === "metric"); ib.classList.toggle("active", mode === "imperial"); }
+  };
+  window.calculateBMRUI = function() {
+    var errBox = document.getElementById("bmrErrorBox"), res = document.getElementById("bmrResultsBox");
+    var sex = document.getElementById("bmrSex").value;
+    var age = parseFloat(document.getElementById("bmrAge").value);
+    var level = document.getElementById("bmrActivity").value;
+    var metric = document.getElementById("metricGroup").classList.contains("active");
+    var cm, kg;
+    if (metric) { cm = parseFloat(document.getElementById("bmrHeightCm").value); kg = parseFloat(document.getElementById("bmrWeightKg").value); }
+    else { cm = cmFromFeetInches(parseFloat(document.getElementById("bmrHeightFt").value), parseFloat(document.getElementById("bmrHeightIn").value)); kg = kgFromLb(parseFloat(document.getElementById("bmrWeightLb").value)); }
+    var bmr = computeBMR(sex, age, cm, kg);
+    var daily = caloriesFor(bmr, level);
+    if (bmr === null || daily === null) { errBox.textContent = "Anna kelvolliset arvot: ikä 10–120, pituus ja paino näytetyissä rajoissa sekä aktiivisuustaso."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    errBox.style.display = "none";
+    document.getElementById("bmrValue").textContent = Math.round(bmr).toLocaleString() + " kcal";
+    document.getElementById("dailyCalValue").textContent = daily.toLocaleString() + " kcal";
+    document.getElementById("loseValue").textContent = Math.max(1200, daily - 500).toLocaleString() + " kcal";
+    document.getElementById("gainValue").textContent = (daily + 500).toLocaleString() + " kcal";
+    var cb = document.getElementById("copyBmrBtn");
+    if (cb) cb.setAttribute("data-summary", "BMR: " + Math.round(bmr) + " kcal, huolto: " + daily + " kcal/päivä.");
+    if (res) { res.classList.add("active"); res.style.display = "block"; }
+  };
+  window.resetBMR = function() {
+    ["bmrAge","bmrHeightCm","bmrWeightKg","bmrHeightFt","bmrHeightIn","bmrWeightLb"].forEach(function(id){ var el=document.getElementById(id); if(el) el.value=""; });
+    var e=document.getElementById("bmrErrorBox"); if(e) e.style.display="none";
+    var r=document.getElementById("bmrResultsBox"); if(r){ r.classList.remove("active"); r.style.display="none"; }
+  };
+  var cb=document.getElementById("copyBmrBtn");
+  if (cb) cb.addEventListener("click", function(){ var s=cb.getAttribute("data-summary"); if(s && navigator.clipboard) navigator.clipboard.writeText(s).catch(function(){}); });
+})();
+</script>
+</body>
+</html>
