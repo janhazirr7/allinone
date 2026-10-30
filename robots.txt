@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://janhazirr7.github.io/allinone/sitemap.xml

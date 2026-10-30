@@ -1,3 +1,13 @@
+/* SITE_CONFIG — single place documenting the site's base URL.
+   Canonicals/hreflang/sitemap are static HTML, so a future domain move is NOT done here in JS:
+   it is one documented find/replace — see URL-MIGRATION.md. */
+const SITE_CONFIG = {
+  siteName: 'OmniTools',
+  baseUrl: 'https://janhazirr7.github.io/allinone/',
+  basePath: '/allinone/',
+  contactEmail: null, // deferred until owner buys a domain — contact form edit waits for that milestone
+};
+
 /**
  * OmniTools - Core Shared Script
  * Lightweight, Vanilla JavaScript, Zero Dependencies

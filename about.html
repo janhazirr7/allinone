@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - OmniTools</title>
-  <meta name="description" content="About OmniTools: Our mission to provide free, private, client-side online calculators and utilities for everyone worldwide.">
+  <meta name="description" content="About OmniTools: 36 free online calculators and utilities in 30 languages, running fully in your browser with no accounts and no data stored.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://janhazirr7.github.io/allinone/about.html">
   <link rel="stylesheet" href="style.css">
@@ -23,47 +23,136 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="word-counter.html">Word Counter</a></li>
           <li><a href="about.html" class="active">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="nav-actions">
-        <div class="lang-switcher">
-          <a href="index.html" class="lang-btn active">EN</a>
-          <a href="es/index.html" class="lang-btn">ES</a>
-        </div>
-      </div>
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        ☰
+      </button>
     </div>
   </header>
 
   <main class="container" style="padding: 3rem 1.25rem; max-width: 860px;">
     <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: var(--text-main);">About OmniTools</h1>
     <p class="content-paragraph" style="font-size: 1.15rem; color: var(--text-muted);">
-      Empowering users worldwide with fast, transparent, and private calculation utilities.
+      Fast, free, and private online tools for everyday tasks — no accounts, no downloads, no data stored.
+    </p>
+
+    <h2 style="font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--text-main);">What OmniTools Is</h2>
+    <p class="content-paragraph">
+      OmniTools is a collection of 36 free online tools, available in 30 languages, covering everyday needs such as age and date calculations, health and fitness estimates, finance and loan math, text and writing utilities, unit conversions, and security tools like a password generator. Every tool is free to use, with no sign-up and no account required.
     </p>
 
     <h2 style="font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--text-main);">Our Mission</h2>
     <p class="content-paragraph">
-      OmniTools was founded on a simple premise: everyday tools should be fast, completely free, and genuinely respect user privacy. In an era where simple online calculators force users to download invasive software, register accounts, or compromise personal information, OmniTools operates 100% on the client's device using clean HTML5, CSS, and vanilla JavaScript.
+      Everyday tools should be fast, completely free, and genuinely respectful of privacy. Too many simple online calculators ask you to install software, create an account, or hand over personal information. OmniTools takes the opposite approach: open a tool, use it, and leave — nothing about you is collected along the way.
     </p>
 
-    <h2 style="font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--text-main);">Why Client-Side Matters</h2>
+    <h2 style="font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--text-main);">How the Tools Work</h2>
     <p class="content-paragraph">
-      When you calculate your age, test a password for strength, or compute loan amortizations, that data belongs to you. Because our tools process every formula directly in your web browser, our servers never see, store, or log your calculations. This provides unmatched speed and zero data privacy risk.
+      All computation happens in your own web browser, on your own device. When you enter a date, an amount, or a piece of text, the calculation runs locally in the page itself. Your inputs and results are never sent to a server, never logged, and never stored by the site. That is also why the tools work instantly, with no waiting for a server round trip.
+    </p>
+    <p class="content-paragraph">
+      The one exception is the Currency Converter, which fetches a public exchange-rate table so it can convert between currencies. That fetch sends no personal data and no information about what you are converting.
     </p>
 
-    <h2 style="font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--text-main);">Editorial & Mathematical Rigor</h2>
+    <h2 style="font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; color: var(--text-main);">Browse All the Tools</h2>
     <p class="content-paragraph">
-      Every tool on OmniTools is accompanied by transparent mathematical documentation, formulas, and real-world practical examples verified by engineering standards. We support both English and Spanish speaking communities with native translations and localized standards.
+      You can explore the full collection from the tools homepage: <a href="index.html">Browse all 36 tools</a>. Questions or suggestions can be sent through the <a href="contact.html">Contact page</a>.
     </p>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-bottom" style="border: none; padding-top: 0;">
-      <p>&copy; 2026 OmniTools. All rights reserved.</p>
-      <div><a href="index.html" style="color: #60a5fa;">Back to Home</a></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for productivity, education, finance, and wellness.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal &amp; Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="index.html" style="color: #60a5fa;">English</a> |
+          <a href="es/index.html">Español</a> |
+          <a href="de/index.html">Deutsch</a> |
+          <a href="fr/index.html">Français</a> |
+          <a href="pt/index.html">Português</a> |
+          <a href="it/index.html">Italiano</a> |
+          <a href="ru/index.html">Русский</a> |
+          <a href="nl/index.html">Nederlands</a> |
+          <a href="pl/index.html">Polski</a> |
+          <a href="sv/index.html">Svenska</a> |
+          <a href="no/index.html">Norsk</a> |
+          <a href="da/index.html">Dansk</a> |
+          <a href="fi/index.html">Suomi</a> |
+          <a href="id/index.html">Bahasa Indonesia</a> |
+          <a href="tr/index.html">Türkçe</a> |
+          <a href="vi/index.html">Tiếng Việt</a> |
+          <a href="th/index.html">ไทย</a> |
+          <a href="ms/index.html">Bahasa Melayu</a> |
+          <a href="tl/index.html">Filipino</a> |
+          <a href="hi/index.html">हिन्दी</a> |
+          <a href="ur/index.html">اردو</a> |
+          <a href="ar/index.html">العربية</a> |
+          <a href="fa/index.html">فارسی</a> |
+          <a href="he/index.html">עברית</a> |
+          <a href="ja/index.html">日本語</a> |
+          <a href="ko/index.html">한국어</a> |
+          <a href="zh/index.html">简体中文</a> |
+          <a href="zh-TW/index.html">繁體中文</a> |
+          <a href="el/index.html">Ελληνικά</a> |
+          <a href="cs/index.html">Čeština</a>
+        </div>
+      </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
-

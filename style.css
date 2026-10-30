@@ -1595,3 +1595,6 @@ main {
     max-width: 110px;
   }
 }
+/* ADS PAUSED — owner request 2026-10-31: hide empty ad placeholders until AdSense is ready.
+   To re-enable ads, delete this rule only. No page markup was changed. */
+.ad-slot { display: none !important; }
