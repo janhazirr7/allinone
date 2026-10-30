@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter - Live Exchange Rates for 40+ Currencies | OmniTools</title>
+  <meta name="description" content="Convert currencies with live exchange rates. USD, EUR, GBP, PKR, INR and 40+ world currencies with instant results, cross rates and the date the rates were last updated.">
+  <meta name="keywords" content="currency converter, live exchange rates, usd to eur, usd to pkr, eur to gbp, money converter, foreign exchange calculator, exchange rate today">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/currency-converter.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/currency-converter.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/currency-converter.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/currency-converter.html">
+  <meta property="og:title" content="Currency Converter - Live Exchange Rates">
+  <meta property="og:description" content="Convert 40+ world currencies with live exchange rates, cross rates and instant results. 100% free.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-currency-converter.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Currency Converter | OmniTools">
+  <meta name="twitter:description" content="Live currency conversion for 40+ world currencies with instant results.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Currency Converter",
+    "url": "https://janhazirr7.github.io/allinone/currency-converter.html",
+    "applicationCategory": "FinancialApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Convert currencies using live exchange rates for 40+ world currencies, with cross rates and the date the rates were last updated.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://janhazirr7.github.io/allinone/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Finance",
+        "item": "https://janhazirr7.github.io/allinone/#finance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Currency Converter",
+        "item": "https://janhazirr7.github.io/allinone/currency-converter.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where do the exchange rates come from?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rates are fetched live from the free ExchangeRate-API service (open.er-api.com) every time the page loads, with exchangerate-api.com as a backup source. The page always shows the date of the rate table it is using, so you can see exactly how fresh the numbers are."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the rates really live, or stored on the page?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They are live. No exchange rate is stored in the page itself. Every visit downloads the latest published rate table, and if both rate sources are unreachable the converter shows an error and converts nothing rather than displaying a stale or invented number."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is a conversion between two non-USD currencies calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All rates are published against the US dollar as the base. To convert from one currency to another, the converter divides the target currency's USD rate by the source currency's USD rate and multiplies by your amount. For example, EUR to GBP uses the GBP-per-USD rate divided by the EUR-per-USD rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my bank or card show a different rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This converter shows mid-market rates, the reference rate banks use between themselves. Banks, card networks and exchange bureaus add a margin and often a fee on top, so the rate you actually receive is usually a little worse than the mid-market rate shown here."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my amount or personal data sent anywhere?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Your amount is converted locally in your browser. The only thing downloaded is the public exchange-rate table itself; your amount, and the currencies you choose, are never sent to any server."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="currency-converter.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/conversor-de-divisas.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">Currency Converter</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Live Currency Converter</h1>
+        <p class="tool-header-desc">
+          Convert 40+ world currencies with live exchange rates. Rates are fetched fresh on every visit, so you always see today's numbers — never a stale table.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Amount -->
+            <div class="form-group">
+              <label for="fxAmount" class="form-label">
+                <span>Amount</span>
+                <span class="label-hint">Required</span>
+              </label>
+              <input type="number" id="fxAmount" class="form-input" placeholder="e.g. 100" min="0" step="any" value="100">
+              <span class="form-help">Enter any positive amount</span>
+            </div>
+
+            <!-- From / Swap / To -->
+            <div style="display: flex; gap: 0.5rem; align-items: flex-end;">
+              <div class="form-group" style="flex: 1;">
+                <label for="fxFrom" class="form-label">
+                  <span>From</span>
+                </label>
+                <select id="fxFrom" class="form-select"></select>
+                <span class="form-help">Currency you have</span>
+              </div>
+              <button type="button" id="fxSwapBtn" class="btn btn-outline" title="Swap currencies" style="margin-bottom: 1.5rem;">⇄</button>
+              <div class="form-group" style="flex: 1;">
+                <label for="fxTo" class="form-label">
+                  <span>To</span>
+                </label>
+                <select id="fxTo" class="form-select"></select>
+                <span class="form-help">Currency you want</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loading State -->
+          <div id="fxLoadingBox" style="display: none; background: var(--bg-surface); color: var(--text-main); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent); margin: 1rem 0 0; font-size: 0.875rem; font-weight: 500;">
+            Loading live exchange rates…
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="fxErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="fxConvertBtn" class="btn btn-primary" onclick="fxConvert()" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+              Convert
+            </button>
+            <button type="button" id="fxResetBtn" class="btn btn-outline" onclick="fxReset()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reset
+            </button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="fxResultsBox" class="results-box" style="display: none;">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Conversion Result
+              </span>
+              <button type="button" id="fxCopyBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copy Summary
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card: Converted Amount -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Converted Amount</div>
+              <div class="hero-result-value" id="fxResultValue">-</div>
+              <div class="hero-result-sub" id="fxRateLine">-</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="fxReverseLine">-</div>
+                <div class="metric-label">Reverse Rate</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="fxOriginalLine">-</div>
+                <div class="metric-label">Original Amount</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="fxUpdatedLine" style="color: var(--accent);">-</div>
+                <div class="metric-label">Rates Last Updated</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="compound-interest-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Compound Interest Calculator <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Loan EMI Calculator <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount & Sales Tax Calculator <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools Currency Converter
+        </h2>
+        <p class="content-paragraph">
+          Whether you are sending money to family abroad, shopping on an international website, or planning a holiday budget, you need one honest number: how much your money is worth in another currency right now. The OmniTools Currency Converter gives you exactly that, using exchange rates fetched live on every visit:
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Wait for the rates to load</strong>
+              When the page opens it downloads the latest published rate table. The Convert button activates as soon as the rates arrive, and the page shows the date of the table it is using.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter the amount</strong>
+              Type the amount you want to convert, for example <code>100</code>. Decimals are fine, so you can convert <code>49.99</code> just as easily.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Choose the currencies</strong>
+              Pick the currency you have in the "From" box and the currency you want in the "To" box. The arrow button between them swaps the two instantly.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Read the result</strong>
+              The converted amount appears immediately, together with the exact rate used in both directions, for example "1 USD = 0.92 EUR" and "1 EUR = 1.09 USD", so you can check the maths at a glance. Use "Copy Summary" to copy the result as plain text.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 2: How Exchange Rates Work -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          How Exchange Rates Work, and the Formula This Converter Uses
+        </h2>
+        <p class="content-paragraph">
+          An exchange rate is simply the price of one currency expressed in another. If 1 US dollar buys 0.92 euros, the USD to EUR rate is 0.92. Rates move constantly because currencies are traded around the clock on the global foreign-exchange market, driven by interest rates, inflation, trade flows and major news events. That is why a rate printed in a book or baked into a web page goes stale within a day — and why this converter never stores a rate, but downloads a fresh table on every visit instead.
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Result = Amount × ( Rate[To] / Rate[From] )
+          </div>
+          <div class="formula-explanation">
+            Where:<br>
+            • <strong>Rate[To]</strong> = units of the target currency per 1 USD<br>
+            • <strong>Rate[From]</strong> = units of the source currency per 1 USD<br>
+            • All published rates use the US dollar as the base currency<br><br>
+            <strong>Example:</strong> converting 100 EUR to GBP when 1 USD = 0.92 EUR and 1 USD = 0.79 GBP:<br>
+            Result = 100 × (0.79 / 0.92) = <strong>85.87 GBP</strong>
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          This "cross rate" method is how every professional converter handles pairs that are not quoted directly against each other. Converting through the US dollar keeps all 40+ currencies consistent with one another, so converting dollars to euros and then euros back to dollars returns you to (very nearly) your starting amount, apart from rounding.
+        </p>
+      </section>
+
+      <!-- Section 3: Worked Examples -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Worked Examples You Can Try Right Now
+        </h2>
+        <p class="content-paragraph">
+          Try these examples in the converter and check that you get the same answers. Exact figures will differ slightly as live rates move, but the method is identical:
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
+          <li><strong>Holiday money:</strong> 500 USD to EUR at 0.92 gives 500 × 0.92 = <strong>460 EUR</strong>. That is your spending money before any exchange fee.</li>
+          <li><strong>Sending money home:</strong> 200 USD to PKR at 278.50 gives 200 × 278.50 = <strong>55,700 PKR</strong>.</li>
+          <li><strong>Shopping abroad:</strong> a jacket priced at 80 GBP, converted to USD when 1 USD = 0.79 GBP, costs 80 / 0.79 = <strong>101.27 USD</strong>.</li>
+          <li><strong>Same currency:</strong> converting USD to USD always returns the amount unchanged, which is a useful sanity check that the converter is working.</li>
+        </ul>
+        <p class="content-paragraph">
+          Notice the last example carefully: dividing by the same rate always gives one, so the result equals the input exactly. If a converter ever changes the number for a same-currency conversion, its maths is broken.
+        </p>
+      </section>
+
+      <!-- Section 4: Tips and Common Mistakes -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          Tips and Common Mistakes to Avoid
+        </h2>
+        <p class="content-paragraph">
+          First, remember that the rate shown here is the mid-market rate — the reference rate banks use with each other. The rate you actually receive from a bank, a card network, or an airport kiosk is almost always a little worse, because the provider adds a margin and often a flat fee. When comparing providers, always compare the final amount that lands in the other account, not the advertised rate. Second, watch out for "zero commission" claims: the cost is usually hidden inside a worse exchange rate rather than charged as a visible fee. Third, if you are converting a very small amount, rounding matters — this converter keeps up to six decimal places for tiny results so that converting a fraction of a yen or a cent does not silently become zero. Finally, never trust a converter that cannot tell you the date of its rates. If a page shows no update date, its numbers may be days or months old, and for large amounts even a small difference is real money. This page always displays its rate date right under the result.
+        </p>
+        <p class="content-paragraph">
+          For related money maths, try the OmniTools Compound Interest Calculator to see how savings grow over time, or the Percentage Calculator when a fee is quoted as a percent of the amount. All of these tools are free, work entirely in your browser, and never store your numbers.
+        </p>
+      </section>
+
+      <!-- Section 5: FAQs -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">Where do the exchange rates come from?</summary>
+            <div class="faq-answer">
+              Rates are fetched live from the free ExchangeRate-API service (open.er-api.com) every time the page loads, with exchangerate-api.com as a backup source. The page always shows the date of the rate table it is using, so you can see exactly how fresh the numbers are.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Are the rates really live, or stored on the page?</summary>
+            <div class="faq-answer">
+              They are live. No exchange rate is stored in the page itself. Every visit downloads the latest published rate table, and if both rate sources are unreachable the converter shows an error and converts nothing rather than displaying a stale or invented number.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How is a conversion between two non-USD currencies calculated?</summary>
+            <div class="faq-answer">
+              All rates are published against the US dollar as the base. To convert from one currency to another, the converter divides the target currency's USD rate by the source currency's USD rate and multiplies by your amount. For example, EUR to GBP uses the GBP-per-USD rate divided by the EUR-per-USD rate.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Why does my bank or card show a different rate?</summary>
+            <div class="faq-answer">
+              This converter shows mid-market rates, the reference rate banks use between themselves. Banks, card networks and exchange bureaus add a margin and often a fee on top, so the rate you actually receive is usually a little worse than the mid-market rate shown here.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my amount or personal data sent anywhere?</summary>
+            <div class="faq-answer">
+              No. Your amount is converted locally in your browser. The only thing downloaded is the public exchange-rate table itself; your amount, and the currencies you choose, are never sent to any server.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="currency-converter.html" style="color: #60a5fa;">English</a> |
+          <a href="es/conversor-de-divisas.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (live rates via ExchangeRate-API only) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var CURRENCIES = [
+      { code: 'USD', name: 'US Dollar' },
+      { code: 'EUR', name: 'Euro' },
+      { code: 'GBP', name: 'British Pound Sterling' },
+      { code: 'CHF', name: 'Swiss Franc' },
+      { code: 'CAD', name: 'Canadian Dollar' },
+      { code: 'AUD', name: 'Australian Dollar' },
+      { code: 'NZD', name: 'New Zealand Dollar' },
+      { code: 'JPY', name: 'Japanese Yen' },
+      { code: 'CNY', name: 'Chinese Yuan' },
+      { code: 'INR', name: 'Indian Rupee' },
+      { code: 'PKR', name: 'Pakistani Rupee' },
+      { code: 'BDT', name: 'Bangladeshi Taka' },
+      { code: 'AED', name: 'UAE Dirham' },
+      { code: 'SAR', name: 'Saudi Riyal' },
+      { code: 'QAR', name: 'Qatari Riyal' },
+      { code: 'KWD', name: 'Kuwaiti Dinar' },
+      { code: 'BHD', name: 'Bahraini Dinar' },
+      { code: 'OMR', name: 'Omani Rial' },
+      { code: 'TRY', name: 'Turkish Lira' },
+      { code: 'BRL', name: 'Brazilian Real' },
+      { code: 'MXN', name: 'Mexican Peso' },
+      { code: 'ZAR', name: 'South African Rand' },
+      { code: 'RUB', name: 'Russian Ruble' },
+      { code: 'KRW', name: 'South Korean Won' },
+      { code: 'SGD', name: 'Singapore Dollar' },
+      { code: 'HKD', name: 'Hong Kong Dollar' },
+      { code: 'THB', name: 'Thai Baht' },
+      { code: 'MYR', name: 'Malaysian Ringgit' },
+      { code: 'IDR', name: 'Indonesian Rupiah' },
+      { code: 'PHP', name: 'Philippine Peso' },
+      { code: 'VND', name: 'Vietnamese Dong' },
+      { code: 'EGP', name: 'Egyptian Pound' },
+      { code: 'NGN', name: 'Nigerian Naira' },
+      { code: 'KES', name: 'Kenyan Shilling' },
+      { code: 'PLN', name: 'Polish Zloty' },
+      { code: 'SEK', name: 'Swedish Krona' },
+      { code: 'NOK', name: 'Norwegian Krone' },
+      { code: 'DKK', name: 'Danish Krone' },
+      { code: 'CZK', name: 'Czech Koruna' },
+      { code: 'HUF', name: 'Hungarian Forint' },
+      { code: 'ILS', name: 'Israeli New Shekel' },
+      { code: 'UAH', name: 'Ukrainian Hryvnia' }
+    ];
+
+    var amountInput = document.getElementById('fxAmount');
+    var fromSelect = document.getElementById('fxFrom');
+    var toSelect = document.getElementById('fxTo');
+    var swapBtn = document.getElementById('fxSwapBtn');
+    var convertBtn = document.getElementById('fxConvertBtn');
+    var resetBtn = document.getElementById('fxResetBtn');
+    var copyBtn = document.getElementById('fxCopyBtn');
+    var resultsBox = document.getElementById('fxResultsBox');
+    var errorBox = document.getElementById('fxErrorBox');
+    var loadingBox = document.getElementById('fxLoadingBox');
+    var resultValue = document.getElementById('fxResultValue');
+    var rateLine = document.getElementById('fxRateLine');
+    var reverseLine = document.getElementById('fxReverseLine');
+    var originalLine = document.getElementById('fxOriginalLine');
+    var updatedLine = document.getElementById('fxUpdatedLine');
+
+    CURRENCIES.forEach(function(c) {
+      var o1 = document.createElement('option');
+      o1.value = c.code;
+      o1.textContent = c.code + ' — ' + c.name;
+      fromSelect.appendChild(o1);
+      var o2 = document.createElement('option');
+      o2.value = c.code;
+      o2.textContent = c.code + ' — ' + c.name;
+      toSelect.appendChild(o2);
+    });
+    fromSelect.value = 'USD';
+    toSelect.value = 'EUR';
+
+    var rates = null;
+    var ratesUpdated = '';
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    function trimNum(v, decimals) {
+      return parseFloat(v.toFixed(decimals));
+    }
+
+    function formatNum(v) {
+      if (v === 0) return '0';
+      var r = Math.abs(v) < 0.01 ? trimNum(v, 6) : trimNum(v, 2);
+      return r.toLocaleString('en-US', { maximumFractionDigits: 6 });
+    }
+
+    function formatRate(v) {
+      return trimNum(v, 6).toLocaleString('en-US', { maximumFractionDigits: 6 });
+    }
+
+    function compute(amount, from, to, r) {
+      if (from === to) return amount;
+      return amount * (r[to] / r[from]);
+    }
+
+    // Exposed for testing: pure math + loader hooks.
+    window.fxCompute = compute;
+    window.fxFormatNum = formatNum;
+    window.fxFormatRate = formatRate;
+    window.fxCurrencies = CURRENCIES;
+    window.fxGetRates = function() { return rates; };
+    window.fxSetRates = function(r, updated) { rates = r; ratesUpdated = updated || ''; };
+
+    async function loadRates() {
+      if (loadingBox) loadingBox.style.display = 'block';
+      hideError();
+      var endpoints = [
+        'https://open.er-api.com/v6/latest/USD',
+        'https://api.exchangerate-api.com/v4/latest/USD'
+      ];
+      for (var i = 0; i < endpoints.length; i++) {
+        try {
+          var res = await fetch(endpoints[i]);
+          if (!res.ok) continue;
+          var data = await res.json();
+          if (data && data.rates && typeof data.rates.USD === 'number') {
+            rates = data.rates;
+            ratesUpdated = data.time_last_update_utc || data.date || '';
+            if (loadingBox) loadingBox.style.display = 'none';
+            if (convertBtn) convertBtn.disabled = false;
+            fxConvert();
+            return true;
+          }
+        } catch (e) {
+          // Try the next source.
+        }
+      }
+      if (loadingBox) loadingBox.style.display = 'none';
+      showError('Could not load live exchange rates. Please check your internet connection and try again.');
+      return false;
+    }
+    window.fxLoadRates = loadRates;
+
+    function fxConvert() {
+      hideError();
+      if (!rates) {
+        showError('Exchange rates are still loading. Please wait a moment and try again.');
+        return;
+      }
+      var amount = parseFloat(amountInput.value);
+      if (isNaN(amount) || amount <= 0) {
+        showError('Please enter a valid amount greater than zero.');
+        if (resultsBox) resultsBox.style.display = 'none';
+        return;
+      }
+      var from = fromSelect.value;
+      var to = toSelect.value;
+      var result = compute(amount, from, to, rates);
+      var rate = from === to ? 1 : rates[to] / rates[from];
+      var rev = from === to ? 1 : rates[from] / rates[to];
+      resultValue.textContent = formatNum(result) + ' ' + to;
+      rateLine.textContent = '1 ' + from + ' = ' + formatRate(rate) + ' ' + to;
+      reverseLine.textContent = '1 ' + to + ' = ' + formatRate(rev) + ' ' + from;
+      originalLine.textContent = formatNum(amount) + ' ' + from;
+      updatedLine.textContent = ratesUpdated ? ratesUpdated : '-';
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', formatNum(amount) + ' ' + from + ' = ' + formatNum(result) + ' ' + to + ' (1 ' + from + ' = ' + formatRate(rate) + ' ' + to + ')');
+      }
+      if (resultsBox) resultsBox.style.display = 'block';
+    }
+    window.fxConvert = fxConvert;
+
+    window.fxSwap = function() {
+      var t = fromSelect.value;
+      fromSelect.value = toSelect.value;
+      toSelect.value = t;
+      if (rates) fxConvert();
+    };
+
+    window.fxReset = function() {
+      amountInput.value = '100';
+      fromSelect.value = 'USD';
+      toSelect.value = 'EUR';
+      hideError();
+      if (resultsBox) resultsBox.style.display = 'none';
+      if (rates) fxConvert();
+    };
+
+    if (swapBtn) swapBtn.addEventListener('click', window.fxSwap);
+    if (resetBtn) resetBtn.addEventListener('click', window.fxReset);
+    if (convertBtn) convertBtn.addEventListener('click', fxConvert);
+    if (amountInput) {
+      amountInput.addEventListener('input', function() { if (rates) fxConvert(); });
+      amountInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') fxConvert(); });
+    }
+    if (fromSelect) fromSelect.addEventListener('change', function() { if (rates) fxConvert(); });
+    if (toSelect) toSelect.addEventListener('change', function() { if (rates) fxConvert(); });
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Conversion summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy summary:', txt);
+          });
+        }
+      });
+    }
+
+    loadRates();
+  })();
+  </script>
+</body>
+</html>

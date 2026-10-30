@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Divisas - Tipos de Cambio en Vivo para más de 40 Monedas | OmniTools</title>
+  <meta name="description" content="Convierte divisas con tipos de cambio en vivo. USD, EUR, GBP, PKR, INR y más de 40 monedas del mundo con resultados instantáneos, tipos cruzados y la fecha de la última actualización.">
+  <meta name="keywords" content="conversor de divisas, tipos de cambio en vivo, usd a eur, usd a pkr, eur a gbp, conversor de monedas, tipo de cambio hoy, calculadora de divisas">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/currency-converter.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/currency-converter.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html">
+  <meta property="og:title" content="Conversor de Divisas - Tipos de Cambio en Vivo">
+  <meta property="og:description" content="Convierte más de 40 monedas del mundo con tipos de cambio en vivo, tipos cruzados y resultados instantáneos. 100% gratis.">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-currency-converter.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Conversor de Divisas | OmniTools">
+  <meta name="twitter:description" content="Conversión de divisas en vivo para más de 40 monedas del mundo con resultados instantáneos.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Conversor de Divisas",
+    "url": "https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html",
+    "applicationCategory": "FinancialApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Convierte divisas con tipos de cambio en vivo para más de 40 monedas del mundo, con tipos cruzados y la fecha de la última actualización.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://janhazirr7.github.io/allinone/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Finance",
+        "item": "https://janhazirr7.github.io/allinone/#finance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Conversor de Divisas",
+        "item": "https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿De dónde vienen los tipos de cambio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los tipos se obtienen en vivo del servicio gratuito ExchangeRate-API (open.er-api.com) cada vez que se carga la página, con exchangerate-api.com como fuente de respaldo. La página siempre muestra la fecha de la tabla de tipos que está usando, para que veas exactamente lo actualizados que están los números."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Los tipos son realmente en vivo o están guardados en la página?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Son en vivo. Ningún tipo de cambio está guardado en la página. Cada visita descarga la tabla de tipos publicada más reciente, y si las dos fuentes de tipos no están disponibles, el conversor muestra un error y no convierte nada, en lugar de mostrar un número desactualizado o inventado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se calcula una conversión entre dos monedas que no son el dólar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Todos los tipos se publican tomando el dólar estadounidense como base. Para convertir de una moneda a otra, el conversor divide el tipo en dólares de la moneda destino entre el tipo en dólares de la moneda origen y lo multiplica por tu cantidad. Por ejemplo, de EUR a GBP se usa el tipo GBP por USD dividido entre el tipo EUR por USD."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué mi banco o mi tarjeta muestran un tipo diferente?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Este conversor muestra tipos medios de mercado, el tipo de referencia que los bancos usan entre sí. Los bancos, las redes de tarjetas y las casas de cambio añaden un margen y a menudo una comisión, por lo que el tipo que realmente recibes suele ser un poco peor que el tipo medio que se muestra aquí."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Mi cantidad o mis datos personales se envían a algún sitio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Tu cantidad se convierte localmente en tu navegador. Lo único que se descarga es la tabla pública de tipos de cambio; tu cantidad, y las monedas que eliges, nunca se envían a ningún servidor."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Todas las herramientas</a></li>
+          <li><a href="../age-calculator.html">Calc. de edad</a></li>
+          <li><a href="../bmi-calculator.html">IMC</a></li>
+          <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+          <li><a href="../about.html">Acerca de</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="../currency-converter.html" class="lang-btn" title="English">EN</a>
+          <a href="conversor-de-divisas.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#finance">Finance</a></li>
+          <li aria-current="page">Conversor de Divisas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Conversor de Divisas en Vivo</h1>
+        <p class="tool-header-desc">
+          Convierte más de 40 monedas del mundo con tipos de cambio en vivo. Los tipos se obtienen frescos en cada visita, así que siempre ves los números de hoy, nunca una tabla desactualizada.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+
+          <div class="widget-form-grid">
+            <!-- Amount -->
+            <div class="form-group">
+              <label for="fxAmount" class="form-label">
+                <span>Cantidad</span>
+                <span class="label-hint">Obligatorio</span>
+              </label>
+              <input type="number" id="fxAmount" class="form-input" placeholder="p. ej. 100" min="0" step="any" value="100">
+              <span class="form-help">Escribe cualquier cantidad positiva</span>
+            </div>
+
+            <!-- From / Swap / To -->
+            <div style="display: flex; gap: 0.5rem; align-items: flex-end;">
+              <div class="form-group" style="flex: 1;">
+                <label for="fxFrom" class="form-label">
+                  <span>De</span>
+                </label>
+                <select id="fxFrom" class="form-select"></select>
+                <span class="form-help">La moneda que tienes</span>
+              </div>
+              <button type="button" id="fxSwapBtn" class="btn btn-outline" title="Intercambiar monedas" style="margin-bottom: 1.5rem;">⇄</button>
+              <div class="form-group" style="flex: 1;">
+                <label for="fxTo" class="form-label">
+                  <span>A</span>
+                </label>
+                <select id="fxTo" class="form-select"></select>
+                <span class="form-help">La moneda que quieres</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Loading State -->
+          <div id="fxLoadingBox" style="display: none; background: var(--bg-surface); color: var(--text-main); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent); margin: 1rem 0 0; font-size: 0.875rem; font-weight: 500;">
+            Cargando tipos de cambio en vivo…
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="fxErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="fxConvertBtn" class="btn btn-primary" onclick="fxConvert()" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+              </svg>
+              Convertir
+            </button>
+            <button type="button" id="fxResetBtn" class="btn btn-outline" onclick="fxReset()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Restablecer
+            </button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="fxResultsBox" class="results-box" style="display: none;">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Resultado de la Conversión
+              </span>
+              <button type="button" id="fxCopyBtn" class="btn btn-outline btn-sm" title="Copiar resumen del resultado">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar Resumen
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card: Converted Amount -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Cantidad Convertida</div>
+              <div class="hero-result-value" id="fxResultValue">-</div>
+              <div class="hero-result-sub" id="fxRateLine">-</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="fxReverseLine">-</div>
+                <div class="metric-label">Tipo Inverso</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="fxOriginalLine">-</div>
+                <div class="metric-label">Cantidad Original</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="fxUpdatedLine" style="color: var(--accent);">-</div>
+                <div class="metric-label">Tipos Actualizados el</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calculadoras Relacionadas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="../compound-interest-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Interés Compuesto <span>→</span></a></li>
+            <li><a href="../percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Porcentaje <span>→</span></a></li>
+            <li><a href="../loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Préstamos EMI <span>→</span></a></li>
+            <li><a href="../discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Descuentos <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar el Conversor de Divisas de OmniTools
+        </h2>
+        <p class="content-paragraph">
+          Ya sea que envíes dinero a tu familia en otro país, compres en una tienda internacional por internet o prepares el presupuesto de unas vacaciones, necesitas un número honesto: cuánto vale tu dinero en otra moneda justo ahora. El Conversor de Divisas de OmniTools te da exactamente eso, con tipos de cambio obtenidos en vivo en cada visita:
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Espera a que carguen los tipos</strong>
+              Al abrir la página se descarga la tabla de tipos publicada más reciente. El botón Convertir se activa en cuanto llegan los tipos, y la página muestra la fecha de la tabla que está usando.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Escribe la cantidad</strong>
+              Escribe la cantidad que quieres convertir, por ejemplo <code>100</code>. Los decimales también valen, así que puedes convertir <code>49.99</code> con la misma facilidad.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Elige las monedas</strong>
+              Elige la moneda que tienes en la casilla "De" y la moneda que quieres en la casilla "A". El botón de flechas entre ellas las intercambia al instante.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Lee el resultado</strong>
+              La cantidad convertida aparece de inmediato, junto con el tipo exacto usado en ambas direcciones, por ejemplo "1 USD = 0,92 EUR" y "1 EUR = 1,09 USD", para que puedas comprobar la cuenta de un vistazo. Usa "Copiar Resumen" para copiar el resultado como texto plano.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 2: How Exchange Rates Work -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          Cómo Funcionan los Tipos de Cambio y la Fórmula que Usa este Conversor
+        </h2>
+        <p class="content-paragraph">
+          Un tipo de cambio es simplemente el precio de una moneda expresado en otra. Si 1 dólar estadounidense compra 0,92 euros, el tipo de USD a EUR es 0,92. Los tipos se mueven sin parar porque las monedas se negocian todo el día en el mercado mundial de divisas, impulsadas por los tipos de interés, la inflación, los flujos comerciales y las grandes noticias. Por eso un tipo impreso en un libro o guardado dentro de una página web queda desactualizado en un día, y por eso este conversor nunca guarda un tipo, sino que descarga una tabla fresca en cada visita.
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Resultado = Cantidad × ( Tipo[Destino] / Tipo[Origen] )
+          </div>
+          <div class="formula-explanation">
+            Donde:<br>
+            • <strong>Tipo[Destino]</strong> = unidades de la moneda destino por 1 USD<br>
+            • <strong>Tipo[Origen]</strong> = unidades de la moneda origen por 1 USD<br>
+            • Todos los tipos publicados usan el dólar estadounidense como moneda base<br><br>
+            <strong>Ejemplo:</strong> convertir 100 EUR a GBP cuando 1 USD = 0,92 EUR y 1 USD = 0,79 GBP:<br>
+            Resultado = 100 × (0,79 / 0,92) = <strong>85,87 GBP</strong>
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          Este método de "tipo cruzado" es el que usan todos los conversores profesionales para los pares que no se cotizan directamente entre sí. Convertir a través del dólar estadounidense mantiene coherentes entre sí a las más de 40 monedas, de modo que convertir dólares a euros y luego euros de vuelta a dólares te devuelve (casi exactamente) tu cantidad inicial, salvo el redondeo.
+        </p>
+      </section>
+
+      <!-- Section 3: Worked Examples -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Ejemplos Resueltos que Puedes Probar Ahora Mismo
+        </h2>
+        <p class="content-paragraph">
+          Prueba estos ejemplos en el conversor y comprueba que obtienes las mismas respuestas. Las cifras exactas variarán un poco a medida que se mueven los tipos en vivo, pero el método es idéntico:
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
+          <li><strong>Dinero para vacaciones:</strong> 500 USD a EUR a 0,92 dan 500 × 0,92 = <strong>460 EUR</strong>. Ese es tu dinero para gastar antes de cualquier comisión de cambio.</li>
+          <li><strong>Enviar dinero a casa:</strong> 200 USD a PKR a 278,50 dan 200 × 278,50 = <strong>55.700 PKR</strong>.</li>
+          <li><strong>Comprar en el extranjero:</strong> una chaqueta que cuesta 80 GBP, convertida a USD cuando 1 USD = 0,79 GBP, cuesta 80 / 0,79 = <strong>101,27 USD</strong>.</li>
+          <li><strong>Misma moneda:</strong> convertir USD a USD siempre devuelve la cantidad sin cambios, lo que sirve para comprobar rápidamente que el conversor funciona.</li>
+        </ul>
+        <p class="content-paragraph">
+          Fíjate bien en el último ejemplo: dividir por el mismo tipo siempre da uno, así que el resultado es exactamente la cantidad inicial. Si un conversor cambia alguna vez el número en una conversión de la misma moneda, sus matemáticas están mal.
+        </p>
+      </section>
+
+      <!-- Section 4: Tips and Common Mistakes -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          Consejos y Errores Frecuentes que Debes Evitar
+        </h2>
+        <p class="content-paragraph">
+          Primero, recuerda que el tipo que se muestra aquí es el tipo medio de mercado, el tipo de referencia que los bancos usan entre sí. El tipo que realmente recibes de un banco, de una red de tarjetas o de una casa de cambio casi siempre es un poco peor, porque el proveedor añade un margen y a menudo una comisión fija. Al comparar proveedores, compara siempre la cantidad final que llega a la otra cuenta, no el tipo anunciado. Segundo, ten cuidado con las ofertas de "sin comisión": el coste suele estar escondido dentro de un tipo de cambio peor, en lugar de cobrarse como una comisión visible. Tercero, si conviertes una cantidad muy pequeña, el redondeo importa: este conversor conserva hasta seis decimales en los resultados diminutos para que convertir una fracción de un yen o de un centavo no se convierta en silencio en cero. Por último, nunca confíes en un conversor que no te dice la fecha de sus tipos. Si una página no muestra ninguna fecha de actualización, sus números pueden tener días o meses de antigüedad, y para cantidades grandes incluso una pequeña diferencia es dinero real. Esta página siempre muestra la fecha de sus tipos justo debajo del resultado.
+        </p>
+        <p class="content-paragraph">
+          Para cálculos de dinero relacionados, prueba la Calculadora de Interés Compuesto de OmniTools para ver cómo crecen tus ahorros con el tiempo, o la Calculadora de Porcentaje cuando una comisión se expresa como un porcentaje de la cantidad. Todas estas herramientas son gratuitas, funcionan por completo en tu navegador y nunca guardan tus números.
+        </p>
+      </section>
+
+      <!-- Section 5: FAQs -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          Preguntas Frecuentes (FAQs)
+        </h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">¿De dónde vienen los tipos de cambio?</summary>
+            <div class="faq-answer">
+              Los tipos se obtienen en vivo del servicio gratuito ExchangeRate-API (open.er-api.com) cada vez que se carga la página, con exchangerate-api.com como fuente de respaldo. La página siempre muestra la fecha de la tabla de tipos que está usando, para que veas exactamente lo actualizados que están los números.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Los tipos son realmente en vivo o están guardados en la página?</summary>
+            <div class="faq-answer">
+              Son en vivo. Ningún tipo de cambio está guardado en la página. Cada visita descarga la tabla de tipos publicada más reciente, y si las dos fuentes de tipos no están disponibles, el conversor muestra un error y no convierte nada, en lugar de mostrar un número desactualizado o inventado.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Cómo se calcula una conversión entre dos monedas que no son el dólar?</summary>
+            <div class="faq-answer">
+              Todos los tipos se publican tomando el dólar estadounidense como base. Para convertir de una moneda a otra, el conversor divide el tipo en dólares de la moneda destino entre el tipo en dólares de la moneda origen y lo multiplica por tu cantidad. Por ejemplo, de EUR a GBP se usa el tipo GBP por USD dividido entre el tipo EUR por USD.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Por qué mi banco o mi tarjeta muestran un tipo diferente?</summary>
+            <div class="faq-answer">
+              Este conversor muestra tipos medios de mercado, el tipo de referencia que los bancos usan entre sí. Los bancos, las redes de tarjetas y las casas de cambio añaden un margen y a menudo una comisión, por lo que el tipo que realmente recibes suele ser un poco peor que el tipo medio que se muestra aquí.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Mi cantidad o mis datos personales se envían a algún sitio?</summary>
+            <div class="faq-answer">
+              No. Tu cantidad se convierte localmente en tu navegador. Lo único que se descarga es la tabla pública de tipos de cambio; tu cantidad, y las monedas que eliges, nunca se envían a ningún servidor.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="../index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece calculadoras y utilidades en línea gratuitas, ligeras y centradas en la privacidad para finanzas, productividad y educación.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="../age-calculator.html">Calculadora de Edad</a></li>
+            <li><a href="../bmi-calculator.html">IMC</a></li>
+            <li><a href="../loan-calculator.html">Préstamo EMI</a></li>
+            <li><a href="../password-generator.html">Generador de Contraseñas</a></li>
+            <li><a href="../word-counter.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="../percentage-calculator.html">Calculadora de Porcentaje</a></li>
+            <li><a href="../discount-calculator.html">Calculadora de Descuentos</a></li>
+            <li><a href="../unit-converter.html">Conversor de Unidades</a></li>
+            <li><a href="../date-calculator.html">Diferencia de Fechas</a></li>
+            <li><a href="../case-converter.html">Conversor de Mayúsculas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Info</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Acerca de</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades gratuitas en línea para todos.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../currency-converter.html">English</a> |
+          <a href="conversor-de-divisas.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (live rates via ExchangeRate-API only) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var CURRENCIES = [
+      { code: 'USD', name: 'Dólar estadounidense' },
+      { code: 'EUR', name: 'Euro' },
+      { code: 'GBP', name: 'Libra esterlina' },
+      { code: 'CHF', name: 'Franco suizo' },
+      { code: 'CAD', name: 'Dólar canadiense' },
+      { code: 'AUD', name: 'Dólar australiano' },
+      { code: 'NZD', name: 'Dólar neozelandés' },
+      { code: 'JPY', name: 'Yen japonés' },
+      { code: 'CNY', name: 'Yuan chino' },
+      { code: 'INR', name: 'Rupia india' },
+      { code: 'PKR', name: 'Rupia pakistaní' },
+      { code: 'BDT', name: 'Taka bangladesí' },
+      { code: 'AED', name: 'Dírham de EAU' },
+      { code: 'SAR', name: 'Riyal saudí' },
+      { code: 'QAR', name: 'Riyal catarí' },
+      { code: 'KWD', name: 'Dinar kuwaití' },
+      { code: 'BHD', name: 'Dinar bareiní' },
+      { code: 'OMR', name: 'Rial omaní' },
+      { code: 'TRY', name: 'Lira turca' },
+      { code: 'BRL', name: 'Real brasileño' },
+      { code: 'MXN', name: 'Peso mexicano' },
+      { code: 'ZAR', name: 'Rand sudafricano' },
+      { code: 'RUB', name: 'Rublo ruso' },
+      { code: 'KRW', name: 'Won surcoreano' },
+      { code: 'SGD', name: 'Dólar de Singapur' },
+      { code: 'HKD', name: 'Dólar de Hong Kong' },
+      { code: 'THB', name: 'Baht tailandés' },
+      { code: 'MYR', name: 'Ringgit malasio' },
+      { code: 'IDR', name: 'Rupia indonesia' },
+      { code: 'PHP', name: 'Peso filipino' },
+      { code: 'VND', name: 'Dong vietnamita' },
+      { code: 'EGP', name: 'Libra egipcia' },
+      { code: 'NGN', name: 'Naira nigeriana' },
+      { code: 'KES', name: 'Chelín keniano' },
+      { code: 'PLN', name: 'Zloty polaco' },
+      { code: 'SEK', name: 'Corona sueca' },
+      { code: 'NOK', name: 'Corona noruega' },
+      { code: 'DKK', name: 'Corona danesa' },
+      { code: 'CZK', name: 'Corona checa' },
+      { code: 'HUF', name: 'Forinto húngaro' },
+      { code: 'ILS', name: 'Séquel israelí' },
+      { code: 'UAH', name: 'Grivna ucraniana' }
+    ];
+
+    var amountInput = document.getElementById('fxAmount');
+    var fromSelect = document.getElementById('fxFrom');
+    var toSelect = document.getElementById('fxTo');
+    var swapBtn = document.getElementById('fxSwapBtn');
+    var convertBtn = document.getElementById('fxConvertBtn');
+    var resetBtn = document.getElementById('fxResetBtn');
+    var copyBtn = document.getElementById('fxCopyBtn');
+    var resultsBox = document.getElementById('fxResultsBox');
+    var errorBox = document.getElementById('fxErrorBox');
+    var loadingBox = document.getElementById('fxLoadingBox');
+    var resultValue = document.getElementById('fxResultValue');
+    var rateLine = document.getElementById('fxRateLine');
+    var reverseLine = document.getElementById('fxReverseLine');
+    var originalLine = document.getElementById('fxOriginalLine');
+    var updatedLine = document.getElementById('fxUpdatedLine');
+
+    CURRENCIES.forEach(function(c) {
+      var o1 = document.createElement('option');
+      o1.value = c.code;
+      o1.textContent = c.code + ' — ' + c.name;
+      fromSelect.appendChild(o1);
+      var o2 = document.createElement('option');
+      o2.value = c.code;
+      o2.textContent = c.code + ' — ' + c.name;
+      toSelect.appendChild(o2);
+    });
+    fromSelect.value = 'USD';
+    toSelect.value = 'EUR';
+
+    var rates = null;
+    var ratesUpdated = '';
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    function trimNum(v, decimals) {
+      return parseFloat(v.toFixed(decimals));
+    }
+
+    function formatNum(v) {
+      if (v === 0) return '0';
+      var r = Math.abs(v) < 0.01 ? trimNum(v, 6) : trimNum(v, 2);
+      return r.toLocaleString('es-ES', { maximumFractionDigits: 6 });
+    }
+
+    function formatRate(v) {
+      return trimNum(v, 6).toLocaleString('es-ES', { maximumFractionDigits: 6 });
+    }
+
+    function compute(amount, from, to, r) {
+      if (from === to) return amount;
+      return amount * (r[to] / r[from]);
+    }
+
+    // Exposed for testing: pure math + loader hooks.
+    window.fxCompute = compute;
+    window.fxFormatNum = formatNum;
+    window.fxFormatRate = formatRate;
+    window.fxCurrencies = CURRENCIES;
+    window.fxGetRates = function() { return rates; };
+    window.fxSetRates = function(r, updated) { rates = r; ratesUpdated = updated || ''; };
+
+    async function loadRates() {
+      if (loadingBox) loadingBox.style.display = 'block';
+      hideError();
+      var endpoints = [
+        'https://open.er-api.com/v6/latest/USD',
+        'https://api.exchangerate-api.com/v4/latest/USD'
+      ];
+      for (var i = 0; i < endpoints.length; i++) {
+        try {
+          var res = await fetch(endpoints[i]);
+          if (!res.ok) continue;
+          var data = await res.json();
+          if (data && data.rates && typeof data.rates.USD === 'number') {
+            rates = data.rates;
+            ratesUpdated = data.time_last_update_utc || data.date || '';
+            if (loadingBox) loadingBox.style.display = 'none';
+            if (convertBtn) convertBtn.disabled = false;
+            fxConvert();
+            return true;
+          }
+        } catch (e) {
+          // Try the next source.
+        }
+      }
+      if (loadingBox) loadingBox.style.display = 'none';
+      showError('No se pudieron cargar los tipos de cambio en vivo. Comprueba tu conexión a internet e inténtalo de nuevo.');
+      return false;
+    }
+    window.fxLoadRates = loadRates;
+
+    function fxConvert() {
+      hideError();
+      if (!rates) {
+        showError('Los tipos de cambio aún se están cargando. Espera un momento e inténtalo de nuevo.');
+        return;
+      }
+      var amount = parseFloat(amountInput.value);
+      if (isNaN(amount) || amount <= 0) {
+        showError('Escribe una cantidad válida mayor que cero.');
+        if (resultsBox) resultsBox.style.display = 'none';
+        return;
+      }
+      var from = fromSelect.value;
+      var to = toSelect.value;
+      var result = compute(amount, from, to, rates);
+      var rate = from === to ? 1 : rates[to] / rates[from];
+      var rev = from === to ? 1 : rates[from] / rates[to];
+      resultValue.textContent = formatNum(result) + ' ' + to;
+      rateLine.textContent = '1 ' + from + ' = ' + formatRate(rate) + ' ' + to;
+      reverseLine.textContent = '1 ' + to + ' = ' + formatRate(rev) + ' ' + from;
+      originalLine.textContent = formatNum(amount) + ' ' + from;
+      updatedLine.textContent = ratesUpdated ? ratesUpdated : '-';
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', formatNum(amount) + ' ' + from + ' = ' + formatNum(result) + ' ' + to + ' (1 ' + from + ' = ' + formatRate(rate) + ' ' + to + ')');
+      }
+      if (resultsBox) resultsBox.style.display = 'block';
+    }
+    window.fxConvert = fxConvert;
+
+    window.fxSwap = function() {
+      var t = fromSelect.value;
+      fromSelect.value = toSelect.value;
+      toSelect.value = t;
+      if (rates) fxConvert();
+    };
+
+    window.fxReset = function() {
+      amountInput.value = '100';
+      fromSelect.value = 'USD';
+      toSelect.value = 'EUR';
+      hideError();
+      if (resultsBox) resultsBox.style.display = 'none';
+      if (rates) fxConvert();
+    };
+
+    if (swapBtn) swapBtn.addEventListener('click', window.fxSwap);
+    if (resetBtn) resetBtn.addEventListener('click', window.fxReset);
+    if (convertBtn) convertBtn.addEventListener('click', fxConvert);
+    if (amountInput) {
+      amountInput.addEventListener('input', function() { if (rates) fxConvert(); });
+      amountInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') fxConvert(); });
+    }
+    if (fromSelect) fromSelect.addEventListener('change', function() { if (rates) fxConvert(); });
+    if (toSelect) toSelect.addEventListener('change', function() { if (rates) fxConvert(); });
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Resumen de la conversión copiado al portapapeles!');
+          }).catch(function() {
+            prompt('Copiar resumen:', txt);
+          });
+        }
+      });
+    }
+
+    loadRates();
+  })();
+  </script>
+</body>
+</html>
