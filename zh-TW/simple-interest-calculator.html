@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>單利計算器 - 利息和總額 | OmniTools</title>
+  <meta name="description" content="立即計算單利：利息金額、應還款總額以及根據本金、利率和時間計算的每年利息。免費且私密。">
+  <meta name="keywords" content="單利計算器，單利公式計算器，計算單利，貸款利息計算器，本金利息計算器">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://janhazirr7.github.io/allinone/zh-TW/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-interes-simple.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/simple-interest-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/simple-interest-calculator.html">
+
+  
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/zh-TW/simple-interest-calculator.html">
+  <meta property="og:title" content="簡單利息計算器 | OmniTools">
+  <meta property="og:description" content="立即計算單利：利息金額、應還款總額以及根據本金、利率和時間計算的每年利息。免費且私密。">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-simple-interest-calculator.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="簡單利息計算器 | OmniTools">
+  <meta name="twitter:description" content="立即計算單利：利息金額、應還款總額以及根據本金、利率和時間計算的每年利息。免費且私密。">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools 單利計算器",
+  "url": "https://janhazirr7.github.io/allinone/zh-TW/simple-interest-calculator.html",
+  "applicationCategory": "金融應用",
+  "operatingSystem": "All",
+  "browserRequirements": "需要 JavaScript。需要 HTML5。",
+  "description": "立即計算單利：利息金額、應還款總額以及根據本金、利率和時間計算的每年利息。免費且私密。",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "zh-TW"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "家",
+      "item": "https://janhazirr7.github.io/allinone/zh-TW/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "金融",
+      "item": "https://janhazirr7.github.io/allinone/zh-TW/#finance"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "單利計算器",
+      "item": "https://janhazirr7.github.io/allinone/zh-TW/simple-interest-calculator.html"
+    }
+  ],
+  "inLanguage": "zh-TW"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "什麼是單利？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "單利是指僅以原始本金計算的利息。它每年都保持不變，因為它從不包括前幾年賺取的利息，這使得預測和驗證變得容易。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "什麼是單利公式？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "利息等於本金乘以利率乘以時間，再除以 100：I = (P × R × T) / 100。總金額為本金加上利息。例如，10,000 美元，利率為 5%，為期 3 年，利息為 1,500 美元，總計 11,500 美元。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "單利比複利好嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "這取決於你方的交易。對於借款人來說，單利通常更便宜，因為利息不複利。對於儲戶或投資者來說，複利更好，因為收益可以再投資，並且隨著時間的推移增長得更快。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "時間可以是一年的一小部分嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的。時間可以以小數形式輸入，例如 2.5 年，並​​且公式按比例縮放。 10,000 美元的 6 個月利率為 5%，單利為 250 美元，正好是一年的一半。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "我的財務資料是否儲存或傳送到任何地方？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不需要。 OmniTools 完全在您的瀏覽器中運作。您的本金、利率和時間永遠不會傳送到伺服器、儲存在資料庫中或與任何人共享。"
+      }
+    }
+  ],
+  "inLanguage": "zh-TW"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "單利計算器",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "輸入校長",
+      "text": "輸入原始借入或投資金額。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "輸入年利率",
+      "text": "以百分比輸入固定年利率。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "輸入時間（以年為單位）",
+      "text": "輸入貸款或投資的期限（以年為單位）。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "計算",
+      "text": "依計算利息可檢視利息、總額和每年的利息。"
+    }
+  ],
+  "inLanguage": "zh-TW"
+}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools 首頁">
+        <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+      <nav aria-label="主導航">
+        <ul class="nav-links">
+          <li><a href="index.html">所有工具</a></li>
+          <li><a href="age-calculator.html">年齡計算</a></li>
+          <li><a href="bmi-calculator.html">體重指數追蹤器</a></li>
+          <li><a href="loan-calculator.html">貸款EMI</a></li>
+          <li><a href="../about.html">關於</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="選擇語言" onchange="window.location.href=this.value">
+          <option value="../simple-interest-calculator.html">English</option>
+          <option value="../es/calculadora-de-interes-simple.html">Español</option>
+          <option value="../de/simple-interest-calculator.html">Deutsch</option>
+          <option value="../fr/simple-interest-calculator.html">Français</option>
+          <option value="../pt/simple-interest-calculator.html">Português</option>
+          <option value="../it/simple-interest-calculator.html">Italiano</option>
+          <option value="../ru/simple-interest-calculator.html">Русский</option>
+          <option value="../nl/simple-interest-calculator.html">Nederlands</option>
+          <option value="../pl/simple-interest-calculator.html">Polski</option>
+          <option value="../sv/simple-interest-calculator.html">Svenska</option>
+          <option value="../no/simple-interest-calculator.html">Norsk</option>
+          <option value="../da/simple-interest-calculator.html">Dansk</option>
+          <option value="../fi/simple-interest-calculator.html">Suomi</option>
+          <option value="../id/simple-interest-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/simple-interest-calculator.html">Türkçe</option>
+          <option value="../vi/simple-interest-calculator.html">Tiếng Việt</option>
+          <option value="../th/simple-interest-calculator.html">ไทย</option>
+          <option value="../ms/simple-interest-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/simple-interest-calculator.html">Filipino</option>
+          <option value="../hi/simple-interest-calculator.html">हिन्दी</option>
+          <option value="../ur/simple-interest-calculator.html">اردو</option>
+          <option value="../ar/simple-interest-calculator.html">العربية</option>
+          <option value="../fa/simple-interest-calculator.html">فارسی</option>
+          <option value="../he/simple-interest-calculator.html">עברית</option>
+          <option value="../ja/simple-interest-calculator.html">日本語</option>
+          <option value="../ko/simple-interest-calculator.html">한국어</option>
+          <option value="../zh/simple-interest-calculator.html">简体中文</option>
+          <option value="simple-interest-calculator.html" selected>繁體中文</option>
+          <option value="../el/simple-interest-calculator.html">Ελληνικά</option>
+          <option value="../cs/simple-interest-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="切換導航選單" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">家</a></li>
+          <li><a href="index.html#finance">金融</a></li>
+          <li aria-current="page">單利計算器</li>
+        </ul>
+      </div>
+    </div>
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">單利計算器</h1>
+        <p class="tool-header-desc">以簡單的方式計算單利：原始金額的固定百分比乘以年數。在幾秒鐘內獲取利息、總金額和每年的費用。</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="排行榜廣告">
+        <span class="ad-slot-placeholder-text">響應式排行榜廣告 (728x90)</span>
+      </div>
+    </div>
+    <section class="container tool-layout-container">
+      <div>
+        <div class="tool-card-widget">
+<div class="widget-form-grid">
+            <div class="form-group">
+              <label for="siPrincipal" class="form-label"><span>本金 ($)</span><span class="label-hint">必需的</span></label>
+              <input type="number" id="siPrincipal" class="form-input" placeholder="例如10000" min="1" max="100000000" step="100">
+              <span class="form-help">借貸或投資的起始金額</span>
+            </div>
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="siRate" class="form-label"><span>年利率（%）</span><span class="label-hint">年度的 ％</span></label>
+                <input type="number" id="siRate" class="form-input" placeholder="例如5" min="0" max="50" step="0.1">
+                <span class="form-help">固定年利率，不複利</span>
+              </div>
+              <div class="form-group">
+                <label for="siYears" class="form-label"><span>時段（年）</span><span class="label-hint">期間</span></label>
+                <input type="number" id="siYears" class="form-input" placeholder="例如3" min="0.1" max="50" step="0.5">
+                <span class="form-help">貸款或投資的期限（以年為單位）</span>
+              </div>
+            </div>
+          </div>
+          <div id="siErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+          <div class="widget-actions">
+            <button type="button" class="btn btn-primary" onclick="calculateSimple()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path></svg> 計算利息</button>
+            <button type="button" class="btn btn-outline" onclick="resetSimple()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg> 重置</button>
+          </div>
+          <div id="siResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title"><svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> 簡單利息細目</span>
+              <button type="button" id="siCopyBtn" class="btn btn-outline btn-sm" title="複製結果摘要"><svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> 複製摘要</button>
+            </div>
+            <div class="hero-result-card">
+              <div class="hero-result-label">總額（本金+利息）</div>
+              <div class="hero-result-value" id="siTotalValue">$0.00</div>
+              <div class="hero-result-sub">最後償還或收到的金額</div>
+            </div>
+            <div class="metrics-grid">
+              <div class="metric-card"><div class="metric-value" id="siInterestValue" style="color: #d97706;">$0.00</div><div class="metric-label">利息金額</div></div>
+              <div class="metric-card"><div class="metric-value" id="siPrincipalValue">$0.00</div><div class="metric-label">主要的</div></div>
+              <div class="metric-card"><div class="metric-value" id="siYearlyValue">$0.00</div><div class="metric-label">每年利息</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="側邊欄廣告">
+          <span class="ad-slot-placeholder-text">側邊欄矩形 (300x250)</span>
+        </div>
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">相關計算器</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="compound-interest-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">複利計算器 <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">貸款 EMI 計算器 <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">百分比計算器 <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">折扣計算器 <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="文章內廣告">
+        <span class="ad-slot-placeholder-text">響應式內容橫幅 (728x90 / 300x250)</span>
+      </div>
+    </div>
+    <article class="container educational-content">
+<section class="content-section">
+        <h2 class="content-heading">如何使用單利計算器</h2>
+        <p class="content-paragraph">單利是最直接的利息計算方式：原始金額的固定百分比乘以年數。這是許多短期貸款、一些汽車貸款和基本儲蓄產品所使用的方法，也是最容易手動檢查的利息計算方法。計算器可以立即計算並顯示每年的利息，因此您可以準確地瞭解每年的成本或收入。</p>
+        <ol class="step-list">
+          <li class="step-item"><div class="step-item-content"><strong>輸入校長</strong>輸入原始借入或投資金額，例如 10000。</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>輸入年利率</strong>輸入每年的百分比，例如 5 表示百分之五。在單利計算中，利率在整個期間內保持固定。</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>輸入時間（以年為單位）</strong>輸入持續時間，例如 3 表示三年。接受半年值，例如 2.5。</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>計算</strong>依計算利息可檢視利息金額、應付或應收總額以及每年收取或賺取的利息。</div></li>
+        </ol>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">簡單利息公式解釋</h2>
+        <p class="content-paragraph">與複利不同，單利本身永遠不會產生利息。每年花費的金額完全相同，因為計算總是會回到原始本金。這種可預測性是它的主要優勢：借款人從第一天起就知道每年的費用是多少，並且隨著餘額的變化而不會出現意外。</p>
+        <div class="formula-box">
+          <div class="formula-expression">利息 = (P × R × T) / 100</div>
+          <div class="formula-explanation">在哪裡：<br>• <strong>磷</strong> = 本金，原始金額<br>• <strong>右</strong> = 年利率百分比<br>• <strong>時間</strong> = 時間（以年為單位）<br>• <strong>總金額</strong> = P + 利息<br>• <strong>每年利息</strong> = 利息 / T</div>
+        </div>
+        <p class="content-paragraph">該公式是線性的，這意味著任何一項投入加倍都會使利息加倍：本金的兩倍、利率的兩倍或時間的兩倍都會產生兩倍的利息。這種簡單的比例使得快速比較報價變得容易。如果一個貸方以相同的本金提供 4 年 6% 的利率，而另一個貸方提供 3 年 8% 的利率，則第一個貸方的利息為本金的 24%，而第二個貸方的利息也為 24%，因此僅就利息而言，它們是相同的。</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">工作範例：3 年 10,000 美元，利率 5%</h2>
+        <p class="content-paragraph">以 5% 的簡單年利率借入 10,000 美元，為期 3 年。利息為 ($10,000 × 5 × 3) / 100，等於 1,500 美元。因此，償還總額為 11,500 美元，每年利息為 500 美元。這個結果沒有隱藏任何內容：第一年花費 500 美元，第二年花費 500 美元，第三年花費 500 美元，因為利息總是根據原始的 10,000 美元而不是不斷增長的餘額來計算。</p>
+        <p class="content-paragraph">現在比較複利下的相同投入，其中每年複利的總額為 11,576.25 美元。 76.25 美元的差異在三年內很小，但在較長時間內會迅速增長，這正是貸方和儲戶必須始終檢查產品使用哪種方法的原因。廣告上宣傳的低利率貸款如果按月複利，仍然可能會很昂貴，而利率稍高的單利貸款總體上可能會更便宜。</p>
+        <div class="example-cards-grid">
+          <div class="example-card"><h4 class="example-card-title">1.短期借款</h4><p class="example-card-body">單利在短期個人貸款和一些汽車融資中很常見，貸款人希望有一個可預測、易於解釋的還款計劃，而不需要每月複利。</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. 檢查報價</h4><p class="example-card-body">如果貸方報價的總利息遠高於（本金 × 利率 × 年數）/100，則該產品可能會複利或包含費用。在簽署任何內容之前詢問使用哪種方法。</p></div>
+          <div class="example-card"><h4 class="example-card-title">3.提前還款</h4><p class="example-card-body">對於單利，提前還款通常可以節省乾淨的、成比例的利息，因為剩餘的每一年都會花費相同的固定金額。首先確認沒有提前還款罰款。</p></div>
+        </div>
+        <p class="content-paragraph">請記住，真正的貸款通常會在利息之外新增費用、保險或稅收，因此計算器結果顯示純利息成本。用它來比較不同報價的核心成本，然後新增貸方披露的任何費用以獲得真實的總額。</p>
+      </section>
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          常見問題 (FAQ)
+        </h2>
+        <div class="faq-list">
+<details class="faq-item" open="None">
+            <summary class="faq-question">什麼是單利？</summary>
+            <div class="faq-answer">單利是指僅以原始本金計算的利息。它每年都保持不變，因為它從不包括前幾年賺取的利息，這使得預測和驗證變得容易。</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">什麼是單利公式？</summary>
+            <div class="faq-answer">利息等於本金乘以利率乘以時間，再除以 100：I = (P × R × T) / 100。總金額為本金加上利息。例如，10,000 美元，利率為 5%，為期 3 年，利息為 1,500 美元，總計 11,500 美元。</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">單利比複利好嗎？</summary>
+            <div class="faq-answer">這取決於你方的交易。對於借款人來說，單利通常更便宜，因為利息不複利。對於儲戶或投資者來說，複利更好，因為收益可以再投資，並且隨著時間的推移增長得更快。</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">時間可以是一年的一小部分嗎？</summary>
+            <div class="faq-answer">是的。時間可以以小數形式輸入，例如 2.5 年，並​​且公式按比例縮放。 10,000 美元的 6 個月利率為 5%，單利為 250 美元，正好是一年的一半。</div>
+          </details>
+<details class="faq-item">
+            <summary class="faq-question">我的財務資料是否儲存或傳送到任何地方？</summary>
+            <div class="faq-answer">不需要。 OmniTools 完全在您的瀏覽器中運作。您的本金、利率和時間永遠不會傳送到伺服器、儲存在資料庫中或與任何人共享。</div>
+          </details>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>OmniTools 提供免費、輕量級、注重隱私的線上計算器和實用程式，用於金融、生產力和教育。</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">熱門工具</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">年齡計算器</a></li>
+            <li><a href="bmi-calculator.html">體重指數追蹤器</a></li>
+            <li><a href="loan-calculator.html">貸款 EMI 計算器</a></li>
+            <li><a href="password-generator.html">密碼產生器</a></li>
+            <li><a href="word-counter.html">字數統計器</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">公用事業</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">百分比計算器</a></li>
+            <li><a href="discount-calculator.html">折扣計算器</a></li>
+            <li><a href="unit-converter.html">單位換算</a></li>
+            <li><a href="date-calculator.html">日期差異</a></li>
+            <li><a href="case-converter.html">文字大小寫轉換器</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">法律與資訊</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">關於我們</a></li>
+            <li><a href="../contact.html">聯絡我們</a></li>
+            <li><a href="../privacy-policy.html">隱私權政策</a></li>
+            <li><a href="../terms.html">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools。版權所有。適合所有人的免費線上實用程式。</p>
+        <div class="footer-lang-select">
+          <span>語言：</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script>
+(function() {
+  var mobileToggle = document.querySelector('.mobile-nav-toggle');
+  var navLinks = document.querySelector('.nav-links');
+  if (mobileToggle && navLinks) { mobileToggle.addEventListener('click', function() { navLinks.classList.toggle('active'); }); }
+  var pInput = document.getElementById('siPrincipal');
+  var rInput = document.getElementById('siRate');
+  var tInput = document.getElementById('siYears');
+  var resultsBox = document.getElementById('siResultsBox');
+  var errorBox = document.getElementById('siErrorBox');
+  var copyBtn = document.getElementById('siCopyBtn');
+  [pInput, rInput, tInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateSimple(); }); } });
+  function fmt(v) { return '$' + v.toLocaleString('zh-TW', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  window.computeSimple = function(P, r, t) {
+    var interest = P * r * t / 100;
+    return { interest: interest, total: P + interest };
+  };
+  window.calculateSimple = function() {
+    var P = parseFloat(pInput.value);
+    var r = parseFloat(rInput.value);
+    var t = parseFloat(tInput.value);
+    if (isNaN(P) || isNaN(r) || isNaN(t) || P <= 0 || r < 0 || t <= 0) {
+      showError('請為本金、利率和時間輸入有效的正值。利率可能為 0。');
+      return;
+    }
+    if (P > 100000000) { showError('本金不能超過 100,000,000。'); return; }
+    if (r > 50) { showError('年利率不能超過50%。'); return; }
+    if (t > 50) { showError('時間不能超過50年。'); return; }
+    hideError();
+    var res = computeSimple(P, r, t);
+    document.getElementById('siInterestValue').textContent = fmt(res.interest);
+    document.getElementById('siTotalValue').textContent = fmt(res.total);
+    document.getElementById('siPrincipalValue').textContent = fmt(P);
+    document.getElementById('siYearlyValue').textContent = fmt(res.interest / t);
+    if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', '單利：本金 ' + fmt(P) + ' 在 ' + r + '％ 為了 ' + t + ' 年。興趣： ' + fmt(res.interest) + '， 總金額： ' + fmt(res.total) + '。使用 OmniTools 計算。'); }
+  };
+  window.resetSimple = function() {
+    pInput.value = ''; rInput.value = ''; tInput.value = '';
+    hideError();
+    if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; }
+  };
+  function showError(msg) { if (errorBox) { errorBox.textContent = msg; errorBox.style.display = 'block'; } if (resultsBox) { resultsBox.classList.remove('active'); resultsBox.style.display = 'none'; } }
+  function hideError() { if (errorBox) { errorBox.style.display = 'none'; errorBox.textContent = ''; } }
+  if (copyBtn) { copyBtn.addEventListener('click', function() {
+    var txt = copyBtn.getAttribute('data-summary');
+    if (txt && navigator.clipboard) { navigator.clipboard.writeText(txt).then(function() { alert('簡單的興趣摘要複製到剪貼簿！'); }).catch(function() { prompt('複製摘要：', txt); }); }
+  }); }
+})();
+</script>
+</body>
+</html>

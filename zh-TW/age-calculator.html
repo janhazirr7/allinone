@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>年齡計算器 - 以年、月、日和里程碑為單位的準確年齡</title>
+  <meta name="description" content="計算您的確切年齡（年、月、週、日、小時和分鐘）。包括即將到來的生日倒數計時、星座和 10,000 天里程碑。">
+  <meta name="keywords" content="年齡計算器，準確年齡計算器，從出生日期計算年齡，下一個生日倒數計時，實足年齡計算器，生存天數計算器">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  
+    <link rel="canonical" href="https://janhazirr7.github.io/allinone/zh-TW/age-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/age-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-edad.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/age-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/age-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/age-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/age-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/age-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/age-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/age-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/age-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/age-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/age-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/age-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/age-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/age-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/age-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/age-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/age-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/age-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/age-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/age-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/age-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/age-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/age-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/age-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/age-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/age-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/age-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/age-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/age-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/age-calculator.html">
+
+  
+  
+  
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:url" content="https://janhazirr7.github.io/allinone/zh-TW/age-calculator.html">
+  <meta property="og:title" content="年齡計算器 - 以年、月、日為單位的準確年齡">
+  <meta property="og:description" content="免費線上年齡計算器，包含生日倒數、總生存天數和占星見解。 100% 私人。">
+  <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-age-calculator.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="確切年齡和生日計算器 | OmniTools">
+  <meta name="twitter:description" content="瞭解您的確切年齡（精確到小時和分鐘）、下一個生日倒數計時以及一生的里程碑。">
+
+  
+  <link rel="stylesheet" href="../style.css">
+
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools 年齡計算器",
+  "url": "https://janhazirr7.github.io/allinone/zh-TW/age-calculator.html",
+  "applicationCategory": "實用程式應用程式",
+  "operatingSystem": "All",
+  "browserRequirements": "需要 JavaScript。需要 HTML5。",
+  "description": "以年、月、日、小時和分鐘為單位計算準確的年齡，並具有閏年精度。",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "zh-TW"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "家",
+      "item": "https://janhazirr7.github.io/allinone/zh-TW/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "日期和時間",
+      "item": "https://janhazirr7.github.io/allinone/zh-TW/#date"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "年齡計算器",
+      "item": "https://janhazirr7.github.io/allinone/zh-TW/age-calculator.html"
+    }
+  ],
+  "inLanguage": "zh-TW"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "這個計算器如何計算閏年？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "我們的計算引擎會評估您生命週期內每個日曆月的確切天數，包括閏年期間有 29 天的二月。在藉款計算中，它專門檢查該年份的前一個日曆月。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "我可以計算某人未來或過去的年齡嗎？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "是的。預設情況下，工具計算相對於目前本地日期的年齡。但是，您可以在「截至日期」欄位中自由選擇任何過去或未來的日期，以檢視歷史年齡或未來年齡預測。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "什麼是黃金生日？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "黃金生日（也稱為盛大生日、幸運生日或香檳生日）是指您達到出生日期的確切年齡的那一年。例如，如果您出生於 7 月 14 日，那麼您的黃金生日就是您 14 歲時。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "我的出生日期是否儲存在任何伺服器上？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "絕不。 OmniTools 遵循嚴格的零伺服器隱私權政策。每個數學運算都在瀏覽器的 JavaScript 環境中本地執行。沒有 cookie、會話識別碼或分析追蹤您的出生日期。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "為什麼某些線上計算器顯示不同的日總計？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "某些簡化計算器會透過將總天數除以 365 或 365.25 來計算年齡。由於月份在 28 到 31 天之間變化，且閏年每 4 年出現一次，因此除以固定平均值會產生捨去誤差。 OmniTools 應用日曆精確的公曆日匹配以實現 100% 的精度。"
+      }
+    }
+  ],
+  "inLanguage": "zh-TW"
+}
+  </script>
+</head>
+<body>
+
+  
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools 首頁">
+        <div class="brand-icon">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      
+      <nav aria-label="主導航">
+        <ul class="nav-links">
+          <li><a href="index.html">所有工具</a></li>
+          <li><a href="age-calculator.html" class="active">年齡計算</a></li>
+          <li><a href="loan-calculator.html">貸款EMI</a></li>
+          <li><a href="word-counter.html">字數統計器</a></li>
+          <li><a href="../about.html">關於</a></li>
+        </ul>
+      </nav>
+
+      
+      <div class="nav-actions">
+        <select id="langSelect" aria-label="選擇語言" onchange="window.location.href=this.value">
+          <option value="../age-calculator.html">English</option>
+          <option value="../es/calculadora-de-edad.html">Español</option>
+          <option value="../de/age-calculator.html">Deutsch</option>
+          <option value="../fr/age-calculator.html">Français</option>
+          <option value="../pt/age-calculator.html">Português</option>
+          <option value="../it/age-calculator.html">Italiano</option>
+          <option value="../ru/age-calculator.html">Русский</option>
+          <option value="../nl/age-calculator.html">Nederlands</option>
+          <option value="../pl/age-calculator.html">Polski</option>
+          <option value="../sv/age-calculator.html">Svenska</option>
+          <option value="../no/age-calculator.html">Norsk</option>
+          <option value="../da/age-calculator.html">Dansk</option>
+          <option value="../fi/age-calculator.html">Suomi</option>
+          <option value="../id/age-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/age-calculator.html">Türkçe</option>
+          <option value="../vi/age-calculator.html">Tiếng Việt</option>
+          <option value="../th/age-calculator.html">ไทย</option>
+          <option value="../ms/age-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/age-calculator.html">Filipino</option>
+          <option value="../hi/age-calculator.html">हिन्दी</option>
+          <option value="../ur/age-calculator.html">اردو</option>
+          <option value="../ar/age-calculator.html">العربية</option>
+          <option value="../fa/age-calculator.html">فارسی</option>
+          <option value="../he/age-calculator.html">עברית</option>
+          <option value="../ja/age-calculator.html">日本語</option>
+          <option value="../ko/age-calculator.html">한국어</option>
+          <option value="../zh/age-calculator.html">简体中文</option>
+          <option value="age-calculator.html" selected>繁體中文</option>
+          <option value="../el/age-calculator.html">Ελληνικά</option>
+          <option value="../cs/age-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="切換導航選單" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">家</a></li>
+          <li><a href="index.html#date">日期和時間</a></li>
+          <li aria-current="page">年齡計算器</li>
+        </ul>
+      </div>
+    </div>
+
+    
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">年齡和里程碑計算器</h1>
+        <p class="tool-header-desc">
+          確定您的確切年齡（以年、月和日為單位）。瞭解您即將到來的生日倒數計時、總生存天數、星座和人生里程碑。
+        </p>
+      </div>
+    </section>
+
+    
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="排行榜廣告">
+        <span class="ad-slot-placeholder-text">響應式排行榜廣告 (728x90)</span>
+      </div>
+    </div>
+
+    
+    <section class="container tool-layout-container">
+      
+      
+      <div>
+        <div class="tool-card-widget">
+          
+          
+          <div class="widget-form-grid two-col">
+            <div class="form-group">
+              <label for="dobInput" class="form-label">
+                <span>出生日期</span>
+                <span class="label-hint">必需的</span>
+              </label>
+              <input type="date" id="dobInput" class="form-input" required="None" aria-required="true">
+              <span class="form-help">選擇出生年、月、日</span>
+            </div>
+
+            <div class="form-group">
+              <label for="targetDateInput" class="form-label">
+                <span>截至日期年齡</span>
+                <span class="label-hint">預設為今天</span>
+              </label>
+              <input type="date" id="targetDateInput" class="form-input">
+              <span class="form-help">計算任何歷史或未來日期的年齡</span>
+            </div>
+          </div>
+
+          
+          <div id="ageErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin-bottom: 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          
+          <div class="widget-actions">
+            <button type="button" id="calcAgeBtn" class="btn btn-primary" onclick="calculateAge()">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
+              </svg>
+              計算年齡
+            </button>
+            <button type="button" id="resetAgeBtn" class="btn btn-outline" onclick="resetAge()">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              </svg>
+              重置
+            </button>
+          </div>
+
+          
+          <div id="ageResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                年齡計算結果
+              </span>
+              <button type="button" id="copyAgeBtn" class="btn btn-outline btn-sm" title="複製結果摘要">
+                <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                </svg>
+                複製摘要
+              </button>
+            </div>
+
+            
+            <div class="hero-result-card">
+              <div class="hero-result-label">您的確切年齡</div>
+              <div class="hero-result-value" id="primaryAgeText">0 年、0 個月、0 天</div>
+              <div class="hero-result-sub" id="primaryAgeSub">總共活了 0 天</div>
+            </div>
+
+            
+            <div class="milestones-wrapper" style="background: #eff6ff; border-color: #bfdbfe;">
+              <div class="milestones-title" style="color: var(--primary);">
+                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M3 21h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v11a2 2 0 002 2z"></path>
+                </svg>
+                下一個生日倒數計時
+              </div>
+              <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+                <span id="nextBdayDays" style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">剩餘 0 天</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">發生在 <strong id="nextBdayDayOfWeek" style="color: var(--primary);">-</strong></span>
+              </div>
+            </div>
+
+            
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="statTotalMonths">0</div>
+                <div class="metric-label">總月數</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="statTotalWeeks">0</div>
+                <div class="metric-label">總週數</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="statTotalDays">0</div>
+                <div class="metric-label">總天數</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="statTotalHours">0</div>
+                <div class="metric-label">總小時數</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="statTotalMinutes">0</div>
+                <div class="metric-label">總分鐘數</div>
+              </div>
+            </div>
+
+            
+            <div class="milestones-wrapper">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                </svg>
+                個人里程碑與占星術
+              </div>
+              <ul class="milestones-list">
+                <li class="milestone-item">
+                  <span class="milestone-item-name">黃道帶太陽星座</span>
+                  <span class="milestone-item-val" id="zodiacSign">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">傳統生日石</span>
+                  <span class="milestone-item-val" id="birthStone">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">活著一萬天日期</span>
+                  <span class="milestone-item-val" id="milestone10k">-</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <aside>
+        
+        <div class="ad-slot ad-rectangle" aria-label="側邊欄廣告">
+          <span class="ad-slot-placeholder-text">側邊欄矩形 (300x250)</span>
+        </div>
+
+        
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">相關實用程式</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">日期差異計算器 <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">體重指數追蹤器 <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">貸款 EMI 付款計算器 <span>→</span></a></li>
+            <li><a href="word-counter.html" style="display: flex; align-items: center; justify-content: space-between;">字數和字元計數器 <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="文章內廣告">
+        <span class="ad-slot-placeholder-text">響應式文章內橫幅 (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    
+    <article class="container educational-content">
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          如何使用 OmniTools 年齡計算器
+        </h2>
+        <p class="content-paragraph">
+          OmniTools 年齡計算器是一款直覺、高精度的實用程式，旨在以數學精確性確定實際年齡。雖然簡單的心算可以估算出您的年齡（以歲為單位），但它經常忽略可變的月份長度、閏年和確切的日期界限。請按照以下簡單的步驟即可獲得即時、全面的細分：
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>選擇您的出生日期</strong>
+              使用第一個輸入框中的日期選擇器選擇您的確切出生年、月和日。如果手動輸入，請使用標準 ISO 格式 (<code>YYYY-MM-DD</code>).
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>選擇目標比較日期（可選）</strong>
+              預設情況下，該工具將「截至日期的年齡」設定為今天的本地日期。如果您希望計算特定事件（例如婚禮、畢業或開始工作）的歷史年齡或檢視您未來退休日期的年齡，請相應調整此欄位。
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>點選“計算年齡”</strong>
+              即時檢視您的小學年齡（以年、月和日為單位），以及即時生日倒數、總過去天數、小時、分鐘和里程碑記錄。
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>複製或分享您的摘要</strong>
+              使用「複製摘要」按鈕將乾淨、格式化的文字片段儲存到裝置剪貼簿中，以用於檔案、履歷或社交分享。
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
+          </svg>
+          公式及計算方法
+        </h2>
+        <p class="content-paragraph">
+          國際公曆下的實際年齡計算比簡單的除法更為複雜，因為人類日曆月份沒有相同的天數（範圍從28天到31天）。我們的演演算法使用借用演演算法執行嚴格的逐步減法模型：
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Δ天數 = 目標日 - 出生日<br>
+            Δ月份 = 目標月份 - 出生月份<br>
+            ΔYears = 目標年份 - 出生年份
+          </div>
+          <div class="formula-explanation">
+            <strong>條件1（日借）：</strong> 如果 ΔDays &lt; 0，則將 ΔMonths 減 1，並加總目標日期前一個月的總天數。<br><br>
+            <strong>條件2（月借）：</strong> 如果 ΔMonths &lt; 0，則將 ΔYears 減 1，並將 ΔMonths 加 12。
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          要將持續時間轉換為總粒度指標（例如總經過的小時或分鐘），引擎會計算 Unix 紀元時間戳差異：
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            總耗用毫秒數 (ms) = TargetTime(ms) - BirthTime(ms)<br>
+            總天數 = ⌊ 毫秒 / (1000 × 60 × 60 × 24) ⌋<br>
+            總小時數 = 總天數 × 24<br>
+            總分鐘數 = 總小時數 × 60
+          </div>
+        </div>
+
+        <h3 class="content-subheading">公曆中的閏年規則</h3>
+        <p class="content-paragraph">
+          如果年份能被 4 整除，則該年份被指定為閏年，但世紀年（以 00 結尾）除外，它也必須能被 400 整除。例如，2000 年是閏年，而 1900 年則不是，而 2024 年則是閏年。我們的計算尊重過去期間的每個閏日（2 月 29 日），確保日常的絕對保真度。
+        </p>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+          </svg>
+          現實生活中的實際應用
+        </h2>
+        <p class="content-paragraph">
+          準確的年齡計算對於眾多行政、法律、醫療和個人環境至關重要：
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. 學校招生截止日期</h4>
+            <p class="example-card-body">
+              大多數教育管轄區規定，孩子必須在嚴格的截止日期（例如 9 月 1 日）或之前年滿 5 歲才能進入幼兒園。將目標日期設定為學區截止日期可以立即證明資格。
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. 法定多數年齡和權利</h4>
+            <p class="example-card-body">
+              確認個人是否已年滿 18 歲（投票、簽署合約）或 21 歲（許可、購買）需要經過驗證的時間順序精確度，以避免合規處罰。
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. 退休和退休金歸屬</h4>
+            <p class="example-card-body">
+              社會安全和工作場所退休金計畫通常根據出生年份（例如 66 歲 6 個月）設定完全退休門檻。使用者可以準確地規劃付款開始日期。
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">4. 護照和簽證效期視窗</h4>
+            <p class="example-card-body">
+              許多國際政府要求向未成年人（16 歲以下）簽發的護照每 5 年更新一次，而成人護照的有效期為 10 年。計算護照簽發時的確切年齡對於旅行者至關重要。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+          </svg>
+          獨特的人生里程碑
+        </h2>
+        <p class="content-paragraph">
+          除了傳統的每年生日之外，人類的存在還具有令人著迷的數學里程碑，為慶祝提供了機會：
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
+          <li><strong>10,000 天里程碑：</strong> 當您大約 27 歲 4 個月 16 天時，生命就達到了 10,000 天。這是一個越來越受歡迎的現代慶祝里程碑。</li>
+          <li><strong>黃金生日：</strong> 當您達到與您出生日期的日曆日期相符的年齡時發生（例如，當月 25 日滿 25 歲）。</li>
+          <li><strong>存活了 10 億秒：</strong> 您在生命中大約 31 年 8 個月 8 天 9 小時就跨過 10 億秒大關。</li>
+        </ul>
+      </section>
+
+      
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          常見問題 (FAQ)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open="None">
+            <summary class="faq-question">這個計算器如何計算閏年？</summary>
+            <div class="faq-answer">
+              我們的計算引擎會評估您生命週期內每個日曆月的確切天數，包括閏年期間有 29 天的二月。在藉款計算中，它專門檢查該年份的前一個日曆月。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">我可以計算某人未來或過去的年齡嗎？</summary>
+            <div class="faq-answer">
+              是的。預設情況下，工具計算相對於目前本地日期的年齡。但是，您可以在「截至日期」欄位中自由選擇任何過去或未來的日期，以檢視歷史年齡或未來年齡預測。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">什麼是黃金生日？</summary>
+            <div class="faq-answer">
+              黃金生日（也稱為盛大生日、幸運生日或香檳生日）是指您達到出生日期的確切年齡的那一年。例如，如果您出生於 7 月 14 日，那麼您的黃金生日就是您 14 歲時。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">我的出生日期是否儲存在任何伺服器上？</summary>
+            <div class="faq-answer">
+              絕不。 OmniTools 遵循嚴格的零伺服器隱私權政策。每個數學運算都在瀏覽器的 JavaScript 環境中本地執行。沒有 cookie、會話識別碼或分析追蹤您的出生日期。
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">為什麼某些線上計算器顯示不同的日總計？</summary>
+            <div class="faq-answer">
+              某些簡化計算器會透過將總天數除以 365 或 365.25 來計算年齡。由於月份在 28 到 31 天之間變化，且閏年每 4 年出現一次，因此除以固定平均值會產生捨去誤差。 OmniTools 應用日曆精確的公曆日匹配以實現 100% 的精度。
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools 提供免費、輕量級、注重隱私的線上計算器和實用程式，用於生產力、教育、金融和健康。
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">熱門工具</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">年齡計算器</a></li>
+            <li><a href="loan-calculator.html">貸款 EMI 計算器</a></li>
+            <li><a href="bmi-calculator.html">體重指數追蹤器</a></li>
+            <li><a href="password-generator.html">密碼產生器</a></li>
+            <li><a href="word-counter.html">字數統計器</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">公用事業</h4>
+          <ul class="footer-links">
+            <li><a href="unit-converter.html">單位換算</a></li>
+            <li><a href="percentage-calculator.html">百分比計算器</a></li>
+            <li><a href="date-calculator.html">日期差異</a></li>
+            <li><a href="case-converter.html">文字大小寫轉換器</a></li>
+            <li><a href="discount-calculator.html">折扣計算器</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">法律與資訊</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">關於我們</a></li>
+            <li><a href="../contact.html">聯絡我們</a></li>
+            <li><a href="../privacy-policy.html">隱私權政策</a></li>
+            <li><a href="../terms.html">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 OmniTools。版權所有。適合所有人的免費線上實用程式。</p>
+        <div class="footer-lang-select">
+          <span>語言：</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script>
+  (function() {
+    // 1. Mobile Menu Toggle
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    // 2. Initialize Dates
+    var today = new Date();
+    function formatYMD(d) {
+      var year = d.getFullYear();
+      var month = String(d.getMonth() + 1).padStart(2, '0');
+      var day = String(d.getDate()).padStart(2, '0');
+      return year + '-' + month + '-' + day;
+    }
+
+    var dobInput = document.getElementById('dobInput');
+    var targetDateInput = document.getElementById('targetDateInput');
+    var resultsBox = document.getElementById('ageResultsBox');
+    var errorBox = document.getElementById('ageErrorBox');
+    var copyBtn = document.getElementById('copyAgeBtn');
+
+    if (targetDateInput) {
+      targetDateInput.value = formatYMD(today);
+      targetDateInput.max = '2099-12-31';
+    }
+    if (dobInput) {
+      dobInput.max = formatYMD(today);
+      dobInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') calculateAge();
+      });
+    }
+    if (targetDateInput) {
+      targetDateInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') calculateAge();
+      });
+    }
+
+    // 3. Calculation Function (Globally Accessible)
+    window.calculateAge = function() {
+      if (!dobInput || !dobInput.value) {
+        showError('請選擇您的出生日期。');
+        if (dobInput) dobInput.focus();
+        return;
+      }
+
+      var birthParts = dobInput.value.split('-').map(Number);
+      var birthDate = new Date(birthParts[0], birthParts[1] - 1, birthParts[2]);
+
+      var targetParts = (targetDateInput && targetDateInput.value) ? targetDateInput.value.split('-').map(Number) : null;
+      var targetDate = targetParts ? new Date(targetParts[0], targetParts[1] - 1, targetParts[2]) : new Date();
+
+      if (birthDate.getTime() > targetDate.getTime()) {
+        showError('出生日期不能晚於「年齡」比較日期。');
+        return;
+      }
+
+      hideError();
+
+      // Core Elapsed Arithmetic
+      var years = targetDate.getFullYear() - birthDate.getFullYear();
+      var months = targetDate.getMonth() - birthDate.getMonth();
+      var days = targetDate.getDate() - birthDate.getDate();
+
+      if (days < 0) {
+        months -= 1;
+        var prevMonthYear = (months < 0) ? targetDate.getFullYear() - 1 : targetDate.getFullYear();
+        var prevMonthIndex = (months < 0) ? 11 : targetDate.getMonth() - 1;
+        var daysInPrevMonth = new Date(prevMonthYear, prevMonthIndex + 1, 0).getDate();
+        days += daysInPrevMonth;
+      }
+
+      if (months < 0) {
+        years -= 1;
+        months += 12;
+      }
+
+      var diffTimeMs = targetDate.getTime() - birthDate.getTime();
+      var totalDays = Math.floor(diffTimeMs / (1000 * 60 * 60 * 24));
+      var totalWeeks = Math.floor(totalDays / 7);
+      var totalMonths = (years * 12) + months;
+      var totalHours = totalDays * 24;
+      var totalMinutes = totalHours * 60;
+
+      // Next Birthday
+      var currentYear = targetDate.getFullYear();
+      var nextBday = new Date(currentYear, birthDate.getMonth(), birthDate.getDate());
+      if (nextBday.getTime() < targetDate.getTime()) {
+        nextBday = new Date(currentYear + 1, birthDate.getMonth(), birthDate.getDate());
+      }
+      var diffDaysNext = Math.ceil((nextBday.getTime() - targetDate.getTime()) / (1000 * 60 * 60 * 24));
+      var dayNames = ['星期日', '週一', '週二', '週三', '週四', '星期五', '週六'];
+      var dayOfWeek = dayNames[nextBday.getDay()];
+
+      var nextBdayText = (diffDaysNext === 0) ? '🎉今天是生日！' : (diffDaysNext === 1 ? '還剩 1 天' : diffDaysNext + ' 剩餘天數');
+
+      // Zodiac & Birthstone
+      var zodiac = getZodiac(birthDate.getMonth() + 1, birthDate.getDate());
+      var birthstone = getBirthstone(birthDate.getMonth() + 1);
+
+      // 10,000 Days milestone
+      var milestone10kDate = new Date(birthDate.getTime() + (10000 * 24 * 60 * 60 * 1000));
+      var milestone10kStr = milestone10kDate.toLocaleDateString('zh-TW', { year: 'numeric', month: 'short', day: 'numeric' });
+
+      // Render to DOM
+      document.getElementById('primaryAgeText').textContent = years + ' 年， ' + months + ' 幾個月， ' + days + ' 天';
+      document.getElementById('primaryAgeSub').textContent = '總計 ' + totalDays.toLocaleString() + ' 生存天數';
+
+      document.getElementById('statTotalMonths').textContent = totalMonths.toLocaleString();
+      document.getElementById('statTotalWeeks').textContent = totalWeeks.toLocaleString();
+      document.getElementById('statTotalDays').textContent = totalDays.toLocaleString();
+      document.getElementById('statTotalHours').textContent = totalHours.toLocaleString();
+      document.getElementById('statTotalMinutes').textContent = totalMinutes.toLocaleString();
+
+      document.getElementById('nextBdayDays').textContent = nextBdayText;
+      document.getElementById('nextBdayDayOfWeek').textContent = (diffDaysNext === 0) ? '今天' : dayOfWeek;
+
+      document.getElementById('zodiacSign').textContent = zodiac;
+      document.getElementById('birthStone').textContent = birthstone;
+      document.getElementById('milestone10k').textContent = milestone10kStr;
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', '我的年齡： ' + years + ' 年， ' + months + ' 幾個月， ' + days + ' 天 （' + totalDays.toLocaleString() + ' 住的日子）。在 OmniTools 上計算。');
+      }
+    };
+
+    window.resetAge = function() {
+      if (dobInput) dobInput.value = '';
+      if (targetDateInput) targetDateInput.value = formatYMD(new Date());
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    function getZodiac(m, d) {
+      var signs = [
+        { n: '摩羯座♑', em: 1, ed: 19 }, { n: '水瓶座♒', em: 2, ed: 18 },
+        { n: '雙魚座♓', em: 3, ed: 20 }, { n: '牡羊座 ♈', em: 4, ed: 19 },
+        { n: '金牛座♉', em: 5, ed: 20 }, { n: '雙子座♊', em: 6, ed: 20 },
+        { n: '癌症♋', em: 7, ed: 22 }, { n: '獅子座♌', em: 8, ed: 22 },
+        { n: '處女座♍', em: 9, ed: 22 }, { n: '天秤座♎', em: 10, ed: 22 },
+        { n: '天蠍座♏', em: 11, ed: 21 }, { n: '射手座♐', em: 12, ed: 21 },
+        { n: '摩羯座♑', em: 12, ed: 31 }
+      ];
+      for (var i = 0; i < signs.length; i++) {
+        if (m < signs[i].em || (m === signs[i].em && d <= signs[i].ed)) return signs[i].n;
+      }
+      return '摩羯座♑';
+    }
+
+    function getBirthstone(m) {
+      var stones = ['石榴石', '紫晶', '藍晶', '鑽石', '翠', '紫翠玉和珍珠', '紅寶石', '橄欖石', '藍寶石', '蛋白石和電氣石', '黃玉和黃水晶', '坦桑石和綠松石'];
+      return stones[m - 1] || '石榴石';
+    }
+
+    // 4. Toast and Copy Handler
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('年齡摘要複製到剪貼簿！');
+          }).catch(function() {
+            prompt('複製摘要：', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
+
