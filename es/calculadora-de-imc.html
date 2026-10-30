@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC - Índice de Masa Corporal y Peso Ideal | OmniTools</title>
+  <meta name="description" content="Calcula tu Índice de Masa Corporal (IMC), rango de peso ideal y estado de salud según la OMS. Soporta sistema métrico (kg/cm) e imperial (libras/pies). 100% gratis y privado.">
+  <meta name="keywords" content="calculadora de imc, indice de masa corporal, calcular imc, peso ideal, tabla imc oms, calculadora de peso saludable, imc prime">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canónica y SEO Multilingüe hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/es/calculadora-de-imc.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/bmi-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-imc.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/bmi-calculator.html">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/es/calculadora-de-imc.html">
+  <meta property="og:title" content="Calculadora de IMC - Índice de Masa Corporal y Peso Ideal">
+  <meta property="og:description" content="Calcula al instante tu IMC con unidades métricas e imperiales, indicador visual oficial de la OMS y peso saludable recomendado.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-bmi-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de IMC y Estado Nutricional | OmniTools">
+  <meta name="twitter:description" content="Descubre tu IMC exacto, clasificación de la OMS y rango de peso saludable personalizado.">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Datos Estructurados JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Calculadora de IMC",
+    "url": "https://omnitools.pages.dev/es/calculadora-de-imc.html",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "inLanguage": "es",
+    "description": "Calcula el Índice de Masa Corporal (IMC), intervalo de peso óptimo e IMC Prime según los estándares oficiales de la OMS.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://omnitools.pages.dev/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Salud",
+        "item": "https://omnitools.pages.dev/es/#health"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Calculadora de IMC",
+        "item": "https://omnitools.pages.dev/es/calculadora-de-imc.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuál es el rango de IMC considerado normal y saludable en adultos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De acuerdo con la Organización Mundial de la Salud (OMS), un Índice de Masa Corporal saludable para personas adultas se sitúa entre 18,5 y 24,9 kg/m². Un valor inferior a 18,5 indica bajo peso, entre 25,0 y 29,9 sobrepeso, y a partir de 30,0 se clasifica como obesidad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué se diferencia la fórmula del IMC en el sistema métrico frente al imperial?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En el sistema métrico, el IMC se calcula dividiendo el peso en kilogramos entre la estatura en metros al cuadrado (kg/m²). En el sistema imperial se multiplica el peso en libras por 703 y se divide entre la estatura en pulgadas al cuadrado. Matemáticamente ambas opciones son equivalentes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué el IMC no siempre es exacto en deportistas o personas musculosas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El IMC evalúa el peso corporal global sin diferenciar entre masa muscular magra, agua y tejido graso adiposo. Dado que el músculo tiene una densidad superior a la grasa, un atleta de fuerza puede registrar un IMC de sobrepeso teniendo un porcentaje de grasa corporal mínimo."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Encabezado del Sitio -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Enlaces de Navegación -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Todas las Herramientas</a></li>
+          <li><a href="calculadora-de-edad.html">Edad</a></li>
+          <li><a href="calculadora-de-imc.html" class="active">Calculadora de IMC</a></li>
+          <li><a href="calculadora-de-prestamos.html">Préstamos</a></li>
+          <li><a href="contador-de-palabras.html">Contador</a></li>
+          <li><a href="../about.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de Idioma -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="../bmi-calculator.html" class="lang-btn" title="English">EN</a>
+          <a href="calculadora-de-imc.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Migas de Pan -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#health">Salud</a></li>
+          <li aria-current="page">Calculadora de IMC</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Título de la Herramienta -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de IMC e Índice de Peso Ideal</h1>
+        <p class="tool-header-desc">
+          Calcula tu Índice de Masa Corporal (IMC) con unidades métricas o imperiales. Conoce tu intervalo de peso saludable, el índice IMC Prime y la clasificación oficial de la Organización Mundial de la Salud (OMS).
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacio Publicitario Superior (Protegido contra CLS) -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Espacio Publicitario">
+        <span class="ad-slot-placeholder-text">Banner Superior Adaptable (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Contenedor del Widget y Barra Lateral -->
+    <section class="container tool-layout-container">
+      
+      <!-- Columna Principal -->
+      <div>
+        <div class="tool-card-widget">
+          
+          <!-- Pestañas de Unidades -->
+          <div class="unit-toggle-wrap" role="tablist" aria-label="Unidades de Medida">
+            <button type="button" id="metricTabBtn" class="unit-toggle-btn active">Métrico (cm, kg)</button>
+            <button type="button" id="imperialTabBtn" class="unit-toggle-btn">Imperial (pies/pulg, lbs)</button>
+          </div>
+
+          <!-- Entradas Métricas -->
+          <div id="metricInputGroup" class="unit-group active">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label for="heightCm" class="form-label">
+                  <span>Estatura</span>
+                  <span class="label-hint">Centímetros (cm)</span>
+                </label>
+                <input type="number" id="heightCm" class="form-input" placeholder="Ej: 175" min="50" max="260" step="0.5">
+                <span class="form-help">Intervalo habitual: 140 - 210 cm</span>
+              </div>
+
+              <div class="form-group">
+                <label for="weightKg" class="form-label">
+                  <span>Peso</span>
+                  <span class="label-hint">Kilogramos (kg)</span>
+                </label>
+                <input type="number" id="weightKg" class="form-input" placeholder="Ej: 70" min="10" max="500" step="0.1">
+                <span class="form-help">Peso corporal actual</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entradas Imperiales -->
+          <div id="imperialInputGroup" class="unit-group">
+            <div class="widget-form-grid two-col">
+              <div class="form-group">
+                <label class="form-label">
+                  <span>Estatura</span>
+                  <span class="label-hint">Pies y Pulgadas</span>
+                </label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="heightFt" class="form-input" placeholder="Pies (ej. 5)" min="1" max="8">
+                  <input type="number" id="heightIn" class="form-input" placeholder="Pulgadas (ej. 9)" min="0" max="11.9" step="0.5">
+                </div>
+                <span class="form-help">Ej: 5 pies 9 pulgadas</span>
+              </div>
+
+              <div class="form-group">
+                <label for="weightLbs" class="form-label">
+                  <span>Peso</span>
+                  <span class="label-hint">Libras (lbs)</span>
+                </label>
+                <input type="number" id="weightLbs" class="form-input" placeholder="Ej: 160" min="20" max="1100" step="0.5">
+                <span class="form-help">Peso actual en libras</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mensaje de Error -->
+          <div id="bmiErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin-bottom: 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="widget-actions">
+            <button type="button" id="calcBmiBtn" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              Calcular IMC
+            </button>
+            <button type="button" id="resetBmiBtn" class="btn btn-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reiniciar
+            </button>
+          </div>
+
+          <!-- Cuadro de Resultados -->
+          <div id="bmiResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Resultado del Índice de Masa Corporal
+              </span>
+              <button type="button" id="copyBmiBtn" class="btn btn-outline btn-sm" title="Copiar resumen">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar Resumen
+              </button>
+            </div>
+
+            <!-- Tarjeta Principal de Resultado -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Tu Índice de Masa Corporal Calculado</div>
+              <div class="hero-result-value" id="bmiHeroValue">0.0</div>
+              <div style="margin-top: 0.75rem;">
+                <span id="bmiCategoryBadge" class="bmi-badge bmi-badge-normal">Peso Normal</span>
+              </div>
+              <div class="hero-result-sub" id="bmiCategoryNote">Intervalo saludable según los criterios de la OMS.</div>
+            </div>
+
+            <!-- Escala Visual del IMC -->
+            <div class="bmi-gauge-wrap">
+              <div class="bmi-pointer" id="bmiGaugePointer" style="left: 50%;"></div>
+              <div class="bmi-spectrum-bar">
+                <div class="bmi-bar-underweight" title="Bajo Peso (&lt; 18.5)"></div>
+                <div class="bmi-bar-normal" title="Normal (18.5 - 24.9)"></div>
+                <div class="bmi-bar-overweight" title="Sobrepeso (25 - 29.9)"></div>
+                <div class="bmi-bar-obese" title="Obesidad (≥ 30)"></div>
+              </div>
+              <div class="bmi-legend">
+                <span>Bajo Peso (&lt;18.5)</span>
+                <span>Normal (18.5-24.9)</span>
+                <span>Sobrepeso (25-29.9)</span>
+                <span>Obesidad (≥30)</span>
+              </div>
+            </div>
+
+            <!-- Métricas Saludables Complementarias -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Intervalo Saludable y Análisis Personalizado
+              </div>
+              <ul class="milestones-list">
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Rango de Peso Ideal</span>
+                  <span class="milestone-item-val" id="idealWeightRange">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Orientación de Peso</span>
+                  <span class="milestone-item-val" id="weightTargetNote">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Índice IMC Prime (Objetivo ≤ 1.0)</span>
+                  <span class="milestone-item-val" id="bmiPrimeValue">-</span>
+                </li>
+                <li class="milestone-item">
+                  <span class="milestone-item-name">Índice Ponderal</span>
+                  <span class="milestone-item-val" id="ponderalIndexValue">-</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral: Publicidad y Enlaces -->
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Espacio Publicitario">
+          <span class="ad-slot-placeholder-text">Rectángulo Lateral (300x250)</span>
+        </div>
+
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Otras Herramientas</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="calculadora-de-edad.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Edad <span>→</span></a></li>
+            <li><a href="calculadora-de-porcentaje.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Porcentaje <span>→</span></a></li>
+            <li><a href="conversor-de-unidades.html" style="display: flex; align-items: center; justify-content: space-between;">Conversor de Unidades <span>→</span></a></li>
+            <li><a href="calculadora-de-prestamos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Préstamos <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Espacio Publicitario Entre Contenidos -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Espacio de Publicidad en Contenido">
+        <span class="ad-slot-placeholder-text">Banner en Contenido Adaptable (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Guía Educativa y SEO Exhaustivo en Español (500+ Palabras) -->
+    <article class="container educational-content">
+
+      <!-- Sección 1: Cómo Usar la Herramienta -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar la Calculadora de IMC de OmniTools
+        </h2>
+        <p class="content-paragraph">
+          El Índice de Masa Corporal (IMC) es un indicador antropométrico adoptado internacionalmente por instituciones médicas para evaluar la relación entre el peso y la estatura de una persona adulta. Nuestra herramienta en línea permite calcular este valor de forma precisa, inmediata y con total confidencialidad:
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Elige el Sistema de Medición Deseado</strong>
+              Haz clic en la pestaña <strong>Métrico (cm, kg)</strong> si mides en centímetros y pesas en kilos, o en <strong>Imperial (pies/pulg, lbs)</strong> si prefieres utilizar pies, pulgadas y libras.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Introduce tus Medidas Actuales</strong>
+              Indica tu estatura de pie y descalzo, así como tu peso corporal matutino en ayunas para mayor fidelidad clínica.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Haz Clic en "Calcular IMC"</strong>
+              En milisegundos se mostrará tu puntuación numérica exacta, tu categoría de salud según la OMS y una barra visual a color con una aguja indicadora de tu posición.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Consulta tu Intervalo de Peso Ideal</strong>
+              Revisa la sección inferior para conocer el peso mínimo y máximo saludable recomendado para tu estatura, junto con el índice IMC Prime.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Sección 2: Fórmula y Metodología de Cálculo -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          Fórmula Matemática y Lógica Científica
+        </h2>
+        <p class="content-paragraph">
+          Diseñado en el siglo XIX por el astrónomo y estadístico belga Adolphe Quetelet (antiguamente denominado Índice de Quetelet), el IMC relaciona la masa total del cuerpo con el cuadrado de la altura:
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Fórmula Métrica: IMC = Peso (kg) / [ Estatura (m) ]²
+          </div>
+          <div class="formula-explanation">
+            <strong>Ejemplo:</strong> Para una persona que mide 175 cm (1,75 m) y pesa 68 kg:<br>
+            IMC = 68 / (1,75 × 1,75) = 68 / 3,0625 = <strong>22,20 kg/m²</strong> (Peso Normal).
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          En el sistema anglosajón o imperial (libras y pulgadas), se introduce un factor de ajuste constante de <strong>703</strong> para unificar las conversiones métricas (0,45359237 kg por libra y 0,0254 m por pulgada):
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Fórmula Imperial: IMC = [ Peso (lbs) × 703 ] / [ Altura (pulgadas) ]²
+          </div>
+          <div class="formula-explanation">
+            <strong>Ejemplo:</strong> Para una persona de 5 pies y 10 pulgadas (70 pulgadas) que pesa 160 lbs:<br>
+            IMC = (160 × 703) / (70 × 70) = 112.480 / 4.900 = <strong>22,95</strong> (Peso Normal).
+          </div>
+        </div>
+
+        <h3 class="content-subheading">¿Qué es el IMC Prime y el Índice Ponderal?</h3>
+        <p class="content-paragraph">
+          El <strong>IMC Prime</strong> es una variante adimensional que compara el IMC del usuario con el límite superior del peso saludable (25,0):
+        </p>
+        <div class="formula-box">
+          <div class="formula-expression">
+            IMC Prime = IMC Real / 25,0
+          </div>
+          <div class="formula-explanation">
+            Un valor entre 0,74 y 1,00 indica un peso óptimo. Valores superiores a 1,00 reflejan directamente el porcentaje de sobrepeso respecto al límite aconsejado (por ejemplo, 1,12 representa un 12% por encima del umbral saludable).
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 3: Tabla Oficial de la OMS -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Tabla Oficial de Clasificación del IMC (OMS)
+        </h2>
+        <p class="content-paragraph">
+          La siguiente tabla desglosa los criterios clínicos estandarizados por la Organización Mundial de la Salud para clasificar el estado nutricional y los riesgos asociados a la salud:
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Clasificación</th>
+                <th>Rango de IMC (kg/m²)</th>
+                <th>IMC Prime</th>
+                <th>Riesgo Clínico Asociado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bajo Peso Severo</strong></td>
+                <td>&lt; 16,0</td>
+                <td>&lt; 0,64</td>
+                <td>Alto riesgo de desnutrición y afección inmunológica</td>
+              </tr>
+              <tr>
+                <td><strong>Bajo Peso Moderado</strong></td>
+                <td>16,0 – 16,9</td>
+                <td>0,64 – 0,67</td>
+                <td>Riesgo moderado de carencias nutricionales</td>
+              </tr>
+              <tr>
+                <td><strong>Bajo Peso Leve</strong></td>
+                <td>17,0 – 18,4</td>
+                <td>0,68 – 0,73</td>
+                <td>Riesgo ligeramente aumentado</td>
+              </tr>
+              <tr style="background: #f0fdf4;">
+                <td><strong>Peso Normal</strong></td>
+                <td><strong>18,5 – 24,9</strong></td>
+                <td><strong>0,74 – 0,99</strong></td>
+                <td><strong>Menor riesgo estadístico de patologías cardiovasculares</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Sobrepeso (Preobesidad)</strong></td>
+                <td>25,0 – 29,9</td>
+                <td>1,00 – 1,19</td>
+                <td>Riesgo incrementado de hipertensión arterial y fatiga</td>
+              </tr>
+              <tr>
+                <td><strong>Obesidad Clase I</strong></td>
+                <td>30,0 – 34,9</td>
+                <td>1,20 – 1,39</td>
+                <td>Riesgo moderado de diabetes tipo 2 y sobrecarga articular</td>
+              </tr>
+              <tr>
+                <td><strong>Obesidad Clase II</strong></td>
+                <td>35,0 – 39,9</td>
+                <td>1,40 – 1,59</td>
+                <td>Riesgo severo cardiovascular y metabólico</td>
+              </tr>
+              <tr>
+                <td><strong>Obesidad Clase III (Mórbida)</strong></td>
+                <td>≥ 40,0</td>
+                <td>≥ 1,60</td>
+                <td>Riesgo clínico muy elevado; requiere control médico prioritario</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Sección 4: Consideraciones y Limitaciones Clínicas -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+          Consideraciones Prácticas y Límites del IMC
+        </h2>
+        <p class="content-paragraph">
+          Si bien el IMC es un instrumento epidemiológico de primer orden, los profesionales sanitarios evalúan factores anatómicos complementarios:
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Atletas y Masa Muscular Magra</h4>
+            <p class="example-card-body">
+              El músculo es aproximadamente un 18% más denso que el tejido graso. Por ello, deportistas de élite y culturistas pueden arrojar un IMC superior a 26 o 28 manteniendo un porcentaje de grasa corporal sumamente bajo.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. Personas Mayores y Sarcopenia</h4>
+            <p class="example-card-body">
+              Con la edad se produce una disminución natural de masa muscular (sarcopenia). Un adulto mayor puede tener un IMC en apariencia "normal" de 22,0 y presentar no obstante un exceso de grasa visceral o pérdida de reservas de fuerza.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. Grasa Visceral frente a Subcutánea</h4>
+            <p class="example-card-body">
+              El IMC no mide dónde se localiza la grasa. La grasa visceral intraabdominal es metabólicamente mucho más peligrosa que la grasa subcutánea de caderas o muslos. Por ello, se recomienda medir conjuntamente el perímetro de cintura.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">4. Evaluación en Niños y Adolescentes</h4>
+            <p class="example-card-body">
+              En menores de 18 años no se aplican los umbrales estáticos de adultos, sino tablas percentilares de crecimiento por edad y sexo elaboradas por pediatras y centros de salud pública.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 5: Preguntas Frecuentes (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas Frecuentes (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Cuál es el rango de IMC saludable según la OMS?</summary>
+            <div class="faq-answer">
+              El rango normal y saludable se sitúa entre 18,5 y 24,9 kg/m². Cifras inferiores a 18,5 corresponden a bajo peso, de 25,0 a 29,9 a sobrepeso, y a partir de 30,0 a las distintas clases de obesidad.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Son equivalentes los cálculos en unidades métricas e imperiales?</summary>
+            <div class="faq-answer">
+              Sí. Ambas fórmulas aplican los factores de conversión estandarizados internacionalmente (1 pulgada = 2,54 cm y 1 libra = 0,453592 kg), obteniendo idéntico resultado numérico independientemente de la unidad seleccionada.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Qué significa el valor de IMC Prime?</summary>
+            <div class="faq-answer">
+              El IMC Prime es el cociente entre tu IMC real y el límite máximo del peso normal (25,0). Si tu IMC Prime es menor o igual a 1,00, tu peso se encuentra dentro de los márgenes recomendados por la medicina preventiva.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Se guardan mis datos de peso o altura en algún servidor?</summary>
+            <div class="faq-answer">
+              En ningún caso. OmniTools procesa todos los cálculos localmente en el navegador del usuario mediante JavaScript. No almacenamos, enviamos ni rastreamos información de salud o peso.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece utilidades y calculadoras web gratuitas, ligeras y respetuosas con la privacidad para la salud, la educación y el día a día.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-edad.html">Calculadora de Edad</a></li>
+            <li><a href="calculadora-de-imc.html">Calculadora de IMC</a></li>
+            <li><a href="calculadora-de-prestamos.html">Calculadora de Préstamos</a></li>
+            <li><a href="generador-de-contrasenas.html">Generador de Contraseñas</a></li>
+            <li><a href="contador-de-palabras.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Otras Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="conversor-de-unidades.html">Conversor de Unidades</a></li>
+            <li><a href="calculadora-de-porcentaje.html">Calculadora de Porcentaje</a></li>
+            <li><a href="calculadora-de-dias.html">Diferencia entre Fechas</a></li>
+            <li><a href="convertidor-de-mayusculas.html">Convertidor de Mayúsculas</a></li>
+            <li><a href="calculadora-de-descuentos.html">Calculadora de Descuentos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Quiénes Somos</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades online gratuitas.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../bmi-calculator.html">English</a> |
+          <a href="calculadora-de-imc.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/bmi-calculator-es.js"></script>
+</body>
+</html>
+
