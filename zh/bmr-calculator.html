@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMR 和卡路里计算器 - 按活动水平划分的每日卡路里 | OmniTools</title>
+<meta name="description" content="使用 Mifflin-St Jeor 方程计算您的基础代谢率 (BMR)，并按活动水平计算每日卡路里（以公制或英制单位表示）。">
+<meta name="keywords" content="BMR 计算器、卡路里计算器、mifflin st jeor、每日卡路里需求、基础代谢率">
+<meta name="author" content="OmniTools">
+<meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/zh/bmr-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/calculadora-de-calorias.html">
+  <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/bmr-calculator.html">
+  <link rel="alternate" hreflang="fr" href="https://janhazirr7.github.io/allinone/fr/bmr-calculator.html">
+  <link rel="alternate" hreflang="pt" href="https://janhazirr7.github.io/allinone/pt/bmr-calculator.html">
+  <link rel="alternate" hreflang="it" href="https://janhazirr7.github.io/allinone/it/bmr-calculator.html">
+  <link rel="alternate" hreflang="ru" href="https://janhazirr7.github.io/allinone/ru/bmr-calculator.html">
+  <link rel="alternate" hreflang="nl" href="https://janhazirr7.github.io/allinone/nl/bmr-calculator.html">
+  <link rel="alternate" hreflang="pl" href="https://janhazirr7.github.io/allinone/pl/bmr-calculator.html">
+  <link rel="alternate" hreflang="sv" href="https://janhazirr7.github.io/allinone/sv/bmr-calculator.html">
+  <link rel="alternate" hreflang="no" href="https://janhazirr7.github.io/allinone/no/bmr-calculator.html">
+  <link rel="alternate" hreflang="da" href="https://janhazirr7.github.io/allinone/da/bmr-calculator.html">
+  <link rel="alternate" hreflang="fi" href="https://janhazirr7.github.io/allinone/fi/bmr-calculator.html">
+  <link rel="alternate" hreflang="id" href="https://janhazirr7.github.io/allinone/id/bmr-calculator.html">
+  <link rel="alternate" hreflang="tr" href="https://janhazirr7.github.io/allinone/tr/bmr-calculator.html">
+  <link rel="alternate" hreflang="vi" href="https://janhazirr7.github.io/allinone/vi/bmr-calculator.html">
+  <link rel="alternate" hreflang="th" href="https://janhazirr7.github.io/allinone/th/bmr-calculator.html">
+  <link rel="alternate" hreflang="ms" href="https://janhazirr7.github.io/allinone/ms/bmr-calculator.html">
+  <link rel="alternate" hreflang="tl" href="https://janhazirr7.github.io/allinone/tl/bmr-calculator.html">
+  <link rel="alternate" hreflang="hi" href="https://janhazirr7.github.io/allinone/hi/bmr-calculator.html">
+  <link rel="alternate" hreflang="ur" href="https://janhazirr7.github.io/allinone/ur/bmr-calculator.html">
+  <link rel="alternate" hreflang="ar" href="https://janhazirr7.github.io/allinone/ar/bmr-calculator.html">
+  <link rel="alternate" hreflang="fa" href="https://janhazirr7.github.io/allinone/fa/bmr-calculator.html">
+  <link rel="alternate" hreflang="he" href="https://janhazirr7.github.io/allinone/he/bmr-calculator.html">
+  <link rel="alternate" hreflang="ja" href="https://janhazirr7.github.io/allinone/ja/bmr-calculator.html">
+  <link rel="alternate" hreflang="ko" href="https://janhazirr7.github.io/allinone/ko/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh" href="https://janhazirr7.github.io/allinone/zh/bmr-calculator.html">
+  <link rel="alternate" hreflang="zh-TW" href="https://janhazirr7.github.io/allinone/zh-TW/bmr-calculator.html">
+  <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/bmr-calculator.html">
+  <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/bmr-calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/bmr-calculator.html">
+
+
+
+
+<meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://janhazirr7.github.io/allinone/zh/bmr-calculator.html">
+<meta property="og:title" content="BMR 和卡路里计算器 | OmniTools">
+<meta property="og:description" content="使用 Mifflin-St Jeor 方程计算您的基础代谢率 (BMR)，并按活动水平计算每日卡路里（以公制或英制单位表示）。">
+<meta property="og:image" content="https://janhazirr7.github.io/allinone/og-bmr-calculator.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BMR 和卡路里计算器 | OmniTools">
+<meta name="twitter:description" content="使用 Mifflin-St Jeor 方程计算您的基础代谢率 (BMR)，并按活动水平计算每日卡路里（以公制或英制单位表示）。">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "OmniTools BMR 和卡路里计算器",
+  "url": "https://janhazirr7.github.io/allinone/zh/bmr-calculator.html",
+  "applicationCategory": "健康应用",
+  "operatingSystem": "All",
+  "browserRequirements": "需要 JavaScript。需要 HTML5。",
+  "description": "使用 Mifflin-St Jeor 方程计算您的基础代谢率 (BMR)，并按活动水平计算每日卡路里（以公制或英制单位表示）。",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "inLanguage": "zh"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "家",
+      "item": "https://janhazirr7.github.io/allinone/zh/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "健康",
+      "item": "https://janhazirr7.github.io/allinone/zh/#health"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "BMR 和卡路里计算器",
+      "item": "https://janhazirr7.github.io/allinone/zh/bmr-calculator.html"
+    }
+  ],
+  "inLanguage": "zh"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "什么是基础代谢率？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "基础代谢率 (BMR) 是指您的身体在休息时燃烧的卡路里数，以维持您的活力，包括呼吸、循环和维持体温。它不包括通过运动或锻炼消耗的卡路里。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "BMR 与 TDEE 有何不同？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BMR 仅是您的静息燃烧，而每日总能量消耗 (TDEE) 是您的 BMR 乘以活动系数，因此它包括工作、锻炼和日常运动。该计算器同时显示：BMR（较小的数字）和 TDEE（每日维持卡路里）。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么计算器会要求性别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "米夫林-圣杰尔方程包括性别，因为平均而言，相同身高、体重和年龄的男性和女性的肌肉质量和身体成分不同，这会影响静息能量的使用。该公式对男性加 5，对女性减去 161。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "我可以使用这个卡路里数来安全减肥吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "作为一个起点，对于大多数健康的成年人来说是的：摄入低于维持量约 500 卡路里的热量通常会导致每周逐渐减轻约半公斤的体重。更大的赤字，或疾病或怀孕期间的任何卡路里目标，应与健康专业人士讨论。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "我的数据存储在任何地方吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不需要。该计算器完全在您的浏览器中运行。您的年龄、体重、身高和活动水平永远不会发送到服务器或由 OmniTools 存储。"
+      }
+    }
+  ],
+  "inLanguage": "zh"
+}
+  </script>
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "BMR 和卡路里计算器",
+  "description": "使用 Mifflin-St Jeor 方程计算您的基础代谢率 (BMR)，并按活动水平计算每日卡路里（以公制或英制单位表示）。",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "输入您的详细信息",
+      "text": "以公制或英制单位输入您的性别、年龄、身高和体重。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "选择您的活动水平",
+      "text": "选择最接近您正常一周的活动水平。"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "计算",
+      "text": "按计算卡路里查看您的基础代谢率和日常维持卡路里。"
+    }
+  ],
+  "inLanguage": "zh"
+}
+  </script>
+</head>
+<body>
+<header class="site-header"><div class="container header-inner">
+<a href="index.html" class="brand-logo" aria-label="OmniTools 主页"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
+<nav aria-label="主导航"><ul class="nav-links"><li><a href="index.html">所有工具</a></li><li><a href="age-calculator.html">年龄计算</a></li><li><a href="bmi-calculator.html">体重指数追踪器</a></li><li><a href="loan-calculator.html">贷款EMI</a></li><li><a href="../about.html">关于</a></li></ul></nav>
+<div class="nav-actions"><select id="langSelect" aria-label="选择语言" onchange="window.location.href=this.value">
+          <option value="../bmr-calculator.html">English</option>
+          <option value="../es/calculadora-de-calorias.html">Español</option>
+          <option value="../de/bmr-calculator.html">Deutsch</option>
+          <option value="../fr/bmr-calculator.html">Français</option>
+          <option value="../pt/bmr-calculator.html">Português</option>
+          <option value="../it/bmr-calculator.html">Italiano</option>
+          <option value="../ru/bmr-calculator.html">Русский</option>
+          <option value="../nl/bmr-calculator.html">Nederlands</option>
+          <option value="../pl/bmr-calculator.html">Polski</option>
+          <option value="../sv/bmr-calculator.html">Svenska</option>
+          <option value="../no/bmr-calculator.html">Norsk</option>
+          <option value="../da/bmr-calculator.html">Dansk</option>
+          <option value="../fi/bmr-calculator.html">Suomi</option>
+          <option value="../id/bmr-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/bmr-calculator.html">Türkçe</option>
+          <option value="../vi/bmr-calculator.html">Tiếng Việt</option>
+          <option value="../th/bmr-calculator.html">ไทย</option>
+          <option value="../ms/bmr-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/bmr-calculator.html">Filipino</option>
+          <option value="../hi/bmr-calculator.html">हिन्दी</option>
+          <option value="../ur/bmr-calculator.html">اردو</option>
+          <option value="../ar/bmr-calculator.html">العربية</option>
+          <option value="../fa/bmr-calculator.html">فارسی</option>
+          <option value="../he/bmr-calculator.html">עברית</option>
+          <option value="../ja/bmr-calculator.html">日本語</option>
+          <option value="../ko/bmr-calculator.html">한국어</option>
+          <option value="bmr-calculator.html" selected>简体中文</option>
+          <option value="../zh-TW/bmr-calculator.html">繁體中文</option>
+          <option value="../el/bmr-calculator.html">Ελληνικά</option>
+          <option value="../cs/bmr-calculator.html">Čeština</option>
+        </select><button class="mobile-nav-toggle" aria-label="切换导航菜单" aria-expanded="false">☰</button></div></div></header>
+<main>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">家</a></li><li><a href="index.html#health">健康</a></li><li aria-current="page">BMR 和卡路里计算器</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">BMR 和卡路里计算器</h1><p class="tool-header-desc">根据您的活动水平，了解您的身体在休息时燃烧了多少卡路里以及每天需要多少卡路里来维持体重。</p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="排行榜广告"><span class="ad-slot-placeholder-text">响应式排行榜广告 (728x90)</span></div></div>
+<section class="container tool-layout-container">
+<div><div class="tool-card-widget">
+<div class="unit-toggle-wrap"><button type="button" class="unit-toggle-btn active" id="unitMetricBtn" onclick="setUnits('metric')">公制（公斤、厘米）</button><button type="button" class="unit-toggle-btn" id="unitImperialBtn" onclick="setUnits('imperial')">英制（磅、英尺）</button></div>
+<div class="widget-form-grid">
+<div class="form-group"><label class="form-label" for="bmrSex"><span>性别</span><span class="label-hint">必需的</span></label><select id="bmrSex" class="form-select"><option value="male">男性</option><option value="female">女性</option></select></div>
+<div class="form-group"><label class="form-label" for="bmrAge"><span>年龄（岁）</span><span class="label-hint">10–120</span></label><input type="number" id="bmrAge" class="form-input" placeholder="例如 30" min="10" max="120" step="1"><span class="form-help">您的完整年龄</span></div>
+<div id="metricGroup" class="unit-group active"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightCm"><span>身高（厘米）</span></label><input type="number" id="bmrHeightCm" class="form-input" placeholder="例如175" min="50" max="250" step="1"></div><div class="form-group"><label class="form-label" for="bmrWeightKg"><span>重量（公斤）</span></label><input type="number" id="bmrWeightKg" class="form-input" placeholder="例如70" min="20" max="400" step="0.1"></div></div></div>
+<div id="imperialGroup" class="unit-group"><div class="widget-form-grid two-col" style="margin-bottom:0;"><div class="form-group"><label class="form-label" for="bmrHeightFt"><span>高度（英尺和英寸）</span></label><div style="display:flex;gap:0.5rem;"><input type="number" id="bmrHeightFt" class="form-input" placeholder="脚" min="1" max="8" step="1" style="flex:1;"><input type="number" id="bmrHeightIn" class="form-input" placeholder="英寸" min="0" max="11" step="1" style="flex:1;"></div></div><div class="form-group"><label class="form-label" for="bmrWeightLb"><span>重量（磅）</span></label><input type="number" id="bmrWeightLb" class="form-input" placeholder="例如154" min="44" max="880" step="0.1"></div></div></div>
+<div class="form-group"><label class="form-label" for="bmrActivity"><span>活动水平</span></label><select id="bmrActivity" class="form-select"><option value="sedentary">久坐（很少或没有运动）</option><option value="light">轻度（1-3 天/周）</option><option value="moderate" selected="None">中等（每周 3-5 天）</option><option value="active">活跃（6-7 天/周）</option><option value="veryactive">非常活跃（体力工作或每天两次的训练）</option></select><span class="form-help">选择最接近您正常一周的水平</span></div>
+</div>
+<div id="bmrErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateBMRUI()">计算卡路里</button><button type="button" class="btn btn-outline" onclick="resetBMR()">重置</button></div>
+<div id="bmrResultsBox" class="results-box">
+<div class="results-header"><span class="results-title">您的卡路里结果</span><button type="button" class="btn btn-outline btn-sm" id="copyBmrBtn">复制摘要</button></div>
+<div class="hero-result-card"><div class="hero-result-label">日常维持热量</div><div class="hero-result-value" id="dailyCalValue">0大卡</div><div class="hero-result-sub">基于您的 BMR 和活动水平</div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="bmrValue">0大卡</div><div class="metric-label">BMR（休息时）</div></div><div class="metric-card"><div class="metric-value" id="loseValue">0大卡</div><div class="metric-label">减肥（大约）</div></div><div class="metric-card"><div class="metric-value" id="gainValue">0大卡</div><div class="metric-label">增加体重（大约）</div></div></div>
+<p style="font-size:0.875rem;color:#334155;line-height:1.6;">损失和增加数据仅供参考：它们会减少或增加约 500 kcal 的维护费用。它们不是医疗建议。如果您有健康问题、怀孕或正在服用药物，请先咨询健康专业人士。</p>
+</div>
+</div></div>
+<aside><div class="ad-slot ad-rectangle" aria-label="侧边栏广告"><span class="ad-slot-placeholder-text">侧边栏矩形 (300x250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">相关计算器</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">体重指数追踪器 <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">百分比计算器 <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">年龄计算器 <span>→</span></a></li><li><a href="water-intake-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">饮水量计算器 <span>→</span></a></li></ul></div></aside>
+</section>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="文章内广告"><span class="ad-slot-placeholder-text">响应式内容横幅 (728x90 / 300x250)</span></div></div>
+<article class="container educational-content">
+<section class="content-section"><h2 class="content-heading">如何使用 BMR 和卡路里计算器</h2><p class="content-paragraph">您的基础代谢率 (BMR) 是指您的身体在完全休息时为了维持生命而燃烧的卡路里数量：呼吸、保持心跳、维持体温以及大脑和器官的运转。它与您的每日总燃烧量不同，因为您在移动、工作、锻炼和消化食物时也会燃烧卡路里。该计算器首先估算您的基础代谢率，然后将其乘以活动系数来估算您每天维持当前体重所需的卡路里。</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>选择公制或英制单位</strong>使用公斤和厘米，或磅、英尺和英寸，无论您知道什么。计算器在计算任何内容之前都会转换英制值。</div></li><li class="step-item"><div class="step-item-content"><strong>输入您的性别、年龄、身高和体重</strong>这四个值驱动 Mifflin-St Jeor 方程。使用您当前的体重和脱鞋身高以获得最准确的结果。</div></li><li class="step-item"><div class="step-item-content"><strong>选择诚实的活动水平</strong>大多数人高估了自己的活跃程度。如果您一天中大部分时间都坐着，每周锻炼几次，请选择轻度或中度运动，不要太活跃。</div></li><li class="step-item"><div class="step-item-content"><strong>读出三个数字</strong>您的 BMR 是仅休息的数字。大标题数字是您的维护级别。两个较小的数字显示大约低于和高于维持量 500 卡路里，这是逐渐减轻或增加体重的常见起点。</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">米夫林-圣杰尔公式</h2><p class="content-paragraph">营养研究人员广泛使用米夫林-圣杰尔方程，因为它根据测量的代谢率进行了验证，并且对于大多数成年人来说比旧配方更准确。它使用体重、身高、年龄和性别，因为肌肉质量、身体尺寸和年龄都会改变身体在休息时使用的能量多少。男性的 BMR 通常比相同体型和年龄的女性稍高，这就是为什么该配方为男性增加 5 卡路里，为女性减去 161 卡路里。这些常数是已发布方程的一部分，而不是对任何个人的判断。</p><div class="formula-box"><div class="formula-expression">男性：基础代谢率 = 10 x 体重（公斤）+ 6.25 x 身高（厘米） - 5 x 年龄 + 5</div><div class="formula-expression">女性：BMR = 10 x 体重（公斤）+ 6.25 x 身高（厘米） - 5 x 年龄 - 161</div><div class="formula-explanation">例如：一名体重 80 公斤、身高 180 厘米的 30 岁男性，休息时每天的 BMR 为 10 x 80 + 6.25 x 180 - 5 x 30 + 5 = 1,780 kcal。在中等活动水平下，每天维持热量为 1,780 x 1.55 = 2,759 kcal。</div></div><p class="content-paragraph">没有公式可以直接测量你的身体。真实的基础代谢率随肌肉质量、甲状腺功能、疾病、怀孕甚至室温的变化而变化。将结果作为可靠的初始估计值，然后通过观察两到四个星期内的体重趋势来调整它。如果您的体重稳定，则您的维护估算接近。如果它朝一个方向稳定漂移，则您的真实维护量将比估计值高或低，大致相当于该漂移量。</p></section>
+<section class="content-section"><h2 class="content-heading">活动水平及其含义</h2><p class="content-paragraph">活动乘数是大多数卡路里计算器出错的地方，因为像“活动”这样的单个词对不同的人来说意味着不同的事情。下表遵循与 Mifflin-St Jeor 方程一起使用的标准 Harris-Benedict 式乘数，它描述了整整一周，而不是单个锻炼日。</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>等级</th><th>乘数</th><th>典型的一周</th></tr></thead><tbody><tr><td><strong>久坐</strong></td><td>1.2</td><td>伏案工作，很少运动，大部分时间都是坐着</td></tr><tr><td><strong>光</strong></td><td>1.375</td><td>一到三天的轻度运动或运动</td></tr><tr><td><strong>缓和</strong></td><td>1.55</td><td>三到五天适度运动</td></tr><tr><td><strong>积极的</strong></td><td>1.725</td><td>六到七天的剧烈运动</td></tr><tr><td><strong>非常活跃</strong></td><td>1.9</td><td>体力工作加艰苦训练，或每天两次训练</td></tr></tbody></table></div><p class="content-paragraph">一个有用的规则是从比您最初想要选择的级别低一个级别开始，尤其是当您的工作需要久坐时。如果你的减肥速度比计划的要快，你总是可以多吃一点，但是起点太高并且体重增加是你不想要的，这是一个更慢的解决问题。运动员、体力劳动者和肌肉量大的人可能确实需要更高的乘数，在这种情况下，更高的数字才是诚实的数字。</p></section>
+<section class="content-section"><h2 class="content-heading">如何安全使用结果</h2><p class="content-paragraph">卡路里只是健康的一部分。你的食物质量、你的睡眠、你的蛋白质摄入量和你的力量训练都对你的感觉以及你减掉的体重是来自脂肪还是肌肉都很重要。每天缺乏约 500 卡路里的热量通常会导致每周体重减轻约半公斤，这对大多数成年人来说是可持续的速度。较大的体重不足会让您感到疲倦、饥饿，并且以后体重更有可能反弹，因此最好仅在专业指导下使用它们。</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. 追踪趋势，而非一日</h4><p class="example-card-body">在相同条件下每周称重几次，并查看每周平均值。每天的体重会随着水、食物和盐的变化而上下波动，因此一次读数证明的意义微乎其微。</p></div><div class="example-card"><h4 class="example-card-title">2. 将蛋白质和运动纳入计划中</h4><p class="example-card-body">当您摄入较少的热量时，足够的蛋白质和定期的抗阻运动有助于保护肌肉，因此您减掉的体重更多是脂肪。每天散步也有帮助，而且不会让你极度饥饿。</p></div><div class="example-card"><h4 class="example-card-title">3、大变动后重新计算</h4><p class="example-card-body">当您体重减轻或增加时，您的基础代谢率也会发生变化，因为较小或较大的身体需要较少或较多的能量。每变化五到十公斤或每隔几个月重新运行此计算器。</p></div></div><p class="content-paragraph">该计算器是一种教育工具，而不是医疗设备。它不诊断、治疗或取代医生或营养师的建议。儿童、青少年、孕妇以及患有饮食失调、糖尿病、甲状腺疾病或其他影响新陈代谢的疾病的任何人在没有专业建议的情况下不应使用通用卡路里目标。</p></section>
+<section class="content-section"><h2 class="content-heading">常见问题 (FAQ)</h2><div class="faq-list"><details class="faq-item" open="None"><summary class="faq-question">什么是基础代谢率？</summary><div class="faq-answer">基础代谢率 (BMR) 是指您的身体在休息时燃烧的卡路里数，以维持您的活力，包括呼吸、循环和维持体温。它不包括通过运动或锻炼消耗的卡路里。</div></details><details class="faq-item"><summary class="faq-question">BMR 与 TDEE 有何不同？</summary><div class="faq-answer">BMR 仅是您的静息燃烧，而每日总能量消耗 (TDEE) 是您的 BMR 乘以活动系数，因此它包括工作、锻炼和日常运动。该计算器同时显示：BMR（较小的数字）和 TDEE（每日维持卡路里）。</div></details><details class="faq-item"><summary class="faq-question">为什么计算器会要求性别？</summary><div class="faq-answer">米夫林-圣杰尔方程包括性别，因为平均而言，相同身高、体重和年龄的男性和女性的肌肉质量和身体成分不同，这会影响静息能量的使用。该公式对男性加 5，对女性减去 161。</div></details><details class="faq-item"><summary class="faq-question">我可以使用这个卡路里数来安全减肥吗？</summary><div class="faq-answer">作为一个起点，对于大多数健康的成年人来说是的：摄入低于维持量约 500 卡路里的热量通常会导致每周逐渐减轻约半公斤的体重。更大的赤字，或疾病或怀孕期间的任何卡路里目标，应与健康专业人士讨论。</div></details><details class="faq-item"><summary class="faq-question">我的数据存储在任何地方吗？</summary><div class="faq-answer">不需要。该计算器完全在您的浏览器中运行。您的年龄、体重、身高和活动水平永远不会发送到服务器或由 OmniTools 存储。</div></details></div></section>
+</article>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools 提供免费、轻量级、注重隐私的在线计算器和实用程序，用于金融、生产力和教育。</p></div>
+<div><h4 class="footer-heading">热门工具</h4><ul class="footer-links"><li><a href="age-calculator.html">年龄计算器</a></li><li><a href="bmi-calculator.html">体重指数追踪器</a></li><li><a href="loan-calculator.html">贷款 EMI 计算器</a></li><li><a href="password-generator.html">密码生成器</a></li><li><a href="word-counter.html">字数统计器</a></li></ul></div>
+<div><h4 class="footer-heading">公用事业</h4><ul class="footer-links"><li><a href="percentage-calculator.html">百分比计算器</a></li><li><a href="discount-calculator.html">折扣计算器</a></li><li><a href="unit-converter.html">单位换算</a></li><li><a href="date-calculator.html">日期差异</a></li><li><a href="case-converter.html">文本大小写转换器</a></li></ul></div>
+<div><h4 class="footer-heading">法律与信息</h4><ul class="footer-links"><li><a href="../about.html">关于我们</a></li><li><a href="../contact.html">联系我们</a></li><li><a href="../privacy-policy.html">隐私政策</a></li><li><a href="../terms.html">服务条款</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools。版权所有。适合所有人的免费在线实用程序。</p><div class="footer-lang-select">
+          <span>语言：</span>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+        </div></div></div></footer>
+<script>
+function computeBMR(sex, age, heightCm, weightKg) {
+  if (sex !== "male" && sex !== "female") return null;
+  if (!isFinite(age) || age < 10 || age > 120) return null;
+  if (!isFinite(heightCm) || heightCm < 50 || heightCm > 250) return null;
+  if (!isFinite(weightKg) || weightKg < 20 || weightKg > 400) return null;
+  var base = 10 * weightKg + 6.25 * heightCm - 5 * age;
+  return sex === "male" ? base + 5 : base - 161;
+}
+function activityFactor(level) {
+  var m = { sedentary: 1.2, light: 1.375, moderate: 1.55, active: 1.725, veryactive: 1.9 };
+  return m[level] === undefined ? null : m[level];
+}
+function caloriesFor(bmr, level) {
+  var f = activityFactor(level);
+  if (bmr === null || f === null) return null;
+  return Math.round(bmr * f);
+}
+function cmFromFeetInches(ft, inch) {
+  if (!isFinite(ft) || !isFinite(inch) || ft < 1 || ft > 8 || inch < 0 || inch > 11) return null;
+  return (ft * 12 + inch) * 2.54;
+}
+function kgFromLb(lb) {
+  if (!isFinite(lb) || lb < 44 || lb > 880) return null;
+  return lb / 2.20462;
+}
+// --- DOM ---
+ (function() {
+  var t = document.querySelector(".mobile-nav-toggle"); var n = document.querySelector(".nav-links");
+  if (t && n) t.addEventListener("click", function(){ n.classList.toggle("active"); });
+  window.setUnits = function(mode) {
+    var mg = document.getElementById("metricGroup"), ig = document.getElementById("imperialGroup");
+    var mb = document.getElementById("unitMetricBtn"), ib = document.getElementById("unitImperialBtn");
+    if (mg && ig) { mg.classList.toggle("active", mode === "metric"); ig.classList.toggle("active", mode === "imperial"); }
+    if (mb && ib) { mb.classList.toggle("active", mode === "metric"); ib.classList.toggle("active", mode === "imperial"); }
+  };
+  window.calculateBMRUI = function() {
+    var errBox = document.getElementById("bmrErrorBox"), res = document.getElementById("bmrResultsBox");
+    var sex = document.getElementById("bmrSex").value;
+    var age = parseFloat(document.getElementById("bmrAge").value);
+    var level = document.getElementById("bmrActivity").value;
+    var metric = document.getElementById("metricGroup").classList.contains("active");
+    var cm, kg;
+    if (metric) { cm = parseFloat(document.getElementById("bmrHeightCm").value); kg = parseFloat(document.getElementById("bmrWeightKg").value); }
+    else { cm = cmFromFeetInches(parseFloat(document.getElementById("bmrHeightFt").value), parseFloat(document.getElementById("bmrHeightIn").value)); kg = kgFromLb(parseFloat(document.getElementById("bmrWeightLb").value)); }
+    var bmr = computeBMR(sex, age, cm, kg);
+    var daily = caloriesFor(bmr, level);
+    if (bmr === null || daily === null) { errBox.textContent = "请输入有效值：年龄 10 至 120、所示限制内的身高和体重以及活动水平。"; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    errBox.style.display = "none";
+    document.getElementById("bmrValue").textContent = Math.round(bmr).toLocaleString() + " 千卡";
+    document.getElementById("dailyCalValue").textContent = daily.toLocaleString() + " 千卡";
+    document.getElementById("loseValue").textContent = Math.max(1200, daily - 500).toLocaleString() + " 千卡";
+    document.getElementById("gainValue").textContent = (daily + 500).toLocaleString() + " 千卡";
+    var cb = document.getElementById("copyBmrBtn");
+    if (cb) cb.setAttribute("data-summary", "基础代谢率： " + Math.round(bmr) + " 千卡，维护： " + daily + " 千卡/天。");
+    if (res) { res.classList.add("active"); res.style.display = "block"; }
+  };
+  window.resetBMR = function() {
+    ["bmrAge","bmrHeightCm","bmrWeightKg","bmrHeightFt","bmrHeightIn","bmrWeightLb"].forEach(function(id){ var el=document.getElementById(id); if(el) el.value=""; });
+    var e=document.getElementById("bmrErrorBox"); if(e) e.style.display="none";
+    var r=document.getElementById("bmrResultsBox"); if(r){ r.classList.remove("active"); r.style.display="none"; }
+  };
+  var cb=document.getElementById("copyBmrBtn");
+  if (cb) cb.addEventListener("click", function(){ var s=cb.getAttribute("data-summary"); if(s && navigator.clipboard) navigator.clipboard.writeText(s).catch(function(){}); });
+})();
+</script>
+</body>
+</html>
