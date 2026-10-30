@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan EMI Calculator - Monthly Payment & Amortization Schedule | OmniTools</title>
+  <meta name="description" content="Calculate monthly loan installments (EMI), total interest payable, and annual amortization schedule. Ideal for home mortgages, auto loans, and personal financing.">
+  <meta name="keywords" content="loan emi calculator, mortgage payment calculator, calculate loan monthly payment, loan amortization schedule, car loan calculator, interest payable calculator">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/loan-calculator.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/loan-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-prestamos.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/loan-calculator.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/loan-calculator.html">
+  <meta property="og:title" content="Loan EMI Calculator - Monthly Payment & Amortization Schedule">
+  <meta property="og:description" content="Calculate loan EMI, total interest, and payoff schedules with interactive charts and amortization tables. 100% free and private.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-loan-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Loan & Mortgage EMI Calculator | OmniTools">
+  <meta name="twitter:description" content="Instant monthly loan payment calculations with interest breakdowns and amortization schedules.">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Loan EMI Calculator",
+    "url": "https://omnitools.pages.dev/loan-calculator.html",
+    "applicationCategory": "FinancialApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calculate monthly loan EMI payments, total interest payable, and comprehensive loan amortization schedules.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://omnitools.pages.dev/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Finance",
+        "item": "https://omnitools.pages.dev/#finance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Loan Calculator",
+        "item": "https://omnitools.pages.dev/loan-calculator.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is an EMI (Equated Monthly Installment)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An Equated Monthly Installment (EMI) is a fixed payment amount made by a borrower to a lender at a specified calendar date each month. EMIs are structured to pay off both monthly interest and principal over a set tenure, so that the loan balance reaches exactly zero at the end of the term."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does loan tenure impact total interest payable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A longer loan tenure lowers your monthly payment (EMI), but substantially increases total cumulative interest paid over the life of the loan. A shorter loan tenure increases monthly payments but saves substantial money on total interest charges."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between reducing balance and flat rate loans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In a reducing balance loan (the international standard used by banks and this calculator), interest is calculated each month only on the remaining unpaid principal. In a flat rate loan, interest is calculated on the full initial loan amount throughout the entire tenure, which results in a significantly higher effective interest rate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can making partial prepayments shorten my loan payoff date?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Any additional prepayment directly reduces the outstanding principal balance. This lowers subsequent monthly interest accruals and can eliminate years off a mortgage or term loan."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">All Tools</a></li>
+          <li><a href="age-calculator.html">Age Calc</a></li>
+          <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+          <li><a href="loan-calculator.html" class="active">Loan EMI</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Language Selector">
+          <a href="loan-calculator.html" class="lang-btn active" title="English">EN</a>
+          <a href="es/calculadora-de-prestamos.html" class="lang-btn" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breadcrumbs -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#finance">Finance</a></li>
+          <li aria-current="page">Loan EMI Calculator</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Tool Title Section -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Loan & Mortgage EMI Payment Calculator</h1>
+        <p class="tool-header-desc">
+          Compute accurate monthly installments (EMI), total interest charges, and comprehensive amortization schedules for home mortgages, auto loans, or personal financing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Top Banner Ad Placeholder -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Leaderboard Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Leaderboard Ad (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Main Widget & Sidebar Layout -->
+    <section class="container tool-layout-container">
+      
+      <!-- Primary Tool Widget Column -->
+      <div>
+        <div class="tool-card-widget">
+          
+          <div class="widget-form-grid">
+            <!-- Loan Amount -->
+            <div class="form-group">
+              <label for="loanAmount" class="form-label">
+                <span>Principal Loan Amount ($)</span>
+                <span class="label-hint">Required</span>
+              </label>
+              <input type="number" id="loanAmount" class="form-input" placeholder="e.g. 50000" min="100" max="100000000" step="500">
+              <span class="form-help">Total borrowed amount</span>
+            </div>
+
+            <!-- Two-Col Inputs: Rate & Tenure -->
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="interestRate" class="form-label">
+                  <span>Annual Interest Rate (%)</span>
+                  <span class="label-hint">Annual %</span>
+                </label>
+                <input type="number" id="interestRate" class="form-input" placeholder="e.g. 7.5" min="0" max="50" step="0.05">
+                <span class="form-help">Annual percentage rate (APR)</span>
+              </div>
+
+              <div class="form-group">
+                <label for="loanTenure" class="form-label">
+                  <span>Loan Tenure / Term</span>
+                  <span class="label-hint">Duration</span>
+                </label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="loanTenure" class="form-input" placeholder="e.g. 5" min="1" max="600" step="1" style="flex: 2;">
+                  <select id="tenureUnit" class="form-select" style="flex: 1.5;">
+                    <option value="years" selected>Years</option>
+                    <option value="months">Months</option>
+                  </select>
+                </div>
+                <span class="form-help">Select years or months</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Error Alert Banner -->
+          <div id="loanErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="widget-actions">
+            <button type="button" id="calcLoanBtn" class="btn btn-primary" onclick="calculateLoan()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              Calculate EMI
+            </button>
+            <button type="button" id="resetLoanBtn" class="btn btn-outline" onclick="resetLoan()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reset
+            </button>
+          </div>
+
+          <!-- Calculation Results Box -->
+          <div id="loanResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Loan Payment Breakdown
+              </span>
+              <button type="button" id="copyLoanBtn" class="btn btn-outline btn-sm" title="Copy result summary">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copy Summary
+              </button>
+            </div>
+
+            <!-- Primary Highlight Card: Monthly EMI -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Equated Monthly Installment (EMI)</div>
+              <div class="hero-result-value" id="monthlyEmiValue">$0.00</div>
+              <div class="hero-result-sub">Fixed monthly payment due every month</div>
+            </div>
+
+            <!-- Secondary Metrics Grid -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="totalInterestValue" style="color: #d97706;">$0.00</div>
+                <div class="metric-label">Total Interest Payable</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="totalPaymentValue">$0.00</div>
+                <div class="metric-label">Total Payment (Principal + Interest)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="payoffDateValue" style="color: var(--accent);">-</div>
+                <div class="metric-label">Estimated Payoff Date</div>
+              </div>
+            </div>
+
+            <!-- Visual Proportion Bar: Principal vs Interest -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                </svg>
+                Payment Ratio (Principal vs. Interest)
+              </div>
+              
+              <div class="loan-proportion-bar">
+                <div id="barPrincipal" class="loan-bar-principal" style="width: 70%;" title="Principal Portion"></div>
+                <div id="barInterest" class="loan-bar-interest" style="width: 30%;" title="Interest Portion"></div>
+              </div>
+
+              <div class="loan-legend-wrap">
+                <div class="loan-legend-item">
+                  <span class="loan-legend-dot loan-dot-principal"></span>
+                  <span>Principal: <strong id="legendPrincipalPct" style="color: var(--primary);">0%</strong></span>
+                </div>
+                <div class="loan-legend-item">
+                  <span class="loan-legend-dot loan-dot-interest"></span>
+                  <span>Total Interest: <strong id="legendInterestPct" style="color: #d97706;">0%</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Annual Amortization Table -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Annual Amortization Schedule
+              </div>
+              
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Year</th>
+                      <th>Opening Balance</th>
+                      <th>Principal Paid</th>
+                      <th>Interest Paid</th>
+                      <th>Closing Balance</th>
+                    </tr>
+                  </thead>
+                  <tbody id="amortizationTableBody">
+                    <!-- Populated dynamically via JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Column: Ad & Quick Links -->
+      <aside>
+        <!-- Sidebar Ad Placeholder -->
+        <div class="ad-slot ad-rectangle" aria-label="Sidebar Advertisement">
+          <span class="ad-slot-placeholder-text">Sidebar Rectangle (300x250)</span>
+        </div>
+
+        <!-- Quick Utilities Widget -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Related Calculators</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Percentage Calculator <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Discount & Sales Tax Calculator <span>→</span></a></li>
+            <li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Age & Milestone Calculator <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Body Mass Index Tracker <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Mid-Page In-Content Ad Placement -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="In-Article Advertisement">
+        <span class="ad-slot-placeholder-text">Responsive Content Banner (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
+    <article class="container educational-content">
+
+      <!-- Section 1: How to Use -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          How to Use the OmniTools Loan EMI Calculator
+        </h2>
+        <p class="content-paragraph">
+          Taking out a loan—whether purchasing a family home, financing a vehicle, or consolidating personal debts—represents a significant financial commitment. The OmniTools Loan EMI Calculator provides instant clarity regarding your monthly obligation, total interest expense, and annual payoff trajectory:
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Enter Principal Loan Amount</strong>
+              Input the total borrowed capital in dollars (excluding down payments or upfront fees). For instance, for a $250,000 mortgage on a $300,000 property with a $50,000 down payment, enter <code>250000</code>.
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Specify Annual Interest Rate (%)</strong>
+              Provide the fixed annual percentage rate (APR) quoted by your financial institution (e.g., <code>6.5</code> for a 6.50% mortgage rate).
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Select Loan Tenure (Years or Months)</strong>
+              Enter the duration of the loan agreement. You can switch freely between years (e.g., <code>30</code> years for a traditional mortgage) or months (e.g., <code>60</code> months for a 5-year auto loan).
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Click "Calculate EMI"</strong>
+              Instantly analyze your monthly installment (EMI), total interest payable over the loan lifespan, full repayment amount, and an interactive annual amortization breakdown.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 2: Mathematical EMI Formula -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          The Mathematical EMI Formula & Derivation
+        </h2>
+        <p class="content-paragraph">
+          In standard retail banking, loans utilize the <strong>reducing balance compound interest methodology</strong>. This ensures that every month, interest is levied strictly against the remaining unpaid principal rather than the original loan sum:
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            EMI = [ P × r × (1 + r)^n ] / [ (1 + r)^n - 1 ]
+          </div>
+          <div class="formula-explanation">
+            Where:<br>
+            • <strong>P</strong> = Principal Loan Amount<br>
+            • <strong>r</strong> = Monthly Interest Rate = Annual Rate / (12 × 100)<br>
+            • <strong>n</strong> = Total Number of Monthly Installments (Loan Years × 12)<br><br>
+            <strong>Total Payment</strong> = EMI × n<br>
+            <strong>Total Interest Payable</strong> = Total Payment - P
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          <strong>Step-by-Step Calculation Example:</strong> Suppose you take a $100,000 personal loan at an 8.5% annual interest rate for 5 years (60 months):
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
+          <li>Monthly interest rate $r = 8.5 / (12 \times 100) = 0.0070833$</li>
+          <li>Number of periods $n = 60$</li>
+          <li>Compound factor $(1 + r)^{60} = (1.0070833)^{60} \approx 1.5273$</li>
+          <li>Numerator = $100,000 \times 0.0070833 \times 1.5273 \approx 1081.85$</li>
+          <li>Denominator = $1.5273 - 1 = 0.5273$</li>
+          <li>Monthly EMI = $1081.85 / 0.5273 =$ <strong>$2,051.65 / month</strong></li>
+          <li>Total Repayment = $2,051.65 \times 60 =$ <strong>$123,099.19</strong> ($23,099.19 interest)</li>
+        </ul>
+      </section>
+
+      <!-- Section 3: Reducing Balance vs. Flat Rate Comparison -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          Reducing Balance vs. Flat Rate Loans: Avoid Deceptive Quotes
+        </h2>
+        <p class="content-paragraph">
+          When shopping for loans, borrowers frequently encounter two distinct calculation approaches used by lenders. Understanding the difference can save thousands of dollars:
+        </p>
+
+        <div class="data-table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Reducing Balance Loan (Bank Standard)</th>
+                <th>Flat Rate Loan (Beware)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Interest Calculation</strong></td>
+                <td>Calculated strictly on the declining unpaid principal balance.</td>
+                <td>Calculated on the full initial loan amount throughout the entire term.</td>
+              </tr>
+              <tr>
+                <td><strong>Effective Interest Rate</strong></td>
+                <td>True APR matches the quoted rate (e.g. 10% = 10% APR).</td>
+                <td>Effective APR is nearly <strong>double</strong> the quoted nominal rate!</td>
+              </tr>
+              <tr>
+                <td><strong>Total Interest Paid</strong></td>
+                <td>Substantially lower because principal decreases every month.</td>
+                <td>Significantly higher because you pay interest on money already repaid.</td>
+              </tr>
+              <tr>
+                <td><strong>Prepayment Benefit</strong></td>
+                <td>Directly reduces principal and cuts future interest charges.</td>
+                <td>Often provides negligible interest reduction upon early payoff.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Proven Strategies to Cut Loan Costs -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          3 Proven Strategies to Minimize Mortgage & Loan Interest
+        </h2>
+        <p class="content-paragraph">
+          Borrowers can utilize simple repayment techniques to shave tens of thousands of dollars off long-term debts:
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. The Bi-Weekly Payment Hack</h4>
+            <p class="example-card-body">
+              Instead of paying once a month, pay half your monthly EMI every two weeks. Because there are 52 weeks in a calendar year, you make 26 half-payments—equating to 13 full monthly payments rather than 12. On a 30-year mortgage, this single habit can eliminate 4 to 6 years off your term!
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. Direct Principal Prepayments</h4>
+            <p class="example-card-body">
+              Applying tax refunds, annual bonuses, or surplus savings directly toward principal curtailment drastically lowers remaining debt. Because future interest is computed solely on the remaining balance, prepaying early in the loan schedule delivers compound interest savings.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. Shortening Tenure during Refinancing</h4>
+            <p class="example-card-body">
+              If market interest rates decline or your income increases, refinancing a 30-year mortgage into a 15-year or 20-year term can lock in a lower interest rate and save hundreds of thousands of dollars in cumulative interest expenses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Frequently Asked Questions (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Frequently Asked Questions (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">What is an EMI (Equated Monthly Installment)?</summary>
+            <div class="faq-answer">
+              An Equated Monthly Installment (EMI) is a fixed payment amount made by a borrower to a financial lender on a specific date each month. Each EMI is divided into two parts: one part pays down the interest accrued for the month, while the remaining portion reduces the principal loan balance.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Why is interest higher during the early years of a loan?</summary>
+            <div class="faq-answer">
+              During the initial phase of a reducing balance loan, the outstanding principal is at its peak. Consequently, the monthly interest charge constitutes the majority of each installment payment. As you gradually repay the principal, the interest component decreases and the principal repayment component accelerates.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">How does choosing a longer loan tenure affect total cost?</summary>
+            <div class="faq-answer">
+              Opting for a longer tenure reduces your monthly EMI, making payments more manageable in the short term. However, because interest accrues over an extended duration, the total cumulative interest paid can easily exceed the original amount borrowed.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Is my financial data saved or transmitted to your servers?</summary>
+            <div class="faq-answer">
+              Never. OmniTools operates entirely client-side within your device's web browser. No financial amounts, interest figures, or loan parameters are ever sent to external databases or recorded on remote servers.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools provides free, lightweight, privacy-focused online calculators and utilities for finance, productivity, and education.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Trending Tools</h4>
+          <ul class="footer-links">
+            <li><a href="age-calculator.html">Age Calculator</a></li>
+            <li><a href="bmi-calculator.html">BMI Tracker</a></li>
+            <li><a href="loan-calculator.html">Loan EMI Calculator</a></li>
+            <li><a href="password-generator.html">Password Generator</a></li>
+            <li><a href="word-counter.html">Word Counter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Utilities</h4>
+          <ul class="footer-links">
+            <li><a href="percentage-calculator.html">Percentage Calculator</a></li>
+            <li><a href="discount-calculator.html">Discount Calculator</a></li>
+            <li><a href="unit-converter.html">Unit Converter</a></li>
+            <li><a href="date-calculator.html">Date Difference</a></li>
+            <li><a href="case-converter.html">Text Case Converter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal & Info</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. All rights reserved. Free online utilities for everyone.</p>
+        <div class="footer-lang-select">
+          <span>Language:</span>
+          <a href="loan-calculator.html" style="color: #60a5fa;">English</a> |
+          <a href="es/calculadora-de-prestamos.html">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var loanAmountInput = document.getElementById('loanAmount');
+    var interestRateInput = document.getElementById('interestRate');
+    var loanTenureInput = document.getElementById('loanTenure');
+    var tenureUnitSelect = document.getElementById('tenureUnit');
+    var resultsBox = document.getElementById('loanResultsBox');
+    var errorBox = document.getElementById('loanErrorBox');
+    var copyBtn = document.getElementById('copyLoanBtn');
+
+    [loanAmountInput, interestRateInput, loanTenureInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateLoan();
+        });
+      }
+    });
+
+    window.calculateLoan = function() {
+      var P = parseFloat(loanAmountInput.value);
+      var R = parseFloat(interestRateInput.value);
+      var tenureVal = parseFloat(loanTenureInput.value);
+      var unit = tenureUnitSelect.value;
+
+      if (!P || P <= 0 || isNaN(R) || R < 0 || !tenureVal || tenureVal <= 0) {
+        showError('Please enter valid positive values for loan amount, interest rate, and duration.');
+        return;
+      }
+      if (P > 100000000) {
+        showError('Loan amount cannot exceed 100,000,000.');
+        return;
+      }
+      if (R > 50) {
+        showError('Annual interest rate cannot exceed 50%.');
+        return;
+      }
+
+      var n = (unit === 'years') ? Math.round(tenureVal * 12) : Math.round(tenureVal);
+      if (n < 1 || n > 600) {
+        showError('Loan tenure must be between 1 month and 50 years (600 months).');
+        return;
+      }
+
+      hideError();
+
+      var emi = 0;
+      var totalPayment = 0;
+      var totalInterest = 0;
+
+      if (R === 0) {
+        emi = P / n;
+        totalPayment = P;
+        totalInterest = 0;
+      } else {
+        var r = R / (12 * 100);
+        var factor = Math.pow(1 + r, n);
+        emi = (P * r * factor) / (factor - 1);
+        totalPayment = emi * n;
+        totalInterest = totalPayment - P;
+      }
+
+      var principalPercent = ((P / totalPayment) * 100).toFixed(1);
+      var interestPercent = ((totalInterest / totalPayment) * 100).toFixed(1);
+
+      var today = new Date();
+      var payoffDate = new Date(today.getFullYear(), today.getMonth() + n, 1);
+      var payoffStr = payoffDate.toLocaleDateString(undefined, { month: 'long', year: 'numeric' });
+
+      function formatCurr(val) {
+        return '$' + val.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      document.getElementById('monthlyEmiValue').textContent = formatCurr(emi);
+      document.getElementById('totalInterestValue').textContent = formatCurr(totalInterest);
+      document.getElementById('totalPaymentValue').textContent = formatCurr(totalPayment);
+      document.getElementById('payoffDateValue').textContent = payoffStr;
+
+      var barPrincipal = document.getElementById('barPrincipal');
+      var barInterest = document.getElementById('barInterest');
+      if (barPrincipal && barInterest) {
+        barPrincipal.style.width = principalPercent + '%';
+        barInterest.style.width = interestPercent + '%';
+      }
+      document.getElementById('legendPrincipalPct').textContent = principalPercent + '%';
+      document.getElementById('legendInterestPct').textContent = interestPercent + '%';
+
+      generateSchedule(P, R, n, emi);
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'Loan Summary: Principal ' + formatCurr(P) + ' at ' + R + '% for ' + n + ' months. Monthly EMI: ' + formatCurr(emi) + ', Total Interest: ' + formatCurr(totalInterest) + ', Total Payment: ' + formatCurr(totalPayment) + '. Calculated with OmniTools.');
+      }
+    };
+
+    function generateSchedule(principal, annualRate, totalMonths, emi) {
+      var tableBody = document.getElementById('amortizationTableBody');
+      if (!tableBody) return;
+      tableBody.innerHTML = '';
+
+      var r = (annualRate > 0) ? annualRate / (12 * 100) : 0;
+      var balance = principal;
+      var currentMonth = 0;
+      var yearNum = 1;
+
+      while (currentMonth < totalMonths && balance > 0) {
+        var yearStartBalance = balance;
+        var yearPrincipal = 0;
+        var yearInterest = 0;
+
+        var monthsInThisYear = Math.min(12, totalMonths - currentMonth);
+
+        for (var m = 0; m < monthsInThisYear; m++) {
+          var monthInterest = balance * r;
+          var monthPrincipal = emi - monthInterest;
+
+          if (monthPrincipal > balance || (currentMonth + m === totalMonths - 1)) {
+            monthPrincipal = balance;
+          }
+
+          yearInterest += monthInterest;
+          yearPrincipal += monthPrincipal;
+          balance -= monthPrincipal;
+        }
+
+        currentMonth += monthsInThisYear;
+        var yearEndBalance = Math.max(0, balance);
+
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td><strong>Year ' + yearNum + '</strong></td>' +
+          '<td>$' + Math.round(yearStartBalance).toLocaleString() + '</td>' +
+          '<td>$' + Math.round(yearPrincipal).toLocaleString() + '</td>' +
+          '<td>$' + Math.round(yearInterest).toLocaleString() + '</td>' +
+          '<td>$' + Math.round(yearEndBalance).toLocaleString() + '</td>';
+        tableBody.appendChild(tr);
+        yearNum++;
+      }
+    }
+
+    window.resetLoan = function() {
+      loanAmountInput.value = '';
+      interestRateInput.value = '';
+      loanTenureInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('Loan summary copied to clipboard!');
+          }).catch(function() {
+            prompt('Copy summary:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

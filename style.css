@@ -1502,4 +1502,57 @@ main {
   background: #f8fafc;
 }
 
+/* --------------------------------------------------------------------------
+   16. Finance & Loan EMI Styles
+   -------------------------------------------------------------------------- */
+.loan-proportion-bar {
+  display: flex;
+  height: 16px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.15);
+  margin: 1.25rem 0 0.75rem;
+}
+
+.loan-bar-principal {
+  background: var(--primary);
+  transition: width 0.4s ease;
+}
+
+.loan-bar-interest {
+  background: #f59e0b;
+  transition: width 0.4s ease;
+}
+
+.loan-legend-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+}
+
+.loan-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.loan-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+}
+
+.loan-dot-principal {
+  background: var(--primary);
+}
+
+.loan-dot-interest {
+  background: #f59e0b;
+}
+
+
 

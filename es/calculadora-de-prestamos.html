@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Préstamos e Hipotecas - Cuota Mensual y Amortización | OmniTools</title>
+  <meta name="description" content="Calcula la cuota mensual de tu préstamo o hipoteca, intereses totales a pagar y tabla de amortización anual con el método francés. 100% gratis y privado.">
+  <meta name="keywords" content="calculadora de prestamos, simulador de hipotecas, calcular cuota mensual prestamo, tabla de amortizacion prestamo, calcular intereses hipoteca">
+  <meta name="author" content="OmniTools">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canónica y SEO Multilingüe hreflang -->
+  <link rel="canonical" href="https://omnitools.pages.dev/es/calculadora-de-prestamos.html">
+  <link rel="alternate" hreflang="en" href="https://omnitools.pages.dev/loan-calculator.html">
+  <link rel="alternate" hreflang="es" href="https://omnitools.pages.dev/es/calculadora-de-prestamos.html">
+  <link rel="alternate" hreflang="x-default" href="https://omnitools.pages.dev/loan-calculator.html">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omnitools.pages.dev/es/calculadora-de-prestamos.html">
+  <meta property="og:title" content="Calculadora de Préstamos e Hipotecas - Cuota Mensual y Amortización">
+  <meta property="og:description" content="Simula tu crédito bancario, hipoteca o préstamo personal con desglose de cuota mensual, costes de intereses y calendario de amortización.">
+  <meta property="og:image" content="https://omnitools.pages.dev/og-loan-calculator.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Simulador de Préstamos e Hipotecas | OmniTools">
+  <meta name="twitter:description" content="Calcula tu cuota mensual e intereses con desglose anual. 100% privado y sin registros.">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Datos Estructurados JSON-LD (WebApplication & FAQPage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools Calculadora de Préstamos",
+    "url": "https://omnitools.pages.dev/es/calculadora-de-prestamos.html",
+    "applicationCategory": "FinancialApplication",
+    "operatingSystem": "All",
+    "inLanguage": "es",
+    "description": "Calcula cuotas mensuales de préstamos, intereses totales devengados y cuadros de amortización con el sistema francés estándar.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://omnitools.pages.dev/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Finanzas",
+        "item": "https://omnitools.pages.dev/es/#finance"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Calculadora de Préstamos",
+        "item": "https://omnitools.pages.dev/es/calculadora-de-prestamos.html"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es la cuota mensual constante o sistema de amortización francés?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El sistema francés es el método estándar empleado por la banca para préstamos e hipotecas. Consiste en una cuota mensual constante donde, al principio, la mayor parte de la cuota corresponde a intereses y una pequeña porción a capital. Con el paso del tiempo, la proporción de intereses disminuye y la devolución de capital se acelera."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo afecta el plazo del préstamo a los intereses totales a pagar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un plazo de amortización más prolongado reduce la cuota mensual haciéndola más asequible a corto plazo, pero incrementa notablemente la cantidad total de intereses devengados a lo largo de la vida del préstamo. Un plazo más corto aumenta la cuota mensual pero permite un ahorro significativo en intereses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es mejor amortizar anticipadamente reduciendo plazo o cuota?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Desde una perspectiva estrictamente matemática y financiera, reducir el plazo siempre ahorra más dinero en intereses totales. Reducir la cuota mensual aporta mayor desahogo o liquidez inmediata cada mes, pero ahorra menos intereses globales."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Encabezado del Sitio -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Inicio de OmniTools">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <span class="brand-name">Omni<span>Tools</span></span>
+      </a>
+
+      <!-- Navegación -->
+      <nav aria-label="Navegación Principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Todas las Herramientas</a></li>
+          <li><a href="calculadora-de-edad.html">Edad</a></li>
+          <li><a href="calculadora-de-imc.html">IMC</a></li>
+          <li><a href="calculadora-de-prestamos.html" class="active">Préstamos</a></li>
+          <li><a href="../about.html">Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Selector de Idioma -->
+      <div class="nav-actions">
+        <div class="lang-switcher" aria-label="Selector de idioma">
+          <a href="../loan-calculator.html" class="lang-btn" title="English">EN</a>
+          <a href="calculadora-de-prestamos.html" class="lang-btn active" title="Español">ES</a>
+        </div>
+        <button class="mobile-nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Migas de Pan -->
+    <div class="page-top-nav">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#finance">Finanzas</a></li>
+          <li aria-current="page">Calculadora de Préstamos</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Título de la Herramienta -->
+    <section class="tool-header-section">
+      <div class="container">
+        <h1 class="tool-header-title">Calculadora de Préstamos e Hipotecas</h1>
+        <p class="tool-header-desc">
+          Calcula la cuota mensual exacta, los intereses totales a pagar y el cuadro de amortización año a año para hipotecas, créditos personales o financiación de vehículos.
+        </p>
+      </div>
+    </section>
+
+    <!-- Espacio Publicitario Superior -->
+    <div class="container">
+      <div class="ad-slot ad-leaderboard" aria-label="Espacio Publicitario">
+        <span class="ad-slot-placeholder-text">Banner Superior Adaptable (728x90)</span>
+      </div>
+    </div>
+
+    <!-- Contenedor del Widget y Barra Lateral -->
+    <section class="container tool-layout-container">
+      
+      <!-- Columna Principal -->
+      <div>
+        <div class="tool-card-widget">
+          
+          <div class="widget-form-grid">
+            <!-- Importe del Préstamo -->
+            <div class="form-group">
+              <label for="loanAmount" class="form-label">
+                <span>Importe Total del Préstamo (€ / $)</span>
+                <span class="label-hint">Obligatorio</span>
+              </label>
+              <input type="number" id="loanAmount" class="form-input" placeholder="Ej: 150000" min="100" max="100000000" step="500">
+              <span class="form-help">Capital prestado por la entidad bancaria</span>
+            </div>
+
+            <!-- Interés y Plazo en Dos Columnas -->
+            <div class="widget-form-grid two-col" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label for="interestRate" class="form-label">
+                  <span>Tipo de Interés Anual (%)</span>
+                  <span class="label-hint">TIN Anual</span>
+                </label>
+                <input type="number" id="interestRate" class="form-input" placeholder="Ej: 3.5" min="0" max="50" step="0.05">
+                <span class="form-help">Tipo de interés nominal anual pactado</span>
+              </div>
+
+              <div class="form-group">
+                <label for="loanTenure" class="form-label">
+                  <span>Plazo de Amortización</span>
+                  <span class="label-hint">Duración</span>
+                </label>
+                <div style="display: flex; gap: 0.5rem;">
+                  <input type="number" id="loanTenure" class="form-input" placeholder="Ej: 25" min="1" max="600" step="1" style="flex: 2;">
+                  <select id="tenureUnit" class="form-select" style="flex: 1.5;">
+                    <option value="years" selected>Años</option>
+                    <option value="months">Meses</option>
+                  </select>
+                </div>
+                <span class="form-help">Selecciona años o meses de duración</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mensaje de Error -->
+          <div id="loanErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="widget-actions">
+            <button type="button" id="calcLoanBtn" class="btn btn-primary" onclick="calculateLoan()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              </svg>
+              Calcular Cuota
+            </button>
+            <button type="button" id="resetLoanBtn" class="btn btn-outline" onclick="resetLoan()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Reiniciar
+            </button>
+          </div>
+
+          <!-- Cuadro de Resultados -->
+          <div id="loanResultsBox" class="results-box">
+            <div class="results-header">
+              <span class="results-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Desglose del Préstamo
+              </span>
+              <button type="button" id="copyLoanBtn" class="btn btn-outline btn-sm" title="Copiar resumen">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                Copiar Resumen
+              </button>
+            </div>
+
+            <!-- Tarjeta Principal: Cuota Mensual -->
+            <div class="hero-result-card">
+              <div class="hero-result-label">Cuota Mensual Constante</div>
+              <div class="hero-result-value" id="monthlyEmiValue">0,00 €</div>
+              <div class="hero-result-sub">Importe fijo a pagar cada mes</div>
+            </div>
+
+            <!-- Métricas Complementarias -->
+            <div class="metrics-grid">
+              <div class="metric-card">
+                <div class="metric-value" id="totalInterestValue" style="color: #d97706;">0,00 €</div>
+                <div class="metric-label">Total Intereses a Pagar</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="totalPaymentValue">0,00 €</div>
+                <div class="metric-label">Coste Total (Capital + Intereses)</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-value" id="payoffDateValue" style="color: var(--accent);">-</div>
+                <div class="metric-label">Fecha Prevista de Cancelación</div>
+              </div>
+            </div>
+
+            <!-- Barra Visual de Proporción: Capital frente a Intereses -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+                </svg>
+                Proporción del Pago (Capital vs. Intereses)
+              </div>
+              
+              <div class="loan-proportion-bar">
+                <div id="barPrincipal" class="loan-bar-principal" style="width: 70%;" title="Porción de Capital"></div>
+                <div id="barInterest" class="loan-bar-interest" style="width: 30%;" title="Porción de Intereses"></div>
+              </div>
+
+              <div class="loan-legend-wrap">
+                <div class="loan-legend-item">
+                  <span class="loan-legend-dot loan-dot-principal"></span>
+                  <span>Capital devuelto: <strong id="legendPrincipalPct" style="color: var(--primary);">0%</strong></span>
+                </div>
+                <div class="loan-legend-item">
+                  <span class="loan-legend-dot loan-dot-interest"></span>
+                  <span>Intereses bancarios: <strong id="legendInterestPct" style="color: #d97706;">0%</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tabla de Amortización Anual -->
+            <div class="milestones-wrapper" style="margin-top: 1.5rem;">
+              <div class="milestones-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Cuadro de Amortización Anual
+              </div>
+              
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Año</th>
+                      <th>Saldo Inicial</th>
+                      <th>Capital Amortizado</th>
+                      <th>Intereses Pagados</th>
+                      <th>Saldo Pendiente</th>
+                    </tr>
+                  </thead>
+                  <tbody id="amortizationTableBody">
+                    <!-- Filas generadas dinámicamente mediante JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Lateral -->
+      <aside>
+        <div class="ad-slot ad-rectangle" aria-label="Espacio Publicitario">
+          <span class="ad-slot-placeholder-text">Rectángulo Lateral (300x250)</span>
+        </div>
+
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Otras Calculadoras</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li><a href="calculadora-de-porcentaje.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Porcentaje <span>→</span></a></li>
+            <li><a href="calculadora-de-descuentos.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Descuentos <span>→</span></a></li>
+            <li><a href="calculadora-de-edad.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Edad <span>→</span></a></li>
+            <li><a href="calculadora-de-imc.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de IMC <span>→</span></a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <!-- Espacio Publicitario en Contenido -->
+    <div class="container">
+      <div class="ad-slot ad-in-content" aria-label="Espacio Publicitario en Contenido">
+        <span class="ad-slot-placeholder-text">Banner en Contenido Adaptable (728x90 / 300x250)</span>
+      </div>
+    </div>
+
+    <!-- Guía Educativa y SEO Exhaustivo en Español (500+ Palabras) -->
+    <article class="container educational-content">
+
+      <!-- Sección 1: Cómo Usar la Herramienta -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Cómo Usar la Calculadora de Préstamos e Hipotecas
+        </h2>
+        <p class="content-paragraph">
+          Solicitar financiación bancaria —ya sea para comprar una vivienda, financiar un vehículo o acometer una reforma personal— implica asumir un compromiso económico de largo alcance. La calculadora de préstamos de OmniTools te proporciona total transparencia sobre el impacto real de cada mensualidad y el coste global de la operación:
+        </p>
+        <ol class="step-list">
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Introduce el Capital Prestado</strong>
+              Escribe el importe neto que te concederá la entidad bancaria en euros o dólares (descontando la entrada aportada o los gastos iniciales).
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Especifica el Tipo de Interés Nominal Anual (%)</strong>
+              Indica el tipo de interés fijo anual ofertado por la entidad bancaria (por ejemplo, <code>3.5</code> para un 3,50% TIN).
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Selecciona el Plazo de Devolución (Años o Meses)</strong>
+              Elige el tiempo total estipulado en el contrato. Puedes alternar fácilmente entre años (por ejemplo, <code>25</code> o <code>30</code> años para hipotecas) o meses (por ejemplo, <code>48</code> o <code>60</code> meses para un préstamo de coche).
+            </div>
+          </li>
+          <li class="step-item">
+            <div class="step-item-content">
+              <strong>Pulsa en "Calcular Cuota"</strong>
+              Al instante obtendrás el importe de la cuota mensual periódica, el total acumulado de intereses devengados, el coste global de la operación y el cuadro de amortización año a año.
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Sección 2: Fórmula Matemática y Método Francés -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          </svg>
+          Fórmula del Sistema Francés de Amortización
+        </h2>
+        <p class="content-paragraph">
+          En el mercado bancario internacional y español, la inmensa mayoría de hipotecas y préstamos a tipo fijo se rigen por el <strong>sistema de amortización francés de cuota constante</strong> sobre saldo deudor vivo:
+        </p>
+
+        <div class="formula-box">
+          <div class="formula-expression">
+            Cuota Mensual (C) = [ P × r × (1 + r)^n ] / [ (1 + r)^n - 1 ]
+          </div>
+          <div class="formula-explanation">
+            Donde:<br>
+            • <strong>P</strong> = Capital o importe principal del préstamo<br>
+            • <strong>r</strong> = Tipo de interés mensual = Interés Anual / (12 × 100)<br>
+            • <strong>n</strong> = Número total de cuotas mensuales (Años × 12)<br><br>
+            <strong>Coste Total</strong> = Cuota Mensual × n<br>
+            <strong>Intereses Totales a Pagar</strong> = Coste Total - P
+          </div>
+        </div>
+
+        <p class="content-paragraph">
+          <strong>Ejemplo Práctico Paso a Paso:</strong> Imagina una hipoteca de 150.000 € al 3,5% de interés anual durante 25 años (300 meses):
+        </p>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
+          <li>Interés mensual $r = 3,5 / (12 \times 100) = 0,0029167$</li>
+          <li>Número de mensualidades $n = 300$</li>
+          <li>Factor de capitalización $(1 + r)^{300} = (1,0029167)^{300} \approx 2,3966$</li>
+          <li>Numerador = $150.000 \times 0,0029167 \times 2,3966 \approx 1.048,51$</li>
+          <li>Denominador = $2,3966 - 1 = 1,3966$</li>
+          <li>Cuota mensual = $1.048,51 / 1,3966 =$ <strong>750,76 € / mes</strong></li>
+          <li>Coste total devuelto = $750,76 \times 300 =$ <strong>225.228 €</strong> (75.228 € en intereses).</li>
+        </ul>
+      </section>
+
+      <!-- Sección 3: Consejos para Reducir Intereses -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          3 Estrategias para Ahorrar Miles de Euros en tu Préstamo
+        </h2>
+        <p class="content-paragraph">
+          Aplicar pequeños ajustes a tu plan de pagos puede recortar sustancialmente la carga financiera de una deuda a largo plazo:
+        </p>
+
+        <div class="example-cards-grid">
+          <div class="example-card">
+            <h4 class="example-card-title">1. Amortización Anticipada: Reducción de Plazo</h4>
+            <p class="example-card-body">
+              Al realizar pagos extraordinarios directos contra el capital pendiente, puedes optar por reducir cuota o reducir plazo. Reducir el plazo acorta la vida del préstamo y genera un ahorro exponencialmente mayor en intereses acumulados.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">2. Amortizar en los Primeros Años</h4>
+            <p class="example-card-body">
+              Dado que en el sistema francés los primeros años se paga la mayor concentración de intereses sobre el saldo vivo, amortizar capital anticipadamente durante los primeros 5 o 10 años produce el máximo impacto de ahorro posible.
+            </p>
+          </div>
+
+          <div class="example-card">
+            <h4 class="example-card-title">3. Subrogación o Novación de Hipoteca</h4>
+            <p class="example-card-body">
+              Si las condiciones macroeconómicas o las ofertas de otros bancos mejoran, cambiar la hipoteca de banco (subrogación) para reducir el tipo de interés en tan solo un 0,5% puede suponer un ahorro de más de 15.000 € en una hipoteca estándar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección 4: Preguntas Frecuentes (FAQ) -->
+      <section class="content-section">
+        <h2 class="content-heading">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Preguntas Frecuentes (FAQs)
+        </h2>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">¿Por qué al principio del préstamo pago casi todo en intereses?</summary>
+            <div class="faq-answer">
+              Bajo el sistema francés de cuota fija, los intereses mensuales se calculan sobre el capital que aún debes. Como al principio debes prácticamente todo el dinero, la parte de intereses es muy alta. A medida que devuelves capital, el saldo pendiente disminuye y con él los intereses mensuales, acelerando la amortización del principal.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Qué ocurre si el tipo de interés pactado es del 0%?</summary>
+            <div class="faq-answer">
+              En préstamos al 0% (como promociones de compra aplazada sin intereses), la cuota mensual se calcula dividiendo directamente el importe total entre el número de mensualidades. No se devengan intereses adicionales.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">¿Se guardan mis cifras económicas en algún servidor?</summary>
+            <div class="faq-answer">
+              En ningún caso. OmniTools funciona bajo una estricta política de privacidad local. Todos los cálculos matemáticos se resuelven en el navegador de tu dispositivo sin enviar datos a servidores externos.
+            </div>
+          </details>
+        </div>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
+          </a>
+          <p>
+            OmniTools ofrece calculadoras y utilidades web gratuitas, ligeras y respetuosas con la privacidad para finanzas, salud y educación.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Herramientas Populares</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-edad.html">Calculadora de Edad</a></li>
+            <li><a href="calculadora-de-imc.html">Calculadora de IMC</a></li>
+            <li><a href="calculadora-de-prestamos.html">Calculadora de Préstamos</a></li>
+            <li><a href="generador-de-contrasenas.html">Generador de Contraseñas</a></li>
+            <li><a href="contador-de-palabras.html">Contador de Palabras</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Otras Utilidades</h4>
+          <ul class="footer-links">
+            <li><a href="calculadora-de-porcentaje.html">Calculadora de Porcentaje</a></li>
+            <li><a href="calculadora-de-descuentos.html">Calculadora de Descuentos</a></li>
+            <li><a href="conversor-de-unidades.html">Conversor de Unidades</a></li>
+            <li><a href="calculadora-de-dias.html">Diferencia entre Fechas</a></li>
+            <li><a href="convertidor-de-mayusculas.html">Convertidor de Mayúsculas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Legal e Información</h4>
+          <ul class="footer-links">
+            <li><a href="../about.html">Quiénes Somos</a></li>
+            <li><a href="../contact.html">Contacto</a></li>
+            <li><a href="../privacy-policy.html">Política de Privacidad</a></li>
+            <li><a href="../terms.html">Términos de Servicio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 OmniTools. Todos los derechos reservados. Utilidades online gratuitas.</p>
+        <div class="footer-lang-select">
+          <span>Idioma:</span>
+          <a href="../loan-calculator.html">English</a> |
+          <a href="calculadora-de-prestamos.html" style="color: #60a5fa;">Español</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var loanAmountInput = document.getElementById('loanAmount');
+    var interestRateInput = document.getElementById('interestRate');
+    var loanTenureInput = document.getElementById('loanTenure');
+    var tenureUnitSelect = document.getElementById('tenureUnit');
+    var resultsBox = document.getElementById('loanResultsBox');
+    var errorBox = document.getElementById('loanErrorBox');
+    var copyBtn = document.getElementById('copyLoanBtn');
+
+    [loanAmountInput, interestRateInput, loanTenureInput].forEach(function(inp) {
+      if (inp) {
+        inp.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') calculateLoan();
+        });
+      }
+    });
+
+    window.calculateLoan = function() {
+      var P = parseFloat(loanAmountInput.value);
+      var R = parseFloat(interestRateInput.value);
+      var tenureVal = parseFloat(loanTenureInput.value);
+      var unit = tenureUnitSelect.value;
+
+      if (!P || P <= 0 || isNaN(R) || R < 0 || !tenureVal || tenureVal <= 0) {
+        showError('Por favor, introduce valores positivos válidos para importe, tipo de interés y duración.');
+        return;
+      }
+      if (P > 100000000) {
+        showError('El importe del préstamo no puede superar los 100.000.000.');
+        return;
+      }
+      if (R > 50) {
+        showError('El tipo de interés anual no puede superar el 50%.');
+        return;
+      }
+
+      var n = (unit === 'years') ? Math.round(tenureVal * 12) : Math.round(tenureVal);
+      if (n < 1 || n > 600) {
+        showError('El plazo debe situarse entre 1 mes y 50 años (600 meses).');
+        return;
+      }
+
+      hideError();
+
+      var emi = 0;
+      var totalPayment = 0;
+      var totalInterest = 0;
+
+      if (R === 0) {
+        emi = P / n;
+        totalPayment = P;
+        totalInterest = 0;
+      } else {
+        var r = R / (12 * 100);
+        var factor = Math.pow(1 + r, n);
+        emi = (P * r * factor) / (factor - 1);
+        totalPayment = emi * n;
+        totalInterest = totalPayment - P;
+      }
+
+      var principalPercent = ((P / totalPayment) * 100).toFixed(1);
+      var interestPercent = ((totalInterest / totalPayment) * 100).toFixed(1);
+
+      var today = new Date();
+      var payoffDate = new Date(today.getFullYear(), today.getMonth() + n, 1);
+      var payoffStr = payoffDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+
+      function formatCurr(val) {
+        return val.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+      }
+
+      document.getElementById('monthlyEmiValue').textContent = formatCurr(emi);
+      document.getElementById('totalInterestValue').textContent = formatCurr(totalInterest);
+      document.getElementById('totalPaymentValue').textContent = formatCurr(totalPayment);
+      document.getElementById('payoffDateValue').textContent = payoffStr;
+
+      var barPrincipal = document.getElementById('barPrincipal');
+      var barInterest = document.getElementById('barInterest');
+      if (barPrincipal && barInterest) {
+        barPrincipal.style.width = principalPercent + '%';
+        barInterest.style.width = interestPercent + '%';
+      }
+      document.getElementById('legendPrincipalPct').textContent = principalPercent + '%';
+      document.getElementById('legendInterestPct').textContent = interestPercent + '%';
+
+      generateSchedule(P, R, n, emi);
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'Resumen de Préstamo: Capital ' + formatCurr(P) + ' al ' + R + '% durante ' + n + ' meses. Cuota mensual: ' + formatCurr(emi) + ', Intereses totales: ' + formatCurr(totalInterest) + ', Total a devolver: ' + formatCurr(totalPayment) + '. Calculado en OmniTools.');
+      }
+    };
+
+    function generateSchedule(principal, annualRate, totalMonths, emi) {
+      var tableBody = document.getElementById('amortizationTableBody');
+      if (!tableBody) return;
+      tableBody.innerHTML = '';
+
+      var r = (annualRate > 0) ? annualRate / (12 * 100) : 0;
+      var balance = principal;
+      var currentMonth = 0;
+      var yearNum = 1;
+
+      while (currentMonth < totalMonths && balance > 0) {
+        var yearStartBalance = balance;
+        var yearPrincipal = 0;
+        var yearInterest = 0;
+
+        var monthsInThisYear = Math.min(12, totalMonths - currentMonth);
+
+        for (var m = 0; m < monthsInThisYear; m++) {
+          var monthInterest = balance * r;
+          var monthPrincipal = emi - monthInterest;
+
+          if (monthPrincipal > balance || (currentMonth + m === totalMonths - 1)) {
+            monthPrincipal = balance;
+          }
+
+          yearInterest += monthInterest;
+          yearPrincipal += monthPrincipal;
+          balance -= monthPrincipal;
+        }
+
+        currentMonth += monthsInThisYear;
+        var yearEndBalance = Math.max(0, balance);
+
+        var tr = document.createElement('tr');
+        tr.innerHTML = '<td><strong>Año ' + yearNum + '</strong></td>' +
+          '<td>' + Math.round(yearStartBalance).toLocaleString('es-ES') + ' €</td>' +
+          '<td>' + Math.round(yearPrincipal).toLocaleString('es-ES') + ' €</td>' +
+          '<td>' + Math.round(yearInterest).toLocaleString('es-ES') + ' €</td>' +
+          '<td>' + Math.round(yearEndBalance).toLocaleString('es-ES') + ' €</td>';
+        tableBody.appendChild(tr);
+        yearNum++;
+      }
+    }
+
+    window.resetLoan = function() {
+      loanAmountInput.value = '';
+      interestRateInput.value = '';
+      loanTenureInput.value = '';
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Resumen de préstamo copiado al portapapeles!');
+          }).catch(function() {
+            prompt('Copiar resumen:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
