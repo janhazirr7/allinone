@@ -208,13 +208,13 @@
 
           <!-- Botones de Acción -->
           <div class="widget-actions">
-            <button type="button" id="calcAgeBtn" class="btn btn-primary">
+            <button type="button" id="calcAgeBtn" class="btn btn-primary" onclick="calculateAge()">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
               </svg>
               Calcular Edad
             </button>
-            <button type="button" id="resetAgeBtn" class="btn btn-outline">
+            <button type="button" id="resetAgeBtn" class="btn btn-outline" onclick="resetAge()">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
@@ -596,9 +596,194 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="../js/main.js"></script>
-  <script src="../js/age-calculator-es.js"></script>
+  <!-- Embedded Standalone Engine (Zero External Dependencies) -->
+  <script>
+  (function() {
+    var mobileToggle = document.querySelector('.mobile-nav-toggle');
+    var navLinks = document.querySelector('.nav-links');
+    if (mobileToggle && navLinks) {
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    var today = new Date();
+    function formatYMD(d) {
+      var year = d.getFullYear();
+      var month = String(d.getMonth() + 1).padStart(2, '0');
+      var day = String(d.getDate()).padStart(2, '0');
+      return year + '-' + month + '-' + day;
+    }
+
+    var dobInput = document.getElementById('dobInput');
+    var targetDateInput = document.getElementById('targetDateInput');
+    var resultsBox = document.getElementById('ageResultsBox');
+    var errorBox = document.getElementById('ageErrorBox');
+    var copyBtn = document.getElementById('copyAgeBtn');
+
+    if (targetDateInput) {
+      targetDateInput.value = formatYMD(today);
+      targetDateInput.max = '2099-12-31';
+    }
+    if (dobInput) {
+      dobInput.max = formatYMD(today);
+      dobInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') calculateAge();
+      });
+    }
+    if (targetDateInput) {
+      targetDateInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') calculateAge();
+      });
+    }
+
+    window.calculateAge = function() {
+      if (!dobInput || !dobInput.value) {
+        showError('Por favor, selecciona tu fecha de nacimiento.');
+        if (dobInput) dobInput.focus();
+        return;
+      }
+
+      var birthParts = dobInput.value.split('-').map(Number);
+      var birthDate = new Date(birthParts[0], birthParts[1] - 1, birthParts[2]);
+
+      var targetParts = (targetDateInput && targetDateInput.value) ? targetDateInput.value.split('-').map(Number) : null;
+      var targetDate = targetParts ? new Date(targetParts[0], targetParts[1] - 1, targetParts[2]) : new Date();
+
+      if (birthDate.getTime() > targetDate.getTime()) {
+        showError('La fecha de nacimiento no puede ser posterior a la fecha de cálculo.');
+        return;
+      }
+
+      hideError();
+
+      var years = targetDate.getFullYear() - birthDate.getFullYear();
+      var months = targetDate.getMonth() - birthDate.getMonth();
+      var days = targetDate.getDate() - birthDate.getDate();
+
+      if (days < 0) {
+        months -= 1;
+        var prevMonthYear = (months < 0) ? targetDate.getFullYear() - 1 : targetDate.getFullYear();
+        var prevMonthIndex = (months < 0) ? 11 : targetDate.getMonth() - 1;
+        var daysInPrevMonth = new Date(prevMonthYear, prevMonthIndex + 1, 0).getDate();
+        days += daysInPrevMonth;
+      }
+
+      if (months < 0) {
+        years -= 1;
+        months += 12;
+      }
+
+      var diffTimeMs = targetDate.getTime() - birthDate.getTime();
+      var totalDays = Math.floor(diffTimeMs / (1000 * 60 * 60 * 24));
+      var totalWeeks = Math.floor(totalDays / 7);
+      var totalMonths = (years * 12) + months;
+      var totalHours = totalDays * 24;
+      var totalMinutes = totalHours * 60;
+
+      var currentYear = targetDate.getFullYear();
+      var nextBday = new Date(currentYear, birthDate.getMonth(), birthDate.getDate());
+      if (nextBday.getTime() < targetDate.getTime()) {
+        nextBday = new Date(currentYear + 1, birthDate.getMonth(), birthDate.getDate());
+      }
+      var diffDaysNext = Math.ceil((nextBday.getTime() - targetDate.getTime()) / (1000 * 60 * 60 * 24));
+      var dayNames = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+      var dayOfWeek = dayNames[nextBday.getDay()];
+
+      var nextBdayText = (diffDaysNext === 0) ? '🎉 ¡Hoy es tu cumpleaños!' : (diffDaysNext === 1 ? 'Falta 1 día' : 'Faltan ' + diffDaysNext + ' días');
+
+      var zodiac = getZodiac(birthDate.getMonth() + 1, birthDate.getDate());
+      var birthstone = getBirthstone(birthDate.getMonth() + 1);
+
+      var milestone10kDate = new Date(birthDate.getTime() + (10000 * 24 * 60 * 60 * 1000));
+      var milestone10kStr = milestone10kDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'short', day: 'numeric' });
+
+      document.getElementById('primaryAgeText').textContent = years + ' Años, ' + months + ' Meses, ' + days + ' Días';
+      document.getElementById('primaryAgeSub').textContent = 'Total de ' + totalDays.toLocaleString('es-ES') + ' días vividos';
+
+      document.getElementById('statTotalMonths').textContent = totalMonths.toLocaleString('es-ES');
+      document.getElementById('statTotalWeeks').textContent = totalWeeks.toLocaleString('es-ES');
+      document.getElementById('statTotalDays').textContent = totalDays.toLocaleString('es-ES');
+      document.getElementById('statTotalHours').textContent = totalHours.toLocaleString('es-ES');
+      document.getElementById('statTotalMinutes').textContent = totalMinutes.toLocaleString('es-ES');
+
+      document.getElementById('nextBdayDays').textContent = nextBdayText;
+      document.getElementById('nextBdayDayOfWeek').textContent = (diffDaysNext === 0) ? 'Hoy' : dayOfWeek;
+
+      document.getElementById('zodiacSign').textContent = zodiac;
+      document.getElementById('birthStone').textContent = birthstone;
+      document.getElementById('milestone10k').textContent = milestone10kStr;
+
+      if (resultsBox) {
+        resultsBox.classList.add('active');
+        resultsBox.style.display = 'block';
+        resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      if (copyBtn) {
+        copyBtn.setAttribute('data-summary', 'Mi edad: ' + years + ' Años, ' + months + ' Meses y ' + days + ' Días (' + totalDays.toLocaleString('es-ES') + ' días vividos). Calculado en OmniTools.');
+      }
+    };
+
+    window.resetAge = function() {
+      if (dobInput) dobInput.value = '';
+      if (targetDateInput) targetDateInput.value = formatYMD(new Date());
+      hideError();
+      if (resultsBox) {
+        resultsBox.classList.remove('active');
+        resultsBox.style.display = 'none';
+      }
+    };
+
+    function showError(msg) {
+      if (errorBox) {
+        errorBox.textContent = msg;
+        errorBox.style.display = 'block';
+      }
+    }
+
+    function hideError() {
+      if (errorBox) {
+        errorBox.style.display = 'none';
+        errorBox.textContent = '';
+      }
+    }
+
+    function getZodiac(m, d) {
+      var signs = [
+        { n: 'Capricornio ♑', em: 1, ed: 19 }, { n: 'Acuario ♒', em: 2, ed: 18 },
+        { n: 'Piscis ♓', em: 3, ed: 20 }, { n: 'Aries ♈', em: 4, ed: 19 },
+        { n: 'Tauro ♉', em: 5, ed: 20 }, { n: 'Géminis ♊', em: 6, ed: 20 },
+        { n: 'Cáncer ♋', em: 7, ed: 22 }, { n: 'Leo ♌', em: 8, ed: 22 },
+        { n: 'Virgo ♍', em: 9, ed: 22 }, { n: 'Libra ♎', em: 10, ed: 22 },
+        { n: 'Escorpio ♏', em: 11, ed: 21 }, { n: 'Sagitario ♐', em: 12, ed: 21 },
+        { n: 'Capricornio ♑', em: 12, ed: 31 }
+      ];
+      for (var i = 0; i < signs.length; i++) {
+        if (m < signs[i].em || (m === signs[i].em && d <= signs[i].ed)) return signs[i].n;
+      }
+      return 'Capricornio ♑';
+    }
+
+    function getBirthstone(m) {
+      var stones = ['Granate', 'Amatista', 'Aguamarina', 'Diamante', 'Esmeralda', 'Perla y Alejandrita', 'Rubí', 'Peridoto', 'Zafiro', 'Ópalo y Turmalina', 'Topacio y Citrino', 'Turquesa y Tanzanita'];
+      return stones[m - 1] || 'Granate';
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        var txt = copyBtn.getAttribute('data-summary');
+        if (txt && navigator.clipboard) {
+          navigator.clipboard.writeText(txt).then(function() {
+            alert('¡Resumen de edad copiado al portapapeles!');
+          }).catch(function() {
+            prompt('Copiar resumen:', txt);
+          });
+        }
+      });
+    }
+  })();
+  </script>
 </body>
 </html>
 
