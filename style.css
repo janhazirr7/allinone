@@ -1598,3 +1598,192 @@ main {
 /* ADS PAUSED — owner request 2026-10-31: hide empty ad placeholders until AdSense is ready.
    To re-enable ads, delete this rule only. No page markup was changed. */
 .ad-slot { display: none !important; }
+
+/* ==========================================================================
+   UI/UX UPGRADE — 2026-10-31 (appended block; no earlier rules were edited)
+   1) Explicit 3/2/1 tool grid  2) Card motion + keyboard focus
+   3) Tab selected/focus states  4) No-results note
+   5) Searchable language switcher  6) RTL layout fixes
+   7) Dark theme (follows the device setting; no toggle added)
+   ========================================================================== */
+
+/* 1. Explicit responsive grid: 1 column mobile, 2 tablet, 3 desktop. */
+.tools-grid { grid-template-columns: 1fr; }
+@media (min-width: 640px) {
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 992px) {
+  .tools-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 2. Card motion: animate only transform/shadow/border (not "all");
+   keyboard focus gets the same lift as hover; motion-sensitive users get none. */
+.tool-card {
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+.tool-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-xl);
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tool-card, .tool-card:hover, .tool-card:focus-visible { transform: none; transition: none; }
+  .tool-card:hover .tool-card-footer svg { transform: none; }
+}
+
+/* 3. Tabs: selected state follows aria-selected (set by main.js); visible focus ring. */
+.filter-chip[aria-selected="true"] {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+.filter-chip:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* 4. No-results note — created by main.js only when a filter matches nothing. */
+.no-results {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+}
+
+/* 5. Searchable language switcher — progressive enhancement over #langSelect.
+   The native select stays in the markup as the no-JS fallback; main.js hides
+   it (visually only) and builds this dropdown from its own options. */
+.lang-select-native-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.lang-switcher { position: relative; display: inline-block; }
+.lang-switcher-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  max-width: 180px;
+}
+.lang-switcher-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lang-switcher-btn:hover,
+.lang-switcher-btn[aria-expanded="true"] { border-color: var(--primary); }
+.lang-switcher-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.lang-switcher-panel {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + 0.5rem);
+  width: 260px;
+  max-width: 80vw;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: 0.5rem;
+  z-index: 200;
+}
+.lang-switcher-panel[hidden] { display: none; }
+.lang-switcher-search {
+  width: 100%;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  background: var(--bg-surface);
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+.lang-switcher-search:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+.lang-switcher-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.lang-switcher-list li {
+  padding: 0.55rem 0.8rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--text-main);
+}
+.lang-switcher-list li:hover,
+.lang-switcher-list li[aria-selected="true"] {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+@media (max-width: 480px) {
+  .lang-switcher-panel { width: 240px; }
+  .lang-switcher-btn { max-width: 140px; }
+}
+
+/* 6. RTL fixes — these pages already carry dir="rtl" (ur/ar/fa/he).
+   Anything positioned or accented on one side is mirrored here. */
+[dir="rtl"] .data-table { text-align: right; }
+[dir="rtl"] .search-icon { left: auto; right: 1.15rem; }
+[dir="rtl"] .search-input { padding-left: 1.25rem; padding-right: 3rem; }
+[dir="rtl"] .tool-card:hover .tool-card-footer svg { transform: translateX(-4px); }
+[dir="rtl"] .toast { right: auto; left: 2rem; }
+[dir="rtl"] .hero-result-card::after { right: auto; left: -50%; }
+[dir="rtl"] .step-item { border-left: none; border-right: 4px solid var(--primary); }
+[dir="rtl"] .example-card { border-left: none; border-right: 4px solid var(--accent); }
+
+/* 7. Dark theme — follows the device setting (no toggle added).
+   Contrast targets (WCAG AA, normal text ≥ 4.5:1):
+   text #f1f5f9 on surface #1e293b ≈ 14:1; muted #cbd5e1 ≈ 10:1;
+   primary #60a5fa on #1e293b ≈ 5.8:1. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-body: #0f172a;
+    --bg-surface: #1e293b;
+    --bg-surface-alt: #263449;
+    --bg-surface-elevated: #1e293b;
+    --border-color: #334155;
+    --border-color-focus: #60a5fa;
+    --text-main: #f1f5f9;
+    --text-muted: #cbd5e1;
+    --text-subtle: #94a3b8;
+    --primary: #60a5fa;
+    --primary-hover: #93c5fd;
+    --primary-light: #1e3a5f;
+    --primary-border: #3b82f6;
+    --accent: #34d399;
+    --accent-light: #123326;
+    --accent-border: #166534;
+    --warning: #fbbf24;
+    --warning-light: #3a2a0a;
+    --danger: #f87171;
+    --danger-light: #3f1212;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.35), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.35);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.45), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  }
+  /* Hardcoded light-theme text colors that variables do not cover. */
+  .content-paragraph, .step-item-content, .faq-answer { color: #e2e8f0; }
+  /* Light hero glow becomes a subtle dark glow. */
+  .hero-section { background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12) 0%, transparent 70%); }
+  .search-input:focus, .lang-switcher-search:focus { box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25); }
+}

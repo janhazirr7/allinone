@@ -45,64 +45,196 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  // 3. Live Tool Search Filter (Homepage)
+  // 3. Unified Live Search + Category Filter (Homepage)
+  // Search and category now COMBINE: typing filters within the active tab,
+  // and switching tabs keeps the search text (previously each one reset the other).
   const searchInput = document.getElementById('toolSearchInput');
   const toolCards = document.querySelectorAll('.tool-card');
   const toolsCountBadge = document.getElementById('toolsCountBadge');
+  const toolsGrid = document.getElementById('toolsGrid');
+  const filterChips = document.querySelectorAll('.filter-chip');
+
+  let activeFilter = 'all';
+  const preselected = document.querySelector('.filter-chip.active');
+  if (preselected && preselected.getAttribute('data-filter')) {
+    activeFilter = preselected.getAttribute('data-filter');
+  }
+
+  let noResultsEl = null;
+  function getNoResultsEl() {
+    if (noResultsEl) return noResultsEl;
+    noResultsEl = document.createElement('div');
+    noResultsEl.className = 'no-results';
+    // Text comes from data-no-results on the grid when a translation adds it;
+    // otherwise English is the fallback (the grid is English-first content).
+    noResultsEl.textContent = (toolsGrid && toolsGrid.getAttribute('data-no-results'))
+      || 'No tools match your search.';
+    noResultsEl.style.display = 'none';
+    if (toolsGrid && toolsGrid.parentNode) {
+      toolsGrid.parentNode.insertBefore(noResultsEl, toolsGrid.nextSibling);
+    }
+    return noResultsEl;
+  }
+
+  function applyFilters() {
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    let matchCount = 0;
+
+    toolCards.forEach(card => {
+      const title = (card.getAttribute('data-title') || '').toLowerCase();
+      const desc = (card.getAttribute('data-desc') || '').toLowerCase();
+      const category = (card.getAttribute('data-category') || '').toLowerCase();
+
+      const matchesQuery = !query
+        || title.includes(query) || desc.includes(query) || category.includes(query);
+      const matchesCategory = activeFilter === 'all' || category === activeFilter;
+
+      if (matchesQuery && matchesCategory) {
+        card.style.display = 'flex';
+        matchCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (toolsCountBadge) {
+      // Preserve the page's own language: replace only the leading number
+      // (all homepages use Latin digits, e.g. "36 Tools Available").
+      const text = toolsCountBadge.textContent;
+      if (/^\d+/.test(text)) {
+        toolsCountBadge.textContent = text.replace(/^\d+/, String(matchCount));
+      }
+    }
+
+    if (toolsGrid) {
+      getNoResultsEl().style.display = matchCount === 0 ? 'block' : 'none';
+    }
+  }
 
   if (searchInput && toolCards.length > 0) {
-    searchInput.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase().trim();
-      let matchCount = 0;
+    searchInput.addEventListener('input', applyFilters);
+  }
 
-      toolCards.forEach(card => {
-        const title = (card.getAttribute('data-title') || '').toLowerCase();
-        const desc = (card.getAttribute('data-desc') || '').toLowerCase();
-        const category = (card.getAttribute('data-category') || '').toLowerCase();
+  // 4. Category Filter Tabs (Homepage) — real tab semantics + keyboard support
+  if (filterChips.length > 0 && toolCards.length > 0) {
+    filterChips.forEach((chip, index) => {
+      chip.setAttribute('role', 'tab');
+      chip.setAttribute('aria-controls', 'toolsGrid');
+      chip.setAttribute('aria-selected', chip.classList.contains('active') ? 'true' : 'false');
 
-        const matches = title.includes(query) || desc.includes(query) || category.includes(query);
-
-        if (matches) {
-          card.style.display = 'flex';
-          matchCount++;
-        } else {
-          card.style.display = 'none';
-        }
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('aria-selected', 'false');
+        });
+        chip.classList.add('active');
+        chip.setAttribute('aria-selected', 'true');
+        activeFilter = chip.getAttribute('data-filter') || 'all';
+        applyFilters();
       });
 
-      if (toolsCountBadge) {
-        toolsCountBadge.textContent = `${matchCount} ${matchCount === 1 ? 'Tool' : 'Tools'}`;
-      }
+      chip.addEventListener('keydown', (e) => {
+        let next = null;
+        if (e.key === 'ArrowRight') next = filterChips[(index + 1) % filterChips.length];
+        else if (e.key === 'ArrowLeft') next = filterChips[(index - 1 + filterChips.length) % filterChips.length];
+        else if (e.key === 'Home') next = filterChips[0];
+        else if (e.key === 'End') next = filterChips[filterChips.length - 1];
+        if (next) {
+          e.preventDefault();
+          next.focus();
+          next.click();
+        }
+      });
     });
   }
 
-  // 4. Category Filter Chips (Homepage)
-  const filterChips = document.querySelectorAll('.filter-chip');
-  if (filterChips.length > 0 && toolCards.length > 0) {
-    filterChips.forEach(chip => {
-      chip.addEventListener('click', () => {
-        filterChips.forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
+  // 5. Searchable Language Switcher (Homepage)
+  // Progressive enhancement: the native <select id="langSelect"> stays in the
+  // markup as the no-JS fallback. When JS runs, a globe button + searchable
+  // dropdown is built FROM the select's own options, so every language page
+  // keeps its own correct relative URLs (e.g. de/ uses ../, ./, ../es/).
+  // Tool pages do not load this file, so their switcher stays native — still
+  // fully functional, just without the search panel.
+  const nativeSelect = document.getElementById('langSelect');
+  if (nativeSelect && nativeSelect.options.length > 0) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'lang-switcher';
 
-        const filter = chip.getAttribute('data-filter');
-        let matchCount = 0;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'lang-switcher-btn';
+    button.setAttribute('aria-haspopup', 'listbox');
+    button.setAttribute('aria-expanded', 'false');
+    const selectedOpt = nativeSelect.options[nativeSelect.selectedIndex] || nativeSelect.options[0];
+    const globe = document.createElement('span');
+    globe.setAttribute('aria-hidden', 'true');
+    globe.textContent = '🌐';
+    const label = document.createElement('span');
+    label.className = 'lang-switcher-label';
+    label.textContent = selectedOpt.text;
+    button.append(globe, label);
 
-        toolCards.forEach(card => {
-          const category = card.getAttribute('data-category');
-          if (filter === 'all' || category === filter) {
-            card.style.display = 'flex';
-            matchCount++;
-          } else {
-            card.style.display = 'none';
-          }
-        });
+    const panel = document.createElement('div');
+    panel.className = 'lang-switcher-panel';
+    panel.setAttribute('role', 'listbox');
+    panel.hidden = true;
 
-        if (toolsCountBadge) {
-          toolsCountBadge.textContent = `${matchCount} ${matchCount === 1 ? 'Tool' : 'Tools'}`;
+    const langSearch = document.createElement('input');
+    langSearch.type = 'text';
+    langSearch.className = 'lang-switcher-search';
+    langSearch.setAttribute('aria-label', nativeSelect.getAttribute('aria-label') || 'Select language');
+    langSearch.placeholder = 'Search…';
+
+    const list = document.createElement('ul');
+    list.className = 'lang-switcher-list';
+    Array.from(nativeSelect.options).forEach(opt => {
+      const li = document.createElement('li');
+      li.setAttribute('role', 'option');
+      if (opt.selected) li.setAttribute('aria-selected', 'true');
+      li.tabIndex = 0;
+      li.textContent = opt.text;
+      const go = () => { window.location.href = opt.value; };
+      li.addEventListener('click', go);
+      li.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          go();
         }
-
-        if (searchInput) searchInput.value = '';
       });
+      list.appendChild(li);
+    });
+
+    langSearch.addEventListener('input', () => {
+      const q = langSearch.value.toLowerCase().trim();
+      list.querySelectorAll('li').forEach(li => {
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    });
+
+    panel.append(langSearch, list);
+    wrapper.append(button, panel);
+    nativeSelect.parentNode.insertBefore(wrapper, nativeSelect);
+    nativeSelect.classList.add('lang-select-native-hidden');
+
+    const closePanel = () => {
+      panel.hidden = true;
+      button.setAttribute('aria-expanded', 'false');
+    };
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (panel.hidden) {
+        panel.hidden = false;
+        button.setAttribute('aria-expanded', 'true');
+        langSearch.focus();
+      } else {
+        closePanel();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (!wrapper.contains(e.target)) closePanel();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closePanel();
     });
   }
 });
