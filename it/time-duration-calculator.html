@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calcolatore della durata del tempo - Tempo tra due volte, aggiungi o sottrai | OmniTools</title>
-<meta name="description" content="Calcola la durata tra due tempi, inclusa la notte, e aggiungi o sottrai ore e minuti da qualsiasi momento.">
-<meta name="keywords" content="calcolatore della durata del tempo, tempo tra due orari, aggiunta di ore al tempo, sottrazione di ore, turno notturno">
+<title>Calcolatore di durata - Tempo tra due ore, aggiungi o sottrai | OmniTools</title>
+<meta name="description" content="Calcola la durata tra due ore, incluso durante la notte, e aggiungi o sottrai ore e minuti da qualsiasi ora.">
+<meta name="keywords" content="calcolatore di durata, tempo tra due ore, aggiungi ore a un'ora, sottrai ore, turno notturno">
 <meta name="author" content="OmniTools">
 <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://janhazirr7.github.io/allinone/it/time-duration-calculator.html">
@@ -42,34 +42,32 @@
   <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/time-duration-calculator.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://janhazirr7.github.io/allinone/it/time-duration-calculator.html">
-  <meta property="og:locale" content="it_IT">
-<meta property="og:title" content="Calcolatore della durata del tempo | OmniTools">
-<meta property="og:description" content="Calcola la durata tra due tempi, inclusa la notte, e aggiungi o sottrai ore e minuti da qualsiasi momento.">
+<meta property="og:title" content="Calcolatore di durata | OmniTools">
+<meta property="og:description" content="Calcola la durata tra due ore, incluso durante la notte, e aggiungi o sottrai ore e minuti da qualsiasi ora.">
 <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-time-duration-calculator.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Calcolatore della durata del tempo | OmniTools">
-<meta name="twitter:description" content="Calcola la durata tra due tempi, inclusa la notte, e aggiungi o sottrai ore e minuti da qualsiasi momento.">
+<meta name="twitter:title" content="Calcolatore di durata | OmniTools">
+<meta name="twitter:description" content="Calcola la durata tra due ore, incluso durante la notte, e aggiungi o sottrai ore e minuti da qualsiasi ora.">
 <link rel="stylesheet" href="../style.css">
 <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Calcolatore della durata temporale di OmniTools",
+  "name": "Calcolatore di durata OmniTools",
   "url": "https://janhazirr7.github.io/allinone/it/time-duration-calculator.html",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "browserRequirements": "Requires JavaScript. Requires HTML5.",
-  "description": "Calcola la durata tra due tempi, inclusa la notte, e aggiungi o sottrai ore e minuti da qualsiasi momento.",
+  "description": "Calcola la durata tra due ore, incluso durante la notte, e aggiungi o sottrai ore e minuti da qualsiasi ora.",
   "offers": {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD"
-  },
-  "inLanguage": "it"
+  }
 }
-</script>
+  </script>
 <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -88,133 +86,195 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Calcolatore della durata del tempo",
+      "name": "Calcolatore di durata",
       "item": "https://janhazirr7.github.io/allinone/it/time-duration-calculator.html"
     }
   ]
 }
-</script>
+  </script>
 <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Cosa succede se l'ora di fine è precedente all'ora di inizio?",
+      "name": "Cosa succede se l'ora finale è precedente all'ora iniziale?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il calcolatore lo considera come notturno, il che significa che l'ora di fine appartiene al giorno successivo. Ad esempio, dalle 22:00 alle 06:00 sono 8 ore e il risultato viene etichettato durante la notte in modo da poterlo individuare."
+        "text": "Il calcolatore lo tratta come durante la notte, cioè l'ora finale appartiene al giorno successivo. Per esempio, dalle 22:00 alle 06:00 sono 8 ore, e il risultato è etichettato come notturno così puoi individuarlo."
       }
     },
     {
       "@type": "Question",
-      "name": "E se entrambi gli orari fossero gli stessi?",
+      "name": "Cosa succede se entrambe le ore sono uguali?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La durata è zero, perché non è passato tempo tra orari identici. Non è possibile visualizzare un periodo completo di 24 ore solo a partire dall'ora dell'orologio, poiché è necessaria una data oltre che un'ora."
+        "text": "La durata è zero, perché non è passato tempo tra ore identiche. Un periodo completo di 24 ore non può essere mostrato dalle sole ore, poiché ha bisogno di una data oltre che di un'ora."
       }
     },
     {
       "@type": "Question",
-      "name": "Come faccio ad aggiungere ore a un'ora che supera la mezzanotte?",
+      "name": "Come aggiungo ore a un'ora che attraversa la mezzanotte?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Inserisci l'ora di base, scegli Aggiungi e inserisci ore e minuti. Il risultato si estende nel formato a 24 ore, quindi 23:30 più 2 ore danno 01:30."
+        "text": "Inserisci l'ora base, scegli Aggiungi e inserisci ore e minuti. Il risultato si avvolge intorno all'orologio di 24 ore, quindi 23:30 più 2 ore dà 01:30."
       }
     },
     {
       "@type": "Question",
-      "name": "Questa calcolatrice gestisce i fusi orari o l'ora legale?",
+      "name": "Questo calcolatore gestisce fusi orari o ora legale?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Funziona solo con l'orario, quindi non si adatta ai fusi orari o ai cambiamenti dell'orologio. Un periodo che attraversa un passaggio all'ora legale sarà diverso di un'ora nel tempo trascorso reale."
+        "text": "No. Funziona solo con ore, quindi non si adatta a fusi orari o cambi d'ora. Un periodo che attraversa un cambio dell'ora legale sarà diverso di un'ora nel tempo reale trascorso."
       }
     },
     {
       "@type": "Question",
-      "name": "I miei dati sono archiviati da qualche parte?",
+      "name": "I miei dati vengono salvati da qualche parte?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Questa calcolatrice funziona interamente nel tuo browser. I tuoi tempi non verranno mai inviati a un server o archiviati da OmniTools."
+        "text": "No. Questo calcolatore funziona interamente nel tuo browser. Le tue ore non vengono mai inviate a un server o salvate da OmniTools."
       }
     }
   ]
 }
-</script>
+  </script>
 <script type="application/ld+json">
-{
+  {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "Calcolatore della durata del tempo",
-  "description": "Calcola la durata tra due tempi, inclusa la notte, e aggiungi o sottrai ore e minuti da qualsiasi momento.",
+  "name": "Calcolatore di durata",
+  "description": "Calcola la durata tra due ore, incluso durante la notte, e aggiungi o sottrai ore e minuti da qualsiasi ora.",
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Inserisci gli orari di inizio e di fine",
-      "text": "Inserisci un'ora di inizio e un'ora di fine nel formato 24 ore."
+      "name": "Inserisci ore iniziale e finale",
+      "text": "Inserisci un'ora iniziale e un'ora finale in formato 24 ore."
     },
     {
       "@type": "HowToStep",
       "name": "Aggiungi o sottrai tempo",
-      "text": "Inserisci un'ora di base, scegli Aggiungi o Sottrai e inserisci ore e minuti."
+      "text": "Inserisci un'ora base, scegli Aggiungi o Sottrai e inserisci ore e minuti."
     },
     {
       "@type": "HowToStep",
       "name": "Calcola",
-      "text": "Premere Calcola durata per visualizzare la durata, i minuti totali e il tempo spostato."
+      "text": "Premi Calcola la durata per vedere la durata, i minuti totali e l'ora spostata."
     }
   ]
 }
-</script>
+  </script>
 </head>
 <body>
 <header class="site-header"><div class="container header-inner">
-<a href="index.html" class="brand-logo" aria-label="Pagina iniziale di OmniTools"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
-<nav aria-label="Navigazione principale"><ul class="nav-links"><li><a href="index.html">Tutti gli strumenti</a></li><li><a href="age-calculator.html">Calcolatore di età</a></li><li><a href="bmi-calculator.html">Calcolatore IMC</a></li><li><a href="loan-calculator.html">Rata del prestito</a></li><li><a href="../about.html">Chi siamo</a></li></ul></nav>
-<div class="nav-actions"><select id="langSelect" aria-label="Seleziona lingua" onchange="window.location.href=this.value;"><option value="../time-duration-calculator.html">English</option><option value="../es/calculadora-de-duracion.html">Español</option><option value="../de/time-duration-calculator.html">Deutsch</option><option value="../fr/time-duration-calculator.html">Français</option><option value="../pt/time-duration-calculator.html">Português</option><option value="time-duration-calculator.html" selected>Italiano</option><option value="../ru/time-duration-calculator.html">Русский</option><option value="../nl/time-duration-calculator.html">Nederlands</option><option value="../pl/time-duration-calculator.html">Polski</option><option value="../sv/time-duration-calculator.html">Svenska</option><option value="../no/time-duration-calculator.html">Norsk</option><option value="../da/time-duration-calculator.html">Dansk</option><option value="../fi/time-duration-calculator.html">Suomi</option><option value="../id/time-duration-calculator.html">Bahasa Indonesia</option><option value="../tr/time-duration-calculator.html">Türkçe</option><option value="../vi/time-duration-calculator.html">Tiếng Việt</option><option value="../th/time-duration-calculator.html">ไทย</option><option value="../ms/time-duration-calculator.html">Bahasa Melayu</option><option value="../tl/time-duration-calculator.html">Filipino</option><option value="../hi/time-duration-calculator.html">हिन्दी</option><option value="../ur/time-duration-calculator.html">اردو</option><option value="../ar/time-duration-calculator.html">العربية</option><option value="../fa/time-duration-calculator.html">فارسی</option><option value="../he/time-duration-calculator.html">עברית</option><option value="../ja/time-duration-calculator.html">日本語</option><option value="../ko/time-duration-calculator.html">한국어</option><option value="../zh/time-duration-calculator.html">简体中文</option><option value="../zh-TW/time-duration-calculator.html">繁體中文</option><option value="../el/time-duration-calculator.html">Ελληνικά</option><option value="../cs/time-duration-calculator.html">Čeština</option></select><button class="mobile-nav-toggle" aria-label="Apri/chiudi il menu di navigazione" aria-expanded="false">☰</button></div></div></header>
+<a href="index.html" class="brand-logo" aria-label="Home di OmniTools"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
+<nav aria-label="Navigazione principale"><ul class="nav-links"><li><a href="index.html">Tutti gli strumenti</a></li><li><a href="age-calculator.html">Calcolo età</a></li><li><a href="bmi-calculator.html">Calcolatore BMI</a></li><li><a href="loan-calculator.html">Rata prestito</a></li><li><a href="../about.html">Chi siamo</a></li></ul></nav>
+<div class="nav-actions"><select id="langSelect" aria-label="Seleziona la lingua" onchange="window.location.href=this.value">
+          <option value="../time-duration-calculator.html">English</option>
+          <option value="../es/calculadora-de-duracion.html">Español</option>
+          <option value="../de/time-duration-calculator.html">Deutsch</option>
+          <option value="../fr/time-duration-calculator.html">Français</option>
+          <option value="../pt/time-duration-calculator.html">Português</option>
+          <option value="time-duration-calculator.html" selected>Italiano</option>
+          <option value="../ru/time-duration-calculator.html">Русский</option>
+          <option value="../nl/time-duration-calculator.html">Nederlands</option>
+          <option value="../pl/time-duration-calculator.html">Polski</option>
+          <option value="../sv/time-duration-calculator.html">Svenska</option>
+          <option value="../no/time-duration-calculator.html">Norsk</option>
+          <option value="../da/time-duration-calculator.html">Dansk</option>
+          <option value="../fi/time-duration-calculator.html">Suomi</option>
+          <option value="../id/time-duration-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/time-duration-calculator.html">Türkçe</option>
+          <option value="../vi/time-duration-calculator.html">Tiếng Việt</option>
+          <option value="../th/time-duration-calculator.html">ไทย</option>
+          <option value="../ms/time-duration-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/time-duration-calculator.html">Filipino</option>
+          <option value="../hi/time-duration-calculator.html">हिन्दी</option>
+          <option value="../ur/time-duration-calculator.html">اردو</option>
+          <option value="../ar/time-duration-calculator.html">العربية</option>
+          <option value="../fa/time-duration-calculator.html">فارسی</option>
+          <option value="../he/time-duration-calculator.html">עברית</option>
+          <option value="../ja/time-duration-calculator.html">日本語</option>
+          <option value="../ko/time-duration-calculator.html">한국어</option>
+          <option value="../zh/time-duration-calculator.html">简体中文</option>
+          <option value="../zh-TW/time-duration-calculator.html">繁體中文</option>
+          <option value="../el/time-duration-calculator.html">Ελληνικά</option>
+          <option value="../cs/time-duration-calculator.html">Čeština</option>
+        </select><button class="mobile-nav-toggle" aria-label="Apri/chiudi il menu di navigazione" aria-expanded="false">☰</button></div></div></header>
 <main>
-<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">Pagina iniziale</a></li><li><a href="index.html#productivity">Produttività</a></li><li aria-current="page">Calcolatore della durata del tempo</li></ul></div></div>
-<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">Calcolatore della durata del tempo</h1><p class="tool-header-desc">Calcola quanto tempo c'è tra due orari, anche durante la notte, e sposta qualsiasi orario aggiungendo o sottraendo ore e minuti.</p></div></section>
-<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Pubblicità in classifica"><span class="ad-slot-placeholder-text">Annuncio leaderboard responsive (728x90)</span></div></div>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">Pagina iniziale</a></li><li><a href="index.html#productivity">Produttività</a></li><li aria-current="page">Calcolatore di durata</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">Calcolatore di durata</h1><p class="tool-header-desc">Calcola quanto tempo c'è tra due ore, anche durante la notte, e sposta qualsiasi ora aggiungendo o sottraendo ore e minuti.</p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="Annuncio leaderboard"><span class="ad-slot-placeholder-text">Annuncio leaderboard responsive (728x90)</span></div></div>
 <section class="container tool-layout-container">
 <div><div class="tool-card-widget">
 <div class="widget-form-grid">
-<div class="form-group"><label class="form-label" for="durStart"><span>Ora di inizio</span><span class="label-hint">Obbligatorio</span></label><input type="time" id="durStart" class="form-input" value="09:00"></div>
-<div class="form-group"><label class="form-label" for="durEnd"><span>Ora di fine</span><span class="label-hint">Obbligatorio</span></label><input type="time" id="durEnd" class="form-input" value="17:30"><span class="form-help">Se l'ora di fine è precedente all'ora di inizio, viene conteggiata la notte successiva</span></div>
+<div class="form-group"><label class="form-label" for="durStart"><span>Ora iniziale</span><span class="label-hint">Obbligatorio</span></label><input type="time" id="durStart" class="form-input" value="09:00"></div>
+<div class="form-group"><label class="form-label" for="durEnd"><span>Ora finale</span><span class="label-hint">Obbligatorio</span></label><input type="time" id="durEnd" class="form-input" value="17:30"><span class="form-help">Se l'ora finale è precedente all'ora iniziale, viene conteggiata come la notte successiva</span></div>
 </div>
 <div class="widget-form-grid two-col">
-<div class="form-group"><label class="form-label" for="durBase"><span>Tempo base (da aggiungere o sottrarre)</span></label><input type="time" id="durBase" class="form-input" value="23:30"></div>
-<div class="form-group"><label class="form-label" for="durOp"><span>Operazione</span></label><select id="durOp" class="form-select"><option value="add" selected>Aggiungi</option><option value="sub">Sottrarre</option></select></div>
-<div class="form-group"><label class="form-label" for="durHours"><span>Ore</span></label><input type="number" id="durHours" class="form-input" placeholder="ad es. 2" min="0" max="1000" step="1" value="2"></div>
-<div class="form-group"><label class="form-label" for="durMinutes"><span>Minuti</span></label><input type="number" id="durMinutes" class="form-input" placeholder="ad es. 30" min="0" max="59" step="1" value="30"></div>
+<div class="form-group"><label class="form-label" for="durBase"><span>Ora base (a cui aggiungere o da cui sottrarre)</span></label><input type="time" id="durBase" class="form-input" value="23:30"></div>
+<div class="form-group"><label class="form-label" for="durOp"><span>Operazione</span></label><select id="durOp" class="form-select"><option value="add" selected>Aggiungi</option><option value="sub">Sottrai</option></select></div>
+<div class="form-group"><label class="form-label" for="durHours"><span>Ore</span></label><input type="number" id="durHours" class="form-input" placeholder="e.g. 2" min="0" max="1000" step="1" value="2"></div>
+<div class="form-group"><label class="form-label" for="durMinutes"><span>Minuti</span></label><input type="number" id="durMinutes" class="form-input" placeholder="es. 30" min="0" max="59" step="1" value="30"></div>
 </div>
 <div id="timeErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
 <div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateTimeUI()">Calcola la durata</button><button type="button" class="btn btn-outline" onclick="resetTime()">Reimposta</button></div>
 <div id="timeResultsBox" class="results-box">
-<div class="results-header"><span class="results-title">Il risultato della tua durata</span><button type="button" class="btn btn-outline btn-sm" id="copyTimeBtn">Copia riepilogo</button></div>
-<div class="hero-result-card"><div class="hero-result-label">Durata tra i due tempi</div><div class="hero-result-value" id="durValue">-</div><div class="hero-result-sub" id="durSub"></div></div>
-<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="durTotalMinValue">-</div><div class="metric-label">Totale in minuti</div></div><div class="metric-card"><div class="metric-value" id="durOvernightValue">-</div><div class="metric-label">Supera la mezzanotte?</div></div><div class="metric-card"><div class="metric-value" id="durShiftedValue">-</div><div class="metric-label">Ora base spostata</div></div></div>
+<div class="results-header"><span class="results-title">Il tuo risultato di durata</span><button type="button" class="btn btn-outline btn-sm" id="copyTimeBtn">Copia riepilogo</button></div>
+<div class="hero-result-card"><div class="hero-result-label">Durata tra le due ore</div><div class="hero-result-value" id="durValue">-</div><div class="hero-result-sub" id="durSub"></div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="durTotalMinValue">-</div><div class="metric-label">Totale in minuti</div></div><div class="metric-card"><div class="metric-value" id="durOvernightValue">-</div><div class="metric-label">Attraversa la mezzanotte?</div></div><div class="metric-card"><div class="metric-value" id="durShiftedValue">-</div><div class="metric-label">Ora base spostata</div></div></div>
 </div>
 </div></div>
-<aside><div class="ad-slot ad-rectangle" aria-label="Pubblicità nella barra laterale"><span class="ad-slot-placeholder-text">Rettangolo laterale (300x250)</span></div>
-<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calcolatori correlati</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calcolatore di differenza tra date <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calcolatore di età <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calcolatore di percentuali <span>→</span></a></li><li><a href="bmr-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMR e calcolatore di calorie <span>→</span></a></li></ul></div></aside>
+<aside><div class="ad-slot ad-rectangle" aria-label="Annuncio laterale"><span class="ad-slot-placeholder-text">Rettangolo laterale (300x250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Calcolatori correlati</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Differenza tra date <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calcolatore di età <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calcolatore di percentuali <span>→</span></a></li><li><a href="bmr-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Metabolismo basale e Calcolatore di calorie <span>→</span></a></li></ul></div></aside>
 </section>
-<div class="container"><div class="ad-slot ad-in-content" aria-label="Pubblicità nell&#x27;articolo"><span class="ad-slot-placeholder-text">Banner di contenuti reattivi (728x90 / 300x250)</span></div></div>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="Annuncio all'interno dell'articolo"><span class="ad-slot-placeholder-text">Banner di contenuti responsive (728x90 / 300x250)</span></div></div>
 <article class="container educational-content">
-<section class="content-section"><h2 class="content-heading">Come utilizzare il calcolatore della durata temporale</h2><p class="content-paragraph">L'aritmetica del tempo sembra facile finché non entra in gioco la mezzanotte. Sottraendo 22:00 dalle 06:00 si ottiene un numero negativo se si considerano entrambi gli orari come appartenenti allo stesso giorno, ma chiunque lavori in quel turno di notte sa che la risposta è otto ore. Questa calcolatrice tratta i tempi come punti su un orologio di 24 ore e gestisce il passaggio di mezzanotte per te, così puoi calcolare turni, viaggi, sessioni di studio e durata degli eventi senza fare i calcoli dell'orologio nella tua testa. Include anche un secondo calcolo nella stessa pagina: aggiungi o sottrai un numero di ore e minuti da qualsiasi tempo base, utile quando devi sapere che ore saranno dopo un volo, una riunione o un conto alla rovescia.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>Inserisci un'ora di inizio e un'ora di fine</strong>Utilizza i selettori orari nel formato 24 ore. Per un periodo relativo allo stesso giorno, inserire prima l'orario precedente e poi quello successivo, ad esempio dalle 09:00 alle 17:30.</div></li><li class="step-item"><div class="step-item-content"><strong>Lascia che i periodi notturni si avvolgano automaticamente</strong>Se l'ora di fine è precedente all'ora di inizio, la calcolatrice presuppone che la fine appartenga al giorno successivo. Un turno dalle 22:00 alle 06:00 è quindi di otto ore, e lo dice il risultato.</div></li><li class="step-item"><div class="step-item-content"><strong>Utilizza anche la sezione Aggiungi e Sottrai</strong>Inserisci un'ora di base, scegli aggiungi o sottrai e inserisci ore e minuti. Il risultato si estende intorno alla mezzanotte in entrambe le direzioni, quindi 23:30 più due ore corrispondono all'01:30.</div></li><li class="step-item"><div class="step-item-content"><strong>Leggi ore, minuti e minuti totali</strong>Il titolo mostra la durata in ore e minuti, ed è così che le persone parlano del tempo. Il totale in minuti è utile per buste paga, fatturazione e fogli di calcolo, dove un singolo numero è più facile da moltiplicare.</div></li></ol></section>
-<section class="content-section"><h2 class="content-heading">Come funziona il calcolo</h2><p class="content-paragraph">Ogni ora viene prima convertita in minuti a partire dalla mezzanotte. La mezzanotte stessa è zero, le 09:00 sono 540 minuti e le 23:30 sono 1.410 minuti. La durata è quindi il valore finale meno il valore iniziale. Se la differenza è negativa, vengono aggiunti 1.440 minuti, un giorno intero, che equivale a spostare l'ora di fine al giorno successivo. Se i due tempi sono identici la durata è zero, perché tra loro non è trascorso tempo. Si tratta di una scelta deliberata: un periodo dalle 09:00 alle 09:00 viene considerato come nessuna durata, non come 24 ore intere, poiché una giornata intera avrebbe bisogno di una data e di un'ora per essere univoca.</p><div class="formula-box"><div class="formula-expression">Duration = end minutes - start minutes (add 1440 if negative)</div><div class="formula-expression">Shifted time = (base minutes +/- hours x 60 +/- minutes) wrapped to 0-1439</div><div class="formula-explanation">Esempi: dalle 09:00 alle 17:30 = 1050 - 540 = 510 minuti = 8 ore e 30 minuti. Dalle 22:00 alle 06:00 = 360 - 1320 = -960, più 1440 = 480 minuti = 8 ore, durante la notte. 23:30 più 2 ore = 1410 + 120 = 1530, racchiuse sottraendo 1440 = 90 minuti = 01:30.</div></div><p class="content-paragraph">L'addizione e la sottrazione utilizzano la stessa idea dei minuti trascorsi da mezzanotte, con l'avvolgimento in entrambe le direzioni. Sottraendo due ore dall'01:00 si ottengono le 23:00 del giorno precedente, visualizzate come ora dell'orologio senza data. Poiché la calcolatrice funziona solo con l'ora dell'orologio, non può conoscere date, fusi orari o cambiamenti dell'ora legale. Un periodo che incrocia un cambio dell'orologio in primavera o in autunno sarà diverso di un'ora nel tempo reale trascorso, e un viaggio attraverso i fusi orari necessita dell'ora locale a ciascuna estremità, non solo di una sottrazione.</p></section>
-<section class="content-section"><h2 class="content-heading">Stesso giorno, durante la notte e casi limite</h2><p class="content-paragraph">La confusione più comune è se un'ora di fine precedente all'ora di inizio sia un errore o un periodo notturno. Questo calcolatore lo considera sempre come notturno, il che corrisponde al modo in cui vengono solitamente descritti turni, voli ed eventi. Se effettivamente hai commesso un errore di battitura e intendevi un periodo dello stesso giorno, l'etichetta overnight nel risultato è il tuo indizio: controlla il risultato e, se dice overnight e non te lo aspettavi, scambia o correggi gli orari. L'altro caso limite è rappresentato dai tempi uguali, che danno zero. Se intendevi un periodo intero di 24 ore, hai bisogno di un calcolatore basato sulla data anziché solo sul tempo, perché l'ora dell'orologio da sola non può distinguere zero ore da 24 ore.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>Inizia</th><th>Fine</th><th>Durata</th><th>Pernottamento?</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>8 ore e 30 minuti</td><td>No</td></tr><tr><td>22:00</td><td>06:00</td><td>8 ore</td><td>Sì</td></tr><tr><td>23:30</td><td>01:30</td><td>2 ore</td><td>Sì</td></tr><tr><td>09:00</td><td>09:00</td><td>0 ore</td><td>No</td></tr></tbody></table></div><p class="content-paragraph">I minuti nella sezione di aggiunta e sottrazione sono limitati da 0 a 59, il che ti costringe a trasferire i minuti in eccesso nelle ore, proprio come faresti su un orologio. Le ore possono arrivare fino a 1.000, quindi è possibile aggiungere ore di diversi giorni e il risultato sarà comunque un orario di orologio valido, poiché il totale si estende attorno all'orologio di 24 ore. Questo avvolgimento è corretto per chiedere che ora del giorno sarà, ma non dice quale data sarà: aggiungendo 50 ore a lunedì alle 10:00 si ottiene mercoledì alle 12:00, e qui viene mostrata solo la parte delle 12:00.</p></section>
-<section class="content-section"><h2 class="content-heading">Usi pratici</h2><p class="content-paragraph">I lavoratori a turni utilizzano questo tipo di calcolo per verificare le ore retribuite, soprattutto quando un turno supera la mezzanotte e una semplice sottrazione fallirebbe. Liberi professionisti e consulenti utilizzano i minuti totali per trasformare una sessione di lavoro in una cifra fatturabile, poiché la maggior parte della fatturazione moltiplica una tariffa oraria per un numero decimale di ore. I viaggiatori utilizzano la sezione di aggiunta e sottrazione per calcolare gli orari di arrivo, la durata delle soste e l'ora che sarà a casa quando atterreranno. Studenti e organizzatori di eventi lo utilizzano per suddividere una giornata in blocchi, ad esempio per verificare che un programma di conferenze, pause e pranzo rientri effettivamente tra l'ora di inizio e quella di fine senza eccedere.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. Controlla un turno prima del libro paga</h4><p class="example-card-body">Inserisci l'inizio e la fine del turno, prendi nota del flag notturno e utilizza i minuti totali per convertire in ore decimali: dividi i minuti per 60 prima di moltiplicare per una tariffa oraria.</p></div><div class="example-card"><h4 class="example-card-title">2. Pianifica un viaggio a ritroso</h4><p class="example-card-body">Per sapere quando partire, sottrai il tempo di viaggio dall'orario di arrivo richiesto con l'opzione sottrai, invece di tirare a indovinare e arrivare in ritardo.</p></div><div class="example-card"><h4 class="example-card-title">3. Mantieni onesti i programmi degli eventi</h4><p class="example-card-body">Aggiungi a turno la durata di ciascuna sessione alla relativa ora di inizio. Se l'ultimo orario spostato è successivo al termine della prenotazione della sede, qualcosa nel programma deve essere spostato.</p></div></div><p class="content-paragraph">Questa calcolatrice funziona solo con l'ora dell'orologio e non utilizza date, fusi orari o regole sull'ora legale. Per qualsiasi cosa in cui la data è importante, come un viaggio di più giorni, una scadenza contrattuale o un periodo di busta paga che comprende un cambio di orologio, utilizza un calcolatore di data e ora e controlla il risultato rispetto al tuo calendario locale. Per l'aritmetica quotidiana dell'orologio dello stesso giorno e della notte, tuttavia, il metodo dei minuti da mezzanotte utilizzato qui è esatto.</p></section>
-<section class="content-section"><h2 class="content-heading">Domande frequenti (FAQ)</h2><div class="faq-list"><details class="faq-item" open><summary class="faq-question">Cosa succede se l'ora di fine è precedente all'ora di inizio?</summary><div class="faq-answer">Il calcolatore lo considera come notturno, il che significa che l'ora di fine appartiene al giorno successivo. Ad esempio, dalle 22:00 alle 06:00 sono 8 ore e il risultato viene etichettato durante la notte in modo da poterlo individuare.</div></details><details class="faq-item"><summary class="faq-question">E se entrambi gli orari fossero gli stessi?</summary><div class="faq-answer">La durata è zero, perché non è passato tempo tra orari identici. Non è possibile visualizzare un periodo completo di 24 ore solo a partire dall'ora dell'orologio, poiché è necessaria una data oltre che un'ora.</div></details><details class="faq-item"><summary class="faq-question">Come faccio ad aggiungere ore a un'ora che supera la mezzanotte?</summary><div class="faq-answer">Inserisci l'ora di base, scegli Aggiungi e inserisci ore e minuti. Il risultato si estende nel formato a 24 ore, quindi 23:30 più 2 ore danno 01:30.</div></details><details class="faq-item"><summary class="faq-question">Questa calcolatrice gestisce i fusi orari o l'ora legale?</summary><div class="faq-answer">No. Funziona solo con l'orario, quindi non si adatta ai fusi orari o ai cambiamenti dell'orologio. Un periodo che attraversa un passaggio all'ora legale sarà diverso di un'ora nel tempo trascorso reale.</div></details><details class="faq-item"><summary class="faq-question">I miei dati sono archiviati da qualche parte?</summary><div class="faq-answer">No. Questa calcolatrice funziona interamente nel tuo browser. I tuoi tempi non verranno mai inviati a un server o archiviati da OmniTools.</div></details></div></section>
+<section class="content-section"><h2 class="content-heading">Come usare il calcolatore di durata</h2><p class="content-paragraph">L'aritmetica del tempo sembra facile finché non entra in gioco la mezzanotte. Sottrarre le 22:00 dalle 06:00 dà un numero negativo se tratti entrambe le ore come appartenenti allo stesso giorno, eppure chiunque lavori quel turno di notte sa che la risposta è otto ore. Questo calcolatore tratta le ore come punti su un orologio di 24 ore e gestisce per te l'attraversamento della mezzanotte, così puoi calcolare turni, viaggi, sessioni di studio e durate di eventi senza fare aritmetica d'orologio a mente. Include anche un secondo calcolo nella stessa pagina: aggiungi o sottrai un numero di ore e minuti da qualsiasi ora base, utile quando devi sapere che ora sarà dopo un volo, una riunione o un conto alla rovescia.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>Inserisci un'ora iniziale e un'ora finale</strong>Usa i selettori di ora in formato 24 ore. Per un periodo nello stesso giorno, inserisci prima l'ora precedente e poi l'ora successiva, per esempio dalle 09:00 alle 17:30.</div></li><li class="step-item"><div class="step-item-content"><strong>Lascia che i periodi notturni si avvolgano automaticamente</strong>Se l'ora finale è precedente all'ora iniziale, il calcolatore presuppone che la fine appartenga al giorno successivo. Un turno dalle 22:00 alle 06:00 è quindi di otto ore, e il risultato lo dice.</div></li><li class="step-item"><div class="step-item-content"><strong>Usa anche la sezione aggiungi e sottrai</strong>Inserisci un'ora base, scegli aggiungi o sottrai e inserisci ore e minuti. Il risultato si avvolge intorno alla mezzanotte in entrambe le direzioni, quindi 23:30 più due ore sono le 01:30.</div></li><li class="step-item"><div class="step-item-content"><strong>Leggi ore, minuti e minuti totali</strong>Il titolo mostra la durata come ore e minuti, che è come le persone parlano del tempo. Il totale in minuti è utile per buste paga, fatturazione e fogli di calcolo, dove un singolo numero è più facile da moltiplicare.</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">Come funziona il calcolo</h2><p class="content-paragraph">Ogni ora è prima convertita in minuti da mezzanotte. La mezzanotte stessa è zero, le 09:00 sono 540 minuti e le 23:30 sono 1.410 minuti. La durata è poi il valore finale meno il valore iniziale. Se quella differenza è negativa, si aggiungono 1.440 minuti, un giorno intero, che è lo stesso che spostare l'ora finale al giorno successivo. Se le due ore sono identiche, la durata è zero, perché non è passato tempo tra loro. Questa è una scelta deliberata: un periodo dalle 09:00 alle 09:00 è trattato come nessuna durata, non come 24 ore complete, poiché un giorno intero avrebbe bisogno di una data oltre che di un'ora per essere non ambiguo.</p><div class="formula-box"><div class="formula-expression">Durata = minuti finali - minuti iniziali (aggiungi 1440 se negativo)</div><div class="formula-expression">Ora spostata = (minuti base +/- ore x 60 +/- minuti) riportata a 0-1439</div><div class="formula-explanation">Esempi: 09:00 alle 17:30 = 1050 - 540 = 510 minuti = 8 ore 30 minuti. 22:00 alle 06:00 = 360 - 1320 = -960, più 1440 = 480 minuti = 8 ore, durante la notte. 23:30 più 2 ore = 1410 + 120 = 1530, riportato sottraendo 1440 = 90 minuti = 01:30.</div></div><p class="content-paragraph">Aggiungere e sottrarre usa la stessa idea dei minuti da mezzanotte, con avvolgimento in entrambe le direzioni. Sottrarre due ore dalle 01:00 dà le 23:00 del giorno precedente, mostrate come ora senza data. Poiché il calcolatore lavora solo con ore, non può conoscere date, fusi orari o cambi dell'ora legale. Un periodo che attraversa un cambio d'ora in primavera o autunno sarà diverso di un'ora nel tempo reale trascorso, e un viaggio attraverso fusi orari ha bisogno delle ore locali a ciascuna estremità, non solo di una sottrazione.</p></section>
+<section class="content-section"><h2 class="content-heading">Stesso giorno, notte e casi limite</h2><p class="content-paragraph">La confusione più comune è se un'ora finale precedente all'ora iniziale sia un errore o un periodo notturno. Questo calcolatore lo tratta sempre come notturno, il che corrisponde a come turni, voli ed eventi sono di solito descritti. Se hai effettivamente fatto un errore di battitura e intendevi un periodo nello stesso giorno, l'etichetta di notte nel risultato è il tuo indizio: controlla il risultato e, se dice durante la notte e non te l'aspettavi, scambia o correggi le ore. L'altro caso limite sono ore uguali, che danno zero. Se intendevi un periodo completo di 24 ore, hai bisogno di un calcolatore basato su date piuttosto che solo su ore, perché una sola ora non può distinguere zero ore da 24 ore.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>Inizio</th><th>Fine</th><th>Durata</th><th>Durante la notte?</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>8 ore 30 minuti</td><td>No</td></tr><tr><td>22:00</td><td>06:00</td><td>8 ore</td><td>Sì</td></tr><tr><td>23:30</td><td>01:30</td><td>2 ore</td><td>Sì</td></tr><tr><td>09:00</td><td>09:00</td><td>0 ore</td><td>No</td></tr></tbody></table></div><p class="content-paragraph">I minuti nella sezione aggiungi e sottrai sono limitati da 0 a 59, il che ti costringe a riportare i minuti in eccesso nelle ore, proprio come faresti su un orologio. Le ore possono arrivare fino a 1.000, quindi puoi aggiungere ore per diversi giorni e il risultato sarà comunque un'ora valida, perché il totale si avvolge intorno all'orologio di 24 ore. Quell'avvolgimento è corretto per chiedere che ora del giorno sarà, ma non ti dice quale data sarà: aggiungere 50 ore a lunedì alle 10:00 dà mercoledì alle 12:00, e qui viene mostrata solo la parte delle 12:00.</p></section>
+<section class="content-section"><h2 class="content-heading">Usi pratici</h2><p class="content-paragraph">I lavoratori su turni usano questo tipo di calcolo per controllare le ore pagate, specialmente quando un turno attraversa la mezzanotte e una semplice sottrazione fallirebbe. Liberi professionisti e consulenti usano i minuti totali per trasformare una sessione di lavoro in una cifra fatturabile, poiché la maggior parte della fatturazione moltiplica una tariffa oraria per un numero decimale di ore. I viaggiatori usano la sezione aggiungi e sottrai per calcolare orari di arrivo, durate degli scali e che ora sarà a casa quando atterrano. Studenti e organizzatori di eventi la usano per dividere un giorno in blocchi, per esempio per controllare che un programma di interventi, pause e pranzo entri davvero tra un'ora iniziale e un'ora finale senza sforare.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. Controlla un turno prima della busta paga</h4><p class="example-card-body">Inserisci inizio e fine del turno, nota l'indicatore di notte e usa i minuti totali per convertire in ore decimali: dividi i minuti per 60 prima di moltiplicare per una tariffa oraria.</p></div><div class="example-card"><h4 class="example-card-title">2. Pianifica un viaggio all'indietro</h4><p class="example-card-body">Per trovare quando partire, sottrai il tempo di viaggio dall'ora di arrivo richiesta con l'opzione sottrai, invece di indovinare e arrivare tardi.</p></div><div class="example-card"><h4 class="example-card-title">3. Mantieni onesti i programmi degli eventi</h4><p class="example-card-body">Aggiungi a turno la durata di ciascuna sessione alla sua ora iniziale. Se l'ultima ora spostata è successiva alla fine della prenotazione della sede, qualcosa nel programma deve spostarsi.</p></div></div><p class="content-paragraph">Questo calcolatore lavora solo con ore e non usa date, fusi orari o regole dell'ora legale. Per qualsiasi cosa in cui la data conta, come un viaggio di più giorni, una scadenza contrattuale o un periodo di busta paga che abbraccia un cambio d'ora, usa un calcolatore di data e ora e controlla il risultato rispetto al tuo calendario locale. Per l'aritmetica quotidiana di ore nello stesso giorno e notturna, tuttavia, il metodo dei minuti da mezzanotte usato qui è esatto.</p></section>
+<section class="content-section"><h2 class="content-heading">Domande frequenti (FAQ)</h2><div class="faq-list"><details class="faq-item" open><summary class="faq-question">Cosa succede se l'ora finale è precedente all'ora iniziale?</summary><div class="faq-answer">Il calcolatore lo tratta come durante la notte, cioè l'ora finale appartiene al giorno successivo. Per esempio, dalle 22:00 alle 06:00 sono 8 ore, e il risultato è etichettato come notturno così puoi individuarlo.</div></details><details class="faq-item"><summary class="faq-question">Cosa succede se entrambe le ore sono uguali?</summary><div class="faq-answer">La durata è zero, perché non è passato tempo tra ore identiche. Un periodo completo di 24 ore non può essere mostrato dalle sole ore, poiché ha bisogno di una data oltre che di un'ora.</div></details><details class="faq-item"><summary class="faq-question">Come aggiungo ore a un'ora che attraversa la mezzanotte?</summary><div class="faq-answer">Inserisci l'ora base, scegli Aggiungi e inserisci ore e minuti. Il risultato si avvolge intorno all'orologio di 24 ore, quindi 23:30 più 2 ore dà 01:30.</div></details><details class="faq-item"><summary class="faq-question">Questo calcolatore gestisce fusi orari o ora legale?</summary><div class="faq-answer">No. Funziona solo con ore, quindi non si adatta a fusi orari o cambi d'ora. Un periodo che attraversa un cambio dell'ora legale sarà diverso di un'ora nel tempo reale trascorso.</div></details><details class="faq-item"><summary class="faq-question">I miei dati vengono salvati da qualche parte?</summary><div class="faq-answer">No. Questo calcolatore funziona interamente nel tuo browser. Le tue ore non vengono mai inviate a un server o salvate da OmniTools.</div></details></div></section>
 </article>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-grid">
-<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools fornisce calcolatori e utilità online gratuiti, leggeri e incentrati sulla privacy per la finanza, la produttività e l'istruzione.</p></div>
-<div><h4 class="footer-heading">Strumenti popolari</h4><ul class="footer-links"><li><a href="age-calculator.html">Calcolatore di età</a></li><li><a href="bmi-calculator.html">Calcolatore IMC</a></li><li><a href="loan-calculator.html">Calcolatore di prestiti</a></li><li><a href="password-generator.html">Generatore di password</a></li><li><a href="word-counter.html">Contatore di parole</a></li></ul></div>
-<div><h4 class="footer-heading">Utilità</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Calcolatore di percentuali</a></li><li><a href="discount-calculator.html">Calcolatore di sconti</a></li><li><a href="unit-converter.html">Convertitore di unità</a></li><li><a href="date-calculator.html">Calcolatore di differenza tra date</a></li><li><a href="case-converter.html">Convertitore di maiuscole/minuscole</a></li></ul></div>
-<div><h4 class="footer-heading">Informazioni legali</h4><ul class="footer-links"><li><a href="../about.html">Chi siamo</a></li><li><a href="../contact.html">Contattaci</a></li><li><a href="../privacy-policy.html">Informativa sulla privacy</a></li><li><a href="../terms.html">Termini di servizio</a></li></ul></div></div>
-<div class="footer-bottom"><p>© 2026 OmniTools. Tutti i diritti riservati. Strumenti online gratuiti per tutti.</p><div class="footer-lang-select"><span>Lingua:</span> <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a></div></div></div></footer>
+<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools offre calcolatori e utilità online gratuiti, leggeri e attenti alla privacy, per finanza, produttività e istruzione.</p></div>
+<div><h4 class="footer-heading">Strumenti più usati</h4><ul class="footer-links"><li><a href="age-calculator.html">Calcolatore di età</a></li><li><a href="bmi-calculator.html">Calcolatore BMI</a></li><li><a href="loan-calculator.html">Calcolatore rata prestito</a></li><li><a href="password-generator.html">Generatore di password</a></li><li><a href="word-counter.html">Contatore di parole</a></li></ul></div>
+<div><h4 class="footer-heading">Utilità</h4><ul class="footer-links"><li><a href="percentage-calculator.html">Calcolatore di percentuali</a></li><li><a href="discount-calculator.html">Calcolatore di sconti</a></li><li><a href="unit-converter.html">Convertitore di unità</a></li><li><a href="date-calculator.html">Differenza tra date</a></li><li><a href="case-converter.html">Convertitore di maiuscole/minuscole</a></li></ul></div>
+<div><h4 class="footer-heading">Note legali e Informazioni</h4><ul class="footer-links"><li><a href="../about.html">Chi siamo</a></li><li><a href="../contact.html">Contattaci</a></li><li><a href="../privacy-policy.html">Informativa sulla privacy</a></li><li><a href="../terms.html">Termini di servizio</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools. Tutti i diritti riservati. Utilità online gratuite per tutti.</p><div class="footer-lang-select">
+          <span>Lingua:</span>
+          <a href="../index.html">English</a> |
+          <a href="../es/index.html">Español</a> |
+          <a href="../de/index.html">Deutsch</a> |
+          <a href="../fr/index.html">Français</a> |
+          <a href="../pt/index.html">Português</a> |
+          <a href="index.html" style="color: #60a5fa;">Italiano</a> |
+          <a href="../ru/index.html">Русский</a> |
+          <a href="../nl/index.html">Nederlands</a> |
+          <a href="../pl/index.html">Polski</a> |
+          <a href="../sv/index.html">Svenska</a> |
+          <a href="../no/index.html">Norsk</a> |
+          <a href="../da/index.html">Dansk</a> |
+          <a href="../fi/index.html">Suomi</a> |
+          <a href="../id/index.html">Bahasa Indonesia</a> |
+          <a href="../tr/index.html">Türkçe</a> |
+          <a href="../vi/index.html">Tiếng Việt</a> |
+          <a href="../th/index.html">ไทย</a> |
+          <a href="../ms/index.html">Bahasa Melayu</a> |
+          <a href="../tl/index.html">Filipino</a> |
+          <a href="../hi/index.html">हिन्दी</a> |
+          <a href="../ur/index.html">اردو</a> |
+          <a href="../ar/index.html">العربية</a> |
+          <a href="../fa/index.html">فارسی</a> |
+          <a href="../he/index.html">עברית</a> |
+          <a href="../ja/index.html">日本語</a> |
+          <a href="../ko/index.html">한국어</a> |
+          <a href="../zh/index.html">简体中文</a> |
+          <a href="../zh-TW/index.html">繁體中文</a> |
+          <a href="../el/index.html">Ελληνικά</a> |
+          <a href="../cs/index.html">Čeština</a></div></div></div></footer>
 <script>
 function parseTimeToMinutes2(s) {
   if (typeof s !== "string") return null;
@@ -253,15 +313,15 @@ function shiftTime(baseStr, hours, minutes, op) {
     var errBox = document.getElementById("timeErrorBox"), res = document.getElementById("timeResultsBox");
     var d = durationBetween(document.getElementById("durStart").value, document.getElementById("durEnd").value);
     var shifted = shiftTime(document.getElementById("durBase").value, parseFloat(document.getElementById("durHours").value), parseFloat(document.getElementById("durMinutes").value), document.getElementById("durOp").value);
-    if (d === null || shifted === null) { errBox.textContent = "Inserisci gli orari validi nel formato 24 ore, con le ore da 0 a 1000 e i minuti da 0 a 59."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    if (d === null || shifted === null) { errBox.textContent = "Inserisci ore valide in formato 24 ore, con ore da 0 a 1000 e minuti da 0 a 59."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
     errBox.style.display = "none";
-    document.getElementById("durValue").textContent = d.hours + "H " + d.minutes + "m";
+    document.getElementById("durValue").textContent = d.hours + "h " + d.minutes + "min";
     document.getElementById("durSub").textContent = document.getElementById("durStart").value + " a " + document.getElementById("durEnd").value;
     document.getElementById("durTotalMinValue").textContent = d.totalMinutes + " min";
-    document.getElementById("durOvernightValue").textContent = d.overnight ? "Sì, durante la notte" : "No, lo stesso giorno";
+    document.getElementById("durOvernightValue").textContent = d.overnight ? "Sì, durante la notte" : "No, stesso giorno";
     document.getElementById("durShiftedValue").textContent = shifted;
     var cb = document.getElementById("copyTimeBtn");
-    if (cb) cb.setAttribute("data-summary", "Durata: " + d.hours + "H " + d.minutes + "m; tempo di base spostato: " + shifted + ".");
+    if (cb) cb.setAttribute("data-summary", "Durata: " + d.hours + "h " + d.minutes + "min; ora base spostata: " + shifted + ".");
     if (res) { res.classList.add("active"); res.style.display = "block"; }
   };
   window.resetTime = function() {
