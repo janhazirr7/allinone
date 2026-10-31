@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>기간 계산기 - 두 시간 사이의 시간, 더하기 또는 빼기 | OmniTools</title>
-<meta name="description" content="하룻밤을 포함하여 두 시간 사이의 기간을 계산하고 언제든지 시간과 분을 더하거나 뺍니다.">
-<meta name="keywords" content="기간 계산기, 두 시간 사이의 시간, 시간에 시간 더하기, 시간 빼기, 야간 근무">
+<title>시간 기간 계산기 - 두 시간 사이의 시간, 더하기 또는 빼기 | OmniTools</title>
+<meta name="description" content="밤을 넘기는 경우를 포함해 두 시간 사이의 기간을 계산하고, 어떤 시간에도 시간과 분을 더하거나 빼세요.">
+<meta name="keywords" content="시간 기간 계산기, 두 시간 사이의 시간, 시간에 시간 더하기, 시간 빼기, 밤 근무">
 <meta name="author" content="OmniTools">
 <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://janhazirr7.github.io/allinone/ko/time-duration-calculator.html">
@@ -41,29 +41,57 @@
   <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/time-duration-calculator.html">
   <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/time-duration-calculator.html">
 
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
 <meta property="og:url" content="https://janhazirr7.github.io/allinone/ko/time-duration-calculator.html">
-<meta property="og:title" content="기간 계산기 | OmniTools">
-<meta property="og:description" content="하룻밤을 포함하여 두 시간 사이의 기간을 계산하고 언제든지 시간과 분을 더하거나 뺍니다.">
+<meta property="og:title" content="시간 기간 계산기 | OmniTools">
+<meta property="og:description" content="밤을 넘기는 경우를 포함해 두 시간 사이의 기간을 계산하고, 어떤 시간에도 시간과 분을 더하거나 빼세요.">
 <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-time-duration-calculator.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="기간 계산기 | OmniTools">
-<meta name="twitter:description" content="하룻밤을 포함하여 두 시간 사이의 기간을 계산하고 언제든지 시간과 분을 더하거나 뺍니다.">
+<meta name="twitter:title" content="시간 기간 계산기 | OmniTools">
+<meta name="twitter:description" content="밤을 넘기는 경우를 포함해 두 시간 사이의 기간을 계산하고, 어떤 시간에도 시간과 분을 더하거나 빼세요.">
 <link rel="stylesheet" href="../style.css">
 <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "OmniTools 기간 계산기",
+  "name": "OmniTools 시간 기간 계산기",
   "url": "https://janhazirr7.github.io/allinone/ko/time-duration-calculator.html",
-  "applicationCategory": "유틸리티응용 프로그램",
+  "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
   "browserRequirements": "자바스크립트가 필요합니다. HTML5가 필요합니다.",
-  "description": "하룻밤을 포함하여 두 시간 사이의 기간을 계산하고 언제든지 시간과 분을 더하거나 뺍니다.",
+  "description": "밤을 넘기는 경우를 포함해 두 시간 사이의 기간을 계산하고, 어떤 시간에도 시간과 분을 더하거나 빼세요.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -80,19 +108,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "집",
+      "name": "홈",
       "item": "https://janhazirr7.github.io/allinone/ko/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "생산력",
+      "name": "생산성",
       "item": "https://janhazirr7.github.io/allinone/ko/#productivity"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "기간 계산기",
+      "name": "시간 기간 계산기",
       "item": "https://janhazirr7.github.io/allinone/ko/time-duration-calculator.html"
     }
   ],
@@ -106,42 +134,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "종료 시간이 시작 시간보다 빠르면 어떻게 되나요?",
+      "name": "종료 시간이 시작 시간보다 이르면 어떻게 되는가?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "계산기는 이를 하룻밤으로 간주합니다. 즉, 종료 시간은 다음 날에 속합니다. 예를 들어 22:00부터 06:00까지의 시간은 8시간이고 결과는 밤새 표시되므로 쉽게 확인할 수 있습니다."
+        "text": "계산기는 이를 밤을 넘기는 경우로 처리합니다. 즉, 종료 시간이 다음 날에 속한다는 뜻입니다. 예를 들어 22:00부터 06:00까지는 8시간이며, 결과에 '밤을 넘김'이라고 표시되어 바로 알아볼 수 있습니다."
       }
     },
     {
       "@type": "Question",
-      "name": "두 시간이 동일하다면 어떻게 될까요?",
+      "name": "두 시간이 같으면 어떻게 되는가?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "동일한 시계 시간 사이에 시간이 경과되지 않았기 때문에 지속 시간은 0입니다. 전체 24시간 기간은 시간뿐만 아니라 날짜도 필요하므로 시계 시간만으로는 표시할 수 없습니다."
+        "text": "기간은 0입니다. 동일한 시계 시간 사이에는 지난 시간이 없기 때문입니다. 하루 전체인 24시간은 시계 시간만으로는 표시할 수 없습니다. 시간뿐만 아니라 날짜도 필요하기 때문입니다."
       }
     },
     {
       "@type": "Question",
-      "name": "자정을 넘는 시간에 어떻게 시간을 추가하나요?",
+      "name": "자정을 넘는 시간에 시간을 더하려면 어떻게 하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "기본 시간을 입력하고 추가를 선택한 후 시간과 분을 입력합니다. 결과는 24시간제를 기준으로 하므로 23:30에 2시간을 더하면 01:30이 됩니다."
+        "text": "기준 시간을 입력하고, 더하기를 선택한 뒤 시간과 분을 입력하세요. 결과는 24시간 시계를 넘어가므로, 23:30에 2시간을 더하면 01:30이 됩니다."
       }
     },
     {
       "@type": "Question",
-      "name": "이 계산기는 시간대나 일광 절약 시간제를 처리합니까?",
+      "name": "이 계산기가 시간대나 서머타임을 처리하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "아니요. 시계 시간에만 작동하므로 시간대나 시계 변경에 맞게 조정되지 않습니다. 일광 절약 시간제 변경을 통과하는 기간은 실제 경과 시간에서 1시간 다릅니다."
+        "text": "아니요. 시계 시간만으로 동작하므로 시간대나 시계 변경을 조정하지 않습니다. 서머타임 변경을 가로지르는 기간은 실제 경과 시간에서 1시간 차이가 납니다."
       }
     },
     {
       "@type": "Question",
-      "name": "내 데이터는 어디에나 저장되어 있나요?",
+      "name": "내 데이터가 어딘가에 저장되나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "아니요. 이 계산기는 전적으로 귀하의 브라우저에서 실행됩니다. 귀하의 시간은 서버로 전송되거나 OmniTools에 저장되지 않습니다."
+        "text": "아니요. 이 계산기는 전적으로 브라우저에서 실행됩니다. 시간이 서버로 전송되거나 OmniTools에 저장되지 않습니다."
       }
     }
   ],
@@ -152,23 +180,23 @@
   {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "기간 계산기",
-  "description": "하룻밤을 포함하여 두 시간 사이의 기간을 계산하고 언제든지 시간과 분을 더하거나 뺍니다.",
+  "name": "시간 기간 계산기",
+  "description": "밤을 넘기는 경우를 포함해 두 시간 사이의 기간을 계산하고, 어떤 시간에도 시간과 분을 더하거나 빼세요.",
   "step": [
     {
       "@type": "HowToStep",
-      "name": "시작 시간과 종료 시간을 입력하세요.",
+      "name": "시작 시간과 종료 시간 입력",
       "text": "시작 시간과 종료 시간을 24시간 형식으로 입력하세요."
     },
     {
       "@type": "HowToStep",
-      "name": "시간을 더하거나 빼세요",
-      "text": "기본 시간을 입력하고 더하기 또는 빼기를 선택한 다음 시간과 분을 입력합니다."
+      "name": "시간 더하기 또는 빼기",
+      "text": "기준 시간을 입력하고, 더하기 또는 빼기를 선택한 뒤 시간과 분을 입력하세요."
     },
     {
       "@type": "HowToStep",
-      "name": "믿다",
-      "text": "지속 시간 계산을 눌러 지속 시간, 총 분, 이동 시간을 확인하세요."
+      "name": "계산하기",
+      "text": "'기간 계산하기'를 눌러 기간, 총 분, 이동된 시간을 확인하세요."
     }
   ],
   "inLanguage": "ko"
@@ -178,7 +206,7 @@
 <body>
 <header class="site-header"><div class="container header-inner">
 <a href="index.html" class="brand-logo" aria-label="OmniTools 홈"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
-<nav aria-label="메인 네비게이션"><ul class="nav-links"><li><a href="index.html">모든 도구</a></li><li><a href="age-calculator.html">나이 계산</a></li><li><a href="bmi-calculator.html">BMI 추적기</a></li><li><a href="loan-calculator.html">대출 EMI</a></li><li><a href="../about.html">에 대한</a></li></ul></nav>
+<nav aria-label="주 탐색 메뉴"><ul class="nav-links"><li><a href="index.html">모든 도구</a></li><li><a href="age-calculator.html">나이 계산</a></li><li><a href="bmi-calculator.html">BMI 추적기</a></li><li><a href="loan-calculator.html">대출 EMI</a></li><li><a href="../about.html">소개</a></li></ul></nav>
 <div class="nav-actions"><select id="langSelect" aria-label="언어 선택" onchange="window.location.href=this.value">
           <option value="../time-duration-calculator.html">English</option>
           <option value="../es/calculadora-de-duracion.html">Español</option>
@@ -210,51 +238,51 @@
           <option value="../zh-TW/time-duration-calculator.html">繁體中文</option>
           <option value="../el/time-duration-calculator.html">Ελληνικά</option>
           <option value="../cs/time-duration-calculator.html">Čeština</option>
-        </select><button class="mobile-nav-toggle" aria-label="탐색 메뉴 전환" aria-expanded="false">☰</button></div></div></header>
+        </select></select><button class="mobile-nav-toggle" aria-label="탐색 메뉴 전환" aria-expanded="false">☰</button></div></div></header>
 <main>
-<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">집</a></li><li><a href="index.html#productivity">생산력</a></li><li aria-current="page">기간 계산기</li></ul></div></div>
-<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">기간 계산기</h1><p class="tool-header-desc">두 시간 사이, 심지어 하룻밤 사이에 얼마나 걸리는지 계산하고 시간과 분을 더하거나 빼서 언제든지 교대할 수 있습니다.</p></div></section>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">홈</a></li><li><a href="index.html#productivity">생산성</a></li><li aria-current="page">시간 기간 계산기</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">시간 기간 계산기</h1><p class="tool-header-desc">밤을 넘기는 경우에도 두 시간 사이에 얼마나 있는지 계산하고, 시간과 분을 더하거나 빼서 어떤 시간이든 이동하세요.</p></div></section>
 <div class="container"><div class="ad-slot ad-leaderboard" aria-label="리더보드 광고"><span class="ad-slot-placeholder-text">반응형 리더보드 광고(728x90)</span></div></div>
 <section class="container tool-layout-container">
 <div><div class="tool-card-widget">
 <div class="widget-form-grid">
-<div class="form-group"><label class="form-label" for="durStart"><span>시작 시간</span><span class="label-hint">필수의</span></label><input type="time" id="durStart" class="form-input" value="09:00"></div>
-<div class="form-group"><label class="form-label" for="durEnd"><span>종료 시간</span><span class="label-hint">필수의</span></label><input type="time" id="durEnd" class="form-input" value="17:30"><span class="form-help">종료 시간이 시작 시간보다 빠른 경우 익일 밤으로 계산됩니다.</span></div>
+<div class="form-group"><label class="form-label" for="durStart"><span>시작 시간</span><span class="label-hint">필수</span></label><input type="time" id="durStart" class="form-input" value="09:00"></div>
+<div class="form-group"><label class="form-label" for="durEnd"><span>종료 시간</span><span class="label-hint">필수</span></label><input type="time" id="durEnd" class="form-input" value="17:30"><span class="form-help">종료 시간이 시작 시간보다 이르면 다음 날 밤으로 계산됩니다</span></div>
 </div>
 <div class="widget-form-grid two-col">
-<div class="form-group"><label class="form-label" for="durBase"><span>기본 시간(더하기 또는 빼기)</span></label><input type="time" id="durBase" class="form-input" value="23:30"></div>
-<div class="form-group"><label class="form-label" for="durOp"><span>작업</span></label><select id="durOp" class="form-select"><option value="add" selected="None">추가하다</option><option value="sub">덜다</option></select></div>
-<div class="form-group"><label class="form-label" for="durHours"><span>시간</span></label><input type="number" id="durHours" class="form-input" placeholder="예를 들어 2" min="0" max="1000" step="1" value="2"></div>
+<div class="form-group"><label class="form-label" for="durBase"><span>기준 시간(더하거나 뺄 시간)</span></label><input type="time" id="durBase" class="form-input" value="23:30"></div>
+<div class="form-group"><label class="form-label" for="durOp"><span>연산</span></label><select id="durOp" class="form-select"><option value="add" selected="None">추가</option><option value="sub">빼기</option></select></div>
+<div class="form-group"><label class="form-label" for="durHours"><span>시간</span></label><input type="number" id="durHours" class="form-input" placeholder="예: 2" min="0" max="1000" step="1" value="2"></div>
 <div class="form-group"><label class="form-label" for="durMinutes"><span>분</span></label><input type="number" id="durMinutes" class="form-input" placeholder="예: 30" min="0" max="59" step="1" value="30"></div>
 </div>
 <div id="timeErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
-<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateTimeUI()">기간 계산</button><button type="button" class="btn btn-outline" onclick="resetTime()">다시 놓기</button></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateTimeUI()">기간 계산하기</button><button type="button" class="btn btn-outline" onclick="resetTime()">초기화</button></div>
 <div id="timeResultsBox" class="results-box">
-<div class="results-header"><span class="results-title">귀하의 기간 결과</span><button type="button" class="btn btn-outline btn-sm" id="copyTimeBtn">요약 복사</button></div>
+<div class="results-header"><span class="results-title">기간 결과</span><button type="button" class="btn btn-outline btn-sm" id="copyTimeBtn">요약 복사</button></div>
 <div class="hero-result-card"><div class="hero-result-label">두 시간 사이의 기간</div><div class="hero-result-value" id="durValue">-</div><div class="hero-result-sub" id="durSub"></div></div>
-<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="durTotalMinValue">-</div><div class="metric-label">분 단위의 합계</div></div><div class="metric-card"><div class="metric-value" id="durOvernightValue">-</div><div class="metric-label">자정이 지났나요?</div></div><div class="metric-card"><div class="metric-value" id="durShiftedValue">-</div><div class="metric-label">이동된 기본 시간</div></div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="durTotalMinValue">-</div><div class="metric-label">분 단위 총합</div></div><div class="metric-card"><div class="metric-value" id="durOvernightValue">-</div><div class="metric-label">자정을 넘기나요?</div></div><div class="metric-card"><div class="metric-value" id="durShiftedValue">-</div><div class="metric-label">이동된 기준 시간</div></div></div>
 </div>
 </div></div>
 <aside><div class="ad-slot ad-rectangle" aria-label="사이드바 광고"><span class="ad-slot-placeholder-text">사이드바 직사각형(300x250)</span></div>
 <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">관련 계산기</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">날짜 차이 <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">나이 계산기 <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">백분율 계산기 <span>→</span></a></li><li><a href="bmr-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMR 및 칼로리 계산기 <span>→</span></a></li></ul></div></aside>
 </section>
-<div class="container"><div class="ad-slot ad-in-content" aria-label="기사 내 광고"><span class="ad-slot-placeholder-text">반응형 콘텐츠 배너(728x90 / 300x250)</span></div></div>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="본문 내 광고"><span class="ad-slot-placeholder-text">반응형 콘텐츠 배너(728x90 / 300x250)</span></div></div>
 <article class="container educational-content">
-<section class="content-section"><h2 class="content-heading">기간 계산기를 사용하는 방법</h2><p class="content-paragraph">자정이 되기 전까지는 시간 계산이 쉬워 보입니다. 06:00에서 22:00을 빼면 두 시간을 같은 날에 속하는 것으로 간주하는 경우 음수가 됩니다. 하지만 야간 근무를 하는 사람이라면 그 답이 8시간이라는 것을 알 것입니다. 이 계산기는 시간을 24시간제의 점으로 취급하고 자정 교차점을 처리하므로 머리 속으로 시계 계산을 하지 않고도 교대 근무, 여행, 학습 세션 및 행사 기간을 계산할 수 있습니다. 같은 페이지에 두 번째 계산도 포함되어 있습니다. 기본 시간에서 시간과 분을 더하거나 뺄 수 있습니다. 이는 비행, 회의 또는 카운트다운 후 몇 시인지 알아야 할 때 유용합니다.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>시작 시간과 종료 시간을 입력하세요.</strong>24시간 형식의 시간 선택기를 사용하세요. 당일 기간의 경우 더 이른 시간을 먼저 입력하고 늦은 시간을 두 번째로 입력합니다(예: 09:00 - 17:30).</div></li><li class="step-item"><div class="step-item-content"><strong>야간 생리가 자동으로 마무리되도록 하세요</strong>종료 시간이 시작 시간보다 빠르면 계산기는 종료 시간이 다음 날에 속하는 것으로 가정합니다. 따라서 22:00에서 06:00까지의 근무 시간은 8시간이고 결과도 마찬가지입니다.</div></li><li class="step-item"><div class="step-item-content"><strong>더하기 및 빼기 섹션도 사용하세요.</strong>기본 시간을 입력하고 더하기 또는 빼기를 선택하고 시간과 분을 입력합니다. 결과는 어느 방향에서든 자정을 전후하므로 23:30에 2시간을 더한 시간은 01:30입니다.</div></li><li class="step-item"><div class="step-item-content"><strong>시간, 분, 총 분 읽기</strong>헤드라인에는 기간이 시간과 분으로 표시되는데, 이는 사람들이 시간에 대해 말하는 방식입니다. 분 단위의 합계는 단일 숫자를 곱하기 쉬운 급여, 청구 및 스프레드시트에 유용합니다.</div></li></ol></section>
-<section class="content-section"><h2 class="content-heading">계산 작동 방식</h2><p class="content-paragraph">매 시간은 먼저 자정 이후의 분으로 변환됩니다. 자정 자체는 0이고, 09:00은 540분, 23:30은 1,410분입니다. 지속 시간은 종료 값에서 시작 값을 뺀 값입니다. 그 차이가 음수이면 하루 전체인 1,440분이 추가되며 이는 종료 시간을 다음 날로 옮기는 것과 같습니다. 두 시간이 동일하면 두 시간 사이에 시간이 경과되지 않았기 때문에 지속 시간은 0입니다. 이는 의도적인 선택입니다. 09:00부터 09:00까지의 기간은 전체 24시간이 아닌 기간 없이 처리됩니다. 왜냐하면 하루 전체를 명확하게 하려면 날짜와 시간이 필요하기 때문입니다.</p><div class="formula-box"><div class="formula-expression">기간 = 종료 분 - 시작 분(음수인 경우 1440 추가)</div><div class="formula-expression">이동된 시간 = (기본 분 +/- 시간 x 60 +/- 분) 0-1439로 래핑됨</div><div class="formula-explanation">예: 09:00 ~ 17:30 = 1050 - 540 = 510분 = 8시간 30분. 22:00 ~ 06:00 = 360 - 1320 = -960, + 1440 = 480분 = 8시간, 밤새. 23:30 더하기 2시간 = 1410 + 120 = 1530, 1440 = 90분 = 01:30을 빼면 됩니다.</div></div><p class="content-paragraph">더하기와 빼기는 자정 이후 동일한 아이디어를 사용하여 양방향으로 래핑됩니다. 01:00에서 2시간을 빼면 전날 23:00이 되며 날짜 없이 시계 시간으로 표시됩니다. 계산기는 시계 시간에만 작동하므로 날짜, 시간대 또는 일광 절약 시간제 변경 사항을 알 수 없습니다. 봄이나 가을에 시계가 바뀌는 기간은 실제 경과 시간에서 1시간씩 다르며, 시간대를 넘나드는 여행에는 단순히 뺄셈이 아닌 각 끝의 현지 시간이 필요합니다.</p></section>
-<section class="content-section"><h2 class="content-heading">당일, 야간 및 극단적인 경우</h2><p class="content-paragraph">가장 흔히 혼동되는 것은 시작 시간보다 빠른 종료 시간이 실수인지 아니면 밤샘 기간인지입니다. 이 계산기는 항상 교대 근무, 항공편 및 이벤트가 일반적으로 설명되는 방식과 일치하는 하룻밤으로 처리합니다. 실제로 입력 오류가 있었고 당일 기간을 의미한 경우 결과의 익일 라벨이 단서입니다. 결과를 확인하고 예상하지 못한 익일이라고 표시되면 시간을 바꾸거나 수정하세요. 다른 극단적인 경우는 동일한 시간이며 0을 제공합니다. 전체 24시간을 의미한다면 시간 전용 계산기가 아닌 날짜 기반 계산기가 필요합니다. 시계 시간만으로는 0시와 24시간을 구별할 수 없기 때문입니다.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>시작</th><th>끝</th><th>지속</th><th>밤새?</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>8시간 30분</td><td>아니요</td></tr><tr><td>22:00</td><td>06:00</td><td>8시간</td><td>예</td></tr><tr><td>23:30</td><td>01:30</td><td>2시간</td><td>예</td></tr><tr><td>09:00</td><td>09:00</td><td>0시간</td><td>아니요</td></tr></tbody></table></div><p class="content-paragraph">더하기 및 빼기 섹션의 분은 0~59로 제한되므로 시계에서와 마찬가지로 초과분을 시간으로 변환해야 합니다. 시간은 최대 1,000까지 가능하므로 며칠분의 시간을 추가할 수 있으며 총계는 24시간제를 중심으로 이루어지기 때문에 결과는 여전히 유효한 시계 시간이 됩니다. 하루 중 몇 시인지 묻는 데는 해당 래핑이 정확하지만 날짜가 언제인지는 알려주지 않습니다. 월요일 10시에 50시간을 추가하면 수요일 12시가 되고 여기에는 12시 부분만 표시됩니다.</p></section>
-<section class="content-section"><h2 class="content-heading">실용적인 용도</h2><p class="content-paragraph">교대 근무자는 이러한 종류의 계산을 사용하여 유급 시간을 확인합니다. 특히 교대 근무가 자정을 넘어서 간단한 빼기가 실패하는 경우에는 더욱 그렇습니다. 프리랜서와 컨설턴트는 대부분의 인보이스 발행에서 시간당 요율에 소수 시간을 곱하기 때문에 총 시간(분)을 사용하여 작업 세션을 청구 가능한 수치로 전환합니다. 여행자는 더하기 및 빼기 섹션을 사용하여 도착 시간, 체류 시간, 착륙 시 집에 도착하는 시간을 계산합니다. 학생과 이벤트 주최자는 이를 사용하여 하루를 블록으로 분할합니다. 예를 들어 대화, 휴식 및 점심 일정이 실제로 시작 시간과 종료 시간 사이에 초과하지 않고 맞는지 확인합니다.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. 급여 전 교대근무 확인</h4><p class="example-card-body">근무 시작 및 종료를 입력하고 야간 플래그를 확인한 다음 총 분을 사용하여 소수 시간으로 변환합니다. 분을 60으로 나눈 후 시간당 요율을 곱합니다.</p></div><div class="example-card"><h4 class="example-card-title">2. 과거로의 여정을 계획하세요</h4><p class="example-card-body">언제 출발할지 알아내려면 추측해서 늦게 도착하는 대신 빼기 옵션을 사용하여 필요한 도착 시간에서 이동 시간을 뺍니다.</p></div><div class="example-card"><h4 class="example-card-title">3. 행사 일정을 정직하게 유지하세요</h4><p class="example-card-body">각 세션 길이를 시작 시간에 차례로 추가합니다. 마지막으로 변경된 시간이 장소 예약 종료 시간보다 늦으면 일정의 일부를 이동해야 합니다.</p></div></div><p class="content-paragraph">이 계산기는 시계 시간에만 작동하며 날짜, 시간대 또는 일광 절약 시간제 규칙을 사용하지 않습니다. 며칠 간의 여행, 계약 마감일, 시계 변경에 따른 급여 기간 등 날짜가 중요한 경우 날짜 및 시간 계산기를 사용하여 현지 달력과 비교하여 결과를 확인하세요. 그러나 매일의 당일 및 야간 시계 산술의 경우 여기에 사용된 자정 이후 분 방식이 정확합니다.</p></section>
-<section class="content-section"><h2 class="content-heading">자주 묻는 질문(FAQ)</h2><div class="faq-list"><details class="faq-item" open="None"><summary class="faq-question">종료 시간이 시작 시간보다 빠르면 어떻게 되나요?</summary><div class="faq-answer">계산기는 이를 하룻밤으로 간주합니다. 즉, 종료 시간은 다음 날에 속합니다. 예를 들어 22:00부터 06:00까지의 시간은 8시간이고 결과는 밤새 표시되므로 쉽게 확인할 수 있습니다.</div></details><details class="faq-item"><summary class="faq-question">두 시간이 동일하다면 어떻게 될까요?</summary><div class="faq-answer">동일한 시계 시간 사이에 시간이 경과되지 않았기 때문에 지속 시간은 0입니다. 전체 24시간 기간은 시간뿐만 아니라 날짜도 필요하므로 시계 시간만으로는 표시할 수 없습니다.</div></details><details class="faq-item"><summary class="faq-question">자정을 넘는 시간에 어떻게 시간을 추가하나요?</summary><div class="faq-answer">기본 시간을 입력하고 추가를 선택한 후 시간과 분을 입력합니다. 결과는 24시간제를 기준으로 하므로 23:30에 2시간을 더하면 01:30이 됩니다.</div></details><details class="faq-item"><summary class="faq-question">이 계산기는 시간대나 일광 절약 시간제를 처리합니까?</summary><div class="faq-answer">아니요. 시계 시간에만 작동하므로 시간대나 시계 변경에 맞게 조정되지 않습니다. 일광 절약 시간제 변경을 통과하는 기간은 실제 경과 시간에서 1시간 다릅니다.</div></details><details class="faq-item"><summary class="faq-question">내 데이터는 어디에나 저장되어 있나요?</summary><div class="faq-answer">아니요. 이 계산기는 전적으로 귀하의 브라우저에서 실행됩니다. 귀하의 시간은 서버로 전송되거나 OmniTools에 저장되지 않습니다.</div></details></div></section>
+<section class="content-section"><h2 class="content-heading">시간 기간 계산기 사용 방법</h2><p class="content-paragraph">시간 계산은 자정이 개입되기 전까지는 쉬워 보입니다. 06:00에서 22:00를 빼면 두 시간을 같은 날에 속한다고 취급할 때 음수가 나오지만, 그 밤 근무를 하는 사람은 답이 8시간이라는 것을 압니다. 이 계산기는 시간을 24시간 시계상의 점으로 취급하고 자정을 넘는 경우를 대신 처리하므로, 머릿속으로 시계 계산을 하지 않고도 근무, 여정, 공부 시간, 행사 길이를 구할 수 있습니다. 같은 페이지에는 두 번째 계산도 포함되어 있습니다. 어떤 기준 시간에도 시간과 분을 더하거나 빼는 것으로, 비행, 회의, 카운트다운 뒤에 몇 시가 될지 알아야 할 때 유용합니다.</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>시작 시간과 종료 시간 입력</strong>시간 선택기를 24시간 형식으로 사용하세요. 당일 기간의 경우, 이른 시간을 먼저, 늦은 시간을 나중에 입력하세요. 예를 들어 09:00에서 17:30입니다.</div></li><li class="step-item"><div class="step-item-content"><strong>밤을 넘는 기간을 자동으로 넘어가게 하기</strong>종료 시간이 시작 시간보다 이르면, 계산기는 종료가 다음 날에 속한다고 가정합니다. 따라서 22:00부터 06:00까지의 근무는 8시간이며, 결과도 그렇게 표시합니다.</div></li><li class="step-item"><div class="step-item-content"><strong>더하기와 빼기 섹션도 사용하기</strong>기준 시간을 입력하고, 더하기 또는 빼기를 선택한 뒤 시간과 분을 입력하세요. 결과는 어느 방향으로든 자정을 넘어가므로, 23:30에 2시간을 더하면 01:30이 됩니다.</div></li><li class="step-item"><div class="step-item-content"><strong>시간, 분, 총 분 읽기</strong>제목은 기간을 시간과 분으로 보여주는데, 이는 사람들이 시간에 대해 말하는 방식입니다. 분 단위의 총합은 하나의 숫자를 곱하기가 더 쉬운 급여, 청구, 스프레드시트에 유용합니다.</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">계산이 동작하는 방식</h2><p class="content-paragraph">모든 시간은 먼저 자정 이후 경과 분으로 변환됩니다. 자정 자체는 0분, 09:00은 540분, 23:30은 1,410분입니다. 기간은 종료 값에서 시작 값을 뺀 값입니다. 그 차이가 음수이면 1,440분, 즉 하루 전체를 더하는데, 이는 종료 시간을 다음 날로 옮기는 것과 같습니다. 두 시간이 동일하면 그 사이에 지난 시간이 없으므로 기간은 0입니다. 이는 의도적인 선택입니다. 09:00부터 09:00까지의 기간은 하루 전체가 아니라 기간 없음으로 처리합니다. 하루 전체를 명확히 하려면 시간뿐만 아니라 날짜도 필요하기 때문입니다.</p><div class="formula-box"><div class="formula-expression">기간 = 종료 분 − 시작 분(음수이면 1440을 더함)</div><div class="formula-expression">이동된 시간 = (기준 분 ± 시간 × 60 ± 분)을 0~1439 범위로 넘어가게 처리</div><div class="formula-explanation">예시: 09:00부터 17:30까지 = 1050 − 540 = 510분 = 8시간 30분. 22:00부터 06:00까지 = 360 − 1320 = −960에 1440을 더해 480분 = 8시간, 밤을 넘김. 23:30에 2시간을 더하면 1410 + 120 = 1530에서 1440을 빼 90분 = 01:30.</div></div><p class="content-paragraph">더하기와 빼기는 자정 이후 경과 분이라는 같은 아이디어를 사용하며, 양방향으로 자릿수가 넘어갑니다. 01:00에서 2시간을 빼면 전날 23:00이 되며, 날짜 없이 시계 시간으로만 표시됩니다. 이 계산기는 시계 시간만 다루므로 날짜, 시간대, 서머타임 변경을 알 수 없습니다. 봄이나 가을의 시계 변경을 가로지르는 기간은 실제 경과 시간에서 1시간 차이가 나며, 시간대를 가로지르는 여행은 단순한 뺄셈이 아니라 양쪽 끝의 현지 시간이 필요합니다.</p></section>
+<section class="content-section"><h2 class="content-heading">같은 날, 밤을 넘기는 경우, 예외 상황</h2><p class="content-paragraph">가장 흔한 혼란은 시작 시간보다 이른 종료 시간이 실수인지 밤을 넘기는 기간인지 여부입니다. 이 계산기는 항상 밤을 넘기는 경우로 처리하는데, 이는 근무, 비행, 행사가 보통 설명되는 방식과 일치합니다. 실제로 입력 실수를 했고 같은 날의 기간을 뜻했다면, 결과의 '밤을 넘김' 표시가 단서가 됩니다. 결과를 확인하고, '밤을 넘김'이라고 나오는데 예상하지 못했다면 시간을 바꾸거나 수정하세요. 또 다른 예외 상황은 시간이 같은 경우로, 0이 됩니다. 하루 전체인 24시간을 뜻했다면 시간 전용이 아니라 날짜 기반 계산기가 필요합니다. 시계 시간만으로는 0시간과 24시간을 구분할 수 없기 때문입니다.</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>시작</th><th>종료</th><th>기간</th><th>밤을 넘기나요?</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>8시간 30분</td><td>아니요</td></tr><tr><td>22:00</td><td>06:00</td><td>8시간</td><td>예</td></tr><tr><td>23:30</td><td>01:30</td><td>2시간</td><td>예</td></tr><tr><td>09:00</td><td>09:00</td><td>0시간</td><td>아니요</td></tr></tbody></table></div><p class="content-paragraph">더하기/빼기 섹션의 분은 0에서 59까지로 제한되며, 이는 시계에서처럼 초과된 분을 시간으로 올림하도록 강제합니다. 시간은 최대 1,000까지 입력할 수 있어, 며칠 분량의 시간을 더해도 합계가 24시간 시계를 넘어가므로 여전히 유효한 시계 시간이 됩니다. 그 넘어감은 몇 시가 될지를 묻는 데는 맞지만, 어느 날짜가 될지는 알려주지 않습니다. 월요일 10:00에 50시간을 더하면 수요일 12:00이 되며, 여기서는 12:00 부분만 표시됩니다.</p></section>
+<section class="content-section"><h2 class="content-heading">실용적인 용도</h2><p class="content-paragraph">교대 근무자는 이런 계산으로 유급 시간을 확인합니다. 특히 근무가 자정을 넘기면 단순한 뺄셈으로는 실패하기 때문입니다. 프리랜서와 컨설턴트는 총 분을 이용해 작업 시간을 청구 가능한 수치로 바꿉니다. 대부분의 청구서는 시급에 십진수 시간을 곱하기 때문입니다. 여행자는 더하기/빼기 섹션으로 도착 시간, 경유 시간, 착륙했을 때 집에서는 몇 시인지 계산합니다. 학생과 행사 주최자는 하루를 블록으로 나누는 데 사용합니다. 예를 들어 강연, 휴식, 점심 일정이 시작 시간과 종료 시간 사이에 초과 없이 실제로 들어가는지 확인합니다.</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. 급여 계산 전에 근무 시간 확인하기</h4><p class="example-card-body">근무 시작과 종료를 입력하고 밤샘 여부를 확인한 뒤, 총 분을 이용해 십진수 시간으로 변환하세요. 시급을 곱하기 전에 분을 60으로 나누세요.</p></div><div class="example-card"><h4 class="example-card-title">2. 여행을 거꾸로 계획하기</h4><p class="example-card-body">언제 출발해야 할지 알려면, 추측해서 늦게 도착하는 대신 빼기 옵션으로 필요한 도착 시간에서 이동 시간을 빼세요.</p></div><div class="example-card"><h4 class="example-card-title">3. 행사 일정을 정직하게 유지하기</h4><p class="example-card-body">각 세션의 길이를 시작 시간에 차례대로 더하세요. 마지막으로 이동된 시간이 장소 예약 종료 시간보다 늦다면 일정의 어딘가를 조정해야 합니다.</p></div></div><p class="content-paragraph">이 계산기는 시계 시간만으로 동작하며 날짜, 시간대, 서머타임 규칙을 사용하지 않습니다. 여러 날에 걸친 여행, 계약 마감일, 시계 변경을 가로지르는 급여 기간처럼 날짜가 중요한 경우에는 날짜 및 시간 계산기를 사용하고 결과를 현지 달력과 대조하세요. 그러나 일상적인 당일 및 밤을 넘기는 시계 계산에는 여기서 사용하는 자정 이후 경과 분 방식이 정확합니다.</p></section>
+<section class="content-section"><h2 class="content-heading">자주 묻는 질문(FAQ)</h2><div class="faq-list"><details class="faq-item" open="None"><summary class="faq-question">종료 시간이 시작 시간보다 이르면 어떻게 되는가?</summary><div class="faq-answer">계산기는 이를 밤을 넘기는 경우로 처리합니다. 즉, 종료 시간이 다음 날에 속한다는 뜻입니다. 예를 들어 22:00부터 06:00까지는 8시간이며, 결과에 '밤을 넘김'이라고 표시되어 바로 알아볼 수 있습니다.</div></details><details class="faq-item"><summary class="faq-question">두 시간이 같으면 어떻게 되는가?</summary><div class="faq-answer">기간은 0입니다. 동일한 시계 시간 사이에는 지난 시간이 없기 때문입니다. 하루 전체인 24시간은 시계 시간만으로는 표시할 수 없습니다. 시간뿐만 아니라 날짜도 필요하기 때문입니다.</div></details><details class="faq-item"><summary class="faq-question">자정을 넘는 시간에 시간을 더하려면 어떻게 하나요?</summary><div class="faq-answer">기준 시간을 입력하고, 더하기를 선택한 뒤 시간과 분을 입력하세요. 결과는 24시간 시계를 넘어가므로, 23:30에 2시간을 더하면 01:30이 됩니다.</div></details><details class="faq-item"><summary class="faq-question">이 계산기가 시간대나 서머타임을 처리하나요?</summary><div class="faq-answer">아니요. 시계 시간만으로 동작하므로 시간대나 시계 변경을 조정하지 않습니다. 서머타임 변경을 가로지르는 기간은 실제 경과 시간에서 1시간 차이가 납니다.</div></details><details class="faq-item"><summary class="faq-question">내 데이터가 어딘가에 저장되나요?</summary><div class="faq-answer">아니요. 이 계산기는 전적으로 브라우저에서 실행됩니다. 시간이 서버로 전송되거나 OmniTools에 저장되지 않습니다.</div></details></div></section>
 </article>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-grid">
-<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools는 금융, 생산성 및 교육을 위한 가볍고 개인 정보 보호에 초점을 맞춘 온라인 계산기와 유틸리티를 무료로 제공합니다.</p></div>
-<div><h4 class="footer-heading">트렌드 도구</h4><ul class="footer-links"><li><a href="age-calculator.html">나이 계산기</a></li><li><a href="bmi-calculator.html">BMI 추적기</a></li><li><a href="loan-calculator.html">대출 EMI 계산기</a></li><li><a href="password-generator.html">비밀번호 생성기</a></li><li><a href="word-counter.html">단어 카운터</a></li></ul></div>
-<div><h4 class="footer-heading">유용</h4><ul class="footer-links"><li><a href="percentage-calculator.html">백분율 계산기</a></li><li><a href="discount-calculator.html">할인 계산기</a></li><li><a href="unit-converter.html">단위 변환기</a></li><li><a href="date-calculator.html">날짜 차이</a></li><li><a href="case-converter.html">텍스트 대소문자 변환기</a></li></ul></div>
-<div><h4 class="footer-heading">법률 및 정보</h4><ul class="footer-links"><li><a href="../about.html">회사 소개</a></li><li><a href="../contact.html">문의하기</a></li><li><a href="../privacy-policy.html">개인 정보 보호 정책</a></li><li><a href="../terms.html">서비스 약관</a></li></ul></div></div>
-<div class="footer-bottom"><p>© 2026 OmniTools. 모든 권리 보유. 모든 사람을 위한 무료 온라인 유틸리티입니다.</p><div class="footer-lang-select">
+<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools는 금융, 생산성, 교육을 위한 무료이며 가볍고 개인정보 보호에 중점을 둔 온라인 계산기와 유틸리티를 제공합니다.</p></div>
+<div><h4 class="footer-heading">인기 도구</h4><ul class="footer-links"><li><a href="age-calculator.html">나이 계산기</a></li><li><a href="bmi-calculator.html">BMI 추적기</a></li><li><a href="loan-calculator.html">대출 EMI 계산기</a></li><li><a href="password-generator.html">비밀번호 생성기</a></li><li><a href="word-counter.html">단어 카운터</a></li></ul></div>
+<div><h4 class="footer-heading">유틸리티</h4><ul class="footer-links"><li><a href="percentage-calculator.html">백분율 계산기</a></li><li><a href="discount-calculator.html">할인 계산기</a></li><li><a href="unit-converter.html">단위 변환기</a></li><li><a href="date-calculator.html">날짜 차이</a></li><li><a href="case-converter.html">텍스트 대소문자 변환기</a></li></ul></div>
+<div><h4 class="footer-heading">법률 및 정보</h4><ul class="footer-links"><li><a href="../about.html">회사 소개</a></li><li><a href="../contact.html">문의하기</a></li><li><a href="../privacy-policy.html">개인정보 처리방침</a></li><li><a href="../terms.html">서비스 약관</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools. 모든 권리 보유. 모두를 위한 무료 온라인 유틸리티.</p><div class="footer-lang-select">
           <span>언어:</span>
-          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="index.html" style="color: #60a5fa;">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
         </div></div></div></footer>
 <script>
 function parseTimeToMinutes2(s) {
@@ -294,15 +322,15 @@ function shiftTime(baseStr, hours, minutes, op) {
     var errBox = document.getElementById("timeErrorBox"), res = document.getElementById("timeResultsBox");
     var d = durationBetween(document.getElementById("durStart").value, document.getElementById("durEnd").value);
     var shifted = shiftTime(document.getElementById("durBase").value, parseFloat(document.getElementById("durHours").value), parseFloat(document.getElementById("durMinutes").value), document.getElementById("durOp").value);
-    if (d === null || shifted === null) { errBox.textContent = "유효한 시간을 24시간 형식으로 입력하세요(시간은 0~1000, 분은 0~59)."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    if (d === null || shifted === null) { errBox.textContent = "24시간 형식으로 유효한 시간을 입력하세요. 시간은 0에서 1000, 분은 0에서 59 사이입니다."; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
     errBox.style.display = "none";
-    document.getElementById("durValue").textContent = d.hours + "시간 " + d.minutes + "m";
-    document.getElementById("durSub").textContent = document.getElementById("durStart").value + " 까지 " + document.getElementById("durEnd").value;
-    document.getElementById("durTotalMinValue").textContent = d.totalMinutes + " 분";
-    document.getElementById("durOvernightValue").textContent = d.overnight ? "응, 밤새" : "아니요, 같은 날";
+    document.getElementById("durValue").textContent = d.hours + "h" + d.minutes + "m";
+    document.getElementById("durSub").textContent = document.getElementById("durStart").value + "to" + document.getElementById("durEnd").value;
+    document.getElementById("durTotalMinValue").textContent = d.totalMinutes + "min";
+    document.getElementById("durOvernightValue").textContent = d.overnight ? "예, 밤을 넘김" : "아니요, 같은 날";
     document.getElementById("durShiftedValue").textContent = shifted;
     var cb = document.getElementById("copyTimeBtn");
-    if (cb) cb.setAttribute("data-summary", "지속: " + d.hours + "시간 " + d.minutes + "중; 이동된 기본 시간: " + shifted + ".");
+    if (cb) cb.setAttribute("data-summary", "기간:" + d.hours + "h" + d.minutes + "분; 이동된 기준 시간:" + shifted + ".");
     if (res) { res.classList.add("active"); res.style.display = "block"; }
   };
   window.resetTime = function() {
