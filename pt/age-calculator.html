@@ -1,11 +1,11 @@
-&lt;!DOCTYPE html&gt;
+<!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Idade - Idade Exata em Anos, Meses, Dias e Marcos</title>
-  <meta name="description" content="Calcule a sua idade cronológica exata em anos, meses, semanas, dias, horas e minutos. Inclui a próxima contagem regressiva de aniversário, o signo do zodíaco e o marco de 10.000 dias.">
-  <meta name="keywords" content="calculadora de idade, calculadora de idade exata, calcular a idade a partir da data de nascimento, contagem regressiva do próximo aniversário, calculadora de idade cronológica, calculadora de dias vividos">
+  <title>Calculadora de idade - Idade exata em anos, meses, dias e marcos</title>
+  <meta name="description" content="Calcule a sua idade cronológica exata em anos, meses, semanas, dias, horas e minutos. Inclui contagem decrescente para o próximo aniversário, signo do zodíaco e o marco dos 10.000 dias.">
+  <meta name="keywords" content="calculadora de idade, calculadora de idade exata, calcular idade a partir da data de nascimento, contagem decrescente para o próximo aniversário, calculadora de idade cronológica, calculadora de dias vividos">
   <meta name="author" content="OmniTools">
   <meta name="robots" content="index, follow">
 
@@ -45,16 +45,15 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_PT">
   <meta property="og:url" content="https://janhazirr7.github.io/allinone/pt/age-calculator.html">
-  <meta property="og:title" content="Calculadora de Idade - Idade Exata em Anos, Meses e Dias">
-  <meta property="og:description" content="Calculadora de idade online gratuita com contagem regressiva de aniversário, total de dias vividos e insights astrológicos. 100% privado.">
+  <meta property="og:title" content="Calculadora de idade - Idade exata em anos, meses e dias">
+  <meta property="og:description" content="Calculadora de idade online gratuita, com contagem decrescente para o aniversário, total de dias vividos e informações astrológicas. 100% privada.">
   <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-age-calculator.png">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Calculadora exata de idade e aniversário | OmniTools">
-  <meta name="twitter:description" content="Descubra a sua idade exata até horas e minutos, contagem regressiva para o próximo aniversário e marcos da vida.">
+  <meta name="twitter:title" content="Exact Age &amp; Birthday Calculator | OmniTools">
+  <meta name="twitter:description" content="Find out your exact age down to hours and minutes, next birthday countdown, and lifetime milestones.">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../style.css">
@@ -62,95 +61,94 @@
   <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "Calculadora de idade OmniTools",
-  "url": "https://janhazirr7.github.io/allinone/pt/age-calculator.html",
-  "applicationCategory": "UtilityApplication",
-  "operatingSystem": "All",
-  "browserRequirements": "Requer JavaScript. Requer HTML5.",
-  "description": "Calcule a idade cronológica exata em anos, meses, dias, horas e minutos com precisão de ano bissexto.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "inLanguage": "pt"
-}
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculadora de idade da OmniTools",
+    "url": "https://janhazirr7.github.io/allinone/age-calculator.html",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "description": "Calcule a idade cronológica exata em anos, meses, dias, horas e minutos, com precisão nos anos bissextos.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
   </script>
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Início",
-      "item": "https://janhazirr7.github.io/allinone/pt/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Data e Hora",
-      "item": "https://janhazirr7.github.io/allinone/pt/#date"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Calculadora de Idade",
-      "item": "https://janhazirr7.github.io/allinone/pt/age-calculator.html"
-    }
-  ]
-}
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://janhazirr7.github.io/allinone/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Data e hora",
+        "item": "https://janhazirr7.github.io/allinone/#date"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Calculadora de idade",
+        "item": "https://janhazirr7.github.io/allinone/age-calculator.html"
+      }
+    ]
+  }
   </script>
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Como a calculadora de idade OmniTools lida com os anos bissextos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nosso algoritmo avalia a duração exata do calendário de cada mês dentro do período de tempo decorrido, incluindo fevereiro com 29 dias em anos bissextos (todos os anos divisíveis por 4, exceto séculos não divisíveis por 400). Quando o empréstimo diário é necessário, o cálculo consulta o número preciso de dias no mês civil anterior."
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como é que a calculadora de idade da OmniTools lida com os anos bissextos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O nosso algoritmo avalia a duração exata de cada mês do calendário no período decorrido, incluindo fevereiro com 29 dias nos anos bissextos (todos os anos divisíveis por 4, exceto os séculos não divisíveis por 400). Quando é necessário pedir dias emprestados, o cálculo consulta o número preciso de dias do mês anterior."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso calcular a minha idade numa data específica do passado ou do futuro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. Basta ajustar o campo de data “Idade em” para qualquer data-alvo. Isto é particularmente útil para verificar a elegibilidade legal em datas passadas, a subscrição de seguros ou para calcular que idade terá num futuro marco de reforma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A minha data de nascimento fica guardada ou é transmitida para um servidor remoto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A OmniTools funciona 100% no seu navegador, usando o motor de JavaScript local. A sua data de nascimento nunca sai do seu dispositivo, nunca fica registada em nenhuma base de dados e não pode ser vista por terceiros."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O que é o marco dos 10.000 dias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Viver 10.000 dias é um marco divertido que ocorre aproximadamente quando uma pessoa tem 27 anos, 4 meses e 16 dias. A nossa calculadora calcula automaticamente a data exata em que atinge este marco."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Porque é que algumas calculadoras online mostram totais de dias diferentes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Algumas calculadoras simplificadas calculam a idade dividindo o total de dias por 365 ou 365,25. Como os meses variam entre 28 e 31 dias e os anos bissextos ocorrem de 4 em 4 anos, dividir por uma média fixa produz erros de arredondamento. A OmniTools aplica a correspondência exata de dias do calendário gregoriano, com 100% de precisão."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Posso calcular a minha idade a partir de uma data específica no passado ou no futuro?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim. Basta ajustar o campo de data \"Idade a partir de\" para qualquer data-alvo. Isso é particularmente útil para verificar a elegibilidade legal em datas anteriores, subscrição de apólices de seguro ou calcular a idade que você terá em um futuro marco de aposentadoria."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "A minha data de nascimento pessoal é guardada ou transmitida para um servidor remoto?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Não. O OmniTools opera 100% no lado do cliente usando o mecanismo JavaScript local do seu navegador. A sua data de nascimento nunca sai do seu dispositivo, nunca é registada em qualquer base de dados e não pode ser visualizada por terceiros."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Qual é o marco de 10.000 dias?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Viver 10.000 dias é um marco divertido que ocorre aproximadamente quando uma pessoa tem 27 anos, 4 meses e 16 dias de idade. A nossa calculadora calcula automaticamente a data exata do calendário quando atingir este marco."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O que é um aniversário de ouro?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Um Aniversário Dourado (também conhecido como Aniversário Grande, Sortudo ou Champanhe) é o ano em que você completa a idade exata do dia em que nasceu. Por exemplo, se nasceu a 14 de julho, o seu Aniversário Dourado ocorreu quando completou 14 anos."
-      }
-    }
-  ]
-}
+    ]
+  }
   </script>
 </head>
 <body>
@@ -158,63 +156,61 @@
   <!-- Site Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand-logo" aria-label="Página inicial do OmniTools">
+      <a href="index.html" class="brand-logo" aria-label="Página inicial da OmniTools">
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z">
           </svg>
         </div>
-        <span class="brand-name">Omni<span>Ferramentas</span></span>
+        <span class="brand-name">Omni<span>Tools</span></span>
       </a>
 
       <!-- Navigation Links -->
-      <nav aria-label="Navegação Principal">
+      <nav aria-label="Navegação principal">
         <ul class="nav-links">
-          <li><a href="index.html">Todas as Ferramentas</a></li>
+          <li><a href="index.html">Todas as ferramentas</a></li>
           <li><a href="age-calculator.html" class="active">Idade</a></li>
-          <li><a href="loan-calculator.html">Prestação de Empréstimo</a></li>
-          <li><a href="word-counter.html">Contador de Palavras</a></li>
+          <li><a href="loan-calculator.html">Parcela do empréstimo</a></li>
+          <li><a href="word-counter.html">Contador de palavras</a></li>
           <li><a href="../about.html">Sobre</a></li>
         </ul>
       </nav>
 
       <!-- Language Switcher & Mobile Nav Toggle -->
       <div class="nav-actions">
-        <div class="lang-switcher" aria-label="Seletor de idioma">
-          <select id="langSelect" onchange="window.location.href=this.value;" aria-label="Seletor de idioma">
-            <option value="../age-calculator.html">English</option>
-            <option value="../es/calculadora-de-edad.html">Español</option>
-            <option value="../de/age-calculator.html">Deutsch</option>
-            <option value="../fr/age-calculator.html">Français</option>
-            <option value="age-calculator.html" selected>Português</option>
-            <option value="../it/age-calculator.html">Italiano</option>
-            <option value="../ru/age-calculator.html">Русский</option>
-            <option value="../nl/age-calculator.html">Nederlands</option>
-            <option value="../pl/age-calculator.html">Polski</option>
-            <option value="../sv/age-calculator.html">Svenska</option>
-            <option value="../no/age-calculator.html">Norsk</option>
-            <option value="../da/age-calculator.html">Dansk</option>
-            <option value="../fi/age-calculator.html">Suomi</option>
-            <option value="../id/age-calculator.html">Bahasa Indonesia</option>
-            <option value="../tr/age-calculator.html">Türkçe</option>
-            <option value="../vi/age-calculator.html">Tiếng Việt</option>
-            <option value="../th/age-calculator.html">ไทย</option>
-            <option value="../ms/age-calculator.html">Bahasa Melayu</option>
-            <option value="../tl/age-calculator.html">Filipino</option>
-            <option value="../hi/age-calculator.html">हिन्दी</option>
-            <option value="../ur/age-calculator.html">اردو</option>
-            <option value="../ar/age-calculator.html">العربية</option>
-            <option value="../fa/age-calculator.html">فارسی</option>
-            <option value="../he/age-calculator.html">עברית</option>
-            <option value="../ja/age-calculator.html">日本語</option>
-            <option value="../ko/age-calculator.html">한국어</option>
-            <option value="../zh/age-calculator.html">简体中文</option>
-            <option value="../zh-TW/age-calculator.html">繁體中文</option>
-            <option value="../el/age-calculator.html">Ελληνικά</option>
-            <option value="../cs/age-calculator.html">Čeština</option>
-          </select>
-        </div>
-        <button class="mobile-nav-toggle" aria-label="Alternar menu de navegação" aria-expanded="false">
+        <select id="langSelect" aria-label="Selecionar idioma" onchange="window.location.href=this.value">
+          <option value="../age-calculator.html">English</option>
+          <option value="../es/calculadora-de-edad.html">Español</option>
+          <option value="../de/age-calculator.html">Deutsch</option>
+          <option value="../fr/age-calculator.html">Français</option>
+          <option value="age-calculator.html" selected>Português</option>
+          <option value="../it/age-calculator.html">Italiano</option>
+          <option value="../ru/age-calculator.html">Русский</option>
+          <option value="../nl/age-calculator.html">Nederlands</option>
+          <option value="../pl/age-calculator.html">Polski</option>
+          <option value="../sv/age-calculator.html">Svenska</option>
+          <option value="../no/age-calculator.html">Norsk</option>
+          <option value="../da/age-calculator.html">Dansk</option>
+          <option value="../fi/age-calculator.html">Suomi</option>
+          <option value="../id/age-calculator.html">Bahasa Indonesia</option>
+          <option value="../tr/age-calculator.html">Türkçe</option>
+          <option value="../vi/age-calculator.html">Tiếng Việt</option>
+          <option value="../th/age-calculator.html">ไทย</option>
+          <option value="../ms/age-calculator.html">Bahasa Melayu</option>
+          <option value="../tl/age-calculator.html">Filipino</option>
+          <option value="../hi/age-calculator.html">हिन्दी</option>
+          <option value="../ur/age-calculator.html">اردو</option>
+          <option value="../ar/age-calculator.html">العربية</option>
+          <option value="../fa/age-calculator.html">فارسی</option>
+          <option value="../he/age-calculator.html">עברית</option>
+          <option value="../ja/age-calculator.html">日本語</option>
+          <option value="../ko/age-calculator.html">한국어</option>
+          <option value="../zh/age-calculator.html">简体中文</option>
+          <option value="../zh-TW/age-calculator.html">繁體中文</option>
+          <option value="../el/age-calculator.html">Ελληνικά</option>
+          <option value="../cs/age-calculator.html">Čeština</option>
+        </select>
+        <button class="mobile-nav-toggle" aria-label="Abrir ou fechar o menu de navegação" aria-expanded="false">
           ☰
         </button>
       </div>
@@ -227,8 +223,8 @@
       <div class="container">
         <ul class="breadcrumbs">
           <li><a href="index.html">Início</a></li>
-          <li><a href="index.html#date">Data e Hora</a></li>
-          <li aria-current="page">Calculadora de Idade</li>
+          <li><a href="index.html#date">Data e hora</a></li>
+          <li aria-current="page">Calculadora de idade</li>
         </ul>
       </div>
     </div>
@@ -236,17 +232,17 @@
     <!-- Tool Title Section -->
     <section class="tool-header-section">
       <div class="container">
-        <h1 class="tool-header-title">Calculadora de idade e marco</h1>
+        <h1 class="tool-header-title">Calculadora de idade e marcos</h1>
         <p class="tool-header-desc">
-          Determine a sua idade cronológica exata em anos, meses e dias. Descubra a sua próxima contagem regressiva de aniversário, o total de dias vividos, o signo do zodíaco e os marcos da vida.
+          Descubra a sua idade cronológica exata em anos, meses e dias. Veja a contagem decrescente para o próximo aniversário, o total de dias vividos, o signo do zodíaco e os marcos da sua vida.
         </p>
       </div>
     </section>
 
     <!-- Top Banner Ad Placeholder -->
     <div class="container">
-      <div class="ad-slot ad-leaderboard" aria-label="Anúncio em Banner">
-        <span class="ad-slot-placeholder-text">Anúncio Responsivo em Banner (728x90)</span>
+      <div class="ad-slot ad-leaderboard" aria-label="Anúncio em banner">
+        <span class="ad-slot-placeholder-text">Anúncio em banner responsivo (728x90)</span>
       </div>
     </div>
 
@@ -265,13 +261,13 @@
                 <span class="label-hint">Obrigatório</span>
               </label>
               <input type="date" id="dobInput" class="form-input" required aria-required="true">
-              <span class="form-help">Selecione ano, mês e dia de nascimento</span>
+              <span class="form-help">Selecione o ano, o mês e o dia de nascimento</span>
             </div>
 
             <div class="form-group">
               <label for="targetDateInput" class="form-label">
                 <span>Idade na data</span>
-                <span class="label-hint">O padrão é hoje</span>
+                <span class="label-hint">Por predefinição, hoje</span>
               </label>
               <input type="date" id="targetDateInput" class="form-input">
               <span class="form-help">Calcule a idade em qualquer data histórica ou futura</span>
@@ -285,16 +281,16 @@
           <!-- Action Buttons -->
           <div class="widget-actions">
             <button type="button" id="calcAgeBtn" class="btn btn-primary" onclick="calculateAge()">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z">
               </svg>
-              Calcular Idade
+              Calcular idade
             </button>
             <button type="button" id="resetAgeBtn" class="btn btn-outline" onclick="resetAge()">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15">
               </svg>
-              Reiniciar
+              Limpar
             </button>
           </div>
 
@@ -302,22 +298,22 @@
           <div id="ageResultsBox" class="results-box">
             <div class="results-header">
               <span class="results-title">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
                 </svg>
-                Resultado do cálculo de idade
+                Resultado do cálculo da idade
               </span>
-              <button type="button" id="copyAgeBtn" class="btn btn-outline btn-sm" title="Copiar resumo do resultado">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              <button type="button" id="copyAgeBtn" class="btn btn-outline btn-sm" title="Copiar o resumo do resultado">
+                <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
                 </svg>
-                Copiar Resumo
+                Copiar resumo
               </button>
             </div>
 
             <!-- Primary Highlight Card -->
             <div class="hero-result-card">
-              <div class="hero-result-label">Sua idade cronológica exata</div>
+              <div class="hero-result-label">A sua idade cronológica exata</div>
               <div class="hero-result-value" id="primaryAgeText">0 anos, 0 meses, 0 dias</div>
               <div class="hero-result-sub" id="primaryAgeSub">Total de 0 dias vividos</div>
             </div>
@@ -325,14 +321,14 @@
             <!-- Next Birthday Countdown Card -->
             <div class="milestones-wrapper" style="background: #eff6ff; border-color: #bfdbfe;">
               <div class="milestones-title" style="color: var(--primary);">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M3 21h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v11a2 2 0 002 2z" />
+                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M3 21h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v11a2 2 0 002 2z">
                 </svg>
-                Contagem regressiva do próximo aniversário
+                Contagem decrescente para o próximo aniversário
               </div>
               <div style="display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
                 <span id="nextBdayDays" style="font-size: 1.25rem; font-weight: 700; color: var(--text-main);">0 dias restantes</span>
-                <span style="font-size: 0.875rem; color: var(--text-muted);">Ocorre em um <strong id="nextBdayDayOfWeek" style="color: var(--primary);">-</strong></span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">Ocorre numa <strong id="nextBdayDayOfWeek" style="color: var(--primary);">-</strong></span>
               </div>
             </div>
 
@@ -363,14 +359,14 @@
             <!-- Astrological & Milestones Card -->
             <div class="milestones-wrapper">
               <div class="milestones-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                <svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
                 </svg>
                 Marcos pessoais e astrologia
               </div>
               <ul class="milestones-list">
                 <li class="milestone-item">
-                  <span class="milestone-item-name">Signo Solar do Zodíaco</span>
+                  <span class="milestone-item-name">Signo solar</span>
                   <span class="milestone-item-val" id="zodiacSign">-</span>
                 </li>
                 <li class="milestone-item">
@@ -378,7 +374,7 @@
                   <span class="milestone-item-val" id="birthStone">-</span>
                 </li>
                 <li class="milestone-item">
-                  <span class="milestone-item-name">Data de 10.000 dias de vida</span>
+                  <span class="milestone-item-name">Data dos 10.000 dias de vida</span>
                   <span class="milestone-item-val" id="milestone10k">-</span>
                 </li>
               </ul>
@@ -391,17 +387,17 @@
       <!-- Sidebar Column: Ad & Quick Links -->
       <aside>
         <!-- Sidebar Ad Placeholder -->
-        <div class="ad-slot ad-rectangle" aria-label="Anúncio na Barra Lateral">
-          <span class="ad-slot-placeholder-text">Retângulo na Barra Lateral (300x250)</span>
+        <div class="ad-slot ad-rectangle" aria-label="Anúncio na barra lateral">
+          <span class="ad-slot-placeholder-text">Retângulo na barra lateral (300x250)</span>
         </div>
 
         <!-- Quick Utilities Widget -->
         <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
-          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Utilitários Relacionados</h3>
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Utilitários relacionados</h3>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
-            <li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de diferença de data <span>→</span></a></li>
-            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Rastreador de Índice de Massa Corporal <span>→</span></a></li>
-            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de pagamento de empréstimo EMI <span>→</span></a></li>
+            <li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de diferença entre datas <span>→</span></a></li>
+            <li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de Índice de Massa Corporal <span>→</span></a></li>
+            <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Calculadora de parcelas de empréstimos <span>→</span></a></li>
             <li><a href="word-counter.html" style="display: flex; align-items: center; justify-content: space-between;">Contador de palavras e caracteres <span>→</span></a></li>
           </ul>
         </div>
@@ -411,8 +407,8 @@
 
     <!-- Mid-Page Ad Placement -->
     <div class="container">
-      <div class="ad-slot ad-in-content" aria-label="Anúncio no Artigo">
-        <span class="ad-slot-placeholder-text">Banner Responsivo no Artigo (728x90 / 300x250)</span>
+      <div class="ad-slot ad-in-content" aria-label="Anúncio no artigo">
+        <span class="ad-slot-placeholder-text">Banner responsivo no artigo (728x90 / 300x250)</span>
       </div>
     </div>
 
@@ -422,37 +418,37 @@
       <!-- Section 1: How to Use -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
           </svg>
-          Como usar a calculadora de idade OmniTools
+          Como usar a calculadora de idade da OmniTools
         </h2>
         <p class="content-paragraph">
-          A Calculadora de Idade OmniTools é um utilitário intuitivo e de alta precisão projetado para determinar a idade cronológica com exatidão matemática. Embora a aritmética mental simples possa estimar sua idade em anos, ela geralmente ignora as durações variáveis dos meses, os anos bissextos e os limites exatos dos dias. Siga estas etapas simples para obter um detalhamento instantâneo e abrangente:
+          A calculadora de idade da OmniTools é um utilitário intuitivo e de alta precisão, criado para determinar a idade cronológica com exatidão matemática. Embora um cálculo mental simples possa estimar a sua idade em anos, muitas vezes ignora a duração variável dos meses, os anos bissextos e os limites exatos dos dias. Siga estes passos simples para obter uma análise instantânea e completa:
         </p>
         <ol class="step-list">
           <li class="step-item">
             <div class="step-item-content">
-              <strong>Selecione sua data de nascimento</strong>
-              Use o seletor de datas na primeira caixa de entrada para escolher seu ano, mês e dia de nascimento exatos. Se digitar manualmente, use o formato ISO padrão (<code>YYYY-MM-DD</code>).
+              <strong>Selecione a sua data de nascimento</strong>
+              Use o seletor de datas na primeira caixa para escolher o ano, o mês e o dia exatos do seu nascimento. Se escrever manualmente, use o formato ISO padrão (<code>YYYY-MM-DD</code>).
             </div>
           </li>
           <li class="step-item">
             <div class="step-item-content">
-              <strong>Escolha a data de comparação prevista (opcional)</strong>
-              Por padrão, a ferramenta define a "Idade a partir da Data" para a data local de hoje. Se desejar calcular a sua idade histórica num evento específico (como um casamento, formatura ou início de trabalho) ou ver quantos anos terá numa data futura de reforma, ajuste este campo em conformidade.
+              <strong>Escolha a data de comparação (opcional)</strong>
+              Por predefinição, a ferramenta define a “Idade na data” como a data local de hoje. Se quiser calcular a sua idade histórica num evento específico (como um casamento, uma formatura ou o início de um emprego) ou saber que idade terá numa futura data de reforma, ajuste este campo em conformidade.
             </div>
           </li>
           <li class="step-item">
             <div class="step-item-content">
-              <strong>Clique em "Calcular Idade"</strong>
-              Revise instantaneamente sua idade primária em anos, meses e dias, juntamente com as contagens regressivas de aniversários em tempo real, o total de dias, horas, minutos e registros de marcos.
+              <strong>Clique em “Calcular idade”</strong>
+              Veja de imediato a sua idade principal em anos, meses e dias, juntamente com contagens decrescentes de aniversário em tempo real, o total de dias, horas e minutos decorridos e os registos de marcos.
             </div>
           </li>
           <li class="step-item">
             <div class="step-item-content">
-              <strong>Copie ou compartilhe seu resumo</strong>
-              Use o botão "Copiar Resumo" para armazenar um trecho de texto limpo e formatado na área de transferência do seu dispositivo para documentos, currículos ou compartilhamento social.
+              <strong>Copie ou partilhe o seu resumo</strong>
+              Use o botão “Copiar resumo” para guardar um texto limpo e formatado na área de transferência do seu dispositivo, para documentos, currículos ou partilha nas redes sociais.
             </div>
           </li>
         </ol>
@@ -461,83 +457,83 @@
       <!-- Section 2: Mathematical Formula & Logic -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z">
           </svg>
-          Metodologia de Fórmula e Cálculo
+          Fórmula e método de cálculo
         </h2>
         <p class="content-paragraph">
-          O cálculo da idade cronológica no calendário gregoriano internacional é mais complexo do que a simples divisão porque os meses do calendário humano não têm um número idêntico de dias (variando de 28 a 31 dias). Nosso algoritmo executa um rigoroso modelo de subtração passo a passo usando a aritmética de empréstimo:
+          O cálculo da idade cronológica no calendário gregoriano internacional é mais complexo do que uma simples divisão, porque os meses do calendário não têm todos o mesmo número de dias (entre 28 e 31 dias). O nosso algoritmo executa um modelo rigoroso de subtração passo a passo, com aritmética de empréstimo:
         </p>
 
         <div class="formula-box">
           <div class="formula-expression">
-            ΔDias = Target.Day - Birth.Day<br>
-            ΔMeses = Target.Month - Nascimento.Mês<br>
-            ΔYears = Target.Year - Nascimento.Year
+            ΔDays = Target.Day - Birth.Day<br>
+            ΔMonths = Target.Month - Birth.Month<br>
+            ΔYears = Target.Year - Birth.Year
           </div>
           <div class="formula-explanation">
-            <strong>Condição 1 (empréstimo diário):</strong> Se ΔDias &lt; 0, diminua ΔMeses em 1 e adicione o número total de dias no mês imediatamente anterior à Data Alvo.<br><br>
-            <strong>Condição 2 (empréstimo mensal):</strong> Se ΔMonths &lt; 0, diminua ΔYears em 1 e adicione 12 a ΔMonths.
+            <strong>Condição 1 (empréstimo de dias):</strong> Se ΔDays < 0, diminua ΔMonths em 1 e some o número total de dias do mês imediatamente anterior à data-alvo.<br><br>
+            <strong>Condição 2 (empréstimo de meses):</strong> Se ΔMonths < 0, diminua ΔYears em 1 e some 12 a ΔMonths.
           </div>
         </div>
 
         <p class="content-paragraph">
-          Para converter a duração em métricas granulares totais (como o total de horas ou minutos decorridos), o mecanismo calcula a diferença de carimbo de data/hora da época do Unix:
+          Para converter a duração em métricas totais detalhadas (como o total de horas ou minutos decorridos), o motor calcula a diferença dos carimbos de tempo Unix:
         </p>
         <div class="formula-box">
           <div class="formula-expression">
-            Total de Milissegundos Decorridos (ms) = TargetTime(ms) - BirthTime(ms)<br>
-            Total de dias = &lt; ms / (1000 × 60 × 60 × 24) &lt;<br>
-            Total de Horas = Total de Dias × 24<br>
-            Total de Minutos = Total de Horas × 60
+            Total Elapsed Milliseconds (ms) = TargetTime(ms) - BirthTime(ms)<br>
+            Total de dias = ⌊ ms / (1000 × 60 × 60 × 24) ⌋<br>
+            Total de horas = Total de dias × 24<br>
+            Total de minutos = Total de horas × 60
           </div>
         </div>
 
-        <h3 class="content-subheading">Regras do ano bissexto no calendário gregoriano</h3>
+        <h3 class="content-subheading">Regras dos anos bissextos no calendário gregoriano</h3>
         <p class="content-paragraph">
-          Um ano é designado como ano bissexto se for igualmente divisível por 4, com exceção dos anos centenários (terminados em 00), que também devem ser divisíveis por 400. Por exemplo, 2000 foi um ano bissexto, enquanto 1900 não foi, e 2024 é um ano bissexto. Nosso cálculo respeita todos os dias bissextos (29 de fevereiro) durante o período decorrido, garantindo fidelidade absoluta no dia-a-dia.
+          Um ano é considerado bissexto se for divisível por 4, com exceção dos anos de século (terminados em 00), que também têm de ser divisíveis por 400. Por exemplo, 2000 foi um ano bissexto, enquanto 1900 não foi, e 2024 é um ano bissexto. O nosso cálculo respeita todos os dias 29 de fevereiro do período decorrido, garantindo fidelidade absoluta dia a dia.
         </p>
       </section>
 
       <!-- Section 3: Practical Real-Life Examples -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
           </svg>
           Aplicações práticas na vida real
         </h2>
         <p class="content-paragraph">
-          Cálculos precisos de idade são essenciais em vários contextos administrativos, legais, médicos e pessoais:
+          O cálculo preciso da idade é essencial em inúmeros contextos administrativos, legais, médicos e pessoais:
         </p>
 
         <div class="example-cards-grid">
           <div class="example-card">
-            <h4 class="example-card-title">1. Datas limite para matrícula escolar</h4>
+            <h4 class="example-card-title">1. Datas-limite de matrícula escolar</h4>
             <p class="example-card-body">
-              A maioria das jurisdições educacionais determina que uma criança deve completar 5 anos de idade em ou antes de uma data limite rígida (por exemplo, 1º de setembro) para entrar no jardim de infância. Definir a data prevista para o prazo do distrito fornece prova instantânea de elegibilidade.
+              A maioria das autoridades educativas exige que uma criança complete 5 anos até uma data-limite rígida (ex.: 1 de setembro) para entrar no jardim de infância. Definir a data-alvo como o prazo do distrito dá uma prova instantânea de elegibilidade.
             </p>
           </div>
 
           <div class="example-card">
-            <h4 class="example-card-title">2. Maioridade Legal e Direitos</h4>
+            <h4 class="example-card-title">2. Maioridade legal e direitos</h4>
             <p class="example-card-body">
-              Confirmar se um indivíduo atingiu a idade de 18 anos (votação, assinatura de contratos) ou 21 (licenciamento, compras) requer precisão cronológica verificada para evitar penalidades de conformidade.
+              Confirmar se uma pessoa já atingiu os 18 anos (votar, assinar contratos) ou os 21 (licenças, compras) exige precisão cronológica verificada, para evitar penalizações por incumprimento.
             </p>
           </div>
 
           <div class="example-card">
-            <h4 class="example-card-title">3. Aposentadoria e aquisição de pensões</h4>
+            <h4 class="example-card-title">3. Reforma e aquisição de direitos de pensão</h4>
             <p class="example-card-body">
-              Os programas de previdência social e de pensão no local de trabalho geralmente têm limites graduados de aposentadoria completa com base nos anos de nascimento (por exemplo, 66 anos e 6 meses). Os utilizadores podem planear com precisão as datas de início do pagamento.
+              Os programas de segurança social e de pensões laborais têm frequentemente limites graduais de reforma completa baseados nos anos de nascimento (ex.: 66 anos e 6 meses). Os utilizadores podem planear com precisão as datas de início dos pagamentos.
             </p>
           </div>
 
           <div class="example-card">
-            <h4 class="example-card-title">4. Janelas de validade de passaporte e visto</h4>
+            <h4 class="example-card-title">4. Prazos de validade de passaportes e vistos</h4>
             <p class="example-card-body">
-              Muitos governos internacionais exigem que os passaportes emitidos para menores de 16 anos sejam renovados a cada 5 anos, enquanto os passaportes de adultos permanecem válidos por 10 anos. Calcular a idade exata após a emissão do passaporte é crucial para os viajantes.
+              Muitos governos internacionais exigem que os passaportes emitidos a menores (com menos de 16 anos) sejam renovados de 5 em 5 anos, enquanto os passaportes de adultos permanecem válidos por 10 anos. Calcular a idade exata na emissão do passaporte é crucial para os viajantes.
             </p>
           </div>
         </div>
@@ -546,63 +542,63 @@
       <!-- Section 4: Lifetime Milestones -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
           </svg>
-          Marcos de vida únicos
+          Marcos únicos da vida
         </h2>
         <p class="content-paragraph">
-          Além dos aniversários anuais tradicionais, a existência humana apresenta marcos matemáticos fascinantes que oferecem oportunidades de celebração:
+          Para além dos aniversários anuais tradicionais, a vida humana tem marcos matemáticos fascinantes que merecem ser celebrados:
         </p>
         <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
-          <li><strong>O marco dos 10.000 dias:</strong> Atingir 10.000 dias de vida ocorre quando você tem aproximadamente 27 anos, 4 meses e 16 dias de idade. É um marco de celebração moderna cada vez mais popular.</li>
-          <li><strong>O aniversário de ouro:</strong> Ocorre quando você atinge a idade que corresponde à data do calendário do dia em que nasceu (por exemplo, completar 25 anos no dia 25 do mês).</li>
-          <li><strong>1 bilhão de segundos vividos:</strong> Você ultrapassa a marca de um bilhão de segundos em aproximadamente 31 anos, 8 meses, 8 dias e 9 horas de vida.</li>
+          <li><strong>O marco dos 10.000 dias:</strong> Atingir os 10.000 dias de vida ocorre quando tem aproximadamente 27 anos, 4 meses e 16 dias. É um marco de celebração moderno cada vez mais popular.</li>
+          <li><strong>O aniversário dourado:</strong> Ocorre quando atinge a idade que corresponde ao dia do mês em que nasceu (por exemplo, fazer 25 anos no dia 25 do mês).</li>
+          <li><strong>1 milhar de milhão de segundos vividos:</strong> Ultrapassa a marca de mil milhões de segundos com aproximadamente 31 anos, 8 meses, 8 dias e 9 horas de vida.</li>
         </ul>
       </section>
 
       <!-- Section 5: Frequently Asked Questions (FAQ) -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
           </svg>
           Perguntas frequentes (FAQ)
         </h2>
 
         <div class="faq-list">
           <details class="faq-item" open>
-            <summary class="faq-question">Como esta calculadora contabiliza os anos bissextos?</summary>
+            <summary class="faq-question">Como é que esta calculadora tem em conta os anos bissextos?</summary>
             <div class="faq-answer">
-              Nosso mecanismo de cálculo avalia o número exato de dias em cada mês dentro de sua vida útil, incluindo fevereiro com 29 dias durante os anos bissextos. Nos cálculos de empréstimos, ele inspeciona especificamente o mês civil anterior daquele ano exato.
+              O nosso motor de cálculo avalia o número exato de dias de cada mês do calendário ao longo da sua vida, incluindo fevereiro com 29 dias nos anos bissextos. Nos cálculos com empréstimo, ele inspeciona especificamente o mês anterior desse mesmo ano.
             </div>
           </details>
 
           <details class="faq-item">
             <summary class="faq-question">Posso calcular a idade de alguém numa data futura ou passada?</summary>
             <div class="faq-answer">
-              Sim. Por padrão, a ferramenta calcula a idade em relação à data local atual. No entanto, você pode selecionar livremente qualquer data passada ou futura no campo "Idade a partir da data" para visualizar a idade histórica ou as projeções de idade futuras.
+              Sim. Por predefinição, a ferramenta calcula a idade em relação à data local atual. No entanto, pode escolher livremente qualquer data passada ou futura no campo “Idade na data” para ver idades históricas ou projeções de idade futura.
             </div>
           </details>
 
           <details class="faq-item">
-            <summary class="faq-question">O que é um aniversário de ouro?</summary>
+            <summary class="faq-question">O que é um aniversário dourado?</summary>
             <div class="faq-answer">
-              Um Aniversário Dourado (também conhecido como Aniversário Grande, Sortudo ou Champanhe) é o ano em que você completa a idade exata do dia em que nasceu. Por exemplo, se nasceu a 14 de julho, o seu Aniversário Dourado ocorreu quando completou 14 anos.
+              Um aniversário dourado (também chamado de aniversário grandioso, da sorte ou de champanhe) é o ano em que faz a idade exata do dia em que nasceu. Por exemplo, se nasceu a 14 de julho, o seu aniversário dourado aconteceu quando fez 14 anos.
             </div>
           </details>
 
           <details class="faq-item">
-            <summary class="faq-question">Minha data de nascimento é armazenada em algum servidor?</summary>
+            <summary class="faq-question">A minha data de nascimento fica guardada em algum servidor?</summary>
             <div class="faq-answer">
-              Nunca. O OmniTools opera com uma rigorosa política de privacidade de servidor zero. Cada operação matemática é executada localmente no ambiente JavaScript do seu navegador. Nenhum cookie, identificador de sessão ou análise rastreia sua data de nascimento.
+              Nunca. A OmniTools funciona com uma política de privacidade rigorosa, sem servidor. Todas as operações matemáticas correm localmente no ambiente JavaScript do seu navegador. Nenhum cookie, identificador de sessão ou análise acompanha a sua data de nascimento.
             </div>
           </details>
 
           <details class="faq-item">
-            <summary class="faq-question">Por que algumas calculadoras online mostram totais de dias diferentes?</summary>
+            <summary class="faq-question">Porque é que algumas calculadoras online mostram totais de dias diferentes?</summary>
             <div class="faq-answer">
-              Certas calculadoras simplificadas calculam a idade dividindo o total de dias por 365 ou 365,25. Como os meses variam entre 28 e 31 dias e os anos bissextos ocorrem a cada 4 anos, dividir por uma média fixa produz erros de arredondamento. O OmniTools aplica a correspondência de dias gregorianos com precisão de calendário para 100% de precisão.
+              Algumas calculadoras simplificadas calculam a idade dividindo o total de dias por 365 ou 365,25. Como os meses variam entre 28 e 31 dias e os anos bissextos ocorrem de 4 em 4 anos, dividir por uma média fixa produz erros de arredondamento. A OmniTools aplica a correspondência exata de dias do calendário gregoriano, com 100% de precisão.
             </div>
           </details>
         </div>
@@ -619,46 +615,46 @@
         <div class="footer-brand-col">
           <a href="index.html" class="brand-logo" style="color: #ffffff;">
             <div class="brand-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z">
               </svg>
             </div>
-            <span class="brand-name">Omni<span style="color: #60a5fa;">Ferramentas</span></span>
+            <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
           </a>
           <p>
-            O OmniTools fornece calculadoras e utilitários online gratuitos, leves e focados na privacidade para produtividade, educação, finanças e bem-estar.
+            A OmniTools oferece calculadoras e utilitários online gratuitos, leves e focados na privacidade, para produtividade, educação, finanças e bem-estar.
           </p>
         </div>
 
         <div>
-          <h4 class="footer-heading">Ferramentas Populares</h4>
+          <h4 class="footer-heading">Ferramentas em destaque</h4>
           <ul class="footer-links">
-            <li><a href="age-calculator.html">Calculadora de Idade</a></li>
-            <li><a href="loan-calculator.html">Calculadora de Prestações de Empréstimo</a></li>
-            <li><a href="bmi-calculator.html">Monitor de IMC</a></li>
-            <li><a href="password-generator.html">Gerador de Senhas</a></li>
-            <li><a href="word-counter.html">Contador de Palavras</a></li>
+            <li><a href="age-calculator.html">Calculadora de idade</a></li>
+            <li><a href="loan-calculator.html">Calculadora de parcelas de empréstimos</a></li>
+            <li><a href="bmi-calculator.html">Calculadora de IMC</a></li>
+            <li><a href="password-generator.html">Gerador de palavras-passe</a></li>
+            <li><a href="word-counter.html">Contador de palavras</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="footer-heading">Utilitários</h4>
           <ul class="footer-links">
-            <li><a href="unit-converter.html">Conversor de Unidades</a></li>
-            <li><a href="percentage-calculator.html">Calculadora de Percentagem</a></li>
-            <li><a href="date-calculator.html">Diferença entre Datas</a></li>
-            <li><a href="case-converter.html">Conversor de Caixa de Texto</a></li>
-            <li><a href="discount-calculator.html">Calculadora de Descontos</a></li>
+            <li><a href="unit-converter.html">Conversor de unidades</a></li>
+            <li><a href="percentage-calculator.html">Calculadora de percentagem</a></li>
+            <li><a href="date-calculator.html">Diferença entre datas</a></li>
+            <li><a href="case-converter.html">Conversor de maiúsculas e minúsculas</a></li>
+            <li><a href="discount-calculator.html">Calculadora de descontos</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-heading">Legal e Informações</h4>
+          <h4 class="footer-heading">Informações legais</h4>
           <ul class="footer-links">
-            <li><a href="../about.html">Sobre Nós</a></li>
-            <li><a href="../contact.html">Fale Conosco</a></li>
-            <li><a href="../privacy-policy.html">Política de Privacidade</a></li>
-            <li><a href="../terms.html">Termos de Uso</a></li>
+            <li><a href="../about.html">Sobre nós</a></li>
+            <li><a href="../contact.html">Contacte-nos</a></li>
+            <li><a href="../privacy-policy.html">Política de privacidade</a></li>
+            <li><a href="../terms.html">Termos de serviço</a></li>
           </ul>
         </div>
       </div>
@@ -667,7 +663,7 @@
         <p>© 2026 OmniTools. Todos os direitos reservados. Utilitários online gratuitos para todos.</p>
         <div class="footer-lang-select">
           <span>Idioma:</span>
-          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="index.html" style="color: #60a5fa;">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
         </div>
       </div>
     </div>
@@ -719,7 +715,7 @@
     // 3. Calculation Function (Globally Accessible)
     window.calculateAge = function() {
       if (!dobInput || !dobInput.value) {
-        showError('Por favor selecione sua data de nascimento.');
+        showError('Selecione a sua data de nascimento.');
         if (dobInput) dobInput.focus();
         return;
       }
@@ -731,7 +727,7 @@
       var targetDate = targetParts ? new Date(targetParts[0], targetParts[1] - 1, targetParts[2]) : new Date();
 
       if (birthDate.getTime() > targetDate.getTime()) {
-        showError('A data de nascimento não pode ser posterior à data de comparação "Idade a partir de".');
+        showError('A data de nascimento não pode ser posterior à data de comparação “Idade em”.');
         return;
       }
 
@@ -769,10 +765,10 @@
         nextBday = new Date(currentYear + 1, birthDate.getMonth(), birthDate.getDate());
       }
       var diffDaysNext = Math.ceil((nextBday.getTime() - targetDate.getTime()) / (1000 * 60 * 60 * 24));
-      var dayNames = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
+      var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
       var dayOfWeek = dayNames[nextBday.getDay()];
 
-      var nextBdayText = (diffDaysNext === 0) ? '🎉 Hoje é aniversário!' : (diffDaysNext === 1 ? '1 dia restante' : diffDaysNext + 'dias restantes');
+      var nextBdayText = (diffDaysNext === 0) ? '🎉 Hoje é o aniversário!' : (diffDaysNext === 1 ? '1 dia restante' : diffDaysNext + ' dias restantes');
 
       // Zodiac & Birthstone
       var zodiac = getZodiac(birthDate.getMonth() + 1, birthDate.getDate());
@@ -783,8 +779,8 @@
       var milestone10kStr = milestone10kDate.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
 
       // Render to DOM
-      document.getElementById('primaryAgeText').textContent = years + ' Years, ' + months + ' Months, ' + days + ' Days';
-      document.getElementById('primaryAgeSub').textContent = 'Total de' + totalDays.toLocaleString() + 'dias vividos';
+      document.getElementById('primaryAgeText').textContent = years + ' anos, ' + months + ' meses, ' + days + ' dias';
+      document.getElementById('primaryAgeSub').textContent = 'Total de ' + totalDays.toLocaleString() + ' dias vividos';
 
       document.getElementById('statTotalMonths').textContent = totalMonths.toLocaleString();
       document.getElementById('statTotalWeeks').textContent = totalWeeks.toLocaleString();
@@ -793,7 +789,7 @@
       document.getElementById('statTotalMinutes').textContent = totalMinutes.toLocaleString();
 
       document.getElementById('nextBdayDays').textContent = nextBdayText;
-      document.getElementById('nextBdayDayOfWeek').textContent = (diffDaysNext === 0) ? 'Hoje' : dayOfWeek;
+      document.getElementById('nextBdayDayOfWeek').textContent = (diffDaysNext === 0) ? 'Today' : dayOfWeek;
 
       document.getElementById('zodiacSign').textContent = zodiac;
       document.getElementById('birthStone').textContent = birthstone;
@@ -806,7 +802,7 @@
       }
 
       if (copyBtn) {
-        copyBtn.setAttribute('data-summary', 'Minha idade:' + years + ' Years, ' + months + ' Months, ' + days + 'Dias (' + totalDays.toLocaleString() + 'dias vividos). Calculado no OmniTools.');
+        copyBtn.setAttribute('data-summary', 'A minha idade: ' + years + ' anos, ' + months + ' meses, ' + days + ' dias (' + totalDays.toLocaleString() + ' dias vividos). Calculado na OmniTools.');
       }
     };
 
@@ -837,10 +833,10 @@
     function getZodiac(m, d) {
       var signs = [
         { n: 'Capricórnio ♑', em: 1, ed: 19 }, { n: 'Aquário ♒', em: 2, ed: 18 },
-        { n: 'Peixes ♓', em: 3, ed: 20 }, { n: 'Áries ♈', em: 4, ed: 19 },
-        { n: 'Touro ♉', em: 5, ed: 20 }, { n: 'Gêmeos ♊', em: 6, ed: 20 },
-        { n: 'Câncer ♋', em: 7, ed: 22 }, { n: 'Leão ♌', em: 8, ed: 22 },
-        { n: 'Virgem ♍', em: 9, ed: 22 }, { n: 'Libra ♎', em: 10, ed: 22 },
+        { n: 'Peixes ♓', em: 3, ed: 20 }, { n: 'Carneiro ♈', em: 4, ed: 19 },
+        { n: 'Touro ♉', em: 5, ed: 20 }, { n: 'Gémeos ♊', em: 6, ed: 20 },
+        { n: 'Caranguejo ♋', em: 7, ed: 22 }, { n: 'Leão ♌', em: 8, ed: 22 },
+        { n: 'Virgem ♍', em: 9, ed: 22 }, { n: 'Balança ♎', em: 10, ed: 22 },
         { n: 'Escorpião ♏', em: 11, ed: 21 }, { n: 'Sagitário ♐', em: 12, ed: 21 },
         { n: 'Capricórnio ♑', em: 12, ed: 31 }
       ];
@@ -851,8 +847,8 @@
     }
 
     function getBirthstone(m) {
-      var stones = ['Granada', 'Ametista', 'Água-marinha', 'Diamante', 'Esmeralda', 'Alexandrita e Pérola', 'Rubi', 'Peridoto', 'Safira', 'Opala e Turmalina', 'Topázio e Citrino', 'Tanzanita e Turquesa'];
-      return stones[m - 1] || 'Granada';
+      var stones = ['Garnet', 'Amethyst', 'Aquamarine', 'Diamond', 'Emerald', 'Alexandrita e pérola', 'Ruby', 'Peridot', 'Sapphire', 'Opala e turmalina', 'Topázio e citrino', 'Tanzanite e turquesa'];
+      return stones[m - 1] || 'Garnet';
     }
 
     // 4. Toast and Copy Handler
@@ -861,7 +857,7 @@
         var txt = copyBtn.getAttribute('data-summary');
         if (txt && navigator.clipboard) {
           navigator.clipboard.writeText(txt).then(function() {
-            alert('Resumo de idade copiado para a área de transferência!');
+            alert('Resumo da idade copiado para a área de transferência!');
           }).catch(function() {
             prompt('Copiar resumo:', txt);
           });
