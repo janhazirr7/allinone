@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>货币转换器 - 40 多种货币的实时汇率 | OmniTools</title>
-  <meta name="description" content="使用实时汇率转换货币。美元、欧元、英镑、巴基斯坦卢比、印度卢比和 40 多种世界货币，提供即时结果、交叉汇率以及汇率上次更新的日期。">
-  <meta name="keywords" content="货币转换器, 实时汇率, 美元到欧元, 美元到pkr, 欧元到英镑, 货币转换器, 外汇计算器, 今日汇率">
+  <title>货币换算器 - 40 多种货币的实时汇率 | OmniTools</title>
+  <meta name="description" content="用实时汇率换算货币。USD、EUR、GBP、PKR、INR 和 40 多种世界货币，即时结果、交叉汇率和汇率最后更新日期。">
+  <meta name="keywords" content="货币换算器，实时汇率，usd 到 eur，usd 到 pkr，eur 到 gbp，货币换算，外汇计算器，今日汇率">
   <meta name="author" content="OmniTools">
   <meta name="robots" content="index, follow">
 
-  
-    <link rel="canonical" href="https://janhazirr7.github.io/allinone/zh/currency-converter.html">
+  <!-- Canonical and Multilingual SEO hreflang -->
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/zh/currency-converter.html">
   <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/currency-converter.html">
   <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-divisas.html">
   <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/currency-converter.html">
@@ -43,43 +43,37 @@
   <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/currency-converter.html">
   <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/currency-converter.html">
 
-  
-  
-  
-
-  
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="zh_CN">
   <meta property="og:url" content="https://janhazirr7.github.io/allinone/zh/currency-converter.html">
-  <meta property="og:title" content="货币转换器 - 实时汇率">
-  <meta property="og:description" content="使用实时汇率、交叉汇率和即时结果转换 40 多种世界货币。 100%免费。">
+  <meta property="og:title" content="货币换算器 - 实时汇率">
+  <meta property="og:description" content="用实时汇率换算 40 多种世界货币，含交叉汇率和即时结果。100% 免费。">
   <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-currency-converter.png">
 
-  
+  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="货币转换器 | OmniTools">
+  <meta name="twitter:title" content="货币换算器 | OmniTools">
   <meta name="twitter:description" content="40 多种世界货币的实时货币换算，即时结果。">
 
-  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="../style.css">
 
-  
+  <!-- Structured Data JSON-LD (WebApplication & FAQPage) -->
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "OmniTools 货币转换器",
+  "name": "OmniTools 货币换算器",
   "url": "https://janhazirr7.github.io/allinone/zh/currency-converter.html",
-  "applicationCategory": "金融应用",
+  "applicationCategory": "FinancialApplication",
   "operatingSystem": "All",
-  "browserRequirements": "需要 JavaScript。需要 HTML5。",
-  "description": "使用 40 多种世界货币的实时汇率、交叉汇率和汇率上次更新日期来转换货币。",
+  "browserRequirements": "需要 JavaScript，需要 HTML5。",
+  "description": "使用实时汇率换算 40 多种世界货币，含交叉汇率和汇率最后更新日期。",
   "offers": {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD"
-  },
-  "inLanguage": "zh"
+  }
 }
   </script>
   <script type="application/ld+json">
@@ -90,7 +84,7 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "家",
+      "name": "首页",
       "item": "https://janhazirr7.github.io/allinone/zh/"
     },
     {
@@ -102,11 +96,10 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "货币换算",
+      "name": "货币换算器",
       "item": "https://janhazirr7.github.io/allinone/zh/currency-converter.html"
     }
-  ],
-  "inLanguage": "zh"
+  ]
 }
   </script>
   <script type="application/ld+json">
@@ -116,75 +109,74 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "汇率从何而来？",
+      "name": "汇率来自哪里？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "每次加载页面时，都会从免费的 ExchangeRate-API 服务 (open.er-api.com) 实时获取汇率，并以 exchangerate-api.com 作为备份源。该页面始终显示其正在使用的费率表的日期，因此您可以准确地看到这些数字的最新程度。"
+        "text": "每次页面加载时，汇率都会从免费的 ExchangeRate-API 服务（open.er-api.com）实时获取，exchangerate-api.com 作为备用来源。页面总会显示所用汇率表的日期，这样你能确切看到数字有多新。"
       }
     },
     {
       "@type": "Question",
-      "name": "汇率是真实存在的还是存储在页面上？",
+      "name": "汇率真的是实时的，还是存储在页面上的？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "他们是活人。页面本身不存储汇率。每次访问都会下载最新发布的费率表，如果两个费率源均无法访问，则转换器会显示错误并且不进行任何转换，而不是显示陈旧或发明的数字。"
+        "text": "是实时的。页面本身不存储任何汇率。每次访问都会下载最新公布的汇率表，如果两个汇率来源都无法访问，换算器会显示错误且不换算任何内容，而不是显示过时或编造的数字。"
       }
     },
     {
       "@type": "Question",
-      "name": "两种非美元货币之间的换算如何计算？",
+      "name": "两种非美元货币之间的换算怎样计算？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "所有汇率均以美元为基础公布。要从一种货币转换为另一种货币，转换器将目标货币的美元汇率除以源货币的美元汇率，然后乘以您的金额。例如，欧元兑换英镑使用英镑兑美元汇率除以欧元兑美元汇率。"
+        "text": "所有汇率都以美元为基准公布。要从一种货币换算成另一种，换算器用目标货币的美元汇率除以源货币的美元汇率，再乘以你的金额。例如，EUR 到 GBP 使用 GBP 每 USD 的汇率除以 EUR 每 USD 的汇率。"
       }
     },
     {
       "@type": "Question",
-      "name": "为什么我的银行或卡显示不同的利率？",
+      "name": "为什么我的银行或卡显示不同的汇率？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "该转换器显示中间市场利率，即银行之间使用的参考利率。银行、卡网络和兑换机构会增加保证金，并且通常还会收取一定的费用，因此您实际收到的汇率通常会比此处显示的中间市场汇率稍差。"
+        "text": "本换算器显示中间价，即银行彼此之间使用的参考汇率。银行、卡组织和兑换处会在此基础上加差价，而且常常还有手续费，所以你实际得到的汇率通常比这里显示的中间价稍差一点。"
       }
     },
     {
       "@type": "Question",
-      "name": "我的金额或个人数据会发送到任何地方吗？",
+      "name": "我的金额或个人数据会被发送到别处吗？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "不会。您的金额是在您的浏览器中本地转换的。唯一下载的是公共汇率表本身；您的金额和您选择的货币永远不会发送到任何服务器。"
+        "text": "不会。你的金额在你的浏览器本地换算。唯一下载的是公开汇率表本身；你的金额和你选择的货币绝不会被发送到任何服务器。"
       }
     }
-  ],
-  "inLanguage": "zh"
+  ]
 }
   </script>
 </head>
 <body>
 
-  
+  <!-- Site Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand-logo" aria-label="OmniTools 主页">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools 首页">
         <div class="brand-icon">
-          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
         </div>
         <span class="brand-name">Omni<span>Tools</span></span>
       </a>
 
-      
+      <!-- Navigation Links -->
       <nav aria-label="主导航">
         <ul class="nav-links">
           <li><a href="index.html">所有工具</a></li>
           <li><a href="age-calculator.html">年龄计算</a></li>
-          <li><a href="bmi-calculator.html">体重指数追踪器</a></li>
-          <li><a href="loan-calculator.html">贷款EMI</a></li>
+          <li><a href="bmi-calculator.html">BMI 计算器</a></li>
+          <li><a href="loan-calculator.html">贷款 EMI</a></li>
           <li><a href="../about.html">关于</a></li>
         </ul>
       </nav>
 
-      
+      <!-- Language Switcher & Mobile Toggle -->
       <div class="nav-actions">
         <select id="langSelect" aria-label="选择语言" onchange="window.location.href=this.value">
           <option value="../currency-converter.html">English</option>
@@ -226,53 +218,53 @@
   </header>
 
   <main>
-    
+    <!-- Breadcrumbs -->
     <div class="page-top-nav">
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a href="index.html">家</a></li>
+          <li><a href="index.html">首页</a></li>
           <li><a href="index.html#finance">金融</a></li>
-          <li aria-current="page">货币换算</li>
+          <li aria-current="page">货币换算器</li>
         </ul>
       </div>
     </div>
 
-    
+    <!-- Tool Title Section -->
     <section class="tool-header-section">
       <div class="container">
-        <h1 class="tool-header-title">实时货币转换器</h1>
+        <h1 class="tool-header-title">实时货币换算器</h1>
         <p class="tool-header-desc">
-          使用实时汇率兑换 40 多种世界货币。每次访问时都会获取最新的价格，因此您始终会看到今天的数据 - 永远不会出现陈旧的表格。
+          用实时汇率换算 40 多种世界货币。每次访问都会重新获取汇率，所以你总能看到今天的数字——绝不是过时的表格。
         </p>
       </div>
     </section>
 
-    
+    <!-- Top Banner Ad Placeholder -->
     <div class="container">
-      <div class="ad-slot ad-leaderboard" aria-label="排行榜广告">
-        <span class="ad-slot-placeholder-text">响应式排行榜广告 (728x90)</span>
+      <div class="ad-slot ad-leaderboard" aria-label="横幅广告">
+        <span class="ad-slot-placeholder-text">自适应横幅广告 (728x90)</span>
       </div>
     </div>
 
-    
+    <!-- Main Widget & Sidebar Layout -->
     <section class="container tool-layout-container">
 
-      
+      <!-- Primary Tool Widget Column -->
       <div>
         <div class="tool-card-widget">
 
           <div class="widget-form-grid">
-            
+            <!-- Amount -->
             <div class="form-group">
               <label for="fxAmount" class="form-label">
-                <span>数量</span>
-                <span class="label-hint">必需的</span>
+                <span>金额</span>
+                <span class="label-hint">必填</span>
               </label>
-              <input type="number" id="fxAmount" class="form-input" placeholder="例如100" min="0" step="any" value="100">
-              <span class="form-help">输入任意正数</span>
+              <input type="number" id="fxAmount" class="form-input" placeholder="例如 100" min="0" step="any" value="100">
+              <span class="form-help">输入任何正数金额</span>
             </div>
 
-            
+            <!-- From / Swap / To -->
             <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: flex-end;">
               <div class="form-group" style="flex: 1;">
                 <label for="fxFrom" class="form-label">
@@ -287,73 +279,73 @@
                   <span>到</span>
                 </label>
                 <select id="fxTo" class="form-select"></select>
-                <span class="form-help">您想要的货币</span>
+                <span class="form-help">你想要的货币</span>
               </div>
             </div>
           </div>
 
-          
+          <!-- Loading State -->
           <div id="fxLoadingBox" style="display: none; background: var(--bg-surface); color: var(--text-main); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent); margin: 1rem 0 0; font-size: 0.875rem; font-weight: 500;">
-            正在加载实时汇率...
+            正在加载实时汇率…
           </div>
 
-          
+          <!-- Error Alert Banner -->
           <div id="fxErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;">
           </div>
 
-          
+          <!-- Action Buttons -->
           <div class="widget-actions">
-            <button type="button" id="fxConvertBtn" class="btn btn-primary" onclick="fxConvert()" disabled="None">
-              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+            <button type="button" id="fxConvertBtn" class="btn btn-primary" onclick="fxConvert()" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
               </svg>
-              转变
+              换算
             </button>
             <button type="button" id="fxResetBtn" class="btn btn-outline" onclick="fxReset()">
-              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
               重置
             </button>
           </div>
 
-          
+          <!-- Calculation Results Box -->
           <div id="fxResultsBox" class="results-box" style="display: none;">
             <div class="results-header">
               <span class="results-title">
-                <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                转换结果
+                换算结果
               </span>
               <button type="button" id="fxCopyBtn" class="btn btn-outline btn-sm" title="复制结果摘要">
-                <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
                 复制摘要
               </button>
             </div>
 
-            
+            <!-- Primary Highlight Card: Converted Amount -->
             <div class="hero-result-card">
-              <div class="hero-result-label">兑换金额</div>
+              <div class="hero-result-label">换算后金额</div>
               <div class="hero-result-value" id="fxResultValue">-</div>
               <div class="hero-result-sub" id="fxRateLine">-</div>
             </div>
 
-            
+            <!-- Secondary Metrics Grid -->
             <div class="metrics-grid">
               <div class="metric-card">
                 <div class="metric-value" id="fxReverseLine">-</div>
-                <div class="metric-label">反向利率</div>
+                <div class="metric-label">反向汇率</div>
               </div>
               <div class="metric-card">
                 <div class="metric-value" id="fxOriginalLine">-</div>
-                <div class="metric-label">原金额</div>
+                <div class="metric-label">原始金额</div>
               </div>
               <div class="metric-card">
                 <div class="metric-value" id="fxUpdatedLine" style="color: var(--accent);">-</div>
-                <div class="metric-label">最新价格更新</div>
+                <div class="metric-label">汇率最后更新</div>
               </div>
             </div>
 
@@ -361,186 +353,186 @@
         </div>
       </div>
 
-      
+      <!-- Sidebar Column: Ad & Quick Links -->
       <aside>
-        
+        <!-- Sidebar Ad Placeholder -->
         <div class="ad-slot ad-rectangle" aria-label="侧边栏广告">
-          <span class="ad-slot-placeholder-text">侧边栏矩形 (300x250)</span>
+          <span class="ad-slot-placeholder-text">侧边栏矩形广告 (300x250)</span>
         </div>
 
-        
+        <!-- Quick Utilities Widget -->
         <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
           <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">相关计算器</h3>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
             <li><a href="compound-interest-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">复利计算器 <span>→</span></a></li>
             <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">百分比计算器 <span>→</span></a></li>
             <li><a href="loan-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">贷款 EMI 计算器 <span>→</span></a></li>
-            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">折扣和销售税计算器 <span>→</span></a></li>
+            <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">折扣与销售税计算器 <span>→</span></a></li>
           </ul>
         </div>
       </aside>
 
     </section>
 
-    
+    <!-- Mid-Page In-Content Ad Placement -->
     <div class="container">
-      <div class="ad-slot ad-in-content" aria-label="文章内广告">
-        <span class="ad-slot-placeholder-text">响应式内容横幅 (728x90 / 300x250)</span>
+      <div class="ad-slot ad-in-content" aria-label="文中广告">
+        <span class="ad-slot-placeholder-text">自适应内容横幅广告 (728x90 / 300x250)</span>
       </div>
     </div>
 
-    
+    <!-- Rich Educational Content Guide (500+ Words for AdSense & SEO) -->
     <article class="container educational-content">
 
-      
+      <!-- Section 1: How to Use -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
-          如何使用 OmniTools 货币转换器
+          怎样使用 OmniTools 货币换算器
         </h2>
         <p class="content-paragraph">
-          无论您是向国外的家人汇款、在国际网站上购物还是计划假期预算，您都需要一个诚实的数字：您的钱现在换成另一种货币值多少钱。 OmniTools 货币转换器可以为您提供准确的信息，使用每次访问时实时获取的汇率：
+          无论你是在给国外的家人汇款、在国际网站上购物，还是在规划度假预算，你都需要一个真实的数字：你的钱现在在另一种货币中值多少。OmniTools 货币换算器提供的正是这个数字，它使用每次访问时实时获取的汇率：
         </p>
         <ol class="step-list">
           <li class="step-item">
             <div class="step-item-content">
-              <strong>等待费率加载</strong>
-              当页面打开时，它会下载最新发布的费率表。汇率一到达，“转换”按钮就会激活，页面会显示正在使用的表格的日期。
+              <strong>等待汇率加载</strong>
+              页面打开时会下载最新公布的汇率表。汇率一到，换算按钮就会激活，页面会显示所用汇率表的日期。
             </div>
           </li>
           <li class="step-item">
             <div class="step-item-content">
               <strong>输入金额</strong>
-              输入您要转换的金额，例如 <code>100</code>。小数就可以了，所以你可以转换 <code>49.99</code> 同样容易。
+              输入你想换算的金额，例如 <code>100</code>。小数也可以，所以你可以同样轻松地换算 <code>49.99</code> 。
             </div>
           </li>
           <li class="step-item">
             <div class="step-item-content">
               <strong>选择货币</strong>
-              在“发件人”框中选择您拥有的货币，并在“收件人”框中选择您想要的货币。它们之间的箭头按钮立即交换两者。
+              在“从”框中选择你拥有的货币，在“到”框中选择你想要的货币。它们之间的箭头按钮可以瞬间交换两者。
             </div>
           </li>
           <li class="step-item">
             <div class="step-item-content">
-              <strong>读取结果</strong>
-              转换后的金额以及双向使用的确切汇率立即显示，例如“1 美元 = 0.92 欧元”和“1 欧元 = 1.09 美元”，因此您可以一目了然地检查数学结果。使用“复制摘要”将结果复制为纯文本。
+              <strong>查看结果</strong>
+              换算后的金额会立即出现，同时显示双向使用的精确汇率，例如“1 USD = 0.92 EUR”和“1 EUR = 1.09 USD”，这样你可以一眼核对数学。用“复制摘要”把结果复制为纯文本。
             </div>
           </li>
         </ol>
       </section>
 
-      
+      <!-- Section 2: How Exchange Rates Work -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
           </svg>
-          汇率如何运作以及该转换器使用的公式
+          汇率是怎样运作的，以及本换算器使用的公式
         </h2>
         <p class="content-paragraph">
-          汇率只是一种货币以另一种货币表示的价格。如果 1 美元购买 0.92 欧元，则美元兑欧元汇率为 0.92。利率不断变化，因为货币在全球外汇市场上全天候交易，受到利率、通货膨胀、贸易流和重大新闻事件的驱动。这就是为什么印在书中或烘焙到网页中的费率在一天内就会过时的原因 - 以及为什么此转换器从不存储费率，而是在每次访问时下载新的表格。
+          汇率简单说就是一种货币用另一种货币表示的价格。如果 1 美元能买 0.92 欧元，那么美元到欧元的汇率就是 0.92。汇率不断变动，因为货币在全球外汇市场上全天候交易，受利率、通胀、贸易流动和重大新闻事件驱动。这就是为什么印在书里或写进网页的汇率一天内就会过时——也是为什么本换算器从不存储汇率，而是在每次访问时下载一张新的汇率表。
         </p>
 
         <div class="formula-box">
           <div class="formula-expression">
-            结果 = 金额 × ( 费率[至] / 费率[自] )
+            Result = Amount × ( Rate[To] / Rate[From] )
           </div>
           <div class="formula-explanation">
-            在哪里：<br>
-            • <strong>评价[至]</strong> = 每 1 美元的目标货币单位<br>
-            • <strong>评分[来自]</strong> = 每 1 美元的源货币单位<br>
-            • 所有公布的汇率均使用美元作为基础货币<br><br>
-            <strong>例子：</strong> 当 1 美元 = 0.92 欧元且 1 美元 = 0.79 英镑时，将 100 欧元兑换为英镑：<br>
-            结果 = 100 × (0.79 / 0.92) = <strong>85.87 英镑</strong>
+            其中：<br>
+            • <strong>Rate[To]</strong> = 每 1 USD 的目标货币单位数<br>
+            • <strong>Rate[From]</strong> = 每 1 USD 的源货币单位数<br>
+            • 所有公布的汇率都以美元为基准货币<br><br>
+            <strong>示例：</strong> 把 100 EUR 换算成 GBP，1 USD = 0.92 EUR 且 1 USD = 0.79 GBP 时：<br>
+            Result = 100 × (0.79 / 0.92) = <strong>85.87 GBP</strong>
           </div>
         </div>
 
         <p class="content-paragraph">
-          这种“交叉汇率”方法是每个专业转换器处理不直接相互报价的货币对的方法。通过美元进行兑换可以使所有 40 多种货币保持一致，因此，除了四舍五入之外，将美元兑换为欧元，然后将欧元兑换回美元，将使您返回（非常接近）起始金额。
+          这种“交叉汇率”方法是每个专业换算器处理彼此不直接报价的货币对的方式。通过美元换算使全部 40 多种货币彼此保持一致，所以把美元换成欧元再换回美元，除了四舍五入，（几乎）回到你的起始金额。
         </p>
       </section>
 
-      
+      <!-- Section 3: Worked Examples -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
           </svg>
-          您现在就可以尝试的工作示例
+          可以马上动手试的例题
         </h2>
         <p class="content-paragraph">
-          在转换器中尝试这些示例，并检查您是否得到相同的答案。随着实时汇率的变化，确切的数字会略有不同，但方法是相同的：
+          在换算器中试试这些例子，检查你是否得到相同的答案。精确数字会随着实时汇率变动而略有不同，但方法完全相同：
         </p>
         <ul style="margin-left: 1.5rem; margin-bottom: 1.25rem; color: #334155; line-height: 1.8;">
-          <li><strong>假期钱：</strong> 500 美元兑换欧元为 0.92 等于 500 × 0.92 = <strong>460 欧元</strong>。这是您在任何兑换费之前的花费。</li>
-          <li><strong>寄钱回家：</strong> 200 美元 兑换 PKR 为 278.50 等于 200 × 278.50 = <strong>55,700 巴基斯坦卢比</strong>.</li>
-          <li><strong>国外购物：</strong> 一件夹克售价 80 英镑，换算成美元，1 美元 = 0.79 英镑，成本 80 / 0.79 = <strong>101.27 美元</strong>.</li>
-          <li><strong>相同货币：</strong> 将美元转换为美元始终会返回未更改的金额，这是转换器正常工作的有用的健全性检查。</li>
+          <li><strong>度假零花钱：</strong> 500 USD 到 EUR，汇率为 0.92，500 × 0.92 = <strong>460 EUR</strong>。这就是你扣除任何兑换手续费之前的零花钱。</li>
+          <li><strong>给家里汇款：</strong> 200 USD 到 PKR，汇率为 278.50，200 × 278.50 = <strong>55,700 PKR</strong>.</li>
+          <li><strong>出国购物：</strong> 一件标价 80 GBP 的夹克，按 1 USD = 0.79 GBP 换算成 USD，需要 80 / 0.79 = <strong>101.27 USD</strong>.</li>
+          <li><strong>同种货币：</strong> USD 换 USD 总是原样返回金额，这是检查换算器是否正常工作的好方法。</li>
         </ul>
         <p class="content-paragraph">
-          仔细注意最后一个例子：除以相同的比率总是得到 1，因此结果恰好等于输入。如果转换器改变了相同货币转换的数字，那么它的数学就会被破坏。
+          仔细注意最后一个例子：除以相同的汇率总是得 1，所以结果与输入完全相等。如果某个换算器在同种货币换算中改变了数字，它的数学就是错的。
         </p>
       </section>
 
-      
+      <!-- Section 4: Tips and Common Mistakes -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
           </svg>
-          要避免的提示和常见错误
+          提示与常见错误
         </h2>
         <p class="content-paragraph">
-          首先，请记住，此处显示的利率是中间市场利率——银行相互使用的参考利率。您实际从银行、卡网络或机场自助服务终端收到的费率几乎总是要差一些，因为提供商会增加保证金，并且通常会收取固定费用。在比较提供商时，请始终比较其他帐户中的最终金额，而不是广告价格。其次，留意“零佣金”的说法：成本通常隐藏在更差的汇率中，而不是作为可见费用收取。第三，如果您要转换的金额非常小，四舍五入很重要——该转换器对于微小的结果最多保留六位小数，这样转换日元或一美分的一小部分就不会默默地变成零。最后，永远不要相信无法告诉您费率日期的转换器。如果页面没有显示更新日期，则其数字可能是几天或几个月前的，对于大金额，即使很小的差异也是真金白银。此页面始终在结果下方显示其费率日期。
+          首先，记住这里显示的汇率是中间价——银行彼此之间使用的参考汇率。你从银行、卡组织或机场兑换点实际得到的汇率几乎总是稍差一点，因为提供方会加一个差价，而且常常还有固定手续费。比较提供方时，一定要比较最终到达对方账户的金额，而不是广告汇率。其次，警惕“零佣金”的说法：成本通常藏在更差的汇率里，而不是作为可见费用收取。第三，如果你在换算很小的金额，四舍五入很重要——本换算器对微小结果保留多达六位小数，这样换算一小部分日元或美分就不会悄悄变成零。最后，绝不要相信无法告诉你汇率日期的换算器。如果一个页面没有显示更新日期，它的数字可能已经几天或几个月没更新，而对于大额金额，即使是很小的差异也是真金白银。本页面总是在结果正下方显示汇率日期。
         </p>
         <p class="content-paragraph">
-          对于相关的货币数学，请尝试使用 OmniTools 复利计算器来了解储蓄如何随着时间的推移而增长，或者尝试使用百分比计算器（当费用以金额的百分比报价时）。所有这些工具都是免费的，完全在您的浏览器中工作，并且从不存储您的号码。
+          想了解相关的金钱计算，可以试试 OmniTools 复利计算器，看看储蓄如何随时间增长；或者当手续费按金额的百分比报价时使用百分比计算器。所有这些工具都免费、完全在你的浏览器中运行，绝不存储你的数字。
         </p>
       </section>
 
-      
+      <!-- Section 5: FAQs -->
       <section class="content-section">
         <h2 class="content-heading">
-          <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
           </svg>
-          常见问题 (FAQ)
+          常见问题
         </h2>
         <div class="faq-list">
           <details class="faq-item">
-            <summary class="faq-question">汇率从何而来？</summary>
+            <summary class="faq-question">汇率来自哪里？</summary>
             <div class="faq-answer">
-              每次加载页面时，都会从免费的 ExchangeRate-API 服务 (open.er-api.com) 实时获取汇率，并以 exchangerate-api.com 作为备份源。该页面始终显示其正在使用的费率表的日期，因此您可以准确地看到这些数字的最新程度。
+              每次页面加载时，汇率都会从免费的 ExchangeRate-API 服务（open.er-api.com）实时获取，exchangerate-api.com 作为备用来源。页面总会显示所用汇率表的日期，这样你能确切看到数字有多新。
             </div>
           </details>
 
           <details class="faq-item">
-            <summary class="faq-question">汇率是真实存在的还是存储在页面上？</summary>
+            <summary class="faq-question">汇率真的是实时的，还是存储在页面上的？</summary>
             <div class="faq-answer">
-              他们是活人。页面本身不存储汇率。每次访问都会下载最新发布的费率表，如果两个费率源均无法访问，则转换器会显示错误并且不进行任何转换，而不是显示陈旧或发明的数字。
+              是实时的。页面本身不存储任何汇率。每次访问都会下载最新公布的汇率表，如果两个汇率来源都无法访问，换算器会显示错误且不换算任何内容，而不是显示过时或编造的数字。
             </div>
           </details>
 
           <details class="faq-item">
-            <summary class="faq-question">两种非美元货币之间的换算如何计算？</summary>
+            <summary class="faq-question">两种非美元货币之间的换算怎样计算？</summary>
             <div class="faq-answer">
-              所有汇率均以美元为基础公布。要从一种货币转换为另一种货币，转换器将目标货币的美元汇率除以源货币的美元汇率，然后乘以您的金额。例如，欧元兑换英镑使用英镑兑美元汇率除以欧元兑美元汇率。
+              所有汇率都以美元为基准公布。要从一种货币换算成另一种，换算器用目标货币的美元汇率除以源货币的美元汇率，再乘以你的金额。例如，EUR 到 GBP 使用 GBP 每 USD 的汇率除以 EUR 每 USD 的汇率。
             </div>
           </details>
 
           <details class="faq-item">
-            <summary class="faq-question">为什么我的银行或卡显示不同的利率？</summary>
+            <summary class="faq-question">为什么我的银行或卡显示不同的汇率？</summary>
             <div class="faq-answer">
-              该转换器显示中间市场利率，即银行之间使用的参考利率。银行、卡网络和兑换机构会增加保证金，并且通常还会收取一定的费用，因此您实际收到的汇率通常会比此处显示的中间市场汇率稍差。
+              本换算器显示中间价，即银行彼此之间使用的参考汇率。银行、卡组织和兑换处会在此基础上加差价，而且常常还有手续费，所以你实际得到的汇率通常比这里显示的中间价稍差一点。
             </div>
           </details>
 
           <details class="faq-item">
-            <summary class="faq-question">我的金额或个人数据会发送到任何地方吗？</summary>
+            <summary class="faq-question">我的金额或个人数据会被发送到别处吗？</summary>
             <div class="faq-answer">
-              不会。您的金额是在您的浏览器中本地转换的。唯一下载的是公共汇率表本身；您的金额和您选择的货币永远不会发送到任何服务器。
+              不会。你的金额在你的浏览器本地换算。唯一下载的是公开汇率表本身；你的金额和你选择的货币绝不会被发送到任何服务器。
             </div>
           </details>
         </div>
@@ -550,21 +542,21 @@
 
   </main>
 
-  
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand-col">
           <a href="index.html" class="brand-logo" style="color: #ffffff;">
             <div class="brand-icon">
-              <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
             <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
           </a>
           <p>
-            OmniTools 提供免费、轻量级、注重隐私的在线计算器和实用程序，用于金融、生产力和教育。
+            OmniTools 提供免费、轻量、注重隐私的在线计算器和实用工具，涵盖金融、生产力和教育。
           </p>
         </div>
 
@@ -572,7 +564,7 @@
           <h4 class="footer-heading">热门工具</h4>
           <ul class="footer-links">
             <li><a href="age-calculator.html">年龄计算器</a></li>
-            <li><a href="bmi-calculator.html">体重指数追踪器</a></li>
+            <li><a href="bmi-calculator.html">BMI 计算器</a></li>
             <li><a href="loan-calculator.html">贷款 EMI 计算器</a></li>
             <li><a href="password-generator.html">密码生成器</a></li>
             <li><a href="word-counter.html">字数统计器</a></li>
@@ -580,12 +572,12 @@
         </div>
 
         <div>
-          <h4 class="footer-heading">公用事业</h4>
+          <h4 class="footer-heading">实用工具</h4>
           <ul class="footer-links">
             <li><a href="percentage-calculator.html">百分比计算器</a></li>
             <li><a href="discount-calculator.html">折扣计算器</a></li>
-            <li><a href="unit-converter.html">单位换算</a></li>
-            <li><a href="date-calculator.html">日期差异</a></li>
+            <li><a href="unit-converter.html">单位换算器</a></li>
+            <li><a href="date-calculator.html">日期差</a></li>
             <li><a href="case-converter.html">文本大小写转换器</a></li>
           </ul>
         </div>
@@ -602,16 +594,15 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 OmniTools。版权所有。适合所有人的免费在线实用程序。</p>
+        <p>© 2026 OmniTools。版权所有。人人可用的免费在线工具。</p>
         <div class="footer-lang-select">
           <span>语言：</span>
-          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
-        </div>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a></div>
       </div>
     </div>
   </footer>
 
-  
+  <!-- Embedded Standalone Engine (live rates via ExchangeRate-API only) -->
   <script>
   (function() {
     var mobileToggle = document.querySelector('.mobile-nav-toggle');
@@ -624,13 +615,13 @@
 
     var CURRENCIES = [
       { code: 'USD', name: '美元' },
-      { code: 'EUR', name: 'Euro' },
+      { code: 'EUR', name: '欧元' },
       { code: 'GBP', name: '英镑' },
       { code: 'CHF', name: '瑞士法郎' },
-      { code: 'CAD', name: '加元' },
-      { code: 'AUD', name: '澳元' },
+      { code: 'CAD', name: '加拿大元' },
+      { code: 'AUD', name: '澳大利亚元' },
       { code: 'NZD', name: '新西兰元' },
-      { code: 'JPY', name: '日圆' },
+      { code: 'JPY', name: '日元' },
       { code: 'CNY', name: '人民币' },
       { code: 'INR', name: '印度卢比' },
       { code: 'PKR', name: '巴基斯坦卢比' },
@@ -646,9 +637,9 @@
       { code: 'MXN', name: '墨西哥比索' },
       { code: 'ZAR', name: '南非兰特' },
       { code: 'RUB', name: '俄罗斯卢布' },
-      { code: 'KRW', name: '韩元' },
+      { code: 'KRW', name: '韩国元' },
       { code: 'SGD', name: '新加坡元' },
-      { code: 'HKD', name: '港元' },
+      { code: 'HKD', name: '港币' },
       { code: 'THB', name: '泰铢' },
       { code: 'MYR', name: '马来西亚林吉特' },
       { code: 'IDR', name: '印尼盾' },
@@ -720,11 +711,11 @@
     function formatNum(v) {
       if (v === 0) return '0';
       var r = Math.abs(v) < 0.01 ? trimNum(v, 6) : trimNum(v, 2);
-      return r.toLocaleString('zh-CN', { maximumFractionDigits: 6 });
+      return r.toLocaleString('en-US', { maximumFractionDigits: 6 });
     }
 
     function formatRate(v) {
-      return trimNum(v, 6).toLocaleString('zh-CN', { maximumFractionDigits: 6 });
+      return trimNum(v, 6).toLocaleString('en-US', { maximumFractionDigits: 6 });
     }
 
     function compute(amount, from, to, r) {
@@ -765,7 +756,7 @@
         }
       }
       if (loadingBox) loadingBox.style.display = 'none';
-      showError('无法加载实时汇率。请检查您的互联网连接，然后重试。');
+      showError('无法加载实时汇率。请检查你的网络连接并重试。');
       return false;
     }
     window.fxLoadRates = loadRates;
@@ -773,7 +764,7 @@
     function fxConvert() {
       hideError();
       if (!rates) {
-        showError('汇率仍在加载中。请稍等片刻，然后重试。');
+        showError('汇率仍在加载中。请稍等片刻再试一次。');
         return;
       }
       var amount = parseFloat(amountInput.value);
@@ -829,7 +820,7 @@
         var txt = copyBtn.getAttribute('data-summary');
         if (txt && navigator.clipboard) {
           navigator.clipboard.writeText(txt).then(function() {
-            alert('转换摘要已复制到剪贴板！');
+            alert('换算摘要已复制到剪贴板！');
           }).catch(function() {
             prompt('复制摘要：', txt);
           });
