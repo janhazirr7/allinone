@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kalkulator PPN - Tambah atau Hapus PPN, Harga Bersih &amp; Kotor | OmniTools</title>
-  <meta name="description" content="Hitung PPN dengan dua cara: tambahkan PPN ke harga bersih untuk mendapatkan harga kotor, atau hapus PPN dari harga kotor untuk menemukan harga bersih dan jumlah pajak. Gratis dan pribadi.">
-  <meta name="keywords" content="kalkulator tong, tambahkan kalkulator tong, hapus kalkulator tong, kalkulator bersih ke kotor, tong kotor ke bersih, kalkulator pajak">
+  <title>Kalkulator PPN - Tambah atau Hapus PPN, Harga Neto &amp; Bruto | OmniTools</title>
+  <meta name="description" content="Hitung PPN dua arah: tambahkan PPN ke harga neto untuk mendapatkan harga bruto, atau hapus PPN dari harga bruto untuk menemukan harga neto dan jumlah pajak. Gratis dan pribadi.">
+  <meta name="keywords" content="kalkulator ppn, kalkulator tambah ppn, kalkulator hapus ppn, kalkulator neto ke bruto, ppn bruto ke neto, kalkulator pajak">
   <meta name="author" content="OmniTools">
   <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://janhazirr7.github.io/allinone/id/vat-calculator.html">
@@ -44,26 +44,54 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <meta property="og:type" content="website">
   <meta property="og:locale" content="id_ID">
   <meta property="og:url" content="https://janhazirr7.github.io/allinone/id/vat-calculator.html">
   <meta property="og:title" content="Kalkulator PPN | OmniTools">
-  <meta property="og:description" content="Hitung PPN dengan dua cara: tambahkan PPN ke harga bersih untuk mendapatkan harga kotor, atau hapus PPN dari harga kotor untuk menemukan harga bersih dan jumlah pajak. Gratis dan pribadi.">
+  <meta property="og:description" content="Hitung PPN dua arah: tambahkan PPN ke harga neto untuk mendapatkan harga bruto, atau hapus PPN dari harga bruto untuk menemukan harga neto dan jumlah pajak. Gratis dan pribadi.">
   <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-vat-calculator.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kalkulator PPN | OmniTools">
-  <meta name="twitter:description" content="Hitung PPN dengan dua cara: tambahkan PPN ke harga bersih untuk mendapatkan harga kotor, atau hapus PPN dari harga kotor untuk menemukan harga bersih dan jumlah pajak. Gratis dan pribadi.">
+  <meta name="twitter:description" content="Hitung PPN dua arah: tambahkan PPN ke harga neto untuk mendapatkan harga bruto, atau hapus PPN dari harga bruto untuk menemukan harga neto dan jumlah pajak. Gratis dan pribadi.">
   <link rel="stylesheet" href="../style.css">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "Kalkulator PPN OmniTools",
+  "name": "OmniTools Kalkulator PPN",
   "url": "https://janhazirr7.github.io/allinone/id/vat-calculator.html",
-  "applicationCategory": "Aplikasi Keuangan",
+  "applicationCategory": "FinancialApplication",
   "operatingSystem": "All",
   "browserRequirements": "Membutuhkan JavaScript. Membutuhkan HTML5.",
-  "description": "Hitung PPN dengan dua cara: tambahkan PPN ke harga bersih untuk mendapatkan harga kotor, atau hapus PPN dari harga kotor untuk menemukan harga bersih dan jumlah pajak. Gratis dan pribadi.",
+  "description": "Hitung PPN dua arah: tambahkan PPN ke harga neto untuk mendapatkan harga bruto, atau hapus PPN dari harga bruto untuk menemukan harga neto dan jumlah pajak. Gratis dan pribadi.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -80,7 +108,7 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Rumah",
+      "name": "Beranda",
       "item": "https://janhazirr7.github.io/allinone/id/"
     },
     {
@@ -106,42 +134,42 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Apa perbedaan antara harga bersih dan harga kotor?",
+      "name": "Apa perbedaan antara harga neto dan harga bruto?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Harga bersih belum termasuk PPN, sedangkan harga kotor sudah termasuk PPN. Harga bersih $100 dengan PPN 20% menjadi harga kotor $120. Penawaran bisnis sering kali bersifat neto, sedangkan harga toko yang ditampilkan kepada konsumen biasanya bersifat bruto."
+        "text": "Harga neto tidak termasuk PPN, sedangkan harga bruto sudah termasuk PPN. Harga neto $100 dengan PPN 20% menjadi harga bruto $120. Penawaran bisnis sering kali neto, sedangkan harga toko yang ditampilkan kepada konsumen biasanya bruto."
       }
     },
     {
       "@type": "Question",
-      "name": "Mengapa saya tidak bisa mengurangi 20% saja dari harga kotor untuk menghapus PPN?",
+      "name": "Mengapa saya tidak bisa sekadar mengurangkan 20% dari harga bruto untuk menghapus PPN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Karena PPN merupakan persentase dari harga bersih, bukan harga kotor. Pada harga kotor $120 dengan PPN 20%, pajaknya adalah $20, bukan $24. Rumus kebalikannya yang benar adalah neto = bruto / 1,20, yang menghasilkan $100, bukan $96."
+        "text": "Karena PPN adalah persentase dari harga neto, bukan harga bruto. Pada harga bruto $120 dengan PPN 20%, pajaknya adalah $20, bukan $24. Rumus balik yang benar adalah neto = bruto / 1.20, yang menghasilkan $100, bukan $96."
       }
     },
     {
       "@type": "Question",
-      "name": "Berapa tarif PPN yang harus saya gunakan?",
+      "name": "Tarif PPN berapa yang harus saya pakai?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gunakan tarif standar negara tempat penjualan terjadi, kecuali produk tersebut memenuhi syarat untuk mendapatkan tarif yang dikurangi atau nol. Tarif standar umum mencakup 20% di Inggris, 21% di Spanyol, dan 19% di Jerman, namun tarif berubah, jadi periksa tarif saat ini untuk produk dan negara Anda."
+        "text": "Gunakan tarif standar negara tempat penjualan terjadi, kecuali produk memenuhi syarat untuk tarif yang dikurangi atau nol. Tarif standar yang umum meliputi 20% di Inggris, 21% di Spanyol, dan 19% di Jerman, tetapi tarif berubah, jadi periksa tarif terkini untuk produk dan negara Anda."
       }
     },
     {
       "@type": "Question",
-      "name": "Apakah kalkulator ini menangani pengurangan tarif PPN?",
+      "name": "Apakah kalkulator ini menangani tarif PPN yang dikurangi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ya. Masukkan tarif apa pun dari 0% hingga 100%, termasuk tarif yang dikurangi seperti 5% atau 10% dan tarif nol 0%. Rumus tambah dan hapus yang sama berlaku di semua tingkat."
+        "text": "Ya. Masukkan tarif apa pun dari 0% sampai 100%, termasuk tarif yang dikurangi seperti 5% atau 10% dan tarif nol 0%. Rumus tambah dan hapus yang sama berlaku pada setiap tarif."
       }
     },
     {
       "@type": "Question",
-      "name": "Apakah data harga saya disimpan atau dikirim ke mana saja?",
+      "name": "Apakah data harga saya disimpan atau dikirim ke mana pun?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tidak. OmniTools berjalan sepenuhnya di browser Anda. Harga dan tarif PPN Anda tidak pernah dikirim ke server, disimpan dalam database, atau dibagikan kepada siapa pun."
+        "text": "Tidak. OmniTools berjalan sepenuhnya di peramban Anda. Harga dan tarif PPN Anda tidak pernah dikirim ke server, disimpan dalam basis data, atau dibagikan kepada siapa pun."
       }
     }
   ],
@@ -156,23 +184,23 @@
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Pilih modenya",
-      "text": "Pilih Tambahkan PPN untuk harga bersih atau Hapus PPN untuk harga kotor."
+      "name": "Pilih mode",
+      "text": "Pilih Tambah PPN untuk harga neto atau Hapus PPN untuk harga bruto."
     },
     {
       "@type": "HowToStep",
-      "name": "Masukkan harganya",
-      "text": "Ketik harga bersih dalam mode Tambah atau harga kotor dalam mode Hapus."
+      "name": "Masukkan harga",
+      "text": "Ketik harga neto dalam mode Tambah atau harga bruto dalam mode Hapus."
     },
     {
       "@type": "HowToStep",
       "name": "Masukkan tarif PPN",
-      "text": "Ketik tarif PPN dalam persentase, misalnya 20."
+      "text": "Ketik tarif PPN sebagai persentase, misalnya 20."
     },
     {
       "@type": "HowToStep",
-      "name": "Menghitung",
-      "text": "Tekan Hitung PPN untuk melihat harga bersih, jumlah PPN, dan harga kotor."
+      "name": "Hitung",
+      "text": "Tekan Hitung PPN untuk melihat harga neto, jumlah PPN, dan harga bruto."
     }
   ],
   "inLanguage": "id"
@@ -182,21 +210,21 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="brand-logo" aria-label="Beranda OmniTools">
+      <a href="index.html" class="brand-logo" aria-label="OmniTools Beranda">
         <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
         <span class="brand-name">Omni<span>Tools</span></span>
       </a>
       <nav aria-label="Navigasi Utama">
         <ul class="nav-links">
           <li><a href="index.html">Semua Alat</a></li>
-          <li><a href="age-calculator.html">Perhitungan Usia</a></li>
+          <li><a href="age-calculator.html">Kalk. Usia</a></li>
           <li><a href="bmi-calculator.html">Pelacak BMI</a></li>
-          <li><a href="loan-calculator.html">Pinjaman EMI</a></li>
+          <li><a href="loan-calculator.html">EMI Pinjaman</a></li>
           <li><a href="../about.html">Tentang</a></li>
         </ul>
       </nav>
       <div class="nav-actions">
-        <select id="langSelect" aria-label="Pilih Bahasa" onchange="window.location.href=this.value">
+        <select id="langSelect" aria-label="Pilih bahasa" onchange="window.location.href=this.value">
           <option value="../vat-calculator.html">English</option>
           <option value="../es/calculadora-de-iva.html">Español</option>
           <option value="../de/vat-calculator.html">Deutsch</option>
@@ -226,8 +254,7 @@
           <option value="../zh/vat-calculator.html">简体中文</option>
           <option value="../zh-TW/vat-calculator.html">繁體中文</option>
           <option value="../el/vat-calculator.html">Ελληνικά</option>
-          <option value="../cs/vat-calculator.html">Čeština</option>
-        </select>
+          <option value="../cs/vat-calculator.html">Čeština</option></select>
         <button class="mobile-nav-toggle" aria-label="Alihkan menu navigasi" aria-expanded="false">☰</button>
       </div>
     </div>
@@ -236,7 +263,7 @@
     <div class="page-top-nav">
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a href="index.html">Rumah</a></li>
+          <li><a href="index.html">Beranda</a></li>
           <li><a href="index.html#finance">Keuangan</a></li>
           <li aria-current="page">Kalkulator PPN</li>
         </ul>
@@ -245,12 +272,12 @@
     <section class="tool-header-section">
       <div class="container">
         <h1 class="tool-header-title">Kalkulator PPN</h1>
-        <p class="tool-header-desc">Tambahkan PPN ke harga bersih atau hapus PPN dari harga kotor. Masukkan harga dan tarif PPN untuk melihat harga bersih, jumlah pajak, dan harga kotor secara instan.</p>
+        <p class="tool-header-desc">Tambahkan PPN ke harga neto atau keluarkan dari harga bruto. Masukkan harga dan tarif PPN untuk langsung melihat harga neto, jumlah pajak, dan harga bruto.</p>
       </div>
     </section>
     <div class="container">
-      <div class="ad-slot ad-leaderboard" aria-label="Iklan Papan Peringkat">
-        <span class="ad-slot-placeholder-text">Iklan Papan Peringkat Responsif (728x90)</span>
+      <div class="ad-slot ad-leaderboard" aria-label="Iklan Leaderboard">
+        <span class="ad-slot-placeholder-text">Iklan Leaderboard Responsif (728x90)</span>
       </div>
     </div>
     <section class="container tool-layout-container">
@@ -258,22 +285,22 @@
         <div class="tool-card-widget">
 <div class="widget-form-grid">
             <div class="form-group">
-              <label for="vatMode" class="form-label"><span>Modus Perhitungan</span><span class="label-hint">Menambah atau menghapus PPN</span></label>
+              <label for="vatMode" class="form-label"><span>Mode Perhitungan</span><span class="label-hint">Tambah atau hapus PPN</span></label>
               <select id="vatMode" class="form-select">
-                <option value="add" selected="None">Tambahkan PPN (bersih → kotor)</option>
-                <option value="remove">Hapus PPN (kotor → bersih)</option>
+                <option value="add" selected="None">Tambah PPN (neto → bruto)</option>
+                <option value="remove">Hapus PPN (bruto → neto)</option>
               </select>
-              <span class="form-help">Pilih harga yang sudah Anda miliki</span>
+              <span class="form-help">Pilih harga mana yang sudah Anda miliki</span>
             </div>
             <div class="widget-form-grid two-col" style="margin-bottom: 0;">
               <div class="form-group">
-                <label for="vatAmount" class="form-label"><span>Harga ($)</span><span class="label-hint">Diperlukan</span></label>
-                <input type="number" id="vatAmount" class="form-input" placeholder="misalnya 100" min="0.01" max="100000000" step="0.01">
-                <span class="form-help">Harga bersih dalam mode Tambah, harga kotor dalam mode Hapus</span>
+                <label for="vatAmount" class="form-label"><span>Harga ($)</span><span class="label-hint">Wajib</span></label>
+                <input type="number" id="vatAmount" class="form-input" placeholder="mis. 100" min="0.01" max="100000000" step="0.01">
+                <span class="form-help">Harga neto dalam mode Tambah, harga bruto dalam mode Hapus</span>
               </div>
               <div class="form-group">
                 <label for="vatRate" class="form-label"><span>Tarif PPN (%)</span><span class="label-hint">%</span></label>
-                <input type="number" id="vatRate" class="form-input" placeholder="misalnya 20" min="0" max="100" step="0.5">
+                <input type="number" id="vatRate" class="form-input" placeholder="mis. 20" min="0" max="100" step="0.5">
                 <span class="form-help">Tarif umum: 20% Inggris, 21% Spanyol, 19% Jerman</span>
               </div>
             </div>
@@ -281,7 +308,7 @@
           <div id="vatErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
           <div class="widget-actions">
             <button type="button" class="btn btn-primary" onclick="calculateVAT()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h.01M15 17h.01M7 17l10-10M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path></svg> Hitung PPN</button>
-            <button type="button" class="btn btn-outline" onclick="resetVAT()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg> Mengatur ulang</button>
+            <button type="button" class="btn btn-outline" onclick="resetVAT()"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg> Atur Ulang</button>
           </div>
           <div id="vatResultsBox" class="results-box">
             <div class="results-header">
@@ -289,20 +316,20 @@
               <button type="button" id="vatCopyBtn" class="btn btn-outline btn-sm" title="Salin ringkasan hasil"><svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg> Salin Ringkasan</button>
             </div>
             <div class="hero-result-card">
-              <div class="hero-result-label">Harga Kotor (termasuk PPN)</div>
+              <div class="hero-result-label">Harga Bruto (dengan PPN)</div>
               <div class="hero-result-value" id="vatGrossValue">$0.00</div>
               <div class="hero-result-sub" id="vatModeLabel">Apa yang dibayar pelanggan</div>
             </div>
             <div class="metrics-grid">
-              <div class="metric-card"><div class="metric-value" id="vatNetValue">$0.00</div><div class="metric-label">Harga Bersih (tanpa PPN)</div></div>
+              <div class="metric-card"><div class="metric-value" id="vatNetValue">$0.00</div><div class="metric-label">Harga Neto (tanpa PPN)</div></div>
               <div class="metric-card"><div class="metric-value" id="vatTaxValue" style="color: #d97706;">$0.00</div><div class="metric-label">Jumlah PPN</div></div>
             </div>
           </div>
         </div>
       </div>
       <aside>
-        <div class="ad-slot ad-rectangle" aria-label="Iklan Bilah Samping">
-          <span class="ad-slot-placeholder-text">Persegi Panjang Bilah Sisi (300x250)</span>
+        <div class="ad-slot ad-rectangle" aria-label="Iklan Sidebar">
+          <span class="ad-slot-placeholder-text">Persegi Panjang Sidebar (300x250)</span>
         </div>
         <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
           <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">Kalkulator Terkait</h3>
@@ -310,7 +337,7 @@
             <li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Diskon <span>→</span></a></li>
             <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Persentase <span>→</span></a></li>
             <li><a href="tip-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Tip <span>→</span></a></li>
-            <li><a href="salary-hourly-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Gaji ke Kalkulator Per Jam <span>→</span></a></li>
+            <li><a href="salary-hourly-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">Kalkulator Gaji ke Per Jam <span>→</span></a></li>
           </ul>
         </div>
       </aside>
@@ -323,33 +350,33 @@
     <article class="container educational-content">
 <section class="content-section">
         <h2 class="content-heading">Cara Menggunakan Kalkulator PPN</h2>
-        <p class="content-paragraph">Pajak Pertambahan Nilai, biasanya disingkat PPN, adalah pajak konsumsi yang ditambahkan ke sebagian besar barang dan jasa di Eropa dan banyak negara lainnya. Harga di toko-toko biasanya sudah termasuk PPN, sedangkan harga antar bisnis sering kali tidak termasuk PPN, dan ketidakcocokan ini menyebabkan kebingungan terus-menerus. Kalkulator ini menangani dua arah: menambahkan PPN ke harga bersih untuk mendapatkan harga kotor yang dibayar pelanggan, atau menghapus PPN dari harga kotor untuk menemukan harga bersih dan pajak yang tersembunyi di dalamnya.</p>
+        <p class="content-paragraph">Pajak Pertambahan Nilai, yang biasanya disingkat PPN, adalah pajak konsumsi yang ditambahkan pada sebagian besar barang dan jasa di Eropa dan banyak negara lain. Harga di rak toko biasanya sudah termasuk PPN, sementara penawaran antar bisnis sering tidak termasuk PPN, dan ketidakcocokan itu menyebabkan kebingungan terus-menerus. Kalkulator ini menangani kedua arah: menambah PPN pada harga neto untuk mendapatkan harga bruto yang dibayar pelanggan, atau mengeluarkan PPN dari harga bruto untuk menemukan harga neto dan pajak yang tersembunyi di dalamnya.</p>
         <ol class="step-list">
-          <li class="step-item"><div class="step-item-content"><strong>Pilih mode perhitungan</strong>Pilih Tambahkan PPN jika Anda memiliki harga bersih dan menginginkan harga kotor, atau Hapus PPN jika Anda memiliki harga kotor dan ingin mengekstrak harga bersih dan pajak.</div></li>
-          <li class="step-item"><div class="step-item-content"><strong>Masukkan harganya</strong>Ketik harga yang sudah Anda miliki: harga bersih dalam mode Tambah, atau harga kotor dalam mode Hapus.</div></li>
-          <li class="step-item"><div class="step-item-content"><strong>Masukkan tarif PPN</strong>Ketik tarif dalam persentase, misalnya 20 untuk tarif standar Inggris, 21 untuk Spanyol, atau 19 untuk Jerman. Potongan harga berlaku untuk beberapa barang, jadi periksalah harga yang benar untuk produk Anda.</div></li>
-          <li class="step-item"><div class="step-item-content"><strong>Menghitung</strong>Tekan Hitung PPN untuk melihat harga bersih, jumlah PPN, dan harga kotor secara berdampingan.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Pilih mode perhitungan</strong>Pilih Tambah PPN jika Anda memiliki harga neto dan menginginkan harga bruto, atau Hapus PPN jika Anda memiliki harga bruto dan ingin mengekstrak harga neto dan pajak.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Masukkan harga</strong>Ketik harga yang sudah Anda miliki: harga neto dalam mode Tambah, atau harga bruto dalam mode Hapus.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Masukkan tarif PPN</strong>Ketik tarif sebagai persentase, misalnya 20 untuk tarif standar Inggris, 21 untuk Spanyol, atau 19 untuk Jerman. Tarif yang dikurangi berlaku untuk beberapa barang, jadi periksa tarif yang benar untuk produk Anda.</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>Hitung</strong>Tekan Hitung PPN untuk melihat harga neto, jumlah PPN, dan harga bruto berdampingan.</div></li>
         </ol>
       </section>
       <section class="content-section">
-        <h2 class="content-heading">Penjelasan Rumus PPN, Dua Arah</h2>
-        <p class="content-paragraph">Menambah PPN adalah perkalian sederhana, namun menghapus PPN membuat banyak orang tersandung, karena pajak merupakan persentase dari harga bersih, bukan dari harga kotor. Menghapus 20% dari harga kotor tidak menghilangkan PPN: hal ini menghilangkan terlalu banyak, karena 20% dari harga kotor lebih besar dari 20% dari harga bersih yang lebih kecil. Perhitungan terbalik yang benar dibagi satu ditambah tarif.</p>
+        <h2 class="content-heading">Rumus PPN Dijelaskan, Kedua Arah</h2>
+        <p class="content-paragraph">Menambahkan PPN hanyalah perkalian sederhana, tetapi menghapus PPN menjebak banyak orang, karena pajak adalah persentase dari harga neto, bukan dari harga bruto. Menghapus 20% dari harga bruto tidak menghapus PPN: itu menghapus terlalu banyak, karena 20% dari harga bruto lebih besar daripada 20% dari harga neto yang lebih kecil. Perhitungan balik yang benar membagi dengan satu ditambah tarif.</p>
         <div class="formula-box">
-          <div class="formula-expression">Ditambah PPN: Kotor = Bersih × (1 + tarif/100)</div>
-          <div class="formula-explanation">Menghapus PPN: Netto = Bruto / (1 + tarif/100)<br>• <strong>jumlah PPN</strong> = Kotor − Bersih (dalam mode Hapus) atau Net × rate/100 (dalam mode Tambah)<br>• Contoh pada 20%: harga bersih $100 menjadi $120 kotor, dan harga kotor $120 dibagi kembali menjadi $100 bersih, dengan PPN $20.</div>
+          <div class="formula-expression">Menambahkan PPN: Bruto = Neto × (1 + tarif/100)</div>
+          <div class="formula-explanation">Menghapus PPN: Neto = Bruto / (1 + tarif/100)<br>• <strong>jumlah PPN</strong> = Bruto − Neto (dalam mode Hapus) atau Neto × tarif/100 (dalam mode Tambah)<br>• Contoh pada 20%: harga neto $100 menjadi bruto $120, dan harga bruto $120 dibagi kembali menjadi tepat $100 neto, dengan PPN $20.</div>
         </div>
-        <p class="content-paragraph">Perbedaan ini penting bagi pekerja lepas dan usaha kecil yang meminta kembali PPN, bagi pembeli yang memeriksa apakah diskon diterapkan sebelum atau sesudah pajak, dan bagi siapa pun yang membandingkan harga antar negara dengan tarif berbeda. Selalu konfirmasikan apakah harga yang dikutip adalah harga bersih atau kotor sebelum menandatangani kontrak atau menerbitkan faktur, karena kesalahpahaman sebesar 20% mengubah total sebesar seperlima penuh dari harga bersih.</p>
+        <p class="content-paragraph">Perbedaan ini penting bagi pekerja lepas dan usaha kecil yang mengklaim kembali PPN, bagi pembeli yang memeriksa apakah diskon diterapkan sebelum atau setelah pajak, dan bagi siapa pun yang membandingkan harga lintas negara dengan tarif berbeda. Selalu konfirmasikan apakah harga yang dikutip itu neto atau bruto sebelum menandatangani kontrak atau menerbitkan faktur, karena kesalahpahaman 20% mengubah total sebesar seperlima penuh dari harga neto.</p>
       </section>
       <section class="content-section">
-        <h2 class="content-heading">Contoh yang Dikerjakan: Menambah dan Menghapus PPN 20%.</h2>
-        <p class="content-paragraph">Menambahkan PPN: produk dengan harga $100 bersih dengan tarif PPN 20% dikenakan pajak $20, karena $100 × 20/100 sama dengan $20, jadi harga kotor yang dibayar pelanggan adalah $120. Menghapus PPN: produk dengan harga kotor $120 dengan tarif 20% yang sama memiliki harga bersih $120 / 1,20, yang sama dengan $100, dan PPN di dalamnya adalah $120 − $100, yaitu $20. Kedua arah sepakat, sebagaimana mestinya, karena mereka menggambarkan transaksi yang sama dari sisi yang berlawanan.</p>
-        <p class="content-paragraph">Kesalahan umum adalah menghitung 20% ​​dari $120, yaitu $24, dan menguranginya untuk mendapatkan $96. Jawaban tersebut salah sebesar $4, karena PPN tidak pernah sebesar 20% dari harga kotor: melainkan 20% dari harga bersih $100. Setiap kali hasil PPN terbalik terlihat sedikit melenceng, periksa apakah persentase tersebut diambil dari angka kotor karena kesalahan, karena kesalahan tersebut hampir selalu terjadi.</p>
+        <h2 class="content-heading">Contoh yang Dikerjakan: Menambah dan Menghapus PPN 20%</h2>
+        <p class="content-paragraph">Menambahkan PPN: produk seharga $100 neto dengan tarif PPN 20% membawa pajak $20, karena $100 × 20 / 100 sama dengan $20, sehingga harga bruto yang dibayar pelanggan adalah $120. Menghapus PPN: produk seharga $120 bruto dengan tarif yang sama memiliki harga neto $120 / 1.20, yaitu $100, dan PPN di dalamnya adalah $120 − $100, yaitu $20. Kedua arah itu sepakat, sebagaimana mestinya, karena keduanya menggambarkan transaksi yang sama dari sisi yang berlawanan.</p>
+        <p class="content-paragraph">Kesalahan umum adalah menghitung 20% dari $120, yaitu $24, lalu mengurangkannya sehingga menjadi $96. Jawaban itu meleset $4, karena PPN tidak pernah 20% dari harga bruto: PPN itu 20% dari harga neto $100. Setiap kali hasil PPN terbalik tampak sedikit meleset, periksa apakah persentasenya keliru diambil dari angka bruto, karena itulah kesalahan yang terjadi hampir setiap kali.</p>
         <div class="example-cards-grid">
-          <div class="example-card"><h4 class="example-card-title">1. Freelancer dan invoice</h4><p class="example-card-body">Jika Anda mengutip $1.000 bersih dan tarif PPN Anda 20%, fakturkan $1.200 kotor. Jika klien memberi Anda anggaran kotor $1.200, pendapatan bersih Anda adalah $1.000, bukan $960, jadi hargai pekerjaan Anda berdasarkan angka bersih.</p></div>
-          <div class="example-card"><h4 class="example-card-title">2. Membandingkan harga antar negara</h4><p class="example-card-body">Produk yang sama mungkin terlihat lebih murah di luar negeri hanya karena tarif PPN yang lebih rendah. Hapus PPN dari kedua harga untuk membandingkan biaya bersih sebenarnya sebelum memutuskan tempat membeli.</p></div>
-          <div class="example-card"><h4 class="example-card-title">3. Tarif diturunkan dan nol</h4><p class="example-card-body">Makanan, buku, obat-obatan, dan barang-barang anak-anak sering kali dikenakan potongan harga atau nol yang berbeda-beda di setiap negara. Gunakan tarif untuk kategori produk spesifik Anda, bukan tarif standar, bila kategori tersebut memenuhi syarat.</p></div>
+          <div class="example-card"><h4 class="example-card-title">1. Pekerja lepas dan faktur</h4><p class="example-card-body">Jika Anda mengutip $1,000 neto dan tarif PPN Anda 20%, tagih $1,200 bruto. Jika klien justru memberi Anda anggaran bruto $1,200, pendapatan neto Anda adalah $1,000, bukan $960, jadi tetapkan harga pekerjaan Anda dari angka neto.</p></div>
+          <div class="example-card"><h4 class="example-card-title">2. Membandingkan harga lintas negara</h4><p class="example-card-body">Produk yang sama bisa tampak lebih murah di luar negeri hanya karena tarif PPN yang lebih rendah. Keluarkan PPN dari kedua harga untuk membandingkan biaya neto yang sebenarnya sebelum memutuskan tempat membeli.</p></div>
+          <div class="example-card"><h4 class="example-card-title">3. Tarif yang dikurangi dan tarif nol</h4><p class="example-card-body">Makanan, buku, obat-obatan, dan barang anak-anak sering memiliki tarif yang dikurangi atau nol yang berbeda menurut negara. Gunakan tarif untuk kategori produk spesifik Anda, bukan tarif standar, bila kategorinya memenuhi syarat.</p></div>
         </div>
-        <p class="content-paragraph">Aturan, tarif, dan pengecualian PPN berubah seiring waktu dan berbeda di setiap negara, jadi kalkulator ini memberi Anda saran aritmatika, bukan pajak. Untuk pengajuan bisnis, konfirmasikan tarif saat ini dan perlakuan yang benar dengan otoritas pajak atau akuntan setempat Anda.</p>
+        <p class="content-paragraph">Aturan, tarif, dan pengecualian PPN berubah dari waktu ke waktu dan berbeda menurut negara, sehingga kalkulator ini memberi Anda hitungannya, bukan saran pajak. Untuk pelaporan bisnis, konfirmasikan tarif terkini dan perlakuan yang benar dengan otoritas pajak setempat atau akuntan Anda.</p>
       </section>
       <section class="content-section">
         <h2 class="content-heading">
@@ -360,24 +387,24 @@
         </h2>
         <div class="faq-list">
 <details class="faq-item" open="None">
-            <summary class="faq-question">Apa perbedaan antara harga bersih dan harga kotor?</summary>
-            <div class="faq-answer">Harga bersih belum termasuk PPN, sedangkan harga kotor sudah termasuk PPN. Harga bersih $100 dengan PPN 20% menjadi harga kotor $120. Penawaran bisnis sering kali bersifat neto, sedangkan harga toko yang ditampilkan kepada konsumen biasanya bersifat bruto.</div>
+            <summary class="faq-question">Apa perbedaan antara harga neto dan harga bruto?</summary>
+            <div class="faq-answer">Harga neto tidak termasuk PPN, sedangkan harga bruto sudah termasuk PPN. Harga neto $100 dengan PPN 20% menjadi harga bruto $120. Penawaran bisnis sering kali neto, sedangkan harga toko yang ditampilkan kepada konsumen biasanya bruto.</div>
           </details>
 <details class="faq-item">
-            <summary class="faq-question">Mengapa saya tidak bisa mengurangi 20% saja dari harga kotor untuk menghapus PPN?</summary>
-            <div class="faq-answer">Karena PPN merupakan persentase dari harga bersih, bukan harga kotor. Pada harga kotor $120 dengan PPN 20%, pajaknya adalah $20, bukan $24. Rumus kebalikannya yang benar adalah neto = bruto / 1,20, yang menghasilkan $100, bukan $96.</div>
+            <summary class="faq-question">Mengapa saya tidak bisa sekadar mengurangkan 20% dari harga bruto untuk menghapus PPN?</summary>
+            <div class="faq-answer">Karena PPN adalah persentase dari harga neto, bukan harga bruto. Pada harga bruto $120 dengan PPN 20%, pajaknya adalah $20, bukan $24. Rumus balik yang benar adalah neto = bruto / 1.20, yang menghasilkan $100, bukan $96.</div>
           </details>
 <details class="faq-item">
-            <summary class="faq-question">Berapa tarif PPN yang harus saya gunakan?</summary>
-            <div class="faq-answer">Gunakan tarif standar negara tempat penjualan terjadi, kecuali produk tersebut memenuhi syarat untuk mendapatkan tarif yang dikurangi atau nol. Tarif standar umum mencakup 20% di Inggris, 21% di Spanyol, dan 19% di Jerman, namun tarif berubah, jadi periksa tarif saat ini untuk produk dan negara Anda.</div>
+            <summary class="faq-question">Tarif PPN berapa yang harus saya pakai?</summary>
+            <div class="faq-answer">Gunakan tarif standar negara tempat penjualan terjadi, kecuali produk memenuhi syarat untuk tarif yang dikurangi atau nol. Tarif standar yang umum meliputi 20% di Inggris, 21% di Spanyol, dan 19% di Jerman, tetapi tarif berubah, jadi periksa tarif terkini untuk produk dan negara Anda.</div>
           </details>
 <details class="faq-item">
-            <summary class="faq-question">Apakah kalkulator ini menangani pengurangan tarif PPN?</summary>
-            <div class="faq-answer">Ya. Masukkan tarif apa pun dari 0% hingga 100%, termasuk tarif yang dikurangi seperti 5% atau 10% dan tarif nol 0%. Rumus tambah dan hapus yang sama berlaku di semua tingkat.</div>
+            <summary class="faq-question">Apakah kalkulator ini menangani tarif PPN yang dikurangi?</summary>
+            <div class="faq-answer">Ya. Masukkan tarif apa pun dari 0% sampai 100%, termasuk tarif yang dikurangi seperti 5% atau 10% dan tarif nol 0%. Rumus tambah dan hapus yang sama berlaku pada setiap tarif.</div>
           </details>
 <details class="faq-item">
-            <summary class="faq-question">Apakah data harga saya disimpan atau dikirim ke mana saja?</summary>
-            <div class="faq-answer">Tidak. OmniTools berjalan sepenuhnya di browser Anda. Harga dan tarif PPN Anda tidak pernah dikirim ke server, disimpan dalam database, atau dibagikan kepada siapa pun.</div>
+            <summary class="faq-question">Apakah data harga saya disimpan atau dikirim ke mana pun?</summary>
+            <div class="faq-answer">Tidak. OmniTools berjalan sepenuhnya di peramban Anda. Harga dan tarif PPN Anda tidak pernah dikirim ke server, disimpan dalam basis data, atau dibagikan kepada siapa pun.</div>
           </details>
         </div>
       </section>
@@ -391,15 +418,15 @@
             <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
             <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
           </a>
-          <p>OmniTools menyediakan kalkulator dan utilitas online gratis, ringan, dan berfokus pada privasi untuk keuangan, produktivitas, dan pendidikan.</p>
+          <p>OmniTools menyediakan kalkulator dan utilitas online yang gratis, ringan, dan berfokus pada privasi untuk keuangan, produktivitas, dan pendidikan.</p>
         </div>
         <div>
-          <h4 class="footer-heading">Alat Tren</h4>
+          <h4 class="footer-heading">Alat Populer</h4>
           <ul class="footer-links">
             <li><a href="age-calculator.html">Kalkulator Usia</a></li>
             <li><a href="bmi-calculator.html">Pelacak BMI</a></li>
             <li><a href="loan-calculator.html">Kalkulator EMI Pinjaman</a></li>
-            <li><a href="password-generator.html">Pembuat Kata Sandi</a></li>
+            <li><a href="password-generator.html">Generator Kata Sandi</a></li>
             <li><a href="word-counter.html">Penghitung Kata</a></li>
           </ul>
         </div>
@@ -408,26 +435,26 @@
           <ul class="footer-links">
             <li><a href="percentage-calculator.html">Kalkulator Persentase</a></li>
             <li><a href="discount-calculator.html">Kalkulator Diskon</a></li>
-            <li><a href="unit-converter.html">Pengonversi Satuan</a></li>
-            <li><a href="date-calculator.html">Perbedaan Tanggal</a></li>
-            <li><a href="case-converter.html">Konverter Kasus Teks</a></li>
+            <li><a href="unit-converter.html">Konverter Satuan</a></li>
+            <li><a href="date-calculator.html">Selisih Tanggal</a></li>
+            <li><a href="case-converter.html">Konverter Huruf Teks</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-heading">Hukum &amp; Info</h4>
           <ul class="footer-links">
             <li><a href="../about.html">Tentang Kami</a></li>
-            <li><a href="../contact.html">Hubungi kami</a></li>
+            <li><a href="../contact.html">Hubungi Kami</a></li>
             <li><a href="../privacy-policy.html">Kebijakan Privasi</a></li>
             <li><a href="../terms.html">Ketentuan Layanan</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 OmniTools. Semua hak dilindungi undang-undang. Utilitas online gratis untuk semua orang.</p>
+        <p>© 2026 OmniTools. Seluruh hak cipta dilindungi. Utilitas daring gratis untuk semua orang.</p>
         <div class="footer-lang-select">
           <span>Bahasa:</span>
-          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="index.html" style="color: #60a5fa;">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
         </div>
       </div>
     </div>
@@ -444,7 +471,7 @@
   var errorBox = document.getElementById('vatErrorBox');
   var copyBtn = document.getElementById('vatCopyBtn');
   [amtInput, rateInput].forEach(function(inp) { if (inp) { inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') calculateVAT(); }); } });
-  function fmt(v) { return '$' + v.toLocaleString('id-ID', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function fmt(v) { return '$' + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
   window.computeVAT = function(amount, rate, mode) {
     if (mode === 'remove') {
       var net = amount / (1 + rate / 100);
@@ -458,20 +485,20 @@
     var rate = parseFloat(rateInput.value);
     var mode = modeSelect.value;
     if (isNaN(amount) || isNaN(rate) || amount <= 0 || rate < 0) {
-      showError('Silakan masukkan harga positif dan tarif PPN yang valid. Nilainya mungkin 0%.');
+      showError('Silakan masukkan harga positif dan tarif PPN yang valid. Tarif boleh 0%.');
       return;
     }
-    if (amount > 100000000) { showError('Harga tidak boleh melebihi 100.000.000.'); return; }
+    if (amount > 100000000) { showError('Harga tidak boleh melebihi 100,000,000.'); return; }
     if (rate > 100) { showError('Tarif PPN tidak boleh melebihi 100%.'); return; }
     hideError();
     var res = computeVAT(amount, rate, mode);
     document.getElementById('vatNetValue').textContent = fmt(res.net);
     document.getElementById('vatTaxValue').textContent = fmt(res.tax);
     document.getElementById('vatGrossValue').textContent = fmt(res.gross);
-    var modeLabel = (mode === 'remove') ? 'Harga kotor dimasukkan' : 'Harga bersih dimasukkan';
+    var modeLabel = (mode === 'remove') ? 'Harga bruto dimasukkan' : 'Harga neto dimasukkan';
     document.getElementById('vatModeLabel').textContent = modeLabel;
     if (resultsBox) { resultsBox.classList.add('active'); resultsBox.style.display = 'block'; resultsBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
-    if (copyBtn) { copyBtn.setAttribute('data-summary', 'PPN di ' + rate + '% (' + modeLabel + '): Bersih ' + fmt(res.net) + ', PPN ' + fmt(res.tax) + ', Bruto ' + fmt(res.gross) + '. Dihitung dengan OmniTools.'); }
+    if (copyBtn) { copyBtn.setAttribute('data-summary', 'PPN sebesar ' + rate + '% (' + modeLabel + '): Bersih ' + fmt(res.net) + ', PPN ' + fmt(res.tax) + ', Bruto ' + fmt(res.gross) + '. Dihitung dengan OmniTools.'); }
   };
   window.resetVAT = function() {
     amtInput.value = ''; rateInput.value = '';
