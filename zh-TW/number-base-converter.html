@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>數基轉換器 - 二進位制、八進位制、十進位制和十六進位制 | OmniTools</title>
-  <meta name="description" content="立即在二進位制、八進位制、十進位制和十六進位制之間轉換數字。輸入任意基數的值，然後立即檢視所有四種形式，並進行數字驗證。">
-  <meta name="keywords" content="數基轉換器、二進位到十進位制、十進位到十六進位、二進位到十六進位、八進位轉換器">
+  <title>進位換算器 - 二進位、八進位、十進位與十六進位 | OmniTools</title>
+  <meta name="description" content="即時在二進位、八進位、十進位與十六進位之間換算數字。在任一進位輸入數值，一次查看全部四種形式，並附數字驗證。">
+  <meta name="keywords" content="進位換算器，二進位轉十進位，十進位轉十六進位，二進位轉十六進位，八進位換算器">
   <meta name="author" content="OmniTools">
   <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html">
+  <link rel="canonical" href="https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html">
   <link rel="alternate" hreflang="en" href="https://janhazirr7.github.io/allinone/number-base-converter.html">
   <link rel="alternate" hreflang="es" href="https://janhazirr7.github.io/allinone/es/conversor-de-bases-numericas.html">
   <link rel="alternate" hreflang="de" href="https://janhazirr7.github.io/allinone/de/number-base-converter.html">
@@ -40,154 +40,79 @@
   <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/number-base-converter.html">
   <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/number-base-converter.html">
   <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/number-base-converter.html">
-
-  
-  
-  
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="zh_TW">
   <meta property="og:url" content="https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html">
-  <meta property="og:title" content="數基轉換器 - 二進位制、八進位制、十進位制和十六進位制 | OmniTools">
-  <meta property="og:description" content="立即在二進位制、八進位制、十進位制和十六進位制之間轉換數字。輸入任意基數的值，然後立即檢視所有四種形式，並進行數字驗證。">
+  <meta property="og:title" content="進位換算器 - 二進位、八進位、十進位與十六進位 | OmniTools">
+  <meta property="og:description" content="即時在二進位、八進位、十進位與十六進位之間換算數字。在任一進位輸入數值，一次查看全部四種形式，並附數字驗證。">
   <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-number-base-converter.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="數基轉換器 - 二進位制、八進位制、十進位制和十六進位制 | OmniTools">
-  <meta name="twitter:description" content="立即在二進位制、八進位制、十進位制和十六進位制之間轉換數字。輸入任意基數的值，然後立即檢視所有四種形式，並進行數字驗證。">
+  <meta name="twitter:title" content="進位換算器 - 二進位、八進位、十進位與十六進位 | OmniTools">
+  <meta name="twitter:description" content="即時在二進位、八進位、十進位與十六進位之間換算數字。在任一進位輸入數值，一次查看全部四種形式，並附數字驗證。">
   <link rel="stylesheet" href="../style.css">
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "OmniTools 數基轉換器",
-  "url": "https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html",
-  "applicationCategory": "公用事業應用",
-  "operatingSystem": "All",
-  "browserRequirements": "需要 JavaScript。需要 HTML5。",
-  "description": "立即在二進位制、八進位制、十進位制和十六進位制之間轉換數字。輸入任意基數的值，然後立即檢視所有四種形式，並進行數字驗證。",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "inLanguage": "zh-TW"
-}
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "OmniTools 進位換算器",
+    "url": "https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "需要 JavaScript。需要 HTML5。",
+    "description": "即時在二進位、八進位、十進位與十六進位之間換算數字。在任一進位輸入數值，一次查看全部四種形式，並附數字驗證。",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
   </script>
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "家",
-      "item": "https://janhazirr7.github.io/allinone/zh-TW/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "數學工具",
-      "item": "https://janhazirr7.github.io/allinone/zh-TW/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "數基轉換器",
-      "item": "https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html"
-    }
-  ],
-  "inLanguage": "zh-TW"
-}
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://janhazirr7.github.io/allinone/zh-TW/" },
+      { "@type": "ListItem", "position": 2, "name": "數學工具", "item": "https://janhazirr7.github.io/allinone/zh-TW/" },
+      { "@type": "ListItem", "position": 3, "name": "進位換算器", "item": "https://janhazirr7.github.io/allinone/zh-TW/number-base-converter.html" }
+    ]
+  }
   </script>
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "255的二進位制、八進位制和十六進位制分別是多少？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "255 的二進位制為 11111111，八進位制為 377，十六進位制為 FF。所有四種形式代表相同的值；只是計數系統發生了變化。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "為什麼二進位制102會出錯？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "二進位僅使用數字 0 和 1，因此數字 2 在基數 2 中是非法的。如果您的意思是十進位數 1002，請先選擇十進製作為輸入基數。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "十六進位字母 A 到 F 是什麼？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "十六進位需要十六位數字，但我們只有十個數字，因此字母 A 到 F 代表值 10、11、12、13、14 和 15。這就是為什麼 FF 表示 15 乘以 16 加 15，即 255。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "如何快速將二進位制轉換為十六進位制？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "將二進位數字從右側分成四組，用零填滿最左邊的群組，然後將每四組轉換為一個十六進位數字。例如，11111111 分組為 1111 1111，即 F F。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "該轉換器可以處理負數或分數嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "不會。它將整個非負整數轉換為最多 64 位數。其他基數中的負數和分數需要不同的表示形式，例如二進位補碼或小數點，此工具不涵蓋這些。"
-      }
-    }
-  ],
-  "inLanguage": "zh-TW"
-}
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "255 在二進位、八進位與十六進位中是多少？", "acceptedAnswer": {"@type": "Answer", "text": "255 在二進位中是 11111111，在八進位中是 377，在十六進位中是 FF。四種形式代表相同的數值，只是計數系統不同。"}},
+      {"@type": "Question", "name": "為什麼二進位的 102 會出現錯誤？", "acceptedAnswer": {"@type": "Answer", "text": "二進位只使用數字 0 與 1，因此數字 2 在 2 進位中不合法。若你指的是十進位數字一百零二，請先選擇十進位作為輸入進位。"}},
+      {"@type": "Question", "name": "十六進位字母 A 到 F 是什麼？", "acceptedAnswer": {"@type": "Answer", "text": "十六進位需要十六個數字，但我們只有十個數字符號，因此字母 A 到 F 代表數值 10、11、12、13、14 與 15。這就是 FF 表示 15 乘以 16 再加上 15（即 255）的原因。"}},
+      {"@type": "Question", "name": "如何快速將二進位換算為十六進位？", "acceptedAnswer": {"@type": "Answer", "text": "從右邊起將二進位數字四個一組分組，並在最左邊的組前方補零，再將每組四個數字換算為一個十六進位數字。例如，11111111 分組為 1111 1111，即 F F。"}},
+      {"@type": "Question", "name": "這個換算器可以處理負數或分數嗎？", "acceptedAnswer": {"@type": "Answer", "text": "不可以。它換算最多 64 位數的非負整數。其他進位中的負數與分數需要不同的表示方式，例如二補數或小數點，而這個工具並不涵蓋。"}}
+    ]
+  }
   </script>
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "數基轉換器 - 二進位制、八進位制、十進位制和十六進位制 | OmniTools",
-  "description": "立即在二進位制、八進位制、十進位制和十六進位制之間轉換數字。輸入任意基數的值，然後立即檢視所有四種形式，並進行數字驗證。",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "輸入您的號碼",
-      "text": "鍵入非負整數，例如 255 或 FF。"
-    },
-    {
-      "@type": "HowToStep",
-      "name": "選擇它的基地",
-      "text": "選擇二進位、八進位、十進位或十六進製作為輸入基數。"
-    },
-    {
-      "@type": "HowToStep",
-      "name": "轉換和比較",
-      "text": "按下“轉換”即可立即檢視所有四個基數的值。"
-    }
-  ],
-  "inLanguage": "zh-TW"
-}
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "進位換算器 - 二進位、八進位、十進位與十六進位 | OmniTools",
+    "description": "即時在二進位、八進位、十進位與十六進位之間換算數字。在任一進位輸入數值，一次查看全部四種形式，並附數字驗證。",
+    "step": [
+        {"@type": "HowToStep", "name": "輸入你的數字", "text": "輸入非負整數，例如 255 或 FF。"},
+        {"@type": "HowToStep", "name": "選擇其進位", "text": "選擇二進位、八進位、十進位或十六進位作為輸入進位。"},
+        {"@type": "HowToStep", "name": "換算 and compare", "text": "Press 換算 to see the value in all four bases at once."}
+    ]
+  }
   </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand-logo" aria-label="OmniTools 首頁">
-        <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+        <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
         <span class="brand-name">Omni<span>Tools</span></span>
       </a>
-      <nav aria-label="主導航">
+      <nav aria-label="主導覽">
         <ul class="nav-links">
           <li><a href="index.html">所有工具</a></li>
           <li><a href="age-calculator.html">年齡計算</a></li>
-          <li><a href="bmi-calculator.html">體重指數追蹤器</a></li>
-          <li><a href="loan-calculator.html">貸款EMI</a></li>
+          <li><a href="bmi-calculator.html">BMI 追蹤</a></li>
+          <li><a href="loan-calculator.html">貸款 EMI</a></li>
           <li><a href="../about.html">關於</a></li>
         </ul>
       </nav>
@@ -202,29 +127,29 @@
           <option value="../ru/number-base-converter.html">Русский</option>
           <option value="../nl/number-base-converter.html">Nederlands</option>
           <option value="../pl/number-base-converter.html">Polski</option>
-          <option value="../sv/number-base-converter.html">Svenska</option>
-          <option value="../no/number-base-converter.html">Norsk</option>
-          <option value="../da/number-base-converter.html">Dansk</option>
-          <option value="../fi/number-base-converter.html">Suomi</option>
-          <option value="../id/number-base-converter.html">Bahasa Indonesia</option>
           <option value="../tr/number-base-converter.html">Türkçe</option>
-          <option value="../vi/number-base-converter.html">Tiếng Việt</option>
-          <option value="../th/number-base-converter.html">ไทย</option>
-          <option value="../ms/number-base-converter.html">Bahasa Melayu</option>
-          <option value="../tl/number-base-converter.html">Filipino</option>
           <option value="../hi/number-base-converter.html">हिन्दी</option>
           <option value="../ur/number-base-converter.html">اردو</option>
           <option value="../ar/number-base-converter.html">العربية</option>
           <option value="../fa/number-base-converter.html">فارسی</option>
-          <option value="../he/number-base-converter.html">עברית</option>
+          <option value="../id/number-base-converter.html">Bahasa Indonesia</option>
+          <option value="../vi/number-base-converter.html">Tiếng Việt</option>
+          <option value="../th/number-base-converter.html">ไทย</option>
+          <option value="../ms/number-base-converter.html">Bahasa Melayu</option>
+          <option value="../tl/number-base-converter.html">Filipino</option>
           <option value="../ja/number-base-converter.html">日本語</option>
           <option value="../ko/number-base-converter.html">한국어</option>
           <option value="../zh/number-base-converter.html">简体中文</option>
           <option value="number-base-converter.html" selected>繁體中文</option>
           <option value="../el/number-base-converter.html">Ελληνικά</option>
           <option value="../cs/number-base-converter.html">Čeština</option>
+          <option value="../sv/number-base-converter.html">Svenska</option>
+          <option value="../no/number-base-converter.html">Norsk</option>
+          <option value="../da/number-base-converter.html">Dansk</option>
+          <option value="../fi/number-base-converter.html">Suomi</option>
+          <option value="../he/number-base-converter.html">עברית</option>
         </select>
-        <button class="mobile-nav-toggle" aria-label="切換導航選單" aria-expanded="false">☰</button>
+        <button class="mobile-nav-toggle" aria-label="切換導覽選單" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
@@ -232,21 +157,21 @@
     <div class="page-top-nav">
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a href="https://janhazirr7.github.io/allinone/">家</a></li>
+          <li><a href="https://janhazirr7.github.io/allinone/">首頁</a></li>
           <li><a href="index.html">所有工具</a></li>
-          <li aria-current="page">數基轉換器</li>
+          <li aria-current="page">進位換算器</li>
         </ul>
       </div>
     </div>
     <section class="tool-header-section">
       <div class="container">
-        <h1 class="tool-header-title">數基轉換器</h1>
-        <p class="tool-header-desc">立即在二進位制、八進位制、十進位制和十六進位制之間轉換數字。輸入任意基數的值，然後立即檢視所有四種形式，並進行數字驗證。</p>
+        <h1 class="tool-header-title">進位換算器</h1>
+        <p class="tool-header-desc">即時在二進位、八進位、十進位與十六進位之間換算數字。在任一進位輸入數值，一次查看全部四種形式，並附數字驗證。</p>
       </div>
     </section>
     <div class="container">
-      <div class="ad-slot ad-leaderboard" aria-label="排行榜廣告">
-        <span class="ad-slot-placeholder-text">響應式排行榜廣告 (728x90)</span>
+      <div class="ad-slot ad-leaderboard" aria-label="橫幅廣告">
+        <span class="ad-slot-placeholder-text">回應式橫幅廣告（728x90）</span>
       </div>
     </div>
     <section class="container tool-layout-container">
@@ -255,17 +180,17 @@
           <div class="widget-form-grid">
             <div class="widget-form-grid two-col" style="margin-bottom: 0;">
               <div class="form-group">
-                <label for="baseValue" class="form-label"><span>要轉換的值</span><span class="label-hint">必需的</span></label>
-                <input type="text" id="baseValue" class="form-input" placeholder="例如255" maxlength="64">
-                <span class="form-help">僅對所選鹼基有效的數字</span>
+                <label for="baseValue" class="form-label"><span>要換算的數值</span><span class="label-hint">必填</span></label>
+                <input type="text" id="baseValue" class="form-input" placeholder="例如 255" maxlength="64">
+                <span class="form-help">僅限所選進位的有效數字</span>
               </div>
               <div class="form-group">
-                <label for="baseFrom" class="form-label"><span>輸入底座</span></label>
+                <label for="baseFrom" class="form-label"><span>輸入進位</span></label>
                 <select id="baseFrom" class="form-select">
-                  <option value="2">二進位（基數 2）</option>
-                  <option value="8">八進位（基數為 8）</option>
-                  <option value="10" selected="None">十進位制（以 10 為底）</option>
-                  <option value="16">十六進位（以 16 為底）</option>
+                  <option value="2">二進位（2 進位）</option>
+                  <option value="8">八進位（8 進位）</option>
+                  <option value="10" selected>十進位（10 進位）</option>
+                  <option value="16">十六進位（16 進位）</option>
                 </select>
                 <span class="form-help">&nbsp;</span>
               </div>
@@ -273,13 +198,13 @@
           </div>
           <div id="baseErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
           <div class="widget-actions">
-            <button type="button" class="btn btn-primary" onclick="convertBases()">轉變</button>
-            <button type="button" class="btn btn-outline" onclick="resetBases()">重置</button>
+            <button type="button" class="btn btn-primary" onclick="convertBases()">換算</button>
+            <button type="button" class="btn btn-outline" onclick="resetBases()">重設</button>
           </div>
           <div id="baseResultsBox" class="results-box">
-            <div class="results-header"><span class="results-title">同時擁有所有四個基地</span></div>
+            <div class="results-header"><span class="results-title">一次顯示全部四種進位</span></div>
             <div class="hero-result-card">
-              <div class="hero-result-label">十進位制值</div>
+              <div class="hero-result-label">十進位數值</div>
               <div class="hero-result-value" id="baseHeroValue">-</div>
             </div>
             <div class="metrics-grid" style="margin-bottom: 0;">
@@ -293,12 +218,12 @@
       </div>
       <aside>
         <div class="ad-slot ad-rectangle" aria-label="側邊欄廣告">
-          <span class="ad-slot-placeholder-text">側邊欄矩形 (300x250)</span>
+          <span class="ad-slot-placeholder-text">側邊欄矩形廣告（300x250）</span>
         </div>
         <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;">
-          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">相關計算器</h3>
+          <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">相關計算機</h3>
           <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
-            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">百分比計算器 <span>→</span></a></li><li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">折扣和銷售稅計算器 <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">年齡和里程碑計算器 <span>→</span></a></li><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">體重指數追蹤器 <span>→</span></a></li>
+            <li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">百分比計算機 <span>→</span></a></li><li><a href="discount-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">折扣與銷售稅計算機 <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">年齡與里程碑計算機 <span>→</span></a></li><li><a href="bmi-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">身體質量指數追蹤 <span>→</span></a></li>
           </ul>
         </div>
       </aside>
@@ -306,62 +231,62 @@
     </section>
     <div class="container">
       <div class="ad-slot ad-in-content" aria-label="文章內廣告">
-        <span class="ad-slot-placeholder-text">響應式內容橫幅 (728x90 / 300x250)</span>
+        <span class="ad-slot-placeholder-text">回應式內容橫幅廣告（728x90 / 300x250）</span>
       </div>
     </div>
     <article class="container educational-content">
       <section class="content-section">
-        <h2 class="content-heading">如何使用數基轉換器</h2>
-        <p class="content-paragraph">電腦、程式設計師和電子工程師經常在數位基礎之間切換：二進位制用於硬體，八進位制用於舊系統和檔案許可權，十進位制用於日常算術，十六進製作為二進位制的緊湊速記。此轉換器採用這四個基數中任意一個的數字，並立即顯示所有四個值，因此您不必轉換兩次或懷疑您選擇的基數中的數字是否合法。</p>
+        <h2 class="content-heading">如何使用 進位換算器</h2>
+        <p class="content-paragraph">電腦、程式設計師與電子工程師經常在數字進位之間切換：硬體用二進位，較舊的系統與檔案權限用八進位，日常算術用十進位，十六進位則是二進位的簡潔簡寫。這個換算器接受四種進位中任一進位的數字，並即時一次顯示全部四種數值，因此你永遠不需要換算兩次，也不需要懷疑某個數字在你選擇的進位中是否合法。</p>
         <ol class="step-list">
-          <li class="step-item"><div class="step-item-content"><strong>輸入您的號碼</strong>在第一個方塊中輸入數值，例如 255、1010 或 FF。僅限非負整數；符號和小數點不是這些整數基數的一部分。</div></li>
-          <li class="step-item"><div class="step-item-content"><strong>告訴轉換器它位於哪個基數</strong>從下拉清單中選擇二進位、八進位、十進位或十六進位。這很重要：1010 在二進位中表示 10，但在十進位中表示 1010。</div></li>
-          <li class="step-item"><div class="step-item-content"><strong>按“轉換”並讀取所有四個結果</strong>二進位制、八進位制、十進位制和十六進位制值一起出現，並突出顯示十進位制值，因此您可以複製程式碼或作業所需的任何形式。</div></li>
-          <li class="step-item"><div class="step-item-content"><strong>如果發生錯誤，請檢查您的數字</strong>每個鹼基只允許使用某些數字。二進位只允許0和1，所以102被拒絕；八進位允許0到7，所以89被拒絕；十六進位允許0到9和A到F，所以G被拒絕。</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>輸入你的數字</strong>請在第一個方框中輸入數值，例如 255、1010 或 FF。僅限非負整數；正負號與小數點不屬於這些整數進位。</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>告訴換算器它是哪種進位</strong>請從下拉選單中選擇二進位、八進位、十進位或十六進位。這很重要：1010 在二進位中表示十，在十進位中卻表示一千零一十。</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>按下「換算」並閱讀全部四種結果</strong>二進位、八進位、十進位與十六進位數值會一起出現，十進位數值會突出顯示，讓你可以複製你的程式碼或作業需要的任何形式。</div></li>
+          <li class="step-item"><div class="step-item-content"><strong>若出現錯誤，請檢查你的數字</strong>每種進位只允許特定的數字。二進位只允許 0 與 1，因此 102 會被拒絕；八進位允許 0 到 7，因此 89 會被拒絕；十六進位允許 0 到 9 與 A 到 F，因此 G 會被拒絕。</div></li>
         </ol>
       </section>
       <section class="content-section">
-        <h2 class="content-heading">什麼是數基，為什麼我們有多個數基？</h2>
-        <p class="content-paragraph">數基，也稱為基數，就是計數系統在轉移到新位置之前所使用的不同數字的數量。十進位制是我們小時候學習的系統，它使用十個數字（0 到 9），因為人類有十個手指。每個位置的價值是其右邊的十倍：在 255 中，數字表示 2 百 + 5 十 + 5 個。二進位僅使用兩個數字：0 和 1，因為電腦硬體是由關閉或開啟的開關建構的。每個二進位位置的值是其右邊的兩倍，因此 1010 表示 8 + 0 + 2 + 0 = 10。八進位使用八位數字，即 0 到 7，十六進位使用十六位：0 到 9 加上字母 A 到 F 表示值 10 到 15。</p>
-        <p class="content-paragraph">十六進位制的存在主要是為了方便人們閱讀二進位制。一個十六進位制數字恰好對應於四個二進位制數字，因此像 11111111 這樣的長二進位制字串可以整齊地摺疊為 FF。這就是為什麼在計算中隨處可見十六進位：網路上的顏色程式碼（例如#FF5733）實際上是紅色、綠色和藍色的三個十六進位位元組；記憶體位址以十六進位顯示；網路工程師以十六進位讀取裝置位址。八進位制在早期計算中扮演了類似的角色，當時機器使用可被三位整除的字長，並且它仍然出現在 Unix 檔案許可權中，其中像 755 這樣的值編碼所有者、群組和其他人的讀取、寫入和執行許可權。</p>
-        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>根據</th><th>允許的數字</th><th>例子</th><th>十進位制值</th></tr></thead><tbody>
-        <tr><td><strong>二進位 (2)</strong></td><td>0, 1</td><td>11111111</td><td>255</td></tr>
-        <tr><td><strong>八進位 (8)</strong></td><td>0 到 7</td><td>377</td><td>255</td></tr>
-        <tr><td><strong>十進位制 (10)</strong></td><td>0 到 9</td><td>255</td><td>255</td></tr>
-        <tr><td><strong>十六進位 (16)</strong></td><td>0 到 9，A 到 F</td><td>FF</td><td>255</td></tr>
+        <h2 class="content-heading">什麼是數字進位？為什麼我們需要不只一種？</h2>
+        <p class="content-paragraph">數字進位（也稱為基數）只是計數系統在進位到新位數之前使用多少個不同數字。我們從小學習的十進位使用十個數字（0 到 9），因為人類有十根手指。每個位數的值是右邊位數的十倍：在 255 中，數字表示 2 個百位 + 5 個十位 + 5 個個位。二進位只使用兩個數字 0 與 1，因為電腦硬體是由開或關的開關構成的。每個二進位位數的值是右邊位數的兩倍，因此 1010 表示 8 + 0 + 2 + 0 = 10。八進位使用八個數字 0 到 7，十六進位使用十六個：0 到 9 加上代表數值十到十五的字母 A 到 F。</p>
+        <p class="content-paragraph">十六進位存在的主要原因是方便人類閱讀二進位。一個十六進位數字恰好對應四個二進位數字，因此像 11111111 這樣的長二進位字串可以整齊地縮減為 FF。這就是為什麼你在運算中到處都看到十六進位：網路上的顏色代碼如 #FF5733，其實是紅、綠、藍三個十六進位位元組；記憶體位址以十六進位顯示；網路工程師也以十六進位讀取裝置位址。八進位在早期運算中扮演類似角色，當時機器的字組大小可被三個位元整除，它至今仍出現在 Unix 檔案權限中，像 755 這樣的數值編碼了擁有者、群組與其他人的讀取、寫入與執行權限。</p>
+        <div class="data-table-wrap"><table class="data-table"><thead><tr><th>進位</th><th>允許的數字</th><th>範例</th><th>十進位數值</th></tr></thead><tbody>
+        <tr><td><strong>二進位（2）</strong></td><td>0, 1</td><td>11111111</td><td>255</td></tr>
+        <tr><td><strong>八進位（8）</strong></td><td>0 到 7</td><td>377</td><td>255</td></tr>
+        <tr><td><strong>十進位（10）</strong></td><td>0 到 9</td><td>255</td><td>255</td></tr>
+        <tr><td><strong>十六進位（16）</strong></td><td>0 到 9、A 到 F</td><td>FF</td><td>255</td></tr>
         </tbody></table></div>
       </section>
       <section class="content-section">
-        <h2 class="content-heading">手動轉換：兩個工作範例</h2>
-        <p class="content-paragraph">手動將二進位制轉換為十進位制比任何定義都更好地教導了位值概念。以101101為例，由右往右讀，位置分別為1、2、4、8、16、32。從右開始依序為1、0、1、1、0、1，所以數值為1+4+8+32=45。十進位制轉換為二進位制則相反：重複除以2，記錄餘數。對於 45，餘數為 1, 0, 1, 1, 0, 1，向後讀取它們會得到 101101，確認了第一次轉換。十六進位的工作原理與 16 的冪相同：1A3 表示 1 乘以 256，加上 A (10) 乘以 16，再加上 3，即 256 + 160 + 3 = 419。</p>
-        <p class="content-paragraph">一種快速快捷方式連線二進位制、八進位制和十六進位制，而不透過十進位制。將二進位制數字從右側以三為一組進行八進位制，或以四為四進行十六進位制，然後轉換每個組。例如，101011110 在八進位中變為 101 011 110，即 5 3 6，在十六進位中變為 1 0101 1110，即 1 5 E，因此該值在八進位中為 536，在十六進位中為 15E。學生在這裡經常犯兩個錯誤：忘記用前導零填充最左邊的組，以及從左側而不是右側讀取組。兩者都會改變答案，因此始終從最右邊的數字開始分組。</p>
+        <h2 class="content-heading">手動換算：兩個計算範例</h2>
+        <p class="content-paragraph">手動將二進位換算為十進位，比任何定義更能教會位值概念。以 101101 為例。從右邊讀起，各位數的值分別為 1、2、4、8、16 與 32。從右邊起的數字為 1、0、1、1、0、1，因此數值為 1 + 4 + 8 + 32 = 45。將十進位換算為二進位則方向相反：反覆除以 2 並記錄餘數。對於 45，餘數為 1、0、1、1、0、1，倒著讀就是 101101，確認了第一次換算。十六進位以相同方式運作，只是使用 16 的冪次：1A3 表示 1 乘以 256，加上 A（10）乘以 16，再加上 3，即 256 + 160 + 3 = 419。</p>
+        <p class="content-paragraph">有一個快速捷徑可以在不經過十進位的情況下連結二進位、八進位與十六進位。從右邊起將二進位數字三個一組分組以得到八進位，或四個一組分組以得到十六進位，再換算每一組。例如，101011110 在八進位分組中變為 101 011 110，即 5 3 6；在十六進位分組中變為 1 0101 1110，即 1 5 E，因此數值在八進位中為 536，在十六進位中為 15E。學生常犯兩個錯誤：忘記在最左邊的組前方補零，以及從左邊而非右邊開始讀取各組。兩者都會改變答案，因此請務必從最右邊的數字開始分組。</p>
       </section>
       <section class="content-section">
-        <h2 class="content-heading">實用技巧和常見錯誤</h2>
-        <p class="content-paragraph">首先，在共享可能不明確的數字時，請始終說明基數：單獨編寫 1010 並不能告訴任何人您的意思是 10 還是 1010，這就是程式設計師為二進位編寫 0b1010 等字首，為十六進位編寫 0xFF 等字首的原因。其次，請記住，前導零不會改變值，因此二進位中的 0001010 仍然是 10；新增它們通常純粹是為了將數字填充到整齊的寬度，例如八位。第三，該轉換器僅處理整數。其他基數的分數、負數以及超過 64 位元的超長輸入都超出了其範圍，轉換器會告訴您而不是猜測。最後，一切都在您的瀏覽器中執行，沒有資料傳送到任何地方，因此您可以私下根據需要隨時轉換作業答案、程式碼常數和許可權值。</p>
+        <h2 class="content-heading">實用小提示與常見錯誤</h2>
+        <p class="content-paragraph">第一，分享可能含糊的數字時，請務必說明進位：單寫 1010 無法告訴任何人你指的是十還是一千零一十，這就是程式設計師會寫 0b1010 表示二進位、0xFF 表示十六進位的原因。第二，請記得前導零不會改變數值，因此二進位的 0001010 仍然是十；它們常純粹為了將數字補齊到整齊的寬度（例如八個位元）而加入。第三，這個換算器只處理整數。其他進位中的分數、負數與超過 64 位數的極長輸入都不在範圍內，換算器會明確告知而非猜測。最後，一切都在你的瀏覽器內執行，沒有資料傳送到任何地方，因此你可以私下且任意多次換算作業答案、程式碼常數與權限數值。</p>
       </section>
       <section class="content-section">
-        <h2 class="content-heading">常見問題 (FAQ)</h2>
+        <h2 class="content-heading">常見問題（FAQs）</h2>
         <div class="faq-list">
-          <details class="faq-item" open="None">
-            <summary class="faq-question">255的二進位制、八進位制和十六進位制分別是多少？</summary>
-            <div class="faq-answer">255 的二進位制為 11111111，八進位制為 377，十六進位制為 FF。所有四種形式代表相同的值；只是計數系統發生了變化。</div>
+          <details class="faq-item" open>
+            <summary class="faq-question">255 在二進位、八進位與十六進位中是多少？</summary>
+            <div class="faq-answer">255 在二進位中是 11111111，在八進位中是 377，在十六進位中是 FF。四種形式代表相同的數值，只是計數系統不同。</div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">為什麼二進位制102會出錯？</summary>
-            <div class="faq-answer">二進位僅使用數字 0 和 1，因此數字 2 在基數 2 中是非法的。如果您的意思是十進位數 1002，請先選擇十進製作為輸入基數。</div>
+            <summary class="faq-question">為什麼二進位的 102 會出現錯誤？</summary>
+            <div class="faq-answer">二進位只使用數字 0 與 1，因此數字 2 在 2 進位中不合法。若你指的是十進位數字一百零二，請先選擇十進位作為輸入進位。</div>
           </details>
           <details class="faq-item">
             <summary class="faq-question">十六進位字母 A 到 F 是什麼？</summary>
-            <div class="faq-answer">十六進位需要十六位數字，但我們只有十個數字，因此字母 A 到 F 代表值 10、11、12、13、14 和 15。這就是為什麼 FF 表示 15 乘以 16 加 15，即 255。</div>
+            <div class="faq-answer">十六進位需要十六個數字，但我們只有十個數字符號，因此字母 A 到 F 代表數值 10、11、12、13、14 與 15。這就是 FF 表示 15 乘以 16 再加上 15（即 255）的原因。</div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">如何快速將二進位制轉換為十六進位制？</summary>
-            <div class="faq-answer">將二進位數字從右側分成四組，用零填滿最左邊的群組，然後將每四組轉換為一個十六進位數字。例如，11111111 分組為 1111 1111，即 F F。</div>
+            <summary class="faq-question">如何快速將二進位換算為十六進位？</summary>
+            <div class="faq-answer">從右邊起將二進位數字四個一組分組，並在最左邊的組前方補零，再將每組四個數字換算為一個十六進位數字。例如，11111111 分組為 1111 1111，即 F F。</div>
           </details>
           <details class="faq-item">
-            <summary class="faq-question">該轉換器可以處理負數或分數嗎？</summary>
-            <div class="faq-answer">不會。它將整個非負整數轉換為最多 64 位數。其他基數中的負數和分數需要不同的表示形式，例如二進位補碼或小數點，此工具不涵蓋這些。</div>
+            <summary class="faq-question">這個換算器可以處理負數或分數嗎？</summary>
+            <div class="faq-answer">不可以。它換算最多 64 位數的非負整數。其他進位中的負數與分數需要不同的表示方式，例如二補數或小數點，而這個工具並不涵蓋。</div>
           </details>
         </div>
       </section>
@@ -372,20 +297,49 @@
       <div class="footer-grid">
         <div class="footer-brand-col">
           <a href="index.html" class="brand-logo" style="color: #ffffff;">
-            <div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div>
+            <div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
             <span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span>
           </a>
-          <p>OmniTools 提供免費、輕量級、注重隱私的線上計算器和實用程式，用於金融、生產力和教育。</p>
+          <p>OmniTools 提供免費、輕量且注重隱私的線上計算機與工具，涵蓋金融、生產力與教育領域。</p>
         </div>
-        <div><h4 class="footer-heading">熱門工具</h4><ul class="footer-links"><li><a href="age-calculator.html">年齡計算器</a></li><li><a href="bmi-calculator.html">體重指數追蹤器</a></li><li><a href="loan-calculator.html">貸款 EMI 計算器</a></li><li><a href="password-generator.html">密碼產生器</a></li><li><a href="word-counter.html">字數統計器</a></li></ul></div>
-        <div><h4 class="footer-heading">公用事業</h4><ul class="footer-links"><li><a href="percentage-calculator.html">百分比計算器</a></li><li><a href="discount-calculator.html">折扣計算器</a></li><li><a href="unit-converter.html">單位換算</a></li><li><a href="date-calculator.html">日期差異</a></li><li><a href="case-converter.html">文字大小寫轉換器</a></li></ul></div>
+        <div><h4 class="footer-heading">熱門工具</h4><ul class="footer-links"><li><a href="age-calculator.html">年齡計算機</a></li><li><a href="bmi-calculator.html">BMI 追蹤</a></li><li><a href="loan-calculator.html">貸款 EMI 計算機</a></li><li><a href="password-generator.html">密碼產生器</a></li><li><a href="word-counter.html">字數統計</a></li></ul></div>
+        <div><h4 class="footer-heading">工具集</h4><ul class="footer-links"><li><a href="percentage-calculator.html">百分比計算機</a></li><li><a href="discount-calculator.html">折扣計算機</a></li><li><a href="unit-converter.html">單位換算器</a></li><li><a href="date-calculator.html">日期差距</a></li><li><a href="case-converter.html">文字大小寫轉換器</a></li></ul></div>
         <div><h4 class="footer-heading">法律與資訊</h4><ul class="footer-links"><li><a href="../about.html">關於我們</a></li><li><a href="../contact.html">聯絡我們</a></li><li><a href="../privacy-policy.html">隱私權政策</a></li><li><a href="../terms.html">服務條款</a></li></ul></div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 OmniTools。版權所有。適合所有人的免費線上實用程式。</p>
+        <p>© 2026 OmniTools。版權所有。免費線上工具，人人可用。</p>
         <div class="footer-lang-select">
           <span>語言：</span>
-          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="../ja/index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+          <a href="../index.html">English</a> |
+          <a href="../es/index.html">Español</a> |
+          <a href="../de/index.html">Deutsch</a> |
+          <a href="../fr/index.html">Français</a> |
+          <a href="../pt/index.html">Português</a> |
+          <a href="../it/index.html">Italiano</a> |
+          <a href="../ru/index.html">Русский</a> |
+          <a href="../nl/index.html">Nederlands</a> |
+          <a href="../pl/index.html">Polski</a> |
+          <a href="../tr/index.html">Türkçe</a> |
+          <a href="../hi/index.html">हिन्दी</a> |
+          <a href="../ur/index.html">اردو</a> |
+          <a href="../ar/index.html">العربية</a> |
+          <a href="../fa/index.html">فارسی</a> |
+          <a href="../id/index.html">Bahasa Indonesia</a> |
+          <a href="../vi/index.html">Tiếng Việt</a> |
+          <a href="../th/index.html">ไทย</a> |
+          <a href="../ms/index.html">Bahasa Melayu</a> |
+          <a href="../tl/index.html">Filipino</a> |
+          <a href="../ja/index.html">日本語</a> |
+          <a href="../ko/index.html">한국어</a> |
+          <a href="../zh/index.html">简体中文</a> |
+          <a href="index.html" style="color: #60a5fa;">繁體中文</a> |
+          <a href="../el/index.html">Ελληνικά</a> |
+          <a href="../cs/index.html">Čeština</a> |
+          <a href="../sv/index.html">Svenska</a> |
+          <a href="../no/index.html">Norsk</a> |
+          <a href="../da/index.html">Dansk</a> |
+          <a href="../fi/index.html">Suomi</a> |
+          <a href="../he/index.html">עברית</a>
         </div>
       </div>
     </div>
@@ -393,7 +347,7 @@
   <script>
 
 (function() {
-  var MSG = {"invalid": "該值對於所選鹼基無效。例如，二進位只允許0和1，八進位只允許0到7，十六進位允許0到9和A到F。"};
+  var MSG = {"invalid": "該數值對所選進位無效。例如，二進位僅允許 0 與 1，八進位僅允許 0 到 7，十六進位僅允許 0 到 9 與 A 到 F。"};
   var mobileToggle = document.querySelector('.mobile-nav-toggle');
   var navLinks = document.querySelector('.nav-links');
   if (mobileToggle && navLinks) {
