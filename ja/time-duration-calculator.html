@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>時間計算ツール - 2 つの時間の間の時間、加算または減算 |OmniTools</title>
-<meta name="description" content="夜間を含む 2 つの時間の間の時間を計算し、任意の時間から時間と分を加算または減算します。">
-<meta name="keywords" content="期間計算機、2 つの時刻の間の時間、時刻に時間を加算、時間を減算、夜勤シフト">
+<title>時間期間計算機 - 2つの時間の間の時間、加算または減算 | OmniTools</title>
+<meta name="description" content="2つの時間の間の期間を、夜をまたぐ場合も含めて計算し、任意の時間に時間と分を加算または減算します。">
+<meta name="keywords" content="time duration calculator, time between two times, add hours to time, subtract hours, overnight shift">
 <meta name="author" content="OmniTools">
 <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://janhazirr7.github.io/allinone/ja/time-duration-calculator.html">
@@ -40,67 +40,61 @@
   <link rel="alternate" hreflang="el" href="https://janhazirr7.github.io/allinone/el/time-duration-calculator.html">
   <link rel="alternate" hreflang="cs" href="https://janhazirr7.github.io/allinone/cs/time-duration-calculator.html">
   <link rel="alternate" hreflang="x-default" href="https://janhazirr7.github.io/allinone/time-duration-calculator.html">
-
-
-
-
 <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
 <meta property="og:url" content="https://janhazirr7.github.io/allinone/ja/time-duration-calculator.html">
-<meta property="og:title" content="期間計算ツール |OmniTools">
-<meta property="og:description" content="夜間を含む 2 つの時間の間の時間を計算し、任意の時間から時間と分を加算または減算します。">
+<meta property="og:title" content="時間期間計算機 | OmniTools">
+<meta property="og:description" content="2つの時間の間の期間を、夜をまたぐ場合も含めて計算し、任意の時間に時間と分を加算または減算します。">
 <meta property="og:image" content="https://janhazirr7.github.io/allinone/og-time-duration-calculator.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="期間計算ツール |OmniTools">
-<meta name="twitter:description" content="夜間を含む 2 つの時間の間の時間を計算し、任意の時間から時間と分を加算または減算します。">
+<meta name="twitter:title" content="時間期間計算機 | OmniTools">
+<meta name="twitter:description" content="2つの時間の間の期間を、夜をまたぐ場合も含めて計算し、任意の時間に時間と分を加算または減算します。">
 <link rel="stylesheet" href="../style.css">
 <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "OmniTools 時間計算ツール",
+  "name": "OmniTools時間期間計算機",
   "url": "https://janhazirr7.github.io/allinone/ja/time-duration-calculator.html",
-  "applicationCategory": "ユーティリティアプリケーション",
+  "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "All",
-  "browserRequirements": "JavaScriptが必要です。 HTML5が必要です。",
-  "description": "夜間を含む 2 つの時間の間の時間を計算し、任意の時間から時間と分を加算または減算します。",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "2つの時間の間の期間を、夜をまたぐ場合も含めて計算し、任意の時間に時間と分を加算または減算します。",
   "offers": {
     "@type": "Offer",
     "price": "0",
     "priceCurrency": "USD"
-  },
-  "inLanguage": "ja"
+  }
 }
   </script>
 <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "家",
+      "name": "ホーム",
       "item": "https://janhazirr7.github.io/allinone/ja/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "生産性",
-      "item": "https://janhazirr7.github.io/allinone/ja/#productivity"
+      "item": "https://janhazirr7.github.io/allinone/#productivity"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "期間計算ツール",
+      "name": "時間期間計算機",
       "item": "https://janhazirr7.github.io/allinone/ja/time-duration-calculator.html"
     }
-  ],
-  "inLanguage": "ja"
+  ]
 }
   </script>
 <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -109,7 +103,7 @@
       "name": "終了時間が開始時間より早い場合はどうなりますか?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "計算機はこれを夜間として扱います。つまり、終了時刻は翌日に属します。たとえば、22:00 から 06:00 は 8 時間であり、結果は一晩でラベル付けされるため、すぐにわかります。"
+        "text": "計算機はそれを夜をまたぐものとして扱います。つまり、終了時間は翌日に属します。たとえば、22:00から06:00は8時間であり、結果には夜をまたぐとラベルが付けられるため、気づくことができます。"
       }
     },
     {
@@ -117,68 +111,66 @@
       "name": "両方の時間が同じ場合はどうなりますか?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "同じクロック時間の間では時間が経過していないため、継続時間はゼロです。時刻だけでなく日付も必要であるため、時計の時刻だけでは完全な 24 時間期間を示すことはできません。"
+        "text": "期間は0です。同一の時刻の間には時間が経過していないからです。丸24時間の期間は、時刻だけでなく日付も必要であるため、時刻だけでは示すことができません。"
       }
     },
     {
       "@type": "Question",
-      "name": "真夜中を超える時刻に時間を追加するにはどうすればよいですか?",
+      "name": "真夜中をまたぐ時間に時間を追加するにはどうすればいいですか?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "基本時刻を入力し、[追加] を選択して、時間と分を入力します。結果は 24 時間制でラップされるため、23:30 プラス 2 時間は 01:30 となります。"
+        "text": "基準時間を入力し、加算を選び、時間と分を入力します。結果は24時間時計を一周するため、23:30に2時間を加えると01:30となります。"
       }
     },
     {
       "@type": "Question",
-      "name": "この電卓はタイムゾーンや夏時間に対応していますか?",
+      "name": "この計算機はタイムゾーンや夏時間に対応していますか?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "いいえ。時計の時刻のみで動作するため、タイム ゾーンや時計の変更は調整されません。夏時間の変更をまたぐ期間は、実際の経過時間と 1 時間異なります。"
+        "text": "いいえ。時刻のみで動作するため、タイムゾーンや時計の変更には対応しません。夏時間の変更をまたぐ期間は、実際の経過時間では1時間異なります。"
       }
     },
     {
       "@type": "Question",
-      "name": "私のデータはどこかに保存されていますか?",
+      "name": "私のデータはどこかに保存されますか?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "いいえ。この電卓は完全にブラウザ内で実行されます。あなたの時間がサーバーに送信されたり、OmniTools によって保存されたりすることはありません。"
+        "text": "いいえ。この計算機はブラウザ内で完全に動作します。あなたの時間がサーバーに送信されたり、OmniToolsに保存されたりすることは決してありません。"
       }
     }
-  ],
-  "inLanguage": "ja"
+  ]
 }
   </script>
 <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "期間計算ツール",
-  "description": "夜間を含む 2 つの時間の間の時間を計算し、任意の時間から時間と分を加算または減算します。",
+  "name": "時間期間計算機",
+  "description": "2つの時間の間の期間を、夜をまたぐ場合も含めて計算し、任意の時間に時間と分を加算または減算します。",
   "step": [
     {
       "@type": "HowToStep",
-      "name": "開始時刻と終了時刻を入力してください",
-      "text": "開始時刻と終了時刻を 24 時間形式で入力します。"
+      "name": "Enter start and end times",
+      "text": "開始時間と終了時間を24時間形式で入力します。"
     },
     {
       "@type": "HowToStep",
       "name": "時間を加算または減算する",
-      "text": "基本時刻を入力し、[加算] または [減算] を選択して、時間と分を入力します。"
+      "text": "Enter a base time, choose Add or Subtract, and enter hours and minutes."
     },
     {
       "@type": "HowToStep",
       "name": "計算する",
-      "text": "[期間の計算] を押すと、期間、合計分、およびシフトされた時間が表示されます。"
+      "text": "「期間を計算」を押すと、期間、合計分数、シフトされた時間が表示されます。"
     }
-  ],
-  "inLanguage": "ja"
+  ]
 }
   </script>
 </head>
 <body>
 <header class="site-header"><div class="container header-inner">
-<a href="index.html" class="brand-logo" aria-label="OmniToolsホーム"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
-<nav aria-label="メインナビゲーション"><ul class="nav-links"><li><a href="index.html">すべてのツール</a></li><li><a href="age-calculator.html">年齢計算</a></li><li><a href="bmi-calculator.html">BMIトラッカー</a></li><li><a href="loan-calculator.html">ローンEMI</a></li><li><a href="../about.html">について</a></li></ul></nav>
+<a href="index.html" class="brand-logo" aria-label="OmniToolsホーム"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span>Tools</span></span></a>
+<nav aria-label="メインナビゲーション"><ul class="nav-links"><li><a href="index.html">すべてのツール</a></li><li><a href="age-calculator.html">年齢計算</a></li><li><a href="bmi-calculator.html">BMIトラッカー</a></li><li><a href="loan-calculator.html">ローン返済額</a></li><li><a href="../about.html">概要</a></li></ul></nav>
 <div class="nav-actions"><select id="langSelect" aria-label="言語を選択" onchange="window.location.href=this.value">
           <option value="../time-duration-calculator.html">English</option>
           <option value="../es/calculadora-de-duracion.html">Español</option>
@@ -210,51 +202,80 @@
           <option value="../zh-TW/time-duration-calculator.html">繁體中文</option>
           <option value="../el/time-duration-calculator.html">Ελληνικά</option>
           <option value="../cs/time-duration-calculator.html">Čeština</option>
-        </select><button class="mobile-nav-toggle" aria-label="ナビゲーションメニューを切り替えます" aria-expanded="false">☰</button></div></div></header>
+        </select><button class="mobile-nav-toggle" aria-label="ナビゲーションメニューを切り替え" aria-expanded="false">☰</button></div></div></header>
 <main>
-<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">家</a></li><li><a href="index.html#productivity">生産性</a></li><li aria-current="page">期間計算ツール</li></ul></div></div>
-<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">期間計算ツール</h1><p class="tool-header-desc">2 つの時刻の間にどのくらいの時間があるか (夜間であっても) を計算し、時間と分を加算または減算して任意の時刻を変更します。</p></div></section>
-<div class="container"><div class="ad-slot ad-leaderboard" aria-label="リーダーボードの広告"><span class="ad-slot-placeholder-text">レスポンシブ リーダーボード広告 (728x90)</span></div></div>
+<div class="page-top-nav"><div class="container"><ul class="breadcrumbs"><li><a href="index.html">ホーム</a></li><li><a href="index.html#productivity">生産性</a></li><li aria-current="page">時間期間計算機</li></ul></div></div>
+<section class="tool-header-section"><div class="container"><h1 class="tool-header-title">時間期間計算機</h1><p class="tool-header-desc">2つの時間の間にどれだけの時間があるかを、夜をまたぐ場合も含めて計算し、時間と分を加算または減算することで任意の時間をシフトします。</p></div></section>
+<div class="container"><div class="ad-slot ad-leaderboard" aria-label="リーダーボード広告"><span class="ad-slot-placeholder-text">レスポンシブ リーダーボード広告 (728x90)</span></div></div>
 <section class="container tool-layout-container">
 <div><div class="tool-card-widget">
 <div class="widget-form-grid">
 <div class="form-group"><label class="form-label" for="durStart"><span>開始時間</span><span class="label-hint">必須</span></label><input type="time" id="durStart" class="form-input" value="09:00"></div>
-<div class="form-group"><label class="form-label" for="durEnd"><span>終了時刻</span><span class="label-hint">必須</span></label><input type="time" id="durEnd" class="form-input" value="17:30"><span class="form-help">終了時間が開始時間より早い場合は翌日の夜としてカウントします</span></div>
+<div class="form-group"><label class="form-label" for="durEnd"><span>終了時間</span><span class="label-hint">必須</span></label><input type="time" id="durEnd" class="form-input" value="17:30"><span class="form-help">終了時間が開始時間より早い場合、翌日の夜として数えられます</span></div>
 </div>
 <div class="widget-form-grid two-col">
-<div class="form-group"><label class="form-label" for="durBase"><span>基準時間（加算または減算）</span></label><input type="time" id="durBase" class="form-input" value="23:30"></div>
-<div class="form-group"><label class="form-label" for="durOp"><span>手術</span></label><select id="durOp" class="form-select"><option value="add" selected="None">追加</option><option value="sub">減算</option></select></div>
-<div class="form-group"><label class="form-label" for="durHours"><span>営業時間</span></label><input type="number" id="durHours" class="form-input" placeholder="例えば2" min="0" max="1000" step="1" value="2"></div>
-<div class="form-group"><label class="form-label" for="durMinutes"><span>分</span></label><input type="number" id="durMinutes" class="form-input" placeholder="例：30" min="0" max="59" step="1" value="30"></div>
+<div class="form-group"><label class="form-label" for="durBase"><span>基準時間(加算または減算する対象)</span></label><input type="time" id="durBase" class="form-input" value="23:30"></div>
+<div class="form-group"><label class="form-label" for="durOp"><span>操作</span></label><select id="durOp" class="form-select"><option value="add" selected>加算</option><option value="sub">減算</option></select></div>
+<div class="form-group"><label class="form-label" for="durHours"><span>時間</span></label><input type="number" id="durHours" class="form-input" placeholder="例: 2" min="0" max="1000" step="1" value="2"></div>
+<div class="form-group"><label class="form-label" for="durMinutes"><span>分</span></label><input type="number" id="durMinutes" class="form-input" placeholder="例: 30" min="0" max="59" step="1" value="30"></div>
 </div>
 <div id="timeErrorBox" style="display: none; background: var(--danger-light); color: var(--danger); padding: 0.85rem 1.25rem; border-radius: var(--radius-md); border-left: 4px solid var(--danger); margin: 1rem 0 1.5rem; font-size: 0.875rem; font-weight: 500;"></div>
-<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateTimeUI()">期間の計算</button><button type="button" class="btn btn-outline" onclick="resetTime()">リセット</button></div>
+<div class="widget-actions"><button type="button" class="btn btn-primary" onclick="calculateTimeUI()">期間を計算</button><button type="button" class="btn btn-outline" onclick="resetTime()">リセット</button></div>
 <div id="timeResultsBox" class="results-box">
-<div class="results-header"><span class="results-title">あなたの期間結果</span><button type="button" class="btn btn-outline btn-sm" id="copyTimeBtn">コピーの概要</button></div>
-<div class="hero-result-card"><div class="hero-result-label">2 つの時間の間の期間</div><div class="hero-result-value" id="durValue">-</div><div class="hero-result-sub" id="durSub"></div></div>
-<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="durTotalMinValue">-</div><div class="metric-label">合計（分）</div></div><div class="metric-card"><div class="metric-value" id="durOvernightValue">-</div><div class="metric-label">真夜中を越えますか？</div></div><div class="metric-card"><div class="metric-value" id="durShiftedValue">-</div><div class="metric-label">基準時刻をずらした場合</div></div></div>
+<div class="results-header"><span class="results-title">あなたの期間の結果</span><button type="button" class="btn btn-outline btn-sm" id="copyTimeBtn">概要をコピー</button></div>
+<div class="hero-result-card"><div class="hero-result-label">2つの時間の間の期間</div><div class="hero-result-value" id="durValue">-</div><div class="hero-result-sub" id="durSub"></div></div>
+<div class="metrics-grid"><div class="metric-card"><div class="metric-value" id="durTotalMinValue">-</div><div class="metric-label">合計分数</div></div><div class="metric-card"><div class="metric-value" id="durOvernightValue">-</div><div class="metric-label">真夜中をまたぎますか?</div></div><div class="metric-card"><div class="metric-value" id="durShiftedValue">-</div><div class="metric-label">シフトされた基準時間</div></div></div>
 </div>
 </div></div>
-<aside><div class="ad-slot ad-rectangle" aria-label="サイドバー広告"><span class="ad-slot-placeholder-text">サイドバー長方形 (300x250)</span></div>
-<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">関連する電卓</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">日付の違い <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">年齢計算機 <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">パーセンテージ計算機 <span>→</span></a></li><li><a href="bmr-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMR &amp; カロリー計算機 <span>→</span></a></li></ul></div></aside>
+<aside><div class="ad-slot ad-rectangle" aria-label="サイドバー広告"><span class="ad-slot-placeholder-text">サイドバー広告枠 (300x250)</span></div>
+<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.5rem;"><h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-main);">関連する計算機</h3><ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;"><li><a href="date-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">日付の差分計算 <span>→</span></a></li><li><a href="age-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">年齢計算機 <span>→</span></a></li><li><a href="percentage-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">パーセント計算機 <span>→</span></a></li><li><a href="bmr-calculator.html" style="display: flex; align-items: center; justify-content: space-between;">BMR・カロリー計算機 <span>→</span></a></li></ul></div></aside>
 </section>
-<div class="container"><div class="ad-slot ad-in-content" aria-label="記事内広告"><span class="ad-slot-placeholder-text">レスポンシブコンテンツバナー (728x90 / 300x250)</span></div></div>
+<div class="container"><div class="ad-slot ad-in-content" aria-label="記事内広告"><span class="ad-slot-placeholder-text">レスポンシブ コンテンツバナー (728x90 / 300x250)</span></div></div>
 <article class="container educational-content">
-<section class="content-section"><h2 class="content-heading">期間計算ツールの使用方法</h2><p class="content-paragraph">真夜中までは時間の計算は簡単そうに見えます。両方の時間を同じ日に属するものとして扱う場合、06:00 から 22:00 を引くと負の数が得られますが、その夜勤で働いている人なら誰でも、答えが 8 時間であることを知っています。この計算機は時間を 24 時間時計の点として扱い、真夜中の通過を処理するため、頭の中で時計の計算をしなくても、シフト、移動、勉強会、イベントの長さを計算できます。また、同じページには 2 番目の計算も含まれています。つまり、基準時間から時間数と分数を加算または減算します。これは、フライト、会議、またはカウントダウン後の時間を知る必要がある場合に役立ちます。</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>開始時刻と終了時刻を入力します</strong>24 時間形式のタイムピッカーを使用します。同じ日の期間の場合は、最初に早い時間を入力し、2 番目に遅い時間を入力します (たとえば、09:00 から 17:30 まで)。</div></li><li class="step-item"><div class="step-item-content"><strong>夜間の期間を自動的に折り返します</strong>終了時刻が開始時刻より早い場合、計算機は終了日が翌日に属するものとみなします。したがって、22:00 から 06:00 までのシフトは 8 時間となり、結果はそのようになります。</div></li><li class="step-item"><div class="step-item-content"><strong>加算セクションと減算セクションも使用します</strong>基本時刻を入力し、加算または減算を選択して、時間と分を入力します。結果はどちらの方向でも午前 0 時を中心にラップされるため、23:30 プラス 2 時間は 01:30 になります。</div></li><li class="step-item"><div class="step-item-content"><strong>時間、分、合計分を読み取る</strong>見出しには期間が時間と分で示されており、これが人々が時間について話す方法です。分単位の合計は、単一の数値を乗算する方が簡単な給与計算、請求書作成、スプレッドシートに役立ちます。</div></li></ol></section>
-<section class="content-section"><h2 class="content-heading">計算の仕組み</h2><p class="content-paragraph">すべての時間は、最初に午前 0 時からの分に変換されます。午前 0 時自体はゼロ、09:00 は 540 分、23:30 は 1,410 分です。期間は、終了値から開始値を引いたものになります。その差がマイナスの場合は、1,440 分、つまり丸 1 日が追加されます。これは、終了時刻を翌日に移動するのと同じです。 2 つの時間が同一の場合、その間には時間が経過していないため、継続時間はゼロになります。これは意図的な選択です。丸 1 日を明確にするためには時刻だけでなく日付も必要となるため、09:00 から 09:00 までの期間は、丸 24 時間としてではなく、期間なしとして扱われます。</p><div class="formula-box"><div class="formula-expression">期間 = 終了分 - 開始分 (負の場合は 1440 を追加)</div><div class="formula-expression">シフト時間 = (基本分 +/- 時間 x 60 +/- 分) 0 ～ 1439 にラップ</div><div class="formula-explanation">例: 09:00 ～ 17:30 = 1050 - 540 = 510 分 = 8 時間 30 分。 22:00 ～ 06:00 = 360 - 1320 = -960、プラス 1440 = 480 分 = 8 時間、夜間。 23:30 プラス 2 時間 = 1410 + 120 = 1530、減算して 1440 = 90 分 = 01:30 となります。</div></div><p class="content-paragraph">加算と減算では、午前 0 時からの同じ分という考え方が使用され、両方向にラップされます。 01:00 から 2 時間を減算すると、前日の 23:00 が日付なしの時刻として表示されます。計算機は時計時間のみを処理するため、日付、タイムゾーン、夏時間の変更については知ることができません。春や秋の時計の変更をまたぐ期間では、実際の経過時間は 1 時間異なります。また、タイムゾーンをまたぐ移動では、単なる引き算ではなく、両端の現地時間を必要とします。</p></section>
-<section class="content-section"><h2 class="content-heading">即日、夜間、特殊なケース</h2><p class="content-paragraph">最も一般的な混乱は、開始時刻より早い終了時刻が間違いなのか、それとも夜間なのかということです。この計算機は常に夜間として扱います。これは、シフト、フライト、イベントの通常の記述方法と一致します。実際に入力ミスがあり、同じ日の期間を意味している場合は、結果内の夜間のラベルが手掛かりとなります。結果を確認し、夜間と表示されていて、それが予期していなかった場合は、時刻を入れ替えるか修正します。もう 1 つのエッジ ケースは等倍であり、ゼロになります。完全な 24 時間を意味する場合は、時計の時間だけでは 0 時間と 24 時間を区別できないため、時間のみを指定する計算機ではなく、日付に基づいた計算機が必要になります。</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>始める</th><th>終わり</th><th>間隔</th><th>一晩中？</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>8時間30分</td><td>いいえ</td></tr><tr><td>22:00</td><td>06:00</td><td>8時間</td><td>はい</td></tr><tr><td>23:30</td><td>01:30</td><td>2時間</td><td>はい</td></tr><tr><td>09:00</td><td>09:00</td><td>0時間</td><td>いいえ</td></tr></tbody></table></div><p class="content-paragraph">加算および減算セクションの分は 0 ～ 59 に制限されているため、時計の場合と同じように、余分な分を時間に繰り越す必要があります。時間は最大 1,000 時間になるため、数日分の時間を追加しても、合計は 24 時間制になるため、結果は依然として有効な時刻になります。このラッピングは、時刻を尋ねるには正しいですが、日付は教えてくれません。月曜日の 10:00 に 50 時間を加えると水曜日の 12:00 となり、ここでは 12:00 の部分のみが表示されます。</p></section>
-<section class="content-section"><h2 class="content-heading">実用的な用途</h2><p class="content-paragraph">シフト勤務者は、特にシフトが午前 0 時を超え、単純な減算が失敗する場合に、この種の計算を使用して有給時間を確認します。フリーランサーやコンサルタントは、作業セッションを請求対象の数値に変えるために合計分数を使用します。これは、ほとんどの請求書が時間料金に小数の時間数を乗算するためです。旅行者は、加算および減算セクションを使用して、到着時刻、乗り継ぎの長さ、到着時の自宅到着時間を計算します。学生やイベント主催者は、これを使用して 1 日をブロックに分割し、たとえば、講演、休憩、昼食のスケジュールが開始時間と終了時間の間に実際に超過することなく収まっていることを確認します。</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. 給与計算前にシフトを確認する</h4><p class="example-card-body">シフトの開始と終了を入力し、夜間フラグに注目し、合計分を使用して 10 進数の時間に変換します。分を 60 で割ってから時間料金を掛けます。</p></div><div class="example-card"><h4 class="example-card-title">2. 過去を振り返る旅を計画する</h4><p class="example-card-body">出発時刻を調べるには、推測して遅れて到着するのではなく、減算オプションを使用して到着所要時刻から移動時間を差し引きます。</p></div><div class="example-card"><h4 class="example-card-title">3. イベントのスケジュールを正直に保つ</h4><p class="example-card-body">各セッションの長さを開始時刻に順番に加算します。最後に変更された時間が会場の予約終了より遅い場合は、スケジュール内の何かを移動する必要があります。</p></div></div><p class="content-paragraph">この計算機は時計時間のみで動作し、日付、タイムゾーン、夏時間ルールは使用しません。数日間の旅行、契約の期限、時計の変更をまたぐ給与計算期間など、日付が重要な場合は、日付と時刻の計算ツールを使用して、結果を現地のカレンダーと照合してください。ただし、毎日の同日および夜間の時計計算では、ここで使用されている午前 0 時からの分法が正確です。</p></section>
-<section class="content-section"><h2 class="content-heading">よくある質問 (FAQ)</h2><div class="faq-list"><details class="faq-item" open="None"><summary class="faq-question">終了時間が開始時間より早い場合はどうなりますか?</summary><div class="faq-answer">計算機はこれを夜間として扱います。つまり、終了時刻は翌日に属します。たとえば、22:00 から 06:00 は 8 時間であり、結果は一晩でラベル付けされるため、すぐにわかります。</div></details><details class="faq-item"><summary class="faq-question">両方の時間が同じ場合はどうなりますか?</summary><div class="faq-answer">同じクロック時間の間では時間が経過していないため、継続時間はゼロです。時刻だけでなく日付も必要であるため、時計の時刻だけでは完全な 24 時間期間を示すことはできません。</div></details><details class="faq-item"><summary class="faq-question">真夜中を超える時刻に時間を追加するにはどうすればよいですか?</summary><div class="faq-answer">基本時刻を入力し、[追加] を選択して、時間と分を入力します。結果は 24 時間制でラップされるため、23:30 プラス 2 時間は 01:30 となります。</div></details><details class="faq-item"><summary class="faq-question">この電卓はタイムゾーンや夏時間に対応していますか?</summary><div class="faq-answer">いいえ。時計の時刻のみで動作するため、タイム ゾーンや時計の変更は調整されません。夏時間の変更をまたぐ期間は、実際の経過時間と 1 時間異なります。</div></details><details class="faq-item"><summary class="faq-question">私のデータはどこかに保存されていますか?</summary><div class="faq-answer">いいえ。この電卓は完全にブラウザ内で実行されます。あなたの時間がサーバーに送信されたり、OmniTools によって保存されたりすることはありません。</div></details></div></section>
+<section class="content-section"><h2 class="content-heading">時間期間計算機の使い方</h2><p class="content-paragraph">時刻計算は、真夜中が関わるまでは簡単に見えます。両方の時間を同じ日に属するものとして扱うと、06:00から22:00を引くことは負の数となりますが、その夜勤で働く人なら誰でも答えが8時間であることを知っています。この計算機は時間を24時間時計上の点として扱い、真夜中をまたぐことをあなたのために処理するため、頭の中で時刻計算をすることなく、シフト、旅、学習セッション、イベントの長さを計算できます。同じページには2番目の計算も含まれています。任意の基準時間に時間と分を加算または減算するもので、フライト、会議、カウントダウンの後に何時になるかを知る必要がある場合に役立ちます。</p><ol class="step-list"><li class="step-item"><div class="step-item-content"><strong>開始時間と終了時間を入力する</strong>24時間形式のタイムピッカーを使います。同日の期間については、早い時間を最初に、遅い時間を2番目に入力します。たとえば、09:00から17:30です。</div></li><li class="step-item"><div class="step-item-content"><strong>夜をまたぐ期間を自動的に丸める</strong>終了時間が開始時間より早い場合、計算機は終了が翌日に属すると仮定します。したがって、22:00から06:00のシフトは8時間であり、結果もそう示します。</div></li><li class="step-item"><div class="step-item-content"><strong>加算と減算セクションも使う</strong>基準時間を入力し、加算または減算を選び、時間と分を入力します。結果はどちらの方向にも真夜中を一周するため、23:30に2時間を加えると01:30となります。</div></li><li class="step-item"><div class="step-item-content"><strong>時間、分、合計分数を読む</strong>見出しは期間を時間と分で示します。これは人々が時間について話す方法です。合計分数は、給与計算、請求、スプレッドシートに役立ちます。そこでは、1つの数字の方が掛けやすいからです。</div></li></ol></section>
+<section class="content-section"><h2 class="content-heading">計算方法</h2><p class="content-paragraph">すべての時間はまず真夜中からの分数に換算されます。真夜中自体は0、09:00は540分、23:30は1,410分です。期間は次に、終了値から開始値を引いたものとなります。その差が負の場合、1,440分、つまり1日分が加えられます。これは終了時間を翌日に移動することと同じです。2つの時間が同一の場合、期間は0となります。それらの間に時間が経過していないからです。これは意図的な選択です。09:00から09:00までの期間は、丸1日ではなく、期間なしとして扱われます。丸1日は、あいまいさをなくすために時間だけでなく日付も必要だからです。</p><div class="formula-box"><div class="formula-expression">期間 = 終了分数 − 開始分数(負の場合は1440を加える)</div><div class="formula-expression">シフトされた時間 = (基準分数 ± 時間 × 60 ± 分)を0〜1439に丸める</div><div class="formula-explanation">例:09:00から17:30 = 1050 − 540 = 510分 = 8時間30分。22:00から06:00 = 360 − 1320 = −960、1440を加えると480分 = 8時間、夜をまたぎます。23:30に2時間を加えると1410 + 120 = 1530、1440を引いて丸めると90分 = 01:30です。</div></div><p class="content-paragraph">加算と減算も、両方向への丸めを伴う同じ真夜中からの分数の考え方を使います。01:00から2時間を引くと、前日の23:00となり、日付なしの時刻として表示されます。計算機は時刻のみで動作するため、日付、タイムゾーン、夏時間の変更を知ることはできません。春や秋の時計変更をまたぐ期間は、実際の経過時間では1時間異なります。タイムゾーンをまたぐ旅では、単なる引き算ではなく、両端の現地時間が必要です。</p></section>
+<section class="content-section"><h2 class="content-heading">同日、夜をまたぐ場合、境界ケース</h2><p class="content-paragraph">最も一般的な混乱は、開始時間より早い終了時間が間違いなのか、夜をまたぐ期間なのかということです。この計算機は常にそれを夜をまたぐものとして扱います。これはシフト、フライト、イベントが通常どのように説明されるかと一致します。実際に入力ミスをして同日の期間を意味していた場合、結果の夜をまたぐラベルが手がかりとなります。結果を確認し、夜をまたぐと表示されているのにそれを予期していなかった場合は、時間を交換または修正します。もう1つの境界ケースは、0を与える同一の時間です。丸24時間の期間を意味していた場合は、時刻のみのものではなく、日付ベースの計算機が必要です。時刻だけでは0時間と24時間を区別できないからです。</p><div class="data-table-wrap"><table class="data-table"><thead><tr><th>開始</th><th>終了</th><th>期間</th><th>夜をまたぎますか?</th></tr></thead><tbody><tr><td>09:00</td><td>17:30</td><td>8時間30分</td><td>いいえ</td></tr><tr><td>22:00</td><td>06:00</td><td>8時間</td><td>はい</td></tr><tr><td>23:30</td><td>01:30</td><td>2時間</td><td>はい</td></tr><tr><td>09:00</td><td>09:00</td><td>0時間</td><td>いいえ</td></tr></tbody></table></div><p class="content-paragraph">加算と減算セクションの分は0から59に制限されており、時計と同じように、余分な分を時間に繰り上げなければなりません。時間は1,000まで入力できるため、数日分の時間を加えることができ、合計が24時間時計を一周するため、結果は依然として有効な時刻となります。その丸めは、何時の時刻になるかを尋ねるには正しいですが、どの日になるかは教えてくれません。月曜日の10:00に50時間を加えると水曜日の12:00となりますが、ここで表示されるのは12:00の部分だけです。</p></section>
+<section class="content-section"><h2 class="content-heading">実用的な用途</h2><p class="content-paragraph">シフト労働者は、この種の計算を使って有給時間をチェックします。特にシフトが真夜中をまたぎ、単純な引き算では失敗する場合にそうです。フリーランサーとコンサルタントは、合計分数を使って作業セッションを請求可能な金額に換算します。ほとんどの請求では時給に10進数の時間を掛けるからです。旅行者は、加算と減算セクションを使って、到着時間、乗り継ぎ時間、着陸時に自宅で何時になるかを計算します。学生やイベント主催者は、1日をブロックに分割するためにこれを使います。たとえば、講演、休憩、昼食のスケジュールが、開始時間と終了時間の間に実際に収まり、超過しないことを確認するためです。</p><div class="example-cards-grid"><div class="example-card"><h4 class="example-card-title">1. 給与計算の前にシフトを確認する</h4><p class="example-card-body">シフトの開始と終了を入力し、夜をまたぐフラグに注意し、合計分数を使って10進時間に換算します。時給を掛ける前に分数を60で割ります。</p></div><div class="example-card"><h4 class="example-card-title">2. 旅を逆算して計画する</h4><p class="example-card-body">出発時刻を見つけるには、推測して遅れて到着するのではなく、減算オプションを使って必要な到着時刻から移動時間を引います。</p></div><div class="example-card"><h4 class="example-card-title">3. イベントスケジュールを正直に保つ</h4><p class="example-card-body">各セッションの長さをその開始時間に順に加えます。最後のシフトされた時間が会場の予約終了より遅い場合、スケジュールの何かを移動しなければなりません。</p></div></div><p class="content-paragraph">この計算機は時刻のみで動作し、日付、タイムゾーン、夏時間のルールを使いません。日付が重要なもの、たとえば数日にわたる旅、契約期限、時計変更にまたがる給与期間については、日時計算機を使い、結果を現地のカレンダーと照合してください。しかし、日常的な同日および夜をまたぐ時刻計算においては、ここで使われる真夜中からの分数の方法は正確です。</p></section>
+<section class="content-section"><h2 class="content-heading">よくある質問 (FAQ)</h2><div class="faq-list"><details class="faq-item" open><summary class="faq-question">終了時間が開始時間より早い場合はどうなりますか?</summary><div class="faq-answer">計算機はそれを夜をまたぐものとして扱います。つまり、終了時間は翌日に属します。たとえば、22:00から06:00は8時間であり、結果には夜をまたぐとラベルが付けられるため、気づくことができます。</div></details><details class="faq-item"><summary class="faq-question">両方の時間が同じ場合はどうなりますか?</summary><div class="faq-answer">期間は0です。同一の時刻の間には時間が経過していないからです。丸24時間の期間は、時刻だけでなく日付も必要であるため、時刻だけでは示すことができません。</div></details><details class="faq-item"><summary class="faq-question">真夜中をまたぐ時間に時間を追加するにはどうすればいいですか?</summary><div class="faq-answer">基準時間を入力し、加算を選び、時間と分を入力します。結果は24時間時計を一周するため、23:30に2時間を加えると01:30となります。</div></details><details class="faq-item"><summary class="faq-question">この計算機はタイムゾーンや夏時間に対応していますか?</summary><div class="faq-answer">いいえ。時刻のみで動作するため、タイムゾーンや時計の変更には対応しません。夏時間の変更をまたぐ期間は、実際の経過時間では1時間異なります。</div></details><details class="faq-item"><summary class="faq-question">私のデータはどこかに保存されますか?</summary><div class="faq-answer">いいえ。この計算機はブラウザ内で完全に動作します。あなたの時間がサーバーに送信されたり、OmniToolsに保存されたりすることは決してありません。</div></details></div></section>
 </article>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-grid">
-<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniTools は、財務、生産性、教育向けに、プライバシーを重視した軽量のオンライン計算機とユーティリティを無料で提供します。</p></div>
-<div><h4 class="footer-heading">トレンドツール</h4><ul class="footer-links"><li><a href="age-calculator.html">年齢計算機</a></li><li><a href="bmi-calculator.html">BMIトラッカー</a></li><li><a href="loan-calculator.html">ローンEMI計算機</a></li><li><a href="password-generator.html">パスワードジェネレーター</a></li><li><a href="word-counter.html">ワードカウンター</a></li></ul></div>
-<div><h4 class="footer-heading">公共事業</h4><ul class="footer-links"><li><a href="percentage-calculator.html">パーセンテージ計算機</a></li><li><a href="discount-calculator.html">割引計算機</a></li><li><a href="unit-converter.html">単位換算器</a></li><li><a href="date-calculator.html">日付の違い</a></li><li><a href="case-converter.html">テキストケースコンバーター</a></li></ul></div>
-<div><h4 class="footer-heading">法務と情報</h4><ul class="footer-links"><li><a href="../about.html">私たちについて</a></li><li><a href="../contact.html">お問い合わせ</a></li><li><a href="../privacy-policy.html">プライバシーポリシー</a></li><li><a href="../terms.html">利用規約</a></li></ul></div></div>
-<div class="footer-bottom"><p>© 2026 OmniTools。無断転載を禁じます。誰でも使える無料のオンライン ユーティリティ。</p><div class="footer-lang-select">
-          <span>言語：</span>
-          <a href="../index.html">English</a> | <a href="../es/index.html">Español</a> | <a href="../de/index.html">Deutsch</a> | <a href="../fr/index.html">Français</a> | <a href="../pt/index.html">Português</a> | <a href="../it/index.html">Italiano</a> | <a href="../ru/index.html">Русский</a> | <a href="../nl/index.html">Nederlands</a> | <a href="../pl/index.html">Polski</a> | <a href="../sv/index.html">Svenska</a> | <a href="../no/index.html">Norsk</a> | <a href="../da/index.html">Dansk</a> | <a href="../fi/index.html">Suomi</a> | <a href="../id/index.html">Bahasa Indonesia</a> | <a href="../tr/index.html">Türkçe</a> | <a href="../vi/index.html">Tiếng Việt</a> | <a href="../th/index.html">ไทย</a> | <a href="../ms/index.html">Bahasa Melayu</a> | <a href="../tl/index.html">Filipino</a> | <a href="../hi/index.html">हिन्दी</a> | <a href="../ur/index.html">اردو</a> | <a href="../ar/index.html">العربية</a> | <a href="../fa/index.html">فارسی</a> | <a href="../he/index.html">עברית</a> | <a href="index.html">日本語</a> | <a href="../ko/index.html">한국어</a> | <a href="../zh/index.html">简体中文</a> | <a href="../zh-TW/index.html">繁體中文</a> | <a href="../el/index.html">Ελληνικά</a> | <a href="../cs/index.html">Čeština</a>
+<div class="footer-brand-col"><a href="index.html" class="brand-logo" style="color: #ffffff;"><div class="brand-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div><span class="brand-name">Omni<span style="color: #60a5fa;">Tools</span></span></a><p>OmniToolsは、金融、生産性、教育のための無料で軽量、プライバシーに配慮したオンライン計算機とユーティリティを提供しています。</p></div>
+<div><h4 class="footer-heading">人気のツール</h4><ul class="footer-links"><li><a href="age-calculator.html">年齢計算機</a></li><li><a href="bmi-calculator.html">BMIトラッカー</a></li><li><a href="loan-calculator.html">ローン返済額計算機</a></li><li><a href="password-generator.html">パスワード生成ツール</a></li><li><a href="word-counter.html">文字数カウンター</a></li></ul></div>
+<div><h4 class="footer-heading">ユーティリティ</h4><ul class="footer-links"><li><a href="percentage-calculator.html">パーセント計算機</a></li><li><a href="discount-calculator.html">割引計算機</a></li><li><a href="unit-converter.html">単位変換ツール</a></li><li><a href="date-calculator.html">日付の差分計算</a></li><li><a href="case-converter.html">文字ケース変換ツール</a></li></ul></div>
+<div><h4 class="footer-heading">法務・情報</h4><ul class="footer-links"><li><a href="../about.html">私たちについて</a></li><li><a href="../contact.html">お問い合わせ</a></li><li><a href="../privacy-policy.html">プライバシーポリシー</a></li><li><a href="../terms.html">利用規約</a></li></ul></div></div>
+<div class="footer-bottom"><p>© 2026 OmniTools. All rights reserved. どなたでも無料で使えるオンラインユーティリティ。</p><div class="footer-lang-select">
+          <span>言語:</span>
+          <a href="../index.html">English</a> |
+          <a href="../es/index.html">Español</a> |
+          <a href="../de/index.html">Deutsch</a> |
+          <a href="../fr/index.html">Français</a> |
+          <a href="../pt/index.html">Português</a> |
+          <a href="../it/index.html">Italiano</a> |
+          <a href="../ru/index.html">Русский</a> |
+          <a href="../nl/index.html">Nederlands</a> |
+          <a href="../pl/index.html">Polski</a> |
+          <a href="../sv/index.html">Svenska</a> |
+          <a href="../no/index.html">Norsk</a> |
+          <a href="../da/index.html">Dansk</a> |
+          <a href="../fi/index.html">Suomi</a> |
+          <a href="../id/index.html">Bahasa Indonesia</a> |
+          <a href="../tr/index.html">Türkçe</a> |
+          <a href="../vi/index.html">Tiếng Việt</a> |
+          <a href="../th/index.html">ไทย</a> |
+          <a href="../ms/index.html">Bahasa Melayu</a> |
+          <a href="../tl/index.html">Filipino</a> |
+          <a href="../hi/index.html">हिन्दी</a> |
+          <a href="../ur/index.html">اردو</a> |
+          <a href="../ar/index.html">العربية</a> |
+          <a href="../fa/index.html">فارسی</a> |
+          <a href="../he/index.html">עברית</a> |
+          <a href="index.html" style="color: #60a5fa;">日本語</a> |
+          <a href="../ko/index.html">한국어</a> |
+          <a href="../zh/index.html">简体中文</a> |
+          <a href="../zh-TW/index.html">繁體中文</a> |
+          <a href="../el/index.html">Ελληνικά</a> |
+          <a href="../cs/index.html">Čeština</a>
         </div></div></div></footer>
 <script>
 function parseTimeToMinutes2(s) {
@@ -294,15 +315,15 @@ function shiftTime(baseStr, hours, minutes, op) {
     var errBox = document.getElementById("timeErrorBox"), res = document.getElementById("timeResultsBox");
     var d = durationBetween(document.getElementById("durStart").value, document.getElementById("durEnd").value);
     var shifted = shiftTime(document.getElementById("durBase").value, parseFloat(document.getElementById("durHours").value), parseFloat(document.getElementById("durMinutes").value), document.getElementById("durOp").value);
-    if (d === null || shifted === null) { errBox.textContent = "有効な時刻を 24 時間形式で入力してください。時は 0 ～ 1000、分は 0 ～ 59 です。"; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
+    if (d === null || shifted === null) { errBox.textContent = "24時間形式で有効な時間を入力してください。時間は0から1000、分は0から59です。"; errBox.style.display = "block"; if (res) { res.classList.remove("active"); res.style.display = "none"; } return; }
     errBox.style.display = "none";
-    document.getElementById("durValue").textContent = d.hours + "h " + d.minutes + "m";
-    document.getElementById("durSub").textContent = document.getElementById("durStart").value + " まで " + document.getElementById("durEnd").value;
-    document.getElementById("durTotalMinValue").textContent = d.totalMinutes + " 分";
-    document.getElementById("durOvernightValue").textContent = d.overnight ? "はい、一晩中" : "いいえ、同日です";
+    document.getElementById("durValue").textContent = d.hours + "時間" + d.minutes + "分";
+    document.getElementById("durSub").textContent = document.getElementById("durStart").value + "〜" + document.getElementById("durEnd").value;
+    document.getElementById("durTotalMinValue").textContent = d.totalMinutes + "分";
+    document.getElementById("durOvernightValue").textContent = d.overnight ? "はい、夜をまたぎます" : "いいえ、同日です";
     document.getElementById("durShiftedValue").textContent = shifted;
     var cb = document.getElementById("copyTimeBtn");
-    if (cb) cb.setAttribute("data-summary", "間隔： " + d.hours + "h " + d.minutes + "メートル;シフトされた基準時間: " + shifted + ".");
+    if (cb) cb.setAttribute("data-summary", "期間: " + d.hours + "時間" + d.minutes + "分。シフトされた基準時間: " + shifted + "。");
     if (res) { res.classList.add("active"); res.style.display = "block"; }
   };
   window.resetTime = function() {
